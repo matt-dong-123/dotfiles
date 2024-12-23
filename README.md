@@ -17,7 +17,7 @@
 
 ## How to apply settings
 
-0. Install [brew](brew.sh)
-1. Install gnu stow (`brew install stow`)
-2. Clone this repo (`git clone https://github.com/matt-dong-123/dotfiles.git`)
-3. Run `stow .`
+1. Install [brew](brew.sh)
+2. Install gnu stow (`brew install stow`)
+3. Clone this repo (`git clone https://github.com/matt-dong-123/dotfiles.git`)
+4. Run `stow .`
