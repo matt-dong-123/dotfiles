@@ -1,6 +1,6 @@
 # dotfiles
 
-## Things you'll see:
+## Things you'll see
 
 - aerospace
 - btop
@@ -13,3 +13,10 @@
 - sketchybar
 - thefuck
 - tmux
+
+## How to apply settings
+
+0. Install [brew](brew.sh)
+1. Install gnu stow (`brew install stow`)
+2. Clone this repo (`git clone https://github.com/matt-dong-123/dotfiles.git`)
+3. Run `stow .`
