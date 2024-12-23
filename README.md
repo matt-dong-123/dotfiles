@@ -13,6 +13,7 @@
 - sketchybar
 - thefuck
 - tmux
+- zshrc
 
 ## How to apply settings
 
