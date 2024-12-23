@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/toggle-show-hidden.tsx"],
+  "sourcesContent": ["import { spawnSync } from \"child_process\";\nimport { closeMainWindow, showHUD, showToast, Toast } from \"@raycast/api\";\n\nexport default async () => {\n  await closeMainWindow();\n  await showToast({ title: \"Toggling show hidden\", style: Toast.Style.Animated });\n  const out = spawnSync(\"defaults read com.apple.Dock showhidden\", { shell: true });\n  const isTurnOn = String(out.output[1]).trim();\n\n  if (isTurnOn === \"1\") {\n    spawnSync(\"defaults write com.apple.Dock showhidden -bool no && killall Dock\", { shell: true });\n    await showHUD(\"\uD83D\uDCBB Turn off show-hidden mode\");\n  } else {\n    spawnSync(\"defaults write com.apple.Dock showhidden -bool yes && killall Dock\", { shell: true });\n    await showHUD(\"\uD83D\uDCBB Turn on show-hidden mode\");\n  }\n};\n"],
+  "mappings": "yaAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,aAAAE,IAAA,eAAAC,EAAAH,GAAA,IAAAI,EAA0B,yBAC1BC,EAA2D,wBAEpDH,EAAQ,SAAY,CACzB,QAAM,mBAAgB,EACtB,QAAM,aAAU,CAAE,MAAO,uBAAwB,MAAO,QAAM,MAAM,QAAS,CAAC,EAC9E,IAAMI,KAAM,aAAU,0CAA2C,CAAE,MAAO,EAAK,CAAC,EAC/D,OAAOA,EAAI,OAAO,CAAC,CAAC,EAAE,KAAK,IAE3B,QACf,aAAU,oEAAqE,CAAE,MAAO,EAAK,CAAC,EAC9F,QAAM,WAAQ,qCAA8B,OAE5C,aAAU,qEAAsE,CAAE,MAAO,EAAK,CAAC,EAC/F,QAAM,WAAQ,oCAA6B,EAE/C",
+  "names": ["toggle_show_hidden_exports", "__export", "toggle_show_hidden_default", "__toCommonJS", "import_child_process", "import_api", "out"]
+}

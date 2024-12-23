@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/desktop.tsx"],
+  "sourcesContent": ["import { open, getPreferenceValues } from \"@raycast/api\";\n\nconst dir = getPreferenceValues<Preferences.Desktop>().desktopdir;\n\nexport default function Command() {\n  return open(`${dir}`);\n}\n"],
+  "mappings": "yaAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,aAAAE,IAAA,eAAAC,EAAAH,GAAA,IAAAI,EAA0C,wBAEpCC,KAAM,uBAAyC,EAAE,WAExC,SAARH,GAA2B,CAChC,SAAO,QAAK,GAAGG,CAAG,EAAE,CACtB",
+  "names": ["desktop_exports", "__export", "Command", "__toCommonJS", "import_api", "dir"]
+}

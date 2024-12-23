@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/toggle-show-recents.tsx"],
+  "sourcesContent": ["import { spawnSync } from \"child_process\";\nimport { closeMainWindow, showHUD, showToast, Toast } from \"@raycast/api\";\n\nexport default async () => {\n  await closeMainWindow();\n  await showToast({ title: \"Toggling show recents\", style: Toast.Style.Animated });\n  const out = spawnSync(`defaults read com.apple.Dock \"show-recents\"`, { shell: true });\n  const isTurnOn = String(out.output[1]).trim();\n  const newState = isTurnOn === \"1\" ? \"false\" : \"true\";\n  const newStateText = isTurnOn === \"1\" ? \"off\" : \"on\";\n\n  spawnSync(`defaults write com.apple.Dock \"show-recents\" -bool \"${newState}\" && killall Dock`, { shell: true });\n  await showHUD(`\uD83D\uDCBB Turn ${newStateText} show recents`);\n};\n"],
+  "mappings": "yaAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,aAAAE,IAAA,eAAAC,EAAAH,GAAA,IAAAI,EAA0B,yBAC1BC,EAA2D,wBAEpDH,EAAQ,SAAY,CACzB,QAAM,mBAAgB,EACtB,QAAM,aAAU,CAAE,MAAO,wBAAyB,MAAO,QAAM,MAAM,QAAS,CAAC,EAC/E,IAAMI,KAAM,aAAU,8CAA+C,CAAE,MAAO,EAAK,CAAC,EAC9EC,EAAW,OAAOD,EAAI,OAAO,CAAC,CAAC,EAAE,KAAK,EACtCE,EAAWD,IAAa,IAAM,QAAU,OACxCE,EAAeF,IAAa,IAAM,MAAQ,QAEhD,aAAU,uDAAuDC,CAAQ,oBAAqB,CAAE,MAAO,EAAK,CAAC,EAC7G,QAAM,WAAQ,kBAAWC,CAAY,eAAe,CACtD",
+  "names": ["toggle_show_recents_exports", "__export", "toggle_show_recents_default", "__toCommonJS", "import_child_process", "import_api", "out", "isTurnOn", "newState", "newStateText"]
+}

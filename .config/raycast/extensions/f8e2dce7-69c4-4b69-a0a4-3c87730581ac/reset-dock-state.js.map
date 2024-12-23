@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/reset-dock-state.tsx"],
+  "sourcesContent": ["import { Alert, confirmAlert, Icon, showHUD } from \"@raycast/api\";\nimport { spawnSync } from \"child_process\";\n\nexport default async () => {\n  const options: Alert.Options = {\n    icon: Icon.ArrowCounterClockwise,\n    title: \"Reset Dock State\",\n    message: \"Are you sure you want to reset the Dock state? This will remove all customizations.\",\n    primaryAction: {\n      style: Alert.ActionStyle.Destructive,\n      title: \"Confirm\",\n      onAction: async () => {\n        spawnSync(\"defaults delete com.apple.dock && killall Dock\", { shell: true });\n        await showHUD(\"\uD83D\uDCBB Dock state has been reset\");\n      },\n    },\n  };\n  await confirmAlert(options);\n};\n"],
+  "mappings": "yaAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,aAAAE,IAAA,eAAAC,EAAAH,GAAA,IAAAI,EAAmD,wBACnDC,EAA0B,yBAEnBH,EAAQ,SAAY,CACzB,IAAMI,EAAyB,CAC7B,KAAM,OAAK,sBACX,MAAO,mBACP,QAAS,sFACT,cAAe,CACb,MAAO,QAAM,YAAY,YACzB,MAAO,UACP,SAAU,SAAY,IACpB,aAAU,iDAAkD,CAAE,MAAO,EAAK,CAAC,EAC3E,QAAM,WAAQ,qCAA8B,CAC9C,CACF,CACF,EACA,QAAM,gBAAaA,CAAO,CAC5B",
+  "names": ["reset_dock_state_exports", "__export", "reset_dock_state_default", "__toCommonJS", "import_api", "import_child_process", "options"]
+}
