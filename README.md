@@ -1,4 +1,4 @@
-# dotfiles
+# matt-dong-123's AWESOME dotfiles for MacOS
 
 ## Things you'll see
 
@@ -8,9 +8,9 @@
 - fastfetch
 - fish
 - karabiner
-- nvim
+- nvim (with lazyvim)
 - raycast
-- sketchybar
+- sketchybar (with sbarlua)
 - thefuck
 - tmux
 - wezterm
