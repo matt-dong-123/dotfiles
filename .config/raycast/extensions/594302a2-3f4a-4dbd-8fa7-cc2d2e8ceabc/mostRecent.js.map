@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/mostRecent.tsx"],
+  "sourcesContent": ["import { open, getPreferenceValues } from \"@raycast/api\";\nimport { readdirSync, statSync } from \"fs\";\n\nconst downloadsdir = getPreferenceValues<Preferences.MostRecent>().downloadsdir;\n\nexport default function Command() {\n  const dirContents = readdirSync(downloadsdir, { withFileTypes: true }).sort((a, b) => {\n    const createA: Date = statSync(`${a.path}/${a.name}`).birthtime;\n    const createB: Date = statSync(`${b.path}/${b.name}`).birthtime;\n    return createA < createB ? 1 : -1;\n  });\n\n  return open(`${dirContents[0].path}/${dirContents[0].name}`);\n}\n"],
+  "mappings": "yaAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,aAAAE,IAAA,eAAAC,EAAAH,GAAA,IAAAI,EAA0C,wBAC1CC,EAAsC,cAEhCC,KAAe,uBAA4C,EAAE,aAEpD,SAARJ,GAA2B,CAChC,IAAMK,KAAc,eAAYD,EAAc,CAAE,cAAe,EAAK,CAAC,EAAE,KAAK,CAACE,EAAGC,IAAM,CACpF,IAAMC,KAAgB,YAAS,GAAGF,EAAE,IAAI,IAAIA,EAAE,IAAI,EAAE,EAAE,UAChDG,KAAgB,YAAS,GAAGF,EAAE,IAAI,IAAIA,EAAE,IAAI,EAAE,EAAE,UACtD,OAAOC,EAAUC,EAAU,EAAI,EACjC,CAAC,EAED,SAAO,QAAK,GAAGJ,EAAY,CAAC,EAAE,IAAI,IAAIA,EAAY,CAAC,EAAE,IAAI,EAAE,CAC7D",
+  "names": ["mostRecent_exports", "__export", "Command", "__toCommonJS", "import_api", "import_fs", "downloadsdir", "dirContents", "a", "b", "createA", "createB"]
+}

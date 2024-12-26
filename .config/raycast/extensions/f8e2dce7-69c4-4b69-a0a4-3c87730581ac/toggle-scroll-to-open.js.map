@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/toggle-scroll-to-open.tsx"],
+  "sourcesContent": ["import { spawnSync } from \"child_process\";\nimport { closeMainWindow, showHUD, showToast, Toast } from \"@raycast/api\";\n\nexport default async () => {\n  await closeMainWindow();\n  await showToast({ title: \"Toggling scroll to open\", style: Toast.Style.Animated });\n  const out = spawnSync(\"defaults read com.apple.dock scroll-to-open\", { shell: true });\n  const isTurnOn = String(out.output[1]).trim();\n\n  if (isTurnOn === \"1\") {\n    spawnSync(\"defaults write com.apple.Dock scroll-to-open -bool FALSE && killall Dock\", { shell: true });\n    await showHUD(\"\uD83D\uDCBB Turn off scroll-to-open mode\");\n  } else {\n    spawnSync(\"defaults write com.apple.Dock scroll-to-open -bool TRUE && killall Dock\", { shell: true });\n    await showHUD(\"\uD83D\uDCBB Turn on scroll-to-open mode\");\n  }\n};\n"],
+  "mappings": "yaAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,aAAAE,IAAA,eAAAC,EAAAH,GAAA,IAAAI,EAA0B,yBAC1BC,EAA2D,wBAEpDH,EAAQ,SAAY,CACzB,QAAM,mBAAgB,EACtB,QAAM,aAAU,CAAE,MAAO,0BAA2B,MAAO,QAAM,MAAM,QAAS,CAAC,EACjF,IAAMI,KAAM,aAAU,8CAA+C,CAAE,MAAO,EAAK,CAAC,EACnE,OAAOA,EAAI,OAAO,CAAC,CAAC,EAAE,KAAK,IAE3B,QACf,aAAU,2EAA4E,CAAE,MAAO,EAAK,CAAC,EACrG,QAAM,WAAQ,wCAAiC,OAE/C,aAAU,0EAA2E,CAAE,MAAO,EAAK,CAAC,EACpG,QAAM,WAAQ,uCAAgC,EAElD",
+  "names": ["toggle_scroll_to_open_exports", "__export", "toggle_scroll_to_open_default", "__toCommonJS", "import_child_process", "import_api", "out"]
+}
