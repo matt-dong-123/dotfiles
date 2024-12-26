@@ -21,4 +21,5 @@
 2. Install gnu stow (`brew install stow`)
 3. Clone this repo (`git clone https://github.com/matt-dong-123/dotfiles.git`)
 4. Run `stow .` in the dotfiles directory
-   _Note_ install.sh script coming in the future!
+
+_Note_ install.sh script coming in the future!
