@@ -1,0 +1,7 @@
+--ignore .git
+--ignore .gitignore
+--ignore .gitmodules
+
+--ignore .DS_Store
+--ignore README.*
+
