@@ -10,7 +10,7 @@ sort_reverse = false
 sort_dir_first = true
 sort_translit = false
 linemode = "none"
-show_hidden = false
+show_hidden = true
 show_symlink = true
 scrolloff = 5
 mouse_events = ["click", "scroll"]
@@ -19,8 +19,8 @@ title_format = "Yazi: {cwd}"
 [preview]
 wrap = "no"
 tab_size = 2
-max_width = 600
-max_height = 900
+max_width = 1200
+max_height = 1000
 cache_dir = ""
 image_delay = 30
 image_filter = "triangle"
@@ -184,7 +184,7 @@ cd_origin = "top-center"
 cd_offset = [0, 2, 50, 3]
 
 # create
-create_title = ["Create:", "Create (dir):"]
+create_title = "Create:"
 create_origin = "top-center"
 create_offset = [0, 2, 50, 3]
 
