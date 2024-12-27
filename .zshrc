@@ -7,6 +7,7 @@ fi
 
 # Force fastfetch to show colorful output
 fastfetch --pipe false
+echo '\n'
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
