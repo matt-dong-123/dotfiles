@@ -1,4 +1,4 @@
-theme=tokyonight-storm
+theme=tokyonight
 background-opacity=0.75
 background-blur-radius=10
 macos-titlebar-style=hidden
