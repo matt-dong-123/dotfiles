@@ -9,7 +9,7 @@ local config = wezterm.config_builder()
 config.color_scheme = "Tokyo Night Storm"
 
 config.font = wezterm.font("JetBrains Mono")
-config.font_size = 19
+config.font_size = 20
 
 config.enable_tab_bar = false
 
