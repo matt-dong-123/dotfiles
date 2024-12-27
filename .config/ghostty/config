@@ -1,0 +1,6 @@
+theme=tokyonight-storm
+background-opacity=0.75
+background-blur-radius=10
+macos-titlebar-style=hidden
+font-family="JetBrainsMono Nerd Font"
+font-size=20
