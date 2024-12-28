@@ -4,4 +4,5 @@ return {
     { "tpope/vim-fugitive" },
     { "tpope/vim-commentary" },
     { "tribela/vim-transparent" },
+    { "tpop/vim-surround" },
 }
