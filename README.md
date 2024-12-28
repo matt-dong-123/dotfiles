@@ -7,6 +7,7 @@
 - cava
 - fastfetch
 - fish
+- ghostty
 - karabiner
 - nvim (with lazyvim)
 - raycast
