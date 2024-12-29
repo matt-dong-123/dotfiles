@@ -84,7 +84,8 @@ brew install --cask linearmouse   # for people with mice
 brew install --cask font-jetbrains-mono-nerd-font
 brew install --cask font-sf-pro
 
-## If you want some macos system settings, you can add them here!
+## MacOS system settings
+defaults write NSGlobalDomain _HIHideMenuBar -bool true
 
 echo "Installation complete..."
 
