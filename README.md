@@ -14,6 +14,7 @@
 - sketchybar (with sbarlua)
 - thefuck
 - wezterm
+- yazi
 - zshrc
 
 ## How to apply settings
@@ -32,6 +33,6 @@
 4. Clone this repo (`git clone https://github.com/matt-dong-123/dotfiles.git`)
 5. Run `stow .` in the dotfiles directory
 
-Thanks to [Sin-cy]("https://github.com/Sin-cy") for providing the template in his own dotfiles!
+Thanks to @[Sin-cy]("https://www.github.com/Sin-cy") for providing the install.sh template in his own dotfiles!
 
 You can raise issues if you run into any problems. I'll try as hard as I can!
