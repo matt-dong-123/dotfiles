@@ -119,17 +119,16 @@ alt-shift-equal = 'resize smart +50'
 ctrl-alt-a = 'workspace !default'
 ctrl-alt-b = 'workspace browser'
 ctrl-alt-c = 'workspace coding'
-ctrl-alt-m = 'workspace music'
 ctrl-alt-o = 'workspace office'
 ctrl-alt-s = 'workspace social'
-
+ctrl-alt-w = 'workspace work'
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-a = ['move-node-to-workspace !default', 'workspace !default']
 alt-shift-b = ['move-node-to-workspace browser', 'workspace browser']
 alt-shift-c = ['move-node-to-workspace coding', 'workspace coding']
-alt-shift-m = ['move-node-to-workspace music', 'workspace music']
 alt-shift-o = ['move-node-to-workspace office', 'workspace office']
 alt-shift-s = ['move-node-to-workspace social', 'workspace social']
+alt-shift-w = ['move-node-to-workspace work', 'workspace work']
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 # alt-tab = 'workspace-back-and-forth'
@@ -195,10 +194,6 @@ if.app-id = "com.github.wez.wezterm"
 run = "move-node-to-workspace coding"
 
 [[on-window-detected]]
-if.app-id = "org.musescore.MuseScore"
-run = "move-node-to-workspace music"
-
-[[on-window-detected]]
 if.app-id = "com.tencent.QQMusicMac"
 run = "move-node-to-workspace music"
 
@@ -213,3 +208,11 @@ run = "move-node-to-workspace social"
 [[on-window-detected]]
 if.app-id = "com.apple.finder"
 run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "org.musescore.MuseScore"
+run = "move-node-to-workspace work"
+
+[[on-window-detected]]
+if.app-id = "md.obsidian"
+run = "move-node-to-workspace work"
