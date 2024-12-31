@@ -135,16 +135,16 @@ alt-shift-w = ['move-node-to-workspace work', 'workspace work']
 # ! Conflicts with DockDoor app, so alt-tab is disabled
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
 
-ctrl-tab = 'workspace --wrap-around next'
-ctrl-alt-tab = 'workspace --wrap-around prev'
-ctrl-shift-tab = [
-    'move-node-to-workspace --wrap-around next',
-    'workspace --wrap-around next',
-]
-alt-shift-tab = [
-    'move-node-to-workspace --wrap-around prev',
-    'workspace --wrap-around prev',
-]
+# ctrl-tab = 'workspace --wrap-around next'
+# ctrl-alt-tab = 'workspace --wrap-around prev'
+# ctrl-shift-tab = [
+#     'move-node-to-workspace --wrap-around next',
+#     'workspace --wrap-around next',
+# ]
+# alt-shift-tab = [
+#     'move-node-to-workspace --wrap-around prev',
+#     'workspace --wrap-around prev',
+# ]
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 alt-shift-semicolon = 'mode service'
 
