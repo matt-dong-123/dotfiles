@@ -209,3 +209,8 @@ function lg() {
 function f() {
     fastfetch
 }
+
+function v() {
+    nvim
+}
+
