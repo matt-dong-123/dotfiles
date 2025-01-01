@@ -201,3 +201,11 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+
+function lg() {
+    lazygit
+}
+
+function f() {
+    fastfetch
+}
