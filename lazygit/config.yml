@@ -312,7 +312,7 @@ git:
     pattern: ""
 
     # Replace directive. E.g. for 'feature/AB-123' to start the commit message with 'AB-123 ' use "[$1] "
-    replace: "Updated [$1]"
+    replace: ""
 
   # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#predefined-branch-name-prefix
   branchPrefix: ""
@@ -428,7 +428,7 @@ disableStartupPopups: false
 # - 'create': initialize a new repo
 # - 'skip': open most recent repo
 # - 'quit': exit Lazygit
-notARepository: prompt
+notARepository: skip
 
 # If true, display a confirmation when subprocess terminates. This allows you to view the output of the subprocess before returning to Lazygit.
 promptToReturnFromSubprocess: true
