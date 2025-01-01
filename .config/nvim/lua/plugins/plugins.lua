@@ -5,5 +5,5 @@ return {
     { "tribela/vim-transparent" },
     { "tpope/vim-surround" },
     { "HiPhish/rainbow-delimiters.nvim" },
-    { "neoclide/coc.nvim" },
+    -- { "neoclide/coc.nvim" },
 }
