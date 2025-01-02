@@ -189,6 +189,9 @@ ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_V
 # set shell default editor to be nvim
 export EDITOR=nvim
 
+# set XDG_CONFIG_HOME to ~/.config
+export XDG_CONFIG_HOME="${HOME}/.config"
+
 # add brew to shellenv
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
