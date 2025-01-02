@@ -17,7 +17,7 @@ config.window_decorations = "RESIZE"
 config.window_background_opacity = 0.75
 config.macos_window_background_blur = 100
 
-config.default_cursor_style = "BlinkingBar"
+config.default_cursor_style = "BlinkingBlock"
 config.cursor_blink_rate = 500
 config.cursor_blink_ease_in = "Constant"
 config.cursor_blink_ease_out = "Constant"
