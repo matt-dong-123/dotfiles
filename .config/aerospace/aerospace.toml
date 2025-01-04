@@ -198,6 +198,10 @@ if.app-id = "com.jetbrains.intellij.ce"
 run = "move-node-to-workspace coding"
 
 [[on-window-detected]]
+if.app-id = "com.jetbrains.rustrover"
+run = "move-node-to-workspace coding"
+
+[[on-window-detected]]
 if.app-id = "com.tencent.QQMusicMac"
 run = "move-node-to-workspace music"
 
