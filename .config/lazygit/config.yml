@@ -184,7 +184,7 @@ gui:
   # If 'auto', only split the main window when a file has both staged and unstaged changes
   splitDiff: auto
 
-  # Default size for focused window. Window size can be changed from within Lazygit with '+' and '_' (but this won't change the default).
+  # Default size for focused window. Window size can be changed from within Lazygit with '+' and '_' (but this won't change the defaul)t.
   # One of: 'normal' (default) | 'half' | 'full'
   windowSize: normal
 
@@ -308,11 +308,12 @@ git:
 
   # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#predefined-commit-message-prefix
   commitPrefix:
-    # pattern to match on. E.g. for 'feature/AB-123' to match on the AB-123 use "^\\w+\\/(\\w+-\\w+).*"
-    pattern: ""
+    final_review_2025:
+      # pattern to match on. E.g. for 'feature/AB-123' to match on the AB-123 use "^\\w+\\/(\\w+-\\w+).*"
+      pattern: "\\w+"
 
-    # Replace directive. E.g. for 'feature/AB-123' to start the commit message with 'AB-123 ' use "[$1] "
-    replace: ""
+      # Replace directive. E.g. for 'feature/AB-123' to start the commit message with 'AB-123 ' use "[$1] "
+      replace: "update "
 
   # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#predefined-branch-name-prefix
   branchPrefix: ""
