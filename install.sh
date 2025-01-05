@@ -32,6 +32,7 @@ brew tap homebrew/services
 brew tap nikitabobko/tap
 brew tap dimentium/autoraise
 brew tap FelixKratz/formulae
+brew tap lihaoyun6/tap
 
 ## Formulae
 echo "Installing Brew Formulae..."
@@ -64,6 +65,18 @@ brew install btop
 brew install cava
 brew install fastfetch
 brew install fish
+brew install cowsay
+brew install eza
+brew install fortune
+brew install wifi-password
+brew install autoraise
+brew install cmatrix
+brew install sl
+brew install yt-dlp
+brew install wtf
+brew install pipes-sh
+brew install neovide
+
 
 ### dev things
 brew install node
@@ -76,14 +89,30 @@ echo "Installing Brew Casks..."
 brew install --cask raycast
 brew install --cask karabiner-elements
 brew install --cask wezterm
-brew install --cask ghostty # you can delete one of the terminal emulators using brew uninstall
 brew install --cask aerospace
 brew install --cask keycastr
 brew install --cask betterdisplay # for people with multiple displays
 brew install --cask linearmouse   # for people with mice
 brew install --cask font-jetbrains-mono-nerd-font
 brew install --cask font-sf-pro
-
+brew install --cask zen-browser
+brew install --cask qqmusic
+brew install --cask background-music
+brew install --cask appdimmer
+brew install --cask keyboardholder
+brew install --cask tencent-lemon
+brew install --cask dockdoor
+brew install --cask obsidian
+brew install --cask visual-studio-code
+brew install --cask latest
+brew install --cask iina
+brew install --cask airbattery
+brew install --cask wechat
+brew install --cask keycastr
+brew install --cask flux
+brew install --cask wpsoffice
+brew install --cask jordanbaird-ice
+brew install --cask tor-browser
 ## MacOS system settings
 defaults write NSGlobalDomain _HIHideMenuBar -bool true
 
