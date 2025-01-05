@@ -77,7 +77,6 @@ brew install wtf
 brew install pipes-sh
 brew install neovide
 
-
 ### dev things
 brew install node
 brew install nvm
@@ -113,6 +112,8 @@ brew install --cask flux
 brew install --cask wpsoffice
 brew install --cask jordanbaird-ice
 brew install --cask tor-browser
+brew install --cask arc
+brew install --cask musescore
 ## MacOS system settings
 defaults write NSGlobalDomain _HIHideMenuBar -bool true
 
