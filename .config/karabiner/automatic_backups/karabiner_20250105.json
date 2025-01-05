@@ -10,7 +10,7 @@
                     {
                         "manipulators": [
                             {
-                                "description": "Change ropt to meh key.",
+                                "description": "Change ropt to control+option+shift.",
                                 "from": {
                                     "key_code": "right_option",
                                     "modifiers": { "optional": ["any"] }
@@ -28,7 +28,7 @@
                     {
                         "manipulators": [
                             {
-                                "description": "Change rcmd to hyperkey.",
+                                "description": "Change rcmd to command+control+option+shift.",
                                 "from": {
                                     "key_code": "right_command",
                                     "modifiers": { "optional": ["any"] }
