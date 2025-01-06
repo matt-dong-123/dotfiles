@@ -114,6 +114,11 @@ brew install --cask jordanbaird-ice
 brew install --cask tor-browser
 brew install --cask arc
 brew install --cask musescore
+brew install --cask slimhud
+brew install --cask clash-verge-rev
+brew install --cask sf-symbols
+brew install --cask yellowdot
+
 ## MacOS system settings
 defaults write NSGlobalDomain _HIHideMenuBar -bool true
 
