@@ -119,6 +119,7 @@ brew install --cask clash-verge-rev
 brew install --cask sf-symbols
 brew install --cask yellowdot
 brew install --cask middleclick
+brew install --cask keyclu
 
 ## MacOS system settings
 defaults write NSGlobalDomain _HIHideMenuBar -bool true
