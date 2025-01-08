@@ -35,4 +35,4 @@ Thanks to @[Sin-cy]("https://www.github.com/Sin-cy") for providing the install.s
 
 You can raise issues if you run into any problems. I'll try as hard as I can!
 
-==Remember, my dotfiles are for myself, so it might not work for you.==
+**Remember, my dotfiles are for myself, so it might not work for you.**
