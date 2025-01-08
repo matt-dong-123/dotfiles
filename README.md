@@ -7,10 +7,8 @@
 - cava
 - fastfetch
 - fish
-- ghostty
 - karabiner
 - nvim (with lazyvim)
-- raycast
 - sketchybar (with sbarlua)
 - thefuck
 - wezterm
@@ -36,3 +34,4 @@
 Thanks to @[Sin-cy]("https://www.github.com/Sin-cy") for providing the install.sh template in his own dotfiles!
 
 You can raise issues if you run into any problems. I'll try as hard as I can!
+==Remember, my dotfiles are for myself, so it might not work for you.==
