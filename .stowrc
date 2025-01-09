@@ -4,4 +4,5 @@
 
 --ignore .DS_Store
 --ignore README.*
+--ignore install.sh
 
