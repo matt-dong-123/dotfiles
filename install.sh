@@ -90,7 +90,7 @@ brew install --cask karabiner-elements
 brew install --cask wezterm
 
 # Ask the user whether they want to install extra casks
-read -pr "Do you want to install extras? [Y/n] " answer
+read -p "Do you want to install extras? [Y/n] " answer
 if [ "$answer" != "N" ] && [ "$answer" != "n" ]; then
     echo "Installing Extras... (Press C-c to cancel installing any of the extras you don't want)"
     brew install --cask airbattery
@@ -113,7 +113,7 @@ if [ "$answer" != "N" ] && [ "$answer" != "n" ]; then
     brew install --cask yellowdot
 fi
 
-read -pr "Choose a browser to install: (NONE/arc/zen)" browser
+read -p "Choose a browser to install: (NONE/arc/zen)" browser
 if [ "$browser" = "arc" ]; then
     echo "Installing Arc..."
     brew install --cask arc
@@ -122,13 +122,13 @@ elif [ "$browser" = "zen" ]; then
     brew install --cask zen-browser
 fi
 
-read -pr "Do you want to install Tor? (y/N)" install_tor
+read -p "Do you want to install Tor? (y/N)" install_tor
 if [ "$install_tor" = "Y" ] || [ "$install_tor" = "y" ]; then
     echo "Installing Tor..."
     brew install --cask tor-browser
 fi
 
-read -pr "Do you want to install additional fonts and symbols? (Y/n) " add_fonts
+read -p "Do you want to install additional fonts and symbols? (Y/n) " add_fonts
 if [ "$add_fonts" != "N" ] && [ "$add_fonts" != "n" ]; then
     echo "Installing additional fonts... (Press C-c to cancel installing any of the fonts you don't want)"
     brew install --cask font-jetbrains-mono-nerd-font
@@ -136,19 +136,19 @@ if [ "$add_fonts" != "N" ] && [ "$add_fonts" != "n" ]; then
     brew install --cask sf-symbols
 fi
 
-read -pr "Do you have external displays? (y/N)" has_external_displays
+read -p "Do you have external displays? (y/N)" has_external_displays
 if [ "$has_external_displays" = "Y" ] || [ "$has_external_displays" = "y" ]; then
     echo "Installing BetterDisplay..."
     brew install --cask betterdisplay
 fi
 
-read -pr "Do you have external mice? (y/N)" has_external_mice
+read -p "Do you have external mice? (y/N)" has_external_mice
 if [ "$has_external_mice" = "Y" ] || [ "$has_external_mice" = "y" ]; then
     echo "Installing LinearMouse..."
     brew install --cask linearmouse
 fi
 
-read -pr "The following apps are not at all necessary. Still install? (y/N)" really
+read -p "The following apps are not at all necessary. Still install? (y/N)" really
 if [ "$really" = "Y" ] || [ "$really" = "y" ]; then
     echo "Installing... (Press C-c to cancel installing any of those apps)"
     brew install --cask clash-verge-rev
@@ -180,6 +180,7 @@ stow --ignore .git
 stow --ignore .gitignore
 stow --ignore .gitmodules
 stow --ignore README.*
+stow --ignore install.sh
 stow -t ~ .
 
 echo "Setup complete!"
