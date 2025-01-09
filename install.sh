@@ -122,6 +122,7 @@ brew install --cask middleclick
 brew install --cask keyclu
 
 ## MacOS system settings
+echo "Writing MacOS system settings..."
 defaults write NSGlobalDomain _HIHideMenuBar -bool true
 
 echo "Installation complete..."
