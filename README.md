@@ -1,6 +1,6 @@
 # matt-dong-123's AWESOME dotfiles for MacOS
 
-## Things you'll see
+## Things you'll see in the repo
 
 - aerospace
 - btop
@@ -15,6 +15,45 @@
 - wezterm
 - yazi
 - zshrc
+
+## Things in the install script not in the repo
+
+- AirBattery
+- AppDimmer
+- Background Music
+- DockDoor
+- f.lux
+- IINA
+- Ice
+- KeyCastr
+- KeyClu
+- KeyboardHolder
+- Latest
+- MiddleClick
+- Obsidian
+- Raycast
+- SlimHUD
+- Tencent Lemon
+- VSCode
+- YellowDot
+- _Optional:_
+  - Arc or Zen
+  - Tor
+  - JB Mono Nerd Font
+  - SF Pro
+  - SF Symbols
+  - BetterDisplay
+  - LinearMouse
+  - Clash Verge
+  - MuseScore
+  - QQMusic
+  - WeChat
+  - WPS Office
+
+## Things NOT in this repo that I have
+
+- Batfi (No homebrew package)
+- BoringNotch (No homebrew package)
 
 ## How to apply settings
 
