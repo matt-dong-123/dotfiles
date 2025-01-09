@@ -18,13 +18,18 @@
 
 ## How to apply settings
 
-### Install through script
+### Install through script (with many bonus applications)
 
-1. Download `install.sh` _INTO YOUR HOME DIRECTORY_.
-2. Run `chmod +x ~/install.sh`
-3. Run `/bin/bash ~/dotfiles/install.sh`
+Run:
 
-### Manual Install
+```
+cd
+curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/main/install.sh
+chmod +x ~/install.sh
+/bin/bash ~/dotfiles/install.sh
+```
+
+### Manual Install (bare, no extras)
 
 1. Install [brew](https://brew.sh)
 2. Install gnu stow (`brew install stow`)
@@ -43,7 +48,7 @@
 3. Choose the file "vimium_c.json" you just installed.
 4. That's it!
 
-Thanks to [Sin-cy]("https://www.github.com/Sin-cy") for providing the install.sh template in his own dotfiles!
+Thanks to [Sin-cy]("https://www.github.com/Sin-cy/") for providing the install.sh template in his own dotfiles!
 
 You can raise issues if you run into any problems. I'll try as hard as I can!
 
