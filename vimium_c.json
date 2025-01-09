@@ -1,0 +1,53 @@
+{
+	"name": "Vimium C",
+	"@time": "1/9/2025, 7:54:46 PM",
+	"time": 1736423686768,
+	"environment": {
+		"extension": "1.99.997",
+		"platform": "mac",
+		"firefox": 133
+	},
+	"exclusionRules": [
+		{
+			"passKeys": "",
+			"pattern": ":https://mail.google.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://cstimer.net/"
+		},
+		{
+			"passKeys": "f o ",
+			"pattern": ":https://monkeytype.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://www.cubedesk.io/"
+		},
+		{
+			"passKeys": "",
+			"pattern": "^https?://www\\.cubers\\.io/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://www.youtube.com/"
+		}
+	],
+	"keyLayout": 2,
+	"keyMappings": [
+		"#!no-check",
+		"map gr closeTabsOnRight",
+		"map gl closeTabsOnLeft",
+		"map gx closeOtherTabs",
+		"map F LinkHints.activateOpenInNewForegroundTab",
+		""
+	],
+	"userDefinedCss": [
+		".LH, .D>.LH { background: turquoise; }",
+		".LH { border: /*!DPI*/ 3px solid cyan; }",
+		"/* #omni */",
+		".s { background-color: #d8e3f3; }",
+		""
+	],
+	"vimSync": true
+}
