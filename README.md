@@ -18,18 +18,20 @@
 
 ## How to apply settings
 
-### Install through script (with many bonus applications)
+<details><summary>The easy way (with extra <i>FREE</i> apps!)</summary>
 
 Run:
 
-```
+```sh
 cd
 curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/main/install.sh
 chmod +x ~/install.sh
 /bin/bash ~/dotfiles/install.sh
 ```
 
-### Manual Install (bare, no extras)
+</details>
+
+<details><summary>The hard way (with no extras)</summary>
 
 1. Install [brew](https://brew.sh)
 2. Install gnu stow (`brew install stow`)
@@ -37,9 +39,11 @@ chmod +x ~/install.sh
 4. Clone this repo (`git clone https://github.com/matt-dong-123/dotfiles.git`)
 5. Run `stow .` in the dotfiles directory
 
-### Post-Install
+</details>
 
-#### Vimium-c
+## Post-Install
+
+### Vimium-c
 
 1. Install the vimium-c browser extension
    - For Chromium-based browsers, go [here](https://chromewebstore.google.com/detail/vimium-c-%E5%85%A8%E9%94%AE%E7%9B%98%E6%93%8D%E4%BD%9C%E6%B5%8F%E8%A7%88%E5%99%A8/hfjbmagddngcpeloejdejnfgbamkjaeg)
