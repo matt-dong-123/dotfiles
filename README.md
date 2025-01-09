@@ -1,4 +1,4 @@
-# matt-dong-123's AWESOME dotfiles for MacOS
+# This is no longer a dotfiles repo. This is heaven
 
 ## Things you'll see in the repo
 
