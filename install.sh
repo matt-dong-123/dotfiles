@@ -85,41 +85,70 @@ brew install sqlite
 ## Casks (you'll have to configure them yourselves)
 # wait till i learn nix :)
 echo "Installing Brew Casks..."
-brew install --cask raycast
+brew install --cask aerospace
 brew install --cask karabiner-elements
 brew install --cask wezterm
-brew install --cask aerospace
-brew install --cask keycastr
-brew install --cask betterdisplay # for people with multiple displays
-brew install --cask linearmouse   # for people with mice
-brew install --cask font-jetbrains-mono-nerd-font
-brew install --cask font-sf-pro
-brew install --cask zen-browser
-brew install --cask qqmusic
-brew install --cask background-music
-brew install --cask appdimmer
-brew install --cask keyboardholder
-brew install --cask tencent-lemon
-brew install --cask dockdoor
-brew install --cask obsidian
-brew install --cask visual-studio-code
-brew install --cask latest
-brew install --cask iina
-brew install --cask airbattery
-brew install --cask wechat
-brew install --cask keycastr
-brew install --cask flux
-brew install --cask wpsoffice
-brew install --cask jordanbaird-ice
-brew install --cask tor-browser
-brew install --cask arc
-brew install --cask musescore
-brew install --cask slimhud
-brew install --cask clash-verge-rev
-brew install --cask sf-symbols
-brew install --cask yellowdot
-brew install --cask middleclick
-brew install --cask keyclu
+
+# Ask the user whether they want to install extra casks
+read -pr "Do you want to install extras? [Y/n] " answer
+if [ "$answer" != "N" ] && [ "$answer" != "n" ]; then
+    brew install --cask airbattery
+    brew install --cask appdimmer
+    brew install --cask background-music
+    brew install --cask dockdoor
+    brew install --cask flux
+    brew install --cask iina
+    brew install --cask jordanbaird-ice
+    brew install --cask keycastr
+    brew install --cask keyclu
+    brew install --cask keyboardholder
+    brew install --cask latest
+    brew install --cask middleclick
+    brew install --cask obsidian
+    brew install --cask raycast
+    brew install --cask slimhud
+    brew install --cask tencent-lemon
+    brew install --cask visual-studio-code
+    brew install --cask yellowdot
+fi
+
+read -pr "Choose a browser to install: (NONE/arc/zen)" browser
+if [ "$browser" = "arc" ]; then
+    brew install --cask arc
+elif [ "$browser" = "zen" ]; then
+    brew install --cask zen-browser
+fi
+
+read -pr "Do you want to install Tor? (y/N)" install_tor
+if [ "$install_tor" = "Y" ] || [ "$install_tor" = "y" ]; then
+    brew install --cask tor-browser
+fi
+
+read -pr "Do you want to install additional fonts and symbols? (Y/n) " add_fonts
+if [ "$add_fonts" != "N" ] && [ "$add_fonts" != "n" ]; then
+    brew install --cask font-jetbrains-mono-nerd-font
+    brew install --cask font-sf-pro
+    brew install --cask sf-symbols
+fi
+
+read -pr "Do you have external displays? (y/N)" has_external_displays
+if [ "$has_external_displays" = "Y" ] || [ "$has_external_displays" = "y" ]; then
+    brew install --cask betterdisplay
+fi
+
+read -pr "Do you have external mice? (y/N)" has_external_mice
+if [ "$has_external_mice" = "Y" ] || [ "$has_external_mice" = "y" ]; then
+    brew install --cask linearmouse
+fi
+
+read -pr "The following apps are not at all necessary. Still install? (y/N)" really
+if [ "$really" = "Y" ] || [ "$really" = "y" ]; then
+    brew install --cask clash-verge-rev
+    brew install --cask musescore
+    brew install --cask qqmusic
+    brew install --cask wechat
+    brew install --cask wpsoffice
+fi
 
 ## MacOS system settings
 echo "Writing MacOS system settings..."
@@ -145,4 +174,4 @@ stow --ignore .gitmodules
 stow --ignore README.*
 stow -t ~ .
 
-echo "Dotfiles setup complete!"
+echo "Setup complete!"
