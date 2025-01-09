@@ -16,7 +16,7 @@
 - yazi
 - zshrc
 
-## Things in the install script not in the repo
+## Things in the install script but not in the repo
 
 - AirBattery
 - AppDimmer
