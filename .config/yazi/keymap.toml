@@ -259,6 +259,12 @@ keymap = [
     # Help
     { on = "~", run = "help", desc = "Open help" },
     { on = "<F1>", run = "help", desc = "Open help" },
+
+    # Open macos quick look
+    { on = "<C-o>", run = '''
+        shell 'qlmanage -p "$@"'
+    ''', desc = "Open preview for macos" },
+
 ]
 
 [tasks]
