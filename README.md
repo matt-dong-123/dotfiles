@@ -48,7 +48,7 @@ chmod +x ~/install.sh
 3. Choose the file "vimium_c.json" you just installed.
 4. That's it!
 
-Thanks to [Sin-cy](https://www.github.com/Sin-cy/) for providing the install.sh template in his own dotfiles!
+Thanks to @[Sin-cy](https://www.github.com/Sin-cy/) for providing the install.sh template in his own dotfiles!
 
 You can raise issues if you run into any problems. I'll try as hard as I can!
 
