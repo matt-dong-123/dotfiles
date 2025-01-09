@@ -179,7 +179,8 @@ stow --ignore .DS_Store
 stow --ignore .git
 stow --ignore .gitignore
 stow --ignore .gitmodules
-stow --ignore README.*
+stow --ignore README.md
+stow --ignore README.linkscape
 stow --ignore install.sh
 stow -t ~ .
 
