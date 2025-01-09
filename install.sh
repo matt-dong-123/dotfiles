@@ -27,7 +27,7 @@ echo "Installing Brew..."
 brew analytics off
 
 ## Taps
-echo "Tapping Brew..."
+echo "Tapping Brew... (Press C-c to cancel any of the taps you don't want)"
 brew tap homebrew/services
 brew tap nikitabobko/tap
 brew tap dimentium/autoraise
@@ -35,7 +35,7 @@ brew tap FelixKratz/formulae
 brew tap lihaoyun6/tap
 
 ## Formulae
-echo "Installing Brew Formulae..."
+echo "Installing Brew Formulae... (Press C-c to cancel installing any of the formulae you don't want"
 ### Must Have things
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
@@ -84,7 +84,7 @@ brew install sqlite
 
 ## Casks (you'll have to configure them yourselves)
 # wait till i learn nix :)
-echo "Installing Brew Casks..."
+echo "Installing Brew Casks... (Press C-c to cancel installing any of the casks you don't want)"
 brew install --cask aerospace
 brew install --cask karabiner-elements
 brew install --cask wezterm
@@ -92,6 +92,7 @@ brew install --cask wezterm
 # Ask the user whether they want to install extra casks
 read -pr "Do you want to install extras? [Y/n] " answer
 if [ "$answer" != "N" ] && [ "$answer" != "n" ]; then
+    echo "Installing Extras... (Press C-c to cancel installing any of the extras you don't want)"
     brew install --cask airbattery
     brew install --cask appdimmer
     brew install --cask background-music
@@ -114,18 +115,22 @@ fi
 
 read -pr "Choose a browser to install: (NONE/arc/zen)" browser
 if [ "$browser" = "arc" ]; then
+    echo "Installing Arc..."
     brew install --cask arc
 elif [ "$browser" = "zen" ]; then
+    echo "Installing Zen..."
     brew install --cask zen-browser
 fi
 
 read -pr "Do you want to install Tor? (y/N)" install_tor
 if [ "$install_tor" = "Y" ] || [ "$install_tor" = "y" ]; then
+    echo "Installing Tor..."
     brew install --cask tor-browser
 fi
 
 read -pr "Do you want to install additional fonts and symbols? (Y/n) " add_fonts
 if [ "$add_fonts" != "N" ] && [ "$add_fonts" != "n" ]; then
+    echo "Installing additional fonts... (Press C-c to cancel installing any of the fonts you don't want)"
     brew install --cask font-jetbrains-mono-nerd-font
     brew install --cask font-sf-pro
     brew install --cask sf-symbols
@@ -133,16 +138,19 @@ fi
 
 read -pr "Do you have external displays? (y/N)" has_external_displays
 if [ "$has_external_displays" = "Y" ] || [ "$has_external_displays" = "y" ]; then
+    echo "Installing BetterDisplay..."
     brew install --cask betterdisplay
 fi
 
 read -pr "Do you have external mice? (y/N)" has_external_mice
 if [ "$has_external_mice" = "Y" ] || [ "$has_external_mice" = "y" ]; then
+    echo "Installing LinearMouse..."
     brew install --cask linearmouse
 fi
 
 read -pr "The following apps are not at all necessary. Still install? (y/N)" really
 if [ "$really" = "Y" ] || [ "$really" = "y" ]; then
+    echo "Installing... (Press C-c to cancel installing any of those apps)"
     brew install --cask clash-verge-rev
     brew install --cask musescore
     brew install --cask qqmusic
