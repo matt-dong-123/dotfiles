@@ -1,6 +1,6 @@
-# This is no longer a dotfiles repo. This is heaven
+# This is no longer just a dotfiles repo
 
-## Things you'll see in the repo
+## Things you'll see in here
 
 - aerospace
 - btop
@@ -50,10 +50,10 @@
   - WeChat
   - WPS Office
 
-## Things NOT in this repo that I have
+## Things NOT in here that I have
 
-- Batfi (No homebrew package)
-- BoringNotch (No homebrew package)
+- [Batfi](https://github.com/rurza/BatFi) (No homebrew package)
+- [BoringNotch](https://github.com/TheBoredTeam/boring.notch) (No homebrew package)
 
 ## How to apply settings
 
