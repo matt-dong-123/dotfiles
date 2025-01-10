@@ -194,11 +194,11 @@ if.app-id = "com.github.wez.wezterm"
 run = "move-node-to-workspace coding"
 
 [[on-window-detected]]
-if.app-id = "com.jetbrains.intellij.ce"
+if.app-id = "org.gnu.Emacs"
 run = "move-node-to-workspace coding"
 
 [[on-window-detected]]
-if.app-id = "com.jetbrains.rustrover"
+if.app-id = "com.neovide.Neovide"
 run = "move-node-to-workspace coding"
 
 [[on-window-detected]]
