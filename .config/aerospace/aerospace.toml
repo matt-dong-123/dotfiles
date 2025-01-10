@@ -174,16 +174,12 @@ if.app-id = "company.thebrowser.Browser"
 run = "move-node-to-workspace browser"
 
 [[on-window-detected]]
-if.app-id = "org.mozilla.com.zen.browser"
+if.app-id = "app.zen-browser.zen"
 run = "move-node-to-workspace browser"
 
 [[on-window-detected]]
 if.app-id = "com.sigmaos.sigmaos.macos"
 run = "move-node-to-workspace browser"
-
-[[on-window-detected]]
-if.app-id = "com.mitchellh.ghostty"
-run = "move-node-to-workspace coding"
 
 [[on-window-detected]]
 if.app-id = "com.microsoft.VSCode"
