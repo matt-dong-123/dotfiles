@@ -54,10 +54,11 @@ brew install sketchybar
 brew install thefuck
 brew install yazi
 brew install neovim
-
-### Terminal
+brew isntall zellij
 brew install git
 brew install lazygit
+
+### Terminal
 brew install tree-sitter
 brew install tree
 brew install borders
