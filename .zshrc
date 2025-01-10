@@ -217,4 +217,8 @@ function v() {
     nvim
 }
 
+function ldock() {
+    lazydocker
+}
+
 eval "$(zellij setup --generate-auto-start zsh)"
