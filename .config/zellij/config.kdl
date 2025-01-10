@@ -269,7 +269,7 @@ simplified_ui false
 
 theme "tokyo-night-dark"
 
-default_mode "normal"
+default_mode "locked"
  
 default_layout "default"
  
