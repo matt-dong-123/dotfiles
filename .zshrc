@@ -218,3 +218,4 @@ function v() {
 }
 
 eval "$(zellij setup --generate-auto-start zsh)"
+eval "$(colima start)"
