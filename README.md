@@ -14,6 +14,7 @@
 - vimium-c (_Browser Extension!_)
 - wezterm
 - yazi
+- zellij
 - zshrc
 
 ## Things in the install script but not in the repo
