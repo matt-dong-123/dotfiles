@@ -217,3 +217,4 @@ function v() {
     nvim
 }
 
+eval "$(zellij setup --generate-auto-start zsh)"
