@@ -182,6 +182,10 @@ if.app-id = "com.sigmaos.sigmaos.macos"
 run = "move-node-to-workspace browser"
 
 [[on-window-detected]]
+if.app-id = "org.eyebeam.SelfControl"
+run = "move-node-to-workspace browser"
+
+[[on-window-detected]]
 if.app-id = "com.microsoft.VSCode"
 run = "move-node-to-workspace coding"
 
@@ -219,4 +223,8 @@ run = "move-node-to-workspace work"
 
 [[on-window-detected]]
 if.app-id = "com.apple.finder"
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = "com.max-langer.Latest"
 run = "layout floating"
