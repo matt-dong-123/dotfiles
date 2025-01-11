@@ -221,4 +221,11 @@ function ldock() {
     lazydocker
 }
 
+function vv() {
+  select config in nvim lazyvim
+  do
+    NVIM_APPNAME=$config nvim $@
+    break
+  done
+}
 eval "$(zellij setup --generate-auto-start zsh)"
