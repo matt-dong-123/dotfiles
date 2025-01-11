@@ -173,7 +173,7 @@ require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'tpope/vim-commentary',
   'tpope/vim-fugitive',
-  'karb94/neoscroll.nvim',
+  { 'sphamba/smear-cursor.nvim', opts = {} },
   'HiPhish/rainbow-delimiters.nvim',
   'tpope/vim-surround',
   'tribela/vim-transparent',
@@ -247,6 +247,7 @@ require('lazy').setup({
   {
     'folke/snacks.nvim',
     opts = {
+      bigfile = { enabled = true },
       dashboard = {
         sections = {
           {
@@ -299,6 +300,13 @@ require('lazy').setup({
   ███╗ ██╗███████╗ ██████╗ ██╗ ██╗██╗███╗ ███╗ ████╗ ██║██╔════╝██╔═══██╗██║ ██║██║████╗ ████║ ██╔██╗ ██║█████╗ ██║ ██║██║ ██║██║██╔████╔██║ ██║╚██╗██║██╔══╝ ██║ ██║╚██╗ ██╔╝██║██║╚██╔╝██║ ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║ ╚═╝ ╚═══╝╚══════╝ ╚═════╝ ╚═══╝ ╚═╝╚═╝ ╚═╝
   ]],
       },
+      indent = { enabled = true },
+      input = { enabled = true },
+      notifier = { enabled = true, timeout = 3000 },
+      quickfile = { enabled = true },
+      scroll = { enabled = true },
+      statuscolumn = { enabled = true },
+      words = { enabled = true },
     },
   },
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
