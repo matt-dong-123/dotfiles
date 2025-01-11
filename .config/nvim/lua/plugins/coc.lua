@@ -1,3 +1,0 @@
-return {
-    -- "neoclide/coc.nvim"
-}
