@@ -129,7 +129,7 @@ if [ "$install_tor" = "Y" ] || [ "$install_tor" = "y" ]; then
     brew install --cask tor-browser
 fi
 
-read -p "Do you want to install additional fonts and symbols? (Y/n) " add_fonts
+read -p "Do you want to install additional fonts and symbols? (Used in my configuration) (Y/n) " add_fonts
 if [ "$add_fonts" != "N" ] && [ "$add_fonts" != "n" ]; then
     echo "Installing additional fonts... (Press C-c to cancel installing any of the fonts you don't want)"
     brew install --cask font-jetbrains-mono-nerd-font
