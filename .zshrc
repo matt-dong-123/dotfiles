@@ -228,4 +228,8 @@ function vv() {
     break
   done
 }
+
+function lv() {
+  NVIM_APPNAME=lazyvim nvim $@
+}
 eval "$(zellij setup --generate-auto-start zsh)"
