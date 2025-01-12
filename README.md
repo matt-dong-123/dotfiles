@@ -33,6 +33,7 @@
 - MiddleClick
 - Obsidian
 - Raycast
+- Self Control
 - SlimHUD
 - Tencent Lemon
 - VSCode
@@ -50,6 +51,7 @@
   - QQMusic
   - WeChat
   - WPS Office
+  - Zoom
 
 ## Things NOT in here that I have
 
