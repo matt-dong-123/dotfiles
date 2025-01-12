@@ -222,7 +222,7 @@ function ldock() {
 }
 
 function vv() {
-  select config in nvim lazyvim
+  select config in nvim lazyvim nvchad
   do
     NVIM_APPNAME=$config nvim $@
     break
