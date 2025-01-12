@@ -108,6 +108,7 @@ if [ "$answer" != "N" ] && [ "$answer" != "n" ]; then
     brew install --cask middleclick
     brew install --cask obsidian
     brew install --cask raycast
+    brew install --cask self-control
     brew install --cask slimhud
     brew install --cask tencent-lemon
     brew install --cask visual-studio-code
@@ -157,6 +158,7 @@ if [ "$really" = "Y" ] || [ "$really" = "y" ]; then
     brew install --cask qqmusic
     brew install --cask wechat
     brew install --cask wpsoffice
+    brew install --cask zoom
 fi
 
 ## MacOS system settings
