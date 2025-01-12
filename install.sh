@@ -150,7 +150,7 @@ if [ "$has_external_mice" = "Y" ] || [ "$has_external_mice" = "y" ]; then
     brew install --cask linearmouse
 fi
 
-read -p "The following apps are not at all necessary. Still install? (y/N) " really
+read -p "The following apps are not at all necessary, and for myself only. Still install? (y/N) " really
 if [ "$really" = "Y" ] || [ "$really" = "y" ]; then
     echo "Installing... (Press C-c to cancel installing any of those apps)"
     brew install --cask clash-verge-rev
