@@ -290,7 +290,7 @@ copy_on_select true
  
 scrollback_editor "$EDITOR"
  
-session_name "New zellij session"
+session_name "New"
  
 attach_to_session true
  
