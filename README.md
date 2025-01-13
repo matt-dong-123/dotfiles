@@ -6,7 +6,6 @@
 - btop
 - cava
 - fastfetch
-- fish
 - karabiner
 - nvim (with lazyvim)
 - sketchybar (with sbarlua)
