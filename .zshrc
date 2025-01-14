@@ -196,7 +196,7 @@ export XDG_CONFIG_HOME="${HOME}/.config"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Yazi setup
-function y() {
+y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
 	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
@@ -205,23 +205,23 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-function lg() {
+lg() {
     lazygit
 }
 
-function f() {
+f() {
     fastfetch
 }
 
-function v() {
+v() {
     nvim
 }
 
-function ldock() {
+ldock() {
     lazydocker
 }
 
-function vv() {
+vv() {
   select config in nvim lazyvim nvchad
   do
     NVIM_APPNAME=$config nvim $@
@@ -229,7 +229,8 @@ function vv() {
   done
 }
 
-function lv() {
+lv() {
   NVIM_APPNAME=lazyvim nvim $@
 }
+
 eval "$(zellij setup --generate-auto-start zsh)"
