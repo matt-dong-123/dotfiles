@@ -230,10 +230,6 @@ vv() {
     done
 }
 
-lv() {
-    NVIM_APPNAME=lazyvim nvim $@
-}
-
 if [ -z "$ZELLIJ" ] && [ -z "$ZELLIJ_SESSION_NAME" ]; then
     zellij
 fi
