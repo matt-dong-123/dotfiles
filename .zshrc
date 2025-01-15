@@ -184,7 +184,8 @@ alias cd="z"
 # Created by `pipx` on 2024-10-05 11:38:34
 export PATH="$PATH:/Users/bulus-computer/.local/bin"
 
-___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
+# Move wezterm config directory
+export WEZTERM_CONFIG_DIR="${HOME}/.config/wezterm"
 
 # set shell default editor to be nvim
 export EDITOR=nvim
