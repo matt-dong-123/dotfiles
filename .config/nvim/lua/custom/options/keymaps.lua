@@ -19,8 +19,8 @@ keymapset('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic
 keymapset('n', '<leader>rn', ':IncRename ')
 
 -- create panes
-keymapset('n', '<leader>sv', '<C-w>v')
-keymapset('n', '<leader>sh', '<C-w>s')
+keymapset('n', '<leader>sl', '<C-w>v')
+keymapset('n', '<leader>sj', '<C-w>s')
 
 -- move focus
 keymapset('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
