@@ -197,12 +197,12 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Yazi setup
 y() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-	yazi "$@" --cwd-file="$tmp"
-	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		builtin cd -- "$cwd"
-	fi
-	rm -f -- "$tmp"
+    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+    yazi "$@" --cwd-file="$tmp"
+    if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+    	builtin cd -- "$cwd"
+    fi
+    rm -f -- "$tmp"
 }
 
 lg() {
@@ -222,15 +222,17 @@ ldock() {
 }
 
 vv() {
-  select config in nvim lazyvim nvchad
-  do
-    NVIM_APPNAME=$config nvim $@
-    break
-  done
+    select config in nvim lazyvim nvchad
+    do
+        NVIM_APPNAME=$config nvim $@
+        break
+    done
 }
 
 lv() {
-  NVIM_APPNAME=lazyvim nvim $@
+    NVIM_APPNAME=lazyvim nvim $@
 }
 
-eval "$(zellij setup --generate-auto-start zsh)"
+if [ -z "$ZELLIJ" ] && [ -z "$ZELLIJ_SESSION_NAME" ]; then
+    zellij
+fi
