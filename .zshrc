@@ -223,7 +223,7 @@ ldock() {
 }
 
 vv() {
-    select config in nvim lazyvim nvchad
+    select config in nvim lazyvim nvchad astrovim
     do
         NVIM_APPNAME=$config nvim $@
         break
