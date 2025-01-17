@@ -182,7 +182,7 @@ eval "$(zoxide init zsh)"
 
 alias cd="z"
 # Created by `pipx` on 2024-10-05 11:38:34
-export PATH="$PATH:/Users/bulus-computer/.local/bin"
+export PATH="$PATH:${HOME}/.local/bin"
 
 # Move wezterm config directory
 export WEZTERM_CONFIG_DIR="${HOME}/.config/wezterm"
