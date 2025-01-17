@@ -16,10 +16,11 @@ fi
 echo "Installing oh-my-zsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ## install zsh-autosuggestions
-# git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 ## install zsh-syntax-highlighting
-# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+## install powerlevel10k
+git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
 # Homebrew
 ## Install
 echo "Installing Brew..."
@@ -37,8 +38,6 @@ brew tap lihaoyun6/tap
 ## Formulae
 echo "Installing Brew Formulae... (Press C-c to cancel installing any of the formulae you don't want"
 ### Must Have things
-brew install zsh-autosuggestions
-brew install zsh-syntax-highlighting
 brew install stow
 brew install fzf
 brew install bat
