@@ -99,16 +99,17 @@ chmod +x ~/install.sh
 
 <details><summary><b>Enabling textfox</b></summary>
 
-0. You had to choose to install firefox
-    - If you didn't, run `brew install --cask firefox`
+> [!IMPORTANT]
+> This is only for Firefox users!
 
 1. Go to about:profiles in firefox, and copy the "Root Directory" path of the profile you want to use
 2. Run `tf-install.sh` in the ~/dotfiles/textfox
 3. Paste the path you copied in step 1 into the script
 4. You should be good to go!
 
-**NOTE:** Installing the sidebery extension is recommended, but not required.
-          There is also a default config that goes along textfox nicely.
+> [!NOTE]
+> Installing the sidebery extension is recommended, but not required.
+> There is also a default config that goes along textfox nicely.
 
 </details>
 
