@@ -7,6 +7,7 @@
 - cava
 - fastfetch
 - karabiner
+- My Wallpaper (_Optional_)
 - nvim (with lazyvim)
 - sketchybar (with sbarlua)
 - thefuck

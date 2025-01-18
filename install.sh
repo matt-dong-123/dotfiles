@@ -186,4 +186,9 @@ stow --ignore README.linkscape
 stow --ignore install.sh
 stow -t ~ .
 
+read -p "Set my wallpaper? (Y/n) " set_wallpaper
+if [ "$set_wallpaper" != "N" ] && [ "$set_wallpaper" != "n" ]; then
+    osascript -e 'tell application "Finder" to set desktop picture to POSIX file "~/wallpapers/wallpaper.png"'
+fi
+
 echo "Setup complete!"
