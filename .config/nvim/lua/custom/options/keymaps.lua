@@ -30,6 +30,9 @@ keymapset('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' 
 keymapset('n', '<leader>bh', '<cmd>:bprev<CR>', { desc = 'Move to previous buffer' })
 keymapset('n', '<leader>bl', '<cmd>:bnext<CR>', { desc = 'Move to next buffer' })
 
+-- center cursor when scrolling
+keymapset('n', '<C-u>', '<C-u>zz')
+keymapset('n', '<C-d>', '<C-d>zz')
 -- NOTE: TERMINAL MODE REMAPS
 
 -- Exit terminal mode
