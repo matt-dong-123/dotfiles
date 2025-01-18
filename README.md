@@ -10,6 +10,7 @@
 - My Wallpaper (_Optional_)
 - nvim (with lazyvim)
 - sketchybar (with sbarlua)
+- textfox (_Firefox Only!_)
 - thefuck
 - vimium-c (_Browser Extension!_)
 - wezterm
@@ -39,7 +40,7 @@
 - VSCode
 - YellowDot
 - _Optional:_
-  - Arc or Zen
+  - Arc/Zen/Firefox
   - Tor
   - JB Mono Nerd Font
   - SF Pro
@@ -93,6 +94,21 @@ chmod +x ~/install.sh
 2. In the preferences for the extension, click "Import Settings"
 3. Choose the file "vimium_c.json" you just installed.
 4. That's it!
+
+</details>
+
+<details><summary><b>Enabling textfox</b></summary>
+
+0. You had to choose to install firefox
+    - If you didn't, run `brew install --cask firefox`
+
+1. Go to about:profiles in firefox, and copy the "Root Directory" path of the profile you want to use
+2. Run `tf-install.sh` in the ~/dotfiles/textfox
+3. Paste the path you copied in step 1 into the script
+4. You should be good to go!
+
+**NOTE:** Installing the sidebery extension is recommended, but not required.
+          There is also a default config that goes along textfox nicely.
 
 </details>
 

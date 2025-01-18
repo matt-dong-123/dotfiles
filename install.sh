@@ -114,13 +114,16 @@ if [ "$answer" != "N" ] && [ "$answer" != "n" ]; then
     brew install --cask yellowdot
 fi
 
-read -p "Choose a browser to install: (NONE/arc/zen) " browser
+read -p "Choose a browser to install: (NONE/arc/zen/firefox) " browser
 if [ "$browser" = "arc" ]; then
     echo "Installing Arc..."
     brew install --cask arc
 elif [ "$browser" = "zen" ]; then
     echo "Installing Zen..."
     brew install --cask zen-browser
+elif [ "$browser" = "firefox" ]; then
+    echo "Installing Firefox..."
+    brew install --cask firefox
 fi
 
 read -p "Do you want to install Tor? (y/N) " install_tor
