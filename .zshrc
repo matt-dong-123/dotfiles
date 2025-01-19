@@ -81,7 +81,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search vi-mode)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search vi-mode fzf-tab)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -142,12 +142,12 @@ _fzf_compgen_dir() {
 }
 
 # --- setup fzf theme ---
-fg="#CBE0F0"
-bg="#011628"
-bg_highlight="#143652"
-purple="#B388FF"
-blue="#06BCE4"
-cyan="#2CF9ED"
+fg="#c0caf5"
+bg="#1b1e2d"
+bg_highlight="#292e42"
+purple="#bb9af7"
+blue="#2ac3de"
+cyan="#73daca"
 
 export FZF_DEFAULT_OPTS="--color=fg:${fg},bg:${bg},hl:${purple},fg+:${fg},bg+:${bg_highlight},hl+:${purple},info:${blue},prompt:${cyan},pointer:${cyan},marker:${cyan},spinner:${cyan},header:${cyan}"
 show_file_or_dir_preview="if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi"
@@ -228,6 +228,10 @@ vv() {
         NVIM_APPNAME=$config nvim $@
         break
     done
+}
+
+ff() {
+    fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'
 }
 
 if [ -z "$ZELLIJ" ] && [ -z "$ZELLIJ_SESSION_NAME" ]; then
