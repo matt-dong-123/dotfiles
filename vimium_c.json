@@ -40,6 +40,8 @@
 		"map gl closeTabsOnLeft",
 		"map gx closeOtherTabs",
 		"map F LinkHints.activateOpenInNewForegroundTab",
+		"map J nextTab",
+		"map K previousTab",
 		""
 	],
 	"userDefinedCss": [
