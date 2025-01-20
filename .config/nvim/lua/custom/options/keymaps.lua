@@ -1,5 +1,7 @@
 local g = vim.g
 local keymapset = vim.keymap.set
+local expr = { silent = true, expr = true, remap = false }
+
 -- set leader key
 g.mapleader = ' '
 g.maplocalleader = ' '
@@ -33,10 +35,15 @@ keymapset('n', '<leader>bl', '<cmd>:bnext<CR>', { desc = 'Move to next buffer' }
 -- center cursor when scrolling
 keymapset('n', '<C-u>', '<C-u>zz')
 keymapset('n', '<C-d>', '<C-d>zz')
+
+-- visually move between lines
+keymapset('', 'j', "(v:count ? 'j' : 'gj')", expr)
+keymapset('', 'k', "(v:count ? 'k' : 'gk')", expr)
+
 -- NOTE: TERMINAL MODE REMAPS
 
 -- Exit terminal mode
--- NOTE: If this doesn't work, try <C-\><C-n>
+-- WARNING: If this doesn't work, try <C-\><C-n>
 keymapset('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
 -- NOTE: VISUAL MODE REMAPS
