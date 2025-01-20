@@ -211,6 +211,10 @@ if.app-id = "org.musescore.MuseScore"
 run = "move-node-to-workspace music"
 
 [[on-window-detected]]
+if.app-id = "com.steinberg.dorico5"
+run = "move-node-to-workspace music"
+
+[[on-window-detected]]
 if.app-id = "com.tencent.xinWeChat"
 run = "move-node-to-workspace social"
 
