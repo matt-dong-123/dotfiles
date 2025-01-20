@@ -194,4 +194,12 @@ if [ "$set_wallpaper" != "N" ] && [ "$set_wallpaper" != "n" ]; then
     osascript -e 'tell application "Finder" to set desktop picture to POSIX file "~/wallpapers/wallpaper.png"'
 fi
 
+if [ "$browser" == "firefox" ]; then
+    read -p "Use textfox theme? (Y/n) " textfox
+    if [ "$textfox" != "N" ] && [ "$textfox" != "n" ]; then
+        cd textfox || exit
+        chmod +x tf-install.sh
+        ./tf-install.sh
+    fi
+fi
 echo "Setup complete!"
