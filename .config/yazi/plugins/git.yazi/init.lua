@@ -120,19 +120,19 @@ local function setup(st, opts)
 	-- Chosen by ChatGPT fairly, PRs are welcome to adjust them
 	local t = THEME.git or {}
 	local styles = {
-		[6] = t.modified and ui.Style(t.modified) or ui.Style():fg("#ffa500"),
-		[5] = t.added and ui.Style(t.added) or ui.Style():fg("#32cd32"),
-		[4] = t.untracked and ui.Style(t.untracked) or ui.Style():fg("#a9a9a9"),
-		[3] = t.ignored and ui.Style(t.ignored) or ui.Style():fg("#696969"),
-		[2] = t.deleted and ui.Style(t.deleted) or ui.Style():fg("#ff4500"),
-		[1] = t.updated and ui.Style(t.updated) or ui.Style():fg("#1e90ff"),
+		[6] = t.modified and ui.Style(t.modified) or ui.Style():fg("#ff9e64"),
+		[5] = t.added and ui.Style(t.added) or ui.Style():fg("#1abc9c"),
+		[4] = t.untracked and ui.Style(t.untracked) or ui.Style():fg("#a9b1d6"),
+		[3] = t.ignored and ui.Style(t.ignored) or ui.Style():fg("#545c7e"),
+		[2] = t.deleted and ui.Style(t.deleted) or ui.Style():fg("#ff007c"),
+		[1] = t.updated and ui.Style(t.updated) or ui.Style():fg("#0db9d7"),
 	}
 	local signs = {
-		[6] = t.modified_sign and t.modified_sign or "",
-		[5] = t.added_sign and t.added_sign or "",
-		[4] = t.untracked_sign and t.untracked_sign or "",
-		[3] = t.ignored_sign and t.ignored_sign or "",
-		[2] = t.deleted_sign and t.deleted_sign or "",
+		[6] = t.modified_sign and t.modified_sign or "M",
+		[5] = t.added_sign and t.added_sign or "A",
+		[4] = t.untracked_sign and t.untracked_sign or "?",
+		[3] = t.ignored_sign and t.ignored_sign or "I",
+		[2] = t.deleted_sign and t.deleted_sign or "D",
 		[1] = t.updated_sign and t.updated_sign or "U",
 	}
 
@@ -147,9 +147,9 @@ local function setup(st, opts)
 		if not change or signs[change] == "" then
 			return ui.Line("")
 		elseif self._file:is_hovered() then
-			return ui.Line { ui.Span(" "), ui.Span(signs[change]) }
+			return ui.Line({ ui.Span(" "), ui.Span(signs[change]) })
 		else
-			return ui.Line { ui.Span(" "), ui.Span(signs[change]):style(styles[change]) }
+			return ui.Line({ ui.Span(" "), ui.Span(signs[change]):style(styles[change]) })
 		end
 	end, opts.order)
 end
