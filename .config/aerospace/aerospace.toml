@@ -179,6 +179,10 @@ if.app-id = "app.zen-browser.zen"
 run = "move-node-to-workspace browser"
 
 [[on-window-detected]]
+if.app-id = "org.mozilla.firefox"
+run = "move-node-to-workspace browser"
+
+[[on-window-detected]]
 if.app-id = "com.sigmaos.sigmaos.macos"
 run = "move-node-to-workspace browser"
 
