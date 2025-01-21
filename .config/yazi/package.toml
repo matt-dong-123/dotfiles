@@ -1,5 +1,11 @@
 [plugin]
-deps = [{ use = "llanosrocas/yaziline", rev = "864572c" }, { use = "yazi-rs/plugins:smart-enter", rev = "7707c09" }, { use = "yazi-rs/plugins:chmod", rev = "7707c09" }, { use = "yazi-rs/plugins:git", rev = "7707c09" }, { use = "yazi-rs/plugins:jump-to-char", rev = "7707c09" }]
+deps = [
+    { use = "llanosrocas/yaziline", rev = "864572c" },
+    { use = "yazi-rs/plugins:smart-enter", rev = "7707c09" },
+    { use = "yazi-rs/plugins:git", rev = "7707c09" },
+    { use = "yazi-rs/plugins:jump-to-char", rev = "7707c09" },
+    { use = "yazi-rs/plugins:chmod", rev = "7707c09" },
+]
 
 [flavor]
 deps = []
