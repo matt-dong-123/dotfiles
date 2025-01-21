@@ -3,4 +3,8 @@ require("yaziline"):setup({
 	separator_style = "angly",
 })
 
+require("full-border"):setup({
+	type = ui.Border.ROUNDED,
+})
+
 require("git"):setup()
