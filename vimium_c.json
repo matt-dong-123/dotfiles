@@ -1,7 +1,7 @@
 {
 	"name": "Vimium C",
-	"@time": "1/21/2025, 4:23:47 PM",
-	"time": 1737447827254,
+	"@time": "1/21/2025, 9:11:38 PM",
+	"time": 1737465098596,
 	"environment": {
 		"extension": "1.99.997",
 		"platform": "mac",
@@ -27,10 +27,6 @@
 		{
 			"passKeys": "",
 			"pattern": "^https?://www\\.cubers\\.io/"
-		},
-		{
-			"passKeys": "",
-			"pattern": ":https://www.youtube.com/"
 		}
 	],
 	"keyLayout": 2,
