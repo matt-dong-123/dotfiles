@@ -135,9 +135,6 @@ keymap = [
         "n",
     ], run = "copy name_without_ext", desc = "Copy the filename without extension" },
 
-    # Filter
-    { on = "f", run = "filter --smart", desc = "Filter files" },
-
     # Find
     { on = "/", run = "find --smart", desc = "Find next file" },
     { on = "?", run = "find --previous --smart", desc = "Find previous file" },
@@ -265,6 +262,14 @@ keymap = [
         shell 'qlmanage -p "$@"'
     ''', desc = "Open preview for macos" },
 
+    # Chmod
+    { on = [
+        "c",
+        "m",
+    ], run = "plugin chmod", desc = "Chmod on selected files" },
+
+    # vim-style f
+    { on = "f", run = "plugin jump-to-char", desc = "Jump to char" },
 ]
 
 [tasks]
@@ -484,5 +489,5 @@ keymap = [
     { on = "<Down>", run = "arrow 1", desc = "Move cursor down" },
 
     # Filtering
-    { on = "f", run = "filter", desc = "Apply a filter for the help items" },
+    { on = "f", run = "plugin jump-to-char", desc = "Jump to character" },
 ]
