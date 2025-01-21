@@ -137,6 +137,7 @@ if [ "$add_fonts" != "N" ] && [ "$add_fonts" != "n" ]; then
     echo "Installing additional fonts... (Press C-c to cancel installing any of the fonts you don't want)"
     brew install --cask font-jetbrains-mono-nerd-font
     brew install --cask font-sf-pro
+    brew install --cask font-maple-mono-nf
     brew install --cask sf-symbols
 fi
 
