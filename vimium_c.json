@@ -1,11 +1,11 @@
 {
 	"name": "Vimium C",
-	"@time": "1/9/2025, 7:54:46 PM",
-	"time": 1736423686768,
+	"@time": "1/21/2025, 4:23:47 PM",
+	"time": 1737447827254,
 	"environment": {
 		"extension": "1.99.997",
 		"platform": "mac",
-		"firefox": 133
+		"firefox": 134
 	},
 	"exclusionRules": [
 		{
@@ -44,6 +44,7 @@
 		"map K previousTab",
 		""
 	],
+	"searchUrl": "https://search.brave.com/search?q=$s Brave",
 	"userDefinedCss": [
 		".LH, .D>.LH { background: turquoise; }",
 		".LH { border: /*!DPI*/ 3px solid cyan; }",
