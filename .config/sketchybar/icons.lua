@@ -5,7 +5,7 @@ local icons = {
 		browser = "􀆪",
 		terminal = "􀩼",
 		music = "􀑪",
-		social = "􁒃",
+		social = "􀉫",
 		work = "􁂥",
 		plus = "􀅼",
 		loading = "􀖇",
@@ -49,7 +49,10 @@ local icons = {
 	-- Alternative NerdFont icons
 	nerdfont = {
 		browser = "🌐",
-
+		terminal = "Missing Icon",
+		music = "🎵",
+		social = "👥",
+		work = "💼",
 		plus = "",
 		loading = "",
 		apple = "",

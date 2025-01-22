@@ -10,11 +10,22 @@ function parse_string_to_table(s)
 	return result
 end
 
+local spaceConfigs = {
+	["!default"] = { icon = "-", name = "Default" },
+	["browser"] = { icon = icons.browser, name = "Browser" },
+	["coding"] = { icon = icons.terminal, name = "Coding" },
+	["music"] = { icon = icons.music, name = "Music" },
+	["social"] = { icon = icons.social, name = "Social" },
+	["work"] = { icon = icons.work, name = "Work" },
+}
+
 local function highlight_workspace(focused_workspace, workspace, space, space_bracket)
 	local selected = focused_workspace == workspace
+	local spaceConfig = spaceConfigs[workspace]
 	sbar.animate("tanh", 10, function()
 		space:set({
 			icon = {
+				string = selected and spaceConfig.icon .. " " .. spaceConfig.name or spaceConfig.icon,
 				highlight = selected,
 			},
 			label = {
@@ -33,15 +44,19 @@ local function highlight_workspace(focused_workspace, workspace, space, space_br
 end
 
 local file = io.popen("aerospace list-workspaces --all")
-local result = file:read("*a")
-file:close()
+local result = ""
+if file then
+	result = file:read("*a")
+	file:close()
+end
 
 local workspaces = parse_string_to_table(result)
 
 for i, workspace in ipairs(workspaces) do
+	local spaceConfig = spaceConfigs[workspace]
 	local space = sbar.add("item", "space." .. i, {
 		icon = {
-			string = workspace,
+			string = spaceConfig.icon,
 			padding_left = 1,
 			color = colors.white,
 			highlight_color = colors.green,
