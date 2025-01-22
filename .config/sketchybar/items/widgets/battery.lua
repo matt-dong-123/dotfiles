@@ -77,7 +77,7 @@ battery:subscribe({ "routine", "power_source_change", "system_woke" }, function(
 	end)
 end)
 
-battery:subscribe("mouse.clicked", function(env)
+battery:subscribe("mouse.clicked", function()
 	local drawing = battery:query().popup.drawing
 	battery:set({ popup = { drawing = "toggle" } })
 
