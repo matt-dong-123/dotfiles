@@ -30,14 +30,8 @@ read -p "Do you want to install the user.js file? (Y/N): " install_js
 case "$install_js" in
 [Yy]*)
   cp "user.js" "$path/user.js"
-  break
   ;;
-[Nn]*)
-  break
-  ;;
-*)
-  break
-  ;;
+*) ;;
 esac
 
 echo "Installation complete!"
