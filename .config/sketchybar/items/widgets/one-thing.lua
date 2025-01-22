@@ -12,7 +12,7 @@ local one_thing = sbar.add("item", "widgets.one-thing", {
 	},
 })
 
-local one_thing_bracket = sbar.add("bracket", "widgets.one_thing.bracket", {
+sbar.add("bracket", "widgets.one_thing.bracket", {
 	one_thing.name,
 }, {
 	background = { color = colors.bg1 },
