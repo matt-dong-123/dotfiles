@@ -50,6 +50,8 @@ brew install make
 brew install ripgrep
 brew install ffmpeg
 brew install sketchybar
+# installing sbarlua
+(git clone https://github.com/FelixKratz/SbarLua.git /tmp/SbarLua && cd /tmp/SbarLua/ && make install && rm -rf /tmp/SbarLua/)
 brew install thefuck
 brew install yazi
 brew install neovim
