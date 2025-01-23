@@ -1,7 +1,6 @@
 local g = vim.g
 local opt = vim.opt
 
-
 -- set relative line numbers
 opt.number = true
 opt.relativenumber = true
@@ -70,3 +69,7 @@ opt.autoindent = true
 
 -- true colors
 opt.termguicolors = true
+
+-- hide non-printable characters
+opt.conceallevel = 3
+opt.concealcursor = 'niv'
