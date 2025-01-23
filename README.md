@@ -100,7 +100,6 @@ chmod +x ~/install.sh
 <details><summary><b>Enabling textfox</b></summary>
 
 > [!Important]
->
 > This is only for Firefox users!
 
 1. Go to about:profiles in firefox, and copy the "Root Directory" path of the profile you want to use
@@ -109,7 +108,6 @@ chmod +x ~/install.sh
 4. You should be good to go!
 
 > [!Note]
->
 > Installing the sidebery extension is recommended, but not required.
 > There is also a default config that goes along textfox nicely.
 
