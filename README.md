@@ -1,4 +1,4 @@
-# This is no longer just a dotfiles repo
+# my dotfiles
 
 ## Things you'll see in here
 
