@@ -19,23 +19,23 @@
     },
     {
       "type": "cpu",
-      "key": "│ ├",
+      "key": "│ ├ CPU",
       "showPeCoreCount": true,
       "keyColor": "green"
     },
     {
       "type": "gpu",
-      "key": "│ ├󰍛",
+      "key": "│ ├󰍛 GPU",
       "keyColor": "green"
     },
     {
       "type": "memory",
-      "key": "│ ├󰍛",
+      "key": "│ ├󰍛 MEM",
       "keyColor": "green"
     },
     {
       "type": "disk",
-      "key": "└ └",
+      "key": "└ └ DISK",
       "keyColor": "green"
     },
     {
@@ -54,17 +54,17 @@
     },
     {
       "type": "kernel",
-      "key": "│ ├",
+      "key": "│ ├ KERNEL",
       "keyColor": "yellow"
     },
     {
       "type": "packages",
-      "key": "│ ├󰏖",
+      "key": "│ ├󰏖 PM",
       "keyColor": "yellow"
     },
     {
       "type": "shell",
-      "key": "└ └",
+      "key": "└ └ SH",
       "keyColor": "yellow"
     },
     "break",
@@ -75,22 +75,22 @@
     },
     {
       "type": "lm",
-      "key": "│ ├",
+      "key": "│ ├ LM",
       "keyColor": "blue"
     },
     {
       "type": "wm",
-      "key": "│ ├",
+      "key": "│ ├ WM",
       "keyColor": "blue"
     },
     {
       "type": "wmtheme",
-      "key": "│ ├󰉼",
+      "key": "│ ├󰉼 WM theme",
       "keyColor": "blue"
     },
     {
       "type": "gpu",
-      "key": "└ └󰍛",
+      "key": "└ └󰍛 GPU",
       "format": "{3}",
       "keyColor": "blue"
     },
