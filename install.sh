@@ -155,6 +155,12 @@ if [ "$has_external_mice" = "Y" ] || [ "$has_external_mice" = "y" ]; then
     brew install --cask linearmouse
 fi
 
+read -p "Install Emacs? (Y/n)" install_emacs
+if [ "$install_emacs" != "N" ] || [ "$install_emacs" != "n" ]; then
+    echo "Installing Emacs..."
+    brew install emacs
+fi
+
 read -p "The following apps are not at all necessary, and for myself only. Still install? (y/N) " really
 if [ "$really" = "Y" ] || [ "$really" = "y" ]; then
     echo "Installing... (Press C-c to cancel installing any of those apps)"
