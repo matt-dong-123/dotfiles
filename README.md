@@ -99,16 +99,16 @@ chmod +x ~/install.sh
 
 <details><summary><b>Enabling textfox</b></summary>
 
-> [!IMPORTANT]
+> [!Important]
 >
 > This is only for Firefox users!
 
 1. Go to about:profiles in firefox, and copy the "Root Directory" path of the profile you want to use
-2. Run `tf-install.sh` in the ~/dotfiles/textfox
+2. Run `install.sh` in the ~/dotfiles/firefox_config
 3. Paste the path you copied in step 1 into the script
 4. You should be good to go!
 
-> [!NOTE]
+> [!Note]
 >
 > Installing the sidebery extension is recommended, but not required.
 > There is also a default config that goes along textfox nicely.
@@ -117,6 +117,6 @@ chmod +x ~/install.sh
 
 Thanks to @[Sin-cy](https://www.github.com/Sin-cy/) for providing the install.sh template in his own dotfiles!
 
-You can raise issues if you run into any problems. I'll try as hard as I can!
+You can raise issues if you run into any problems and bugs in the install script. I'll try as hard as I can!
 
 **Remember, my dotfiles are for myself, so it might not work for you.**
