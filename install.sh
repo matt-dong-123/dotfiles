@@ -28,7 +28,7 @@ echo "Installing Brew..."
 brew analytics off
 
 ## Taps
-echo "Tapping Brew... (Press C-c to cancel any of the taps you don't want)"
+echo "Tapping Brew..."
 brew tap homebrew/services
 brew tap nikitabobko/tap
 brew tap dimentium/autoraise
@@ -36,7 +36,7 @@ brew tap FelixKratz/formulae
 brew tap lihaoyun6/tap
 
 ## Formulae
-echo "Installing Brew Formulae... (Press C-c to cancel installing any of the formulae you don't want"
+echo "Installing Brew Formulae... (Press C-c to cancel installing any of the formulae you don't want)"
 ### Must Have things
 brew install stow
 brew install fzf
@@ -55,7 +55,7 @@ brew install sketchybar
 brew install thefuck
 brew install yazi
 brew install neovim
-brew isntall zellij
+brew install zellij
 brew install git
 brew install lazygit
 
@@ -109,7 +109,7 @@ if [ "$answer" != "N" ] && [ "$answer" != "n" ]; then
     brew install --cask middleclick
     brew install --cask obsidian
     brew install --cask raycast
-    brew install --cask self-control
+    brew install --cask selfcontrol
     brew install --cask slimhud
     brew install --cask tencent-lemon
     brew install --cask visual-studio-code
@@ -198,11 +198,11 @@ if [ "$set_wallpaper" != "N" ] && [ "$set_wallpaper" != "n" ]; then
 fi
 
 if [ "$browser" == "firefox" ]; then
-    read -p "Use textfox theme? (Y/n) " textfox
+    read -p "Use my firefox config? (Y/n) " textfox
     if [ "$textfox" != "N" ] && [ "$textfox" != "n" ]; then
-        cd textfox || exit
-        chmod +x tf-install.sh
-        ./tf-install.sh
+        cd firefox_config || exit
+        chmod +x install.sh
+        ./install.sh
     fi
 fi
 echo "Setup complete!"
