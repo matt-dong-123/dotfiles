@@ -183,12 +183,18 @@ eval "$(zoxide init zsh)"
 alias cd="z"
 # Created by `pipx` on 2024-10-05 11:38:34
 export PATH="$PATH:${HOME}/.local/bin"
+#
+# Add emacs bin to path
+export PATH="$HOME/.config/emacs/bin:$PATH"
 
 # Move wezterm config directory
 export WEZTERM_CONFIG_DIR="${HOME}/.config/wezterm"
 
 # set shell default editor to be nvim
 export EDITOR=nvim
+
+# set nvim to be default manpager
+export MANPAGER="nvim +Man!"
 
 # set XDG_CONFIG_HOME to ~/.config
 export XDG_CONFIG_HOME="${HOME}/.config"
