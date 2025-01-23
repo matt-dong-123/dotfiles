@@ -5,7 +5,7 @@ local one_thing = sbar.add("item", "widgets.one-thing", {
 	position = "right",
 	icon = { drawing = false },
 	label = {
-		string = "Love cat ❤️🐱", -- change this to anything you want
+		string = "Stay productive! 💪", -- change this to anything you want
 		padding_left = settings.padding,
 		font = { family = settings.font.text },
 		color = colors.default,
