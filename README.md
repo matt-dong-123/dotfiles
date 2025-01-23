@@ -47,6 +47,7 @@
   - SF Symbols
   - BetterDisplay
   - LinearMouse
+  - _DOOM Emacs_
   - Clash Verge
   - MuseScore
   - QQMusic
