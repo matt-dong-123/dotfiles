@@ -52,6 +52,10 @@
 
 ;; Quit emacs without confirmation
 (setq confirm-kill-emacs nil)
+
+;; Don't see markers in org mode
+(setq org-hide-emphasis-markers t)
+
 ;; Background Translucency
 (doom/set-frame-opacity 90)
 
