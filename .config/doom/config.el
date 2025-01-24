@@ -6,8 +6,8 @@
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets. It is optional.
-;; (setq user-full-name "John Doe"
-;;       user-mail-address "john@doe.com")
+(setq user-full-name "Matthew Dong"
+      user-mail-address "bruckheim@proton.me")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
@@ -55,6 +55,13 @@
 
 ;; Don't see markers in org mode
 (setq org-hide-emphasis-markers t)
+
+;; Enable autosave and backup files
+(setq auto-save-default t
+      make-backup-files t)
+
+;; Hide title bar
+(add-to-list 'default-frame-alist '(undecorated . t))
 
 ;; Background Translucency
 (doom/set-frame-opacity 90)
