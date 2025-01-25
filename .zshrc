@@ -3,24 +3,19 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
     source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Auto-start Zellij
-if [[ -x "$(command -v zellij)" ]] && [ -z "$ZELLIJ" ] && [ -z "$ZELLIJ_SESSION_NAME" ]; then
-    zellij attach --create
-fi
-
-# Environment Variables
+# envvars
 export XDG_CONFIG_HOME="${HOME}/.config"
 export EDITOR=nvim
 export MANPAGER="nvim +Man!"
 export WEZTERM_CONFIG_DIR="${HOME}/.config/wezterm"
 export ZSH="$HOME/.oh-my-zsh"
 
-# Path Configuration
+# path
 export PATH="$PATH:${HOME}/.local/bin"
 export PATH="$HOME/.config/emacs/bin:$PATH"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Oh My Zsh Configuration
+# omz
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ENABLE_CORRECTION="true"
 plugins=(
@@ -36,11 +31,10 @@ source $ZSH/oh-my-zsh.sh
 
 # FZF Configuration
 eval "$(fzf --zsh)"
-export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+# export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
+# export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+# export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
 
-# FZF Theme
 fg="#c0caf5"
 bg="#1b1e2d"
 bg_highlight="#292e42"
@@ -97,3 +91,8 @@ vv() {
         break
     done
 }
+
+# Autostart Zellij
+if [[ -z "$ZELLIJ" ]]; then
+    zellij attach --create
+fi
