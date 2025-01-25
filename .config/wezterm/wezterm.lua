@@ -6,7 +6,7 @@ local config = wezterm.config_builder()
 
 -- This is where you actually apply your config choices
 
-config.color_scheme = "Tokyo Night Storm"
+config.color_scheme = "Tokyo Night"
 
 config.font = wezterm.font_with_fallback({ "JetBrainsMono Nerd Font", "Maple Mono NF", "Consolas" })
 config.font_size = 20
