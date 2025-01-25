@@ -8,7 +8,7 @@ local config = wezterm.config_builder()
 
 config.color_scheme = "Tokyo Night"
 
-config.font = wezterm.font_with_fallback({ "JetBrainsMono Nerd Font", "Maple Mono NF", "Consolas" })
+config.font = wezterm.font_with_fallback({ "Maple Mono", "JetBrainsMono Nerd Font", "Consolas" })
 config.font_size = 20
 
 config.enable_tab_bar = false

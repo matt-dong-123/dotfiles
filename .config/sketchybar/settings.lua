@@ -6,8 +6,8 @@ return {
 
 	-- Alternatively, this is a font config for JetBrains Mono
 	font = {
-		text = "JetBrains Mono", -- Used for text
-		numbers = "JetBrains Mono", -- Used for numbers
+		text = "Maple Mono", -- Used for text
+		numbers = "Maple Mono", -- Used for numbers
 		style_map = {
 			["Regular"] = "Regular",
 			["Semibold"] = "Medium",
