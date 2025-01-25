@@ -12,6 +12,7 @@
     content: "tabs";
     color: var(--lwt-text-color);
     background-color: var(--tf-bg);
+    font-size: var(--tf-font-size);
     position: absolute;
     margin: -0.85rem 0.85rem;
     padding: 0 4px;
