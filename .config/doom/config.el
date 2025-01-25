@@ -44,7 +44,7 @@
 
 ;; Change font and font size of Doom Emacs
 (setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 20))
-(setq doom-big-font (font-spec :family "JetBrains Mono Nerd Font" :size 28))
+(setq doom-big-font (font-spec :family "JetBrainsMono Nerd Font" :size 28))
 (setq nerd-icons-font-family "JetBrainsMono Nerd Font")
 
 ;; Relative line numbers
