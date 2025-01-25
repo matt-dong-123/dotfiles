@@ -304,6 +304,6 @@ styled_underlines true
  
 // serialization_interval 10000
  
-disable_session_metadata false
+disable_session_metadata true
  
 support_kitty_keyboard_protocol true
