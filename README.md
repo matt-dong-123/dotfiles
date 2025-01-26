@@ -59,6 +59,8 @@
 
 - [Batfi](https://github.com/rurza/BatFi) (No homebrew package)
 - [BoringNotch](https://github.com/TheBoredTeam/boring.notch) (No homebrew package)
+- [Trae](https://trae.ai/home) (No homebrew package)
+↑ This is actually super cool!
 
 ## How to apply settings
 
