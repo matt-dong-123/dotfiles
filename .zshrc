@@ -85,7 +85,7 @@ y() {
 }
 
 vv() {
-    select config in nvim lazyvim nvchad astrovim
+    select config in nvim lazyvim nvchad
     do
         NVIM_APPNAME=$config nvim $@
         break
