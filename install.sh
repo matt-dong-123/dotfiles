@@ -19,6 +19,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 ## install zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+## install fzf-tab
+git clone https://github.com/Aloxaf/fzf-tab.git ~/.oh-my-zsh/custom/plugins/fzf-tab
 ## install powerlevel10k
 git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
 # Homebrew
@@ -51,7 +53,9 @@ brew install ripgrep
 brew install ffmpeg
 brew install sketchybar
 # installing sbarlua
-(git clone https://github.com/FelixKratz/SbarLua.git /tmp/SbarLua && cd /tmp/SbarLua/ && make install && rm -rf /tmp/SbarLua/)
+if [ ! -d "$HOME/SBarLua" ]; then
+    (git clone https://github.com/FelixKratz/SbarLua.git /tmp/SbarLua && cd /tmp/SbarLua/ && make install && rm -rf /tmp/SbarLua/)
+fi
 brew install thefuck
 brew install yazi
 brew install neovim
@@ -158,7 +162,7 @@ fi
 read -p "Install Emacs? (Y/n)" install_emacs
 if [ "$install_emacs" != "N" ] || [ "$install_emacs" != "n" ]; then
     echo "Installing Emacs..."
-    brew install emacs
+    brew install --cask emacs
 fi
 
 read -p "The following apps are not at all necessary, and for myself only. Still install? (y/N) " really
