@@ -49,7 +49,6 @@ export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
 
 # Tool Configurations
 eval "$(zoxide init zsh)"
-eval $(thefuck --alias)
 
 # Aliases
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
