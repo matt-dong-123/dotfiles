@@ -43,8 +43,8 @@
 (setq org-directory "~/org/")
 
 ;; Change font and font size of Doom Emacs
-(setq doom-font (font-spec :family "Maple Mono NF" :size 20))
-(setq doom-big-font (font-spec :family "Maple Mono NF" :size 28))
+(setq doom-font (font-spec :family "Maple Mono NF CN" :size 20))
+(setq doom-big-font (font-spec :family "Maple Mono NF CN" :size 28))
 (setq nerd-icons-font-family "Maple Mono NF")
 
 ;; Relative line numbers
