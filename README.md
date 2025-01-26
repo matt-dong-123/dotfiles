@@ -8,7 +8,7 @@
 - fastfetch
 - karabiner
 - My Wallpaper (_Optional_)
-- nvim (with lazyvim)
+- nvim
 - sketchybar (with sbarlua)
 - textfox (_Firefox Only!_)
 - thefuck
