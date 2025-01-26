@@ -91,7 +91,7 @@ vv() {
 
 # Autostart Zellij
 if [[ -z "$ZELLIJ" ]]; then
-    zellij attach --create
+    zellij
 fi
 #
 # Load P10k Configuration
