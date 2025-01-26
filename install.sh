@@ -214,4 +214,11 @@ if [ "$browser" == "firefox" ]; then
         ./install.sh
     fi
 fi
+
+# Set up one-thing config file
+if [ ! -f "$HOME/one-thing/one-thing.txt" ]; then
+    mkdir -p "$HOME/one-thing"
+    touch "$HOME/one-thing/one-thing.txt"
+fi
+
 echo "Setup complete!"
