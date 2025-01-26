@@ -4,18 +4,18 @@ return {
 
 	icons = "sf-symbols", -- alternatively available: NerdFont
 
-	font = require("helpers.default_font"),
+	-- font = require("helpers.default_font"),
 
-	-- Alternative JetBrains Mono font
-	--	font = {
-	-- 	text = "JetBrains Mono", -- Used for text
-	--	numbers = "JetBrains Mono", -- Used for numbers
-	--	style_map = {
-	--		["Regular"] = "Regular",
-	--		["Semibold"] = "Medium",
-	--		["Bold"] = "SemiBold",
-	--		["Heavy"] = "Bold",
-	--		["Black"] = "ExtraBold",
-	--	},
-	--},
+	-- Alternative Maple Mono font
+	font = {
+		text = "Maple Mono NF CN", -- Used for text
+		numbers = "Maple Mono NF CN", -- Used for numbers
+		style_map = {
+			["Regular"] = "Light",
+			["Semibold"] = "Regular",
+			["Bold"] = "SemiBold",
+			["Heavy"] = "Bold",
+			["Black"] = "ExtraBold",
+		},
+	},
 }
