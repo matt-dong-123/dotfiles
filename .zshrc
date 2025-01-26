@@ -25,7 +25,6 @@ plugins=(
     vi-mode
     fzf-tab
     sudo
-
 )
 
 source $ZSH/oh-my-zsh.sh
