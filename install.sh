@@ -56,7 +56,6 @@ brew install sketchybar
 if [ ! -d "$HOME/SBarLua" ]; then
     (git clone https://github.com/FelixKratz/SbarLua.git /tmp/SbarLua && cd /tmp/SbarLua/ && make install && rm -rf /tmp/SbarLua/)
 fi
-brew install thefuck
 brew install yazi
 brew install neovim
 brew install zellij
