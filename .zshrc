@@ -22,9 +22,10 @@ plugins=(
     git
     zsh-autosuggestions
     zsh-syntax-highlighting
-    web-search
     vi-mode
     fzf-tab
+    sudo
+
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -60,9 +61,6 @@ alias v="nvim"
 alias ldock="lazydocker"
 alias ff='fzf --preview "bat --style=numbers --color=always --line-range :500 {}"'
 
-# Load P10k Configuration
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 # Functions
 # Clear the screen cleanly in zellij
 clear() {
@@ -96,3 +94,6 @@ vv() {
 if [[ -z "$ZELLIJ" ]]; then
     zellij attach --create
 fi
+#
+# Load P10k Configuration
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
