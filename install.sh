@@ -168,6 +168,7 @@ read -p "The following apps are not at all necessary, and for myself only. Still
 if [ "$really" = "Y" ] || [ "$really" = "y" ]; then
     echo "Installing... (Press C-c to cancel installing any of those apps)"
     brew install --cask clash-verge-rev
+    brew install --cask dorico
     brew install --cask musescore
     brew install --cask qqmusic
     brew install --cask wechat
