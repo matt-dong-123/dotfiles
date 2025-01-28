@@ -1,10 +1,15 @@
 local colors = require("colors")
-local settings = require("settings")
 local icons = require("icons")
 
-function parse_string_to_table(s)
+local function parse_cmd_to_table(s)
+	local file = io.popen(s)
+	local contents = ""
+	if file then
+		contents = file:read("*a")
+		file:close()
+	end
 	local result = {}
-	for line in s:gmatch("([^\n]+)") do
+	for line in contents:gmatch("([^\n]+)") do
 		table.insert(result, line)
 	end
 	return result
@@ -22,6 +27,7 @@ local spaceConfigs = {
 local function highlight_workspace(focused_workspace, workspace, space, space_bracket)
 	local selected = focused_workspace == workspace
 	local spaceConfig = spaceConfigs[workspace]
+	local color = selected and colors.green or colors.bg2
 	sbar.animate("tanh", 10, function()
 		space:set({
 			icon = {
@@ -32,25 +38,18 @@ local function highlight_workspace(focused_workspace, workspace, space, space_br
 				highlight = selected,
 			},
 			background = {
-				border_color = selected and colors.black or colors.bg2,
+				border_color = color,
 			},
 		})
 		space_bracket:set({
 			background = {
-				border_color = selected and colors.green or colors.bg2,
+				border_color = color,
 			},
 		})
 	end)
 end
 
-local file = io.popen("aerospace list-workspaces --all")
-local result = ""
-if file then
-	result = file:read("*a")
-	file:close()
-end
-
-local workspaces = parse_string_to_table(result)
+local workspaces = parse_cmd_to_table("aerospace list-workspaces --all")
 
 for i, workspace in ipairs(workspaces) do
 	local spaceConfig = spaceConfigs[workspace]
