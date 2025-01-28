@@ -57,6 +57,7 @@ return {
 	["Affinity Photo 2"] = ":affinity_photo_2:",
 	["Music"] = ":music:",
 	["音乐"] = ":music:",
+	["QQ音乐"] = ":music:",
 	["League of Legends"] = ":league_of_legends:",
 	["Tor Browser"] = ":tor_browser:",
 	["Hyper"] = ":hyper:",
