@@ -45,6 +45,8 @@
   - JB Mono Nerd Font
   - SF Pro
   - SF Symbols
+  - Maple Mono (NF)
+  - sketchybar-app-font
   - BetterDisplay
   - LinearMouse
   - _DOOM Emacs_
