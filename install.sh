@@ -144,6 +144,7 @@ if [ "$add_fonts" != "N" ] && [ "$add_fonts" != "n" ]; then
     brew install --cask font-sf-pro
     brew install --cask font-maple-mono-nf
     brew install --cask sf-symbols
+    brew install --cask font-sketchybar-app-font
 fi
 
 read -p "Do you have external displays? (y/N) " has_external_displays
