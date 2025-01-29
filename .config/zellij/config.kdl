@@ -1,3 +1,71 @@
+ui {
+    pane_frames {
+        rounded_corners true
+    }
+}
+
+plugins {
+    compact-bar location="zellij:compact-bar"
+    configuration location="zellij:configuration"
+    filepicker location="zellij:strider" {
+        cwd "/"
+    }
+    plugin-manager location="zellij:plugin-manager"
+    session-manager location="zellij:session-manager"
+    status-bar location="zellij:status-bar"
+    strider location="zellij:strider"
+    tab-bar location="zellij:tab-bar"
+    welcome-screen location="zellij:session-manager" {
+        welcome_screen true
+    }
+}
+
+load_plugins {
+}
+ 
+theme "tokyo-night"
+
+default_mode "locked"
+ 
+default_layout "default"
+ 
+mouse_mode true
+ 
+pane_frames true
+ 
+mirror_session false
+ 
+on_force_close "detach"
+ 
+scroll_buffer_size 10000
+ 
+copy_command "pbcopy"
+ 
+copy_clipboard "system"
+ 
+copy_on_select true
+ 
+scrollback_editor "$EDITOR"
+ 
+session_name "New"
+ 
+attach_to_session true
+ 
+auto_layout true
+ 
+session_serialization true
+ 
+serialize_pane_viewport true
+ 
+styled_underlines true
+ 
+// serialization_interval 10000
+ 
+disable_session_metadata true
+ 
+support_kitty_keyboard_protocol true
+
+// Keybindings
 keybinds clear-defaults=true {
     locked {
         bind "Ctrl a" { SwitchToMode "normal"; }
@@ -235,75 +303,3 @@ keybinds clear-defaults=true {
     }
 }
 
-ui {
-    pane_frames {
-        rounded_corners true
-    }
-}
-// Plugin aliases - can be used to change the implementation of Zellij
-// changing these requires a restart to take effect
-plugins {
-    compact-bar location="zellij:compact-bar"
-    configuration location="zellij:configuration"
-    filepicker location="zellij:strider" {
-        cwd "/"
-    }
-    plugin-manager location="zellij:plugin-manager"
-    session-manager location="zellij:session-manager"
-    status-bar location="zellij:status-bar"
-    strider location="zellij:strider"
-    tab-bar location="zellij:tab-bar"
-    welcome-screen location="zellij:session-manager" {
-        welcome_screen true
-    }
-}
-
-// Plugins to load in the background when a new session starts
-// eg. "file:/path/to/my-plugin.wasm"
-// eg. "https://example.com/my-plugin.wasm"
-load_plugins {
-}
- 
-simplified_ui false
-
-theme "tokyo-night-dark"
-
-default_mode "locked"
- 
-default_layout "default"
- 
-mouse_mode true
- 
-pane_frames true
- 
-mirror_session false
- 
-on_force_close "detach"
- 
-scroll_buffer_size 10000
- 
-copy_command "pbcopy"
- 
-copy_clipboard "system"
- 
-copy_on_select true
- 
-scrollback_editor "$EDITOR"
- 
-session_name "New"
- 
-attach_to_session true
- 
-auto_layout true
- 
-session_serialization true
- 
-serialize_pane_viewport false
- 
-styled_underlines true
- 
-// serialization_interval 10000
- 
-disable_session_metadata true
- 
-support_kitty_keyboard_protocol true
