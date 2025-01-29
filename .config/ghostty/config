@@ -1,0 +1,11 @@
+font-family = Maple Mono NF CN
+font-size = 20
+font-thicken = true
+theme = tokyonight_night
+cursor-style = bar
+cursor-style-blink = true
+background-opacity = 0.75
+background-blur-radius = 100
+macos-titlebar-style = hidden
+window-padding-x = 15
+window-padding-y = 15
