@@ -9,3 +9,5 @@ background-blur-radius = 100
 macos-titlebar-style = hidden
 window-padding-x = 15
 window-padding-y = 15
+confirm-close-surface = false
+quit-after-last-window-closed = true
