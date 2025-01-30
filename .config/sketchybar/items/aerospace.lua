@@ -67,6 +67,7 @@ for i, workspace in ipairs(workspaces) do
 		},
 		padding_left = 10,
 		padding_right = 3,
+		click_script = "aerospace workspace " .. workspace,
 	})
 
 	local space_bracket = sbar.add("bracket", { space.name }, {
@@ -82,13 +83,8 @@ for i, workspace in ipairs(workspaces) do
 		highlight_workspace(env.FOCUSED_WORKSPACE, workspace, space, space_bracket)
 	end)
 
-	space:subscribe("mouse.clicked", function(env)
-		sbar.exec("aerospace workspace " .. workspace)
-		highlight_workspace(env.FOCUSED_WORKSPACE, workspace, space, space_bracket)
-	end)
-
 	sbar.exec("aerospace list-workspaces --focused", function(out)
-		if out == workspace .. "\n" then
+		if string.gsub(out, "\n", "") == workspace then
 			highlight_workspace(workspace, workspace, space, space_bracket)
 		end
 	end)
