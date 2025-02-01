@@ -115,7 +115,7 @@ if [ "$answer" != "N" ] && [ "$answer" != "n" ]; then
     brew install --cask selfcontrol
     brew install --cask slimhud
     brew install --cask tencent-lemon
-    brew install --cask visual-studio-code
+    brew install --cask vscodium
     brew install --cask yellowdot
 fi
 

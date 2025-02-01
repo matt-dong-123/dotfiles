@@ -37,7 +37,7 @@
 - Self Control
 - SlimHUD
 - Tencent Lemon
-- VSCode
+- VSCodium
 - YellowDot
 - _Optional:_
   - Arc/Zen/Firefox
