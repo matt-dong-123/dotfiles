@@ -13,5 +13,6 @@ config = {
 	cursor_blink_ease_in = "Constant",
 	cursor_blink_ease_out = "Constant",
 	max_fps = 120,
+	window_close_confirmation = "NeverPrompt",
 }
 return config
