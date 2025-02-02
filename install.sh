@@ -92,7 +92,14 @@ brew install sqlite
 echo "Installing Brew Casks... (Press C-c to cancel installing any of the casks you don't want)"
 brew install --cask aerospace
 brew install --cask karabiner-elements
-brew install --cask wezterm
+read -p "Choose a terminal emulator to install: (NONE/wezterm/ghostty) " terminal
+if [ "$terminal" = "wezterm" ]; then
+    echo "Installing wezterm..."
+    brew install --cask wezterm
+elif [ "$terminal" = "ghostty" ]; then
+    echo "Installing ghostty..."
+    brew install --cask ghostty
+fi
 
 # Ask the user whether they want to install extra casks
 read -p "Do you want to install extras? (Y/n) " answer
