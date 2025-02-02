@@ -32,6 +32,7 @@ local cpu = sbar.add("graph", "widgets.cpu", 42, {
 		y_offset = 4,
 	},
 	padding_right = settings.paddings + 6,
+	click_script = "wezterm start --always-new-process btop",
 })
 
 cpu:subscribe("cpu_update", function(env)
@@ -54,10 +55,6 @@ cpu:subscribe("cpu_update", function(env)
 		graph = { color = color },
 		label = "cpu " .. env.total_load .. "%",
 	})
-end)
-
-cpu:subscribe("mouse.clicked", function(env)
-	sbar.exec("open -a 'Activity Monitor'")
 end)
 
 -- Background around the cpu item
