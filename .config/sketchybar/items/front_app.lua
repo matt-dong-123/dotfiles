@@ -9,7 +9,6 @@ local front_app = sbar.add("item", "front_app", {
 			style = settings.font.style_map["Bold"],
 		},
 	},
-	right_padding = settings.group_paddings,
 	updates = true,
 })
 
