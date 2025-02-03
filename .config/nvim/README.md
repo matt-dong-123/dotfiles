@@ -31,6 +31,4 @@ A starting point for Neovim that is:
     config directory and the matching local directory
     `~/.local/share/nvim-kickstart`. You can apply this approach to any Neovim
     distribution that you would like to try out.
-  * You can also use `vv` (defined in this repo) as an nvim config switcher.
-* What if I want to "uninstall" this configuration:
-  * See [lazy.nvim uninstall](https://lazy.folke.io/usage#-uninstalling) information
+  * You can also use `vv` (defined in this repo's .zshrc) as an nvim config switcher.
