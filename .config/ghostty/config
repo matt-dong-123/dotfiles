@@ -11,3 +11,4 @@ window-padding-x = 10
 window-padding-y = 10
 confirm-close-surface = false
 quit-after-last-window-closed = true
+custom-shader = shaders/bloom050.glsl
