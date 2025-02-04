@@ -22,4 +22,5 @@ require('lazy').setup({
             not_loaded = '',
         },
     },
+    install = { colorscheme = { 'tokyonight' } },
 })
