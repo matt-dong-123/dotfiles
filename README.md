@@ -66,6 +66,12 @@
 
 ## How to apply settings
 
+> ** IMPORTANT **
+>
+> This is only for macOS users!
+>
+> Also, make sure to backup your old dotfiles before applying my settings, as otherwise the install script might fail!
+
 <details><summary>The easy way (with extra <i>FREE</i> apps!)</summary>
 
 Run:
@@ -102,7 +108,7 @@ chmod +x ~/install.sh
 
 </details>
 
-<details><summary><b>Enabling textfox</b></summary>
+<details><summary><b>Enabling textfox (only necessary for manual install)</b></summary>
 
 > **Important**
 > This is only for Firefox users!
