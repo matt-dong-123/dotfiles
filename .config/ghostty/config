@@ -11,9 +11,13 @@ window-padding-x = 10
 window-padding-y = 10
 confirm-close-surface = false
 quit-after-last-window-closed = true
-custom-shader = shaders/bloom025.glsl
+custom-shader = shaders/bloom050.glsl
 # custom-shader = shaders/glow.glsl
 # custom-shader = shaders/bettercrt.glsl
 # custom-shader = shaders/tft.glsl
 # custom-shader = shaders/water.glsl
 # custom-shader = shaders/gears-and-belts.glsl
+
+# Keybinds
+# Rebind cmd+, to open ghostty config using vim (or the alias for vim)
+keybind = cmd+,=text:vim ~/.config/ghostty/config\n
