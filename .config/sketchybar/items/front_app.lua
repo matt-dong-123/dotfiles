@@ -5,7 +5,7 @@ local colors = require("colors")
 local front_app = sbar.add("item", "front_app", {
 	display = "active",
 	icon = {
-		font = "sketchybar-app-font:Regular:16.0",
+		font = "sketchybar-app-font:Regular:20.0",
 		color = colors.default,
 	},
 	label = {
