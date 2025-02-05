@@ -31,6 +31,8 @@ return {
 	["LibreWolf"] = ":libre_wolf:",
 	["neovide"] = ":neovide:",
 	["Spotlight"] = ":spotlight:",
+	["Ghostty"] = ":ghostty:",
+	["WeChat"] = ":wechat:",
 	["微信"] = ":wechat:",
 	["Dropbox"] = ":dropbox:",
 	["Transmit"] = ":transmit:",
