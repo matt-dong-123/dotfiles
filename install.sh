@@ -217,6 +217,9 @@ stow --ignore README.linkscape
 stow --ignore install.sh
 stow -t ~ .
 
+# Set up hammerspoon config file
+defaults write org.hammerspoon.Hammerspoon MJConfigFile "$HOME/.config/hammerspoon/init.lua"
+
 read -p "Set my wallpaper? (Y/n) " set_wallpaper
 if [ "$set_wallpaper" != "N" ] && [ "$set_wallpaper" != "n" ]; then
     osascript -e 'tell application "Finder" to set desktop picture to POSIX file "~/wallpapers/wallpaper.png"'
