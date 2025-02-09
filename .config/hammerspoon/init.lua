@@ -39,10 +39,3 @@ local function bind_hotkeys(mapping)
 end
 
 bind_hotkeys(hotkeys)
-
--- Quit all apps
-hs.hotkey.bind(hypr, "x", function()
-	hs.fnutils.each(hs.application.runningApplications(), function(app)
-		app:kill()
-	end)
-end)
