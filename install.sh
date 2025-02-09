@@ -92,12 +92,19 @@ brew install sqlite
 echo "Installing Brew Casks... (Press C-c to cancel installing any of the casks you don't want)"
 brew install --cask aerospace
 brew install --cask karabiner-elements
-read -p "Choose a terminal emulator to install: (NONE/wezterm/ghostty) " terminal
+brew install --cask hammerspoon
+read -p "Choose a terminal emulator to install: (BOTH/wezterm/ghostty/none) " terminal
 if [ "$terminal" = "wezterm" ]; then
     echo "Installing wezterm..."
     brew install --cask wezterm
 elif [ "$terminal" = "ghostty" ]; then
     echo "Installing ghostty..."
+    brew install --cask ghostty
+elif [ "$terminal" = "none" ]; then
+    echo "No terminal emulator will be installed"
+else
+    echo "Installing both..."
+    brew install --cask wezterm
     brew install --cask ghostty
 fi
 
