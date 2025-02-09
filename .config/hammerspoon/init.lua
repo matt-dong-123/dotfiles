@@ -33,6 +33,16 @@ local function bind_hotkeys(mapping)
 	hs.hotkey.bind(meh, "return", function()
 		hs.application.launchOrFocus("Emacs")
 	end)
+	hs.hotkey.bind("ctrl", "space", function()
+		hs.application.launchOrFocus("Launchpad")
+	end)
 end
 
 bind_hotkeys(hotkeys)
+
+-- Quit all apps
+hs.hotkey.bind(hypr, "x", function()
+	hs.fnutils.each(hs.application.runningApplications(), function(app)
+		app:kill()
+	end)
+end)
