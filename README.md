@@ -5,13 +5,18 @@
 - aerospace
 - btop
 - cava
+- doom emacs
 - fastfetch
+- ghostty
 - karabiner
+- lazygit
+- lazyvim
+- hammerspoon
 - My Wallpaper (_Optional_)
+- nvchad
 - nvim
 - sketchybar (with sbarlua)
 - textfox (_Firefox Only!_)
-- thefuck
 - vimium-c (_Browser Extension!_)
 - wezterm
 - yazi
@@ -49,7 +54,6 @@
   - sketchybar-app-font
   - BetterDisplay
   - LinearMouse
-  - _DOOM Emacs_
   - Clash Verge
   - MuseScore
   - QQMusic
