@@ -68,7 +68,6 @@ clear() {
 }
 zle -N clear-screen clear
 bindkey "^L" clear-screen
-bindkey "ç" fzf-cd-widget
 
 y() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
