@@ -277,6 +277,9 @@ keymap = [
     # vim-style f
     { on = "f", run = "plugin jump-to-char", desc = "Jump to char" },
 
+    # Mount
+    { on = "M", run = "plugin mount", desc = "Open mount plugin" },
+
     # Lazygit
     { on = [
         "g",
