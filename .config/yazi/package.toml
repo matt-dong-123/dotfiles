@@ -1,9 +1,4 @@
 [[plugin.deps]]
-use = "llanosrocas/yaziline"
-rev = "864572c"
-hash = ""
-
-[[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
 rev = "7707c09"
 hash = ""
@@ -42,6 +37,11 @@ hash = ""
 use = "ndtoan96/ouch"
 rev = "083d564"
 hash = ""
+
+[[plugin.deps]]
+use = "llanosrocas/yaziline"
+rev = "e06c47f"
+hash = "7df84299e89ffefd4686d1e20a295c8a"
 
 [flavor]
 deps = []
