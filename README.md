@@ -128,15 +128,6 @@ chmod +x ~/install.sh
 
 </details>
 
-<details><summary><b>Make sketchybar look normal</b></summary>
-
-> **Why?**
-> The variable version of Maple Mono is only available in the github repo, and not in brew.
-> This is because the variable version is still in beta.
-> Therefore, to make sketchybar look normal, you need to install the variable version of Maple Mono from the github repo.
-> Alternatively, use the default setup, which uses SF Pro and SF Mono.
-
-</details>
 Thanks to @[Sin-cy](https://www.github.com/Sin-cy/) for providing the install.sh template in his own dotfiles!
 
 You can raise issues if you run into any problems and bugs in the install script. I'll try as hard as I can!
