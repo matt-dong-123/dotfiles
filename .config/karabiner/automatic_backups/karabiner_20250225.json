@@ -59,32 +59,6 @@
                     }
                 ]
             },
-            "fn_function_keys": [
-                {
-                    "from": { "key_code": "f3" },
-                    "to": [{ "key_code": "f3" }]
-                },
-                {
-                    "from": { "key_code": "f4" },
-                    "to": [{ "key_code": "f4" }]
-                },
-                {
-                    "from": { "key_code": "f5" },
-                    "to": [{ "key_code": "f5" }]
-                },
-                {
-                    "from": { "key_code": "f7" },
-                    "to": [{ "key_code": "f7" }]
-                },
-                {
-                    "from": { "key_code": "f8" },
-                    "to": [{ "key_code": "f8" }]
-                },
-                {
-                    "from": { "key_code": "f9" },
-                    "to": [{ "key_code": "f9" }]
-                }
-            ],
             "name": "Default profile",
             "selected": true,
             "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
