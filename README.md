@@ -16,6 +16,7 @@
 - nvchad
 - nvim
 - sketchybar (with sbarlua)
+- sketchyvim
 - textfox (_Firefox Only!_)
 - vimium-c (_Browser Extension!_)
 - wezterm
