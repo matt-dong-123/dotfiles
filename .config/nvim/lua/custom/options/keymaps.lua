@@ -12,7 +12,7 @@ g.have_nerd_font = true
 -- NOTE: NORMAL MODE REMAPS
 
 -- Clear highlights on search when pressing <Esc>
-keymapset('n', '<Esc', '<cmd>nohlsearch<CR>')
+keymapset('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Diagnostic
 keymapset('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
