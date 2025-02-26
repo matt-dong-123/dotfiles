@@ -36,11 +36,10 @@ keymapset('n', '<leader>bl', '<cmd>:bnext<CR>', { desc = 'Move to next buffer' }
 keymapset('n', '<C-u>', '<C-u>zz')
 keymapset('n', '<C-d>', '<C-d>zz')
 
-keymapset('n', '<C-n>', ':nohlsearch<CR>')
 -- visually move between lines
 keymapset('', 'j', "(v:count ? 'j' : 'gj')", expr)
 keymapset('', 'k', "(v:count ? 'k' : 'gk')", expr)
-
+keymapset('n', 'Q', 'gq')
 -- NOTE: TERMINAL MODE REMAPS
 
 -- Exit terminal mode
