@@ -51,7 +51,6 @@ brew install luarocks
 brew install make
 brew install ripgrep
 brew install ffmpeg
-brew install svim
 brew install sketchybar
 # installing sbarlua
 if [ ! -d "$HOME/SBarLua" ]; then
