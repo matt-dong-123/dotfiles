@@ -133,16 +133,16 @@ if [ "$answer" != "N" ] && [ "$answer" != "n" ]; then
     brew install --cask yellowdot
 fi
 
-read -p "Choose a browser to install: (NONE/arc/zen/firefox) " browser
+read -p "Choose a browser to install: (NONE/arc/zen/librewolf) " browser
 if [ "$browser" = "arc" ]; then
     echo "Installing Arc..."
     brew install --cask arc
 elif [ "$browser" = "zen" ]; then
     echo "Installing Zen..."
     brew install --cask zen-browser
-elif [ "$browser" = "firefox" ]; then
-    echo "Installing Firefox..."
-    brew install --cask firefox
+elif [ "$browser" = "librewolf" ]; then
+    echo "Installing librewolf..."
+    brew install --cask librewolf --no-quarantine
 fi
 
 read -p "Do you want to install Tor? (y/N) " install_tor
@@ -225,10 +225,10 @@ if [ "$set_wallpaper" != "N" ] && [ "$set_wallpaper" != "n" ]; then
     osascript -e 'tell application "Finder" to set desktop picture to POSIX file "~/wallpapers/wallpaper.png"'
 fi
 
-if [ "$browser" == "firefox" ]; then
-    read -p "Use my firefox config? (Y/n) " textfox
+if [ "$browser" == "librewolf" ]; then
+    read -p "Use my librewolf config? (Y/n) " textfox
     if [ "$textfox" != "N" ] && [ "$textfox" != "n" ]; then
-        cd firefox_config || exit
+        cd librewolf_config || exit
         chmod +x install.sh
         ./install.sh
     fi

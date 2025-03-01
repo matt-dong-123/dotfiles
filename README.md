@@ -16,7 +16,7 @@
 - nvchad
 - nvim
 - sketchybar (with sbarlua)
-- textfox (_Firefox Only!_)
+- textfox (_LibreWolf Only!_)
 - vimium-c (_Browser Extension!_)
 - wezterm
 - yazi
@@ -45,7 +45,7 @@
 - VSCodium
 - YellowDot
 - _Optional:_
-  - Arc/Zen/Firefox
+  - Arc/Zen/LibreWolf
   - Tor
   - JB Mono Nerd Font
   - SF Pro
@@ -115,10 +115,10 @@ chmod +x ~/install.sh
 <details><summary><b>Enabling textfox (only necessary for manual install)</b></summary>
 
 > **Important**
-> This is only for Firefox users!
+> This is only for Firefox/LibreWolf users!
 
-1. Go to about:profiles in firefox, and copy the "Root Directory" path of the profile you want to use
-2. Run `install.sh` in the ~/dotfiles/firefox_config
+1. Go to about:profiles in the url bar, and copy the "Root Directory" path of the profile you want to use
+2. Run `install.sh` in ~/dotfiles/librewolf_config/
 3. Paste the path you copied in step 1 into the script
 4. You should be good to go!
 
