@@ -7,7 +7,7 @@ local meh = { "ctrl", "alt", "shift" }
 
 -- Apps
 local hotkeys = {
-	a = "Firefox",
+	a = "Zen Browser",
 	d = "Dorico 5",
 	f = "Finder",
 	l = "Logic Pro",
