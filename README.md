@@ -5,7 +5,6 @@
 - aerospace
 - btop
 - cava
-- doom emacs
 - fastfetch
 - ghostty
 - karabiner
@@ -33,10 +32,8 @@
 - IINA
 - Ice
 - KeyCastr
-- KeyClu
 - KeyboardHolder
 - Latest
-- MiddleClick
 - Obsidian
 - Raycast
 - Self Control
@@ -45,12 +42,12 @@
 - VSCodium
 - YellowDot
 - _Optional:_
-  - Arc/Zen/LibreWolf
+  - Brave/Zen/LibreWolf
   - Tor
   - JB Mono Nerd Font
   - SF Pro
   - SF Symbols
-  - Maple Mono (NF)
+  - Maple Mono (NF CN)
   - sketchybar-app-font
   - BetterDisplay
   - LinearMouse
@@ -65,8 +62,6 @@
 
 - [Battery Toolkit](https://github.com/rurza/BatFi) (No homebrew package)
 - [BoringNotch](https://github.com/TheBoredTeam/boring.notch) (No homebrew package)
-- [Trae](https://trae.ai/home) (No homebrew package)
-↑ This is actually super cool!
 
 ## How to apply settings
 
@@ -76,15 +71,13 @@
 >
 > Also, make sure to backup your old dotfiles before applying my settings, as otherwise the install script might fail!
 
-<details><summary>The easy way (with extra <i>FREE</i> apps!)</summary>
+<details><summary>The easy way (with extra apps!)</summary>
 
 Run:
 
 ```sh
 cd
-curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/main/install.sh
-chmod +x ~/install.sh
-/bin/bash ~/dotfiles/install.sh
+curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/main/install.sh | bash
 ```
 
 </details>
