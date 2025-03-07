@@ -120,23 +120,19 @@ if [ "$answer" != "N" ] && [ "$answer" != "n" ]; then
     brew install --cask iina
     brew install --cask jordanbaird-ice
     brew install --cask keycastr
-    brew install --cask keyclu
     brew install --cask keyboardholder
-    brew install --cask latest
-    brew install --cask middleclick
     brew install --cask obsidian
     brew install --cask raycast
-    brew install --cask selfcontrol
     brew install --cask slimhud
     brew install --cask tencent-lemon
     brew install --cask vscodium
     brew install --cask yellowdot
 fi
 
-read -p "Choose a browser to install: (NONE/arc/zen/librewolf) " browser
+read -p "Choose a browser to install: (NONE/brave/zen/librewolf) " browser
 if [ "$browser" = "arc" ]; then
-    echo "Installing Arc..."
-    brew install --cask arc
+    echo "Installing Brave..."
+    brew install --cask brave-browser
 elif [ "$browser" = "zen" ]; then
     echo "Installing Zen..."
     brew install --cask zen-browser
@@ -182,7 +178,6 @@ fi
 read -p "The following apps are not at all necessary, and for myself only. Still install? (y/N) " really
 if [ "$really" = "Y" ] || [ "$really" = "y" ]; then
     echo "Installing... (Press C-c to cancel installing any of those apps)"
-    brew install --cask clash-verge-rev
     brew install --cask dorico
     brew install --cask musescore
     brew install --cask qqmusic
@@ -192,6 +187,7 @@ if [ "$really" = "Y" ] || [ "$really" = "y" ]; then
 fi
 
 ## MacOS system settings
+## TODO: Add more system settings
 echo "Writing MacOS system settings..."
 defaults write NSGlobalDomain _HIHideMenuBar -bool true
 
