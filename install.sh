@@ -258,5 +258,5 @@ echo "Setup complete!"
 read -p "Reboot for some settings to take effect? (Y/n) " reboot
 if [ "$reboot" != "N" ] && [ "$reboot" != "n" ]; then
     echo "Rebooting..."
-    command reboot
+    sudo reboot
 fi
