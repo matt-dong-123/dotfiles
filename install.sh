@@ -187,11 +187,28 @@ if [ "$really" = "Y" ] || [ "$really" = "y" ]; then
 fi
 
 ## MacOS system settings
-## TODO: Add more system settings
 echo "Writing MacOS system settings..."
 defaults write NSGlobalDomain _HIHideMenuBar -bool true
-
-echo "Installation complete..."
+defaults write com.apple.dock "tilesize" -int "55"
+defaults write com.apple.dock "autohide" -bool "true"
+defaults write com.apple.dock "autohide-time-modifier" -float "0.2"
+defaults write com.apple.dock "autohide-delay" -float "0"
+defaults write com.apple.dock "show-recents" -bool "false"
+defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}'
+defaults write com.apple.dock "mineffect" -string "scale"
+defaults write com.apple.finder "QuitMenuItem" -bool "true"
+defaults writedefaults write NSGlobalDomain "AppleShowAllExtensions" -bool "true"
+defaults write com.apple.finder "AppleShowAllFiles" -bool "true"
+defaults write com.apple.finder "ShowPathbar" -bool "true"
+defaults write com.apple.finder "CreateDesktop" -bool "false"
+defaults write com.apple.AppleMultitouchTrackpad "FirstClickThreshold" -int "2"
+defaults write com.apple.HIToolbox AppleFnUsageType -int "1"
+defaults write NSGlobalDomain "ApplePressAndHoldEnabled" -bool "true"
+defaults write NSGlobalDomain AppleKeyboardUIMode -int "2"
+defaults write com.apple.LaunchServices "LSQuarantine" -bool "false"
+defaults write NSGlobalDomain "NSCloseAlwaysConfirmsChanges" -bool "true"
+killall Finder
+killall Dock
 
 # Clone dotfiles repository
 if [ ! -d "$HOME/dotfiles" ]; then
@@ -237,3 +254,9 @@ if [ ! -f "$HOME/one-thing/one-thing.txt" ]; then
 fi
 
 echo "Setup complete!"
+
+read -p "Reboot for some settings to take effect? (Y/n) " reboot
+if [ "$reboot" != "N" ] && [ "$reboot" != "n" ]; then
+    echo "Rebooting..."
+    command reboot
+fi
