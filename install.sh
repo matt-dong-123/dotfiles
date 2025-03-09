@@ -188,25 +188,66 @@ fi
 
 ## MacOS system settings
 echo "Writing MacOS system settings..."
+
+# Hide menu bar
 defaults write NSGlobalDomain _HIHideMenuBar -bool true
+
+# Set dock size
 defaults write com.apple.dock "tilesize" -int "55"
+
+# Autohide dock
 defaults write com.apple.dock "autohide" -bool "true"
+
+# Set autohide speed
 defaults write com.apple.dock "autohide-time-modifier" -float "0.2"
+
+# Set autohide delay
 defaults write com.apple.dock "autohide-delay" -float "0"
+
+# Don't show recents
 defaults write com.apple.dock "show-recents" -bool "false"
+
+# Add small spacer tile
 defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}'
+
+# Set `scale` effect when minimizing windows
 defaults write com.apple.dock "mineffect" -string "scale"
+
+# Show the `Quit` menu item in Finder
 defaults write com.apple.finder "QuitMenuItem" -bool "true"
+
+# Show all file extensions
 defaults writedefaults write NSGlobalDomain "AppleShowAllExtensions" -bool "true"
+
+# Show hidden files
 defaults write com.apple.finder "AppleShowAllFiles" -bool "true"
+
+# Show pathbar in Finder
 defaults write com.apple.finder "ShowPathbar" -bool "true"
+
+# Don't show files in desktop
 defaults write com.apple.finder "CreateDesktop" -bool "false"
+
+# Firm click weight
 defaults write com.apple.AppleMultitouchTrackpad "FirstClickThreshold" -int "2"
+
+# Use fn key to switch keyboard input methods
 defaults write com.apple.HIToolbox AppleFnUsageType -int "1"
-defaults write NSGlobalDomain "ApplePressAndHoldEnabled" -bool "true"
+
+# Enable keyboard navigation
 defaults write NSGlobalDomain AppleKeyboardUIMode -int "2"
-defaults write com.apple.LaunchServices "LSQuarantine" -bool "false"
+
+# Disable confirmation when closing unsaved windows (will autosave)
 defaults write NSGlobalDomain "NSCloseAlwaysConfirmsChanges" -bool "true"
+
+read -p "Disable quarantine and gatekeeper? (y/N) " quarantine
+if [ "$quarantine" = "Y" ] || [ "$quarantine" = "y" ]; then
+    # Disable quarantine
+    defaults write com.apple.LaunchServices "LSQuarantine" -bool "false"
+    echo "Type in your password to disable Gatekeeper:"
+    sudo spctl --master-disable
+fi
+
 killall Finder
 killall Dock
 
