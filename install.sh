@@ -58,7 +58,7 @@ if [ ! -d "$HOME/SBarLua" ]; then
 fi
 brew install yazi
 brew install neovim
-brew install zellij
+brew install tmux
 brew install git
 brew install lazygit
 
