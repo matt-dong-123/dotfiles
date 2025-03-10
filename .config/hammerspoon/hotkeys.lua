@@ -22,7 +22,7 @@ local hotkeys = {
 	w = "WeChat",
 	y = "FreeTube",
 	z = "zoom.us",
-	["return"] = "Ghostty",
+	["return"] = "WezTerm",
 }
 
 local function bind_hotkeys(mapping)
