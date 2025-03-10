@@ -58,16 +58,6 @@ alias ff='nvim `fzf --preview "bat --style=numbers --color=always --line-range :
 alias c="cd ~/dotfiles"
 
 # Functions
-# Clear the screen cleanly in zellij
-clear() {
-    if [[ -n $ZELLIJ ]]; then
-        zellij action clear
-    else
-        command clear
-    fi
-}
-zle -N clear-screen clear
-bindkey "^L" clear-screen
 
 y() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
@@ -86,11 +76,6 @@ vv() {
     done
 }
 
-# Autostart Zellij
-if [[ -z "$ZELLIJ" ]]; then
-    zellij
-fi
-#
 # Load P10k Configuration
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
