@@ -8,7 +8,6 @@ config = {
 		"Consolas",
 	}),
 	font_size = 20,
-	enable_tab_bar = false,
 	window_decorations = "RESIZE",
 	window_background_opacity = 0.75,
 	macos_window_background_blur = 100,
@@ -19,4 +18,16 @@ config = {
 	max_fps = 120,
 	window_close_confirmation = "NeverPrompt",
 }
+local bar = wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm")
+bar.apply_to_config(config, {
+	position = "top",
+	modules = {
+		hostname = {
+			enabled = false,
+		},
+		clock = {
+			enabled = false,
+		},
+	},
+})
 return config
