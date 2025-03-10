@@ -2,7 +2,11 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 config = {
 	color_scheme = "Tokyo Night",
-	font = wezterm.font_with_fallback({ "Maple Mono NF CN", "JetBrainsMono Nerd Font", "Consolas" }),
+	font = wezterm.font_with_fallback({
+		{ family = "Maple Mono NF CN", weight = "Bold" },
+		"JetBrainsMono Nerd Font",
+		"Consolas",
+	}),
 	font_size = 20,
 	enable_tab_bar = false,
 	window_decorations = "RESIZE",
