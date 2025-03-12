@@ -17,6 +17,9 @@ keymapset('n', '<Esc>', '<cmd>nohlsearch<CR>')
 -- Diagnostic
 keymapset('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
+-- cht.sh
+keymapset('n', '<leader>i', ':!tmux neww ~/dotfiles/cht.sh<CR>')
+
 -- inc-rename
 keymapset('n', '<leader>rn', ':IncRename ')
 
@@ -40,6 +43,7 @@ keymapset('n', '<C-d>', '<C-d>zz')
 keymapset('', 'j', "(v:count ? 'j' : 'gj')", expr)
 keymapset('', 'k', "(v:count ? 'k' : 'gk')", expr)
 keymapset('n', 'Q', 'gq')
+
 -- NOTE: TERMINAL MODE REMAPS
 
 -- Exit terminal mode
@@ -47,5 +51,6 @@ keymapset('n', 'Q', 'gq')
 keymapset('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
 -- NOTE: VISUAL MODE REMAPS
+
 keymapset('v', 'J', ":m '>+1<CR>gv=gv")
 keymapset('v', 'K', ":m '<-2<CR>gv=gv")
