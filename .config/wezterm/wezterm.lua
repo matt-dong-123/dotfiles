@@ -22,6 +22,12 @@ local bar = wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm"
 bar.apply_to_config(config, {
 	position = "top",
 	modules = {
+		workspace = {
+			enabled = false,
+		},
+		pane = {
+			enabled = false,
+		},
 		hostname = {
 			enabled = false,
 		},
