@@ -21,7 +21,7 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light Aloxaf/fzf-tab
 zinit light jeffreytse/zsh-vi-mode
-
+zinit snippet OMZP::sudo
 # Envvars
 export XDG_CONFIG_HOME="${HOME}/.config"
 export EDITOR=nvim
