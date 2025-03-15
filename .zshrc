@@ -22,6 +22,12 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light Aloxaf/fzf-tab
 zinit light jeffreytse/zsh-vi-mode
 zinit snippet OMZP::sudo
+
+# customize zsh-syntax-highlighting colors
+ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=blue,underline
+ZSH_HIGHLIGHT_STYLES[precommand]=fg=blue,underline
+ZSH_HIGHLIGHT_STYLES[arg0]=fg=blue
+
 # Envvars
 export XDG_CONFIG_HOME="${HOME}/.config"
 export EDITOR=nvim
