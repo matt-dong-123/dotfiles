@@ -94,8 +94,8 @@
 ; method = shmem
 ; source = /squeezelite-AA:BB:CC:DD:EE:FF
 
-method = portaudio
-source = "Background Music" 
+; method = portaudio
+; source = auto
 
 ; method = sndio
 ; source = default
