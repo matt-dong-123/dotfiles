@@ -81,6 +81,7 @@ brew install yt-dlp
 brew install wtf
 brew install pipes-sh
 brew install neovide
+brew install pnpm
 
 ### dev things
 brew install node
