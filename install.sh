@@ -93,6 +93,7 @@ echo "Installing Brew Casks... (Press C-c to cancel installing any of the casks 
 brew install --cask aerospace
 brew install --cask karabiner-elements
 brew install --cask hammerspoon
+brew install --cask espanso
 read -p "Choose a terminal emulator to install: (BOTH/wezterm/ghostty/none) " terminal
 if [ "$terminal" = "wezterm" ]; then
     echo "Installing wezterm..."
@@ -114,7 +115,6 @@ if [ "$answer" != "N" ] && [ "$answer" != "n" ]; then
     echo "Installing Extras... (Press C-c to cancel installing any of the extras you don't want)"
     brew install --cask airbattery
     brew install --cask appdimmer
-    brew install --cask background-music
     brew install --cask dockdoor
     brew install --cask flux
     brew install --cask iina
