@@ -93,6 +93,7 @@ alias v="nvim"
 alias ldock="lazydocker"
 alias ff='nvim `fzf --preview "bat --style=numbers --color=always --line-range :500 {}"`'
 alias c="cd ~/dotfiles"
+alias t="tmux"
 
 y() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
