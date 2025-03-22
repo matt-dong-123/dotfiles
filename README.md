@@ -27,6 +27,7 @@
 - AirBattery
 - AppDimmer
 - Background Music
+- Battery Toolkit
 - DockDoor
 - f.lux
 - IINA
@@ -60,7 +61,6 @@
 
 ## Things NOT in here that I have
 
-- [Battery Toolkit](https://github.com/mhaeuser/Battery-Toolkit) (No homebrew package)
 - [BoringNotch](https://github.com/TheBoredTeam/boring.notch) (No homebrew package)
 
 ## How to apply settings

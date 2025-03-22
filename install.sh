@@ -36,6 +36,7 @@ brew tap nikitabobko/tap
 brew tap dimentium/autoraise
 brew tap FelixKratz/formulae
 brew tap lihaoyun6/tap
+brew tap mhaeuser/mhaeuser
 
 ## Formulae
 echo "Installing Brew Formulae... (Press C-c to cancel installing any of the formulae you don't want)"
@@ -95,6 +96,7 @@ brew install --cask aerospace
 brew install --cask karabiner-elements
 brew install --cask hammerspoon
 brew install --cask espanso
+brew install --cask battery-toolkit
 read -p "Choose a terminal emulator to install: (BOTH/wezterm/ghostty/none) " terminal
 if [ "$terminal" = "wezterm" ]; then
     echo "Installing wezterm..."
