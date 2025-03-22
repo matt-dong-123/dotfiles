@@ -34,6 +34,9 @@ bar.apply_to_config(config, {
 		clock = {
 			enabled = false,
 		},
+		username = {
+			enabled = false,
+		},
 	},
 })
 return config
