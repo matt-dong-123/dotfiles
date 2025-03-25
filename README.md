@@ -106,7 +106,7 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 
 </details>
 
-<details><summary><b>Enabling textfox (only necessary for manual install)</b></summary>
+<details><summary><b>Enabling librewolf_config (only necessary for manual install)</b></summary>
 
 > **Important**
 > This is only for Firefox/LibreWolf users!
@@ -120,6 +120,22 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 > Installing the sidebery extension is recommended, but not required.
 > There is also a default config that goes along textfox nicely.
 
+</details>
+
+<details><summary><b>Enabling zen_config (only for Zen Browser)</b></summary>
+
+1. Go to about:profiles in the url bar, and copy the "Root Directory" path of the profile you want to use
+2. Paste the zen_config directory into the profile directory/chrome.
+3. You may have to find the zen themes and reinstall them through the website.
+4. You should be good to go!
+
+</details>
+
+
+<details><summary><b>Enabling vivaldi config (only for Vivaldi)</b></summary>
+
+1. Go to vivaldi:experiments, and enable "Allow CSS Modifications"
+2. Search "Custom UI Modifications" and paste your .config/vivaldi directory into the text field
 </details>
 
 Thanks to @[Sin-cy](https://www.github.com/Sin-cy/) for providing the install.sh template in his own dotfiles!
