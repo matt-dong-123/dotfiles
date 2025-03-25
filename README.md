@@ -43,7 +43,7 @@
 - VSCodium
 - YellowDot
 - _Optional:_
-  - Brave/Zen/LibreWolf
+  - Vivaldi/Zen/LibreWolf
   - Tor
   - JB Mono Nerd Font
   - SF Pro
@@ -58,6 +58,7 @@
   - WeChat
   - WPS Office
   - Zoom
+- + A lot of useful CLI tools!
 
 ## Things NOT in here that I have
 

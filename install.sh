@@ -116,11 +116,11 @@ if [ "$answer" != "N" ] && [ "$answer" != "n" ]; then
     brew install --cask yellowdot
 fi
 
-echo -e "${purple}Choose a browser to install: (NONE/brave/zen/librewolf) ${no}"
+echo -e "${purple}Choose a browser to install: (NONE/vivaldi/zen/librewolf) ${no}"
 read -p "" browser
-if [ "$browser" = "brave" ]; then
-    echo -e "${green}Installing Brave...${no}"
-    brew install --cask brave-browser
+if [ "$browser" = "vivaldi" ]; then
+    echo -e "${green}Installing vivaldi...${no}"
+    brew install --cask vivaldi
 elif [ "$browser" = "zen" ]; then
     echo -e "${green}Installing Zen...${no}"
     brew install --cask zen-browser
@@ -250,14 +250,8 @@ cd "$HOME/dotfiles" || exit
 
 # Stow dotfiles packages
 echo -e "${green}Stowing dotfiles...${no}"
-stow --ignore .DS_Store\
-     --ignore .git     \
-     --ignore .gitignore\
-     --ignore .gitmodules\
-     --ignore README.md\
-     --ignore README.linkscape\
-     --ignore install.sh\
-     -t ~ .
+stow --ignore .DS_Store --ignore .git \
+    --ignore .gitignore --ignore .gitmodules --ignore README.md --ignore README.linkscape --ignore install.sh -t ~ .
 
 # Set up hammerspoon config file
 defaults write org.hammerspoon.Hammerspoon MJConfigFile "$HOME/.config/hammerspoon/init.lua"
