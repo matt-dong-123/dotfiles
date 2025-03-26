@@ -1,9 +1,8 @@
 -- Fuck you lsp
 hs = hs
 
--- hyper key & meh key
+-- hyper key
 local hypr = { "ctrl", "alt", "cmd", "shift" }
-local meh = { "ctrl", "alt", "shift" }
 
 -- Apps
 local hotkeys = {
@@ -31,9 +30,6 @@ local function bind_hotkeys(mapping)
 			hs.application.launchOrFocus(app)
 		end)
 	end
-	hs.hotkey.bind(meh, "return", function()
-		hs.application.launchOrFocus("Emacs")
-	end)
 	hs.hotkey.bind("ctrl", "space", function()
 		hs.application.launchOrFocus("Launchpad")
 	end)
