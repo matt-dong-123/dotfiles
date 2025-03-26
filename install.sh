@@ -13,7 +13,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
     echo -e "${yellow}macOS deteted...${no}"
 
     if xcode-select -p &>/dev/null; then
-        echo -e "${yellow}Xcode already installed${no}"
+        echo -e "${blue}Xcode already installed${no}"
     else
         echo -e "${green}Installing commandline tools...${no}"
         xcode-select --install
