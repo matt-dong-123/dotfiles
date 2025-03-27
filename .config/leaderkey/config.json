@@ -1,0 +1,166 @@
+{
+  "actions" : [
+    {
+      "actions" : [
+        {
+          "key" : "c",
+          "label" : "",
+          "type" : "application",
+          "value" : "/Applications/Chromium.app"
+        },
+        {
+          "key" : "s",
+          "label" : "",
+          "type" : "application",
+          "value" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
+        },
+        {
+          "key" : "t",
+          "label" : "Tor",
+          "type" : "application",
+          "value" : "/Applications/Tor Browser.app"
+        },
+        {
+          "key" : "v",
+          "label" : "",
+          "type" : "application",
+          "value" : "/Applications/Vivaldi.app"
+        },
+        {
+          "key" : "z",
+          "label" : "",
+          "type" : "application",
+          "value" : "/Applications/Zen.app"
+        }
+      ],
+      "key" : "b",
+      "label" : "Browser",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "v",
+          "label" : "",
+          "type" : "application",
+          "value" : "/Applications/VSCodium.app"
+        },
+        {
+          "key" : "w",
+          "label" : "",
+          "type" : "application",
+          "value" : "/Applications/WezTerm.app"
+        },
+        {
+          "key" : "i",
+          "label" : "IDEA",
+          "type" : "application",
+          "value" : "/Applications/IntelliJ IDEA CE.app"
+        },
+        {
+          "key" : "x",
+          "label" : "",
+          "type" : "application",
+          "value" : "/Applications/Xcode.app"
+        }
+      ],
+      "key" : "c",
+      "label" : "Coding",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "q",
+          "label" : "QQ Music",
+          "type" : "application",
+          "value" : "/Applications/QQMusic.app"
+        },
+        {
+          "key" : "m",
+          "label" : "MuseScore",
+          "type" : "application",
+          "value" : "/Applications/MuseScore 4.app"
+        },
+        {
+          "key" : "d",
+          "label" : "Dorico",
+          "type" : "application",
+          "value" : "/Applications/Dorico 5.app"
+        },
+        {
+          "key" : "l",
+          "label" : "",
+          "type" : "application",
+          "value" : "/Applications/Logic Pro.app"
+        }
+      ],
+      "key" : "m",
+      "label" : "Music",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "w",
+          "label" : "",
+          "type" : "application",
+          "value" : "/Applications/WeChat.app"
+        },
+        {
+          "key" : "o",
+          "label" : "WPS Office",
+          "type" : "application",
+          "value" : "/Applications/wpsoffice.app"
+        },
+        {
+          "key" : "n",
+          "label" : "",
+          "type" : "application",
+          "value" : "/Applications/Obsidian.app"
+        },
+        {
+          "key" : "t",
+          "label" : "Tencent Meeting",
+          "type" : "application",
+          "value" : "/Applications/TencentMeeting.app"
+        },
+        {
+          "key" : "z",
+          "label" : "Zoom",
+          "type" : "application",
+          "value" : "/Applications/zoom.us.app"
+        }
+      ],
+      "key" : "w",
+      "label" : "Work",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : ",",
+          "label" : "dotfiles",
+          "type" : "url",
+          "value" : "https://github.com/matt-dong-123/dotfiles"
+        },
+        {
+          "key" : "r",
+          "label" : "r/unixporn",
+          "type" : "url",
+          "value" : "https://reddit.com/r/unixporn"
+        },
+        {
+          "key" : "y",
+          "label" : "YouTube",
+          "type" : "url",
+          "value" : "https://youtu.be"
+        }
+      ],
+      "key" : "i",
+      "label" : "Internet",
+      "type" : "group"
+    }
+  ],
+  "type" : "group"
+}
