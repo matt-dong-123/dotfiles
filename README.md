@@ -58,7 +58,7 @@
   - WeChat
   - WPS Office
   - Zoom
-- + A lot of useful CLI tools!
+- - A lot of useful CLI tools!
 
 ## Things NOT in here that I have
 
@@ -66,7 +66,7 @@
 
 ## How to apply settings
 
-> ** IMPORTANT **
+> **IMPORTANT**
 >
 > This is only for macOS users!
 >
@@ -131,11 +131,19 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 
 </details>
 
-
 <details><summary><b>Enabling vivaldi config (only for Vivaldi)</b></summary>
 
 1. Go to vivaldi:experiments, and enable "Allow CSS Modifications"
 2. Search "Custom UI Modifications" and paste your .config/vivaldi directory into the text field
+
+</details>
+
+<details><summary><b>Enabling leaderkey config (only for Vivaldi)</b></summary>
+
+1. Go to the LeaderKey settings and go to the "Advanced" tab
+2. Set the config directory to your .config/leaderkey directory
+3. Go back to "General" and set the shortcut to be "shift-command-space"
+
 </details>
 
 Thanks to @[Sin-cy](https://www.github.com/Sin-cy/) for providing the install.sh template in his own dotfiles!
