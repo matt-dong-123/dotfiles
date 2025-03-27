@@ -1,3 +1,0 @@
-return {
-  'tribela/vim-transparent',
-}
