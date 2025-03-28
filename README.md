@@ -58,7 +58,7 @@
   - WeChat
   - WPS Office
   - Zoom
-- - A lot of useful CLI tools!
+  - A lot of useful CLI tools!
 
 ## Things NOT in here that I have
 
@@ -138,7 +138,7 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 
 </details>
 
-<details><summary><b>Enabling leaderkey config (only for Vivaldi)</b></summary>
+<details><summary><b>Enabling leaderkey config</b></summary>
 
 1. Go to the LeaderKey settings and go to the "Advanced" tab
 2. Set the config directory to your .config/leaderkey directory
