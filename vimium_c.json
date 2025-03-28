@@ -1,11 +1,11 @@
 {
 	"name": "Vimium C",
-	"@time": "1/30/2025, 11:49:06 AM",
-	"time": 1738208946077,
+	"@time": "3/28/2025, 11:37:35 PM",
+	"time": 1743176255262,
 	"environment": {
-		"extension": "1.99.997",
+		"extension": "2.11.3",
 		"platform": "mac",
-		"firefox": 134
+		"chromium": 134
 	},
 	"exclusionRules": [
 		{
@@ -42,8 +42,9 @@
 	],
 	"searchUrl": "https://search.brave.com/search?q=$s Brave",
 	"userDefinedCss": [
-		".LH, .D>.LH { background: turquoise; }",
-		".LH { border: /*!DPI*/ 3px solid cyan; }",
+		".LH, .D>.LH { background: #4fd6be; }",
+		".LH { border: /*!DPI*/ 3px solid ",
+		"#41a6b5; }",
 		"/* #omni */",
 		".s { background-color: #d8e3f3; }",
 		""
