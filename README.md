@@ -4,22 +4,25 @@
 
 - aerospace
 - btop
+- borders
 - cava
+- espanso
 - fastfetch
-- ghostty
+- hammerspoon
 - karabiner
 - lazygit
 - lazyvim
-- hammerspoon
+- leaderkey
 - My Wallpaper (_Optional_)
 - nvchad
 - nvim
 - sketchybar (with sbarlua)
 - textfox (_LibreWolf Only!_)
 - vimium-c (_Browser Extension!_)
+- tmux
+- vivaldi
 - wezterm
 - yazi
-- zellij
 - zshrc
 
 ## Things in the install script but not in the repo
