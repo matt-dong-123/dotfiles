@@ -1,14 +1,16 @@
-# nvim-from-scratch
+# My nvim docs
 
 - [X] mini.ai - Around/Inside text objects
 - [X] autopairs - pair (), [], {}
 - [X] blink - completion plugin
 - [X] bufferline - tabs on top
-- [X] highlight-colors - highlight color items (#9e76ff, 0x88a023, etc)
-- [X] commentary - comment stuff with gc
+- [X] highlight-colors - highlight color items (#9e76ff, 0x88a023, color = blue etc)
+- [X] commentary - comment stuff with `gc`
 - [X] conform - force styling
 - [X] fzflua - fuzzy finder (replace telescope)
 - [X] gitsigns - git changes in line numbers
+- [X] inc-rename.nvim - rename with immediate effect
+- [X] lazygit - open lazygit in floating window
 - [X] lspconfig - lsp config
 - [X] noice - experimental ui
 - [X] oil - file manager
