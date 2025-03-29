@@ -1,5 +1,6 @@
 # nvim-from-scratch
 
+- [X] mini.ai - Around/Inside text objects
 - [X] autopairs - pair (), [], {}
 - [X] blink - completion plugin
 - [X] bufferline - tabs on top
