@@ -19,7 +19,7 @@
 - [X] sleuth - fix indentation
 - [X] smear-cursor - add cursor animations
 - [X] snacks - QoL plugins (dashboard, indent, etc.)
-- [X] mini.statusline - minimal status bar
+- [X] lualine - customizable status bar
 - [X] supermaven - AI completion
 - [X] surround - add the `surround` text object
 - [X] toggleterm - floating/tiled terminal
