@@ -104,16 +104,6 @@ y() {
     rm -f -- "$tmp"
 }
 
-vv() {
-    select config in nvim lazyvim nvchad
-    do
-        NVIM_APPNAME=$config nvim $@
-        break
-    done
-}
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 # pnpm
 export PNPM_HOME="/Users/bulus-computer/Library/pnpm"
 case ":$PATH:" in
