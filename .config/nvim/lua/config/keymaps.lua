@@ -1,5 +1,5 @@
 local g = vim.g
-local keymapset = vim.keymap.set
+local map = vim.keymap.set
 local expr = { silent = true, expr = true, remap = false }
 
 -- set leader key
@@ -12,42 +12,47 @@ g.have_nerd_font = true
 -- NOTE: NORMAL MODE REMAPS
 
 -- Clear highlights on search when pressing <Esc>
-keymapset('n', '<Esc>', '<cmd>nohlsearch<CR>')
+map('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Diagnostic
-keymapset('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+map(
+    'n',
+    '<leader>q',
+    vim.diagnostic.setloclist,
+    { desc = 'Open diagnostic [Q]uickfix list' }
+)
 
 -- cht.sh
-keymapset('n', '<leader>i', ':!tmux neww ~/dotfiles/cht.sh<CR>')
+map('n', '<leader>i', ':!tmux neww ~/dotfiles/cht.sh<CR>')
 
 -- create panes
-keymapset('n', '<leader>sl', '<C-w>v')
-keymapset('n', '<leader>sj', '<C-w>s')
+map('n', '<leader>sl', '<C-w>v')
+map('n', '<leader>sj', '<C-w>s')
 
 -- move focus
-keymapset('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
-keymapset('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
-keymapset('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
-keymapset('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
-keymapset('n', '<leader>bh', '<cmd>:bprev<CR>', { desc = 'Move to previous buffer' })
-keymapset('n', '<leader>bl', '<cmd>:bnext<CR>', { desc = 'Move to next buffer' })
+map('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
+map('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
+map('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
+map('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
+map('n', '<leader>bh', '<cmd>:bprev<CR>', { desc = 'Move to previous buffer' })
+map('n', '<leader>bl', '<cmd>:bnext<CR>', { desc = 'Move to next buffer' })
 
 -- center cursor when scrolling
-keymapset('n', '<C-u>', '<C-u>zz')
-keymapset('n', '<C-d>', '<C-d>zz')
+map('n', '<C-u>', '<C-u>zz')
+map('n', '<C-d>', '<C-d>zz')
 
 -- visually move between lines
-keymapset('', 'j', "(v:count ? 'j' : 'gj')", expr)
-keymapset('', 'k', "(v:count ? 'k' : 'gk')", expr)
-keymapset('n', 'Q', 'gq')
+map('', 'j', "(v:count ? 'j' : 'gj')", expr)
+map('', 'k', "(v:count ? 'k' : 'gk')", expr)
+map('n', 'Q', 'gq')
 
 -- NOTE: TERMINAL MODE REMAPS
 
 -- Exit terminal mode
 -- WARNING: If this doesn't work, try <C-\><C-n>
-keymapset('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
+map('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
 -- NOTE: VISUAL MODE REMAPS
 
-keymapset('v', 'J', ":m '>+1<CR>gv=gv")
-keymapset('v', 'K', ":m '<-2<CR>gv=gv")
+map('v', 'J', ":m '>+1<CR>gv=gv")
+map('v', 'K', ":m '<-2<CR>gv=gv")
