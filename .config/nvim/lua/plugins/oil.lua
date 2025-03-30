@@ -8,7 +8,7 @@ return {
             end,
         },
     },
-    dependencies = { { 'echasnovski/mini.icons', opts = {} } },
+    dependencies = { { 'nvim-tree/nvim-web-devicons' } },
     lazy = false,
     default_file_explorer = true,
     columns = {
