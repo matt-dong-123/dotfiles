@@ -160,6 +160,19 @@
       "key" : "i",
       "label" : "Internet",
       "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "l",
+          "label" : "",
+          "type" : "application",
+          "value" : "/Applications/Tencent Lemon.app"
+        }
+      ],
+      "key" : "o",
+      "label" : "Others",
+      "type" : "group"
     }
   ],
   "type" : "group"
