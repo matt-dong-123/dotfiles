@@ -10,9 +10,11 @@
 - [X] dropbar - vscode-like lsp object breadcrumbs
 - [X] fzflua - fuzzy finder (replace telescope)
 - [X] gitsigns - git changes in line numbers
+- [X] grug-far - search and replace using rg
 - [X] inc-rename.nvim - rename with immediate effect
 - [X] lazygit - open lazygit in floating window
 - [X] lspconfig - lsp config
+- [X] lualine - customizable status bar
 - [X] noice - experimental ui
 - [X] oil - file manager
 - [X] rainbow-delimiters - color layered brackets
@@ -20,7 +22,6 @@
 - [X] sleuth - fix indentation
 - [X] smear-cursor - add cursor animations
 - [X] snacks - QoL plugins (dashboard, indent, etc.)
-- [X] lualine - customizable status bar
 - [X] supermaven - AI completion
 - [X] surround - add the `surround` text object
 - [X] toggleterm - floating/tiled terminal
