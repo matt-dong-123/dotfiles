@@ -15,13 +15,18 @@ return {
         },
         {
             '<leader>fh',
-            ':Fzflua helptags',
+            ':FzfLua helptags<CR>',
             desc = 'Find help',
         },
         {
             '<leader>fk',
-            ':Fzflua keymaps',
+            ':FzfLua keymaps<CR>',
             desc = 'Find keymaps',
+        },
+        {
+            '<leader>ft',
+            ':FzfLua grep_curbuf<CR>',
+            desc = 'Find text in current buffer',
         },
     },
 }
