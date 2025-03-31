@@ -7,6 +7,7 @@
 - [X] highlight-colors - highlight color items (#9e76ff, 0x88a023, color = blue etc)
 - [X] commentary - comment stuff with `gc`
 - [X] conform - force styling
+- [X] dropbar - vscode-like lsp object breadcrumbs
 - [X] fzflua - fuzzy finder (replace telescope)
 - [X] gitsigns - git changes in line numbers
 - [X] inc-rename.nvim - rename with immediate effect
