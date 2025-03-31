@@ -1,6 +1,6 @@
 return {
     'neovim/nvim-lspconfig',
-    event = 'BufReadPre',
+    event = { 'BufNewFile', 'BufReadPost' },
     dependencies = {
         -- Mason
         'williamboman/mason.nvim',
@@ -11,7 +11,7 @@ return {
         { 'j-hui/fidget.nvim', opts = {} },
 
         -- Completion
-        'Saghen/blink.cmp',
+        { 'Saghen/blink.cmp', event = 'InsertEnter' },
     },
     config = function()
         -- Run when an LSP attaches to a particular buffer.
