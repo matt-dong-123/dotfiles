@@ -32,6 +32,7 @@ require('lazy').setup({
             loaded = '',
             not_loaded = '',
         },
+        border = 'rounded',
     },
     install = { colorscheme = { 'tokyonight' } },
     checker = { enabled = true },
