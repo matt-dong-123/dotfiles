@@ -1,5 +1,5 @@
 return {
     'akinsho/bufferline.nvim',
-    event = 'BufReadPre',
+    event = 'VeryLazy',
     opts = {},
 }
