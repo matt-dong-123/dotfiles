@@ -75,26 +75,12 @@
 >
 > Also, make sure to backup your old dotfiles before applying my settings, as otherwise the install script might fail!
 
-<details><summary>The easy way (with extra apps!)</summary>
-
 Run:
 
 ```sh
 cd
 curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/main/install.sh | bash
 ```
-
-</details>
-
-<details><summary>The hard way (with no extras)</summary>
-
-1. Install [brew](https://brew.sh)
-2. Install gnu stow (`brew install stow`)
-3. Install git (`brew install git`)
-4. Clone this repo (`git clone https://github.com/matt-dong-123/dotfiles.git`)
-5. Run `stow .` in the dotfiles directory
-
-</details>
 
 ## Post-Install
 
@@ -106,22 +92,6 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 2. In the preferences for the extension, click "Import Settings"
 3. Choose the file "vimium_c.json" you just installed.
 4. That's it!
-
-</details>
-
-<details><summary><b>Enabling librewolf_config (only necessary for manual install)</b></summary>
-
-> **Important**
-> This is only for Firefox/LibreWolf users!
-
-1. Go to about:profiles in the url bar, and copy the "Root Directory" path of the profile you want to use
-2. Run `install.sh` in ~/dotfiles/librewolf_config/
-3. Paste the path you copied in step 1 into the script
-4. You should be good to go!
-
-> **Note**
-> Installing the sidebery extension is recommended, but not required.
-> There is also a default config that goes along textfox nicely.
 
 </details>
 
