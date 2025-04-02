@@ -40,6 +40,7 @@ echo -e "${green}Installing Brew Formulae... ${no}"
 ### Must Have things
 brew install stow
 brew install fzf
+brew install sesh
 brew install bat
 brew install fd
 brew install zoxide
@@ -109,7 +110,7 @@ if [ "$answer" != "N" ] && [ "$answer" != "n" ]; then
     brew install --cask keycastr
     brew install --cask keyboardholder
     brew install --cask obsidian
-    brew install --cask raycast
+    brew install --cask sol
     brew install --cask slimhud
     brew install --cask tencent-lemon
     brew install --cask vscodium

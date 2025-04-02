@@ -39,7 +39,7 @@
 - KeyboardHolder
 - Latest
 - Obsidian
-- Raycast
+- Sol
 - Self Control
 - SlimHUD
 - Tencent Lemon
