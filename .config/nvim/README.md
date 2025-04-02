@@ -18,7 +18,6 @@
 - [X] oil - file manager
 - [X] rainbow-delimiters - color layered brackets
 - [X] render-markdown - render markdown like in the browser
-- [X] sleuth - fix indentation
 - [X] smear-cursor - add cursor animations
 - [X] snacks - QoL plugins (dashboard, indent, etc.)
 - [X] supermaven - AI completion
