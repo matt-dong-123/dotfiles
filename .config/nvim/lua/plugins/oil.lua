@@ -16,7 +16,7 @@ return {
     keys = {
         {
             '<leader>e',
-            '<cmd>Oil --float<CR>',
+            '<cmd>Oil<CR>',
             desc = 'Open oil at current file',
         },
     },
