@@ -41,6 +41,7 @@ echo -e "${green}Installing Brew Formulae... ${no}"
 brew install stow
 brew install fzf
 brew install sesh
+brew install gum
 brew install bat
 brew install fd
 brew install zoxide

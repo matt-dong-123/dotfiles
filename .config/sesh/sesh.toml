@@ -1,0 +1,15 @@
+[default_session]
+preview_command = "eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi"
+
+[[session]]
+name = "Downloads"
+path = "~/Downloads"
+startup_command = "y"
+
+[[session]]
+name = "dotfiles"
+path = "~/dotfiles"
+
+[[session]]
+name = "Notes"
+path = "~/Obsidian"
