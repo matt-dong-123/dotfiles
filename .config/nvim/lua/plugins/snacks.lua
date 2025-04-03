@@ -1,5 +1,6 @@
 return {
     'folke/snacks.nvim',
+    lazy = false,
     opts = {
         bigfile = { enabled = true },
         dashboard = {
@@ -109,6 +110,7 @@ return {
         },
         indent = { enabled = true },
         input = { enabled = true },
+        lazygit = { enabled = true },
         notifier = { enabled = true, timeout = 3000 },
         quickfile = { enabled = true },
         scroll = {
@@ -117,5 +119,14 @@ return {
         },
         statuscolumn = { enabled = true },
         words = { enabled = true },
+    },
+    keys = {
+        {
+            '<leader>lg',
+            function()
+                Snacks.lazygit()
+            end,
+            desc = 'Lazygit',
+        },
     },
 }
