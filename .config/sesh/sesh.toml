@@ -13,3 +13,7 @@ path = "~/dotfiles"
 [[session]]
 name = "Notes"
 path = "~/Obsidian"
+
+[[session]]
+name = "Documents"
+path = "~/Documents"
