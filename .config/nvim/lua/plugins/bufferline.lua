@@ -8,5 +8,10 @@ return {
             '<cmd>BufferLinePick<cr>',
             desc = 'Pick buffer',
         },
+        {
+            'gp',
+            '<cmd>BufferLineTogglePin<cr>',
+            desc = 'Toggle buffer pin',
+        },
     },
 }
