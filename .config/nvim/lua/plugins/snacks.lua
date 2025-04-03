@@ -128,5 +128,12 @@ return {
             end,
             desc = 'Lazygit',
         },
+        {
+            '<leader>dn',
+            function()
+                Snacks.notifier.hide()
+            end,
+            desc = 'Hide Notifications',
+        },
     },
 }
