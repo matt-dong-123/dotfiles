@@ -1,1 +1,39 @@
 notARepository: skip
+gui:
+  theme:
+    activeBorderColor:
+      - "#BB9AF7"
+      - bold
+    inactiveBorderColor:
+      - "#7AA2F7"
+  
+    searchingActiveBorderColor:
+      - "#7DCFFF"
+      - bold
+  
+    optionsTextColor:
+      - "#565F89"
+  
+    selectedLineBgColor:
+      - "#565F89"
+  
+    inactiveViewSelectedLineBgColor:
+      - bold
+  
+    cherryPickedCommitFgColor:
+      - "#565F89"
+  
+    cherryPickedCommitBgColor:
+      - "#89DDFF"
+  
+    markedBaseCommitFgColor:
+      - "#89DDFF"
+  
+    markedBaseCommitBgColor:
+      - "#E0AF68"
+  
+    unstagedChangesColor:
+      - "#FF007C"
+  
+    defaultFgColor:
+      - "#C0CAF5"
