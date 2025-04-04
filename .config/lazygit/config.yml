@@ -37,3 +37,5 @@ gui:
   
     defaultFgColor:
       - "#C0CAF5"
+
+  nerdFontsVersion: "3" 
