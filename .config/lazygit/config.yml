@@ -2,7 +2,7 @@ notARepository: skip
 gui:
   theme:
     activeBorderColor:
-      - "#BB9AF7"
+      - "#FF9E64"
       - bold
     inactiveBorderColor:
       - "#7AA2F7"
