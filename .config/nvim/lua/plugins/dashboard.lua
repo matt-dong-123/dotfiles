@@ -5,7 +5,6 @@ return {
         dashboard = {
             sections = {
                 { section = 'header' },
-                { section = 'session' },
                 {
                     icon = ' ',
                     title = 'Keymaps',
