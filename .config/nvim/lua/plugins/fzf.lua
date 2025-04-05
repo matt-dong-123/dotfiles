@@ -28,5 +28,10 @@ return {
             ':FzfLua grep_curbuf<CR>',
             desc = 'Find text in current buffer',
         },
+        {
+            '<leader>,',
+            ':FzfLua buffers sort_mru=true sort_lastused=true<CR>',
+            desc = 'Switch buffers',
+        },
     },
 }
