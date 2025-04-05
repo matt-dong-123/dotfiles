@@ -5,7 +5,6 @@ return {
         bigfile = { enabled = true },
         indent = { enabled = true },
         input = { enabled = true },
-        lazygit = { enabled = true },
         notifier = { enabled = true, timeout = 3000 },
         quickfile = { enabled = true },
         scroll = {
@@ -16,13 +15,6 @@ return {
         words = { enabled = true },
     },
     keys = {
-        {
-            '<leader>lg',
-            function()
-                Snacks.lazygit()
-            end,
-            desc = 'Lazygit',
-        },
         {
             '<leader>dn',
             function()
