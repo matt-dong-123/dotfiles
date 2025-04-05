@@ -69,7 +69,7 @@
 
 ## How to apply settings
 
-> **IMPORTANT**
+> [!important]
 >
 > This is only for macOS users!
 >
