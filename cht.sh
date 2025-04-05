@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# primeagen's horrible bash script, i'm gonna have to make it better
+# primeagen's horrible bash script, i'm gonna have to make it better... someday
 
 # Define languages and coreutils here
 languages=$(echo "golang lua cpp python java" | tr ' ' '\n')
