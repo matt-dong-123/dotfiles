@@ -1,5 +1,8 @@
 local opt = vim.opt
 
+-- set colorcolumn
+opt.colorcolumn = '100'
+
 -- set relative line numbers
 opt.number = true
 opt.relativenumber = true

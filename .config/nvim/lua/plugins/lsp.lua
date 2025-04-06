@@ -56,7 +56,8 @@ return {
                     'Type [D]efinition'
                 )
 
-                -- Fuzzy find all the symbols (variables, functions, types, etc.) in your current document.
+                -- Fuzzy find all the symbols (variables, functions, types, etc.)
+                -- in your current document.
                 map(
                     '<leader>ds',
                     require('fzf-lua').lsp_document_symbols,
@@ -86,8 +87,9 @@ return {
                 --  For example, in C this would take you to the header.
                 map('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
 
-                -- Highlight references of the word under your cursor when your cursor rests there for a little while.
-                -- When you move your cursor, the highlights will be cleared (the second autocommand).
+                -- Highlight references of the word under your cursor
+                -- when your cursor rests there for a little while.
+                -- When you move your cursor, the highlights will be cleared (the second autocmd).
                 local client = vim.lsp.get_client_by_id(event.data.client_id)
                 if
                     client
@@ -157,9 +159,11 @@ return {
         -- Enable the following language servers
         --  cmd (table): Override the default command used to start the server
         --  filetypes (table): Override the default list of associated filetypes for the server
-        --  capabilities (table): Override fields in capabilities. Can be used to disable certain LSP features.
+        --  capabilities (table): Override fields in capabilities.
+        --      Can be used to disable certain LSP features.
         --  settings (table): Override the default settings passed when initializing the server.
-        --  For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
+        --  For example, to see the options for `lua_ls`, you could go to:
+        --      https://luals.github.io/wiki/settings/
         local servers = {
             clangd = {},
             gopls = {},
