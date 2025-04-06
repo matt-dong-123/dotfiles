@@ -27,7 +27,7 @@ local spaceConfigs = {
 local function highlight_workspace(focused_workspace, workspace, space, space_bracket)
 	local selected = focused_workspace == workspace
 	local spaceConfig = spaceConfigs[workspace]
-	local color = selected and colors.green or colors.bg2
+	local color = selected and colors.default or colors.bg2
 	sbar.animate("tanh", 10, function()
 		space:set({
 			icon = {
@@ -58,7 +58,7 @@ for i, workspace in ipairs(workspaces) do
 			string = spaceConfig.icon,
 			padding_left = 1,
 			color = colors.white,
-			highlight_color = colors.green,
+			highlight_color = colors.default,
 		},
 		label = {
 			color = colors.grey,
@@ -96,7 +96,7 @@ local spaces_indicator = sbar.add("item", {
 	icon = {
 		padding_left = 8,
 		padding_right = 9,
-		color = colors.green,
+		color = colors.default,
 		string = icons.switch.on,
 	},
 	label = {
@@ -108,7 +108,7 @@ local spaces_indicator = sbar.add("item", {
 	},
 	background = {
 		color = colors.with_alpha(colors.bg2, 0.0),
-		border_color = colors.with_alpha(colors.green, 0.0),
+		border_color = colors.with_alpha(colors.default, 0.0),
 	},
 })
 
@@ -153,7 +153,7 @@ spaces_indicator:subscribe("mouse.exited", function()
 				},
 			},
 			icon = {
-				color = colors.green,
+				color = colors.default,
 			},
 			label = {
 				width = 0,

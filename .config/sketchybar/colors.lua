@@ -10,7 +10,7 @@ return {
 	grey = 0xff544c7e,
 	transparent = 0x00000000,
 
-	default = 0xff4fd6be,
+	default = 0xff7aa2f7,
 
 	bar = {
 		bg = 0xaa1f2335,
