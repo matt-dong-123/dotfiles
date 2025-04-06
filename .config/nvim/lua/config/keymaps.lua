@@ -23,7 +23,12 @@ map(
 )
 
 -- cht.sh
-map('n', '<leader>i', ':!tmux neww ~/dotfiles/cht.sh<CR>')
+map(
+    'n',
+    '<leader>i',
+    ':!tmux neww ~/dotfiles/cht.sh<CR>',
+    { desc = 'Open cht.sh script' }
+)
 
 -- create panes
 map('n', '<leader>sl', '<C-w>v')
