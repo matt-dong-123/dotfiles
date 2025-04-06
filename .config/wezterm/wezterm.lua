@@ -7,6 +7,7 @@ config = {
 		"JetBrainsMono Nerd Font",
 		"Consolas",
 	}),
+	enable_tab_bar = false,
 	font_size = 20,
 	window_decorations = "RESIZE",
 	window_background_opacity = 0.75,
@@ -18,25 +19,4 @@ config = {
 	max_fps = 120,
 	window_close_confirmation = "NeverPrompt",
 }
-local bar = wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm")
-bar.apply_to_config(config, {
-	position = "top",
-	modules = {
-		workspace = {
-			enabled = false,
-		},
-		pane = {
-			enabled = false,
-		},
-		hostname = {
-			enabled = false,
-		},
-		clock = {
-			enabled = false,
-		},
-		username = {
-			enabled = false,
-		},
-	},
-})
 return config
