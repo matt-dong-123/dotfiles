@@ -13,6 +13,7 @@ local front_app = sbar.add("item", "front_app", {
 			size = 20.0,
 			style = settings.font.style_map["Bold"],
 		},
+		color = colors.default,
 	},
 	updates = true,
 })
