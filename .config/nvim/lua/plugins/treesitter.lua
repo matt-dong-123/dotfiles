@@ -13,7 +13,6 @@ return {
                 'markdown_inline',
             },
             sync_install = false,
-            auto_install = true,
             highlight = {
                 enable = true,
                 -- Disable for large files
