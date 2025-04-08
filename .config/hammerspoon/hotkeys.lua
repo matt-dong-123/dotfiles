@@ -30,9 +30,6 @@ local function bind_hotkeys(mapping)
 			hs.application.launchOrFocus(app)
 		end)
 	end
-	hs.hotkey.bind("ctrl", "space", function()
-		hs.application.launchOrFocus("Launchpad")
-	end)
 end
 
 bind_hotkeys(hotkeys)
