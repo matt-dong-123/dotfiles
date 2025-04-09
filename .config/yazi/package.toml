@@ -5,48 +5,48 @@ hash = "7df84299e89ffefd4686d1e20a295c8a"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "8945e54"
-hash = "f3ade4dba8fb56b85e8363b66f677f9"
+rev = "a1738e8"
+hash = "dd97eede8e20e59cd2604e8006e470e2"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "8945e54"
-hash = "f28138c2e11e87962b66d583fef724c3"
+rev = "a1738e8"
+hash = "2f1053f89d1a301a648ab181d0948e38"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "8945e54"
-hash = "ae9e1d0c6bfd68cdebc98cc684c22b45"
+rev = "a1738e8"
+hash = "1f3dad061209081a6b04dd6ff2cb06c7"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "8945e54"
-hash = "771f18427fb75fb19990ce602bb322f4"
+rev = "a1738e8"
+hash = "e0ada736ea676c2bbb3ec705a49526ef"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:jump-to-char"
-rev = "8945e54"
-hash = "af11685de39c366ec1137fcbccacdbff"
+rev = "a1738e8"
+hash = "a670c03eb3760812e044a24f94cedc55"
 
 [[plugin.deps]]
 use = "Lil-Dank/lazygit"
-rev = "9f924e3"
-hash = "2b0c33928986f126d5c5a4cac31a6b46"
+rev = "7a08a09"
+hash = "a1fa2b3e1826c3a34804ea8c548e9f80"
 
 [[plugin.deps]]
 use = "ndtoan96/ouch"
-rev = "ce6fb75"
-hash = "ed6c185514109d7c5463f609282b220c"
+rev = "73b7842"
+hash = "1b2f25c9a34b98e596c65bd3e84c51ef"
 
 [[plugin.deps]]
 use = "dedukun/relative-motions"
-rev = "0d9c8cf"
-hash = "561ad872c77b95360c2657c5e8d395ed"
+rev = "61ae795"
+hash = "65d576a76597aac2a428dc7ec0eda2ce"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "8945e54"
-hash = "aef2b1a805b80cce573bb766f1459d88"
+rev = "a1738e8"
+hash = "7918aab6a71caf31b58411f789195677"
 
 [flavor]
 deps = []

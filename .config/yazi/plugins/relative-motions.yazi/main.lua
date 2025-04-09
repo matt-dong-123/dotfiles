@@ -1,3 +1,4 @@
+--- @since 25.2.7
 -- stylua: ignore
 local MOTIONS_AND_OP_KEYS = {
 	{ on = "0" }, { on = "1" }, { on = "2" }, { on = "3" }, { on = "4" },
@@ -75,10 +76,14 @@ local render_motion = ya.sync(function(_, motion_num, motion_cmd)
 			motion_span = ui.Span(string.format(" %3d%s ", motion_num, motion_cmd))
 		end
 
+		local status_config = THEME.status
+		local separator_open = status_config.separator_open or status_config.sep_right.open
+		local separator_close = status_config.separator_close or status_config.sep_right.close
+
 		return ui.Line {
-			ui.Span(THEME.status.separator_open):fg(style.main.bg),
+			ui.Span(separator_open):fg(style.main.bg),
 			motion_span:style(style.main),
-			ui.Span(THEME.status.separator_close):fg(style.main.bg),
+			ui.Span(separator_close):fg(style.main.bg),
 			ui.Span(" "),
 		}
 	end
@@ -87,7 +92,7 @@ end)
 local render_numbers = ya.sync(function(_, mode)
 	ya.render()
 
-	Entity.number = function(_, index, file, hovered)
+	Entity.number = function(_, index, total, file, hovered)
 		local idx
 		if mode == SHOW_NUMBERS_RELATIVE then
 			idx = math.abs(hovered - index)
@@ -101,13 +106,13 @@ local render_numbers = ya.sync(function(_, mode)
 			end
 		end
 
+		local num_format = "%" .. #tostring(total) .. "d"
+
 		-- emulate vim's hovered offset
-		if idx >= 100 then
-			return ui.Span(string.format("%4d ", idx))
-		elseif hovered == index then
-			return ui.Span(string.format("%3d  ", idx))
+		if hovered == index then
+			return ui.Span(string.format(num_format .. " ", idx))
 		else
-			return ui.Span(string.format(" %3d ", idx))
+			return ui.Span(string.format(" " .. num_format, idx))
 		end
 	end
 
@@ -119,7 +124,13 @@ local render_numbers = ya.sync(function(_, mode)
 
 		local hovered_index
 		for i, f in ipairs(files) do
-			if f:is_hovered() then
+			-- TODO: Removed f:is_hovered() support in next Yazi release
+			if type(f.is_hovered) == "boolean" then
+				hovered = f.is_hovered
+			else
+				hovered = f:is_hovered()
+			end
+			if hovered then
 				hovered_index = i
 				break
 			end
@@ -130,7 +141,8 @@ local render_numbers = ya.sync(function(_, mode)
 			linemodes[#linemodes + 1] = Linemode:new(f):redraw()
 
 			local entity = Entity:new(f)
-			entities[#entities + 1] = ui.Line({ Entity:number(i, f, hovered_index), entity:redraw() }):style(entity:style())
+			entities[#entities + 1] = ui.Line({ Entity:number(i, #self._folder.files, f, hovered_index), entity:redraw() })
+				:style(entity:style())
 		end
 
 		return {
@@ -219,7 +231,7 @@ local get_cache_or_first_dir = ya.sync(function(state)
 	elseif state._enter_mode == ENTER_MODE_CACHE_OR_FIRST then
 		local hovered_file = cx.active.current.hovered
 
-		if  hovered_file ~= nil and hovered_file.cha.is_dir then
+		if hovered_file ~= nil and hovered_file.cha.is_dir then
 			return cx.active.current.cursor
 		end
 	end
@@ -262,7 +274,7 @@ return {
 
 		if cmd == "g" then
 			if direction == "g" then
-				ya.manager_emit("arrow", { -99999999 })
+				ya.manager_emit("arrow", { "top" })
 				ya.manager_emit("arrow", { lines - 1 })
 				render_clear()
 				return
@@ -294,7 +306,7 @@ return {
 				ya.manager_emit("enter", {})
 				local file_idx = get_cache_or_first_dir()
 				if file_idx then
-					ya.manager_emit("arrow", { -99999999 })
+					ya.manager_emit("arrow", { "top" })
 					ya.manager_emit("arrow", { file_idx })
 				end
 			end
