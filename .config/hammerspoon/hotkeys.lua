@@ -12,7 +12,6 @@ local hotkeys = {
 	l = "Logic Pro",
 	m = "MuseScore 4",
 	n = "Obsidian",
-	o = "wpsoffice",
 	p = "Passwords",
 	q = "QQMusic",
 	s = "System Settings",
