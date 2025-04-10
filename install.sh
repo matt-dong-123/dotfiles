@@ -114,7 +114,7 @@ if [ "$answer" != "N" ] && [ "$answer" != "n" ]; then
     brew install --cask sol
     brew install --cask slimhud
     brew install --cask tencent-lemon
-    brew install --cask vscodium
+    brew install --cask zed
     brew install --cask yellowdot
 fi
 
