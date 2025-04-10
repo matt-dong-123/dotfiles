@@ -21,12 +21,6 @@
           "value" : "/Applications/Tor Browser.app"
         },
         {
-          "key" : "v",
-          "label" : "",
-          "type" : "application",
-          "value" : "/Applications/Vivaldi.app"
-        },
-        {
           "key" : "z",
           "label" : "",
           "type" : "application",
@@ -39,18 +33,6 @@
     },
     {
       "actions" : [
-        {
-          "key" : "v",
-          "label" : "",
-          "type" : "application",
-          "value" : "/Applications/VSCodium.app"
-        },
-        {
-          "key" : "w",
-          "label" : "",
-          "type" : "application",
-          "value" : "/Applications/WezTerm.app"
-        },
         {
           "key" : "i",
           "label" : "IDEA",
@@ -71,24 +53,6 @@
     {
       "actions" : [
         {
-          "key" : "q",
-          "label" : "QQ Music",
-          "type" : "application",
-          "value" : "/Applications/QQMusic.app"
-        },
-        {
-          "key" : "m",
-          "label" : "MuseScore",
-          "type" : "application",
-          "value" : "/Applications/MuseScore 4.app"
-        },
-        {
-          "key" : "d",
-          "label" : "Dorico",
-          "type" : "application",
-          "value" : "/Applications/Dorico 5.app"
-        },
-        {
           "key" : "l",
           "label" : "",
           "type" : "application",
@@ -103,21 +67,9 @@
       "actions" : [
         {
           "key" : "w",
-          "label" : "",
+          "label" : "Word",
           "type" : "application",
-          "value" : "/Applications/WeChat.app"
-        },
-        {
-          "key" : "o",
-          "label" : "WPS Office",
-          "type" : "application",
-          "value" : "/Applications/wpsoffice.app"
-        },
-        {
-          "key" : "n",
-          "label" : "",
-          "type" : "application",
-          "value" : "/Applications/Obsidian.app"
+          "value" : "/Applications/Microsoft Word.app"
         },
         {
           "key" : "t",
@@ -126,10 +78,10 @@
           "value" : "/Applications/TencentMeeting.app"
         },
         {
-          "key" : "z",
-          "label" : "Zoom",
+          "key" : "p",
+          "label" : "PPT",
           "type" : "application",
-          "value" : "/Applications/zoom.us.app"
+          "value" : "/Applications/Microsoft PowerPoint.app"
         }
       ],
       "key" : "w",
