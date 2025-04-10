@@ -20,10 +20,24 @@ local function setup(_, options)
 		},
 		select_symbol = options.select_symbol or "S",
 		yank_symbol = options.yank_symbol or "Y",
+
 		filename_max_length = options.filename_max_length or 24,
 		filename_truncate_length = options.filename_truncate_length or 6,
 		filename_truncate_separator = options.filename_truncate_separator or "...",
+
 		color = options.color or nil,
+    default_files_color = options.default_files_color
+      or th.which.separator_style.fg
+      or "darkgray",
+    selected_files_color = options.selected_files_color
+      or th.mgr.count_selected.bg
+      or "white",
+    yanked_files_color = options.selected_files_color
+      or th.mgr.count_copied.bg
+      or "green",
+    cut_files_color = options.cut_files_color
+      or th.mgr.count_cut.bg
+      or "red",
 	}
 
 	local current_separator_style = config.separator_styles
@@ -34,25 +48,23 @@ local function setup(_, options)
 
 	function Status:mode()
 		local mode = tostring(self._tab.mode):upper()
-		if mode == "UNSET" then
-			mode = "UN-SET"
-		end
 
 		local style = self:style()
 		return ui.Line({
-			ui.Span(current_separator_style.separator_head):fg(config.color or style.main.bg),
-			ui.Span(" " .. mode .. " "):fg(th.which.mask.bg):bg(config.color or style.main.bg),
+			ui.Span(current_separator_style.separator_head)
+        :fg(config.color or style.main.bg),
+			ui.Span(" " .. mode .. " ")
+        :fg(th.which.mask.bg)
+        :bg(config.color or style.main.bg),
 		})
 	end
 
 	function Status:size()
-		local h = self._tab.current.hovered
-		if not h then
-			return ui.Line({})
-		end
+		local h = self._current.hovered
+	  local size = h and ya.readable_size(h:size() or h.cha.len)
 
 		local style = self:style()
-		return ui.Span(current_separator_style.separator_close .. " " .. ya.readable_size(h:size() or h.cha.len) .. " ")
+		return ui.Span(current_separator_style.separator_close .. " " .. size .. " ")
 			:fg(config.color or style.main.bg)
 			:bg(th.which.separator_style.fg)
 	end
@@ -69,7 +81,7 @@ local function setup(_, options)
 	end
 
 	function Status:truncate_name(filename, max_length)
-		local base_name, extension = filename:match("^(.-)(%.[^%.]+)$")
+		local base_name, extension = filename:match("^(.+)(%.[^%.]+)$")
 		base_name = base_name or filename
 		extension = extension or ""
 
@@ -83,35 +95,49 @@ local function setup(_, options)
 	end
 
 	function Status:name()
-		local h = self._tab.current.hovered
-		if not h then
-			return ui.Line({})
-		end
+    local h = self._current.hovered
+    if not h then
+      return ""
+    end
 
-		local truncated_name = self:truncate_name(h.name, config.filename_max_length)
+    local truncated_name = self:truncate_name(h.name, config.filename_max_length)
 
-		local style = self:style()
-		return ui.Line({
-			ui.Span(current_separator_style.separator_close .. " "):fg(th.which.separator_style.fg),
-			ui.Span(truncated_name):fg(config.color or style.main.bg),
-		})
-	end
+    local style = self:style()
+    return ui.Line {
+      ui.Span(current_separator_style.separator_close .. " ")
+        :fg(th.which.separator_style.fg),
+      ui.Span(truncated_name)
+        :fg(config.color or style.main.bg),
+    }
+  end
 
 	function Status:files()
 		local files_yanked = #cx.yanked
 		local files_selected = #cx.active.selected
-		local files_is_cut = cx.yanked.is_cut
+		local files_cut = cx.yanked.is_cut
 
-		local selected_fg = files_selected > 0 and th.manager.count_selected.bg or th.which.separator_style.fg
-		local yanked_fg = files_yanked > 0 and (files_is_cut and th.manager.count_cut.bg or th.manager.count_copied.bg)
-			or th.which.separator_style.fg
+		local selected_fg = files_selected > 0
+      and config.selected_files_color
+      or config.default_files_color
+		local yanked_fg = files_yanked > 0
+      and
+      (files_cut
+        and config.cut_files_color
+        or config.yanked_files_color
+      )
+			or config.default_files_color
 
-		local yanked_text = files_yanked > 0 and config.yank_symbol .. " " .. files_yanked or config.yank_symbol .. " 0"
+		local yanked_text = files_yanked > 0
+      and config.yank_symbol .. " " .. files_yanked
+      or config.yank_symbol .. " 0"
 
 		return ui.Line({
-			ui.Span(" " .. current_separator_style.separator_close_thin .. " "):fg(th.which.separator_style.fg),
-			ui.Span(config.select_symbol .. " " .. files_selected .. " "):fg(selected_fg),
-			ui.Span(yanked_text .. "  "):fg(yanked_fg),
+			ui.Span(" " .. current_separator_style.separator_close_thin .. " ")
+        :fg(th.which.separator_style.fg),
+       ui.Span(config.select_symbol .. " " .. files_selected .. " ")
+        :fg(selected_fg),
+			ui.Span(yanked_text .. "  ")
+        :fg(yanked_fg),
 		})
 	end
 
@@ -133,17 +159,20 @@ local function setup(_, options)
 		end
 
 		if percent == 0 then
-			percent = "  Top "
+			percent = " Top "
 		elseif percent == 100 then
-			percent = "  Bot "
+			percent = " Bot "
 		else
 			percent = string.format(" %2d%% ", percent)
 		end
 
 		local style = self:style()
 		return ui.Line({
-			ui.Span(" " .. current_separator_style.separator_open):fg(th.which.separator_style.fg),
-			ui.Span(percent):fg(config.color or style.main.bg):bg(th.which.separator_style.fg),
+			ui.Span(" " .. current_separator_style.separator_open)
+        :fg(th.which.separator_style.fg),
+			ui.Span(percent)
+        :fg(config.color or style.main.bg)
+        :bg(th.which.separator_style.fg),
 			ui.Span(current_separator_style.separator_open)
 				:fg(config.color or style.main.bg)
 				:bg(th.which.separator_style.fg),
@@ -156,7 +185,7 @@ local function setup(_, options)
 
 		local style = self:style()
 		return ui.Line({
-			ui.Span(string.format(" %2d/%-2d ", cursor + 1, length))
+			ui.Span(string.format(" %2d/%-2d ", math.min(cursor + 1, length), length))
 				:fg(th.which.mask.bg)
 				:bg(config.color or style.main.bg),
 			ui.Span(current_separator_style.separator_tail):fg(config.color or style.main.bg),
@@ -168,4 +197,3 @@ local function setup(_, options)
 end
 
 return { setup = setup }
-

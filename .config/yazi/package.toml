@@ -1,7 +1,7 @@
 [[plugin.deps]]
 use = "llanosrocas/yaziline"
-rev = "e06c47f"
-hash = "7df84299e89ffefd4686d1e20a295c8a"
+rev = "1342efe"
+hash = "a84a339953a568fee1d8beb63e6dca73"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
