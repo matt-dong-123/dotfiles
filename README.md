@@ -63,10 +63,6 @@
   - Zoom
   - A lot of useful CLI tools!
 
-## Things NOT in here that I have
-
-- [BoringNotch](https://github.com/TheBoredTeam/boring.notch) (No homebrew package)
-
 ## How to apply settings
 
 > [!important]
