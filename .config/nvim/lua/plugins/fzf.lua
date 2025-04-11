@@ -14,6 +14,11 @@ return {
             desc = 'Open dotfiles',
         },
         {
+            '<leader>fc',
+            ':FzfLua files cwd=~/dotfiles/.config/nvim<CR>',
+            desc = 'Open nvim config',
+        },
+        {
             '<leader>fh',
             ':FzfLua helptags<CR>',
             desc = 'Find help',
