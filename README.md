@@ -13,6 +13,7 @@
 - lazygit
 - lazyvim
 - leaderkey
+- mtab (my new tab)
 - My Wallpaper (_Optional_)
 - nvchad
 - nvim
@@ -88,6 +89,20 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 2. In the preferences for the extension, click "Import Settings"
 3. Choose the file "vimium_c.json" you just installed.
 4. That's it!
+
+</details>
+
+<details><summary><b> Enabling the mtab config </b></summary>
+
+1. Install the mtab browser extension
+   - For Chromium-based browsers, go [here](https://chromewebstore.google.com/detail/mtab/fdaphilojaklgkoocegabckfanjoacjg)
+   - For Firefox-based browsers, go [here](https://addons.mozilla.org/en-US/firefox/addon/mtab/)
+2. In the preferences for the extension, click "config-utils" you can see on the bottom
+3. Choose the file "mtab_config/config.json" you just installed.
+4. Copy the output.
+5. Go back to the preferences for the extension, click "import & save"
+6. Paste the output you copied in step 4.
+7. That's it!
 
 </details>
 
