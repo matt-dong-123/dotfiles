@@ -106,6 +106,14 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 
 </details>
 
+<details><summary><b> Enabling the stylus config </b></summary>
+
+1. Install the stylus browser extension [here](https://chromewebstore.google.com/detail/stylus-beta/apmmpaebfobifelkijhaljbmpcgbjbdo)
+2. Add a rule and paste all the rules in
+3. That's it!
+
+</details>
+
 <details><summary><b>Enabling zen_config (only for Zen Browser)</b></summary>
 
 1. Go to about:profiles in the url bar, and copy the "Root Directory" path of the profile you want to use
