@@ -1,6 +1,6 @@
 {
     "options": {
-        "showOptionsButton": true
+        "showOptionsButton": false
     },
     "user": {
         "name": "Matt"
@@ -32,7 +32,7 @@
         "url": "./wallpapers/default.png",
         "filters": {
             "brightness": "2",
-            "blur": "0px"
+            "blur": "10px"
         }
     },
     "ui": {
