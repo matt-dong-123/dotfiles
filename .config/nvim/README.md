@@ -1,21 +1,25 @@
 # My nvim docs
 
+- [X] ai - around/inside text objects
 - [X] autopairs - pair (), [], {}
 - [X] blink - completion plugin
 - [X] bufferline - tabs on top
 - [X] highlight-colors - highlight color items (#9e76ff, 0x88a023, color = blue etc)
-- [X] commentary - comment stuff with `gc`
 - [X] conform - force styling
 - [X] dropbar - vscode-like lsp object breadcrumbs
+- [X] flash - move around instantly
 - [X] fzflua - fuzzy finder (replace telescope)
 - [X] gitsigns - git changes in line numbers
 - [X] grug-far - search and replace using rg
-- [X] inc-rename.nvim - rename with immediate effect
+- [X] inc-rename - rename with immediate effect
 - [X] lazygit - open lazygit in floating window
+- [X] leetcode - grind grind grind
 - [X] lspconfig - lsp config
 - [X] lualine - customizable status bar
+- [X] neorg - neovim org-mode-like plugin
 - [X] noice - experimental ui
 - [X] oil - file manager
+- [X] persistence - save/restore sessions
 - [X] rainbow-delimiters - color layered brackets
 - [X] render-markdown - render markdown like in the browser
 - [X] smear-cursor - add cursor animations
@@ -25,8 +29,7 @@
 - [X] toggleterm - floating/tiled terminal
 - [X] todo-comments - highlight TODOs
 - [X] tokyonight - colorscheme
-- [X] transparent - transparent background
 - [X] treesitter - advanced syntax highlighting
-- [X] treesitter-textobjects - advanced text objects based on syntax trees from ts
+- [X] trouble - diagnostics
 - [X] vim-tmux-navigator - tmux navigation
 - [X] which-key - show keybindings
