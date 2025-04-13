@@ -92,7 +92,7 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 
 </details>
 
-<details><summary><b> Enabling the mtab config </b></summary>
+<details><summary><b>Enabling the mtab config</b></summary>
 
 1. Install the mtab browser extension
    - For Chromium-based browsers, go [here](https://chromewebstore.google.com/detail/mtab/fdaphilojaklgkoocegabckfanjoacjg)
@@ -106,7 +106,14 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 
 </details>
 
-<details><summary><b> Enabling the stylus config </b></summary>
+<details><summary><b>Enabling vivaldi config (only for Vivaldi)</b></summary>
+
+1. Go to vivaldi:experiments, and enable "Allow CSS Modifications"
+2. Search "Custom UI Modifications" and paste your .config/vivaldi directory into the text field
+
+</details>
+
+<details><summary><b>Enabling the stylus config (only for Vivaldi)</b></summary>
 
 1. Install the stylus browser extension [here](https://chromewebstore.google.com/detail/stylus-beta/apmmpaebfobifelkijhaljbmpcgbjbdo)
 2. Add a rule and paste all the rules in
@@ -120,13 +127,6 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 2. Paste the zen_config directory into the profile directory/chrome.
 3. You may have to find the zen themes and reinstall them through the website.
 4. You should be good to go!
-
-</details>
-
-<details><summary><b>Enabling vivaldi config (only for Vivaldi)</b></summary>
-
-1. Go to vivaldi:experiments, and enable "Allow CSS Modifications"
-2. Search "Custom UI Modifications" and paste your .config/vivaldi directory into the text field
 
 </details>
 
