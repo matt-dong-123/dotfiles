@@ -5,9 +5,9 @@ return {
         'williamboman/mason.nvim',
         'williamboman/mason-lspconfig.nvim',
         'WhoIsSethDaniel/mason-tool-installer.nvim',
-
+        'j-hui/fidget.nvim',
         -- Completion
-        { 'Saghen/blink.cmp', event = 'InsertEnter' },
+        'Saghen/blink.cmp',
     },
     config = function()
         -- Run when an LSP attaches to a particular buffer.
