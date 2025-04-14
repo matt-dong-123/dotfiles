@@ -4,13 +4,11 @@
       "actions" : [
         {
           "key" : "c",
-          "label" : "",
           "type" : "application",
           "value" : "/Applications/Chromium.app"
         },
         {
           "key" : "s",
-          "label" : "",
           "type" : "application",
           "value" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
         },
@@ -22,7 +20,6 @@
         },
         {
           "key" : "z",
-          "label" : "",
           "type" : "application",
           "value" : "/Applications/Zen.app"
         }
@@ -41,9 +38,13 @@
         },
         {
           "key" : "x",
-          "label" : "",
           "type" : "application",
           "value" : "/Applications/Xcode.app"
+        },
+        {
+          "key" : "z",
+          "type" : "application",
+          "value" : "/Applications/Zed.app"
         }
       ],
       "key" : "c",
@@ -54,7 +55,6 @@
       "actions" : [
         {
           "key" : "l",
-          "label" : "",
           "type" : "application",
           "value" : "/Applications/Logic Pro.app"
         }
@@ -117,9 +117,13 @@
       "actions" : [
         {
           "key" : "l",
-          "label" : "",
           "type" : "application",
           "value" : "/Applications/Tencent Lemon.app"
+        },
+        {
+          "key" : "p",
+          "type" : "application",
+          "value" : "/System/Applications/Preview.app"
         }
       ],
       "key" : "o",
