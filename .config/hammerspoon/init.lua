@@ -1,1 +1,2 @@
 require("hotkeys")
+require("autoreload")
