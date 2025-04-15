@@ -1,6 +1,3 @@
--- Fuck you lsp
-hs = hs
-
 -- hyper key
 local hypr = { "ctrl", "alt", "cmd", "shift" }
 
