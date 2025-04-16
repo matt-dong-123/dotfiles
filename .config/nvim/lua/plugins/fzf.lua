@@ -34,7 +34,7 @@ return {
             desc = 'Find text in current buffer',
         },
         {
-            '<leader>,',
+            '<leader>fb',
             ':FzfLua buffers sort_mru=true sort_lastused=true<CR>',
             desc = 'Switch buffers',
         },
