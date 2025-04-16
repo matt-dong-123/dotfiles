@@ -15,7 +15,7 @@
 - [X] lazygit - open lazygit in floating window
 - [X] leetcode - grind grind grind
 - [X] lspconfig - lsp config
-- [X] lualine - customizable status bar
+- [X] heirline - customizable status bar
 - [X] neorg - neovim org-mode-like plugin
 - [X] noice - experimental ui
 - [X] oil - file manager
