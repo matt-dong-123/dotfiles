@@ -39,11 +39,6 @@ rev = "73b7842"
 hash = "1b2f25c9a34b98e596c65bd3e84c51ef"
 
 [[plugin.deps]]
-use = "dedukun/relative-motions"
-rev = "61ae795"
-hash = "65d576a76597aac2a428dc7ec0eda2ce"
-
-[[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
 rev = "a1738e8"
 hash = "7918aab6a71caf31b58411f789195677"
