@@ -1,5 +1,9 @@
 return {
     'rebelot/heirline.nvim',
+    dependencies = {
+        'lewis6991/gitsigns.nvim',
+        'folke/trouble.nvim',
+    },
     config = function()
         local conditions = require 'heirline.conditions'
         local utils = require 'heirline.utils'
@@ -135,14 +139,14 @@ return {
                 condition = function()
                     return vim.bo.modified
                 end,
-                provider = '[+]',
+                provider = ' [+]',
                 hl = { fg = 'green1' },
             },
             {
                 condition = function()
                     return not vim.bo.modifiable or vim.bo.readonly
                 end,
-                provider = '',
+                provider = ' ',
                 hl = { fg = 'orange' },
             },
         }
@@ -168,7 +172,6 @@ return {
         -- NOTE: Git
         local Git = {
             condition = conditions.is_git_repo,
-
             init = function(self)
                 self.status_dict = vim.b.gitsigns_status_dict
                 self.has_changes = self.status_dict.added ~= 0
@@ -187,21 +190,21 @@ return {
             {
                 provider = function(self)
                     local count = self.status_dict.added or 0
-                    return count > 0 and ('+' .. count .. ' ')
+                    return count > 0 and (' +' .. count)
                 end,
                 hl = { fg = colors.git.add },
             },
             {
                 provider = function(self)
                     local count = self.status_dict.removed or 0
-                    return count > 0 and ('-' .. count .. ' ')
+                    return count > 0 and (' -' .. count)
                 end,
                 hl = { fg = colors.git.delete },
             },
             {
                 provider = function(self)
                     local count = self.status_dict.changed or 0
-                    return count > 0 and ('~' .. count .. ' ')
+                    return count > 0 and (' ~' .. count)
                 end,
                 hl = { fg = colors.git.change },
             },
@@ -209,6 +212,12 @@ return {
 
         -- NOTE: Diagnostics
         local Diagnostics = {
+            on_click = {
+                callback = function()
+                    require('trouble').toggle { mode = 'document_diagnostics' }
+                end,
+                name = 'heirline_diagnostics',
+            },
             update = { 'DiagnosticChanged', 'BufEnter' },
             init = function(self)
                 self.errors = #vim.diagnostic.get(
@@ -268,6 +277,14 @@ return {
 
         -- NOTE: LSP
         local LSPActive = {
+            on_click = {
+                callback = function()
+                    vim.defer_fn(function()
+                        vim.cmd 'LspInfo'
+                    end, 100)
+                end,
+                name = 'heirline_LSP',
+            },
             condition = conditions.lsp_attached,
             update = { 'LspAttach', 'LspDetach' },
             provider = function()
@@ -275,16 +292,25 @@ return {
                 for _, server in pairs(vim.lsp.get_clients { bufnr = 0 }) do
                     table.insert(names, server.name)
                 end
-                return ' [' .. table.concat(names, ' ') .. ']'
+                return ' ' .. table.concat(names, ' ') .. ''
             end,
             hl = { fg = 'green', bold = true },
         }
+
         -- NOTE: ft
         local FileType = {
             provider = function()
                 return string.upper(vim.bo.filetype)
             end,
             hl = 'Type',
+        }
+
+        -- NOTE: File Percentage
+        local FilePercentage = {
+            {
+                provider = '%p',
+                hl = { fg = colors.red },
+            },
         }
         local Align = { provider = '%=' }
         local Space = { provider = ' | ' }
@@ -303,6 +329,8 @@ return {
             LSPActive,
             Space,
             FileType,
+            Space,
+            FilePercentage,
         }
 
         local InactiveStatusLine = {
