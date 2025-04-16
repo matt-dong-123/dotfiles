@@ -7,7 +7,6 @@
 - [X] highlight-colors - highlight color items (#9e76ff, 0x88a023, color = blue etc)
 - [X] conform - force styling
 - [X] dropbar - vscode-like lsp object breadcrumbs
-- [X] flash - move around instantly
 - [X] fzflua - fuzzy finder (replace telescope)
 - [X] gitsigns - git changes in line numbers
 - [X] grug-far - search and replace using rg
@@ -26,7 +25,6 @@
 - [X] snacks - QoL plugins (dashboard, indent, etc.)
 - [X] supermaven - AI completion
 - [X] surround - add the `surround` text object
-- [X] toggleterm - floating/tiled terminal
 - [X] todo-comments - highlight TODOs
 - [X] tokyonight - colorscheme
 - [X] treesitter - advanced syntax highlighting
