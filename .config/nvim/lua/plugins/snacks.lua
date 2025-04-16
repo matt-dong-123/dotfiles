@@ -12,6 +12,7 @@ return {
             easing_function = 'quadratic',
         },
         statuscolumn = { enabled = true },
+        terminal = { enabled = true },
         words = { enabled = true },
     },
     keys = {
@@ -21,6 +22,20 @@ return {
                 Snacks.notifier.hide()
             end,
             desc = 'Hide Notifications',
+        },
+        {
+            '<leader>tf',
+            function()
+                Snacks.terminal()
+            end,
+            desc = 'Open Terminal',
+        },
+        {
+            '<leader>lg',
+            function()
+                Snacks.terminal.get 'lazygit'
+            end,
+            desc = 'Open Lazygit',
         },
     },
 }
