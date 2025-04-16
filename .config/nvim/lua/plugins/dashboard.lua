@@ -43,7 +43,7 @@ return {
                     },
                     {
                         icon = '󰒲 ',
-                        key = 'L',
+                        key = 'l',
                         desc = 'Lazy',
                         action = ':Lazy',
                         enabled = package.loaded.lazy ~= nil,
