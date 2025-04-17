@@ -307,11 +307,15 @@ return {
 
         -- NOTE: File Percentage
         local FilePercentage = {
-            {
-                provider = '%p',
-                hl = { fg = colors.red },
-            },
+            provider = '%P',
+            hl = { fg = colors.red },
         }
+
+        local Ruler = {
+            provider = '%l|%L:%c',
+            hl = { fg = colors.blue },
+        }
+
         local Align = { provider = '%=' }
         local Space = { provider = ' | ' }
 
@@ -329,6 +333,8 @@ return {
             LSPActive,
             Space,
             FileType,
+            Space,
+            Ruler,
             Space,
             FilePercentage,
         }
