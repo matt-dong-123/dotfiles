@@ -90,6 +90,25 @@ return {
             },
         }
 
+        -- NOTE: Macro
+        local MacroRec = {
+            condition = function()
+                return vim.fn.reg_recording() ~= '' and vim.o.cmdheight == 0
+            end,
+            provider = '  ',
+            hl = { fg = 'orange', bold = true },
+            utils.surround({ '[', ']' }, nil, {
+                provider = function()
+                    return vim.fn.reg_recording()
+                end,
+                hl = { fg = 'green', bold = true },
+            }),
+            update = {
+                'RecordingEnter',
+                'RecordingLeave',
+            },
+        }
+
         -- NOTE: File name
         -- Children will be added later
         local FileNameBlock = {
@@ -307,6 +326,7 @@ return {
             hl = { fg = colors.red },
         }
 
+        -- NOTE: Row and column
         local Ruler = {
             provider = '%l|%L:%c',
             hl = { fg = colors.blue },
@@ -318,6 +338,7 @@ return {
         local ActiveStatusLine = {
             condition = conditions.is_active,
             ViMode,
+            MacroRec,
             Space,
             FileNameBlock,
             Space,
