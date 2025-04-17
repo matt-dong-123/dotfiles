@@ -214,7 +214,7 @@ return {
         local Diagnostics = {
             on_click = {
                 callback = function()
-                    require('trouble').toggle { mode = 'document_diagnostics' }
+                    require('trouble').toggle { mode = 'diagnostics' }
                 end,
                 name = 'heirline_diagnostics',
             },
