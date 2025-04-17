@@ -28,7 +28,6 @@ return {
                 'snippets',
                 'buffer',
                 'cmdline',
-                'supermaven',
             },
         },
         signature = {
