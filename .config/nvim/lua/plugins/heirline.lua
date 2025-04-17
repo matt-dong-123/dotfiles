@@ -247,29 +247,25 @@ return {
             end,
             {
                 provider = function(self)
-                    return self.errors > 0
-                        and (self.error_icon .. self.errors .. ' ')
+                    return self.error_icon .. self.errors .. ' '
                 end,
                 hl = { fg = colors.red },
             },
             {
                 provider = function(self)
-                    return self.warnings > 0
-                        and (self.warning_icon .. self.warnings .. ' ')
+                    return self.warning_icon .. self.warnings .. ' '
                 end,
                 hl = { fg = colors.yellow },
             },
             {
                 provider = function(self)
-                    return self.info > 0
-                        and (self.info_icon .. self.info .. ' ')
+                    return self.info_icon .. self.info .. ' '
                 end,
                 hl = { fg = colors.blue },
             },
             {
                 provider = function(self)
-                    return self.hints > 0
-                        and (self.hint_icon .. self.hints .. ' ')
+                    return self.hint_icon .. self.hints .. ' '
                 end,
                 hl = { fg = colors.green1 },
             },
