@@ -22,7 +22,14 @@ return {
             },
         },
         sources = {
-            default = { 'lsp', 'path', 'snippets', 'buffer', 'cmdline' },
+            default = {
+                'lsp',
+                'path',
+                'snippets',
+                'buffer',
+                'cmdline',
+                'supermaven',
+            },
         },
         signature = {
             enabled = true,
