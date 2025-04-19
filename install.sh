@@ -31,7 +31,6 @@ fi
 echo -e "${green}Tapping Brew...${no}"
 brew tap nikitabobko/tap
 brew tap FelixKratz/formulae
-brew tap lihaoyun6/tap
 brew tap mhaeuser/mhaeuser
 
 ## Formulae
@@ -100,7 +99,6 @@ echo -e "${purple}Do you want to install extras? (Y/n) ${no}"
 read -p "" answer
 if [ "$answer" != "N" ] && [ "$answer" != "n" ]; then
     echo -e "${green}Installing Extras... ${no}"
-    brew install --cask airbattery
     brew install --cask appdimmer
     brew install --cask dockdoor
     brew install --cask flux

@@ -33,7 +33,6 @@
 
 ## Things in the install script but not in the repo
 
-- AirBattery
 - AppDimmer
 - Background Music
 - Battery Toolkit
