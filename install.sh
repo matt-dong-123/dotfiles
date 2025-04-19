@@ -30,7 +30,6 @@ fi
 ## Taps
 echo -e "${green}Tapping Brew...${no}"
 brew tap nikitabobko/tap
-brew tap dimentium/autoraise
 brew tap FelixKratz/formulae
 brew tap lihaoyun6/tap
 brew tap mhaeuser/mhaeuser
@@ -74,7 +73,6 @@ brew install cowsay
 brew install eza
 brew install fortune
 brew install wifi-password
-brew install autoraise
 brew install cmatrix
 brew install sl
 brew install yt-dlp
