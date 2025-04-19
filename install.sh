@@ -88,7 +88,7 @@ brew install sqlite
 ## Casks (you'll have to configure them yourselves)
 # wait till i learn nix :)
 echo -e "${green}Installing Brew Casks... ${no}"
-brew install --cask aerospace
+brew install --cask aerospace@0.17.1
 brew install --cask karabiner-elements
 brew install --cask hammerspoon
 brew install --cask espanso
