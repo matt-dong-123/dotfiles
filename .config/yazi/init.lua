@@ -1,19 +1,31 @@
--- require("yaziline"):setup({
--- 	color = "#7aa2f7",
--- 	separator_style = "liney",
--- 	select_symbol = "",
--- 	yank_symbol = "󰆐",
--- })
-
 require("full-border"):setup({
 	type = ui.Border.ROUNDED,
 })
 
 require("git"):setup()
 
-local tokyo_night_theme = require("yatline-tokyo-night"):setup("night")
+local palette = {
+	bg = "#1a1b26",
+	bg_highlight = "#292e42",
+	blue = "#7aa2f7",
+	fg = "#c0caf5",
+	green = "#9ece6a",
+	purple = "#9d7cd8",
+	red = "#f7768e",
+	yellow = "#e0af68",
+}
+
 require("yatline"):setup({
-	theme = tokyo_night_theme,
+	style_a = {
+		fg = palette.blue,
+		bg_mode = {
+			normal = palette.bg,
+			select = palette.bg,
+			un_set = palette.bg,
+		},
+	},
+	style_b = { bg = palette.bg, fg = palette.purple },
+	style_c = { bg = palette.bg, fg = palette.red },
 
 	-- Remove powerline separators
 	section_separator = { open = "", close = "" },
@@ -49,12 +61,8 @@ require("yatline"):setup({
 			},
 		},
 		right = {
-			section_a = {
-				{ type = "string", custom = false, name = "cursor_position" },
-			},
-			section_b = {
-				{ type = "string", custom = false, name = "cursor_percentage" },
-			},
+			section_a = {},
+			section_b = {},
 			section_c = {
 				{ type = "string", custom = false, name = "hovered_file_extension", params = { true } },
 				{ type = "coloreds", custom = false, name = "permissions" },
