@@ -43,5 +43,15 @@ use = "yazi-rs/plugins:smart-enter"
 rev = "a1738e8"
 hash = "7918aab6a71caf31b58411f789195677"
 
+[[plugin.deps]]
+use = "imsi32/yatline"
+rev = "90e0284"
+hash = "8d4cb2dfadcbda045ddaa5c274441f9c"
+
+[[plugin.deps]]
+use = "wekauwau/yatline-tokyo-night"
+rev = "19dbd25"
+hash = "5f00a80a79b9f7fd8e24d6fa5dbb3ae"
+
 [flavor]
 deps = []
