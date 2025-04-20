@@ -1,9 +1,4 @@
 [[plugin.deps]]
-use = "llanosrocas/yaziline"
-rev = "1342efe"
-hash = "a84a339953a568fee1d8beb63e6dca73"
-
-[[plugin.deps]]
 use = "yazi-rs/plugins:mount"
 rev = "a1738e8"
 hash = "dd97eede8e20e59cd2604e8006e470e2"
