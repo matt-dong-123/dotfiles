@@ -171,7 +171,7 @@ return {
         }
 
         -- Use modifier component to alter existing components
-        local FileNameModifer = {
+        local FileNameModifier = {
             hl = function()
                 if vim.bo.modified then
                     -- use `force` to override the child's hl foreground
@@ -184,7 +184,7 @@ return {
         FileNameBlock = utils.insert(
             FileNameBlock,
             FileIcon,
-            utils.insert(FileNameModifer, FileName), -- FileName is FileNameModifier's child
+            utils.insert(FileNameModifier, FileName), -- FileName is FileNameModifier's child
             FileFlags
         )
 
