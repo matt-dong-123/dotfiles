@@ -57,7 +57,7 @@ return {
                     'Type [D]efinition'
                 )
 
-                -- Fuzzy find all the symbolsin your current document.
+                -- Fuzzy find all the symbols in your current document.
                 map(
                     '<leader>ds',
                     require('fzf-lua').lsp_document_symbols,
@@ -90,7 +90,7 @@ return {
                     end
                 end
 
-                -- Highlight refernces on hover
+                -- Highlight references on hover
                 -- When you move your cursor, the highlights will be cleared (autocmd 2).
                 local client = vim.lsp.get_client_by_id(event.data.client_id)
                 if
