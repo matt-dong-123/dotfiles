@@ -174,7 +174,7 @@ return {
         local FileNameModifier = {
             hl = function()
                 if vim.bo.modified then
-                    -- use `force` to override the child's hl foreground
+                    -- Use `force` to override the child's hl foreground
                     return { fg = 'cyan', bold = true, force = true }
                 end
             end,
