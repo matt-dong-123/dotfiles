@@ -3,8 +3,8 @@
 # primeagen's horrible bash script, i'm gonna have to make it better... someday
 
 # Define languages and coreutils here
-languages=$(echo "golang lua cpp python java" | tr ' ' '\n')
-core_utils=$(echo "xargs find mv sed awk tmux fzf" | tr ' ' '\n')
+languages=$(echo "golang lua cpp python java bash zsh" | tr ' ' '\n')
+core_utils=$(echo "xargs find mv sed awk tmux fzf grep" | tr ' ' '\n')
 
 # pipe into fzf
 selected=$(printf "%s\n%s" "$languages" "$core_utils" | fzf)
