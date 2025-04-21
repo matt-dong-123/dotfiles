@@ -207,6 +207,7 @@ return {
             gopls = {},
             pyright = {},
             lua_ls = {},
+            harper_ls = {},
             -- rust_analyzer = {},
             -- ts_ls = {},
         }
