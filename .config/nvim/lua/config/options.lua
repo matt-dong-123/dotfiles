@@ -13,6 +13,9 @@ opt.hidden = true
 -- enable mouse
 opt.mouse = 'a'
 
+-- font size for neovide users
+opt.guifont = 'Maple Mono NF CN:h20:b'
+
 -- don't show mode, since it's already in lualine
 opt.showmode = false
 
