@@ -14,14 +14,6 @@ g.have_nerd_font = true
 -- Clear highlights on search when pressing <Esc>
 map('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
--- Diagnostic
-map(
-    'n',
-    '<leader>q',
-    vim.diagnostic.setloclist,
-    { desc = 'Open diagnostic [Q]uickfix list' }
-)
-
 -- cht.sh
 map(
     'n',
@@ -31,8 +23,8 @@ map(
 )
 
 -- create panes
-map('n', '<leader>sl', '<C-w>v')
-map('n', '<leader>sj', '<C-w>s')
+map('n', '<leader>sl', '<C-w>v', { desc = 'Split pane vertically' })
+map('n', '<leader>sj', '<C-w>s', { desc = 'Split pane horizontally' })
 
 -- move focus
 map('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
@@ -41,10 +33,6 @@ map('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 map('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 map('n', '<leader>bh', '<cmd>:bprev<CR>', { desc = 'Move to previous buffer' })
 map('n', '<leader>bl', '<cmd>:bnext<CR>', { desc = 'Move to next buffer' })
-
--- center cursor when scrolling
-map('n', '<C-u>', '<C-u>zz')
-map('n', '<C-d>', '<C-d>zz')
 
 -- visually move between lines
 map('', 'j', "(v:count ? 'j' : 'gj')", expr)
