@@ -284,7 +284,7 @@ return {
             },
             {
                 provider = function(self)
-                    return self.hint_icon .. self.hints .. ' '
+                    return self.hint_icon .. self.hints
                 end,
                 hl = { fg = colors.green1 },
             },
@@ -342,9 +342,9 @@ return {
             Space,
             FileNameBlock,
             Space,
-            Git,
-            Space,
             Diagnostics,
+            Space,
+            Git,
             { provider = '%<' },
             Align,
             LSPActive,
