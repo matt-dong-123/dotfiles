@@ -5,9 +5,10 @@
 > Therefore, I will be using v0.17.1 Beta until the bug is fixed.
 > For more information, see [this issue](https://github.com/nikitabobko/Aerospace/issues/1315)
 
-## Things you'll see in here
+## Dotfiles include
 
 - aerospace
+- bat
 - btop
 - borders
 - espanso
@@ -15,57 +16,45 @@
 - hammerspoon
 - karabiner
 - lazygit
-- lazyvim
 - leaderkey
-- mtab (my new tab)
-- My Wallpaper (_Optional_)
-- nvchad
 - nvim
-- sketchybar (with sbarlua)
-- textfox (_LibreWolf Only!_)
-- vimium-c (_Browser Extension!_)
+- sesh
+- sketchybar
 - tmux
-- vivaldi
 - wezterm
 - yazi
-- zshrc
+- .zshrc
 
-## Things in the install script but not in the repo
+## Manual setup
+
+- mtab
+- vimium-c
+- Zen
+
+## Things in the install script (not in repo)
 
 - AppDimmer
-- Background Music
+- AltTab
 - Battery Toolkit
-- DockDoor
 - f.lux
 - IINA
 - Ice
-- KeyCastr
 - KeyboardHolder
-- Latest
-- Obsidian
-- Sol
-- Self Control
+- Raycast
 - SlimHUD
 - Tencent Lemon
-- VSCodium
-- YellowDot
+- Zed
 - _Optional:_
-  - Vivaldi/Zen/LibreWolf
-  - Tor
-  - JB Mono Nerd Font
-  - SF Pro
-  - SF Symbols
-  - Maple Mono (NF CN)
-  - sketchybar-app-font
-  - BetterDisplay
-  - LinearMouse
-  - Clash Verge
+  - Tor Browser
+  - Fonts
   - MuseScore
   - QQMusic
   - WeChat
   - WPS Office
   - Zoom
-  - A lot of useful CLI tools!
+- For people who use multiple displays and mouse:
+  - BetterDisplay
+  - LinearMouse
 
 ## How to apply settings
 
@@ -108,22 +97,6 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 7. That's it!
 
 </details>
-
-<details><summary><b>Enabling vivaldi config (only for Vivaldi)</b></summary>
-
-1. Go to vivaldi:experiments, and enable "Allow CSS Modifications"
-2. Search "Custom UI Modifications" and paste your .config/vivaldi directory into the text field
-
-</details>
-
-<details><summary><b>Enabling the stylus config (only for Vivaldi)</b></summary>
-
-1. Install the stylus browser extension [here](https://chromewebstore.google.com/detail/stylus-beta/apmmpaebfobifelkijhaljbmpcgbjbdo)
-2. Add a rule and paste all the rules in
-3. That's it!
-
-</details>
-
 <details><summary><b>Enabling zen_config (only for Zen Browser)</b></summary>
 
 1. Go to about:profiles in the url bar, and copy the "Root Directory" path of the profile you want to use
@@ -140,8 +113,6 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 3. Go back to "General" and set the shortcut to be "shift-command-space"
 
 </details>
-
-Thanks to @[Sin-cy](https://www.github.com/Sin-cy/) for providing the install.sh template in his own dotfiles!
 
 You can raise issues if you run into any problems and bugs in the install script. I'll try as hard as I can!
 

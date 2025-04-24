@@ -99,31 +99,16 @@ read -p "" answer
 if [ "$answer" != "N" ] && [ "$answer" != "n" ]; then
     echo -e "${green}Installing Extras... ${no}"
     brew install --cask appdimmer
-    brew install --cask dockdoor
+    brew install --cask alt-tab
     brew install --cask flux
     brew install --cask iina
     brew install --cask jordanbaird-ice
-    brew install --cask keycastr
     brew install --cask keyboardholder
-    brew install --cask obsidian
-    brew install --cask sol
+    brew install --cask raycast
     brew install --cask slimhud
     brew install --cask tencent-lemon
     brew install --cask zed
-    brew install --cask yellowdot
-fi
-
-echo -e "${purple}Choose a browser to install: (NONE/vivaldi/zen/librewolf) ${no}"
-read -p "" browser
-if [ "$browser" = "vivaldi" ]; then
-    echo -e "${green}Installing vivaldi...${no}"
-    brew install --cask vivaldi
-elif [ "$browser" = "zen" ]; then
-    echo -e "${green}Installing Zen...${no}"
     brew install --cask zen-browser
-elif [ "$browser" = "librewolf" ]; then
-    echo -e "${green}Installing librewolf...${no}"
-    brew install --cask librewolf --no-quarantine
 fi
 
 echo -e "${purple}Do you want to install Tor? (y/N) ${no}"
@@ -259,19 +244,6 @@ if [ "$set_wallpaper" != "N" ] && [ "$set_wallpaper" != "n" ]; then
     osascript -e 'tell application "Finder" to set desktop picture to POSIX file "~/wallpapers/wallpaper.png"'
 fi
 
-if [ "$browser" == "librewolf" ]; then
-    echo -e "${purple}Use my librewolf config? (Y/n) ${no}"
-    read -p "" textfox
-    if [ "$textfox" != "N" ] && [ "$textfox" != "n" ]; then
-        cd librewolf_config || exit
-        chmod +x install.sh
-        ./install.sh
-    fi
-fi
-
-if [ "$browser" == "zen" ]; then
-    echo -e "${yellow} Set up zen config by yourself by pasting zen_config into your profile/chrome directory ${no}"
-fi
 # Set up one-thing config file
 if [ ! -f "$HOME/one-thing/one-thing.txt" ]; then
     mkdir -p "$HOME/one-thing"
