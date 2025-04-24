@@ -3,7 +3,7 @@ local hypr = { "ctrl", "alt", "cmd", "shift" }
 
 -- Apps
 local hotkeys = {
-	a = "Vivaldi",
+	a = "Zen",
 	d = "Dorico 5",
 	f = "Finder",
 	l = "Logic Pro",
