@@ -1,7 +1,0 @@
-@import url("defaults.css");
-@import url("config.css");
-
-* {
-  font-family: var(--tf-font-family);
-  font-size: var(--tf-font-size);
-}
