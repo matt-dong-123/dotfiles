@@ -40,6 +40,7 @@ brew install stow
 brew install fzf
 brew install sesh
 brew install gum
+brew install gh
 brew install bat
 brew install fd
 brew install zoxide
@@ -98,12 +99,14 @@ echo -e "${purple}Do you want to install extras? (Y/n) ${no}"
 read -p "" answer
 if [ "$answer" != "N" ] && [ "$answer" != "n" ]; then
     echo -e "${green}Installing Extras... ${no}"
-    brew install --cask appdimmer
     brew install --cask alt-tab
     brew install --cask flux
     brew install --cask iina
     brew install --cask jordanbaird-ice
     brew install --cask keyboardholder
+    brew install --cask obs
+    brew install --cask ollama
+    brew install --cask only-switch
     brew install --cask raycast
     brew install --cask slimhud
     brew install --cask tencent-lemon
@@ -151,7 +154,6 @@ if [ "$really" = "Y" ] || [ "$really" = "y" ]; then
     brew install --cask musescore
     brew install --cask qqmusic
     brew install --cask wechat
-    brew install --cask wpsoffice
     brew install --cask zoom
 fi
 
