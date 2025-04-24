@@ -17,11 +17,6 @@
           "label" : "Tor",
           "type" : "application",
           "value" : "/Applications/Tor Browser.app"
-        },
-        {
-          "key" : "z",
-          "type" : "application",
-          "value" : "/Applications/Zen.app"
         }
       ],
       "key" : "b",
