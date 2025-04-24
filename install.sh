@@ -65,7 +65,6 @@ brew install tree-sitter
 brew install tree
 brew install borders
 brew install btop
-brew install cava
 brew install fastfetch
 brew install fish
 brew install cowsay

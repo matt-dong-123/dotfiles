@@ -10,7 +10,6 @@
 - aerospace
 - btop
 - borders
-- cava
 - espanso
 - fastfetch
 - hammerspoon
