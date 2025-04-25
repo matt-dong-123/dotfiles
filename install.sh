@@ -93,25 +93,19 @@ brew install --cask hammerspoon
 brew install --cask espanso
 brew install --cask battery-toolkit
 brew install --cask wezterm
-
-# Ask the user whether they want to install extra casks
-echo -e "${purple}Do you want to install extras? (Y/n) ${no}"
-read -p "" answer
-if [ "$answer" != "N" ] && [ "$answer" != "n" ]; then
-    echo -e "${green}Installing Extras... ${no}"
-    brew install --cask alt-tab
-    brew install --cask iina
-    brew install --cask jordanbaird-ice
-    brew install --cask keyboardholder
-    brew install --cask obs
-    brew install --cask ollama
-    brew install --cask only-switch
-    brew install --cask raycast
-    brew install --cask slimhud
-    brew install --cask tencent-lemon
-    brew install --cask zed
-    brew install --cask zen-browser
-fi
+brew install --cask leader-key
+brew install --cask alt-tab
+brew install --cask iina
+brew install --cask jordanbaird-ice
+brew install --cask keyboardholder
+brew install --cask obs
+brew install --cask ollama
+brew install --cask only-switch
+brew install --cask raycast
+brew install --cask slimhud
+brew install --cask tencent-lemon
+brew install --cask zed
+brew install --cask zen-browser
 
 echo -e "${purple}Do you want to install Tor? (y/N) ${no}"
 read -p "" install_tor
