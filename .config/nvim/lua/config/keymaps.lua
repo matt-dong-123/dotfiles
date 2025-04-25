@@ -14,6 +14,10 @@ g.have_nerd_font = true
 -- Clear highlights on search when pressing <Esc>
 map('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
+-- Increment/Decrement numbers
+map('n', '<leader>+', '<C-a>', { desc = 'Increment number' })
+map('n', '<leader>-', '<C-x>', { desc = 'Decrement number' })
+
 -- cht.sh
 map(
     'n',
