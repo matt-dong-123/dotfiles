@@ -29,6 +29,7 @@ map(
 -- create panes
 map('n', '<leader>sl', '<C-w>v', { desc = 'Split pane vertically' })
 map('n', '<leader>sj', '<C-w>s', { desc = 'Split pane horizontally' })
+map('n', '<leader>sx', '<cmd>close<cr>', { desc = 'Close current pane' })
 
 -- move focus
 map('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
