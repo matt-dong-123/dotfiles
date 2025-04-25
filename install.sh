@@ -100,7 +100,6 @@ read -p "" answer
 if [ "$answer" != "N" ] && [ "$answer" != "n" ]; then
     echo -e "${green}Installing Extras... ${no}"
     brew install --cask alt-tab
-    brew install --cask flux
     brew install --cask iina
     brew install --cask jordanbaird-ice
     brew install --cask keyboardholder
