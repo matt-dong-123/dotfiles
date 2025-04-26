@@ -15,7 +15,6 @@ local hotkeys = {
 	t = "Tor Browser",
 	v = "VSCodium",
 	w = "WeChat",
-	y = "FreeTube",
 	z = "zoom.us",
 	["return"] = "WezTerm",
 }
