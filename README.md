@@ -1,10 +1,5 @@
 # my dotfiles
 
-> [!important]
-> Aerospace currently has a bug that prevents sending workspace changes when changed by app.
-> Therefore, I will be using v0.17.1 Beta until the bug is fixed.
-> For more information, see [this issue](https://github.com/nikitabobko/Aerospace/issues/1315)
-
 ## Dotfiles include
 
 - aerospace
