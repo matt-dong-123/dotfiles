@@ -90,6 +90,18 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 6. Paste the output you copied in step 4.
 
 </details>
+
+<details><summary><b>Enabling stylus config</b></summary>
+
+1. Install the stylus browser extension
+   - For Chromium-based browsers, go [here](https://chromewebstore.google.com/detail/mtab/clngdbkpkpeebahjckkjfobafhncgmne)
+   - For Firefox-based browsers, go [here](https://addons.mozilla.org/en-US/firefox/addon/styl-us)
+2. In the preferences for the extension, click "Import" you can see on the side
+3. Choose the file from the path "~/.config/styl-us/config.json"
+    - If you want to use only a set of rules, copy the rules you want to the stylus editor.
+
+</details>
+
 <details><summary><b>Enabling zen config (only for Zen Browser)</b></summary>
 
 1. Go to about:profiles in the URL bar, and copy the "Root Directory" path of the profile you want to use
