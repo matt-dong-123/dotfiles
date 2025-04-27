@@ -3,25 +3,19 @@
 - [X] ai - around/inside text objects
 - [X] autopairs - pair (), [], {}
 - [X] blink - completion plugin
-- [X] bufferline - tabs on top
 - [X] highlight-colors - highlight color items (#9e76ff, 0x88a023, color = blue etc)
 - [X] conform - force styling
-- [X] dropbar - vscode-like lsp object breadcrumbs
 - [X] fzflua - fuzzy finder (replace telescope)
 - [X] gitsigns - git changes in line numbers
-- [X] grug-far - search and replace using rg
-- [X] inc-rename - rename with immediate effect
-- [X] lazygit - open lazygit in floating window
-- [X] leetcode - grind grind grind
-- [X] lspconfig - lsp config
 - [X] heirline - customizable status bar
+- [X] inc-rename - rename with immediate effect
+- [X] nvim-lint - linting
+- [X] lspconfig - lsp config
 - [X] neorg - neovim org-mode-like plugin
 - [X] noice - experimental ui
-- [X] oil - file manager
 - [X] persistence - save/restore sessions
 - [X] rainbow-delimiters - color layered brackets
 - [X] render-markdown - render markdown like in the browser
-- [X] smear-cursor - add cursor animations
 - [X] snacks - QoL plugins (dashboard, indent, etc.)
 - [X] supermaven - AI completion
 - [X] surround - add the `surround` text object
@@ -31,3 +25,5 @@
 - [X] trouble - diagnostics
 - [X] vim-tmux-navigator - tmux navigation
 - [X] which-key - show keybindings
+- [X] yazi - yazi as file manager
+- [X] zen-mode - zen mode for neovim like vsc*de
