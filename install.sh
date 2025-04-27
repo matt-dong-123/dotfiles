@@ -67,7 +67,6 @@ brew install tree
 brew install borders
 brew install btop
 brew install fastfetch
-brew install fish
 brew install cowsay
 brew install eza
 brew install fortune
