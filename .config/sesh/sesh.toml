@@ -18,3 +18,7 @@ startup_command = "nvim ~/Notes/index.norg"
 [[session]]
 name = "Documents"
 path = "~/Documents"
+
+[[session]]
+name = "Home"
+path = "~"

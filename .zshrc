@@ -113,7 +113,7 @@ esac
 # pnpm end
 
 if [ "$TMUX" = "" ]; then
-    sesh connect dotfiles
+    sesh connect Home
 fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
