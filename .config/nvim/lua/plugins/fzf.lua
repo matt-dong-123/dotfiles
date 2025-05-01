@@ -4,7 +4,7 @@ return {
     opts = {},
     keys = {
         {
-            '<leader><leader>',
+            '<leader>ff',
             ':FzfLua files<CR>',
             desc = 'Open fzf at current directory',
         },
