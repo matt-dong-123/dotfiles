@@ -70,7 +70,7 @@ return {
                 },
                 -- Show text
                 provider = function(self)
-                    return ' %2(' .. self.mode_names[self.mode] .. '%)'
+                    return '  %2(' .. self.mode_names[self.mode] .. '%)'
                 end,
 
                 -- Foreground
@@ -322,7 +322,7 @@ return {
 
         -- NOTE: File Percentage
         local FilePercentage = {
-            provider = '%P',
+            provider = '%P ',
             hl = { fg = colors.red },
         }
 
