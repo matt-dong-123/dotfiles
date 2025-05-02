@@ -4,5 +4,11 @@ return {
     init = function()
         vim.cmd.colorscheme 'tokyonight-night'
     end,
-    opts = {},
+    opts = {
+        transparent = true,
+        styles = {
+            sidebars = 'transparent',
+            floats = 'transparent',
+        },
+    },
 }
