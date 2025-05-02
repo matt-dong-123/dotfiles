@@ -13,10 +13,7 @@ opt.hidden = true
 -- enable mouse
 opt.mouse = 'a'
 
--- font size for neovide users
-opt.guifont = 'Maple Mono NF CN:h20:b'
-
--- don't show mode, since it's already in lualine
+-- don't show mode, since it's already in the statusline
 opt.showmode = false
 
 -- sync system clipboard
@@ -24,8 +21,11 @@ vim.schedule(function()
     opt.clipboard = 'unnamedplus'
 end)
 
--- enable break indent
+-- preserve horizontal blocks of text
 opt.breakindent = true
+
+-- wrap by word
+opt.linebreak= true
 
 -- save undo history
 opt.undofile = true
