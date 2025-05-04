@@ -5,18 +5,19 @@
 - [X] blink - completion plugin
 - [X] highlight-colors - highlight color items (#9e76ff, 0x88a023, color = blue etc)
 - [X] conform - force styling
-- [X] fzflua - fuzzy finder (replace telescope)
+- [X] ghostty config QoL plugins
 - [X] gitsigns - git changes in line numbers
 - [X] heirline - customizable status bar
 - [X] inc-rename - rename with immediate effect
 - [X] nvim-lint - linting
 - [X] lspconfig - lsp config
+- [X] mason - package manager
 - [X] neorg - neovim org-mode-like plugin
 - [X] noice - experimental ui
 - [X] persistence - save/restore sessions
 - [X] rainbow-delimiters - color layered brackets
 - [X] render-markdown - render markdown like in the browser
-- [X] snacks - QoL plugins (dashboard, indent, etc.)
+- [X] snacks - QoL plugins (dashboard, picker, etc.)
 - [X] supermaven - AI completion
 - [X] surround - add the `surround` text object
 - [X] todo-comments - highlight TODOs
