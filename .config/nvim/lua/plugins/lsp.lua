@@ -6,6 +6,7 @@ return {
         'williamboman/mason-lspconfig.nvim',
         'WhoIsSethDaniel/mason-tool-installer.nvim',
         'j-hui/fidget.nvim',
+        'folke/snacks.nvim',
         -- Completion
         'Saghen/blink.cmp',
     },
@@ -26,53 +27,38 @@ return {
                 end
 
                 -- Jump to the definition of the word under your cursor. (Press C-t to go back)
-                map(
-                    'gd',
-                    require('fzf-lua').lsp_definitions,
-                    '[G]oto [D]efinition'
-                )
+                map('gd', function()
+                    Snacks.picker.lsp_definitions()
+                end, '[G]oto [D]efinition')
 
                 -- WARN: This is not Goto Definition, this is Goto Declaration.
                 --  For example, in C this would take you to the header.
                 map('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
 
                 -- Find references for the word under your cursor.
-                map(
-                    'gr',
-                    require('fzf-lua').lsp_references,
-                    '[G]oto [R]eferences'
-                )
+                map('gr', function()
+                    Snacks.picker.lsp_references()
+                end, '[G]oto [R]eferences')
 
                 -- Jump to the implementation of the word under your cursor.
-                map(
-                    'gI',
-                    require('fzf-lua').lsp_implementations,
-                    '[G]oto [I]mplementation'
-                )
+                map('gI', function()
+                    Snacks.picker.lsp_implementations()
+                end, '[G]oto [I]mplementation')
 
                 -- Jump to the *type* of the word under your cursor.
-                map(
-                    '<leader>D',
-                    require('fzf-lua').lsp_typedefs,
-                    'Type [D]efinition'
-                )
+                map('<leader>D', function()
+                    Snacks.picker.lsp_type_definitions()
+                end, 'Type [D]efinition')
 
                 -- Fuzzy find all the symbols in your current document.
-                map(
-                    '<leader>ds',
-                    require('fzf-lua').lsp_document_symbols,
-                    '[D]ocument [S]ymbols'
-                )
+                map('<leader>ds', function()
+                    Snacks.picker.lsp_symbols()
+                end, '[D]ocument [S]ymbols')
 
                 -- Fuzzy find all symbols in your current project.
-                map(
-                    '<leader>ws',
-                    require('fzf-lua').lsp_live_workspace_symbols,
-                    '[W]orkspace [S]ymbols'
-                )
-
-                -- Rename
-                map('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
+                map('<leader>ws', function()
+                    Snacks.picker.lsp_workspace_symbols()
+                end, '[W]orkspace [S]ymbols')
 
                 -- Code actions
                 map(
