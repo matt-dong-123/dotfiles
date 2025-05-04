@@ -1,7 +1,11 @@
 return {
     'folke/snacks.nvim',
     opts = {
-        picker = { enabled = true },
+        picker = {
+            matcher = {
+                frecency = true,
+            },
+        },
     },
     keys = {
         {

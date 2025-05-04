@@ -9,7 +9,7 @@ return {
                         icon = ' ',
                         key = 'f',
                         desc = 'Find File',
-                        action = ":lua Snacks.dashboard.pick('files')",
+                        action = ":lua Snacks.dashboard.pick('smart')",
                     },
                     {
                         icon = ' ',
