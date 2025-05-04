@@ -18,14 +18,14 @@ return {
         {
             '<leader>fd',
             function()
-                Snacks.picker.files { cwd = '~/dotfiles' }
+                Snacks.picker.smart { cwd = '~/dotfiles' }
             end,
             desc = 'Open dotfiles',
         },
         {
             '<leader>fc',
             function()
-                Snacks.picker.files { cwd = '~/dotfiles/.config/nvim' }
+                Snacks.picker.smart { cwd = '~/dotfiles/.config/nvim' }
             end,
             desc = 'Open nvim config',
         },
