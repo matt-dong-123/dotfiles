@@ -16,7 +16,7 @@ local hotkeys = {
 	v = "VSCodium",
 	w = "WeChat",
 	z = "zoom.us",
-	["return"] = "WezTerm",
+	["return"] = "Ghostty",
 }
 
 local function bind_hotkeys(mapping)
