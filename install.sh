@@ -92,6 +92,7 @@ brew install --cask hammerspoon
 brew install --cask espanso
 brew install --cask battery-toolkit
 brew install --cask wezterm
+brew install --cask ghostty
 brew install --cask leader-key
 brew install --cask alt-tab
 brew install --cask iina
