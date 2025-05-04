@@ -11,6 +11,7 @@ return {
         scroll = { easing_function = 'quadratic' },
         statuscolumn = {},
         terminal = {},
+        toggle = {},
         words = {},
     },
     keys = {
