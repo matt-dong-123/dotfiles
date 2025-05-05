@@ -3,6 +3,7 @@ return {
     lazy = false,
     opts = {
         bigfile = {},
+        dim = {},
         indent = {},
         image = {},
         input = {},
@@ -12,6 +13,7 @@ return {
         statuscolumn = {},
         terminal = {},
         words = {},
+        zen = {},
     },
     keys = {
         {
@@ -34,6 +36,14 @@ return {
                 Snacks.terminal.get 'lazygit'
             end,
             desc = 'Open Lazygit',
+        },
+        {
+            'gz',
+            function()
+                Snacks.zen()
+                Snacks.dim()
+            end,
+            desc = 'Zen Mode',
         },
     },
 }
