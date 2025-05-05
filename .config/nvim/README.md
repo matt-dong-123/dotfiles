@@ -1,7 +1,5 @@
 # My nvim docs
 
-- [X] ai - around/inside text objects
-- [X] autopairs - pair (), [], {}
 - [X] blink - completion plugin
 - [X] highlight-colors - highlight color items (#9e76ff, 0x88a023, color = blue etc)
 - [X] conform - force styling
@@ -12,6 +10,7 @@
 - [X] nvim-lint - linting
 - [X] lspconfig - lsp config
 - [X] mason - package manager
+- [X] mini.nvim - QoL plugins (ai, pairs, etc.)
 - [X] neorg - neovim org-mode-like plugin
 - [X] noice - experimental ui
 - [X] persistence - save/restore sessions
