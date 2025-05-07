@@ -3,6 +3,7 @@ return {
     dependencies = {
         'lewis6991/gitsigns.nvim',
         'folke/trouble.nvim',
+        'nvim-tree/nvim-web-devicons',
     },
     config = function()
         local conditions = require 'heirline.conditions'
