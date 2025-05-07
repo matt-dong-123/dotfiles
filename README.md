@@ -122,6 +122,6 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 
 </details>
 
-You can raise issues if you run into any problems and bugs in the install script. I'll try as hard as I can!
+You can raise issues if you run into any problems and bugs. I'll try as hard as I can!
 
 **Remember, my dotfiles are for myself, so it might not work for you.**
