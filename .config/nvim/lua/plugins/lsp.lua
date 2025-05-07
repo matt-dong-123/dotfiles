@@ -60,6 +60,11 @@ return {
                     Snacks.picker.lsp_workspace_symbols()
                 end, '[W]orkspace [S]ymbols')
 
+                -- Rename symbol under cursor
+                map('<leader>rn', function()
+                    vim.lsp.buf.rename()
+                end, '[R]e[N]ame')
+
                 -- Code actions
                 map(
                     '<leader>ca',
