@@ -44,6 +44,16 @@ map('', 'k', "(v:count ? 'k' : 'gk')", expr)
 -- Unwrap
 map('n', 'Q', 'gq')
 
+-- Rename symbol under cursor
+map('n', '<leader>rn', function()
+    vim.lsp.buf.rename()
+end, { desc = 'Rename symbol under cursor' })
+
+-- Code actions
+map('n', '<leader>ca', function()
+    vim.lsp.buf.code_action()
+end, { desc = 'Show code actions' })
+
 -- NOTE: TERMINAL MODE REMAPS
 
 -- Exit terminal mode
