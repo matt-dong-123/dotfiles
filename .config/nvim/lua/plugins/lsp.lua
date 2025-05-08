@@ -31,7 +31,6 @@ return {
         dependencies = { 'mason.nvim' },
         opts = {
             ensure_installed = {
-                -- LSP
                 'bashls',
                 'clangd',
                 'gopls',
