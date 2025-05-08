@@ -25,7 +25,7 @@ end)
 opt.breakindent = true
 
 -- wrap by word
-opt.linebreak= true
+opt.linebreak = true
 
 -- save undo history
 opt.undofile = true
@@ -85,3 +85,19 @@ opt.conceallevel = 3
 opt.concealcursor = 'niv'
 vim.wo.foldlevel = 99
 vim.wo.conceallevel = 2
+
+-- lsp diagnostics
+vim.diagnostic.config {
+    severity_sort = true,
+    float = { border = 'rounded' },
+    underline = { severity = vim.diagnostic.severity.ERROR },
+    signs = vim.g.have_nerd_font and {
+        text = {
+            [vim.diagnostic.severity.ERROR] = '󰅚 ',
+            [vim.diagnostic.severity.WARN] = '󰀪 ',
+            [vim.diagnostic.severity.INFO] = '󰋽 ',
+            [vim.diagnostic.severity.HINT] = '󰌶 ',
+        },
+    } or {},
+    virtual_text = true,
+}
