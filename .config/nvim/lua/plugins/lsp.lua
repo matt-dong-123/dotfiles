@@ -27,14 +27,20 @@ return {
     },
     {
         'mason-org/mason-lspconfig.nvim',
+        version = '*',
         dependencies = { 'mason.nvim' },
         opts = {
             ensure_installed = {
+                -- LSP
+                'bashls',
                 'clangd',
                 'gopls',
                 'pyright',
                 'lua_ls',
                 'harper_ls',
+                'marksman',
+                -- Formatters
+                'stylua',
             },
         },
     },
