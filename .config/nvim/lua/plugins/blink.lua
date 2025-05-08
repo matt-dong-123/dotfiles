@@ -4,7 +4,7 @@ return {
     dependencies = {
         'rafamadriz/friendly-snippets',
     },
-    version = '1.*',
+    version = '*',
     opts = {
         keymap = { preset = 'default' },
         appearance = {
@@ -23,11 +23,20 @@ return {
         },
         sources = {
             default = {
+                'lazydev',
                 'lsp',
                 'path',
                 'snippets',
                 'buffer',
                 'cmdline',
+            },
+            providers = {
+                lazydev = {
+                    name = 'LazyDev',
+                    module = 'lazydev.integrations.blink',
+                    -- make it top priority
+                    score_offset = 100,
+                },
             },
         },
         signature = {
