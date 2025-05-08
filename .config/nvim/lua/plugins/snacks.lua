@@ -32,7 +32,7 @@ return {
             desc = 'Open Terminal',
         },
         {
-            '<leader>lg',
+            '<leader>gl',
             function()
                 Snacks.terminal.get 'lazygit'
             end,
