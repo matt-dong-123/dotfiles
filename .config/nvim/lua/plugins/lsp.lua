@@ -39,8 +39,6 @@ return {
                 'lua_ls',
                 'harper_ls',
                 'marksman',
-                -- Formatters
-                'stylua',
             },
         },
     },
