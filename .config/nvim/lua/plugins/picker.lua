@@ -13,49 +13,98 @@ return {
             function()
                 Snacks.picker.smart()
             end,
-            desc = 'Smart pick files',
+            desc = 'Files',
         },
         {
             '<leader>f.',
             function()
                 Snacks.picker.smart { cwd = '~/dotfiles' }
             end,
-            desc = 'Open dotfiles',
+            desc = 'In dotfiles',
         },
         {
             '<leader>fc',
             function()
                 Snacks.picker.smart { cwd = '~/dotfiles/.config/nvim' }
             end,
-            desc = 'Open nvim config',
+            desc = 'In nvim config',
         },
         {
             '<leader>fh',
             function()
                 Snacks.picker.help()
             end,
-            desc = 'Find help',
+            desc = 'Help',
         },
         {
             '<leader>fk',
             function()
                 Snacks.picker.keymaps()
             end,
-            desc = 'Find keymaps',
+            desc = 'Keymaps',
         },
         {
-            '<leader>ft',
+            '<leader>fp',
             function()
                 Snacks.picker.grep()
             end,
-            desc = 'Grep all files in project',
+            desc = 'Files in project',
         },
         {
             '<leader>fb',
             function()
                 Snacks.picker.buffers()
             end,
-            desc = 'Switch buffers',
+            desc = 'Buffers',
+        },
+        {
+            '<leader>fd',
+            function()
+                Snacks.picker.lsp_definitions()
+            end,
+            desc = 'Definition',
+        },
+        {
+            '<leader>fD',
+            function()
+                Snacks.picker.lsp_declarations()
+            end,
+            desc = 'Declaration',
+        },
+        {
+            '<leader>fr',
+            function()
+                Snacks.picker.lsp_references()
+            end,
+            desc = 'References',
+        },
+        {
+            '<leader>fi',
+            function()
+                Snacks.picker.lsp_implementations()
+            end,
+            desc = 'Implementations',
+        },
+        {
+            '<leader>ft',
+            function()
+                Snacks.picker.lsp_type_definitions()
+            end,
+            desc = 'Type Definitions',
+        },
+        {
+            '<leader>fs',
+            function()
+                Snacks.picker.lsp_symbols()
+            end,
+            desc = 'Document Symbols',
+        },
+        {
+            '<leader>fs',
+            function()
+                Snacks.picker.lsp_workspace_symbols()
+            end,
+            desc = 'Workspace Symbols',
         },
     },
 }
