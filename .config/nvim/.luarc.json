@@ -1,5 +1,8 @@
 {
     "diagnostics.globals": [
         "Snacks"
+    ],
+    "diagnostics.disable": [
+        "missing-fields"
     ]
 }
