@@ -16,7 +16,7 @@ return {
             desc = 'Smart pick files',
         },
         {
-            '<leader>fd',
+            '<leader>f.',
             function()
                 Snacks.picker.smart { cwd = '~/dotfiles' }
             end,
