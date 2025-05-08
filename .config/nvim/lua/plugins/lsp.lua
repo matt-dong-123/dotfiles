@@ -167,7 +167,7 @@ return {
                         },
                     }
                 or {},
-            virtual_text = {
+            virtual_lines = {
                 source = 'if_many',
                 spacing = 2,
                 format = function(diagnostic)
@@ -213,13 +213,6 @@ return {
 
         require('mason-lspconfig').setup {
             ensure_installed = {},
-            handlers = {
-                function(server_name)
-                    local server = servers[server_name] or {}
-                    vim.lsp.config(server_name, server)
-                    vim.lsp.enable(server_name)
-                end,
-            },
         }
     end,
 }
