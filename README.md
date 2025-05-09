@@ -107,10 +107,8 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 
 1. Go to about:profiles in the URL bar, and copy the "Root Directory" path of the profile you want to use
 2. Paste the ~/.config/zen directory into the profile directory/chrome.
-3. Download the "Zen Internet" extension from [here](https://addons.mozilla.org/en-US/firefox/addon/zen-internet/) (it's soooo good)
-
-> [!note]
-> You may have to find the zen mods and reinstall them through the website.
+3. Go to settings, click "Import mods", and choose the file from the path "~/.config/zen/zen-themes-export.json"
+4. Download the "Zen Internet" extension from [here](https://addons.mozilla.org/en-US/firefox/addon/zen-internet/) (it's soooo good)
 
 </details>
 
