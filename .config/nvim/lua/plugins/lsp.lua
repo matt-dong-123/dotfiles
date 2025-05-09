@@ -1,6 +1,7 @@
 return {
     {
         'neovim/nvim-lspconfig',
+        event = { 'BufReadPost', 'BufNewFile' },
         dependencies = {
             'j-hui/fidget.nvim',
         },
@@ -27,6 +28,7 @@ return {
     },
     {
         'mason-org/mason-lspconfig.nvim',
+        event = { 'BufReadPre', 'BufNewFile' },
         version = '*',
         dependencies = { 'mason.nvim' },
         opts = {

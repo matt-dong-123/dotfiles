@@ -1,10 +1,12 @@
 return {
     {
         'echasnovski/mini.ai',
+        event = 'VeryLazy',
         version = '*',
     },
     {
         'echasnovski/mini.pairs',
+        event = 'VeryLazy',
         version = '*',
         opts = {
             modes = {
@@ -27,6 +29,7 @@ return {
     },
     {
         'echasnovski/mini.icons',
+        event = 'UIEnter',
         version = '*',
         opts = {},
         specs = {

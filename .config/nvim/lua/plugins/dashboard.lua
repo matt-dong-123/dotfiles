@@ -27,13 +27,13 @@ return {
                         icon = ' ',
                         key = 'c',
                         desc = 'Config',
-                        action = ":lua Snacks.dashboard.pick('files', {cwd = vim.fn.stdpath('config')})",
+                        action = ":lua Snacks.dashboard.pick('smart', {cwd = vim.fn.stdpath('config')})",
                     },
                     {
                         icon = ' ',
                         key = 'n',
                         desc = 'Notes',
-                        action = ":lua Snacks.dashboard.pick('files', {cwd = vim.fn.expand('$HOME/Notes')})",
+                        action = ":lua Snacks.dashboard.pick('smart', {cwd = vim.fn.expand('$HOME/Notes')})",
                     },
                     {
                         icon = ' ',

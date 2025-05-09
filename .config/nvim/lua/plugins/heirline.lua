@@ -1,8 +1,10 @@
 return {
     'rebelot/heirline.nvim',
+    event = 'UIEnter',
     dependencies = {
         'lewis6991/gitsigns.nvim',
         'folke/trouble.nvim',
+        'echasnovski/mini.icons',
     },
     config = function()
         local conditions = require 'heirline.conditions'
