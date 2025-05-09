@@ -99,5 +99,5 @@ vim.diagnostic.config {
             [vim.diagnostic.severity.HINT] = '󰌶 ',
         },
     } or {},
-    virtual_text = true,
+    virtual_lines = true,
 }
