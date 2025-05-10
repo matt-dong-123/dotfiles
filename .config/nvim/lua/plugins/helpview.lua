@@ -1,10 +1,7 @@
 return {
-    'OXY2DEV/markview.nvim',
+    'OXY2DEV/helpview.nvim',
     lazy = false,
     dependencies = {
         'folke/tokyonight.nvim',
-    },
-    ft = {
-        'markdown',
     },
 }
