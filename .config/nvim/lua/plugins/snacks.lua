@@ -5,6 +5,7 @@ return {
     opts = {
         bigfile = {},
         dim = {},
+        gitbrowse = {},
         indent = {},
         image = {},
         input = {},
@@ -22,7 +23,7 @@ return {
             function()
                 Snacks.notifier.hide()
             end,
-            desc = 'Hide Notifications',
+            desc = 'Notifications',
         },
         {
             '<leader>tf',
@@ -37,6 +38,13 @@ return {
                 Snacks.terminal.get 'lazygit'
             end,
             desc = 'Open Lazygit',
+        },
+        {
+            '<leader>gb',
+            function()
+                Snacks.gitbrowse()
+            end,
+            desc = 'Open in remote repo',
         },
         {
             'gz',
