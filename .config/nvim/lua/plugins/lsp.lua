@@ -4,6 +4,8 @@ return {
         event = { 'BufReadPost', 'BufNewFile' },
         dependencies = {
             'j-hui/fidget.nvim',
+            'mason-org/mason-lspconfig.nvim',
+            'mason-org/mason.nvim',
         },
     },
     {
