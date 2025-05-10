@@ -40,7 +40,6 @@ return {
                 'gopls',
                 'pyright',
                 'lua_ls',
-                'harper_ls',
                 'marksman',
             },
         },
