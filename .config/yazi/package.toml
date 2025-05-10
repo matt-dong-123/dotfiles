@@ -43,5 +43,10 @@ use = "imsi32/yatline"
 rev = "90e0284"
 hash = "8d4cb2dfadcbda045ddaa5c274441f9c"
 
+[[plugin.deps]]
+use = "DreamMaoMao/easyjump"
+rev = "6606fb1"
+hash = "9209d17be3c792eda9ad60b447c4db1e"
+
 [flavor]
 deps = []

@@ -37,8 +37,6 @@ keymap = [
 
     # Navigation
     { on = "h", run = "leave", desc = "Go back to the parent directory" },
-    # { on = "l", run = "plugin smart-enter", desc = "Enter the child directory, or open the file" },
-    # ↑ Disabled because defined in custom plugins
 
     { on = "<Left>", run = "leave", desc = "Go back to the parent directory" },
     { on = "<Right>", run = "enter", desc = "Enter the child directory" },
@@ -289,6 +287,9 @@ keymap = [
         "g",
         "i",
     ], run = "plugin lazygit", desc = "run lazygit" },
+
+    # Easyjump
+    { on = "i", run = "plugin easyjump", desc = "run easyjump" },
 ]
 
 [tasks]
