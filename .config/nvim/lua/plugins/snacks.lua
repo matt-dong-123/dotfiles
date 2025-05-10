@@ -18,7 +18,7 @@ return {
     },
     keys = {
         {
-            '<leader>nh',
+            '<leader>hn',
             function()
                 Snacks.notifier.hide()
             end,
