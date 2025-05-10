@@ -19,11 +19,6 @@ rev = "a1738e8"
 hash = "e0ada736ea676c2bbb3ec705a49526ef"
 
 [[plugin.deps]]
-use = "yazi-rs/plugins:jump-to-char"
-rev = "a1738e8"
-hash = "a670c03eb3760812e044a24f94cedc55"
-
-[[plugin.deps]]
 use = "Lil-Dank/lazygit"
 rev = "7a08a09"
 hash = "a1fa2b3e1826c3a34804ea8c548e9f80"
