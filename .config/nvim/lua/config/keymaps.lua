@@ -6,7 +6,7 @@ local expr = { silent = true, expr = true, remap = false }
 g.mapleader = ' '
 g.maplocalleader = ' '
 
--- set to true because i have nerd fonts
+-- set to true because I have nerd fonts
 g.have_nerd_font = true
 
 -- NOTE: NORMAL MODE REMAPS
@@ -45,14 +45,14 @@ map('', 'k', "(v:count ? 'k' : 'gk')", expr)
 map('n', 'Q', 'gq')
 
 -- Rename symbol under cursor
-map('n', '<leader>rn', function()
+map('n', '<leader>r', function()
     vim.lsp.buf.rename()
-end, { desc = 'Rename symbol under cursor' })
+end, { desc = 'Rename' })
 
 -- Code actions
-map('n', '<leader>ca', function()
+map('n', '<leader>c', function()
     vim.lsp.buf.code_action()
-end, { desc = 'Show code actions' })
+end, { desc = 'Code actions' })
 
 -- NOTE: TERMINAL MODE REMAPS
 
