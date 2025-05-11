@@ -276,9 +276,6 @@ keymap = [
         "m",
     ], run = "plugin chmod", desc = "Chmod on selected files" },
 
-    # vim-style f
-    { on = "f", run = "plugin jump-to-char", desc = "Jump to char" },
-
     # Mount
     { on = "M", run = "plugin mount", desc = "Open mount plugin" },
 
