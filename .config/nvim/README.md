@@ -1,29 +1,35 @@
 # My nvim docs
 
-- [X] blink - completion plugin
-- [X] highlight-colors - highlight color items (#9e76ff, 0x88a023, color = blue etc)
-- [X] conform - force styling
-- [X] ghostty config QoL plugins
+- [X] blink.cmp - completion plugin
+- [X] conform.nvim - force styling
+- [X] fidget.nvim - LSP progress notifier
+- [X] flash.nvim - flash to anywhere
+- [X] friendly-snippets - library of snippets
+- [X] ghostty config plugins
 - [X] gitsigns - git changes in line numbers
 - [X] heirline - customizable status bar
-- [X] inc-rename - rename with immediate effect
+- [X] helpview - beautify :help
+- [X] lazy.nvim - plugin manager
+- [X] lazydev.nvim - LuaLS enhancer
+- [X] markview.nvim - beautify markdown
+- [X] mason-lspconfig.nvim - nvim-lspconfig and mason.nvim compatibility layer
+- [X] mason-tool-installer.nvim - install mason tools
+- [X] mason.nvim - package manager
+- [X] mini.nvim - QoL plugins (ai, icons, pairs, etc.)
+- [X] noice.nvim - experimental ui
+- [X] nui.nvim - ui framework for neovim
+- [X] nvim-highlight-colors - displays things like #7aa2f7 or color = blue
 - [X] nvim-lint - linting
-- [X] lspconfig - lsp config
-- [X] mason - package manager
-- [X] mini.nvim - QoL plugins (ai, pairs, etc.)
-- [X] neorg - neovim org-mode-like plugin
-- [X] noice - experimental ui
-- [X] persistence - save/restore sessions
-- [X] rainbow-delimiters - color layered brackets
-- [X] render-markdown - render markdown like in the browser
-- [X] snacks - QoL plugins (dashboard, picker, etc.)
-- [X] supermaven - AI completion
-- [X] surround - add the `surround` text object
-- [X] todo-comments - highlight TODOs
-- [X] tokyonight - colorscheme
-- [X] treesitter - advanced syntax highlighting
-- [X] trouble - diagnostics
-- [X] vim-tmux-navigator - tmux navigation
-- [X] which-key - show keybindings
-- [X] yazi - yazi as file manager
-- [X] zen-mode - zen mode for neovim like vsc*de
+- [X] nvim-lspconfig - lsp config
+- [X] nvim-surround - add the `surround` text object
+- [X] nvim-treesitter - advanced syntax highlighting
+- [X] persistence.nvim - save/restore sessions
+- [X] plenary.nvim - function library
+- [X] rainbow-delimiters.nvim - color layered brackets
+- [X] snacks.nvim - QoL plugins (dashboard, picker, etc.)
+- [X] tmux.nvim - tmux navigation
+- [X] todo-comments.nvim - highlight TODOs
+- [X] tokyonight.nvim - colorscheme
+- [X] trouble.nvim - diagnostics
+- [X] which-key.nvim - show keybindings
+- [X] yazi.nvim - yazi as file manager
