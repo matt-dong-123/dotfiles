@@ -5,8 +5,23 @@ return {
         dependencies = {
             'j-hui/fidget.nvim',
             'mason-org/mason-lspconfig.nvim',
-            'mason-org/mason.nvim',
+            'WhoIsSethDaniel/mason-tool-installer.nvim',
         },
+        config = function()
+            local ensure_installed = {
+                'bashls',
+                'clangd',
+                'gopls',
+                'pyright',
+                'lua_ls',
+                'marksman',
+                'stylua',
+                'luacheck',
+            }
+            require('mason-tool-installer').setup {
+                ensure_installed = ensure_installed,
+            }
+        end,
     },
     {
         'mason-org/mason.nvim',
@@ -34,14 +49,7 @@ return {
         version = '*',
         dependencies = { 'mason.nvim' },
         opts = {
-            ensure_installed = {
-                'bashls',
-                'clangd',
-                'gopls',
-                'pyright',
-                'lua_ls',
-                'marksman',
-            },
+            ensure_installed = {},
         },
     },
 }
