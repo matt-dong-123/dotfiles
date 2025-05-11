@@ -35,7 +35,7 @@
 - f.lux
 - IINA
 - Ice
-- KeyboardHolder
+- Input Source Pro
 - Raycast
 - SlimHUD
 - Tencent Lemon
