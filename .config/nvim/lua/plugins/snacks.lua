@@ -26,7 +26,7 @@ return {
             desc = 'Notifications',
         },
         {
-            '<leader>tf',
+            '<leader>tt',
             function()
                 Snacks.terminal()
             end,
