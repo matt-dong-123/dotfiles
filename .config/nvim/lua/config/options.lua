@@ -16,6 +16,9 @@ opt.mouse = 'a'
 -- don't show mode, since it's already in the statusline
 opt.showmode = false
 
+-- virtualedit
+opt.virtualedit = 'block'
+
 -- sync system clipboard
 vim.schedule(function()
     opt.clipboard = 'unnamedplus'
