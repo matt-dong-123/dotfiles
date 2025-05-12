@@ -10,14 +10,19 @@ return {
         },
         config = function()
             local ensure_installed = {
+                -- LSPs
                 'bashls',
                 'clangd',
                 'gopls',
                 'pyright',
                 'lua_ls',
                 'marksman',
+                -- Formatters
                 'stylua',
+                -- Linters
                 'luacheck',
+                'cpplint',
+                'ruff',
             }
             require('mason-tool-installer').setup {
                 ensure_installed = ensure_installed,

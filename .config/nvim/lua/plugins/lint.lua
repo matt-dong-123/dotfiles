@@ -4,14 +4,12 @@ return {
     config = function()
         local lint = require 'lint'
         lint.linters_by_ft = {
-            javascript = { 'eslint' },
-            typescript = { 'eslint' },
             cpp = { 'cpplint' },
-            json = { 'jsonlint' },
             lua = { 'luacheck' },
             python = { 'ruff' },
         }
         lint.linters.luacheck = {
+            name = 'LuaCheck',
             cmd = 'luacheck',
             stdin = true,
             args = {
