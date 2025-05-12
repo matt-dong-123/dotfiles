@@ -58,7 +58,7 @@ opt.inccommand = 'split'
 opt.cursorline = true
 
 -- minimal number of lines above and below cursor
-opt.scrolloff = 10
+opt.scrolloff = 999
 
 -- make tab into spaces
 opt.expandtab = true
