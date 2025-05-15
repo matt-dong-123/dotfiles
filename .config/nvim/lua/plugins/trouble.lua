@@ -16,22 +16,22 @@ return {
         {
             '<leader>xs',
             '<cmd>Trouble symbols toggle focus=false<cr>',
-            desc = 'Symbols (Trouble)',
+            desc = 'Symbols',
         },
         {
             '<leader>xl',
             '<cmd>Trouble lsp toggle focus=false win.position=right<cr>',
-            desc = 'LSP Definitions / references / ... (Trouble)',
+            desc = 'LSP Definitions / references / ...',
         },
         {
             '<leader>xL',
             '<cmd>Trouble loclist toggle<cr>',
-            desc = 'Location List (Trouble)',
+            desc = 'Location List',
         },
         {
             '<leader>xQ',
             '<cmd>Trouble qflist toggle<cr>',
-            desc = 'Quickfix List (Trouble)',
+            desc = 'Quickfix List',
         },
     },
 }
