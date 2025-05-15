@@ -16,7 +16,7 @@ local function parse_cmd_to_table(s)
 end
 
 local spaceConfigs = {
-	["!default"] = { icon = "— ", name = "Default" },
+	["!default"] = { icon = "—", name = "Default" },
 	["browser"] = { icon = icons.browser, name = "Browser" },
 	["coding"] = { icon = icons.terminal, name = "Coding" },
 	["music"] = { icon = icons.music, name = "Music" },
