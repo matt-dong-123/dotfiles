@@ -1,6 +1,5 @@
 theme = tokyonight_night
 font-family = "Maple Mono NF CN"
-font-style = "Bold"
 font-size = 20
 macos-titlebar-style = "hidden"
 background-opacity = 0.75
