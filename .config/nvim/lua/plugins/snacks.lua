@@ -26,13 +26,6 @@ return {
             desc = 'Notifications',
         },
         {
-            '<leader>tt',
-            function()
-                Snacks.terminal()
-            end,
-            desc = 'Open Terminal',
-        },
-        {
             '<leader>gl',
             function()
                 Snacks.terminal.get 'lazygit'
