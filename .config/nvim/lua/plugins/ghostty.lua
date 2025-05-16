@@ -6,7 +6,7 @@ return {
     },
     {
         'isak102/ghostty.nvim',
-        event = 'VeryLazy',
+        ft = 'ghostty',
         opts = {},
     },
 }
