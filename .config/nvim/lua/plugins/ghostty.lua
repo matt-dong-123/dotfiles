@@ -1,7 +1,6 @@
 return {
     {
         'ghostty',
-        event = 'VeryLazy',
         dir = '/Applications/Ghostty.app/Contents/Resources/vim/vimfiles/',
     },
     {
