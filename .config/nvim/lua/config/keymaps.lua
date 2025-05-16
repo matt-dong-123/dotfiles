@@ -54,10 +54,10 @@ map('n', '<leader>c', function()
     vim.lsp.buf.code_action()
 end, { desc = 'Code actions' })
 
+map('n', '<leader>w', '<cmd>w<CR>', { desc = 'Write' })
 -- NOTE: TERMINAL MODE REMAPS
 
 -- Exit terminal mode
--- WARNING: If this doesn't work, try <C-\><C-n>
 map('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
 -- NOTE: VISUAL MODE REMAPS
