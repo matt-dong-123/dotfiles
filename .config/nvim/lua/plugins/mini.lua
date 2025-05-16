@@ -1,12 +1,12 @@
 return {
     {
         'echasnovski/mini.ai',
-        event = 'VeryLazy',
+        event = 'BufReadPost',
         version = '*',
     },
     {
         'echasnovski/mini.pairs',
-        event = 'VeryLazy',
+        event = 'BufReadPost',
         version = '*',
         opts = {
             modes = {
