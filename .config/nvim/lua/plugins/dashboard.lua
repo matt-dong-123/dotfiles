@@ -1,6 +1,6 @@
 return {
     'folke/snacks.nvim',
-    lazy = false,
+    event = 'VeryLazy',
     opts = {
         dashboard = {
             preset = {
