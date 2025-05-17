@@ -8,7 +8,6 @@
 - borders
 - espanso
 - fastfetch
-- ghostty
 - hammerspoon
 - karabiner
 - lazygit
