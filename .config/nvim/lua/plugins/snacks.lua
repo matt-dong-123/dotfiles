@@ -7,7 +7,6 @@ return {
         dim = {},
         gitbrowse = {},
         indent = {},
-        image = {},
         input = {},
         notifier = { timeout = 3000 },
         quickfile = {},

@@ -3,7 +3,7 @@ local config = wezterm.config_builder()
 config = {
 	color_scheme = "Tokyo Night",
 	font = wezterm.font_with_fallback({
-		{ family = "Maple Mono NF CN", weight = "Bold" },
+		"Maple Mono NF CN",
 		"JetBrainsMono Nerd Font",
 		"Consolas",
 	}),
@@ -18,5 +18,11 @@ config = {
 	cursor_blink_ease_out = "Constant",
 	max_fps = 120,
 	window_close_confirmation = "NeverPrompt",
+	window_padding = {
+		left = 15,
+		right = 15,
+		top = 15,
+		bottom = 0,
+	},
 }
 return config
