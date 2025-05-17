@@ -14,15 +14,17 @@ return {
                 'bashls',
                 'clangd',
                 'gopls',
-                'pyright',
                 'lua_ls',
                 'marksman',
-                -- Formatters
-                'stylua',
-                -- Linters
-                'luacheck',
+                -- Formatters and Linters
+                'shfmt',
+                'shellcheck',
                 'cpplint',
-                'ruff',
+                'gofumpt',
+                'staticcheck',
+                'stylua',
+                'luacheck',
+                'markdownlint',
             }
             require('mason-tool-installer').setup {
                 ensure_installed = ensure_installed,
