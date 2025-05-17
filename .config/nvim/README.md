@@ -7,7 +7,6 @@
 - [X] fidget.nvim - LSP progress notifier
 - [X] flash.nvim - flash to anywhere
 - [X] friendly-snippets - library of snippets
-- [X] ghostty config plugins
 - [X] gitsigns.nvim - git changes in line numbers
 - [X] heirline.nvim - customizable status bar
 - [X] helpview.nvim - beautify :help
@@ -35,7 +34,3 @@
 - [X] trouble.nvim - diagnostics
 - [X] which-key.nvim - show keybindings
 - [X] yazi.nvim - yazi as file manager
-
-## What to do if you don't like AI?
-Just delete `lua/plugins/ai.lua`!
-
