@@ -1,14 +1,16 @@
 # My nvim docs
 
 - [X] blink.cmp - completion plugin
+- [X] codecompanion.nvim - ai chat
 - [X] conform.nvim - force styling
+- [X] copilot.lua - github copilot
 - [X] fidget.nvim - LSP progress notifier
 - [X] flash.nvim - flash to anywhere
 - [X] friendly-snippets - library of snippets
 - [X] ghostty config plugins
-- [X] gitsigns - git changes in line numbers
-- [X] heirline - customizable status bar
-- [X] helpview - beautify :help
+- [X] gitsigns.nvim - git changes in line numbers
+- [X] heirline.nvim - customizable status bar
+- [X] helpview.nvim - beautify :help
 - [X] lazy.nvim - plugin manager
 - [X] lazydev.nvim - LuaLS enhancer
 - [X] markview.nvim - beautify markdown
@@ -33,3 +35,7 @@
 - [X] trouble.nvim - diagnostics
 - [X] which-key.nvim - show keybindings
 - [X] yazi.nvim - yazi as file manager
+
+## What to do if you don't like AI?
+Just delete `lua/plugins/ai.lua`!
+
