@@ -2,5 +2,20 @@ return {
     'lewis6991/gitsigns.nvim',
     event = 'BufReadPre',
     opts = {},
-    vim.keymap.set('n', '<leader>gp', '<cmd>Gitsigns preview_hunk<CR>', {}),
+    keys = {
+        {
+            '<leader>gp',
+            function()
+                require('gitsigns').preview_hunk()
+            end,
+            { desc = 'Preview Hunk' },
+        },
+        {
+            '<leader>gd',
+            function()
+                require('gitsigns').diffthis()
+            end,
+            { desc = 'Show Diff' },
+        },
+    },
 }
