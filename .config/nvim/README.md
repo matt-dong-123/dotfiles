@@ -1,9 +1,7 @@
 # My nvim docs
 
 - [X] blink.cmp - completion plugin
-- [X] codecompanion.nvim - ai chat
 - [X] conform.nvim - force styling
-- [X] copilot.lua - github copilot
 - [X] fidget.nvim - LSP progress notifier
 - [X] flash.nvim - flash to anywhere
 - [X] friendly-snippets - library of snippets
