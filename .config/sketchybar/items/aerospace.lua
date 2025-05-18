@@ -24,6 +24,9 @@ local spaceConfigs = {
 	["work"] = { icon = icons.work, name = "Work" },
 }
 
+-- focused_workspace: the workspace aerospace sends
+-- workspace: the checked workspace
+-- space: the workspace's corresponding ui element
 local function highlight_workspace(focused_workspace, workspace, space)
 	local selected = focused_workspace == workspace
 	local spaceConfig = spaceConfigs[workspace]

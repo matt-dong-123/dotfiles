@@ -1,7 +1,5 @@
--- hyper key
 local hypr = { "ctrl", "alt", "cmd", "shift" }
 
--- Apps
 local hotkeys = {
 	a = "Zen",
 	d = "Dorico 5",
@@ -19,6 +17,7 @@ local hotkeys = {
 	["return"] = "Wezterm",
 }
 
+-- Launch/Focus apps through hypr+the corresponding char in the hotkeys table
 local function bind_hotkeys(mapping)
 	for key, app in pairs(mapping) do
 		hs.hotkey.bind(hypr, key, function()

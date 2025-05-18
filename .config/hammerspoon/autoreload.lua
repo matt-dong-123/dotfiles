@@ -1,5 +1,5 @@
-function reloadConfig(files)
-	doReload = false
+local function reloadConfig(files)
+	local doReload = false
 	for _, file in pairs(files) do
 		-- Check if any lua file has been modified
 		if file:sub(-4) == ".lua" then
