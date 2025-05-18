@@ -18,14 +18,6 @@ map('n', '<Esc>', '<cmd>nohlsearch<CR>')
 map('n', '<leader>+', '<C-a>', { desc = 'Increment number' })
 map('n', '<leader>-', '<C-x>', { desc = 'Decrement number' })
 
--- cht.sh
-map(
-    'n',
-    '<leader>i',
-    ':!tmux neww ~/dotfiles/cht.sh<CR>',
-    { desc = 'Open cht.sh script' }
-)
-
 -- create panes
 map('n', '<leader>sl', '<C-w>v', { desc = 'Split pane vertically' })
 map('n', '<leader>sj', '<C-w>s', { desc = 'Split pane horizontally' })
