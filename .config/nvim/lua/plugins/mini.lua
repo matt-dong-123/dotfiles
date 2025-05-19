@@ -42,4 +42,10 @@ return {
             end
         end,
     },
+    {
+        'echasnovski/mini.bracketed',
+        event = 'VeryLazy',
+        version = '*',
+        opts = {},
+    },
 }
