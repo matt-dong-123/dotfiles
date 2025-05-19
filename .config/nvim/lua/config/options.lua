@@ -1,91 +1,89 @@
-local opt = vim.opt
-
 -- set colorcolumn
-opt.colorcolumn = '100'
+vim.o.colorcolumn = '100'
 
 -- set relative line numbers
-opt.number = true
-opt.relativenumber = true
+vim.o.number = true
+vim.o.relativenumber = true
 
 -- show hidden files
-opt.hidden = true
+vim.o.hidden = true
 
 -- enable mouse
-opt.mouse = 'a'
+vim.o.mouse = 'a'
 
 -- don't show mode, since it's already in the statusline
-opt.showmode = false
+vim.o.showmode = false
 
 -- virtualedit
-opt.virtualedit = 'block'
+vim.o.virtualedit = 'block'
 
 -- sync system clipboard
 vim.schedule(function()
-    opt.clipboard = 'unnamedplus'
+    vim.o.clipboard = 'unnamedplus'
 end)
 
 -- preserve horizontal blocks of text
-opt.breakindent = true
+vim.o.breakindent = true
 
 -- wrap by word
-opt.linebreak = true
+vim.o.linebreak = true
 
 -- save undo history
-opt.undofile = true
+vim.o.undofile = true
 
 -- set case insensitive search unless capital letters in search query
-opt.ignorecase = true
-opt.smartcase = true
+vim.o.ignorecase = true
+vim.o.smartcase = true
 
 -- keep signcolumns open (for debugging and plugins)
-opt.signcolumn = 'yes'
+vim.o.signcolumn = 'yes'
 
 -- decrease update time
-opt.updatetime = 250
+vim.o.updatetime = 250
 
 -- decrease mapped sequence delay
-opt.timeoutlen = 300
+vim.o.timeoutlen = 300
 
 -- configure new splits
-opt.splitright = true
-opt.splitbelow = true
+vim.o.splitright = true
+vim.o.splitbelow = true
 
 -- customize whitespace behavior
-opt.list = true
-opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.o.list = true
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 -- live substitution preview
-opt.inccommand = 'split'
+vim.o.inccommand = 'split'
 
 -- show line with cursor on
-opt.cursorline = true
+vim.o.cursorline = true
 
 -- minimal number of lines above and below cursor
-opt.scrolloff = 999
+vim.o.scrolloff = 999
 
 -- make tab into spaces
-opt.expandtab = true
+vim.o.expandtab = true
 
 -- set tab size to 4
-opt.tabstop = 4
+vim.o.tabstop = 4
 
 -- set softtabstop to 4
-opt.softtabstop = 4
+vim.o.softtabstop = 4
 
 -- set shiftwidth to 4
-opt.shiftwidth = 4
+vim.o.shiftwidth = 4
 
 -- set autoindent
-opt.autoindent = true
+vim.o.autoindent = true
 
 -- true colors
-opt.termguicolors = true
+vim.o.termguicolors = true
 
 -- hide non-printable characters
-opt.conceallevel = 3
+vim.o.conceallevel = 3
 
 -- for neorg
-opt.concealcursor = 'niv'
+vim.o.concealcursor = 'niv'
 vim.wo.foldlevel = 99
 vim.wo.conceallevel = 2
 
