@@ -13,7 +13,7 @@ path = "~/dotfiles"
 [[session]]
 name = "Notes"
 path = "~/Notes"
-startup_command = "nvim ~/Notes/index.norg"
+startup_command = "y"
 
 [[session]]
 name = "Documents"
