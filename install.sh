@@ -39,7 +39,6 @@ echo -e "${green}Installing Brew Formulae... ${no}"
 brew install stow
 brew install fzf
 brew install sesh
-brew install gum
 brew install gh
 brew install bat
 brew install fd
@@ -50,9 +49,6 @@ brew install luarocks
 brew install make
 brew install ripgrep
 brew install ffmpeg
-brew install imagemagick
-brew install gs
-brew install tectonic
 brew install sketchybar
 # installing sbarlua
 if [ ! -d "$HOME/SBarLua" ]; then
@@ -65,7 +61,6 @@ brew install git
 brew install lazygit
 
 ### Terminal
-brew install tree-sitter
 brew install tree
 brew install borders
 brew install btop
@@ -87,7 +82,6 @@ brew install nvm
 brew install sqlite
 
 ## Casks (you'll have to configure them yourselves)
-# wait till i learn nix :)
 echo -e "${green}Installing Brew Casks... ${no}"
 brew install --cask aerospace
 brew install --cask karabiner-elements
@@ -101,9 +95,8 @@ brew install --cask iina
 brew install --cask jordanbaird-ice
 brew install --cask input-source-pro
 brew install --cask obs
-brew install --cask ollama
 brew install --cask only-switch
-brew install --cask raycast
+brew install --cask sol
 brew install --cask slimhud
 brew install --cask tencent-lemon
 brew install --cask zed
