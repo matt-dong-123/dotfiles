@@ -14,7 +14,7 @@
 - [X] mason-lspconfig.nvim - nvim-lspconfig and mason.nvim compatibility layer
 - [X] mason-tool-installer.nvim - install mason tools
 - [X] mason.nvim - package manager
-- [X] mini.nvim - QoL plugins (ai, icons, pairs, etc.)
+- [X] mini.nvim - QoL plugins (ai, bracketed, icons, pairs, etc.)
 - [X] noice.nvim - experimental ui
 - [X] nui.nvim - ui framework for neovim
 - [X] nvim-highlight-colors - displays things like #7aa2f7 or color = blue
