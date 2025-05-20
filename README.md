@@ -26,31 +26,6 @@
 - vimium-c
 - Zen
 
-## Things in the install script (not in repo)
-
-- AppDimmer
-- AltTab
-- Battery Toolkit
-- f.lux
-- IINA
-- Ice
-- Input Source Pro
-- Raycast
-- SlimHUD
-- Tencent Lemon
-- Zed
-- _Optional:_
-  - Tor Browser
-  - Fonts
-  - MuseScore
-  - QQMusic
-  - WeChat
-  - WPS Office
-  - Zoom
-- For people who use multiple displays and mouse:
-  - BetterDisplay
-  - LinearMouse
-
 ## How to apply settings
 
 > [!important]
@@ -116,6 +91,10 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 1. Go to the LeaderKey settings and go to the "Advanced" tab
 2. Set the config directory to your .config/leaderkey directory
 3. Go back to "General" and set the shortcut to be "shift-command-space"
+
+> [!note]
+>
+> Don't actually use this shortcut! Tap the right command key instead.
 
 </details>
 
