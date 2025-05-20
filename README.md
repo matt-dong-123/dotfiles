@@ -53,19 +53,6 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 
 </details>
 
-<details><summary><b>Enabling the mtab config</b></summary>
-
-1. Install the mtab browser extension
-   - For Chromium-based browsers, go [here](https://chromewebstore.google.com/detail/mtab/fdaphilojaklgkoocegabckfanjoacjg)
-   - For Firefox-based browsers, go [here](https://addons.mozilla.org/en-US/firefox/addon/mtab/)
-2. In the preferences for the extension, click "config-utils" you can see on the bottom
-3. Choose the file from the path "~/.config/mtab/config.json"
-4. Copy the output.
-5. Go back to the preferences for the extension, click "import & save"
-6. Paste the output you copied in step 4.
-
-</details>
-
 <details><summary><b>Enabling stylus config</b></summary>
 
 1. Install the stylus browser extension
