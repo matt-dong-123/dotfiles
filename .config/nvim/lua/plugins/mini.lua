@@ -29,6 +29,7 @@ return {
     },
     {
         'echasnovski/mini.icons',
+        event = 'UIEnter',
         version = '*',
         opts = {},
         specs = {
