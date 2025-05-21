@@ -13,7 +13,7 @@ return {
 	default = 0xff7aa2f7,
 
 	bar = {
-		bg = 0xaa1f2335,
+		bg = 0xff1f2335,
 		border = 0xff4fd6be,
 	},
 	popup = {
