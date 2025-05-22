@@ -81,12 +81,11 @@ show_file_or_dir_preview="if [ -d {} ]; then eza --tree --color=always {} | head
 export FZF_CTRL_T_OPTS="--preview '$show_file_or_dir_preview'"
 export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
 
-eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
 
 # Aliases and functions
 
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
-alias cd="z"
 alias lg="lazygit"
 alias f="fastfetch"
 alias v="nvim"
