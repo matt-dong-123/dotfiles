@@ -1,6 +1,2 @@
-require("items.apple")
-require("items.front_app")
-require("items.aerospace")
-require("items.calendar")
-require("items.widgets")
-require("items.media")
+require("items.left")
+require("items.right")

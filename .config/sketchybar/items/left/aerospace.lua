@@ -59,7 +59,6 @@ for i, workspace in ipairs(workspaces) do
 			highlight_color = colors.white,
 			y_offset = 0,
 		},
-		click_script = "aerospace workspace " .. workspace,
 	})
 
 	space:subscribe("aerospace_workspace_change", function(env)

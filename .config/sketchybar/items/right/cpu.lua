@@ -20,19 +20,13 @@ local cpu = sbar.add("graph", "widgets.cpu", 42, {
 		color = colors.default,
 	},
 	label = {
-		string = "cpu ??%",
+		string = "??%",
 		font = {
 			family = settings.font.numbers,
-			style = settings.font.style_map["Bold"],
-			size = 9.0,
 		},
-		align = "right",
-		padding_right = 0,
-		width = 0,
-		y_offset = 4,
+		color = colors.default,
 	},
 	padding_right = settings.paddings + 6,
-	click_script = "wezterm start --always-new-process btop",
 })
 
 cpu:subscribe("cpu_update", function(env)
@@ -53,7 +47,7 @@ cpu:subscribe("cpu_update", function(env)
 
 	cpu:set({
 		graph = { color = color },
-		label = "cpu " .. env.total_load .. "%",
+		label = env.total_load .. "%",
 	})
 end)
 

@@ -5,13 +5,13 @@ local colors = require("colors")
 local front_app = sbar.add("item", "front_app", {
 	display = "active",
 	icon = {
-		font = "sketchybar-app-font:Regular:20.0",
+		font = "sketchybar-app-font:Regular:16.0",
 		color = colors.default,
 	},
 	label = {
 		font = {
-			size = 20.0,
-			style = settings.font.style_map["Bold"],
+			family = settings.font.text,
+			size = 16.0,
 		},
 		color = colors.default,
 	},
