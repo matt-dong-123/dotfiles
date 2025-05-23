@@ -8,14 +8,14 @@ return {
             function()
                 require('gitsigns').preview_hunk()
             end,
-            { desc = 'Preview Hunk' },
+            desc = 'Preview Hunk',
         },
         {
             '<leader>gd',
             function()
                 require('gitsigns').diffthis()
             end,
-            { desc = 'Show Diff' },
+            desc = 'Show Diff',
         },
     },
 }
