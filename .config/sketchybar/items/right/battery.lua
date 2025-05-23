@@ -2,7 +2,7 @@ local icons = require("icons")
 local colors = require("colors")
 local settings = require("settings")
 
-local battery = sbar.add("item", "widgets.battery", {
+local battery = sbar.add("item", "right.battery", {
 	position = "right",
 	icon = {
 		font = {
@@ -65,8 +65,3 @@ battery:subscribe({ "routine", "power_source_change", "system_woke" }, function(
 		})
 	end)
 end)
-
-sbar.add("item", "widgets.battery.padding", {
-	position = "right",
-	width = settings.group_paddings,
-})

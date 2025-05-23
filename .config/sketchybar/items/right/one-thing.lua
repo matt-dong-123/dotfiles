@@ -12,7 +12,7 @@ local function read_one_thing()
 	return "Stay productive! 💪" -- don't edit here, click the widget and change its text instead
 end
 
-local one_thing = sbar.add("item", "widgets.one-thing", {
+local one_thing = sbar.add("item", "right.one-thing", {
 	position = "right",
 	icon = { drawing = false },
 	label = {
@@ -31,7 +31,7 @@ one_thing:subscribe("mouse.clicked", function()
 	end)
 end)
 
-sbar.add("item", "widgets.one_thing.padding", {
+sbar.add("item", "right.one_thing.padding", {
 	position = "right",
 	width = settings.group_paddings,
 })

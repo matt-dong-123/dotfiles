@@ -1,5 +1,6 @@
 local colors = require("colors")
 local icons = require("icons")
+local settings = require("settings")
 
 local function parse_cmd_to_table(s)
 	local file = io.popen(s)
@@ -33,10 +34,11 @@ local function highlight_workspace(focused_workspace, workspace, space)
 	sbar.animate("tanh", 10, function()
 		space:set({
 			icon = {
-				string = selected and spaceConfig.icon .. " " .. spaceConfig.name or spaceConfig.icon,
+				string = spaceConfig.icon,
 				highlight = selected,
 			},
 			label = {
+				string = selected and spaceConfig.name or "",
 				highlight = selected,
 			},
 		})
@@ -50,14 +52,16 @@ for i, workspace in ipairs(workspaces) do
 	local space = sbar.add("item", "space." .. i, {
 		icon = {
 			string = spaceConfig.icon,
-			padding_left = 1,
-			color = colors.white,
-			highlight_color = colors.default,
+			padding_left = 2,
+			color = colors.green,
+			highlight_color = colors.red,
 		},
 		label = {
-			color = colors.grey,
-			highlight_color = colors.white,
-			y_offset = 0,
+			font = {
+				style = settings.font.style_map["Bold"],
+			},
+			cotlor = colors.default,
+			highlight_color = colors.yellow,
 		},
 	})
 
