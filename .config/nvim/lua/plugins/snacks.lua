@@ -39,12 +39,19 @@ return {
             desc = 'Open in remote repo',
         },
         {
-            'gz',
+            '<leader>z',
             function()
                 Snacks.zen()
                 Snacks.dim()
             end,
             desc = 'Zen Mode',
+        },
+        {
+            '<leader>t',
+            function()
+                Snacks.terminal.toggle()
+            end,
+            desc = 'Open terminal',
         },
     },
 }
