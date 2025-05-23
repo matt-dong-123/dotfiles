@@ -16,7 +16,6 @@ return {
                 { '<leader>w', icon = '' },
                 { '<leader>e', icon = '' },
                 { '<leader>E', icon = '' },
-                { '<leader>i', icon = '' },
                 { '<leader>r', icon = '' },
                 { '<leader>+', icon = '' },
                 { '<leader>-', icon = '' },
