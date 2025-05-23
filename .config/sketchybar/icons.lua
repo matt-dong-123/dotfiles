@@ -48,17 +48,17 @@ local icons = {
 
 	-- Alternative NerdFont icons
 	nerdfont = {
-		browser = "🌐",
-		terminal = "Missing Icon",
-		music = "🎵",
-		social = "👥",
-		work = "💼",
+		browser = "",
+		terminal = "",
+		music = "",
+		social = "",
+		work = "",
 		plus = "",
 		loading = "",
 		apple = "",
 		gear = "",
 		cpu = "",
-		clipboard = "Missing Icon",
+		clipboard = "",
 
 		switch = {
 			on = "󱨥",
@@ -84,7 +84,7 @@ local icons = {
 			download = "",
 			connected = "󰖩",
 			disconnected = "󰖪",
-			router = "Missing Icon",
+			router = "󰑩",
 		},
 		media = {
 			back = "",
