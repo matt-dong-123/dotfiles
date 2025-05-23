@@ -233,12 +233,6 @@ return {
 
         -- NOTE: Diagnostics
         local Diagnostics = {
-            on_click = {
-                callback = function()
-                    require('trouble').toggle { mode = 'diagnostics' }
-                end,
-                name = 'heirline_diagnostics',
-            },
             update = { 'DiagnosticChanged', 'BufEnter' },
             init = function(self)
                 self.errors = #vim.diagnostic.get(
@@ -294,14 +288,6 @@ return {
 
         -- NOTE: LSP
         local LSPActive = {
-            on_click = {
-                callback = function()
-                    vim.defer_fn(function()
-                        vim.cmd 'LspInfo'
-                    end, 100)
-                end,
-                name = 'heirline_LSP',
-            },
             condition = conditions.lsp_attached,
             update = { 'LspAttach', 'LspDetach' },
             provider = function()
