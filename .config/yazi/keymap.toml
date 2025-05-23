@@ -36,5 +36,5 @@ prepend_keymap = [
     ], run = "plugin lazygit", desc = "run lazygit" },
 
     # Easyjump
-    { on = "i", run = "plugin easyjump", desc = "run easyjump" },
+    { on = "s", run = "plugin easyjump", desc = "run easyjump" },
 ]
