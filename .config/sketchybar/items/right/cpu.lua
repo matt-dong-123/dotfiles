@@ -15,10 +15,6 @@ local cpu = sbar.add("graph", "right.cpu", 42, {
 		border_color = { alpha = 0 },
 		drawing = true,
 	},
-	icon = {
-		string = icons.cpu,
-		color = colors.default,
-	},
 	label = {
 		string = "??%",
 		font = {
