@@ -19,6 +19,7 @@
           "value" : "/Applications/Tor Browser.app"
         }
       ],
+      "iconPath" : "globe",
       "key" : "b",
       "label" : "Browser",
       "type" : "group"
@@ -42,6 +43,7 @@
           "value" : "/Applications/Zed.app"
         }
       ],
+      "iconPath" : "apple.terminal",
       "key" : "c",
       "label" : "Coding",
       "type" : "group"
@@ -54,6 +56,7 @@
           "value" : "/Applications/Logic Pro.app"
         }
       ],
+      "iconPath" : "music.note",
       "key" : "m",
       "label" : "Music",
       "type" : "group"
@@ -79,6 +82,7 @@
           "value" : "/Applications/Microsoft PowerPoint.app"
         }
       ],
+      "iconPath" : "note.text",
       "key" : "w",
       "label" : "Work",
       "type" : "group"
@@ -104,6 +108,7 @@
           "value" : "https://youtu.be"
         }
       ],
+      "iconPath" : "globe.asia.australia.fill",
       "key" : "i",
       "label" : "Internet",
       "type" : "group"
