@@ -23,7 +23,7 @@ return {
                 'gofumpt',
                 'staticcheck',
                 'stylua',
-                'luacheck',
+                'selene',
                 'markdownlint',
             }
             require('mason-tool-installer').setup {

@@ -1,42 +1,35 @@
 return {
     'mfussenegger/nvim-lint',
-    event = { 'BufReadPre', 'BufNewFile' },
-    config = function()
-        local lint = require 'lint'
-        lint.linters_by_ft = {
+    event = { 'BufWritePost', 'BufReadPost', 'InsertLeave' },
+    opts = {
+        linters_by_ft = {
+            sh = { 'shellcheck' },
             cpp = { 'cpplint' },
-            lua = { 'luacheck' },
-            python = { 'ruff' },
-        }
-        lint.linters.luacheck = {
-            name = 'LuaCheck',
-            cmd = 'luacheck',
-            stdin = true,
-            args = {
-                '--globals',
-                'vim',
-                'Snacks',
-                'reload',
-                '--',
+            go = { 'staticcheck' },
+            lua = { 'selene' },
+            markdown = { 'markdownlint' },
+        },
+        linters = {
+            selene = {
+                condition = function(ctx)
+                    return vim.fs.find(
+                        { 'selene.toml' },
+                        { path = ctx.filename, upward = true }
+                    )[1]
+                end,
             },
-            stream = 'stdout',
-            ignore_exitcode = true,
-            parser = require('lint.parser').from_errorformat('%f:%l:%c: %m', {
-                source = 'luacheck',
-            }),
-        }
-        local lint_augroup =
-            vim.api.nvim_create_augroup('lint', { clear = true })
+        },
+    },
+    config = function()
         vim.api.nvim_create_autocmd(
-            { 'BufEnter', 'BufWritePost', 'InsertLeave' },
+            { 'BufWritePost', 'BufReadPost', 'InsertLeave' },
             {
-                group = lint_augroup,
                 callback = function()
                     -- Only run the linter in buffers that you can modify in order to
                     -- avoid superfluous noise, notably within the handy LSP pop-ups that
                     -- describe the hovered symbol using Markdown.
                     if vim.opt_local.modifiable:get() then
-                        lint.try_lint()
+                        require('lint').try_lint()
                     end
                 end,
             }
