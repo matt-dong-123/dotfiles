@@ -64,7 +64,7 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 
 </details>
 
-<details><summary><b>Enabling zen config (only for Zen Browser)</b></summary>
+<details><summary><b>Enabling zen config</b></summary>
 
 1. Go to about:profiles in the URL bar, and copy the "Root Directory" path of the profile you want to use
 2. Paste the ~/.config/zen directory into the profile directory/chrome.
