@@ -97,9 +97,9 @@
         },
         {
           "key" : "r",
-          "label" : "r/unixporn",
+          "label" : "Reddit",
           "type" : "url",
-          "value" : "https://reddit.com/r/unixporn"
+          "value" : "https://reddit.com/"
         },
         {
           "key" : "y",
