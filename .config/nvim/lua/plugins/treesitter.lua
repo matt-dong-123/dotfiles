@@ -4,7 +4,16 @@ return {
     branch = 'main',
     build = ':TSUpdate',
     opts = {
-        auto_install = true,
+        ensure_installed = {
+            'c',
+            'lua',
+            'vim',
+            'vimdoc',
+            'query',
+            'markdown',
+            'markdown_inline',
+        },
+        sync_install = false,
         highlight = {
             enable = true,
             -- Disable for large files
