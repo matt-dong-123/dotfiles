@@ -8,8 +8,11 @@ return {
             'mason-org/mason-lspconfig.nvim',
             'WhoIsSethDaniel/mason-tool-installer.nvim',
         },
-        config = function()
-            local ensure_installed = {
+    },
+    {
+        'WhoIsSethDaniel/mason-tool-installer.nvim',
+        opts = {
+            ensure_installed = {
                 -- LSPs
                 'bashls',
                 'clangd',
@@ -25,11 +28,8 @@ return {
                 'stylua',
                 'selene',
                 'markdownlint',
-            }
-            require('mason-tool-installer').setup {
-                ensure_installed = ensure_installed,
-            }
-        end,
+            },
+        },
     },
     {
         'mason-org/mason.nvim',
