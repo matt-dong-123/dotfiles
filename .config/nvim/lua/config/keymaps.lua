@@ -47,6 +47,8 @@ map('n', '<leader>c', function()
 end, { desc = 'Code actions' })
 
 map('n', '<leader>w', '<cmd>w<CR>', { desc = 'Write' })
+
+map('n', '<CR>', '<cmd>wqa!<CR>', { desc = 'Force save and exit all buffers' })
 -- NOTE: TERMINAL MODE REMAPS
 
 -- Exit terminal mode
