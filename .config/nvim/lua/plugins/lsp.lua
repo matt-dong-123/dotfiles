@@ -4,7 +4,6 @@ return {
         version = '*',
         event = { 'BufReadPost', 'BufNewFile' },
         dependencies = {
-            'j-hui/fidget.nvim',
             'mason-org/mason-lspconfig.nvim',
             'WhoIsSethDaniel/mason-tool-installer.nvim',
         },
