@@ -8,9 +8,6 @@ vim.o.relativenumber = true
 -- show hidden files
 vim.o.hidden = true
 
--- enable mouse
-vim.o.mouse = 'a'
-
 -- don't show mode, since it's already in the statusline
 vim.o.showmode = false
 
