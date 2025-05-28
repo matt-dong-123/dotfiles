@@ -27,6 +27,7 @@ return {
                 'stylua',
                 'selene',
                 'markdownlint',
+                'taplo',
             },
         },
     },

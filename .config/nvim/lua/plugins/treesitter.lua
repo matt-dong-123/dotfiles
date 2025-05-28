@@ -12,6 +12,7 @@ return {
             'query',
             'markdown',
             'markdown_inline',
+            'toml',
         },
         sync_install = false,
         highlight = {
