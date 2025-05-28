@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 config = {
-	color_scheme = "Tokyo Night",
+	color_scheme = "tokyonight_moon",
 	font = wezterm.font_with_fallback({
 		"Maple Mono NF CN",
 		"JetBrainsMono Nerd Font",
