@@ -32,7 +32,7 @@ prepend_keymap = [
     # Lazygit
     { on = [
         "g",
-        "i",
+        "l",
     ], run = "plugin lazygit", desc = "run lazygit" },
 
     # Easyjump
