@@ -1,22 +1,22 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "a1738e8"
-hash = "dd97eede8e20e59cd2604e8006e470e2"
+rev = "a54b96a"
+hash = "c0b6cd7dc830b96e77e5c8a71eec7926"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "a1738e8"
-hash = "2f1053f89d1a301a648ab181d0948e38"
+rev = "a54b96a"
+hash = "d0ad0c1946b46a30c8489735fe8de41c"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "a1738e8"
-hash = "1f3dad061209081a6b04dd6ff2cb06c7"
+rev = "a54b96a"
+hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "a1738e8"
-hash = "e0ada736ea676c2bbb3ec705a49526ef"
+rev = "a54b96a"
+hash = "bf6f074cd41ee33c3360341d168f9733"
 
 [[plugin.deps]]
 use = "Lil-Dank/lazygit"
@@ -25,13 +25,13 @@ hash = "a1fa2b3e1826c3a34804ea8c548e9f80"
 
 [[plugin.deps]]
 use = "ndtoan96/ouch"
-rev = "73b7842"
-hash = "1b2f25c9a34b98e596c65bd3e84c51ef"
+rev = "2496cd9"
+hash = "5b9dea47776a30946cfbf83232d18fb1"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "a1738e8"
-hash = "7918aab6a71caf31b58411f789195677"
+rev = "a54b96a"
+hash = "a7ab702e1ef0c097defbc976ed34c186"
 
 [[plugin.deps]]
 use = "DreamMaoMao/easyjump"
@@ -40,8 +40,8 @@ hash = "9209d17be3c792eda9ad60b447c4db1e"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:no-status"
-rev = "55bf699"
-hash = "513a23ac28e1eaa626f3a1bb6c8130d0"
+rev = "a54b96a"
+hash = "3e023d31f29201efdac2a6ae35fedb78"
 
 [flavor]
 deps = []
