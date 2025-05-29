@@ -6,6 +6,7 @@ return {
     opts = {
         ensure_installed = {
             'c',
+            'json',
             'lua',
             'vim',
             'vimdoc',
