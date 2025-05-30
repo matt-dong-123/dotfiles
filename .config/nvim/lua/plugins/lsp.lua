@@ -1,7 +1,7 @@
 return {
     {
         'neovim/nvim-lspconfig',
-        version = '*',
+        version = false,
         event = { 'BufReadPost', 'BufNewFile' },
         dependencies = {
             'mason-org/mason-lspconfig.nvim',
@@ -33,7 +33,7 @@ return {
     },
     {
         'mason-org/mason.nvim',
-        version = '*',
+        version = false,
         opts = {
             ui = {
                 icons = {
@@ -55,7 +55,7 @@ return {
     {
         'mason-org/mason-lspconfig.nvim',
         event = { 'BufReadPre', 'BufNewFile' },
-        version = '*',
+        version = false,
         dependencies = { 'mason.nvim' },
         opts = {
             ensure_installed = {},

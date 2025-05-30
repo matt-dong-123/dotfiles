@@ -1,6 +1,6 @@
 return {
     'HiPhish/rainbow-delimiters.nvim',
     event = 'BufReadPost',
-    version = '*',
+    version = false,
     submodules = false,
 }
