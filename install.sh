@@ -56,7 +56,7 @@ if [ ! -d "$HOME/SBarLua" ]; then
 fi
 brew install yazi
 brew install neovim
-brew install tmux
+brew install tmux --HEAD # Using head because it fixes macOS paste from other apps
 brew install git
 brew install lazygit
 
