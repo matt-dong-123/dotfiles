@@ -5,13 +5,13 @@ local icons = require("icons")
 local date = sbar.add("item", {
 	icon = {
 		string = icons.calendar,
-		color = colors.red,
+		color = colors.magenta,
 		font = {
 			style = settings.font.style_map["Regular"],
 		},
 	},
 	label = {
-		color = colors.red,
+		color = colors.magenta,
 		font = { family = settings.font.text },
 	},
 	position = "right",
