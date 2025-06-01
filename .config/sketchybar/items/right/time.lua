@@ -5,14 +5,14 @@ local icons = require("icons")
 local time = sbar.add("item", {
 	icon = {
 		string = icons.clock,
-		color = colors.green,
+		color = colors.yellow,
 		font = {
 			style = settings.font.style_map["Regular"],
 			size = 12.0,
 		},
 	},
 	label = {
-		color = colors.green,
+		color = colors.yellow,
 		font = { family = settings.font.numbers },
 	},
 	update_freq = 1,
