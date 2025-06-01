@@ -8,7 +8,7 @@ return {
         gitbrowse = {},
         indent = {},
         input = {},
-        notifier = { timeout = 3000 },
+        notifier = { timeout = 3000, style = 'fancy' },
         quickfile = {},
         scroll = { easing_function = 'quadratic' },
         statuscolumn = {},
