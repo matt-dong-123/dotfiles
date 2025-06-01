@@ -52,7 +52,6 @@ for i, workspace in ipairs(workspaces) do
 	local space = sbar.add("item", "space." .. i, {
 		icon = {
 			string = spaceConfig.icon,
-			padding_left = 2,
 			color = colors.green,
 			highlight_color = colors.red,
 		},

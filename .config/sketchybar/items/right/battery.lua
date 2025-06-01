@@ -7,12 +7,10 @@ local battery = sbar.add("item", "right.battery", {
 	icon = {
 		font = {
 			style = settings.font.style_map["Regular"],
-			size = 19.0,
 		},
 	},
 	label = { font = { family = settings.font.numbers } },
 	update_freq = 180,
-	popup = { align = "center" },
 })
 
 battery:subscribe({ "routine", "power_source_change", "system_woke" }, function()
@@ -60,7 +58,7 @@ battery:subscribe({ "routine", "power_source_change", "system_woke" }, function(
 			},
 			label = {
 				string = lead .. label,
-				color = colors.default,
+				color = color,
 			},
 		})
 	end)
