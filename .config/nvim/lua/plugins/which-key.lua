@@ -18,7 +18,7 @@ return {
                 { '<leader>E', icon = '' },
                 { '<leader>r', icon = '' },
                 { '<leader>t', icon = '' },
-                { '<leader>u', icon = '' },
+                { '<leader>u', icon = '', desc = 'Toggle undotree' },
                 { '<leader>z', icon = '󰼀' },
                 { '<leader>+', icon = '' },
                 { '<leader>-', icon = '' },
