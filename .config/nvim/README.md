@@ -4,22 +4,6 @@
 <a href="https://dotfyle.com/matt-dong-123/dotfiles-config-nvim"><img src="https://dotfyle.com/matt-dong-123/dotfiles-config-nvim/badges/leaderkey?style=flat" /></a>
 <a href="https://dotfyle.com/matt-dong-123/dotfiles-config-nvim"><img src="https://dotfyle.com/matt-dong-123/dotfiles-config-nvim/badges/plugin-manager?style=flat" /></a>
 
-## Install Instructions
-
- > Install requires Neovim 0.9+. Always review the code before installing a configuration.
-
-Clone the repository and install the plugins:
-
-```sh
-git clone git@github.com:matt-dong-123/dotfiles ~/.config/matt-dong-123/dotfiles
-```
-
-Open Neovim with this config:
-
-```sh
-NVIM_APPNAME=matt-dong-123/dotfiles/.config/nvim nvim
-```
-
 ## Plugins
 
 ### color
