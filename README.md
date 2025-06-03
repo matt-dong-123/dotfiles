@@ -68,7 +68,7 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 
 1. Go to about:profiles in the URL bar, and copy the "Root Directory" path of the profile you want to use
 2. Paste the ~/.config/zen directory into the profile directory/chrome.
-3. Go to settings, click "Import mods", and choose the file from the path "~/.config/zen/zen-themes-export.json"
+3. Go to settings, click "Import mods", and choose the file from the path "~/.config/zen/zen-mods.json"
 4. Download the "Zen Internet" extension from [here](https://addons.mozilla.org/en-US/firefox/addon/zen-internet/)
 
 </details>
@@ -76,7 +76,7 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 <details><summary><b>Enabling leaderkey config</b></summary>
 
 1. Go to the LeaderKey settings and go to the "Advanced" tab
-2. Set the config directory to your .config/leaderkey directory
+2. Set the config directory to your ~/.config/leaderkey directory
 3. Go back to "General" and set the shortcut to be "shift-command-space"
 
 > [!note]
