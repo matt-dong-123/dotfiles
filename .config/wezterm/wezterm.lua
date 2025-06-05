@@ -31,7 +31,7 @@ config = {
 }
 
 -- MUX (tmux keys)
-config.leader = { key = "a", mods = "CTRL", timeout_milliseconds = 5000 }
+config.leader = { key = "a", mods = "CTRL", timeout_milliseconds = 2000 }
 config.keys = {
 	{
 		mods = "LEADER",
