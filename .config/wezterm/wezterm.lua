@@ -9,7 +9,7 @@ config = {
 	}),
 	enable_tab_bar = false,
 	font_size = 20,
-	window_decorations = "RESIZE",
+	window_decorations = "RESIZE | MACOS_FORCE_ENABLE_SHADOW",
 	window_background_opacity = 0.75,
 	macos_window_background_blur = 100,
 	default_cursor_style = "BlinkingBar",

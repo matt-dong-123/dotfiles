@@ -1,10 +1,7 @@
 after-login-command = []
 
-# Start borders and sketchybar with aerospace
-after-startup-command = [
-    'exec-and-forget brew services restart borders',
-    'exec-and-forget brew services restart sketchybar',
-]
+# Start sketchybar with aerospace
+after-startup-command = ['exec-and-forget brew services restart sketchybar']
 
 # Send signal to change workspace to sketchybar
 exec-on-workspace-change = [
@@ -42,8 +39,8 @@ on-window-detected = [
 ]
 
 [gaps]
-inner.horizontal = 20
-inner.vertical = 20
+inner.horizontal = 10
+inner.vertical = 10
 outer.left = 10
 outer.bottom = 10
 outer.top = 10
@@ -96,8 +93,5 @@ alt-shift-semicolon = 'mode service'
 [mode.service.binding]
 esc = ['reload-config', 'mode main']
 r = ['flatten-workspace-tree', 'mode main']
-f = [
-    'layout floating tiling',
-    'mode main',
-]
+f = ['layout floating tiling', 'mode main']
 backspace = ['close-all-windows-but-current', 'mode main']
