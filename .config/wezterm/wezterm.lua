@@ -112,7 +112,7 @@ end
 wezterm.on("update-right-status", function(window, _)
 	local prefix = ""
 	if window:leader_is_active() then
-		prefix = " 󰠠 LEADER "
+		prefix = " 󰠠 MUX "
 	end
 	window:set_left_status(wezterm.format({
 		{ Background = { Color = "#f7768e" } },
