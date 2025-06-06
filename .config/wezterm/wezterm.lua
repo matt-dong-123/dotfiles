@@ -29,6 +29,7 @@ config = {
 	max_fps = 120,
 	window_close_confirmation = "NeverPrompt",
 	window_decorations = "RESIZE | MACOS_FORCE_ENABLE_SHADOW",
+	tab_max_width = 100,
 }
 
 -- MUX (tmux keys)
