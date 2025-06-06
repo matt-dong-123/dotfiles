@@ -1,27 +1,28 @@
 return {
-	black = 0xff1f2335,
-	white = 0xffc0caf5,
+	black = 0xff222436,
+	white = 0xffc8d3f5,
 	red = 0xffff757f,
 	green = 0xff4fd6be,
-	blue = 0xff7aa2f7,
+	blue = 0xff82aaff,
 	yellow = 0xffffc777,
-	orange = 0xffff9e64,
-	magenta = 0xff9d7cd8,
-	grey = 0xff544c7e,
+	orange = 0xffff966c,
+	magenta = 0xffc099ff,
+	grey = 0xff828bb8,
 	transparent = 0x00000000,
 
-	default = 0xff7aa2f7,
+	default = 0xff82aaff,
 
 	bar = {
-		bg = 0xff1f2335,
-		border = 0xff4fd6be,
+		bg = 0xff222436,
 	},
+
 	popup = {
 		bg = 0xc02c2e34,
 		border = 0xff7f8490,
 	},
-	bg1 = 0xff24283b,
-	bg2 = 0xff414550,
+
+	bg1 = 0xff1e2930,
+	bg2 = 0xff191b29,
 
 	with_alpha = function(color, alpha)
 		if alpha > 1.0 or alpha < 0.0 then

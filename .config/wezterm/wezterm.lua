@@ -25,12 +25,27 @@ config = {
 		top = 15,
 		bottom = 0,
 	},
+	colors = {
+		tab_bar = {
+			active_tab = {
+				bg_color = "#222436",
+				fg_color = "#c099ff",
+				intensity = "Bold",
+				underline = "Single",
+			},
+			inactive_tab = {
+				bg_color = "#222436",
+				fg_color = "#c8d3f5",
+			},
+		},
+	},
 
 	-- BEHAVIOR
 	max_fps = 120,
 	window_close_confirmation = "NeverPrompt",
 	window_decorations = "RESIZE | MACOS_FORCE_ENABLE_SHADOW",
 	tab_max_width = 100,
+	show_new_tab_button_in_tab_bar = false,
 }
 
 -- MUX (tmux keys)
@@ -111,6 +126,7 @@ config.keys = {
 		key = "r",
 		action = wezterm.action.PromptInputLine({
 			description = "Rename workspace to:",
+			---@diagnostic disable-next-line: unused-local
 			action = wezterm.action_callback(function(window, pane, line)
 				if line then
 					wezterm.mux.rename_workspace(wezterm.mux.get_active_workspace(), line)
@@ -149,7 +165,7 @@ wezterm.on("update-right-status", function(window, _)
 	if window:leader_is_active() then
 		prefix = " 󰠠 " .. wezterm.mux.get_active_workspace() .. " "
 		window:set_left_status(wezterm.format({
-			{ Foreground = { Color = "#f7768e" } },
+			{ Foreground = { Color = "#ff757f" } },
 			{ Text = prefix },
 		}))
 	else
