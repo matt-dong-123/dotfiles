@@ -128,6 +128,11 @@ config.keys = {
 		key = "y",
 		action = wezterm.action.ActivateCopyMode,
 	},
+	{
+		mods = "LEADER",
+		key = "Enter",
+		action = wezterm.action.TogglePaneZoomState,
+	},
 }
 
 for i = 0, 9 do
