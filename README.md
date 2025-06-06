@@ -13,9 +13,7 @@
 - lazygit
 - leaderkey
 - nvim
-- sesh
 - sketchybar
-- tmux
 - wezterm
 - yazi
 - .zshrc
