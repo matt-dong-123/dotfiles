@@ -38,7 +38,6 @@ echo -e "${green}Installing Brew Formulae... ${no}"
 ### Must Have things
 brew install stow
 brew install fzf
-brew install sesh
 brew install gh
 brew install bat
 brew install fd
@@ -56,7 +55,6 @@ if [ ! -d "$HOME/SBarLua" ]; then
 fi
 brew install yazi
 brew install neovim
-brew install tmux --HEAD # Using head because it fixes macOS paste from other apps
 brew install git
 brew install lazygit
 
