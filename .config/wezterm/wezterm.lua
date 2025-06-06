@@ -104,6 +104,18 @@ config.keys = {
 		key = "k",
 		action = wezterm.action.AdjustPaneSize({ "Up", 5 }),
 	},
+	{
+		mods = "LEADER",
+		key = "r",
+		action = wezterm.action.PromptInputLine({
+			description = "Rename workspace to:",
+			action = wezterm.action_callback(function(window, pane, line)
+				if line then
+					wezterm.mux.rename_workspace(wezterm.mux.get_active_workspace(), line)
+				end
+			end),
+		}),
+	},
 }
 
 for i = 0, 9 do
