@@ -62,7 +62,6 @@ brew install lazygit
 
 ### Terminal
 brew install tree
-brew install borders
 brew install btop
 brew install fastfetch
 brew install cowsay
