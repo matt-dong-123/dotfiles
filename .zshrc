@@ -85,7 +85,7 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # Aliases and functions
 
-alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias ls="eza --color=always"
 alias lg="lazygit"
 alias f="fastfetch"
 alias v="nvim"
