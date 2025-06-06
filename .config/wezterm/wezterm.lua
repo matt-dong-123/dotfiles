@@ -1,5 +1,6 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
+local workspace_switcher = wezterm.plugin.require("https://github.com/MLFlexer/smart_workspace_switcher.wezterm")
 
 config = {
 	-- APPEARANCE
@@ -115,15 +116,29 @@ for i = 0, 9 do
 end
 
 wezterm.on("update-right-status", function(window, _)
-	local prefix = ""
+	local prefix = "  " .. wezterm.mux.get_active_workspace() .. " "
 	if window:leader_is_active() then
-		prefix = " 󰠠 MUX "
+		prefix = " 󰠠 " .. wezterm.mux.get_active_workspace() .. " "
+		window:set_left_status(wezterm.format({
+			{ Foreground = { Color = "#f7768e" } },
+			{ Text = prefix },
+		}))
+	else
+		window:set_left_status(wezterm.format({
+			{ Foreground = { Color = "#4fd6be" } },
+			{ Text = prefix },
+		}))
 	end
-	window:set_left_status(wezterm.format({
-		{ Background = { Color = "#f7768e" } },
-		{ Foreground = { Color = "#222436" } },
-		{ Text = prefix },
-	}))
 end)
 
+-- Sesh like plugin
+workspace_switcher.apply_to_config(config)
+table.insert(config.keys, {
+	mods = "LEADER",
+	key = "K",
+	action = workspace_switcher.switch_workspace(),
+})
+config.default_workspace = "Home"
+
+workspace_switcher.zoxide_path = "/opt/homebrew/bin/zoxide"
 return config
