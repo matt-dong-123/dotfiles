@@ -35,8 +35,8 @@
 Run:
 
 ```sh
-cd
-curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/main/install.sh
+./install.sh
 ```
 
 ## Post-Install
