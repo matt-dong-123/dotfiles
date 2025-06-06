@@ -64,38 +64,43 @@ config.keys = {
 		action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
 	},
 	{
-		mods = "LEADER",
+		mods = "CTRL",
 		key = "h",
 		action = wezterm.action.ActivatePaneDirection("Left"),
 	},
 	{
-		mods = "LEADER",
+		mods = "CTRL",
 		key = "j",
 		action = wezterm.action.ActivatePaneDirection("Down"),
 	},
 	{
-		mods = "LEADER",
+		mods = "CTRL",
 		key = "k",
 		action = wezterm.action.ActivatePaneDirection("Up"),
 	},
 	{
+		mods = "CTRL",
+		key = "l",
+		action = wezterm.action.ActivatePaneDirection("Right"),
+	},
+	{
 		mods = "LEADER",
-		key = "LeftArrow",
+		key = "h",
 		action = wezterm.action.AdjustPaneSize({ "Left", 5 }),
 	},
 	{
 		mods = "LEADER",
-		key = "RightArrow",
+		key = "l",
 		action = wezterm.action.AdjustPaneSize({ "Right", 5 }),
 	},
 	{
 		mods = "LEADER",
-		key = "DownArrow",
+		key = "j",
 		action = wezterm.action.AdjustPaneSize({ "Down", 5 }),
 	},
 	{
 		mods = "LEADER",
-		key = "UpArrow",
+		key = "k",
 		action = wezterm.action.AdjustPaneSize({ "Up", 5 }),
 	},
 }
