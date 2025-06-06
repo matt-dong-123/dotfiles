@@ -24,11 +24,6 @@ rev = "7a08a09"
 hash = "a1fa2b3e1826c3a34804ea8c548e9f80"
 
 [[plugin.deps]]
-use = "ndtoan96/ouch"
-rev = "2496cd9"
-hash = "5b9dea47776a30946cfbf83232d18fb1"
-
-[[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
 rev = "a54b96a"
 hash = "a7ab702e1ef0c097defbc976ed34c186"
