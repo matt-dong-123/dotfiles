@@ -1,6 +1,7 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 local workspace_switcher = wezterm.plugin.require("https://github.com/MLFlexer/smart_workspace_switcher.wezterm")
+workspace_switcher.apply_to_config(config)
 
 config = {
 	-- APPEARANCE
@@ -117,6 +118,16 @@ config.keys = {
 			end),
 		}),
 	},
+	{
+		mods = "LEADER",
+		key = "s",
+		action = wezterm.action.QuickSelect,
+	},
+	{
+		mods = "LEADER",
+		key = "y",
+		action = wezterm.action.ActivateCopyMode,
+	},
 }
 
 for i = 0, 9 do
@@ -145,7 +156,6 @@ wezterm.on("update-right-status", function(window, _)
 end)
 
 -- Sesh like plugin
-workspace_switcher.apply_to_config(config)
 table.insert(config.keys, {
 	mods = "LEADER",
 	key = "K",
