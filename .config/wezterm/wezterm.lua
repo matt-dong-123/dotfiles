@@ -5,53 +5,50 @@ local workspace_switcher =
 local smart_splits =
     wezterm.plugin.require 'https://github.com/mrjones2014/smart-splits.nvim'
 workspace_switcher.apply_to_config(config)
-smart_splits.apply_to_config(config)
 
-config = {
-    -- APPEARANCE
-    color_scheme = 'tokyonight_moon',
-    font = wezterm.font_with_fallback {
-        'Maple Mono NF CN',
-        'JetBrainsMono Nerd Font',
-        'Consolas',
-    },
-    use_fancy_tab_bar = false,
-    font_size = 20,
-    line_height = 1.2,
-    window_background_opacity = 0.75,
-    macos_window_background_blur = 100,
-    default_cursor_style = 'BlinkingBar',
-    cursor_blink_rate = 500,
-    cursor_blink_ease_in = 'Constant',
-    cursor_blink_ease_out = 'Constant',
-    window_padding = {
-        left = 15,
-        right = 15,
-        top = 15,
-        bottom = 0,
-    },
-    colors = {
-        tab_bar = {
-            active_tab = {
-                bg_color = '#222436',
-                fg_color = '#c099ff',
-                intensity = 'Bold',
-                underline = 'Single',
-            },
-            inactive_tab = {
-                bg_color = '#222436',
-                fg_color = '#c8d3f5',
-            },
+-- APPEARANCE
+config.color_scheme = 'tokyonight_moon'
+config.font = wezterm.font_with_fallback {
+    'Maple Mono NF CN',
+    'JetBrainsMono Nerd Font',
+    'Consolas',
+}
+config.use_fancy_tab_bar = false
+config.font_size = 20
+config.line_height = 1.2
+config.window_background_opacity = 0.75
+config.macos_window_background_blur = 100
+config.default_cursor_style = 'BlinkingBar'
+config.cursor_blink_rate = 500
+config.cursor_blink_ease_in = 'Constant'
+config.cursor_blink_ease_out = 'Constant'
+config.window_padding = {
+    left = 15,
+    right = 15,
+    top = 15,
+    bottom = 0,
+}
+config.colors = {
+    tab_bar = {
+        active_tab = {
+            bg_color = '#222436',
+            fg_color = '#c099ff',
+            intensity = 'Bold',
+            underline = 'Single',
+        },
+        inactive_tab = {
+            bg_color = '#222436',
+            fg_color = '#c8d3f5',
         },
     },
-
-    -- BEHAVIOR
-    max_fps = 120,
-    window_close_confirmation = 'NeverPrompt',
-    window_decorations = 'RESIZE | MACOS_FORCE_ENABLE_SHADOW',
-    tab_max_width = 100,
-    show_new_tab_button_in_tab_bar = false,
 }
+
+-- BEHAVIOR
+config.max_fps = 120
+config.window_close_confirmation = 'NeverPrompt'
+config.window_decorations = 'RESIZE | MACOS_FORCE_ENABLE_SHADOW'
+config.tab_max_width = 100
+config.show_new_tab_button_in_tab_bar = false
 
 -- MUX (tmux keys)
 config.leader = { key = 'a', mods = 'CTRL', timeout_milliseconds = 2000 }
@@ -85,46 +82,6 @@ config.keys = {
         mods = 'LEADER',
         key = '"',
         action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },
-    },
-    {
-        mods = 'CTRL',
-        key = 'h',
-        action = wezterm.action.ActivatePaneDirection 'Left',
-    },
-    {
-        mods = 'CTRL',
-        key = 'j',
-        action = wezterm.action.ActivatePaneDirection 'Down',
-    },
-    {
-        mods = 'CTRL',
-        key = 'k',
-        action = wezterm.action.ActivatePaneDirection 'Up',
-    },
-    {
-        mods = 'CTRL',
-        key = 'l',
-        action = wezterm.action.ActivatePaneDirection 'Right',
-    },
-    {
-        mods = 'LEADER',
-        key = 'h',
-        action = wezterm.action.AdjustPaneSize { 'Left', 5 },
-    },
-    {
-        mods = 'LEADER',
-        key = 'l',
-        action = wezterm.action.AdjustPaneSize { 'Right', 5 },
-    },
-    {
-        mods = 'LEADER',
-        key = 'j',
-        action = wezterm.action.AdjustPaneSize { 'Down', 5 },
-    },
-    {
-        mods = 'LEADER',
-        key = 'k',
-        action = wezterm.action.AdjustPaneSize { 'Up', 5 },
     },
     {
         mods = 'LEADER',
@@ -192,5 +149,14 @@ table.insert(config.keys, {
 })
 config.default_workspace = 'Home'
 workspace_switcher.zoxide_path = '/opt/homebrew/bin/zoxide'
+
+-- Smart Splits
+smart_splits.apply_to_config(config, {
+    direction_keys = { 'h', 'j', 'k', 'l' },
+    modifiers = {
+        move = 'CTRL',
+        resize = 'META',
+    },
+})
 
 return config
