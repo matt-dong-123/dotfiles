@@ -13,6 +13,7 @@ config = {
 	}),
 	use_fancy_tab_bar = false,
 	font_size = 20,
+	line_height = 1.2,
 	window_background_opacity = 0.75,
 	macos_window_background_blur = 100,
 	default_cursor_style = "BlinkingBar",
