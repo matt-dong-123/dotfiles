@@ -184,6 +184,6 @@ table.insert(config.keys, {
 	action = workspace_switcher.switch_workspace(),
 })
 config.default_workspace = "Home"
-
 workspace_switcher.zoxide_path = "/opt/homebrew/bin/zoxide"
+
 return config
