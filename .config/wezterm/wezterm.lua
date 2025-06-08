@@ -22,7 +22,6 @@ table.insert(config.keys, {
     action = workspace_switcher.switch_workspace(),
 })
 config.default_workspace = 'Home'
--- TODO: integrate $(which zoxide) in the future
 workspace_switcher.zoxide_path = '/opt/homebrew/bin/zoxide'
 
 -- smart splits config
