@@ -57,6 +57,7 @@ return {
                     icon = '󰌌 ',
                     title = 'Keys',
                     indent = 2,
+                    gap = 1,
                     padding = 1,
                 },
                 {
