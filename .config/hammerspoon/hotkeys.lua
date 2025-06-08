@@ -1,4 +1,4 @@
-local hypr = { "ctrl", "alt", "cmd" }
+local hypr = { "ctrl", "shift", "cmd" }
 
 local hotkeys = {
 	a = "Zen",

@@ -11,12 +11,6 @@
           "key" : "s",
           "type" : "application",
           "value" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
-        },
-        {
-          "key" : "t",
-          "label" : "Tor",
-          "type" : "application",
-          "value" : "/Applications/Tor Browser.app"
         }
       ],
       "iconPath" : "globe",
@@ -27,20 +21,9 @@
     {
       "actions" : [
         {
-          "key" : "i",
-          "label" : "IDEA",
-          "type" : "application",
-          "value" : "/Applications/IntelliJ IDEA CE.app"
-        },
-        {
           "key" : "x",
           "type" : "application",
           "value" : "/Applications/Xcode.app"
-        },
-        {
-          "key" : "z",
-          "type" : "application",
-          "value" : "/Applications/Zed.app"
         }
       ],
       "iconPath" : "apple.terminal",

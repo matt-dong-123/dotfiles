@@ -24,7 +24,7 @@
                     {
                         "manipulators": [
                             {
-                                "description": "Change rcmd to hyperkey without alt. (cmd+sft+spc when tapped)",
+                                "description": "Change rcmd to hyperkey without shift. (cmd+sft+spc when tapped)",
                                 "from": {
                                     "key_code": "right_command",
                                     "modifiers": { "optional": ["any"] }
@@ -32,7 +32,7 @@
                                 "to": [
                                     {
                                         "key_code": "left_command",
-                                        "modifiers": ["left_control", "left_shift"]
+                                        "modifiers": ["left_control", "left_option"]
                                     }
                                 ],
                                 "to_if_alone": [
