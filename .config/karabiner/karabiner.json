@@ -44,24 +44,6 @@
                                 "type": "basic"
                             }
                         ]
-                    },
-                    {
-                        "manipulators": [
-                            {
-                                "description": "Change ropt to meh key.",
-                                "from": {
-                                    "key_code": "right_option",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_shift",
-                                        "modifiers": ["left_control", "left_option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
                     }
                 ]
             },
