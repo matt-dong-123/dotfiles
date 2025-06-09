@@ -9,11 +9,6 @@ local workspace_switcher =
 local smart_splits =
     wezterm.plugin.require 'https://github.com/mrjones2014/smart-splits.nvim'
 
-appearance.apply_to_config(config)
-behavior.apply_to_config(config)
-keys.apply_to_config(config)
-mux.apply_to_config(config)
-
 -- workspace switcher config
 workspace_switcher.apply_to_config(config)
 table.insert(config.keys, {
@@ -32,5 +27,10 @@ smart_splits.apply_to_config(config, {
         resize = 'META',
     },
 })
+
+appearance.apply_to_config(config)
+behavior.apply_to_config(config)
+keys.apply_to_config(config)
+mux.apply_to_config(config)
 
 return config
