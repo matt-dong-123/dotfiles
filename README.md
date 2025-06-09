@@ -1,39 +1,24 @@
-# my dotfiles
+# dots
 
-## Dotfiles include
+Instead of listing everything in it like a bozo, let me show you why:
+- nvim => the greatest editor of all time, lua and plugins
+- aerospace => since it's not an interface, i don't need it to be fancy (for that use yabai)
+- zen browser => the most customizable browser out there, eye candy
+- wezterm => fast af, has a ton of features, extremely customizable
 
-- aerospace
-- bat
-- btop
-- borders
-- espanso
-- fastfetch
-- hammerspoon
-- karabiner
-- lazygit
-- leaderkey
-- nvim
-- sketchybar
-- wezterm
-- yazi
-- .zshrc
+You may think that the following are superior, but here's why they're not:
+- vscode => slow af, not very customizable unless you just love the mess that is javascript
+- helix => deez nuts, has like 1.5x the number of keystrokes. Wtf are you doing man? Plugins?
+- kakoune => i'm not going to develop the editor itself when i use it!
+- yabai => i don't like disabling SIP, thank you, next
+- arc browser => a piece of unmaintained garbage
+- vivaldi => still too conservative for me!
+- tmux => the config for tmux is like reading the language of an alien
+- kitty => i don't trust @kovidgoyal to make good decisions, also it's made in python, slow
+- alacritty => tabs, please
+- ghostty => second best, but still no copy and quick select yet
 
-## Manual setup
-
-- mtab
-- vimium-c
-- Zen
-
-## How to apply settings
-
-> [!important]
->
-> This is only for macOS users!
->
-> Also, make sure to backup your old dotfiles before applying my settings, as otherwise the install script might fail!
-
-Run:
-
+## Install Instructions
 ```sh
 curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/main/install.sh
 ./install.sh
@@ -43,22 +28,9 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 
 <details><summary><b>Enabling the Vimium-C browser extension</b></summary>
 
-1. Install the vimium-c browser extension
-   - For Chromium-based browsers, go [here](https://chromewebstore.google.com/detail/vimium-c-%E5%85%A8%E9%94%AE%E7%9B%98%E6%93%8D%E4%BD%9C%E6%B5%8F%E8%A7%88%E5%99%A8/hfjbmagddngcpeloejdejnfgbamkjaeg)
-   - For Firefox-based browsers, go [here](https://addons.mozilla.org/en-US/firefox/addon/vimium-c/)
+1. Install the [vimium-c](https://addons.mozilla.org/en-US/firefox/addon/vimium-c/) browser extension
 2. In the preferences for the extension, click "Import Settings"
 3. Choose the file from the path "~/.config/vimium-c/config.json"
-
-</details>
-
-<details><summary><b>Enabling stylus config</b></summary>
-
-1. Install the stylus browser extension
-   - For Chromium-based browsers, go [here](https://chromewebstore.google.com/detail/mtab/clngdbkpkpeebahjckkjfobafhncgmne)
-   - For Firefox-based browsers, go [here](https://addons.mozilla.org/en-US/firefox/addon/styl-us)
-2. In the preferences for the extension, click "Import" you can see on the side
-3. Choose the file from the path "~/.config/stylus/config.json"
-    - If you want to use only a set of rules, copy the rules you want to the stylus editor.
 
 </details>
 
@@ -82,7 +54,3 @@ curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/m
 > Don't actually use this shortcut! Tap the right command key instead.
 
 </details>
-
-You can raise issues if you run into any problems and bugs. I'll try as hard as I can!
-
-**Remember, my dotfiles are for myself, so it might not work for you.**
