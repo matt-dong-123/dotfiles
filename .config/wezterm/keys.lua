@@ -72,43 +72,43 @@ M.apply_to_config = function(config)
             action = act.TogglePaneZoomState,
         },
         {
-            mods = 'LEADER',
+            mods = 'CTRL',
             key = 'h',
             action = act.ActivatePaneDirection 'Left',
         },
         {
-            mods = 'LEADER',
+            mods = 'CTRL',
             key = 'j',
             action = act.ActivatePaneDirection 'Down',
         },
         {
-            mods = 'LEADER',
+            mods = 'CTRL',
             key = 'k',
             action = act.ActivatePaneDirection 'Up',
         },
         {
-            mods = 'LEADER',
+            mods = 'CTRL',
             key = 'l',
             action = act.ActivatePaneDirection 'Right',
         },
         {
             mods = 'LEADER',
-            key = 'H',
+            key = 'h',
             action = act.AdjustPaneSize { 'Left', 5 },
         },
         {
             mods = 'LEADER',
-            key = 'J',
+            key = 'j',
             action = act.AdjustPaneSize { 'Down', 5 },
         },
         {
             mods = 'LEADER',
-            key = 'K',
+            key = 'k',
             action = act.AdjustPaneSize { 'Up', 5 },
         },
         {
             mods = 'LEADER',
-            key = 'L',
+            key = 'l',
             action = act.AdjustPaneSize { 'Right', 5 },
         },
     }
