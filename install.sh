@@ -89,7 +89,6 @@ brew install --cask wezterm@nightly
 brew install --cask leader-key
 brew install --cask alt-tab
 brew install --cask iina
-brew install --cask jordanbaird-ice
 brew install --cask input-source-pro
 brew install --cask obs
 brew install --cask only-switch
