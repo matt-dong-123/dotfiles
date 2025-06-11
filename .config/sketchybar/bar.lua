@@ -9,4 +9,5 @@ sbar.bar({
 	padding_left = 10,
 	position = "top",
 	margin = 5,
+	y_offset = 40,
 })
