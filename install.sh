@@ -10,12 +10,12 @@ no="\033[0m"
 
 # Install xCode cli tools
 if [[ "$(uname)" == "Darwin" ]]; then
-    echo -e "${yellow}macOS deteted...${no}"
+    echo -e "${yellow}macOS detected...${no}"
 
     if xcode-select -p &>/dev/null; then
         echo -e "${blue}Xcode already installed${no}"
     else
-        echo -e "${green}Installing commandline tools...${no}"
+        echo -e "${green}Installing command line tools...${no}"
         xcode-select --install
     fi
 fi
