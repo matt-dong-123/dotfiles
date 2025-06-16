@@ -1,5 +1,9 @@
 # dots
 
+> [!note]
+> Only use this with Sequoia. (maybe Ventura or Sonoma?)
+> Don't fuck with this repo if you use Tahoe.
+
 Instead of listing everything in it like a bozo, let me show you why:
 - nvim => the greatest editor of all time, lua and plugins
 - aerospace => since it's not an interface, i don't need it to be fancy (for that use yabai)
@@ -50,7 +54,7 @@ chmod +x install.sh
 2. Set the config directory to your ~/.config/leaderkey directory
 3. Go back to "General" and set the shortcut to be "shift-command-space"
 
-> [!note]
+> **NOTE**
 >
 > Don't actually use this shortcut! Tap the right command key instead.
 
