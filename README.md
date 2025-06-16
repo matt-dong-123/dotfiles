@@ -45,6 +45,14 @@ chmod +x install.sh
 2. Paste the ~/.config/zen directory into the profile directory/chrome.
 3. Go to settings, click "Import mods", and choose the file from the path "~/.config/zen/zen-mods.json"
 4. Download the "Zen Internet" extension from [here](https://addons.mozilla.org/en-US/firefox/addon/zen-internet/)
+5. Install these plugins (optional):
+    - Brave Search
+    - Dark Reader
+    - DeArrow
+    - iCloud Passwords
+    - Return YouTube Dislike
+    - Sponsorblock
+    - uBlock Origin
 
 </details>
 
