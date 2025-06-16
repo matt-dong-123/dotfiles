@@ -88,7 +88,6 @@ brew install --cask leader-key
 brew install --cask alt-tab
 brew install --cask iina
 brew install --cask input-source-pro
-brew install --cask obs
 brew install --cask only-switch
 brew install --cask slimhud
 brew install --cask tencent-lemon
