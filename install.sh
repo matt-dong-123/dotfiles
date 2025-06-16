@@ -31,7 +31,6 @@ fi
 echo -e "${green}Tapping Brew...${no}"
 brew tap nikitabobko/tap
 brew tap FelixKratz/formulae
-brew tap mhaeuser/mhaeuser
 
 ## Formulae
 echo -e "${green}Installing Brew Formulae... ${no}"
@@ -39,12 +38,8 @@ echo -e "${green}Installing Brew Formulae... ${no}"
 brew install stow
 brew install fzf
 brew install gh
-brew install bat
 brew install fd
 brew install zoxide
-brew install lua
-brew install luajit
-brew install luarocks
 brew install make
 brew install ripgrep
 brew install ffmpeg
@@ -63,7 +58,6 @@ brew install tree
 brew install btop
 brew install fastfetch
 brew install cowsay
-brew install eza
 brew install fortune
 brew install wifi-password
 brew install cmatrix
@@ -71,12 +65,16 @@ brew install sl
 brew install yt-dlp
 brew install wtf
 brew install pipes-sh
-brew install pnpm
 
 ### dev things
+brew install pnpm
 brew install node
 brew install nvm
 brew install sqlite
+brew install go
+brew install lua
+brew install luajit
+brew install luarocks
 
 ## Casks (you'll have to configure them yourselves)
 echo -e "${green}Installing Brew Casks... ${no}"
@@ -84,7 +82,7 @@ brew install --cask aerospace
 brew install --cask karabiner-elements
 brew install --cask hammerspoon
 brew install --cask espanso
-brew install --cask battery-toolkit
+brew install --cask aldente
 brew install --cask wezterm@nightly
 brew install --cask leader-key
 brew install --cask alt-tab
@@ -92,7 +90,6 @@ brew install --cask iina
 brew install --cask input-source-pro
 brew install --cask obs
 brew install --cask only-switch
-brew install --cask sol
 brew install --cask slimhud
 brew install --cask tencent-lemon
 brew install --cask zed
