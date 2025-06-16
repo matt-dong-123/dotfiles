@@ -93,7 +93,6 @@ alias ff='nvim `fzf --preview "bat --style=numbers --color=always --line-range :
 alias c="cd ~/dotfiles"
 alias cl="clear"
 alias gc="cd ~/.config"
-alias t="tmux"
 
 y() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
