@@ -21,6 +21,7 @@ You may think that the following are superior, but here's why they're not:
 ## Install Instructions
 ```sh
 curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/main/install.sh
+chmod +x install.sh
 ./install.sh
 ```
 
