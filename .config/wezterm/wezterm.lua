@@ -7,14 +7,13 @@ local mux = require 'mux'
 local workspace_switcher =
     wezterm.plugin.require 'https://github.com/MLFlexer/smart_workspace_switcher.wezterm'
 
--- workspace switcher config
-workspace_switcher.apply_to_config(config)
-
 appearance.apply_to_config(config)
 behavior.apply_to_config(config)
 keys.apply_to_config(config)
 mux.apply_to_config(config)
 
+-- workspace switcher config
+workspace_switcher.apply_to_config(config)
 table.insert(config.keys, {
     mods = 'LEADER',
     key = 'K',
