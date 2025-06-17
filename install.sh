@@ -108,6 +108,8 @@ if [ "$add_fonts" != "N" ] && [ "$add_fonts" != "n" ]; then
     echo -e "${green}Installing additional fonts... ${no}"
     brew install --cask font-jetbrains-mono-nerd-font
     brew install --cask font-sf-pro
+    brew install --cask font-maple-mono
+    brew install --cask font-maple-mono-nf
     brew install --cask font-maple-mono-nf-cn
     brew install --cask sf-symbols
     brew install --cask font-sketchybar-app-font
@@ -221,16 +223,13 @@ stow --ignore .DS_Store --ignore .git \
 # Set up hammerspoon config file
 defaults write org.hammerspoon.Hammerspoon MJConfigFile "$HOME/.config/hammerspoon/init.lua"
 
-echo -e "${purple}Set my wallpaper? (Y/n) ${no}"
-read -p "" set_wallpaper
-if [ "$set_wallpaper" != "N" ] && [ "$set_wallpaper" != "n" ]; then
-    osascript -e 'tell application "Finder" to set desktop picture to POSIX file "~/wallpapers/wallpaper.png"'
-fi
-
 # Set up one-thing config file
 if [ ! -f "$HOME/one-thing/one-thing.txt" ]; then
     mkdir -p "$HOME/one-thing"
     touch "$HOME/one-thing/one-thing.txt"
+    echo -e "${green}What do you want on your menu bar? "
+    read -p "" thing
+    echo "$thing" >>$HOME/one-thing/one-thing.txt
 fi
 
 echo -e "${green}Setup complete!${no}"
