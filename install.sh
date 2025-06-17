@@ -43,8 +43,6 @@ brew install zoxide
 brew install make
 brew install ripgrep
 brew install ffmpeg
-brew install battery
-battery maintain 80
 brew install sketchybar
 # installing sbarlua
 if [ ! -d "$HOME/SBarLua" ]; then
