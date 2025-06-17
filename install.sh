@@ -43,6 +43,8 @@ brew install zoxide
 brew install make
 brew install ripgrep
 brew install ffmpeg
+brew install battery
+battery maintain 80
 brew install sketchybar
 # installing sbarlua
 if [ ! -d "$HOME/SBarLua" ]; then
@@ -82,7 +84,6 @@ brew install --cask aerospace
 brew install --cask karabiner-elements
 brew install --cask hammerspoon
 brew install --cask espanso
-brew install --cask aldente
 brew install --cask wezterm@nightly
 brew install --cask leader-key
 brew install --cask alt-tab
