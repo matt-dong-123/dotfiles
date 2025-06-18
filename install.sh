@@ -88,9 +88,6 @@ brew install --cask alt-tab
 brew install --cask iina
 brew install --cask input-source-pro
 brew install --cask only-switch
-brew install --cask slimhud
-brew install --cask tencent-lemon
-brew install --cask zed
 brew install --cask zen-browser
 
 echo -e "${purple}Do you want to install Tor? (y/N) ${no}"
