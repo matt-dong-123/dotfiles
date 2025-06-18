@@ -24,7 +24,7 @@
                     {
                         "manipulators": [
                             {
-                                "description": "Change rcmd to hyperkey without alt. (cmd+sft+spc when tapped)",
+                                "description": "Change rcmd to hyperkey without alt. (f13 when tapped)",
                                 "from": {
                                     "key_code": "right_command",
                                     "modifiers": { "optional": ["any"] }
@@ -35,12 +35,7 @@
                                         "modifiers": ["left_control", "left_shift"]
                                     }
                                 ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "spacebar",
-                                        "modifiers": ["left_command", "left_shift"]
-                                    }
-                                ],
+                                "to_if_alone": [{ "key_code": "f13" }],
                                 "type": "basic"
                             }
                         ]

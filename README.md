@@ -61,10 +61,6 @@ chmod +x install.sh
 
 1. Go to the LeaderKey settings and go to the "Advanced" tab
 2. Set the config directory to your ~/.config/leaderkey directory
-3. Go back to "General" and set the shortcut to be "shift-command-space"
-
-> **NOTE**
->
-> Don't actually use this shortcut! Tap the right command key instead.
+3. Go back to "General" and set the shortcut to be "f13" by tapping the right command key
 
 </details>
