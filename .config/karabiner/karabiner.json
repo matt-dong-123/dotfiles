@@ -10,6 +10,24 @@
                     {
                         "manipulators": [
                             {
+                                "description": "Change ropt to cmd+sft+spc",
+                                "from": {
+                                    "key_code": "right_option",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "spacebar",
+                                        "modifiers": ["left_command", "left_shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "manipulators": [
+                            {
                                 "description": "Change caps_lock to escctrl.",
                                 "from": {
                                     "key_code": "caps_lock",
