@@ -56,27 +56,29 @@ alt-shift-semicolon = 'mode service'
 
 [mode.workspace.binding]
 esc = ['mode main']
-a = 'workspace !default'
-b = 'workspace browser'
-c = 'workspace coding'
-m = 'workspace music'
-s = 'workspace social'
-w = 'workspace work'
-shift-a = ['move-node-to-workspace !default', 'workspace !default']
-shift-b = ['move-node-to-workspace browser', 'workspace browser']
-shift-c = ['move-node-to-workspace coding', 'workspace coding']
-shift-m = ['move-node-to-workspace music', 'workspace music']
-shift-s = ['move-node-to-workspace social', 'workspace social']
-shift-w = ['move-node-to-workspace work', 'workspace work']
-l = 'workspace --wrap-around next'
-h = 'workspace --wrap-around prev'
+a = ['workspace !default', 'mode main']
+b = ['workspace browser', 'mode main']
+c = ['workspace coding', 'mode main']
+m = ['workspace music', 'mode main']
+s = ['workspace social', 'mode main']
+w = ['workspace work', 'mode main']
+shift-a = ['move-node-to-workspace !default', 'workspace !default', 'mode main']
+shift-b = ['move-node-to-workspace browser', 'workspace browser', 'mode main']
+shift-c = ['move-node-to-workspace coding', 'workspace coding', 'mode main']
+shift-m = ['move-node-to-workspace music', 'workspace music', 'mode main']
+shift-s = ['move-node-to-workspace social', 'workspace social', 'mode main']
+shift-w = ['move-node-to-workspace work', 'workspace work', 'mode main']
+l = ['workspace --wrap-around next', 'mode main']
+h = ['workspace --wrap-around prev', 'mode main']
 shift-l = [
     'move-node-to-workspace --wrap-around next',
     'workspace --wrap-around next',
+    'mode main',
 ]
 shift-h = [
     'move-node-to-workspace --wrap-around prev',
     'workspace --wrap-around prev',
+    'mode main',
 ]
 
 [mode.service.binding]
