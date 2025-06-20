@@ -20,6 +20,7 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-syntax-highlighting
+zinit light jeffreytse/zsh-vi-mode
 zinit light hlissner/zsh-autopair
 zinit light Aloxaf/fzf-tab
 zinit snippet OMZP::sudo
@@ -57,7 +58,6 @@ setopt hist_save_no_dups
 setopt hist_find_no_dups
 
 # Keybinds
-bindkey -v
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^[[A' history-search-backward
