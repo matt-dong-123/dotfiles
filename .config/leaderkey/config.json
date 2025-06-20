@@ -3,11 +3,6 @@
     {
       "actions" : [
         {
-          "key" : "c",
-          "type" : "application",
-          "value" : "/Applications/Chromium.app"
-        },
-        {
           "key" : "s",
           "type" : "application",
           "value" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
@@ -47,32 +42,6 @@
     {
       "actions" : [
         {
-          "key" : "w",
-          "label" : "Word",
-          "type" : "application",
-          "value" : "/Applications/Microsoft Word.app"
-        },
-        {
-          "key" : "t",
-          "label" : "Tencent Meeting",
-          "type" : "application",
-          "value" : "/Applications/TencentMeeting.app"
-        },
-        {
-          "key" : "p",
-          "label" : "PPT",
-          "type" : "application",
-          "value" : "/Applications/Microsoft PowerPoint.app"
-        }
-      ],
-      "iconPath" : "note.text",
-      "key" : "w",
-      "label" : "Work",
-      "type" : "group"
-    },
-    {
-      "actions" : [
-        {
           "key" : ",",
           "label" : "dotfiles",
           "type" : "url",
@@ -98,11 +67,6 @@
     },
     {
       "actions" : [
-        {
-          "key" : "l",
-          "type" : "application",
-          "value" : "/Applications/Tencent Lemon.app"
-        },
         {
           "key" : "p",
           "type" : "application",
