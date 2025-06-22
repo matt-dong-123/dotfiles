@@ -23,12 +23,6 @@ map('n', '<leader>sl', '<C-w>v', { desc = 'Split pane vertically' })
 map('n', '<leader>sj', '<C-w>s', { desc = 'Split pane horizontally' })
 map('n', '<leader>sx', '<cmd>close<cr>', { desc = 'Close current pane' })
 
--- move focus
-map('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
-map('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
-map('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
-map('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
-
 -- visually move between lines
 map('', 'j', "(v:count ? 'j' : 'gj')", expr)
 map('', 'k', "(v:count ? 'k' : 'gk')", expr)
