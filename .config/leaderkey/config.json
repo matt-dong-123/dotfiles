@@ -16,19 +16,6 @@
     {
       "actions" : [
         {
-          "key" : "x",
-          "type" : "application",
-          "value" : "/Applications/Xcode.app"
-        }
-      ],
-      "iconPath" : "apple.terminal",
-      "key" : "c",
-      "label" : "Coding",
-      "type" : "group"
-    },
-    {
-      "actions" : [
-        {
           "key" : "l",
           "type" : "application",
           "value" : "/Applications/Logic Pro.app"
