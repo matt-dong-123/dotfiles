@@ -51,7 +51,7 @@ fi
 brew install yazi
 brew install neovim
 brew install git
-brew install lazygit
+brew install jesseduffield/lazygit/lazygit
 
 ### Terminal
 brew install tree
