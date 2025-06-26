@@ -24,8 +24,8 @@
   "nvim-highlight-colors": { "branch": "main", "commit": "b42a5ccec7457b44e89f7ed3b3afb1b375bb2093" },
   "nvim-lspconfig": { "branch": "master", "commit": "6bba673aa8993eceec233be17b42ddfb9540794b" },
   "nvim-surround": { "branch": "main", "commit": "8dd9150ca7eae5683660ea20cec86edcd5ca4046" },
-  "nvim-treesitter": { "branch": "main", "commit": "77ba555ceffaedd61ee1034e417368da24b9e540" },
-  "orgmode": { "branch": "master", "commit": "6f47ac4c1b8742169bea7be3a49855478bae2127" },
+  "nvim-treesitter": { "branch": "main", "commit": "7110df63e1172eb9fa98cde61bbd38a4d325f97a" },
+  "orgmode": { "branch": "master", "commit": "b6d14eb0a1553a0ef4114346d67605de82d0f7fb" },
   "persistence.nvim": { "branch": "main", "commit": "166a79a55bfa7a4db3e26fc031b4d92af71d0b51" },
   "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },
   "rainbow-delimiters.nvim": { "branch": "master", "commit": "55ad4fb76ab68460f700599b7449385f0c4e858e" },
@@ -36,5 +36,5 @@
   "trouble.nvim": { "branch": "main", "commit": "85bedb7eb7fa331a2ccbecb9202d8abba64d37b3" },
   "undotree": { "branch": "main", "commit": "eab459ab87dd249617b5f7187bb69e614a083047" },
   "which-key.nvim": { "branch": "main", "commit": "370ec46f710e058c9c1646273e6b225acf47cbed" },
-  "yazi.nvim": { "branch": "main", "commit": "c61f2d29ab94c5f22cbca5088dcfd33d7659dae8" }
+  "yazi.nvim": { "branch": "main", "commit": "267f5fe500d239b7cc3e36187fa03e0eea9d866e" }
 }
