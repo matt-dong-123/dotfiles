@@ -2,9 +2,9 @@
 
 options=(
     style=square
-    active_color="glow(0xffff757f)"
+    active_color="glow(0xffc099ff)"
     inactive_color="0xff888888"
-    width=8.0
+    width=6.0
     hidpi=on
     blacklist="iPhone Mirroring"
 )
