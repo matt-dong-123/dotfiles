@@ -1,5 +1,8 @@
 # Start sketchybar with aerospace
-after-startup-command = ['exec-and-forget brew services restart sketchybar']
+after-startup-command = [
+    'exec-and-forget brew services restart sketchybar',
+    'exec-and-forget brew services restart borders',
+]
 
 # Send signal to change workspace to sketchybar
 exec-on-workspace-change = [
