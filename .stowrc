@@ -3,5 +3,5 @@
 --ignore .gitmodules
 
 --ignore .DS_Store
---ignore *.md
+--ignore README.*
 --ignore install.sh
