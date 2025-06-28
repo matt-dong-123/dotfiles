@@ -33,10 +33,10 @@ on-window-detected = [
 [gaps]
 inner.horizontal = 6
 inner.vertical = 6
-outer.left = 8
-outer.bottom = 5
+outer.left = 6
+outer.bottom = 6
 outer.top = 6
-outer.right = 5
+outer.right = 6
 
 # Keys
 [mode.main.binding]
