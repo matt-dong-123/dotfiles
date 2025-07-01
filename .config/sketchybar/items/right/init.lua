@@ -1,6 +1,5 @@
 require("items.right.time")
 require("items.right.date")
-require("items.right.brew")
 require("items.right.battery")
 require("items.right.cpu")
 require("items.right.one-thing")
