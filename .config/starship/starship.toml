@@ -1,0 +1,6 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+[git_status]
+
+format = '([$all_status$ahead_behind]($style) )'
