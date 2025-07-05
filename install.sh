@@ -6,16 +6,16 @@ yellow="\033[1;33m"
 red="\033[1;31m"
 purple="\033[1;35m"
 blue="\033[1;34m"
-no="\033[0m"
+no_color="\033[0m"
 
 # Install xCode cli tools
 if [[ "$(uname)" == "Darwin" ]]; then
-    echo -e "${yellow}macOS detected...${no}"
+    echo -e "${yellow}macOS detected...${no_color}"
 
     if xcode-select -p &>/dev/null; then
-        echo -e "${blue}Xcode already installed${no}"
+        echo -e "${blue}Xcode already installed${no_color}"
     else
-        echo -e "${green}Installing command line tools...${no}"
+        echo -e "${green}Installing command line tools...${no_color}"
         xcode-select --install
     fi
 fi
@@ -23,17 +23,17 @@ fi
 # Homebrew
 ## Install
 if [ "$(which brew)" != "/usr/local/bin/brew" ] && [ "$(which brew)" != "/opt/homebrew/bin/brew" ]; then
-    echo -e "${green}Installing Brew...${no}"
+    echo -e "${green}Installing Brew...${no_color}"
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     brew analytics off
 fi
 ## Taps
-echo -e "${green}Tapping Brew...${no}"
+echo -e "${green}Tapping Brew...${no_color}"
 brew tap nikitabobko/tap
 brew tap FelixKratz/formulae
 
 ## Formulae
-echo -e "${green}Installing Brew Formulae... ${no}"
+echo -e "${green}Installing Brew Formulae... ${no_color}"
 ### Must Have things
 brew install stow
 brew install fzf
@@ -78,7 +78,7 @@ brew install luajit
 brew install luarocks
 
 ## Casks (you'll have to configure them yourselves)
-echo -e "${green}Installing Brew Casks... ${no}"
+echo -e "${green}Installing Brew Casks... ${no_color}"
 brew install --cask aerospace
 brew install --cask karabiner-elements
 brew install --cask hammerspoon
@@ -91,17 +91,24 @@ brew install --cask input-source-pro
 brew install --cask only-switch
 brew install --cask zen-browser
 
-echo -e "${purple}Do you want to install Tor? (y/N) ${no}"
+echo -e "${purple}Do you want to install Tor? (y/N) ${no_color}"
 read -p "" install_tor
 if [ "$install_tor" = "Y" ] || [ "$install_tor" = "y" ]; then
-    echo -e "${green}Installing Tor...${no}"
+    echo -e "${green}Installing Tor...${no_color}"
     brew install --cask tor-browser
 fi
 
-echo -e "${purple}Do you want to install additional fonts and symbols? (Used in my configuration) (Y/n) ${no}"
+echo -e "${purple}Do you want to install Chromium? (y/N) ${no_color}"
+read -p "" install_chromium
+if [ "$install_chromium" = "Y" ] || [ "$install_chromium" = "y" ]; then
+    echo -e "${green}Installing Chromium...${no_color}"
+    brew install --cask eloston-chromium
+fi
+
+echo -e "${purple}Do you want to install additional fonts and symbols? (Used in my configuration) (Y/n) ${no_color}"
 read -p "" add_fonts
 if [ "$add_fonts" != "N" ] && [ "$add_fonts" != "n" ]; then
-    echo -e "${green}Installing additional fonts... ${no}"
+    echo -e "${green}Installing additional fonts... ${no_color}"
     brew install --cask font-jetbrains-mono-nerd-font
     brew install --cask font-sf-pro
     brew install --cask font-maple-mono
@@ -111,24 +118,24 @@ if [ "$add_fonts" != "N" ] && [ "$add_fonts" != "n" ]; then
     brew install --cask font-sketchybar-app-font
 fi
 
-echo -e "${purple}Do you have external displays? (y/N) ${no}"
+echo -e "${purple}Do you have external displays? (y/N) ${no_color}"
 read -p "" has_external_displays
 if [ "$has_external_displays" = "Y" ] || [ "$has_external_displays" = "y" ]; then
-    echo -e "${green}Installing BetterDisplay...${no}"
+    echo -e "${green}Installing BetterDisplay...${no_color}"
     brew install --cask betterdisplay
 fi
 
-echo -e "${purple}Do you have external mice? (y/N) ${no}"
+echo -e "${purple}Do you have external mice? (y/N) ${no_color}"
 read -p "" has_external_mice
 if [ "$has_external_mice" = "Y" ] || [ "$has_external_mice" = "y" ]; then
-    echo -e "${green}Installing LinearMouse...${no}"
+    echo -e "${green}Installing LinearMouse...${no_color}"
     brew install --cask linearmouse
 fi
 
-echo -e "${red}The following apps are not at all necessary, and for myself only. Still install? (y/N) ${no}"
+echo -e "${red}The following apps are not at all necessary, and for myself only. Still install? (y/N) ${no_color}"
 read -p "" really
 if [ "$really" = "Y" ] || [ "$really" = "y" ]; then
-    echo -e "${green}Installing... ${no}"
+    echo -e "${green}Installing... ${no_color}"
     brew install --cask dorico
     brew install --cask musescore
     brew install --cask qqmusic
@@ -137,7 +144,7 @@ if [ "$really" = "Y" ] || [ "$really" = "y" ]; then
 fi
 
 ## MacOS system settings
-echo -e "${yellow}Writing MacOS system settings...${no}"
+echo -e "${yellow}Writing MacOS system settings...${no_color}"
 
 # Hide menu bar
 defaults write NSGlobalDomain _HIHideMenuBar -bool true
@@ -190,12 +197,12 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int "2"
 # Disable confirmation when closing unsaved windows (will autosave)
 defaults write NSGlobalDomain "NSCloseAlwaysConfirmsChanges" -bool "true"
 
-echo -e "${red}Disable quarantine and gatekeeper? (y/N) ${no}"
+echo -e "${red}Disable quarantine and gatekeeper? (y/N) ${no_color}"
 read -p "" quarantine
 if [ "$quarantine" = "Y" ] || [ "$quarantine" = "y" ]; then
     # Disable quarantine
     defaults write com.apple.LaunchServices "LSQuarantine" -bool "false"
-    echo -e "${red}Type in your password to disable Gatekeeper:${no}"
+    echo -e "${red}Type in your password to disable Gatekeeper:${no_color}"
     sudo spctl --master-disable
 fi
 
@@ -204,7 +211,7 @@ killall Dock
 
 # Clone dotfiles repository
 if [ ! -d "$HOME/dotfiles" ]; then
-    echo -e "${green}Cloning dotfiles repository...${no}"
+    echo -e "${green}Cloning dotfiles repository...${no_color}"
     git clone https://github.com/matt-dong-123/dotfiles.git "$HOME/dotfiles"
 fi
 
@@ -212,7 +219,7 @@ fi
 cd "$HOME/dotfiles" || exit
 
 # Stow dotfiles packages
-echo -e "${green}Stowing dotfiles...${no}"
+echo -e "${green}Stowing dotfiles...${no_color}"
 stow --ignore .DS_Store --ignore .git \
     --ignore .gitignore --ignore .gitmodules --ignore README.md --ignore README.linkscape --ignore install.sh -t ~ .
 
@@ -228,11 +235,11 @@ if [ ! -f "$HOME/one-thing/one-thing.txt" ]; then
     echo "$thing" >>$HOME/one-thing/one-thing.txt
 fi
 
-echo -e "${green}Setup complete!${no}"
+echo -e "${green}Setup complete!${no_color}"
 
-echo -e "${purple}Reboot for some settings to take effect? (Y/n) ${no}"
+echo -e "${purple}Reboot for some settings to take effect? (Y/n) ${no_color}"
 read -p "" reboot
 if [ "$reboot" != "N" ] && [ "$reboot" != "n" ]; then
-    echo -e "${red}Rebooting...${no}"
+    echo -e "${red}Rebooting...${no_color}"
     sudo reboot
 fi
