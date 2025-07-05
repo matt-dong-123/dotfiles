@@ -6,6 +6,11 @@
           "key" : "s",
           "type" : "application",
           "value" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
+        },
+        {
+          "key" : "c",
+          "type" : "application",
+          "value" : "/Applications/Chromium.app"
         }
       ],
       "iconPath" : "globe",
