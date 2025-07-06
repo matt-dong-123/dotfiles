@@ -89,7 +89,7 @@ brew install --cask alt-tab
 brew install --cask iina
 brew install --cask input-source-pro
 brew install --cask only-switch
-brew install --cask zen-browser
+brew install --cask floorp
 
 echo -e "${purple}Do you want to install Tor? (y/N) ${no_color}"
 read -p "" install_tor
