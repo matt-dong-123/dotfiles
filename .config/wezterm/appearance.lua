@@ -7,7 +7,6 @@ M.apply_to_config = function(config)
     config.font = wezterm.font_with_fallback {
         'Maple Mono NF CN',
         'JetBrainsMono Nerd Font',
-        'Consolas',
     }
     config.use_fancy_tab_bar = false
     config.font_size = 20
