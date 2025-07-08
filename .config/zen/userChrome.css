@@ -1,8 +1,7 @@
 @import url("defaults.css");
 @import url("config.css");
-@import "natsumi/natsumi.css";
 
 * {
-  font-family: var(--tf-font-family);
-  font-size: var(--tf-font-size);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
 }

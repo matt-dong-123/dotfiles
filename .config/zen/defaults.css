@@ -1,4 +1,4 @@
 :root {
-  --tf-font-family: "SF Mono", Consolas, monospace; /* Font family */
-  --tf-font-size: 14px; /* Font size */
+  --font-family: "SF Mono", Consolas, monospace; /* Font family */
+  --font-size: 14px; /* Font size */
 }
