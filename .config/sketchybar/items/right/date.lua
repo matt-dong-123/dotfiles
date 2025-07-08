@@ -19,5 +19,5 @@ local date = sbar.add("item", {
 })
 
 date:subscribe({ "forced", "routine", "system_woke" }, function(env)
-	date:set({ label = os.date("%b %d %a") })
+	date:set({ label = os.date("%a %d") })
 end)
