@@ -18,7 +18,7 @@ M.apply_to_config = function(config)
         },
         {
             mods = 'LEADER',
-            key = 'b',
+            key = 'p',
             action = act.ActivateTabRelative(-1),
         },
         {
