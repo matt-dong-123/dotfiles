@@ -33,6 +33,11 @@ use = "yazi-rs/plugins:no-status"
 rev = "5eea960"
 hash = "3e023d31f29201efdac2a6ae35fedb78"
 
+[[plugin.deps]]
+use = "ndtoan96/ouch"
+rev = "bb941c4"
+hash = "956b02fe8213e7b92e21a941b9abe764"
+
 [[flavor.deps]]
 use = "BennyOe/tokyo-night"
 rev = "b3950bf"
