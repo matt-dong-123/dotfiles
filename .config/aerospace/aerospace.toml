@@ -59,13 +59,11 @@ alt-shift-semicolon = 'mode service'
 
 [mode.workspace.binding]
 esc = ['mode main']
-a = ['workspace !default', 'mode main']
 b = ['workspace browser', 'mode main']
 c = ['workspace coding', 'mode main']
 m = ['workspace music', 'mode main']
 s = ['workspace social', 'mode main']
 w = ['workspace work', 'mode main']
-shift-a = ['move-node-to-workspace !default', 'workspace !default', 'mode main']
 shift-b = ['move-node-to-workspace browser', 'workspace browser', 'mode main']
 shift-c = ['move-node-to-workspace coding', 'workspace coding', 'mode main']
 shift-m = ['move-node-to-workspace music', 'workspace music', 'mode main']
