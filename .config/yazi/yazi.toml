@@ -2,6 +2,7 @@
 
 show_hidden = true
 show_symlink = true
+title_format = "Yazi"
 
 [plugin]
 
