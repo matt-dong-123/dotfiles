@@ -7,7 +7,7 @@
 Instead of listing everything in it like a bozo, let me show you why:
 - nvim => the greatest editor of all time, lua and plugins
 - aerospace => since it's not an interface, i don't need it to be fancy (for that use yabai)
-- zen browser => the most customizable browser out there, eye candy
+- mullvad brower => most private browser out there, does good shit
 - wezterm => fast af, has a ton of features, extremely customizable
 
 You may think that the following are superior, but here's why they're not:
@@ -18,7 +18,7 @@ You may think that the following are superior, but here's why they're not:
 - arc browser => a piece of unmaintained garbage
 - vivaldi => still too conservative for me!
 - tmux => the config for tmux is like reading the language of an alien
-- kitty => i don't trust @kovidgoyal to make good decisions, also it's made in python, slow
+- kitty => i don't trust @kovidgoyal to make good decisions that benefit me
 - alacritty => tabs, please
 - ghostty => second best, but still no copy and quick select yet
 
@@ -39,19 +39,19 @@ chmod +x install.sh
 
 </details>
 
-<details><summary><b>Enabling zen config</b></summary>
+<details><summary><b>Setting up mullvad</b></summary>
 
-1. Go to about:profiles in the URL bar, and copy the "Root Directory" path of the profile you want to use
-2. Paste the ~/.config/zen directory into the profile directory/chrome.
-3. Go to settings, click "Import mods", and choose the file from the path "~/.config/zen/sine-mods-export.json"
-4. Download and run the sine setup binary with the instructions from [here](https://github.com/CosmoCreeper/Sine?tab=readme-ov-file#steps-for-automatic-installation)
-5. Install these plugins (optional):
+1. Download and run the sine setup binary with the instructions from [here](https://github.com/CosmoCreeper/Sine?tab=readme-ov-file#steps-for-automatic-installation)
+2. Go to settings, click "Import mods", and choose the file from the path "~/.config/zen/sine-mods-export.json"
+3. Install these plugins (optional):
     - Brave Search
     - Dark Reader
     - DeArrow
     - Return YouTube Dislike
     - Sponsorblock
     - uBlock Origin
+    - Sidebery
+    - mtab
 
 </details>
 
