@@ -39,19 +39,9 @@ chmod +x install.sh
 
 </details>
 
-<details><summary><b>Setting up mullvad</b></summary>
+<details><summary><b>Setting up floorp</b></summary>
 
-1. Download and run the sine setup binary with the instructions from [here](https://github.com/CosmoCreeper/Sine?tab=readme-ov-file#steps-for-automatic-installation)
-2. Go to settings, click "Import mods", and choose the file from the path "~/.config/zen/sine-mods-export.json"
-3. Install these plugins (optional):
-    - Brave Search
-    - Dark Reader
-    - DeArrow
-    - Return YouTube Dislike
-    - Sponsorblock
-    - uBlock Origin
-    - Sidebery
-    - mtab
+Work in progress...
 
 </details>
 
