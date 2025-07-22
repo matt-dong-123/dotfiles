@@ -52,3 +52,15 @@ Work in progress...
 3. Go back to "General" and set the shortcut to be "f13" by tapping the right command key
 
 </details>
+
+<details><summary>(OPTIONAL): Emacs</summary>
+
+1. brew tap d12frosted/emacs-plus
+2. brew install --cask emacs-plus
+3. brew install --cask font-symbols-only-nerd-font
+4. brew install cmake
+5. Install doom emacs
+6. Set font to "Maple Mono NF CN", variable font to "SF Pro", size to 20
+7. Enable ligatures, eshell, vterm
+
+</details>
