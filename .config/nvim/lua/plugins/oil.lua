@@ -1,14 +1,15 @@
 return {
     'stevearc/oil.nvim',
-    opts = {
-        columns = {
-            'icon',
-            'permissions',
-            'mtime',
-        },
-    },
+    opts = {},
     dependencies = {
         'echasnovski/mini.icons',
+    },
+    keys = {
+        {
+            '<leader>e',
+            '<cmd>Oil<CR>',
+            desc = 'Open oil',
+        },
     },
     lazy = false,
 }
