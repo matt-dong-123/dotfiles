@@ -17,8 +17,8 @@ return {
     keys = {
         {
             '<leader>e',
-            '<cmd>Oil<CR>',
-            desc = 'Open oil',
+            '<cmd>Oil --preview<CR>',
+            desc = 'Open oil with preview',
         },
     },
     lazy = false,
