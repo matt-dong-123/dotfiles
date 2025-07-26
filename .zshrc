@@ -89,9 +89,9 @@ eval "$(zoxide init --cmd cd zsh)"
 
 alias ls="eza --color=always --icons"
 alias lg="lazygit"
-alias f="fastfetch"
+alias ff="fastfetch"
 alias v="nvim"
-alias ff='nvim `fzf --preview "bat --style=numbers --color=always --line-range :500 {}"`'
+alias f="nvim ."
 alias c="cd ~/dotfiles"
 alias cl="clear"
 alias gc="cd ~/.config"
