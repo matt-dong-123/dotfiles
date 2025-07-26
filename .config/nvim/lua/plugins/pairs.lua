@@ -1,6 +1,5 @@
 return {
     'echasnovski/mini.pairs',
-    event = 'BufReadPost',
     version = false,
     opts = {
         modes = {

@@ -2,7 +2,6 @@ return {
     {
         'neovim/nvim-lspconfig',
         version = false,
-        event = { 'BufReadPost', 'BufNewFile' },
         dependencies = {
             'mason-org/mason-lspconfig.nvim',
             'WhoIsSethDaniel/mason-tool-installer.nvim',
@@ -10,7 +9,6 @@ return {
     },
     {
         'WhoIsSethDaniel/mason-tool-installer.nvim',
-        event = 'VeryLazy',
         opts = {
             ensure_installed = {
                 -- LSPs
@@ -54,7 +52,6 @@ return {
     },
     {
         'mason-org/mason-lspconfig.nvim',
-        event = { 'BufReadPre', 'BufNewFile' },
         version = false,
         dependencies = { 'mason.nvim' },
         opts = {
