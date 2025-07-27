@@ -1,20 +1,15 @@
--- set colorcolumn
 vim.o.colorcolumn = '100'
 
--- set relative line numbers
 vim.o.number = true
 vim.o.relativenumber = true
 
 -- show hidden files
 vim.o.hidden = true
 
--- don't show mode, since it's already in the statusline
 vim.o.showmode = false
 
--- It's that swapfile I hate. FUCK.
 vim.o.swapfile = false
 
--- virtualedit
 vim.o.virtualedit = 'block'
 
 -- sync system clipboard
@@ -44,7 +39,6 @@ vim.o.updatetime = 250
 -- decrease mapped sequence delay
 vim.o.timeoutlen = 300
 
--- configure new splits
 vim.o.splitright = true
 vim.o.splitbelow = true
 
@@ -58,22 +52,16 @@ vim.o.inccommand = 'split'
 -- show line with cursor on
 vim.o.cursorline = true
 
--- minimal number of lines above and below cursor
+-- Center cursor
 vim.o.scrolloff = 999
 
 -- make tab into spaces
 vim.o.expandtab = true
 
--- set tab size to 4
 vim.o.tabstop = 4
-
--- set softtabstop to 4
 vim.o.softtabstop = 4
-
--- set shiftwidth to 4
 vim.o.shiftwidth = 4
 
--- set autoindent
 vim.o.autoindent = true
 
 -- true colors
@@ -82,12 +70,6 @@ vim.o.termguicolors = true
 -- hide non-printable characters
 vim.o.conceallevel = 3
 
--- for neorg
-vim.o.concealcursor = 'niv'
-vim.wo.foldlevel = 99
-vim.wo.conceallevel = 2
-
--- lsp diagnostics
 vim.diagnostic.config {
     severity_sort = true,
     float = { border = 'rounded' },
