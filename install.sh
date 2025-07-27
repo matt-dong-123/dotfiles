@@ -89,14 +89,8 @@ brew install --cask alt-tab
 brew install --cask iina
 brew install --cask input-source-pro
 brew install --cask only-switch
-brew install --cask floorp
-
-echo -e "${purple}Do you want to install Mullvad? (y/N) ${no_color}"
-read -p "" install_mullvad
-if [ "$install_mullvad" = "Y" ] || [ "$install_mullvad" = "y" ]; then
-    echo -e "${green}Installing Mullvad...${no_color}"
-    brew install --cask mullvad-browser
-fi
+brew install --cask qutebrowser
+brew install --cask --no-quarantine freetube
 
 echo -e "${purple}Do you want to install Tor? (y/N) ${no_color}"
 read -p "" install_mullvad
