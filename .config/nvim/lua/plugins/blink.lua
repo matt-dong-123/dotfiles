@@ -17,9 +17,6 @@ return {
             ghost_text = {
                 enabled = true,
             },
-            documentation = {
-                auto_show = true,
-            },
         },
         sources = {
             default = {
@@ -38,9 +35,6 @@ return {
                     score_offset = 100,
                 },
             },
-        },
-        signature = {
-            enabled = true,
         },
         cmdline = {
             enabled = true,
