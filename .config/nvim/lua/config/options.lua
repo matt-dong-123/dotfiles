@@ -11,6 +11,9 @@ vim.o.hidden = true
 -- don't show mode, since it's already in the statusline
 vim.o.showmode = false
 
+-- It's that swapfile I hate. FUCK.
+vim.o.swapfile = false
+
 -- virtualedit
 vim.o.virtualedit = 'block'
 
