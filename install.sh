@@ -99,13 +99,6 @@ if [ "$install_mullvad" = "Y" ] || [ "$install_mullvad" = "y" ]; then
     brew install --cask tor-browser
 fi
 
-echo -e "${purple}Do you want to install Chromium? (y/N) ${no_color}"
-read -p "" install_chromium
-if [ "$install_chromium" = "Y" ] || [ "$install_chromium" = "y" ]; then
-    echo -e "${green}Installing Chromium...${no_color}"
-    brew install --cask eloston-chromium
-fi
-
 echo -e "${purple}Do you want to install additional fonts and symbols? (Used in my configuration) (Y/n) ${no_color}"
 read -p "" add_fonts
 if [ "$add_fonts" != "N" ] && [ "$add_fonts" != "n" ]; then
