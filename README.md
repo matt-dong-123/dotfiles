@@ -2,25 +2,7 @@
 
 > [!note]
 > Only use this with Sequoia. (maybe Ventura or Sonoma?)
-> Don't fuck with this repo if you use Tahoe.
-
-Instead of listing everything in it like a bozo, let me show you why:
-- nvim => the greatest editor of all time, lua and plugins
-- aerospace => since it's not an interface, i don't need it to be fancy (for that use yabai)
-- mullvad brower => most private browser out there, does good shit
-- wezterm => fast af, has a ton of features, extremely customizable
-
-You may think that the following are superior, but here's why they're not:
-- vscode => slow af, not very customizable unless you just love the mess that is javascript
-- helix => deez nuts, has like 1.5x the number of keystrokes. Wtf are you doing man? Plugins?
-- kakoune => i'm not going to develop the editor itself when i use it!
-- yabai => i don't like disabling SIP, thank you, next
-- arc browser => a piece of unmaintained garbage
-- vivaldi => still too conservative for me!
-- tmux => the config for tmux is like reading the language of an alien
-- kitty => i don't trust @kovidgoyal to make good decisions that benefit me
-- alacritty => tabs, please
-- ghostty => second best, but still no copy and quick select yet
+> I have no idea what abominations would occur on Tahoe.
 
 ## Install Instructions
 ```sh
