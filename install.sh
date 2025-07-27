@@ -90,8 +90,6 @@ brew install --cask iina
 brew install --cask input-source-pro
 brew install --cask only-switch
 brew install --cask floorp
-brew install --cask qutebrowser
-brew install --cask --no-quarantine freetube
 
 echo -e "${purple}Do you want to install Tor? (y/N) ${no_color}"
 read -p "" install_mullvad
