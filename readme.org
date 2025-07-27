@@ -3,10 +3,12 @@
 #+title: Instructions for my personal dotfiles
 
 * Prerequisites
-> ⚠️ WARNING!
-> Only MacOS Sequoia is tested. Not sure about how this would behave on a beta or an older system.
-> However, some components of this config (e.g. nvim) will work on any system.
+#+BEGIN_VERSE
+⚠️ WARNING!
+Only MacOS Sequoia is tested. Not sure about how this would behave on a beta or an older system.
+However, some components of this config (e.g. nvim) will work on any system.
 You pretty much don't need anything except curl.
+#+END_VERSE
 
 * Install Instructions
 #+BEGIN_SRC sh
