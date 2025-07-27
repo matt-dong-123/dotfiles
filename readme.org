@@ -1,0 +1,46 @@
+#+author: Matthew Dong
+#+date: <2025-07-27 Sun>
+#+title: Instructions for my personal dotfiles
+
+* Prerequisites
+> ⚠️ WARNING!
+> Only MacOS Sequoia is tested. Not sure about how this would behave on a beta or an older system.
+> However, some components of this config (e.g. nvim) will work on any system.
+You pretty much don't need anything except curl.
+
+* Install Instructions
+#+BEGIN_SRC sh
+
+curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/main/install.sh
+chmod +x install.sh
+./install.sh
+
+#+END_SRC
+Paste this into your terminal, and follow the steps of the install script.
+
+* Post-install script
+** Vimium C
+1. Install the [[https://addons.mozilla.org/en-US/firefox/addon/vimium-c/][Vimium C]] browser extension
+2. In the preferences for the extension, click "Import Settings"
+3. Choose the file from the path "~/.config/vimium-c/config.json"
+** Floorp
+1. Install the Tokyo Night theme by Milav
+2. Set vertical tabs
+3. Disable mouse gestures
+** LeaderKey
+1. Go to the LeaderKey settings and go to the "Advanced" tab
+2. Set the config directory to your ~/.config/leaderkey directory
+3. Go back to "General" and set the shortcut to be "f13" by tapping the right command key
+** Optional: Emacs
+#+BEGIN_SRC sh
+brew tap d12frosted/emacs-plus
+brew install --cask emacs-plus
+brew install --cask font-symbols-only-nerd-font
+brew install cmake
+#+END_SRC
+- Install doom emacs
+- Next, either:
+#+BEGIN_SRC sh
+rm -rf ~/.emacs.d
+#+END_SRC
+- Or backup your existing config.
