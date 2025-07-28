@@ -7,7 +7,7 @@ return {
             markdown = { 'markdownlint' },
             cpp = { 'cpplint' },
             c = { 'cpplint' },
-            python = { 'black', 'isort' },
+            python = { 'black', 'isort', 'ruff' },
         },
         format_on_save = {
             timeout_ms = 500,
