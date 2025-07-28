@@ -18,15 +18,24 @@ chmod +x install.sh
 #+END_SRC
 Paste this into your terminal, and follow the steps of the install script.
 
-* Post-install script
+* Post-install
 ** Vimium C
 1. Install the [[https://addons.mozilla.org/en-US/firefox/addon/vimium-c/][Vimium C]] browser extension
 2. In the preferences for the extension, click "Import Settings"
 3. Choose the file from the path "~/.config/vimium-c/config.json"
-** Floorp
+** LibreWolf
 1. Install the Tokyo Night theme by Milav
 2. Set vertical tabs
-3. Disable mouse gestures
+3. Go to [[https://github.com/adriankarlen/textfox][the textfox repo]] and follow its instructions
+4. Use the provided config.css in ~/.config/textfox and paste it to your chrome directory
+5. Install the following addons:
+    - Brave Search: Private Search Engine
+    - mtab
+    - Vimium C
+    - Dark Reader
+    - Return YouTube Dislike
+    - DeArrow
+    - SponsorBlock
 ** LeaderKey
 1. Go to the LeaderKey settings and go to the "Advanced" tab
 2. Set the config directory to your ~/.config/leaderkey directory
