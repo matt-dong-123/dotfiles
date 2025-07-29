@@ -28,5 +28,25 @@ return {
             map('smart-splits', 'move_cursor_right'),
             desc = 'Move to right window',
         },
+        {
+            '<C-S-h>',
+            map('smart-splits', 'resize_left'),
+            desc = 'Resize window left',
+        },
+        {
+            '<C-S-j>',
+            map('smart-splits', 'resize_down'),
+            desc = 'Resize window down',
+        },
+        {
+            '<C-S-k>',
+            map('smart-splits', 'resize_up'),
+            desc = 'Resize window up',
+        },
+        {
+            '<C-S-l>',
+            map('smart-splits', 'resize_right'),
+            desc = 'Resize window right',
+        },
     },
 }
