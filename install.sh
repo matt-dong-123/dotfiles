@@ -27,6 +27,23 @@ if [ "$(which brew)" != "/usr/local/bin/brew" ] && [ "$(which brew)" != "/opt/ho
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     brew analytics off
 fi
+
+# Clone dotfiles repository
+if [ ! -d "$HOME/dotfiles" ]; then
+    echo -e "${green}Cloning dotfiles repository...${no_color}"
+    git clone https://github.com/matt-dong-123/dotfiles.git "$HOME/dotfiles"
+fi
+
+# Navigate to dotfiles directory
+cd "$HOME/dotfiles" || exit
+
+echo -e "${red}Quick Install of everything? You may not want a lot of them for daily use. (y/N)${no_color}"
+read -p "" use_brewfile
+if [ "$use_brewfile" = "Y" ] || [ "$use_brewfile" = "y" ]; then
+    echo -e "${green}Using .config/brewfile/Brewfile to quick install${no_color}"
+    brew bundle install --file=./.config/brewfile/Brewfile
+fi
+
 ## Taps
 echo -e "${green}Tapping Brew...${no_color}"
 brew tap nikitabobko/tap
@@ -201,15 +218,6 @@ fi
 
 killall Finder
 killall Dock
-
-# Clone dotfiles repository
-if [ ! -d "$HOME/dotfiles" ]; then
-    echo -e "${green}Cloning dotfiles repository...${no_color}"
-    git clone https://github.com/matt-dong-123/dotfiles.git "$HOME/dotfiles"
-fi
-
-# Navigate to dotfiles directory
-cd "$HOME/dotfiles" || exit
 
 # Stow dotfiles packages
 echo -e "${green}Stowing dotfiles...${no_color}"
