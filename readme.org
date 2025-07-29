@@ -36,6 +36,8 @@ Paste this into your terminal, and follow the steps of the install script.
     - Return YouTube Dislike
     - DeArrow
     - SponsorBlock
+    - Zen Internet (I know, hear me out in the next step)
+6. Disable 'immersive search' and 'hide filter chips' on youtube
 ** LeaderKey
 1. Go to the LeaderKey settings and go to the "Advanced" tab
 2. Set the config directory to your ~/.config/leaderkey directory
