@@ -1,6 +1,9 @@
 return {
     'folke/flash.nvim',
     opts = {
+        label = {
+            style = 'inline',
+        },
         modes = {
             char = {
                 enabled = false,
