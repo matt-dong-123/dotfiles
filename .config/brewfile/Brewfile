@@ -116,6 +116,7 @@ brew ncurses
 brew neovim
 brew nettle
 brew node
+brew nudoku
 brew nvm
 brew opencore-amr
 brew openexr
