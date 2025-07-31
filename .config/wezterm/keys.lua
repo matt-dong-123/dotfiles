@@ -71,6 +71,23 @@ M.apply_to_config = function(config)
             key = 'Enter',
             action = act.TogglePaneZoomState,
         },
+        -- Passthrough
+        {
+            mods = 'LEADER|CTRL',
+            key = 'k',
+            action = act.SendKey {
+                mods = 'CTRL',
+                key = 'k',
+            },
+        },
+        {
+            mods = 'LEADER|CTRL',
+            key = 'l',
+            action = act.SendKey {
+                mods = 'CTRL',
+                key = 'l',
+            },
+        },
     }
 
     for i = 0, 9 do
