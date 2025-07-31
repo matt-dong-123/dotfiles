@@ -22,6 +22,9 @@ local function bind_hotkeys(mapping)
 			hs.application.launchOrFocus(app)
 		end)
 	end
+	hs.hotkey.bind({ "cmd", "alt" }, "return", function()
+		hs.application.launchOrFocus("Emacs")
+	end)
 end
 
 bind_hotkeys(hotkeys)
