@@ -1,7 +1,7 @@
 local hypr = { "ctrl", "shift", "cmd" }
 
 local hotkeys = {
-	a = "LibreWolf",
+	a = "Firefox",
 	d = "Dorico 5",
 	f = "Finder",
 	l = "Logic Pro",

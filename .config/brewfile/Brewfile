@@ -176,6 +176,7 @@ tap homebrew/cask
 cask alt-tab
 cask baidunetdisk
 cask espanso
+cask firefox
 cask font-jetbrains-mono-nerd-font
 cask font-maple-mono-nf-cn
 cask font-sf-pro
@@ -189,7 +190,6 @@ cask jordanbaird-ice
 cask karabiner-elements
 cask leader-key
 cask libreoffice
-cask librewolf
 cask mitmproxy
 cask musescore
 cask ollama-app
