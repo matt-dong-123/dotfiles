@@ -72,6 +72,8 @@ brew libidn2
 brew libmicrohttpd
 brew libmpc
 brew libnghttp2
+brew libnghttp3
+brew libngtcp2
 brew libogg
 brew libpng
 brew librist
@@ -140,6 +142,7 @@ brew ripgrep
 brew rubberband
 brew rust
 brew sdl2
+brew simdjson
 brew sl
 brew snappy
 brew speex
@@ -187,7 +190,6 @@ cask freetube
 cask hammerspoon
 cask iina
 cask input-source-pro
-cask jordanbaird-ice
 cask karabiner-elements
 cask leader-key
 cask libreoffice
