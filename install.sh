@@ -47,6 +47,7 @@ else
     echo -e "${green}Tapping Brew...${no_color}"
     brew tap nikitabobko/tap
     brew tap FelixKratz/formulae
+    brew tap TheBoredTeam/boring-notch
 
     ## Formulae
     echo -e "${green}Installing Brew Formulae... ${no_color}"
@@ -106,6 +107,7 @@ else
     brew install --cask input-source-pro
     brew install --cask only-switch
     brew install --cask firefox
+    brew install --cask boring-notch@rc
 
     echo -e "${purple}Do you want to install Tor? (y/N) ${no_color}"
     read -p "" install_mullvad

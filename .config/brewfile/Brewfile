@@ -224,3 +224,6 @@ cask aerospace
 
 tap rcmdnk/file
 brew brew-file
+
+tap theboredteam/boring-notch
+cask boring-notch@rc
