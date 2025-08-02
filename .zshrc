@@ -95,7 +95,6 @@ alias e="nvim -c 'Oil --preview'"
 alias c="cd ~/dotfiles"
 alias cl="clear"
 alias gc="cd ~/.config"
-alias qb="qutebrowser"
 y() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
     yazi "$@" --cwd-file="$tmp"
