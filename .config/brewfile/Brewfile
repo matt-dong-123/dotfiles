@@ -217,10 +217,6 @@ tap felixkratz/formulae
 brew borders
 brew sketchybar
 
-tap jesseduffield/lazygit
-
-tap mhaeuser/mhaeuser
-
 tap nikitabobko/tap
 cask aerospace
 
