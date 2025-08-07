@@ -186,7 +186,6 @@ cask font-maple-mono-nf-cn
 cask font-sf-pro
 cask font-sketchybar-app-font
 cask font-symbols-only-nerd-font
-cask freetube
 cask hammerspoon
 cask iina
 cask input-source-pro
@@ -207,6 +206,7 @@ cask steinberg-mediabay
 cask tencent-meeting
 cask tor-browser
 cask wechat
+cask wechatwork
 cask wezterm@nightly
 cask zoom
 
