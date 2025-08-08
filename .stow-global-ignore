@@ -23,5 +23,5 @@ _darcs
 ^/COPYING
 
 \.DS_Store
-\install.sh
-\LINKSCAPE.md
+install.sh
+LINKSCAPE.md
