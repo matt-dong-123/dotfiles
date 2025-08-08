@@ -29,14 +29,19 @@ rev = "6606fb1"
 hash = "9209d17be3c792eda9ad60b447c4db1e"
 
 [[plugin.deps]]
-use = "yazi-rs/plugins:no-status"
-rev = "5eea960"
-hash = "3e023d31f29201efdac2a6ae35fedb78"
-
-[[plugin.deps]]
 use = "ndtoan96/ouch"
 rev = "bb941c4"
 hash = "956b02fe8213e7b92e21a941b9abe764"
+
+[[plugin.deps]]
+use = "imsi32/yatline"
+rev = "88bd1c5"
+hash = "981acbe9b758b1af3a8154c932bb936d"
+
+[[plugin.deps]]
+use = "wekauwau/yatline-tokyo-night"
+rev = "19dbd25"
+hash = "5f00a80a79b9f7fd8e24d6fa5dbb3ae"
 
 [[flavor.deps]]
 use = "BennyOe/tokyo-night"
