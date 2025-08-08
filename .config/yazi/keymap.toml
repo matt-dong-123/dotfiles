@@ -14,6 +14,11 @@ prepend_keymap = [
         "g",
         ".",
     ], run = "cd ~/.config", desc = "Goto ~/.config" },
+    { on = [
+        "g",
+        "n",
+    ], run = "cd ~/notes", desc = "Goto notes" },
+
 
     # NOTE: CUSTOM PLUGINS
 
