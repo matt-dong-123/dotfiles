@@ -1,6 +1,5 @@
 return {
     'echasnovski/mini.icons',
-    event = 'UIEnter',
     version = false,
     opts = {},
     specs = {
