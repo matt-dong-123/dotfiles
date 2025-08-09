@@ -1,20 +1,17 @@
 {
 	"name": "Vimium C",
-	"@time": "3/28/2025, 11:37:35 PM",
-	"time": 1743176255262,
+	"@time": "8/10/2025, 7:25:40 AM",
+	"time": 1754781940228,
 	"environment": {
-		"extension": "2.11.3",
+		"extension": "2.12.3",
 		"platform": "mac",
-		"chromium": 134
+		"firefox": 141
 	},
+	"autoDarkMode": 1,
 	"exclusionRules": [
 		{
 			"passKeys": "",
 			"pattern": ":https://mail.google.com/"
-		},
-		{
-			"passKeys": "",
-			"pattern": ":https://cstimer.net/"
 		},
 		{
 			"passKeys": "f o ",
@@ -27,6 +24,14 @@
 		{
 			"passKeys": "",
 			"pattern": "^https?://www\\.cubers\\.io/"
+		},
+		{
+			"passKeys": "b c m n v x z ",
+			"pattern": ":https://cstimer.net/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://jcw87.github.io/"
 		}
 	],
 	"keyLayout": 2,
