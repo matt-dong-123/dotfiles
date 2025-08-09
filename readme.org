@@ -35,7 +35,7 @@ Paste this into your terminal, and follow the steps of the install script.
     - SponsorBlock
     - Zen Internet
     - Stylus
-3. Disable 'immersive search' and 'hide filter chips' on youtube
+3. Disable 'hide filter chips' on youtube
 4. Go to Zen Internet's Advanced settings and turn on the toggle for "Disable Transparency"
 5. Find and install tokyo night themes for GitHub, YouTube, and Brave Search via Stylus
 6. Copy the user.js in ~/.config/firefox to your profile directory
