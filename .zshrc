@@ -65,7 +65,7 @@ bindkey '^[[A' history-search-backward
 bindkey '^[[B' history-search-forward
 
 # Path
-export PATH="$PATH:${HOME}/.local/bin:${HOME}/.cargo/bin"
+export PATH="$PATH:${HOME}/.local/bin:${HOME}/.cargo/bin:${HOME}/.config/emacs/bin"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # FZF Configuration
