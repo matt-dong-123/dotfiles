@@ -10,7 +10,12 @@
         {
           "key" : "c",
           "type" : "application",
-          "value" : "/Applications/Chromium.app"
+          "value" : "/Applications/Thorium.app"
+        },
+        {
+          "key" : "t",
+          "type" : "application",
+          "value" : "/Applications/Tor Browser.app"
         }
       ],
       "iconPath" : "globe",
@@ -50,6 +55,12 @@
           "label" : "YouTube",
           "type" : "url",
           "value" : "https://youtu.be"
+        },
+        {
+          "key" : "g",
+          "label" : "GitHub",
+          "type" : "url",
+          "value" : "https://github.com"
         }
       ],
       "iconPath" : "globe.asia.australia.fill",
@@ -63,6 +74,17 @@
           "key" : "p",
           "type" : "application",
           "value" : "/System/Applications/Preview.app"
+        },
+        {
+          "key" : "v",
+          "label" : "Voice Memos",
+          "type" : "application",
+          "value" : "/System/Applications/VoiceMemos.app"
+        },
+        {
+          "key" : "k",
+          "type" : "application",
+          "value" : "/Applications/Karabiner-Elements.app"
         }
       ],
       "key" : "o",
