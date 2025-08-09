@@ -18,6 +18,9 @@ if [[ "$(uname)" == "Darwin" ]]; then
         echo -e "${green}Installing command line tools...${no_color}"
         xcode-select --install
     fi
+else
+    echo -e "${red}You are not on MacOS, you cannot install these dotfiles automatically.${no_color}"
+    exit 1
 fi
 
 # Homebrew
