@@ -26,26 +26,23 @@ Paste this into your terminal, and follow the steps of the install script.
 ** Firefox
 1. Set vertical tabs
 2. Install the following addons:
-    - Brave Search: Private Search Engine
-    - mtab
-    - Vimium C
-    - Dark Reader
-    - Return YouTube Dislike
-    - DeArrow
-    - SponsorBlock
-    - Zen Internet
-    - Stylus
+   - Brave Search: Private Search Engine
+   - mtab
+   - Vimium C
+   - Dark Reader
+   - Return YouTube Dislike
+   - DeArrow
+   - SponsorBlock
+   - Zen Internet
+   - Stylus
 3. Disable 'hide filter chips' on youtube
 4. Go to Zen Internet's Advanced settings and turn on the toggle for "Disable Transparency"
 5. Find and install tokyo night themes for GitHub and Brave Search as well as installing "Desmos Dark Theme" by spidunno via Stylus
 6. Copy the user.js in ~/.config/firefox to your profile directory
 7. Delete the user.js after starting the browser (settings will be remembered automatically)
-*** Option 1: Textfox
-1. Install the Tokyo Night theme by Milav
-2. Go to [[https://github.com/adriankarlen/textfox][the textfox repo]] and follow its instructions
-3. Use the provided config.css in ~/.config/firefox/chrome and symlink it to your chrome directory
-*** Option 2: Natsumi Browser
-1. Download and run the [[https://github.com/greeeen-dev/natsumi-browser/releases/latest][latest natsumi installer]]
+8. Install the Tokyo Night theme by Milav
+9. Go to [[https://github.com/adriankarlen/textfox][the textfox repo]] and follow its instructions
+10. Use the provided config.css in ~/.config/firefox/chrome and symlink it to your chrome directory
 ** LeaderKey
 1. Go to the LeaderKey settings and go to the "Advanced" tab
 2. Set the config directory to your ~/.config/leaderkey directory
