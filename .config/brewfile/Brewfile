@@ -207,7 +207,6 @@ cask tor-browser
 cask wechat
 cask wechatwork
 cask wezterm@nightly
-cask wpsoffice
 cask zoom
 
 tap d12frosted/emacs-plus
