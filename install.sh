@@ -40,122 +40,12 @@ fi
 # Navigate to dotfiles directory
 cd "$HOME/dotfiles" || exit
 
-echo -e "${red}Quick Install of everything? You may not want a lot of them for daily use. (y/N)${no_color}"
-read -p "" use_brewfile
-if [ "$use_brewfile" = "Y" ] || [ "$use_brewfile" = "y" ]; then
-    echo -e "${green}Using .config/brewfile/Brewfile to quick install${no_color}"
-    brew bundle install --file=./.config/brewfile/Brewfile
-else
-    ## Taps
-    echo -e "${green}Tapping Brew...${no_color}"
-    brew tap nikitabobko/tap
-    brew tap FelixKratz/formulae
-    brew tap TheBoredTeam/boring-notch
-
-    ## Formulae
-    echo -e "${green}Installing Brew Formulae... ${no_color}"
-    ### Must Have things
-    brew install stow
-    brew install fzf
-    brew install gh
-    brew install fd
-    brew install zoxide
-    brew install make
-    brew install ripgrep
-    brew install ffmpeg
-    brew install borders
-    brew install sketchybar
-    # installing sbarlua
-    if [ ! -d "$HOME/SBarLua" ]; then
-        (git clone https://github.com/FelixKratz/SbarLua.git /tmp/SbarLua && cd /tmp/SbarLua/ && make install && rm -rf /tmp/SbarLua/)
-    fi
-    brew install yazi
-    brew install neovim
-    brew install git
-    brew install jesseduffield/lazygit/lazygit
-
-    ### Terminal
-    brew install tree
-    brew install btop
-    brew install fastfetch
-    brew install cowsay
-    brew install fortune
-    brew install wifi-password
-    brew install cmatrix
-    brew install sl
-    brew install yt-dlp
-    brew install wtf
-    brew install pipes-sh
-
-    ### dev things
-    brew install pnpm
-    brew install node
-    brew install nvm
-    brew install sqlite
-    brew install go
-    brew install lua
-    brew install luajit
-    brew install luarocks
-
-    ## Casks (you'll have to configure them yourselves)
-    echo -e "${green}Installing Brew Casks... ${no_color}"
-    brew install --cask aerospace
-    brew install --cask karabiner-elements
-    brew install --cask hammerspoon
-    brew install --cask espanso
-    brew install --cask wezterm@nightly
-    brew install --cask leader-key
-    brew install --cask alt-tab
-    brew install --cask iina
-    brew install --cask input-source-pro
-    brew install --cask only-switch
-    brew install --cask firefox
-    brew install --cask boring-notch@rc
-
-    echo -e "${purple}Do you want to install Tor? (y/N) ${no_color}"
-    read -p "" install_mullvad
-    if [ "$install_mullvad" = "Y" ] || [ "$install_mullvad" = "y" ]; then
-        echo -e "${green}Installing Tor...${no_color}"
-        brew install --cask tor-browser
-    fi
-
-    echo -e "${purple}Do you want to install additional fonts and symbols? (Used in my configuration) (Y/n) ${no_color}"
-    read -p "" add_fonts
-    if [ "$add_fonts" != "N" ] && [ "$add_fonts" != "n" ]; then
-        echo -e "${green}Installing additional fonts... ${no_color}"
-        brew install --cask font-jetbrains-mono-nerd-font
-        brew install --cask font-sf-pro
-        brew install --cask font-maple-mono
-        brew install --cask font-maple-mono-nf
-        brew install --cask font-maple-mono-nf-cn
-        brew install --cask sf-symbols
-        brew install --cask font-sketchybar-app-font
-    fi
-
-    echo -e "${purple}Do you have external displays? (y/N) ${no_color}"
-    read -p "" has_external_displays
-    if [ "$has_external_displays" = "Y" ] || [ "$has_external_displays" = "y" ]; then
-        echo -e "${green}Installing BetterDisplay...${no_color}"
-        brew install --cask betterdisplay
-    fi
-
-    echo -e "${purple}Do you have external mice? (y/N) ${no_color}"
-    read -p "" has_external_mice
-    if [ "$has_external_mice" = "Y" ] || [ "$has_external_mice" = "y" ]; then
-        echo -e "${green}Installing LinearMouse...${no_color}"
-        brew install --cask linearmouse
-    fi
-
-    echo -e "${red}The following apps are not at all necessary, and for myself only. Still install? (y/N) ${no_color}"
-    read -p "" really
-    if [ "$really" = "Y" ] || [ "$really" = "y" ]; then
-        echo -e "${green}Installing... ${no_color}"
-        brew install --cask dorico
-        brew install --cask musescore
-        brew install --cask qqmusic
-        brew install --cask wechat
-        brew install --cask zoom
-    fi
+echo -e "${green}Using .config/brewfile/Brewfile for quick install${no_color}"
+brew bundle install --file=./.config/brewfile/Brewfile
+echo -e "${blue}Installing SBarLua"
+# installing sbarlua
+if [ ! -d "$HOME/SBarLua" ]; then
+    git clone https://github.com/FelixKratz/SbarLua.git /tmp/SbarLua && cd /tmp/SbarLua/ && make install && rm -rf /tmp/SbarLua/
 fi
 
 ## MacOS system settings
@@ -231,15 +121,6 @@ stow --ignore .DS_Store --ignore .git \
 
 # Set up hammerspoon config file
 defaults write org.hammerspoon.Hammerspoon MJConfigFile "$HOME/.config/hammerspoon/init.lua"
-
-# Set up one-thing config file
-if [ ! -f "$HOME/one-thing/one-thing.txt" ]; then
-    mkdir -p "$HOME/one-thing"
-    touch "$HOME/one-thing/one-thing.txt"
-    echo -e "${green}What do you want on your menu bar? "
-    read -p "" thing
-    echo "$thing" >>$HOME/one-thing/one-thing.txt
-fi
 
 echo -e "${green}Setup complete!${no_color}"
 
