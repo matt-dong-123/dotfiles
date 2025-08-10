@@ -1,9 +1,10 @@
 local colors = require("colors")
 local settings = require("settings")
 
+local filepath_in_home = "/.config/sketchybar/one-thing.txt"
 -- Function to read the content from the file
 local function read_one_thing()
-	local file = io.open(os.getenv("HOME") .. "/one-thing/one-thing.txt", "r")
+	local file = io.open(os.getenv("HOME") .. filepath_in_home, "r")
 	if file then
 		local content = file:read("*all"):gsub("[\n\r]", "")
 		file:close()
@@ -24,7 +25,7 @@ local one_thing = sbar.add("item", "right.one-thing", {
 })
 
 one_thing:subscribe("mouse.clicked", function()
-	sbar.exec('wezterm start --always-new-process nvim "$HOME/one-thing/one-thing.txt"', function()
+	sbar.exec('wezterm start --always-new-process nvim "$HOME' .. filepath_in_home .. '"', function()
 		one_thing:set({
 			label = { string = read_one_thing() },
 		})
