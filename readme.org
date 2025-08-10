@@ -46,10 +46,6 @@ Paste this into your terminal, and follow the steps of the install script.
 3. Use the provided config.css in ~/.config/firefox/chrome and symlink it to your chrome directory
 *** Option 2: Natsumi Browser
 1. Download and run the [[https://github.com/greeeen-dev/natsumi-browser/releases/latest][latest natsumi installer]]
-
-⚠️ WARNING!
-Right now, only its latest RC version has an installer.
-However, you can still download the stable version from the installer.
 ** LeaderKey
 1. Go to the LeaderKey settings and go to the "Advanced" tab
 2. Set the config directory to your ~/.config/leaderkey directory
