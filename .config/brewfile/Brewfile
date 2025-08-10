@@ -191,7 +191,6 @@ cask iina
 cask input-source-pro
 cask karabiner-elements
 cask leader-key
-cask libreoffice
 cask mitmproxy
 cask musescore
 cask ollama-app
