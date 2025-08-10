@@ -6,8 +6,6 @@ local keys = require 'keys'
 local mux = require 'mux'
 local workspace_switcher =
     wezterm.plugin.require 'https://github.com/MLFlexer/smart_workspace_switcher.wezterm'
-local resurrect =
-    wezterm.plugin.require 'https://github.com/MLFlexer/resurrect.wezterm'
 local smart_splits =
     wezterm.plugin.require 'https://github.com/mrjones2014/smart-splits.nvim'
 
@@ -25,19 +23,6 @@ table.insert(config.keys, {
 })
 config.default_workspace = 'Home'
 workspace_switcher.zoxide_path = '/opt/homebrew/bin/zoxide'
-
--- resurrect plugin config
-resurrect.state_manager.periodic_save {
-    interval_seconds = 15 * 60,
-    save_workspaces = true,
-    save_windows = true,
-    save_tabs = true,
-}
-
-wezterm.on('resurrect.error', function(err)
-    wezterm.log_error 'ERROR!'
-    wezterm.gui.gui_windows()[1]:toast_notification('resurrect', err, nil, 3000)
-end)
 
 -- smart splits config
 smart_splits.apply_to_config(config, {
