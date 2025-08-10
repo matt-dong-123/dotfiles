@@ -67,6 +67,9 @@ bindkey '^[[B' history-search-forward
 # Path
 export PATH="$PATH:${HOME}/.local/bin:${HOME}/.cargo/bin:${HOME}/.config/emacs/bin"
 eval "$(/opt/homebrew/bin/brew shellenv)"
+if [ -f $(brew --prefix)/etc/brew-wrap ];then
+  source $(brew --prefix)/etc/brew-wrap
+fi
 
 # FZF Configuration
 eval "$(fzf --zsh)"
