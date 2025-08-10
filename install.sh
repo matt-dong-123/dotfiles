@@ -102,12 +102,14 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int "2"
 # Disable confirmation when closing unsaved windows (will autosave)
 defaults write NSGlobalDomain "NSCloseAlwaysConfirmsChanges" -bool "true"
 
+echo -e "${blue}This will enable sudo via Touch ID."
+sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+
 echo -e "${red}Disable quarantine and gatekeeper? (y/N) ${no_color}"
 read -p "" quarantine
 if [ "$quarantine" = "Y" ] || [ "$quarantine" = "y" ]; then
     # Disable quarantine
     defaults write com.apple.LaunchServices "LSQuarantine" -bool "false"
-    echo -e "${red}Type in your password to disable Gatekeeper:${no_color}"
     sudo spctl --master-disable
 fi
 
