@@ -5,10 +5,10 @@ gui:
       - "#FF9E64"
       - bold
     inactiveBorderColor:
-      - "#7AA2F7"
+      - "#82AAFF"
   
     searchingActiveBorderColor:
-      - "#7DCFFF"
+      - "#89DDFF"
       - bold
   
     optionsTextColor:
