@@ -17,12 +17,11 @@ local function parse_cmd_to_table(s)
 end
 
 local spaceConfigs = {
-	["!default"] = { icon = "—", name = "Default" },
-	["browser"] = { icon = icons.browser, name = "Browser" },
-	["coding"] = { icon = icons.terminal, name = "Coding" },
-	["music"] = { icon = icons.music, name = "Music" },
-	["social"] = { icon = icons.social, name = "Social" },
-	["work"] = { icon = icons.work, name = "Work" },
+	["browser"] = { icon = icons.browser, name = "Browser", color = colors.blue },
+	["coding"] = { icon = icons.terminal, name = "Coding", color = colors.orange },
+	["music"] = { icon = icons.music, name = "Music", color = colors.magenta },
+	["social"] = { icon = icons.social, name = "Social", color = colors.green },
+	["work"] = { icon = icons.work, name = "Work", color = colors.red },
 }
 
 -- focused_workspace: the workspace aerospace sends
@@ -36,10 +35,12 @@ local function highlight_workspace(focused_workspace, workspace, space)
 			icon = {
 				string = spaceConfig.icon,
 				highlight = selected,
+				highlight_color = spaceConfig.color,
 			},
 			label = {
 				string = selected and spaceConfig.name or "",
 				highlight = selected,
+				highlight_color = spaceConfig.color,
 			},
 		})
 	end)
@@ -52,15 +53,12 @@ for i, workspace in ipairs(workspaces) do
 	local space = sbar.add("item", "space." .. i, {
 		icon = {
 			string = spaceConfig.icon,
-			color = colors.green,
-			highlight_color = colors.red,
+			color = colors.grey,
 		},
 		label = {
 			font = {
 				style = settings.font.style_map["Bold"],
 			},
-			cotlor = colors.default,
-			highlight_color = colors.yellow,
 		},
 	})
 
