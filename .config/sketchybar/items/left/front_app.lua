@@ -6,14 +6,14 @@ local front_app = sbar.add("item", "front_app", {
 	display = "active",
 	icon = {
 		font = "sketchybar-app-font:Regular:20.0",
-		color = colors.green,
+		color = colors.yellow,
 	},
 	label = {
 		font = {
 			family = settings.font.text,
 			size = 16.0,
 		},
-		color = colors.green,
+		color = colors.yellow,
 	},
 	updates = true,
 })
