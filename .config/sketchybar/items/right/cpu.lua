@@ -6,14 +6,10 @@ local settings = require("settings")
 -- the cpu load data, which is fired every 2.0 seconds.
 sbar.exec("killall cpu_load >/dev/null; $CONFIG_DIR/helpers/event_providers/cpu_load/bin/cpu_load cpu_update 2.0")
 
-local cpu = sbar.add("graph", "right.cpu", 42, {
+local cpu = sbar.add("item", "right.cpu", 42, {
 	position = "right",
-	graph = { color = colors.default },
-	background = {
-		height = 22,
-		color = { alpha = 0 },
-		border_color = { alpha = 0 },
-		drawing = true,
+	icon = {
+		string = icons.cpu,
 	},
 	label = {
 		string = "??%",
@@ -42,7 +38,7 @@ cpu:subscribe("cpu_update", function(env)
 	end
 
 	cpu:set({
-		graph = { color = color },
+		icon = { color = color },
 		label = { string = env.total_load .. "%", color = color },
 	})
 end)
