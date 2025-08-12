@@ -10,7 +10,7 @@ local battery = sbar.add("item", "right.battery", {
 		},
 	},
 	label = { font = { family = settings.font.numbers } },
-	update_freq = 60,
+	update_freq = 1,
 })
 
 battery:subscribe({ "routine", "power_source_change", "system_woke" }, function()
