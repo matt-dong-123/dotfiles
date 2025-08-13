@@ -96,6 +96,7 @@ alias f="fastfetch"
 alias v="nvim"
 alias e="nvim -c 'Oil --preview'"
 alias c="cd ~/dotfiles"
+alias n="cd ~/notes"
 alias cl="clear"
 alias gc="cd ~/.config"
 y() {
