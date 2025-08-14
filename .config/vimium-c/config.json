@@ -1,7 +1,8 @@
-{
+
+
 	"name": "Vimium C",
-	"@time": "8/10/2025, 7:25:40 AM",
-	"time": 1754781940228,
+	"@time": "8/14/2025, 1:51:20 PM",
+	"time": 1755150680767,
 	"environment": {
 		"extension": "2.12.3",
 		"platform": "mac",
@@ -37,8 +38,8 @@
 	"keyLayout": 2,
 	"keyMappings": [
 		"#!no-check",
-		"map gr closeTabsOnRight",
-		"map gl closeTabsOnLeft",
+		"map gj closeTabsOnRight",
+		"map gk closeTabsOnLeft",
 		"map gx closeOtherTabs",
 		"map F LinkHints.activateOpenInNewForegroundTab",
 		"map J nextTab",
