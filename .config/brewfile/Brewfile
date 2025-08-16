@@ -4,6 +4,7 @@
 tap homebrew/core
 brew aom
 brew aribb24
+brew atuin
 brew autoconf
 brew automake
 brew awk
