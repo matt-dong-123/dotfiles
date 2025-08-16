@@ -176,7 +176,6 @@ brew zoxide
 brew zstd
 
 tap homebrew/cask
-cask alex313031-thorium
 cask alt-tab
 cask baidunetdisk
 cask espanso
@@ -204,6 +203,7 @@ cask steinberg-library-manager
 cask steinberg-mediabay
 cask tencent-meeting
 cask tor-browser
+cask ungoogled-chromium
 cask wechat
 cask wechatwork
 cask wezterm@nightly
