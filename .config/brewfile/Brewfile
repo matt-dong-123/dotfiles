@@ -205,7 +205,6 @@ cask mitmproxy
 cask musescore
 cask ollama-app
 cask only-switch
-cask qqmusic
 cask raycast
 cask sf-symbols
 cask steinberg-activation-manager
