@@ -52,6 +52,7 @@ brew go
 brew graphite2
 brew grep
 brew gsl
+brew gum
 brew harfbuzz
 brew highway
 brew hwloc
