@@ -50,7 +50,7 @@ Paste this into your terminal, and follow the steps of the install script.
 ** Optional: Emacs
 #+BEGIN_SRC sh
 brew tap d12frosted/emacs-plus
-brew install --cask emacs-plus
+brew install --cask emacs-plus --with-modern-black-dragon-icon
 brew install --cask font-symbols-only-nerd-font
 brew install cmake
 #+END_SRC
