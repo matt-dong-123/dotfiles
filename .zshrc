@@ -67,7 +67,6 @@ bindkey '^[[B' history-search-forward
 # FZF Configuration
 eval "$(fzf --zsh)"
 
-eval "$(atuin init zsh --disable-up-arrow)"
 
 fg="#c0caf5"
 bg="#1b1e2d"
@@ -103,7 +102,5 @@ y() {
     rm -f -- "$tmp"
 }
 
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
