@@ -31,10 +31,7 @@ ZSH_HIGHLIGHT_STYLES[precommand]=fg=blue,underline
 ZSH_HIGHLIGHT_STYLES[arg0]=fg=blue
 
 # Envvars
-export XDG_CONFIG_HOME="${HOME}/.config"
-export EDITOR=nvim
 export MANPAGER="nvim +Man!"
-export WEZTERM_CONFIG_DIR="${XDG_CONFIG_HOME}/wezterm"
 
 # Completion
 autoload -U compinit && compinit
@@ -96,4 +93,4 @@ y() {
 }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ${ZDOTDIR}/.p10k.zsh ]] || source ${ZDOTDIR}/.p10k.zsh
