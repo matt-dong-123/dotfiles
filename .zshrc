@@ -35,7 +35,6 @@ export XDG_CONFIG_HOME="${HOME}/.config"
 export EDITOR=nvim
 export MANPAGER="nvim +Man!"
 export WEZTERM_CONFIG_DIR="${XDG_CONFIG_HOME}/wezterm"
-export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
 # Completion
 autoload -U compinit && compinit
@@ -64,15 +63,11 @@ bindkey '^n' history-search-forward
 bindkey '^[[A' history-search-backward
 bindkey '^[[B' history-search-forward
 
-# Path
-export PATH="$PATH:${HOME}/.local/bin:${HOME}/.cargo/bin:${HOME}/.config/emacs/bin"
-eval "$(/opt/homebrew/bin/brew shellenv)"
-if [ -f $(brew --prefix)/etc/brew-wrap ];then
-  source $(brew --prefix)/etc/brew-wrap
-fi
 
 # FZF Configuration
 eval "$(fzf --zsh)"
+
+eval "$(atuin init zsh --disable-up-arrow)"
 
 fg="#c0caf5"
 bg="#1b1e2d"
@@ -108,31 +103,7 @@ y() {
     rm -f -- "$tmp"
 }
 
-# pnpm
-export PNPM_HOME="/Users/bulus-computer/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/matt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/matt/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/matt/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/matt/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-eval "$(atuin init zsh --disable-up-arrow)"
