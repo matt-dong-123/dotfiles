@@ -43,7 +43,7 @@ zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
 
 # History
 HISTSIZE=5000
-HISTFILE=~/.zsh_history
+HISTFILE=${ZDOTDIR}/.zsh_history
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
 setopt appendhistory
