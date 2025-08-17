@@ -4,7 +4,6 @@
 tap homebrew/core
 brew aom
 brew aribb24
-brew atuin
 brew autoconf
 brew automake
 brew awk
@@ -17,6 +16,7 @@ brew c-ares
 brew ca-certificates
 brew cairo
 brew certifi
+brew chafa
 brew cjson
 brew cmake
 brew cmatrix
@@ -24,9 +24,11 @@ brew coreutils
 brew cowsay
 brew dav1d
 brew eza
+brew faad2
 brew fastfetch
 brew fd
 brew ffmpeg
+brew fftw
 brew flac
 brew fontconfig
 brew fortune
@@ -52,17 +54,20 @@ brew grep
 brew gsl
 brew harfbuzz
 brew highway
+brew hwloc
 brew icu4c@77
 brew imath
 brew isl
 brew jpeg
 brew jpeg-turbo
 brew jpeg-xl
+brew kew
 brew lame
 brew lazygit
 brew leptonica
 brew libarchive
 brew libass
+brew libavif
 brew libb2
 brew libbluray
 brew libdeflate
@@ -121,11 +126,13 @@ brew nettle
 brew node
 brew nudoku
 brew nvm
+brew open-mpi
 brew opencore-amr
 brew openexr
 brew openjpeg
 brew openssl@3
 brew opus
+brew opusfile
 brew ouch
 brew p11-kit
 brew pango
@@ -134,6 +141,7 @@ brew pipes-sh
 brew pipx
 brew pixman
 brew pkgconf
+brew pmix
 brew pnpm
 brew proxychains-ng
 brew python@3.13
@@ -151,6 +159,7 @@ brew sqlite
 brew srt
 brew stow
 brew svt-av1
+brew taglib
 brew tesseract
 brew texinfo
 brew theora
@@ -158,6 +167,7 @@ brew tree
 brew tree-sitter
 brew unbound
 brew unibilium
+brew utf8cpp
 brew utf8proc
 brew webp
 brew wifi-password
