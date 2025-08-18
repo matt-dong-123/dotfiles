@@ -4,7 +4,6 @@ return {
     lazy = false,
     opts = {
         bigfile = {},
-        dim = {},
         gitbrowse = {},
         indent = {},
         input = {},
@@ -14,7 +13,6 @@ return {
         statuscolumn = {},
         terminal = {},
         words = {},
-        zen = {},
     },
     keys = {
         {
@@ -37,14 +35,6 @@ return {
                 Snacks.gitbrowse()
             end,
             desc = 'Open in remote repo',
-        },
-        {
-            '<leader>z',
-            function()
-                Snacks.zen()
-                Snacks.dim()
-            end,
-            desc = 'Zen Mode',
         },
         {
             '<leader>t',
