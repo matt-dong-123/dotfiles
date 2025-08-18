@@ -36,5 +36,4 @@ prepend_keymap = [
 
     # Easyjump && searchjump
     { on = "s", run = "plugin easyjump", desc = "run easyjump" },
-    { on = "/", run = "plugin searchjump -- autocd", desc = "run searchjump" },
 ]
