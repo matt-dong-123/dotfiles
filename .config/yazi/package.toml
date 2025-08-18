@@ -43,6 +43,11 @@ use = "wekauwau/yatline-tokyo-night"
 rev = "19dbd25"
 hash = "5f00a80a79b9f7fd8e24d6fa5dbb3ae"
 
+[[plugin.deps]]
+use = "DreamMaoMao/searchjump"
+rev = "7fafec3"
+hash = "5337bf545993d8c4dec2c229031f49d"
+
 [[flavor.deps]]
 use = "BennyOe/tokyo-night"
 rev = "5f56364"
