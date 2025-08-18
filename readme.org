@@ -41,8 +41,10 @@ Paste this into your terminal, and follow the steps of the install script.
 6. Copy the user.js in ~/.config/firefox to your profile directory
 7. Delete the user.js after starting the browser (settings will be remembered automatically)
 8. Install the Tokyo Night theme by Milav
-9. Go to [[https://github.com/adriankarlen/textfox][the textfox repo]] and follow its instructions
-10. Use the provided config.css in ~/.config/firefox/chrome and symlink it to your chrome directory
+9.
+#+BEGIN_SRC sh
+bash <(curl -s https://raw.githubusercontent.com/soulhotel/git-userChrome/main/scripts/gituserChrome.sh) https://github.com/adriankarlen/textfox.git
+#+END_SRC
 ** LeaderKey
 1. Go to the LeaderKey settings and go to the "Advanced" tab
 2. Set the config directory to your ~/.config/leaderkey directory
