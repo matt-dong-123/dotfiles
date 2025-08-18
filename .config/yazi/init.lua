@@ -6,7 +6,9 @@ require("yatline"):setup({
 	theme = tokyo_night_theme,
 	header_line = {
 		left = {
-			section_a = {},
+			section_a = {
+				{ type = "line", custom = false, name = "tabs", params = { "left" } },
+			},
 			section_b = {},
 			section_c = {},
 		},
