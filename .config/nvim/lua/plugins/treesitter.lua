@@ -6,7 +6,6 @@ return {
         ensure_installed = {
             'c',
             'cpp',
-            'go',
             'json',
             'lua',
             'python',

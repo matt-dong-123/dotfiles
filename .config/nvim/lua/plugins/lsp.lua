@@ -14,14 +14,12 @@ return {
                 -- LSPs
                 'bashls',
                 'clangd',
-                'gopls',
                 'lua_ls',
                 'marksman',
                 'taplo',
                 'pyright',
                 -- Formatters and Linters
                 'shfmt',
-                'gofumpt',
                 'stylua',
                 'black',
                 'isort',
