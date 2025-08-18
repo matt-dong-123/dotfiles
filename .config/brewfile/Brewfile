@@ -75,8 +75,10 @@ brew libdeflate
 brew libevent
 brew libgccjit
 brew libgit2
+brew libid3tag
 brew libidn2
 brew libmicrohttpd
+brew libmp3splt
 brew libmpc
 brew libnghttp2
 brew libnghttp3
@@ -93,6 +95,7 @@ brew libssh
 brew libssh2
 brew libtasn1
 brew libtiff
+brew libtool
 brew libunibreak
 brew libunistring
 brew libuv
@@ -116,8 +119,10 @@ brew luv
 brew lz4
 brew lzo
 brew m4
+brew mad
 brew make
 brew mbedtls
+brew mp3splt
 brew mpdecimal
 brew mpfr
 brew mpg123
@@ -137,6 +142,7 @@ brew opusfile
 brew ouch
 brew p11-kit
 brew pango
+brew pcre
 brew pcre2
 brew pipes-sh
 brew pipx
