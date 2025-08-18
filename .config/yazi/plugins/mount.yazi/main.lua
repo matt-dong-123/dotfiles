@@ -7,7 +7,12 @@ local toggle_ui = ya.sync(function(self)
 	else
 		self.children = Modal:children_add(self, 10)
 	end
-	ya.render()
+	-- TODO: remove this
+	if ui.render then
+		ui.render()
+	else
+		ya.render()
+	end
 end)
 
 local subscribe = ya.sync(function(self)
@@ -18,7 +23,12 @@ end)
 local update_partitions = ya.sync(function(self, partitions)
 	self.partitions = partitions
 	self.cursor = math.max(0, math.min(self.cursor or 0, #self.partitions - 1))
-	ya.render()
+	-- TODO: remove this
+	if ui.render then
+		ui.render()
+	else
+		ya.render()
+	end
 end)
 
 local active_partition = ya.sync(function(self) return self.partitions[self.cursor + 1] end)
@@ -29,7 +39,12 @@ local update_cursor = ya.sync(function(self, cursor)
 	else
 		self.cursor = ya.clamp(0, self.cursor + cursor, #self.partitions - 1)
 	end
-	ya.render()
+	-- TODO: remove this
+	if ui.render then
+		ui.render()
+	else
+		ya.render()
+	end
 end)
 
 local M = {
@@ -209,6 +224,7 @@ function M.split(src)
 		{ "^/dev/nvme%d+n%d+", "p%d+$" }, -- /dev/nvme0n1p1
 		{ "^/dev/mmcblk%d+", "p%d+$" }, -- /dev/mmcblk0p1
 		{ "^/dev/disk%d+", ".+$" }, -- /dev/disk1s1
+		{ "^/dev/sr%d+", ".+$" }, -- /dev/sr0
 	}
 	for _, p in ipairs(pats) do
 		local main = src:match(p[1])
@@ -259,7 +275,10 @@ function M.operate(type)
 		output, err = Command("diskutil"):arg({ type, active.src }):output()
 	end
 	if ya.target_os() == "linux" then
-		if type == "eject" then
+		if type == "eject" and active.src:match("^/dev/sr%d+") then
+			Command("udisksctl"):arg({ "unmount", "-b", active.src }):status()
+			output, err = Command("eject"):arg({ "--traytoggle", active.src }):output()
+		elseif type == "eject" then
 			Command("udisksctl"):arg({ "unmount", "-b", active.src }):status()
 			output, err = Command("udisksctl"):arg({ "power-off", "-b", active.src }):output()
 		else

@@ -1,26 +1,26 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "5eea960"
-hash = "b3f1d6ec3721d4061aad5f69cddb0cf9"
+rev = "e95c7b3"
+hash = "e1de3054c0d1a2d8dc6f007eadc0fa31"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "5eea960"
-hash = "a030fe48d91b04341ad2fba9be957df"
+rev = "e95c7b3"
+hash = "1adc12c2b2b025411ab61eb8f0879574"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "5eea960"
+rev = "e95c7b3"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "5eea960"
-hash = "e01006bfb38951ea89031bd918b20dbb"
+rev = "e95c7b3"
+hash = "63b6c222bf2103b3023389dde5e2ecfe"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "5eea960"
+rev = "e95c7b3"
 hash = "56fdabc96fc1f4d53c96eb884b02a5be"
 
 [[plugin.deps]]
@@ -30,8 +30,8 @@ hash = "9209d17be3c792eda9ad60b447c4db1e"
 
 [[plugin.deps]]
 use = "ndtoan96/ouch"
-rev = "bb941c4"
-hash = "956b02fe8213e7b92e21a941b9abe764"
+rev = "0742fff"
+hash = "2bd799b42b8e42b8ef100310be71f8d1"
 
 [[plugin.deps]]
 use = "imsi32/yatline"
@@ -45,5 +45,5 @@ hash = "5f00a80a79b9f7fd8e24d6fa5dbb3ae"
 
 [[flavor.deps]]
 use = "BennyOe/tokyo-night"
-rev = "b3950bf"
-hash = "319ce574cdb2865baf4323db90456504"
+rev = "5f56364"
+hash = "c0bf69ad2c44005892d586e9693993c6"
