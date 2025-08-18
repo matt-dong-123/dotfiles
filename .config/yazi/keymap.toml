@@ -34,12 +34,6 @@ prepend_keymap = [
     # Mount
     { on = "M", run = "plugin mount", desc = "Open mount plugin" },
 
-    # Lazygit
-    { on = [
-        "g",
-        "l",
-    ], run = "plugin lazygit", desc = "run lazygit" },
-
     # Easyjump && searchjump
     { on = "s", run = "plugin easyjump", desc = "run easyjump" },
     { on = "/", run = "plugin searchjump -- autocd", desc = "run searchjump" },
