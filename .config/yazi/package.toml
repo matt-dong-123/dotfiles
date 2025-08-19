@@ -44,6 +44,6 @@ rev = "19dbd25"
 hash = "5f00a80a79b9f7fd8e24d6fa5dbb3ae"
 
 [[flavor.deps]]
-use = "kalidyasin/yazi-flavors:tokyonight-moon"
-rev = "fa19b40"
-hash = "716fd834e7d9cdb80c9d111657f637c2"
+use = "BennyOe/tokyo-night"
+rev = "5f56364"
+hash = "c0bf69ad2c44005892d586e9693993c6"
