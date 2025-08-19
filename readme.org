@@ -37,7 +37,7 @@ Paste this into your terminal, and follow the steps of the install script.
    - Stylus
 3. Disable 'hide filter chips' on youtube
 4. Go to Zen Internet's Advanced settings and turn on the toggle for "Disable Transparency"
-5. Find and install tokyo night themes for GitHub and Brave Search as well as installing "Desmos Dark Theme" by spidunno via Stylus
+5. Find and install tokyo night themes for GitHub and Brave Search by JoshuaMarkle as well as installing "Desmos Dark Theme" by spidunno via Stylus
 6. Copy the user.js in ~/.config/firefox to your profile directory
 7. Delete the user.js after starting the browser (settings will be remembered automatically)
 8. Install the Tokyo Night theme by Milav
