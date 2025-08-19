@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # Zinit setup
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
@@ -16,7 +9,6 @@ fi
 source "${ZINIT_HOME}/zinit.zsh"
 
 # Plugins
-zinit ice --depth 1; zinit light romkatv/powerlevel10k
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-syntax-highlighting
@@ -57,7 +49,6 @@ setopt hist_find_no_dups
 # FZF Configuration
 eval "$(fzf --zsh)"
 
-
 fg="#c0caf5"
 bg="#1b1e2d"
 bg_highlight="#292e42"
@@ -73,7 +64,6 @@ export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
 eval "$(zoxide init --cmd cd zsh)"
 
 # Aliases and functions
-
 alias ls="eza --color=always --icons"
 alias lg="lazygit"
 alias f="fastfetch"
@@ -92,5 +82,4 @@ y() {
     rm -f -- "$tmp"
 }
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ${ZDOTDIR}/.p10k.zsh ]] || source ${ZDOTDIR}/.p10k.zsh
+[[ ! -f ${ZDOTDIR}/prompt.zsh ]] || source ${ZDOTDIR}/prompt.zsh
