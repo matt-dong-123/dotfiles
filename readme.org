@@ -23,11 +23,9 @@ Paste this into your terminal, and follow the steps of the install script.
 1. Install the [[https://addons.mozilla.org/en-US/firefox/addon/vimium-c/][Vimium C]] browser extension
 2. In the preferences for the extension, click "Import Settings"
 3. Choose the file from the path "~/.config/vimium-c/config.json"
-** Firefox
-1. Set vertical tabs
-2. Install the following addons:
+** Zen
+1. Install the following addons:
    - Brave Search: Private Search Engine
-   - mtab
    - Vimium C
    - Dark Reader
    - Return YouTube Dislike
@@ -35,16 +33,14 @@ Paste this into your terminal, and follow the steps of the install script.
    - SponsorBlock
    - Zen Internet
    - Stylus
-3. Disable 'hide filter chips' on youtube
-4. Go to Zen Internet's Advanced settings and turn on the toggle for "Disable Transparency"
-5. Find and install tokyo night themes for GitHub, Reddit, ChatGPT, and Brave Search by JoshuaMarkle as well as installing "Desmos Dark Theme" by spidunno via Stylus
-6. Copy the user.js in ~/.config/firefox to your profile directory
-7. Delete the user.js after starting the browser (settings will be remembered automatically)
-8. Install the Tokyo Night theme by Milav
-9.
-#+BEGIN_SRC sh
-bash <(curl -s https://raw.githubusercontent.com/soulhotel/git-userChrome/main/scripts/gituserChrome.sh) https://github.com/adriankarlen/textfox.git
-#+END_SRC
+2. Disable 'hide filter chips' on youtube
+3. Go to Zen Internet's Advanced settings and turn on the toggle for "Disable Transparency"
+4. Find and install tokyo night themes for GitHub, Reddit, ChatGPT, and Brave Search by JoshuaMarkle as well as installing "Desmos Dark Theme" by spidunno via Stylus
+5. Copy the user.js in ~/.config/zen to your profile directory
+6. Delete the user.js after starting the browser (settings will be remembered automatically)
+6. Install [[https://github.com/CosmoCreeper/Sine][Sine mods]]
+7. Install Nebula
+8. Disable loading animation in Nebula settings
 ** LeaderKey
 1. Go to the LeaderKey settings and go to the "Advanced" tab
 2. Set the config directory to your ~/.config/leaderkey directory
