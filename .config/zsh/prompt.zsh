@@ -16,7 +16,7 @@ git_info() {
   branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null) || return
   [[ -n $(git status --porcelain 2>/dev/null) ]] && dirty="*" || dirty=""
   [[ -n $(git stash list 2>/dev/null) ]] && stash="" || stash=""
-  echo "${GREY}($branch${dirty}${stash})${RESET}"
+  echo "${GREY}$branch${dirty}${stash}${RESET}"
 }
 
 # colored prompt character
@@ -32,7 +32,7 @@ prompt_char() {
 }
 
 # exit code
-precmd() { LAST_CMD_EXIT=$?; echo "" }
+precmd() { LAST_CMD_EXIT=$? }
 
 # prompt
 PROMPT='${BLUE}%~${RESET} $(git_info)
