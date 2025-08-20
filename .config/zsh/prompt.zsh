@@ -35,7 +35,8 @@ prompt_char() {
 precmd() { LAST_CMD_EXIT=$? }
 
 # prompt
-PROMPT='${BLUE}%~${RESET} $(git_info)
+PROMPT='
+${BLUE}%~${RESET} $(git_info)
 $(prompt_char) '
 TRANSIENT_PROMPT_PROMPT=$PROMPT
 TRANSIENT_PROMPT_TRANSIENT_PROMPT="$(prompt_char) "
