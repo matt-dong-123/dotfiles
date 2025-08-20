@@ -58,3 +58,25 @@ brew install cmake
 rm -rf ~/.emacs.d
 #+END_SRC
 - Or backup your existing config.
+
+* Screenshots
+#+CAPTION: Wezterm
+[[./assets/wezterm.png]]
+
+#+CAPTION: Lazygit
+[[./assets/lazygit.png]]
+
+#+CAPTION: Neovim
+[[./assets/neovim.png]]
+
+#+CAPTION: Emacs
+[[./assets/emacs.png]]
+
+#+CAPTION: Boring Notch
+[[./assets/boring-notch.png]]
+
+#+CAPTION: Yazi
+[[./assets/yazi.png]]
+
+#+CAPTION: Zen Browser
+[[./assets/zen.png]]
