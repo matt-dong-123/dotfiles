@@ -1,5 +1,17 @@
 return {
     'folke/snacks.nvim',
+    dependencies = {
+        'folke/todo-comments.nvim',
+        keys = {
+            {
+                '<leader>st',
+                function()
+                    Snacks.picker.todo_comments()
+                end,
+                desc = 'Todo',
+            },
+        },
+    },
     opts = {
         picker = {
             matcher = {
