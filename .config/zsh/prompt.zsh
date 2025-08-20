@@ -33,7 +33,11 @@ git_info() {
 
 # colored prompt character
 prompt_char() {
-  local char="❯"
+  local char=""
+  case $KEYMAP in
+    vicmd) char="❮" ;;
+    viins|main) char="❯" ;;
+  esac
   if [[ -z $LAST_CMD_EXIT ]]; then
     echo "${MAGENTA}$char${RESET}"  # default
   elif (( $LAST_CMD_EXIT == 0 )); then
