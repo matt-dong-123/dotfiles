@@ -8,6 +8,7 @@ local RED='%F{red}'
 local GREEN='%F{green}'
 local BLUE='%F{blue}'
 local MAGENTA='%F{magenta}'
+local CYAN='%F{cyan}'
 local GREY='%F{8}'
 
 # Git
@@ -16,7 +17,18 @@ git_info() {
   branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null) || return
   [[ -n $(git status --porcelain 2>/dev/null) ]] && dirty="*" || dirty=""
   [[ -n $(git stash list 2>/dev/null) ]] && stash="" || stash=""
-  echo "${GREY}$branch${dirty}${stash}${RESET}"
+
+  local upstream
+  upstream=$(git rev-parse --abbrev-ref --symbolic-full-name @{u} 2>/dev/null)
+  if [[ -n $upstream ]]; then
+    ahead=$(git rev-list --count ${upstream}..HEAD 2>/dev/null)
+    behind=$(git rev-list --count HEAD..${upstream} 2>/dev/null)
+
+    [[ $ahead -gt 0 ]] && ahead="↑$ahead" || ahead=""
+    [[ $behind -gt 0 ]] && behind="↓$behind" || behind=""
+  fi
+
+  echo "${GREY}$branch${dirty}${stash}${RESET} ${CYAN}${ahead}${behind}"
 }
 
 # colored prompt character
