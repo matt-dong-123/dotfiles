@@ -32,7 +32,7 @@ prompt_char() {
 }
 
 # exit code
-precmd() { LAST_CMD_EXIT=$? }
+precmd() { LAST_CMD_EXIT=$?; echo "" }
 
 # prompt
 PROMPT='${BLUE}%~${RESET} $(git_info)
