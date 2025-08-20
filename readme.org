@@ -72,9 +72,6 @@ rm -rf ~/.emacs.d
 #+CAPTION: Emacs
 [[./assets/emacs.png]]
 
-#+CAPTION: Boring Notch
-[[./assets/boring-notch.png]]
-
 #+CAPTION: Yazi
 [[./assets/yazi.png]]
 
