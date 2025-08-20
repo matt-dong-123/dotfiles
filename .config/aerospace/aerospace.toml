@@ -20,7 +20,7 @@ on-focus-changed = ['move-mouse window-lazy-center']
 
 # App Rules:
 on-window-detected = [
-    { if.app-id = "org.mozilla.firefox", run = "move-node-to-workspace browser" },
+    { if.app-id = "app.zen-browser.zen", run = "move-node-to-workspace browser" },
     { if.app-id = "com.github.wez.wezterm", run = "move-node-to-workspace coding" },
     { if.app-id = "org.gnu.Emacs", run = "move-node-to-workspace coding" },
     { if.app-id = "com.tencent.QQMusicMac", run = "move-node-to-workspace music" },
@@ -35,10 +35,10 @@ on-window-detected = [
 [gaps]
 inner.horizontal = 6
 inner.vertical = 6
-outer.left = 6
-outer.bottom = 6
-outer.top = 6
-outer.right = 6
+outer.left = 3
+outer.bottom = 3
+outer.top = 3
+outer.right = 3
 
 # Keys
 [mode.main.binding]
