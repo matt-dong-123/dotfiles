@@ -11,7 +11,6 @@ return {
         quickfile = {},
         scroll = { easing_function = 'quadratic' },
         statuscolumn = {},
-        terminal = {},
         words = {},
     },
     keys = {
@@ -35,13 +34,6 @@ return {
                 Snacks.gitbrowse()
             end,
             desc = 'Open in remote repo',
-        },
-        {
-            '<leader>t',
-            function()
-                Snacks.terminal.toggle()
-            end,
-            desc = 'Open terminal',
         },
     },
 }
