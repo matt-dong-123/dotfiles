@@ -26,6 +26,9 @@ ZSH_HIGHLIGHT_STYLES[arg0]=fg=blue
 # Envvars
 export MANPAGER="nvim +Man!"
 
+# Proxy
+export https_proxy=http://127.0.0.1:7897;export http_proxy=http://127.0.0.1:7897;export all_proxy=socks5://127.0.0.1:7897
+
 # Completion
 autoload -U compinit && compinit
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Za-z}'
