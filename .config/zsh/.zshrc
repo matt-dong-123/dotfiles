@@ -9,6 +9,7 @@ fi
 source "${ZINIT_HOME}/zinit.zsh"
 
 # Plugins
+zinit light olets/zsh-transient-prompt
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-syntax-highlighting
