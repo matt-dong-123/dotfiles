@@ -34,7 +34,7 @@ Paste this into your terminal, and follow the steps of the install script.
    - Zen Internet
    - Stylus
 2. Disable 'hide filter chips' on youtube
-3. Go to Zen Internet's Advanced settings and turn on the toggle for "Disable Transparency"
+3. Go to Zen Internet's Advanced settings and turn on the toggle for "Disable Transparency" and "Disable Hover Effects"
 4. Find and install tokyo night themes for GitHub, Reddit, ChatGPT, and Brave Search by JoshuaMarkle as well as installing "Desmos Dark Theme" by spidunno via Stylus
 5. Copy the user.js in ~/.config/zen to your profile directory
 6. Delete the user.js after starting the browser (settings will be remembered automatically)
