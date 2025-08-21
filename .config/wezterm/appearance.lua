@@ -9,6 +9,8 @@ M.apply_to_config = function(config)
         'JetBrainsMono Nerd Font',
     }
     config.use_fancy_tab_bar = false
+    config.window_background_opacity = 0.75
+    config.macos_window_background_blur = 100
     config.font_size = 20
     config.line_height = 1.2
     config.window_padding = {
