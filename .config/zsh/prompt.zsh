@@ -46,6 +46,15 @@ prompt_char() {
   fi
 }
 
+.zle_push-line-and-clear() {
+    PROMPT=${PROMPT#$'\n'}
+    zle .push-input
+    zle .clear-screen
+    PROMPT=$'\n'${PROMPT}
+}
+zle -N .zle_push-line-and-clear
+bindkey '^L' .zle_push-line-and-clear
+
 # exit code
 precmd() { LAST_CMD_EXIT=$? }
 
