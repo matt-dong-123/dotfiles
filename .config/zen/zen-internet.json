@@ -1,0 +1,58 @@
+{
+  "exportDate": "2025-08-21T02:59:14.930Z",
+  "addonVersion": "2.7.0",
+  "settings": {
+    "transparentZenSettings": {
+      "enableStyling": true,
+      "autoUpdate": true,
+      "forceStyling": false,
+      "whitelistMode": false,
+      "whitelistStyleMode": false,
+      "disableTransparency": true,
+      "disableHover": true,
+      "disableFooter": false,
+      "lastFetchedTime": 1755735486877,
+      "welcomeShown": true
+    },
+    "skipForceThemingList": [],
+    "skipThemingList": [],
+    "fallbackBackgroundList": [],
+    "stylesRepositoryUrl": "https://sameerasw.github.io/my-internet/styles.json",
+    "userMappings": {
+      "mapping": {}
+    }
+  },
+  "siteSettings": {
+    "transparentZenSettings.addons.mozilla.org": {
+      "transparency": true,
+      "darkreader": true,
+      "no footer": true
+    },
+    "transparentZenSettings.youtube.com": {
+      "yt-Transparency": true,
+      "yt-Toggle side guide": true,
+      "yt-clean side guide": true,
+      "yt-mini guide": true,
+      "yt-Transparent header": true,
+      "yt-no voice search": true,
+      "yt-Hide filter chips": false,
+      "yt-Compact feed": true,
+      "yt-thumbnail hover": true,
+      "yt-no distractions": true,
+      "yt-Transparent video background": true,
+      "yt-no ambient mode": true,
+      "yt-Theatre: zen view": true,
+      "yt-zen view comments": true,
+      "yt-zen view comments on left": true,
+      "yt-zen comments solid": true,
+      "yt-transparent overlay chat": true,
+      "yt-Misc": true,
+      "yt-better captions": true,
+      "yt-Keep player shadow": true,
+      "yt-fix new feed layout": true,
+      "Immersive search": true,
+      "yt-Addon : Viewstats": true,
+      "yt-Addon : timed comments": true
+    }
+  }
+}
