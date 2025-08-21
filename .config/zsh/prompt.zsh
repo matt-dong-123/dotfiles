@@ -50,7 +50,6 @@ prompt_char() {
 precmd() { LAST_CMD_EXIT=$? }
 
 # prompt
-# TODO: pls help with clear screen logic
 PROMPT='
 ${BLUE}%~${RESET} $(git_info)
 $(prompt_char) '

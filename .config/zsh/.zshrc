@@ -92,4 +92,13 @@ y() {
     rm -f -- "$tmp"
 }
 
+.zle_push-line-and-clear() {
+    PROMPT=${PROMPT#$'\n'}
+    zle .push-input
+    zle .clear-screen
+    PROMPT=$'\n'${PROMPT}
+}
+zle -N .zle_push-line-and-clear
+bindkey '^L' .zle_push-line-and-clear
+
 [[ ! -f ${ZDOTDIR}/prompt.zsh ]] || source ${ZDOTDIR}/prompt.zsh
