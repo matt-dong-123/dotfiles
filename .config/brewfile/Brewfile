@@ -8,6 +8,7 @@ brew autoconf
 brew automake
 brew awk
 brew bash
+brew bat
 brew bob
 brew brotli
 brew btop
@@ -132,6 +133,7 @@ brew nettle
 brew node
 brew nudoku
 brew nvm
+brew oniguruma
 brew open-mpi
 brew opencore-amr
 brew openexr

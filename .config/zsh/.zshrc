@@ -51,19 +51,26 @@ setopt hist_save_no_dups
 setopt hist_find_no_dups
 
 # FZF Configuration
-eval "$(fzf --zsh)"
+source <(fzf --zsh)
 
-fg="#c0caf5"
-bg="#1b1e2d"
-bg_highlight="#292e42"
-purple="#bb9af7"
-blue="#2ac3de"
-cyan="#73daca"
+# ─── FZF CONFIGURATION ─────────────────────────────────────────────────────────
 
-export FZF_DEFAULT_OPTS="--color=fg:${fg},bg:${bg},hl:${purple},fg+:${fg},bg+:${bg_highlight},hl+:${purple},info:${blue},prompt:${cyan},pointer:${cyan},marker:${cyan},spinner:${cyan},header:${cyan}"
-show_file_or_dir_preview="if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi"
+export FZF_DEFAULT_OPTS_FILE="${XDG_CONFIG_HOME}/fzf/fzfrc"
+
+show_file_or_dir_preview="
+  if [ -d {} ]; then
+    eza --tree --color=always {} | head -200
+  else
+    bat -n --color=always --line-range :500 {}
+  fi
+"
+
 export FZF_CTRL_T_OPTS="--preview '$show_file_or_dir_preview'"
+
+export FZF_CTRL_R_OPTS=""
 export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
+
+# ───────────────────────────────────────────────────────────────────────────────
 
 eval "$(zoxide init --cmd cd zsh)"
 
