@@ -97,6 +97,7 @@ brew libssh2
 brew libtasn1
 brew libtiff
 brew libtool
+brew libudfread
 brew libunibreak
 brew libunistring
 brew libuv
