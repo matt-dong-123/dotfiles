@@ -23,11 +23,3 @@ vim.api.nvim_create_autocmd('FileType', {
         vim.keymap.set('n', 'q', '<cmd>quit<cr>', { buffer = args.buf })
     end,
 })
-
-vim.api.nvim_create_autocmd('VimEnter', {
-    callback = function()
-        if vim.fn.argv(0) == '' then
-            Snacks.picker.smart()
-        end
-    end,
-})
