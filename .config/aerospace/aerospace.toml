@@ -32,6 +32,8 @@ on-window-detected = [
     { if.app-id = "com.apple.finder", run = "layout floating" },
 ]
 
+# TODO: App keybinds from hammerspoon
+
 [gaps]
 inner.horizontal = 6
 inner.vertical = 6
