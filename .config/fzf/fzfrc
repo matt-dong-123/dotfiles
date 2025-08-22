@@ -1,6 +1,6 @@
 --style full
 --border --padding 1,2
---border-label ' Demo ' --input-label ' Input ' --header-label ' File Type '
+--border-label ' FZF ' --input-label ' Input ' --header-label ' File Type '
 --preview 'fzf-preview.sh {}'
 --bind 'result:transform-list-label:
     if [[ -z $FZF_QUERY ]]; then

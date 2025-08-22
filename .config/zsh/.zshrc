@@ -36,6 +36,9 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:*' use-fzf-default-opts yes
 zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
+zstyle ':fzf-tab:complete:*' fzf-flags \
+    --height=40% \
+    --preview="" \
 
 # History
 HISTSIZE=10000
