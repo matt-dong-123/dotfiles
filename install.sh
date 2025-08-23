@@ -119,7 +119,9 @@ killall Dock
 # Stow dotfiles packages
 echo -e "${green}Stowing dotfiles...${no_color}"
 stow --ignore .DS_Store --ignore .git \
-    --ignore .gitignore --ignore .gitmodules --ignore README.md --ignore README.linkscape --ignore install.sh -t ~ .
+    --ignore .gitignore --ignore .gitmodules \
+    --ignore README.org --ignore LINKSCAPE.md \
+    --ignore install.sh --ignore ^/assets -t ~ .
 
 # Set up hammerspoon config file
 defaults write org.hammerspoon.Hammerspoon MJConfigFile "$HOME/.config/hammerspoon/init.lua"

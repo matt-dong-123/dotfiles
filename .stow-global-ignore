@@ -21,6 +21,7 @@ _darcs
 ^/README.*
 ^/LICENSE.*
 ^/COPYING
+^/assets
 
 \.DS_Store
 install.sh
