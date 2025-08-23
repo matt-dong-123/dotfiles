@@ -1,4 +1,5 @@
 --style full
+--no-height
 --border --padding 1,2
 --border-label ' FZF ' --input-label ' Input '
 --preview '

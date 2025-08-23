@@ -39,6 +39,7 @@ export MANPAGER="nvim +Man!"
 export https_proxy=http://127.0.0.1:7897;export http_proxy=http://127.0.0.1:7897;export all_proxy=socks5://127.0.0.1:7897
 
 # Completion
+setopt globdots
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
@@ -67,7 +68,7 @@ export FZF_DEFAULT_OPTS_FILE="${XDG_CONFIG_HOME}/fzf/fzfrc"
 eval "$(zoxide init --cmd cd zsh)"
 
 # Aliases and functions
-alias ls="eza --color=always --icons"
+alias ls="eza --color=always --icons -a"
 alias lg="lazygit"
 alias f="fastfetch"
 alias v="nvim"
