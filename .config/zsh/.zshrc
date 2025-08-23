@@ -84,7 +84,7 @@ export FZF_CTRL_R_OPTS="--preview ''"
 eval "$(zoxide init --cmd cd zsh)"
 
 # Aliases and functions
-alias ls="eza --color=always --icons -lah"
+alias ls="eza --color=always --icons"
 alias lg="lazygit"
 alias f="fastfetch"
 alias v="nvim"
