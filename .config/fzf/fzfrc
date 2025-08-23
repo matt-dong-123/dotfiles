@@ -1,10 +1,11 @@
 --style full
 --no-height
+--layout reverse
 --border --padding 1,2
 --border-label ' FZF ' --input-label ' Input '
 --preview '
   if [ -d {} ]; then
-    eza --tree --color=always {} | head -200
+    eza --tree --color=always {} --icons | head -200
   else
     bat -n --color=always --line-range :500 {}
   fi
@@ -27,4 +28,3 @@
 --color 'fg+:#c0caf5,bg+:#1b1e2d,hl+:#bb9af7'
 --color 'info:#2ac3de,prompt:#73daca,pointer:#73daca'
 --color 'marker:#73daca,spinner:#73daca,header:#73daca'
---layout reverse
