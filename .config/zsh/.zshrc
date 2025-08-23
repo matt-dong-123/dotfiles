@@ -15,14 +15,16 @@ fi
 
 source "${ZINIT_HOME}/zinit.zsh"
 
+autoload -U compinit && compinit
+
 # Plugins
 zinit ice --depth 1; zinit light romkatv/powerlevel10k
+zinit light Aloxaf/fzf-tab
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light jeffreytse/zsh-vi-mode
 zinit light hlissner/zsh-autopair
-zinit light Aloxaf/fzf-tab
 zinit snippet OMZP::sudo
 
 # customize zsh-syntax-highlighting colors
@@ -37,15 +39,13 @@ export MANPAGER="nvim +Man!"
 export https_proxy=http://127.0.0.1:7897;export http_proxy=http://127.0.0.1:7897;export all_proxy=socks5://127.0.0.1:7897
 
 # Completion
-autoload -U compinit && compinit
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:*' use-fzf-default-opts yes
-zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
 zstyle ':fzf-tab:complete:*' fzf-flags \
     --height=40% \
-    --preview="" \
+    --preview='' \
 
 # History
 HISTSIZE=10000
@@ -62,24 +62,7 @@ setopt hist_find_no_dups
 
 # FZF Configuration
 source <(fzf --zsh)
-
-# ─── FZF CONFIGURATION ─────────────────────────────────────────────────────────
-
 export FZF_DEFAULT_OPTS_FILE="${XDG_CONFIG_HOME}/fzf/fzfrc"
-
-show_file_or_dir_preview="
-  if [ -d {} ]; then
-    eza --tree --color=always {} | head -200
-  else
-    bat -n --color=always --line-range :500 {}
-  fi
-"
-
-# export FZF_CTRL_T_OPTS="--preview '$show_file_or_dir_preview'"
-export FZF_CTRL_R_OPTS="--preview ''"
-# export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
-
-# ───────────────────────────────────────────────────────────────────────────────
 
 eval "$(zoxide init --cmd cd zsh)"
 

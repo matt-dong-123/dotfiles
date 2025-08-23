@@ -1,7 +1,13 @@
 --style full
 --border --padding 1,2
 --border-label ' FZF ' --input-label ' Input '
---preview 'fzf-preview.sh {}'
+--preview '
+  if [ -d {} ]; then
+    eza --tree --color=always {} | head -200
+  else
+    bat -n --color=always --line-range :500 {}
+  fi
+'
 --bind 'result:transform-list-label:
     if [[ -z $FZF_QUERY ]]; then
       echo " $FZF_MATCH_COUNT items "
