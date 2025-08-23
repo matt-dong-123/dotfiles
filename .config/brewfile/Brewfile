@@ -205,7 +205,6 @@ cask font-maple-mono-nf-cn
 cask font-sf-pro
 cask font-sketchybar-app-font
 cask font-symbols-only-nerd-font
-cask hammerspoon
 cask iina
 cask input-source-pro
 cask karabiner-elements
@@ -235,6 +234,9 @@ brew emacs-plus@30 --with-modern-black-dragon-icon
 tap felixkratz/formulae
 brew borders
 brew sketchybar
+
+tap jackielii/tap
+brew skhd-zig
 
 tap nikitabobko/tap
 cask aerospace

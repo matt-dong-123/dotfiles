@@ -1,0 +1,13 @@
+# Apps
+ctrl + shift + cmd - a : open -a "Zen"
+ctrl + shift + cmd - d : open -a "Dorico 5"
+ctrl + shift + cmd - f : open -a "Finder"
+ctrl + shift + cmd - l : open -a "Logic Pro"
+ctrl + shift + cmd - m : open -a "MuseScore 4"
+ctrl + shift + cmd - p : open -a "Passwords"
+ctrl + shift + cmd - s : open -a "System Settings"
+ctrl + shift + cmd - t : open -a "Tor Browser"
+ctrl + shift + cmd - w : open -a "WeChat"
+ctrl + shift + cmd - z : open -a "zoom.us"
+ctrl + shift + cmd - return : open -a "Wezterm"
+cmd + alt - return : open -a "Emacs"
