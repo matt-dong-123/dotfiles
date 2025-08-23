@@ -70,6 +70,8 @@ vim.o.termguicolors = true
 -- hide non-printable characters
 vim.o.conceallevel = 3
 
+vim.o.winborder = 'rounded'
+
 vim.diagnostic.config {
     severity_sort = true,
     float = { border = 'rounded' },
