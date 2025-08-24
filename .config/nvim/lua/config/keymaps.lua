@@ -43,7 +43,12 @@ end, { desc = 'Code actions' })
 map('n', '<leader>w', '<cmd>w<CR>', { desc = 'Write' })
 map('n', '<leader>q', '<cmd>q!<CR>', { desc = 'Quit w/o saving' })
 
-map('n', '<CR>', '<cmd>wqa!<CR>', { desc = 'Force save and exit all buffers' })
+map(
+    'n',
+    '<CR>',
+    '<cmd>wq!<CR>',
+    { desc = 'Force save and exit current buffer' }
+)
 -- NOTE: TERMINAL MODE REMAPS
 
 -- Exit terminal mode
