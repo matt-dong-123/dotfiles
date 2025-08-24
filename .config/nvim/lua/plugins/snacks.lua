@@ -4,6 +4,7 @@ return {
     lazy = false,
     opts = {
         bigfile = {},
+        git = {},
         gitbrowse = {},
         indent = {},
         input = {},
@@ -27,6 +28,13 @@ return {
                 Snacks.gitbrowse()
             end,
             desc = 'Open in remote repo',
+        },
+        {
+            '<leader>gb',
+            function()
+                Snacks.git.blame_line()
+            end,
+            desc = 'Show blame',
         },
     },
 }

@@ -4,7 +4,21 @@ return {
     dependencies = {
         'nvim-lua/plenary.nvim',
         'folke/snacks.nvim',
-        'sindrets/diffview.nvim',
+        {
+            'sindrets/diffview.nvim',
+            keys = {
+                {
+                    '<leader>gd',
+                    ':DiffviewOpen<CR>',
+                    desc = 'View Diff',
+                },
+                {
+                    '<leader>gD',
+                    ':DiffviewClose<CR>',
+                    desc = 'Close Diff',
+                },
+            },
+        },
     },
     opts = {
         integrations = {
