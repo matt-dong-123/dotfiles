@@ -38,11 +38,7 @@ export MANPAGER="nvim +Man!"
 # Proxy
 export https_proxy=http://127.0.0.1:7897;export http_proxy=http://127.0.0.1:7897;export all_proxy=socks5://127.0.0.1:7897
 
-# Cd by just typing directory name
-setopt autocd
-
 # Completion
-setopt globdots
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
@@ -56,18 +52,24 @@ HISTSIZE=10000
 HISTFILE=${ZDOTDIR}/.zsh_history
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
-setopt appendhistory
-setopt sharehistory
-setopt hist_ignore_space
-setopt hist_ignore_dups
-setopt hist_ignore_all_dups
-setopt hist_save_no_dups
-setopt hist_find_no_dups
+
+# Options
+## QOL
+setopt autocd
+setopt interactivecomments
+
+## Globbing
+setopt globdots extendedglob
+
+## History
+setopt histignoredups histignorealldups histsavenodups histfindnodups histignorespace 
+setopt sharehistory incappendhistory extendedhistory
 
 # FZF Configuration
 source <(fzf --zsh)
 export FZF_DEFAULT_OPTS_FILE="${XDG_CONFIG_HOME}/fzf/fzfrc"
 
+# Zoxide Initialization (replace cd)
 eval "$(zoxide init --cmd cd zsh)"
 
 # Aliases and functions
