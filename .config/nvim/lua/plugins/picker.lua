@@ -60,7 +60,7 @@ return {
             function()
                 Snacks.picker.grep()
             end,
-            desc = 'Files in project',
+            desc = 'Text',
         },
         {
             '<leader>fb',
