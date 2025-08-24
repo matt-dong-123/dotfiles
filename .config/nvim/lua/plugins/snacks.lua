@@ -22,13 +22,6 @@ return {
             desc = 'Notifications',
         },
         {
-            '<leader>gl',
-            function()
-                Snacks.terminal.get 'lazygit'
-            end,
-            desc = 'Open Lazygit',
-        },
-        {
             '<leader>gb',
             function()
                 Snacks.gitbrowse()
