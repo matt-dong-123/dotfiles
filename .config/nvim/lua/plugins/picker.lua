@@ -56,7 +56,7 @@ return {
             desc = 'Keymaps',
         },
         {
-            '<leader>fp',
+            '<leader>fg',
             function()
                 Snacks.picker.grep()
             end,
