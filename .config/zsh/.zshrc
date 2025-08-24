@@ -38,6 +38,9 @@ export MANPAGER="nvim +Man!"
 # Proxy
 export https_proxy=http://127.0.0.1:7897;export http_proxy=http://127.0.0.1:7897;export all_proxy=socks5://127.0.0.1:7897
 
+# Cd by just typing directory name
+setopt autocd
+
 # Completion
 setopt globdots
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Za-z}'
