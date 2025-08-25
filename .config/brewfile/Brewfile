@@ -213,8 +213,8 @@ cask mitmproxy
 cask musescore
 cask ollama-app
 cask only-switch
-cask raycast
 cask sf-symbols
+cask sol
 cask steinberg-activation-manager
 cask steinberg-download-assistant
 cask steinberg-library-manager
