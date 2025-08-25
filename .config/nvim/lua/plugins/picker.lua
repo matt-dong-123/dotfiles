@@ -58,7 +58,9 @@ return {
         {
             '<leader>fg',
             function()
-                Snacks.picker.grep()
+                Snacks.picker.grep {
+                    hidden = true,
+                }
             end,
             desc = 'Text',
         },
@@ -124,49 +126,49 @@ return {
             function()
                 Snacks.picker.git_branches()
             end,
-            desc = 'Git Branches',
+            desc = 'Branches',
         },
         {
             '<leader>gl',
             function()
                 Snacks.picker.git_log()
             end,
-            desc = 'Git Log',
+            desc = 'Log',
         },
         {
             '<leader>gL',
             function()
                 Snacks.picker.git_log_line()
             end,
-            desc = 'Git Log Line',
+            desc = 'Log Line',
         },
         {
             '<leader>gs',
             function()
                 Snacks.picker.git_status()
             end,
-            desc = 'Git Status',
+            desc = 'Status',
         },
         {
             '<leader>gS',
             function()
                 Snacks.picker.git_stash()
             end,
-            desc = 'Git Stash',
+            desc = 'Stash',
         },
         {
             '<leader>gd',
             function()
                 Snacks.picker.git_diff()
             end,
-            desc = 'Git Diff (Hunks)',
+            desc = 'Diff (Hunks)',
         },
         {
             '<leader>gf',
             function()
                 Snacks.picker.git_log_file()
             end,
-            desc = 'Git Log File',
+            desc = 'Log File',
         },
     },
 }
