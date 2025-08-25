@@ -55,11 +55,6 @@ for i, workspace in ipairs(workspaces) do
 			string = spaceConfig.icon,
 			color = colors.grey,
 		},
-		label = {
-			font = {
-				style = settings.font.style_map["Bold"],
-			},
-		},
 	})
 
 	space:subscribe("aerospace_workspace_change", function(env)
