@@ -1,0 +1,252 @@
+[
+  {
+    "settings": {
+      "disableAll": false,
+      "exposeIframes": false,
+      "exposeStyleName": false,
+      "keepAlive": 0,
+      "keepAliveIdle": false,
+      "newStyleAsUsercss": false,
+      "openEditInWindow": false,
+      "openEditInWindow.popup": false,
+      "patchCsp": false,
+      "show-badge": true,
+      "styleViaASS": false,
+      "styleViaXhr": false,
+      "urlInstaller": true,
+      "windowPosition": {},
+      "compactWidth": 850,
+      "config.autosave": true,
+      "schemeSwitcher.enabled": "system",
+      "schemeSwitcher.nightStart": "18:00",
+      "schemeSwitcher.nightEnd": "06:00",
+      "popup.enabledFirst": true,
+      "popup.stylesFirst": true,
+      "popup.autoResort": false,
+      "popup.borders": false,
+      "popup.findSort": "w",
+      "manage.onlyEnabled": false,
+      "manage.onlyLocal": false,
+      "manage.onlyUsercss": false,
+      "manage.onlyEnabled.invert": false,
+      "manage.onlyLocal.invert": false,
+      "manage.onlyUsercss.invert": false,
+      "manage.actions.expanded": false,
+      "manage.backup.expanded": true,
+      "manage.filters.expanded": true,
+      "manage.links.expanded": true,
+      "manage.minColumnWidth": 750,
+      "manage.newUI": true,
+      "manage.newUI.favicons": true,
+      "manage.newUI.faviconsGray": false,
+      "manage.newUI.targets": 3,
+      "manage.newUI.sort": "title,asc",
+      "manage.searchMode": "meta",
+      "editor.options": {},
+      "editor.toc.expanded": true,
+      "editor.options.expanded": true,
+      "editor.options.style.expanded": true,
+      "editor.lint.expanded": true,
+      "editor.publish.expanded": true,
+      "editor.lineWrapping": true,
+      "editor.smartIndent": true,
+      "editor.indentWithTabs": false,
+      "editor.tabSize": 4,
+      "editor.keyMap": "default",
+      "editor.theme": "default",
+      "editor.beautify": {
+        "selector_separator_newline": true,
+        "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
+        "newline_between_properties": true,
+        "newline_before_close_brace": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "end_with_newline": false,
+        "indent_conditional": true,
+        "indent_mozdoc": true,
+        "space_around_combinator": true,
+        "space_around_cmp": false
+      },
+      "editor.beautify.hotkey": "",
+      "editor.lintDelay": 300,
+      "editor.linter": "csslint",
+      "editor.lintReportDelay": 500,
+      "editor.matchHighlight": "token",
+      "editor.autoCloseBrackets": true,
+      "editor.autocompleteOnTyping": false,
+      "editor.contextDelete": false,
+      "editor.selectByTokens": true,
+      "editor.arrowKeysTraverse": true,
+      "editor.appliesToLineWidget": true,
+      "editor.autosaveDraft": 10,
+      "editor.livePreview": true,
+      "editor.livePreview.delay": 0.2,
+      "editor.targetsFirst": true,
+      "editor.colorpicker": true,
+      "editor.colorpicker.hexUppercase": false,
+      "editor.colorpicker.hotkey": "",
+      "editor.colorpicker.color": "",
+      "editor.colorpicker.maxHeight": 300,
+      "hotkey._execute_browser_action": "",
+      "hotkey.openManage": "",
+      "hotkey.styleDisableAll": "",
+      "sync.enabled": "none",
+      "iconset": -1,
+      "badgeDisabled": "#8B0000",
+      "badgeNormal": "#006666",
+      "headerWidth.edit": 280,
+      "headerWidth.install": 280,
+      "headerWidth.manage": 280,
+      "popup.search.globals": false,
+      "popupWidth": 246,
+      "popupWidthMax": 280,
+      "updateInterval": 24,
+      "updateOnlyEnabled": false
+    },
+    "order": {
+      "main": [],
+      "prio": []
+    }
+  },
+  {
+    "enabled": true,
+    "installDate": 1755566578523,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name         Brave Search Tokyo Night (tokyonight)\n@version      20240527.21.28\n@namespace    https://userstyles.world/user/JoshuaMarkle\n@description  Tokyonight for Brave!\n@author       JoshuaMarkle\n@license      CC Zero\n==/UserStyle== */\n\n@-moz-document domain(\"search.brave.com\") {\n* {\n    --bg-dark: #16161E;\n    --bg-code: #12121a;\n    --bg: #1A1B26;\n    --bg-2: #282B3C;\n    --bg-3: #3F4256;\n    --bg-4: #444B6A;\n    --highlight-1: #1E202E;\n    --highlight-2: #2E3448;\n    --blue-accent: #89ddff;\n    --text: #c0caf5;\n    --text-dark: #565f89;\n    --cyan: #7dcfff;\n    --blue: #7aa2f7;\n    --blue-dark: #5C88E6;\n    --orange: #ff9e64;\n    --orange-dark: #e3a144;\n    --red: #f7768e;\n    --red-dark: #db4b4b;\n    --green: #9ece6a;\n    --green-dark: #1abc9c;\n    --purple: #bb9af7;\n    --comment: #565f89;\n    \n    --color-primitive-black: #000000;\n    --color-primitive-gray-01: #f3f5f7;\n    --color-primitive-gray-10: #ebeef0;\n    --color-primitive-gray-60: #546771;\n    --color-primitive-primary-40: #7c91ff;\n    --color-primitive-primary-60: #3f39e8;\n    --color-primitive-primary-70: #3b08c2;\n    --color-primitive-neutral-25: #3b3b3f;\n    --color-primitive-white: #ffffff;\n    --color-blue-20: #0b355d;\n    --color-gray-10: #21272a;\n    --color-gray-20: #30393d;\n    --color-gray-30: #546771;\n    --color-gray-40: #62757e;\n    --color-gray-50: #a1b2ba;\n    --color-gray-60: #becad0;\n    --color-gray-70: #ebeef0;\n    --color-green-10: #092c09;\n    --color-green-20: #123f13;\n    --color-green-30: #19721e;\n    --color-green-40: #3c823c;\n    --color-neutral-10: #111114;\n    --color-neutral-60: #c7c7cc;\n    --color-pink-40: #c24580;\n    --color-primary-10: #1c0d64;\n    --color-primary-20: #2a118e;\n    --color-primary-30: #3f39e8;\n    --color-primary-40: #545ff8;\n    --color-primary-50: #7c91ff;\n    --color-primary-60: #b7c6ff;\n    --color-primary-70: #e9eeff;\n    --color-purple-40: #7064d3;\n    --color-red-20: #620f18;\n    --color-red-40: #e11f3d;\n    --color-secondary-40: #cd4400;\n    --color-teal-40: #077f8d;\n    --gradient-panel-background: linear-gradient( 96.98deg, #3b08c2 0%, #3f39e8 100% );\n    --gradient-hero: linear-gradient(174deg, #ff4000 2.32%, #ff1f01 93.33%);\n    --gradient-llm: linear-gradient( 180deg, rgba(36, 39, 49, .3) .09%, rgba(36, 39, 49, .3) 51.51%, rgba(23, 25, 30, .3) 95.35% ), var(--color-page-background);\n    --color-button-background: #3f39e8;\n    --color-button-disabled: #687b854d;\n    --color-container-background: var(--bg);\n    --color-container-disabled: #c3c9d32e;\n    --color-container-highlight: var(--bg-dark);\n    --color-container-interactive: #1c0d64;\n    --color-dialogs-scrim-background: #00000066;\n    --color-divider-interactive: #545ff866;\n    --color-divider-strong: #a1b2ba66;\n    --color-divider-subtle: var(--bg-2);\n    --color-icon-default: var(--text);\n    --color-icon-disabled: var(--text-dark);\n    --color-icon-interactive: var(--blue);\n    --color-link-default: var(--blue);\n    --color-link-visited: var(--purple);\n    --color-page-background: var(--bg-dark);\n    --color-systemfeedback-error-background: #460a10;\n    --color-systemfeedback-error-text: #ffb1b0;\n    --color-systemfeedback-info-text: #a0cdff;\n    --color-systemfeedback-success-text: #94df91;\n    --color-tabs-search-text-default: #ff6022;\n    --color-text-disabled: #ebeef080;\n    --color-text-interactive: var(--text);\n    --color-text-primary: var(--text);\n    --color-text-secondary: var(--text);\n    --color-text-tertiary: var(--text-dark);\n    --color-serp-bar-bg: var(--bg-dark);\n    --color-serp-breadcrumbs: var(--text-dark);\n    --color-serp-container-interactive: #2b314b;\n    --color-serp-divider-subtle-container: #30393d;\n    --color-serp-header-background: var(--bg);\n    --color-serp-highlight-background: var(--bg);\n    --color-serp-snippet-background: var(--bg);\n    --color-code-01: var(--text-dark);\n    --color-code-02: var(--text);\n    --color-code-03: var(--green);\n    --color-code-04: var(--blue);\n    --color-code-05: var(--purple);\n    --color-code-border: var(--bg-2);\n    --elevation-primary: rgba(255, 255, 255, .15);\n    --elevation-secondary: rgba(0, 0, 0, .8);\n}\n\n#pagination-snippet { background-color: #ffffff00 }\n.premium-cta { display: none; }\n.SettingsDrawer { box-shadow: none !important; }\n}",
+    "updateUrl": "https://userstyles.world/api/style/16466.user.css",
+    "usercssData": {
+      "name": "Brave Search Tokyo Night (tokyonight)",
+      "version": "20240527.21.28",
+      "namespace": "https://userstyles.world/user/JoshuaMarkle",
+      "description": "Tokyonight for Brave!",
+      "author": "JoshuaMarkle",
+      "license": "CC Zero"
+    },
+    "author": "JoshuaMarkle",
+    "description": "Tokyonight for Brave!",
+    "name": "Brave Search Tokyo Night (tokyonight)",
+    "originalDigest": "06dd65ae765f088e1c846b10db04095d97163a0e",
+    "_id": "4da6a8fa-383e-48c0-8842-1abfa7fc2240",
+    "_rev": 1755567520562,
+    "url": "https://userstyles.world/style/16466",
+    "installationUrl": "https://userstyles.world/style/16466",
+    "id": 1
+  },
+  {
+    "enabled": true,
+    "installDate": 1755567471218,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name         Github Tokyo Night (tokyonight)\n@namespace    lol\n@author       JoshuaMarkle\n@description  Tokyonight for GitHub!\n@version      1.4\n@license      MIT\n==/UserStyle== */\n@-moz-document domain(\"github.com\") {\n\n    * {\n        --bg: #1A1B26;\n        --bg-2: #282B3C;\n        --bg-3: #3F4256;\n        --bg-4: #444B6A;\n        --bg-dark: #16161E;\n        --bg-code: #12121a;\n        --highlight-1: #1E202E;\n        --highlight-2: #2E3448;\n        --blue-accent: #89ddff;\n        --blue-dim: #5C88E6;\n        --text: #c0caf5;\n        --comment: #565f89;\n        --border: var(--bg-2);\n        --cyan: #7dcfff;\n        --blue: #7aa2f7;\n        --blue-dark: #5C88E6;\n        --orange: #ff9e64;\n        --red: #f7768e;\n        --red-dark: #db4b4b;\n        --green: #9ece6a;\n        --green-dark: #1abc9c;\n        --purple: #bb9af7; \n\n        --graph1: #9ece6aff;\n        --graph2: #9ece6abb;\n        --graph3: #9ece6a88;\n        --graph4: #9ece6a33;\n\n        --page-header-bgColor: var(--bg) !important;\n        --header-bgColor: var(--bg) !important;\n        --AppHeader-bg: var(--bg) !important;\n        --underlineNav-borderColor-active: var(--orange) !important;\n        \n        --button-default-fgColor-rest: var(--text) !important;\n        --button-default-bgColor-rest: var(--bg-dark) !important;\n        --button-default-bgColor-hover: var(--highlight-1);\n        --button-default-bgColor-active: var(--highlight-1);\n        --button-default-borderColor-rest: var(--border) !important;\n        --button-default-borderColor-hover: var(--text) !important;\n        --button-default-borderColor-active: var(--comment) !important;\n        --button-primary-bgColor-rest: var(--blue-dark);\n        --button-primary-bgColor-hover: var(--blue-dark);\n        --button-primary-bgColor-active: var(--blue-dark);\n        --buttonCounter-default-bgColor-rest: var(--bg-2) !important;\n        \n        --borderColor-default: var(--border) !important;\n        --borderColor-muted: var(--border);\n        --borderColor-neutral-muted: var(--border) !important;\n        --borderColor-attention-emphasis: var(--orange);\n        --borderColor-danger-emphasis: var(--red-dark);\n        \n        --fgColor-default: var(--text) !important;\n        --fgColor-disabled: var(--comment) !important;\n        --fgColor-muted: var(--comment) !important;\n        --fgColor-success: var(--green-dark);\n        --fgColor-onEmphasis: var(--text) !important;\n        --fgColor-accent: var(--blue);\n        --fgColor-danger: var(--red);\n        --fgColor-attention: var(--orange);\n        \n        --bgColor-emphasis: var(--highlight-1) !important;\n        --bgColor-neutral-muted: var(--highlight-1);\n        --bgColor-default: var(--bg) !important;\n        --bgColor-muted: var(--bg) !important;\n        --bgColor-inset: var(--bg-dark) !important;\n        \n        --control-bgColor-active: var(--highlight-1);\n        --controlTrack-bgColor-rest: var(--bg);\n        --controlTrack-bgColor-hover: var(--highlight-1);\n        --controlTrack-bgColor-active: var(--highlight-2);\n        --control-transparent-bgColor-selected: var(--highlight-1);\n        --control-transparent-bgColor-active: var(--highlight-2);\n        --control-transparent-bgColor-hover: var(--highlight-1);\n        --control-borderColor-rest: var(--border) !important;\n        --controlKnob-borderColor-rest: var(--border);\n        --controlKnob-bgColor-rest: var(--bg);\n        \n        /* Code colors */\n        --color-prettylights-syntax-comment: var(--comment);\n        --color-prettylights-syntax-constant: var(--text);\n        --color-prettylights-syntax-keyword: var(--purple);\n        --color-prettylights-syntax-constant-other-reference-link: var(--cyan);\n        --color-prettylights-syntax-entity: var(--blue);\n        --color-prettylights-syntax-string: var(--green);\n        --color-prettylights-syntax-storage-modifier-import: var(--green);\n        --color-prettylights-syntax-entity-tag: var(--green-dark);\n        --color-prettylights-syntax-variable: var(--orange);\n        --color-prettylights-syntax-brackethighlighter-unmatched: var(--red); /* #f85149; */\n        --color-prettylights-syntax-brackethighlighter-angle: var(--comment); /* #8b949e; */\n        --color-prettylights-syntax-invalid-illegal-text: var(--text); /* #f0f6fc; */\n        --color-prettylights-syntax-carriage-return-text: var(--text); /* #f0f6fc; */\n        --color-prettylights-syntax-string-regexp: var(--green); /* #7ee787; */\n        --color-prettylights-syntax-markup-list: var(--orange); /* #f2cc60; */\n        --color-prettylights-syntax-markup-heading: var(--blue); /* #1f6feb; */\n        --color-prettylights-syntax-markup-italic: var(--text); /* #c9d1d9; */\n        --color-prettylights-syntax-markup-bold: var(--text) /* #c9d1d9; */\n        --color-prettylights-syntax-markup-deleted-text: var(--red-dark); /* #ffdcd7; */\n        --color-prettylights-syntax-markup-inserted-text: var(--green-dark); /* #aff5b4; */\n        --color-prettylights-syntax-markup-changed-text: var(--orange); /* #ffdfb6; */\n        --color-prettylights-syntax-markup-ignored-text: var(--comment); /* #c9d1d9; */\n        --color-prettylights-syntax-meta-diff-range: var(--purple); /* #d2a8ff; */\n        --color-prettylights-syntax-sublimelinter-gutter-mark: var(--comment) /* #484f58; */\n            \n        /* Builtin Editor */\n        --codeMirror-lines-bgColor: var(--bg-dark);;\n        --codeMirror-lines-bg: var(--bg-dark);;\n        --codeMirror-bgColor: var(--bg-dark);;\n        --codeMirror-gutters-bgColor: var(--bg-dark);;\n        --codeMirror-gutterMarker-fgColor-default: var(--bg-dark);;\n        --codeMirror-lines-bgColor: var(--bg-dark);;\n        --codeMirror-gutterMarker-fgColor-muted: var(--comment);\n        --codeMirror-lineNumber-fgColor: var(--comment);\n        --codeMirror-fgColor: var(--text);\n\n        /* Git Activity Table\n        --color-calendar-halloween-graph-day-L2-bg: var(--red-dark) !important;\n        --color-calendar-halloween-graph-day-L2-bg: var(--red) !important;\n        --color-calendar-halloween-graph-day-L3-bg: var(--orange) !important;\n        --color-calendar-halloween-graph-day-L4-bg: var(--green) !important;\n        --color-calendar-graph-day-bg: var(--bg-dark) !important;\n        --color-calendar-graph-day-L1-bg: var(--graph4) !important;\n        --color-calendar-graph-day-L2-bg: var(--graph3) !important;\n        --color-calendar-graph-day-L3-bg: var(--graph2) !important;\n        --color-calendar-graph-day-L4-bg: var(--graph1) !important;\n        --color-user-mention-fg: var(--orange) !important;\n        --color-user-mention-bg: var(--orange) !important;\n        */\n    }\n    \n    body { background: var(--bg-dark); }\n    \n    /* Code Blocks */\n    .js-snippet-clipboard-copy-unpositioned .markdown-body .snippet-clipboard-content, .js-snippet-clipboard-copy-unpositioned .markdown-body .highlight, .markdown-body .highlight pre, .markdown-body pre {\n        /* background: var(--bg-dark); */\n        border-radius: 8px;\n    }\n    \n    \n    \n    .rounded-1 { border-radius: 8px !important; }\n    .color-bg-subtle, .bgColor-muted { background: var(--bg-dark) !important; }\n    \n    /* Issues */\n    nav.color-bg-default, .bgColor-default { background-color: var(--bg-dark) !important; }\n}\n@-moz-document regexp(\"https://github.com/.*/blob/.*\") {\n\n    * {\n        --bg: #1A1B26;\n        --bg-dark: #16161E;\n        --bg-code: #12121a;\n    }\n    \n    /* Special Code Blocks */\n    .js-snippet-clipboard-copy-unpositioned .markdown-body .snippet-clipboard-content, .js-snippet-clipboard-copy-unpositioned .markdown-body .highlight, .markdown-body .highlight pre, .markdown-body pre {\n        background: var(--bg-dark) !important;\n    }\n}",
+    "usercssData": {
+      "name": "Github Tokyo Night (tokyonight)",
+      "namespace": "lol",
+      "author": "JoshuaMarkle",
+      "description": "Tokyonight for GitHub!",
+      "version": "1.4",
+      "license": "MIT"
+    },
+    "author": "JoshuaMarkle",
+    "description": "Tokyonight for GitHub!",
+    "name": "Github Tokyo Night (tokyonight)",
+    "updateUrl": "https://userstyles.world/api/style/15478.user.css",
+    "originalDigest": "f11b324d6ff881561db5a575aa5582ee738aa504",
+    "_id": "3671e617-cefb-4e41-b6cf-ace4d03b1d5e",
+    "_rev": 1755567471219,
+    "url": "https://userstyles.world/style/15478",
+    "installationUrl": "https://userstyles.world/style/15478",
+    "id": 3
+  },
+  {
+    "enabled": true,
+    "installDate": 1755567644859,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name         Reddit Tokyo Night (tokyonight)\n@version      1.5\n@namespace    https://userstyles.world/user/JoshuaMarkle\n@description  Tokyo Night for Reddit!\n@author       JoshuaMarkle\n@license      CC Zero\n==/UserStyle== */\n\n@-moz-document domain(\"reddit.com\") {\n    * {\n        --bg-dark: #16161E;\n        --bg-code: #12121a;\n        --bg: #1A1B26;\n        --bg-2: #282B3C;\n        --bg-3: #3F4256;\n        --bg-4: #444B6A;\n        --highlight: #1E202E;\n        --highlight-2: #2E3448;\n        --blue-accent: #89ddff;\n        --blue-dim: #5C88E6;\n        --text: #c0caf5;\n        --text-dark: #565f89;\n        --cyan: #7dcfff;\n        --blue: #7aa2f7;\n        --orange: #ff9e64;\n        --red: #f7768e;\n        --red-dark: #db4b4b;\n        --green: #9ece6a;\n        --green-dark: #1abc9c;\n        --comment: #565f89;\n        --border: var(--bg-2);\n\n        --color-primary-onBackground: white !important;\n        --color-primary-onBackground-selected: black;\n        --color-neutral-border: var(--border) !important;\n\n        --color-neutral-content: var(--text) !important;\n        --color-neutral-content-disabled: var(--text-dark) !important;\n        --color-neutral-content-weak: var(--text-dark) !important;\n        --color-neutral-content-strong: var(--text) !important;\n        --color-neutral-background: var(--bg-dark) !important;\n        --color-neutral-background-selected: var(--blue-dim) !important;\n        --color-neutral-background-weak: var(--bg) !important;\n        --color-neutral-background-medium: var(--bg) !important;\n        --color-neutral-background-strong: var(--bg) !important;\n        --color-neutral-background-hover: var(--bg) !important;\n        --color-neutral-border-weak: var(--border) !important;\n        --color-neutral-border-strong: var(--border) !important;\n        --color-tone-1: var(--text) !important;\n        --color-tone-2: var(--text) !important;\n        --color-tone-3: var(--bg-2) !important;\n        --color-tone-4: var(--bg-2) !important;\n        --color-tone-5: var(--bg-2) !important;\n        --color-tone-6: var(--bg-2) !important;\n        --color-tone-7: var(--bg-2) !important;\n        --color-primary: var(--blue-dim) !important;\n        --color-primary-hover: var(--blue-dim) !important;\n        --color-primary-background: var(--blue) !important;\n        --color-primary-background-hover: var(--blue-dim) !important;\n        --color-primary-background-selected: var(--blue-dim) !important;\n        --color-secondary: var(--text) !important;\n        --color-secondary-hover: var(--text);\n        --color-secondary-weak: var(--text-dark) !important;\n        --color-secondary-background: var(--highlight) !important;\n        --color-secondary-background-hover: var(--highlight) !important;\n        --color-secondary-background-selected: var(--highlight-2) !important;\n        --shreddit-content-background: var(--color-neutral-background) !important;\n\n        --button-border-color: transparent;\n        --button-border-color-activated: var(--border) !important;\n        --button-color-background-activated: var(--highlight-2) !important;\n        --button-color-text-activated: var(--text) !important;\n        --button-color-overlay: var(--color-button-overlay-focus) !important;\n        --button-border-color-hover: var(--border) !important;\n        --button-color-background-hover: var(--highlight-2) !important;\n        --button-color-text: var(--button-color-text-hover, var(--button-color-text-default)) !important;\n\n        --color-button-secondary-text: var(--text) !important;\n        --color-button-secondary-text-activated: var(--text) !important;\n        --color-button-secondary-text-disabled: var(--text) !important;\n        --color-button-secondary-border: var(--border) !important;\n        --color-button-secondary-background: var(--highlight) !important;\n        --color-button-secondary-background-focus: var(--highlight-2) !important;\n        --color-button-secondary-background-hover: var(--highlight-2) !important;\n        --color-button-secondary-background-activated: var(--highlight) !important;\n        --color-button-secondary-background-disabled: var(--highlight) !important;\n\n        --color-action-upvote: var(--blue);\n        --color-action-downvote: var(--red);\n        --color-media-background: var(--bg);\n        --color-media-onbackground: var(--text);\n        --color-media-onbackground-disabled: var(--highlight-2);\n\n        --newCommunityTheme-bodyText: var(--text);\n        --newCommunityTheme-metaText: var(--text-dark);\n        --newCommunityTheme-button: var(--text);\n        --newCommunityTheme-body: var(--bg-dark);\n        --newRedditTheme-actionIcon: var(--text);\n        --newCommunityTheme-line: var(--text-dark);\n        --newRedditTheme-line: var(--text-dark);\n        --newRedditTheme-linkText: var(--blue);\n        --newCommunityTheme-navIconFaded10: var(--highlight-2);\n        --newCommunityTheme-active: var(--blue-dim);\n        --newCommunityTheme-field: var(--bg-dark);\n        --newRedditTheme-button: var(--text);\n        --newCommunityTheme-actionIcon: var(--text);\n        --newCommunityTheme-bodyTextAlpha20: transparent;\n        --newRedditTheme-post: var(--bg);\n        --newRedditTheme-body: var(--bg-dark);\n        --newRedditTheme-field: var(--bg-dark);\n        --newCommunityTheme-navIcon: var(--text);\n        --newRedditTheme-actionIconAlpha50: var(--text);\n        --newRedditTheme-buttonAlpha05: var(--bg-dark);\n        --newRedditTheme-bodyText: var(--text);\n        --newCommunityTheme-buttonAlpha50: var(--text);\n        --pseudo-before-background: var(--bg-dark) !important;\n        --newRedditTheme-metaText: var(--text-dark);\n        --newRedditTheme-navIconFaded10: var(--highlight);\n        \n        --button-color-background-default: transparent;\n        --button-color-background-focus: transparent;\n        --button-color-background-active: linear-gradient(transparent, transparent);\n        --button-color-background-disabled: transparent;\n        --button-color-text-default: var(--color-secondary-plain);\n        --button-color-text-disabled: var(--color-interactive-content-disabled);\n        --button-color-text-hover: var(--color-secondary-plain-hover);\n        --button-border-color-default: var(--color-neutral-border-medium);\n        --button-border-color-active: var(--color-neutral-border-strong);\n        --button-border-color-disabled: var(--border) !important;\n        --button-border-width-default: var(--border) !important;\n        --button-border-width-activated: var(--border) !important;\n\n        --newCommunityTheme-postLine: var(--text-dark);\n        --newRedditTheme-widgetColors-sidebarWidgetBackgroundColor: var(--bg-dark);\n        --newCommunityTheme-widgetColors-sidebarWidgetHeaderColor: var(--bg-dark);\n        --newRedditTheme-widgetColors-sidebarWidgetBorderColor: var(--border);\n        --post-icon-color: var(--text);\n        --newCommunityTheme-postIcon: var(--text);\n        --posttitletextcolor: var(--text);\n\n        color: var(--text);\n    }\n    \n    svg { fill: var(--text); }\n\n    /* Background */\n    .bg-neutral-background {\n        background-color: var(--bg);\n        border-bottom: none;\n    }\n\n    /* Borders */\n    .xs\\:rounded-\\[16px\\] {\n        border-radius: 8px;\n        border: 1px solid var(--border);\n    }\n    .py-md { \n        border: 1px solid var(--border);\n        border-radius: 8px;\n    }\n\n    /* Images */\n    .rounded-\\[16px\\] {\n        border-radius: 8px;\n        border: none;\n    }\n    \n    /* Spacing between reddit posts */\n    .border-b-neutral-border-weak {\n        border: none;\n        height: 0.5rem;\n    }\n    \n    .flair-content { color: white !important; }\n    \n    /* Store */\n    .text-global-brand-orangered { background: color-mix(in srgb, var(--orange) 20%, transparent); }\n    .text-global-brand-orangered faceplate-number { color: var(--orange); }\n}",
+    "usercssData": {
+      "name": "Reddit Tokyo Night (tokyonight)",
+      "version": "1.5",
+      "namespace": "https://userstyles.world/user/JoshuaMarkle",
+      "description": "Tokyo Night for Reddit!",
+      "author": "JoshuaMarkle",
+      "license": "CC Zero"
+    },
+    "author": "JoshuaMarkle",
+    "description": "Tokyo Night for Reddit!",
+    "name": "Reddit Tokyo Night (tokyonight)",
+    "updateUrl": "https://userstyles.world/api/style/15549.user.css",
+    "originalDigest": "2cb4eb0521f2c5f38698541a82f39eb46c2dd1c8",
+    "_id": "22d639a2-4184-4fcd-b837-20925b1ed23a",
+    "_rev": 1755567644859,
+    "url": "https://userstyles.world/style/15549",
+    "installationUrl": "https://userstyles.world/style/15549",
+    "id": 4
+  },
+  {
+    "enabled": true,
+    "installDate": 1755567735532,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name         ChatGPT Tokyonight\n@version      2.2\n@namespace    https://userstyles.world/user/JoshuaMarkle\n@description  A tokyonight (dark) themed ChatGPT! The colors are easily customizable if you want to change the theme yourself :)\n@author       JoshuaMarkle\n@license      CC Zero\n==/UserStyle== */\n\n@-moz-document domain(\"chatgpt.com\") {\n    * {\n        --bg-dark: #16161E;\n        --bg-code: #12121a;\n        --bg: #1A1B26;\n        --bg-2: #282B3C;\n        --bg-3: #3F4256;\n        --bg-4: #444B6A;\n        --highlight-1: #1E202E;\n        --highlight-2: #2E3448;\n        --blue-accent: #89ddff;\n        --blue-2: #5C88E6;\n        --text: #c0caf5;\n        --text-2: #565f89;\n        --cyan: #7dcfff;\n        --blue: #7aa2f7;\n        --orange: #ff9e64;\n        --red: #f7768e;\n        --red-dark: #db4b4b;\n        --green: #9ece6a;\n        --green-dark: #1abc9c;\n        --comment: #565f89;\n        \n        --main-surface-primary: var(--bg);\n        --main-surface-secondary: var(--bg-2);\n        --main-surface-tertiary: var(--bg-3);\n        --sidebar-surface-primary: var(--bg-dark);\n        --sidebar-surface-secondary: var(--bg);\n        --sidebar-surface-tertiary: var(--bg-2);\n        --text-primary: var(--text);\n        --text-secondary: var(--text-2);\n        --text-tertiary: var(--text-2);\n        --text-quaternary: var(--text-2);\n        --border: var(--bg-2);\n        --border-light: var(--border);\n        --border-medium: var(--border);\n        --border-heavy: var(--border);\n        --border-xheavy: var(--border);\n        --link: var(--blue);\n        --link-hover: var(--blue-2);\n        --tw-prose-bold: var(--text);\n        --tw-prose-headings: var(--text);\n        --theme-user-msg-bg: var(--bg-2);\n        --default-theme-user-msg-bg: var(--bg-2);\n        --menu-item-highlighted: var(--bg-2);\n        --menu-item-active: var(--bg);\n        --menu-item-open: var(--bg-2);\n        \n        --bg-primary: var(--bg);\n        --bg-secondary: var(--bg-2);\n        --bg-tertiary: var(--bg-3);\n        --bg-scrim: #0d0d0d80;\n        --bg-elevated-primary: var(--bg-2);\n        --bg-elevated-secondary: var(--bg-dark);\n        --bg-status-warning: #4a2206;\n        --bg-status-error: #4d100e;\n        --border-default: #ffffff26;\n        --border-heavy: #fff3;\n        --border-light: #ffffff0d;\n        --border-status-warning: #4a2206;\n        --border-status-error: #4d100e;\n        --text-primary: var(--text);\n        --text-secondary: var(--text-2);\n        --text-tertiary: var(--text-2);\n        --text-inverted: var(--bg-dark);\n        --text-inverted-static: var(--bg-dark);\n        --text-accent: #66b5ff;\n        --text-status-warning: #ff9e6c;\n        --text-status-error: #ff8583;\n        --icon-primary: #e8e8e8;\n        --icon-secondary: #cdcdcd;\n        --icon-tertiary: #afafaf;\n        --icon-inverted: #0d0d0d;\n        --icon-inverted-static: #fff;\n        --icon-accent: #66b5ff;\n        --icon-status-warning: #ff9e6c;\n        --icon-status-error: #ff8583;\n        --interactive-bg-primary-default: #fff;\n        --interactive-bg-primary-hover: #fffc;\n        --interactive-bg-primary-press: #ffffffe5;\n        --interactive-bg-primary-inactive: #fff;\n        --interactive-bg-primary-selected: #fff;\n        --interactive-bg-secondary-default: #fff0;\n        --interactive-bg-secondary-hover: #ffffff1a;\n        --interactive-bg-secondary-press: #ffffff0d;\n        --interactive-bg-secondary-inactive: #fff0;\n        --interactive-bg-secondary-selected: #ffffff1a;\n        --interactive-bg-tertiary-default: #212121;\n        --interactive-bg-tertiary-hover: #181818;\n        --interactive-bg-tertiary-press: #0d0d0d;\n        --interactive-bg-tertiary-inactive: #212121;\n        --interactive-bg-tertiary-selected: #212121;\n        --interactive-bg-accent-default: #013566;\n        --interactive-bg-accent-hover: #003f7a;\n        --interactive-bg-accent-muted-hover: #3b4045;\n        --interactive-bg-accent-press: #004f99;\n        --interactive-bg-accent-muted-press: #40484f;\n        --interactive-bg-accent-inactive: #013566;\n        --interactive-bg-danger-primary-default: #e02e2a;\n        --interactive-bg-danger-primary-hover: #fa423e;\n        --interactive-bg-danger-primary-press: #ba2623;\n        --interactive-bg-danger-primary-inactive: #e02e2a;\n        --interactive-bg-danger-secondary-default: #fff0;\n        --interactive-bg-danger-secondary-hover: #fff0;\n        --interactive-bg-danger-secondary-press: #fff0;\n        --interactive-bg-danger-secondary-inactive: #fff0;\n        --interactive-border-focus: #fff;\n        --interactive-border-secondary-default: #ffffff26;\n        --interactive-border-secondary-hover: #ffffff26;\n        --interactive-border-secondary-press: #fff3;\n        --interactive-border-secondary-inactive: #ffffff1a;\n        --interactive-border-tertiary-default: #ffffff1a;\n        --interactive-border-tertiary-hover: #ffffff26;\n        --interactive-border-tertiary-press: #ffffff1a;\n        --interactive-border-tertiary-inactive: #ffffff1a;\n        --interactive-border-danger-secondary-default: #fa423e;\n        --interactive-border-danger-secondary-hover: #ff6764;\n        --interactive-border-danger-secondary-press: #e02e2a;\n        --interactive-border-danger-secondary-inactive: #fa423e;\n        --interactive-label-primary-default: #0d0d0d;\n        --interactive-label-primary-hover: #0d0d0d;\n        --interactive-label-primary-press: #0d0d0d;\n        --interactive-label-primary-inactive: #0d0d0d;\n        --interactive-label-primary-selected: #0d0d0d;\n        --interactive-label-secondary-default: #f3f3f3;\n        --interactive-label-secondary-hover: #ffffffe5;\n        --interactive-label-secondary-press: #fffc;\n        --interactive-label-secondary-inactive: #f3f3f3;\n        --interactive-label-secondary-selected: #f3f3f3;\n        --interactive-label-tertiary-default: #cdcdcd;\n        --interactive-label-tertiary-hover: #cdcdcd;\n        --interactive-label-tertiary-press: #cdcdcd;\n        --interactive-label-tertiary-inactive: #cdcdcd;\n        --interactive-label-tertiary-selected: #cdcdcd;\n        --interactive-label-accent-default: #99ceff;\n        --interactive-label-accent-hover: #99ceff;\n        --interactive-label-accent-press: #99ceff;\n        --interactive-label-accent-inactive: #99ceff;\n        --interactive-label-accent-selected: #99ceff;\n        --interactive-label-danger-primary-default: #fff;\n        --interactive-label-danger-primary-hover: #fff;\n        --interactive-label-danger-primary-press: #fff;\n        --interactive-label-danger-primary-inactive: #fff;\n        --interactive-label-danger-secondary-default: #fa423e;\n        --interactive-label-danger-secondary-hover: #ff6764;\n        --interactive-label-danger-secondary-press: #e02e2a;\n        --interactive-label-danger-secondary-inactive: #fa423e;\n        --interactive-icon-primary-default: #0d0d0d;\n        --interactive-icon-primary-hover: #0d0d0d;\n        --interactive-icon-primary-press: #0d0d0d;\n        --interactive-icon-primary-selected: #0d0d0d;\n        --interactive-icon-primary-inactive: #0d0d0d;\n        --interactive-icon-secondary-default: #f3f3f3;\n        --interactive-icon-secondary-hover: #ffffffe5;\n        --interactive-icon-secondary-press: #fffc;\n        --interactive-icon-secondary-selected: #f3f3f3;\n        --interactive-icon-secondary-inactive: #f3f3f3;\n        --interactive-icon-tertiary-default: #cdcdcd;\n        --interactive-icon-tertiary-hover: #cdcdcd;\n        --interactive-icon-tertiary-press: #cdcdcd;\n        --interactive-icon-tertiary-selected: #cdcdcd;\n        --interactive-icon-tertiary-inactive: #cdcdcd;\n        --interactive-icon-accent-default: #99ceff;\n        --interactive-icon-accent-hover: #99ceff;\n        --interactive-icon-accent-press: #99ceff;\n        --interactive-icon-accent-selected: #99ceff;\n        --interactive-icon-accent-inactive: #99ceff;\n        --interactive-icon-danger-primary-default: #fff;\n        --interactive-icon-danger-primary-hover: #fff;\n        --interactive-icon-danger-primary-press: #fff;\n        --interactive-icon-danger-primary-inactive: #fff;\n        --interactive-icon-danger-secondary-default: #fa423e;\n        --interactive-icon-danger-secondary-hover: #ff6764;\n        --interactive-icon-danger-secondary-press: #e02e2a;\n        --interactive-icon-danger-secondary-inactive: #fa423e;\n        --utility-scrollbar: #fff3;\n        \n        --gray-50: var(--text);\n        --gray-100: var(--text);\n        --gray-200: var(--bg);\n        --gray-300: var(--bg);\n        --gray-400: var(--bg);\n        --gray-500: var(--bg);\n        --gray-600: var(--bg);\n        --gray-700: var(--bg-dark);\n        --gray-800: var(--bg);\n        --gray-900: var(--bg);\n        --gray-950: var(--bg);\n        \n        border-color: var(--bg-2) !important;\n        scrollbar-color: var(--bg-2) var(--bg) !important;\n    }\n\n    /* Main prompt box */\n    *::placeholder {\n        color: var(--text-2);\n    }\n    #composer-submit-button { background: var(--green-dark) !important; }\n    #composer-submit-button > svg { color: white !important; }\n    .text-white, textarea {\n        color: var(--text) !important;\n    }\n    .bg-white {\n        color: var(--bg-dark);\n        background-color: var(--green-dark) !important;\n        border: none;\n    }\n    .bg-white .text-white {\n        color: var(--bg-dark) !important;\n    }\n    .dark .text-gray-500 { color: var(--text-2); }\n    svg { color: var(--text); }\n    \n    .dark\\:bg-\\[\\#303030\\]:is(.dark *) {\n        background: var(--bg-2);\n    }\n\n    /* Full width */\n    div, .text-gray-100 {\n        color: var(--text);\n    }\n\n    /* Small border on navigation bar */\n    nav {\n        border-right: 1px solid var(--border) !important;\n    }\n\n    /* Code block */\n    pre > div { border: 1px solid var(--border) !important; }\n    code {\n        color: var(--text) !important;\n    }\n    .p-4 {\n        background: var(--bg-code);\n    }\n    .hljs-meta {\n        color: var(--cyan);\n    }\n    .hljs-title {\n        color: var(--blue);\n    }\n    .hljs-type {\n        color: var(--blue-2);\n    }\n    .hljs-number {\n        color: var(--orange);\n    }\n    .hljs-built_in {\n        color: var(--blue);\n    }\n    .hljs-string {\n        color: var(--green);\n    }\n    .hljs-keyword {\n        color: var(--cyan);\n    }\n    .hljs-comment {\n        color: var(--comment);\n    }\n\n    /* Settings */\n    .btn-danger {\n        background-color: var(--red-dark);\n    }\n    .btn-danger div {\n        color: var(--bg-dark) !important;\n    }\n\n    .btn-primary {\n        background-color: var(--green-dark);\n    }\n    .btn-primary div {\n        color: var(--bg-dark) !important;\n    }\n\n    .bg-gray-900 {\n        background-color: var(--bg-dark);\n        border: 1px solid var(--border);\n        border-radius: 1px;\n    }\n    \n    /* Pop Up */\n    .popover { background: var(--bg-2) !important; }\n    .hover\\:bg-token-main-surface-secondary:hover { background: var(--bg); }\n    .bg-white { background: var(--text); }\n    .rounded-2xl { border-radius: 10px; }\n    .dark .dark\\:bg-black\\/80 { background: rgba(0,0,0,0.4)} \n    \n    /* Math */\n    .frac-line { background: var(--text) !important; }\n    \n    /* Grays */\n    .text-gray-200,\n    .text-gray-300,\n    .text-gray-400,\n    .text-gray-500,\n    .text-gray-600,\n    .text-gray-700,\n    .text-gray-800,\n    .text-gray-900,\n    .text-gray-950 {\n        color: var(--text-2);\n    }\n}",
+    "usercssData": {
+      "name": "ChatGPT Tokyonight",
+      "version": "2.2",
+      "namespace": "https://userstyles.world/user/JoshuaMarkle",
+      "description": "A tokyonight (dark) themed ChatGPT! The colors are easily customizable if you want to change the theme yourself :)",
+      "author": "JoshuaMarkle",
+      "license": "CC Zero"
+    },
+    "author": "JoshuaMarkle",
+    "description": "A tokyonight (dark) themed ChatGPT! The colors are easily customizable if you want to change the theme yourself :)",
+    "name": "ChatGPT Tokyonight",
+    "updateUrl": "https://userstyles.world/api/style/15460.user.css",
+    "originalDigest": "cd087598253a5c0408d5d884aaffcb1b28c4e499",
+    "_id": "9c88bc55-2fa8-461d-8aed-64091a76f420",
+    "_rev": 1755567735532,
+    "url": "https://userstyles.world/style/15460",
+    "installationUrl": "https://userstyles.world/style/15460",
+    "id": 5
+  },
+  {
+    "enabled": true,
+    "installDate": 1755568993337,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name         Desmos Dark Mode\n@version      20220205.19.44\n@namespace    userstyles.world/user/spidunno\n@description  Changes bright parts of the Desmos graphing calculator (eg. the graph itself) to be dark, while still maintaining correct-looking colors.\n@author       spidunno\n@license      No License\n==/UserStyle== */\n\n@-moz-document domain(\"desmos.com\") {\nbody {\n    filter: invert() hue-rotate(180deg) saturate(3.5);\n}\n.dcg-header ,.dcg-scrollable, .dcg-user-bar {\n    filter: invert() hue-rotate(180deg) saturate(calc(1/3.5));\n}\n.modal.dcg-state-modals {\n    filter: saturate(calc(1/3));\n}\n.dcg-btn.dcg-btn-green.pull-right.dcg-action-save {\n    color: black;\n}\n}",
+    "updateUrl": "https://userstyles.world/api/style/3112.user.css",
+    "usercssData": {
+      "name": "Desmos Dark Mode",
+      "version": "20220205.19.44",
+      "namespace": "userstyles.world/user/spidunno",
+      "description": "Changes bright parts of the Desmos graphing calculator (eg. the graph itself) to be dark, while still maintaining correct-looking colors.",
+      "author": "spidunno",
+      "license": "No License"
+    },
+    "author": "spidunno",
+    "description": "Changes bright parts of the Desmos graphing calculator (eg. the graph itself) to be dark, while still maintaining correct-looking colors.",
+    "name": "Desmos Dark Mode",
+    "originalDigest": "1c8dcf7507d6d3a36018e0dc69deb31f88f6b496",
+    "_id": "993d5bee-306d-4746-a183-baf2c2e76610",
+    "_rev": 1755568993337,
+    "url": "https://userstyles.world/style/3112",
+    "installationUrl": "https://userstyles.world/style/3112",
+    "id": 6
+  }
+]
