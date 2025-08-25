@@ -220,7 +220,6 @@ cask steinberg-download-assistant
 cask steinberg-library-manager
 cask steinberg-mediabay
 cask tencent-meeting
-cask tor-browser
 cask ungoogled-chromium
 cask wechat
 cask wechatwork
