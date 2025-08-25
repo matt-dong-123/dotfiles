@@ -6,8 +6,8 @@ return {
 
 	-- font = require("helpers.default_font"),
 	font = {
-		text = "Maple Mono NF CN", -- Used for text
-		numbers = "Maple Mono NF CN", -- Used for numbers
+		text = "JetBrainsMono NF", -- Used for text
+		numbers = "JetBrainsMono NF", -- Used for numbers
 		style_map = {
 			["Regular"] = "Light",
 			["Semibold"] = "Regular",
