@@ -1,7 +1,7 @@
 {
 	"name": "Vimium C",
-	"@time": "8/14/2025, 1:51:20 PM",
-	"time": 1755150680767,
+	"@time": "8/25/2025, 8:28:57 PM",
+	"time": 1756124937564,
 	"environment": {
 		"extension": "2.12.3",
 		"platform": "mac",
@@ -43,6 +43,8 @@
 		"map F LinkHints.activateOpenInNewForegroundTab",
 		"map J nextTab",
 		"map K previousTab",
+		"unmap t",
+		"map t Vomnibar.activateInNewTab",
 		""
 	],
 	"searchUrl": "https://search.brave.com/search?q=$s Brave",
