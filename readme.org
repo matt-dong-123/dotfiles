@@ -29,19 +29,12 @@ Paste this into your terminal, and follow the steps of the install script.
    - SponsorBlock
    - Zen Internet
    - Stylus
-2. In Vimium-C options, click "Import Settings"
-3. Choose "~/.config/zen/vimium-c.json"
-4. In Zen Internet advanced settings, click "Import Settings"
-5. Choose "~/.config/zen/zen-internet.json"
-6. In uBlock Origin settings, click "Restore from file"
-7. Choose "~/.config/zen/ublock.json"
-8. In Stylus settings, click "Import"
-9. Choose "~/.config/zen/stylus.json"
-10. Copy the user.js in ~/.config/zen to your profile directory
-11. Delete the user.js after starting the browser (settings will be remembered automatically)
-12. Install [[https://github.com/CosmoCreeper/Sine][Sine mods]]
-13. Install Nebula
-14. Disable loading animation in Nebula settings
+2. For each of the extensions given, find the "Import" or "Restore" button, and choose the corresponding file in ~/.config/zen
+3. Copy the user.js in ~/.config/zen to your profile directory
+4. Delete the user.js after starting the browser (settings will be remembered automatically)
+5. Install [[https://github.com/CosmoCreeper/Sine][Sine mods]]
+6. Install Nebula
+7. Disable loading animation in Nebula settings
 ** LeaderKey
 1. Go to the LeaderKey settings and go to the "Advanced" tab
 2. Set the config directory to your ~/.config/leaderkey directory
