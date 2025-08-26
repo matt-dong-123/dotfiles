@@ -1,5 +1,6 @@
 local wezterm = require 'wezterm'
 local act = wezterm.action
+local mux = wezterm.mux
 
 local M = {}
 
@@ -45,16 +46,72 @@ M.apply_to_config = function(config)
             key = 'r',
             action = act.PromptInputLine {
                 description = 'Rename workspace to:',
-                ---@diagnostic disable-next-line: unused-local
-                action = wezterm.action_callback(function(window, pane, line)
+                action = wezterm.action_callback(function(_, _, line)
                     if line then
-                        wezterm.mux.rename_workspace(
-                            wezterm.mux.get_active_workspace(),
-                            line
-                        )
+                        mux.rename_workspace(mux.get_active_workspace(), line)
+                    else
+                        return
                     end
                 end),
             },
+        },
+        {
+            mods = 'LEADER',
+            key = 'S',
+            action = wezterm.action_callback(function(window, pane)
+                local active_workspace = mux.get_active_workspace()
+                local workspaces = mux.get_workspace_names()
+                local num_tabs_by_workspace = {}
+
+                for _, mux_window in ipairs(mux.all_windows()) do
+                    local workspace = mux_window:get_workspace()
+                    local num_tabs = #mux_window:tabs()
+
+                    if num_tabs_by_workspace[workspace] then
+                        num_tabs_by_workspace[workspace] = num_tabs_by_workspace[workspace]
+                            + num_tabs
+                    else
+                        num_tabs_by_workspace[workspace] = num_tabs
+                    end
+                end
+
+                local choices = {
+                    {
+                        id = active_workspace,
+                        label = active_workspace
+                            .. ': '
+                            .. num_tabs_by_workspace[active_workspace]
+                            .. ' tabs (active)',
+                    },
+                }
+
+                for _, workspace in ipairs(workspaces) do
+                    if workspace ~= active_workspace then
+                        table.insert(choices, {
+                            id = workspace,
+                            label = workspace
+                                .. ': '
+                                .. num_tabs_by_workspace[workspace]
+                                .. ' tabs',
+                        })
+                    end
+                end
+
+                window:perform_action(
+                    act.InputSelector {
+                        title = 'Select Workspace',
+                        choices = choices,
+                        action = wezterm.action_callback(function(_, _, id, _)
+                            if not id then
+                                return
+                            end
+
+                            mux.set_active_workspace(id)
+                        end),
+                    },
+                    pane
+                )
+            end),
         },
         {
             mods = 'LEADER',
