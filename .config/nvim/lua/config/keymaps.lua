@@ -40,8 +40,15 @@ map('n', '<leader>q', '<cmd>q!<CR>')
 
 map('n', '<CR>', '<cmd>wq!<CR>')
 
+-- Indent line
+map('n', '<Tab>', '>>')
+map('n', '<S-Tab>', '<<')
 -- NOTE: VISUAL MODE REMAPS
 
 -- Move selected text up/down
 map('v', 'J', ":m '>+1<CR>gv=gv")
 map('v', 'K', ":m '<-2<CR>gv=gv")
+
+-- Indenting selected lines
+map('v', '<Tab>', '>gv')
+map('v', '<S-Tab>', '<gv')
