@@ -58,8 +58,10 @@ brew harfbuzz
 brew highway
 brew hwloc
 brew icu4c@77
+brew imagemagick
 brew imath
 brew isl
+brew jasper
 brew jpeg
 brew jpeg-turbo
 brew jpeg-xl
@@ -72,12 +74,15 @@ brew libass
 brew libavif
 brew libb2
 brew libbluray
+brew libde265
 brew libdeflate
 brew libevent
 brew libgccjit
 brew libgit2
+brew libheif
 brew libid3tag
 brew libidn2
+brew liblqr
 brew libmicrohttpd
 brew libmp3splt
 brew libmpc
@@ -85,7 +90,9 @@ brew libnghttp2
 brew libnghttp3
 brew libngtcp2
 brew libogg
+brew libomp
 brew libpng
+brew libraw
 brew librist
 brew librsvg
 brew libsamplerate
@@ -161,6 +168,7 @@ brew ripgrep
 brew rubberband
 brew rust
 brew sdl2
+brew shared-mime-info
 brew simdjson
 brew sl
 brew snappy
