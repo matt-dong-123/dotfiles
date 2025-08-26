@@ -11,14 +11,11 @@ g.have_nerd_font = true
 
 -- NOTE: NORMAL MODE REMAPS
 
--- Clear highlights on search when pressing <Esc>
 map('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
--- Increment/Decrement numbers
 map('n', '<leader>+', '<C-a>', { desc = 'Increment number' })
 map('n', '<leader>-', '<C-x>', { desc = 'Decrement number' })
 
--- create panes
 map('n', '<leader>sl', '<C-w>v', { desc = 'Split pane vertically' })
 map('n', '<leader>sj', '<C-w>s', { desc = 'Split pane horizontally' })
 map('n', '<leader>sx', '<cmd>close<cr>', { desc = 'Close current pane' })
@@ -30,31 +27,21 @@ map('', 'k', "(v:count ? 'k' : 'gk')", expr)
 -- Unwrap
 map('n', 'Q', 'gq')
 
--- Rename symbol under cursor
 map('n', '<leader>r', function()
     vim.lsp.buf.rename()
 end, { desc = 'Rename' })
 
--- Code actions
 map('n', '<leader>c', function()
     vim.lsp.buf.code_action()
 end, { desc = 'Code actions' })
 
-map('n', '<leader>w', '<cmd>w<CR>', { desc = 'Write' })
-map('n', '<leader>q', '<cmd>q!<CR>', { desc = 'Quit w/o saving' })
+map('n', '<leader>w', '<cmd>w<CR>')
+map('n', '<leader>q', '<cmd>q!<CR>')
 
-map(
-    'n',
-    '<CR>',
-    '<cmd>wq!<CR>',
-    { desc = 'Force save and exit current buffer' }
-)
--- NOTE: TERMINAL MODE REMAPS
-
--- Exit terminal mode
-map('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
+map('n', '<CR>', '<cmd>wq!<CR>')
 
 -- NOTE: VISUAL MODE REMAPS
 
+-- Move selected text up/down
 map('v', 'J', ":m '>+1<CR>gv=gv")
 map('v', 'K', ":m '<-2<CR>gv=gv")
