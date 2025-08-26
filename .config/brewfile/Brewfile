@@ -183,11 +183,13 @@ brew texinfo
 brew theora
 brew tree
 brew tree-sitter
+brew tree-sitter-cli
 brew unbound
 brew unibilium
 brew utf8cpp
 brew utf8proc
 brew webp
+brew wget
 brew wifi-password
 brew wtf
 brew x264

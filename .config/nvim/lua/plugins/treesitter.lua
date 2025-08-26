@@ -15,6 +15,7 @@ return {
             'markdown',
             'markdown_inline',
             'toml',
+            'regex',
         },
         sync_install = false,
         highlight = {
