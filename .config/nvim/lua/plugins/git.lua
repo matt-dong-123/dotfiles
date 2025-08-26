@@ -4,6 +4,10 @@ return {
     },
     {
         'tpope/vim-rhubarb',
+        lazy = false,
+        keys = {
+            { '<leader>gb', ':GBrowse<CR>', desc = 'Open in browser' },
+        },
     },
     {
         'lewis6991/gitsigns.nvim',
