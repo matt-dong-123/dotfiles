@@ -25,13 +25,6 @@ return {
         {
             '<leader>gb',
             function()
-                Snacks.gitbrowse()
-            end,
-            desc = 'Open in remote repo',
-        },
-        {
-            '<leader>gb',
-            function()
                 Snacks.git.blame_line()
             end,
             desc = 'Show blame',
