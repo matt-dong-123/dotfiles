@@ -233,6 +233,7 @@ cask ungoogled-chromium
 cask wechat
 cask wechatwork
 cask wezterm@nightly
+cask wpsoffice-cn
 cask zen
 cask zoom
 
