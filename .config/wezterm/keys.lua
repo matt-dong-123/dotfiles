@@ -57,7 +57,7 @@ M.apply_to_config = function(config)
         },
         {
             mods = 'LEADER',
-            key = 'S',
+            key = 'w',
             action = wezterm.action_callback(function(window, pane)
                 local active_workspace = mux.get_active_workspace()
                 local workspaces = mux.get_workspace_names()
