@@ -4,7 +4,7 @@ return {
         'folke/todo-comments.nvim',
         keys = {
             {
-                '<leader>st',
+                '<leader>fT',
                 function()
                     Snacks.picker.todo_comments()
                 end,
