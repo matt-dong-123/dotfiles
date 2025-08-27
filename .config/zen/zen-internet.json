@@ -1,5 +1,5 @@
 {
-  "exportDate": "2025-08-21T02:59:14.930Z",
+  "exportDate": "2025-08-27T12:30:37.672Z",
   "addonVersion": "2.7.0",
   "settings": {
     "transparentZenSettings": {
@@ -8,10 +8,10 @@
       "forceStyling": false,
       "whitelistMode": false,
       "whitelistStyleMode": false,
-      "disableTransparency": true,
+      "disableTransparency": false,
       "disableHover": true,
       "disableFooter": false,
-      "lastFetchedTime": 1755735486877,
+      "lastFetchedTime": 1756296632959,
       "welcomeShown": true
     },
     "skipForceThemingList": [],
@@ -27,6 +27,20 @@
       "transparency": true,
       "darkreader": true,
       "no footer": true
+    },
+    "transparentZenSettings.github.com": {
+      "gh-transparency": true,
+      "gh-transparent lists $ Make the files, issues and other lists transparent": true,
+      "gh-no footer": true,
+      "gh-hover $ Make the left and right sidebars show on hover": true,
+      "gh-border mods": true,
+      "gh-overlay fixes $ Fix some transparent overlays and menus": true,
+      "gh-glass effect": true,
+      "no tab text $ Make repository tabs only got icons and show text only on hover": true,
+      "repo sidebar hover $ Revel more info on repository description and below sidebar content on hover": true,
+      "immersive search $ Blur and zoom in with search": true,
+      "Hide Separator in toolbar": true,
+      "better vertical timeline icon bg": true
     },
     "transparentZenSettings.youtube.com": {
       "yt-Transparency": true,
