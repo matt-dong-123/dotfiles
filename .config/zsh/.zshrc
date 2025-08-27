@@ -81,6 +81,7 @@ alias e="nvim -c 'Oil --preview'"
 alias c="cd ~/dotfiles"
 alias n="cd ~/notes"
 alias gc="cd ~/.config"
+alias cat="bat"
 y() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
     yazi "$@" --cwd-file="$tmp"
