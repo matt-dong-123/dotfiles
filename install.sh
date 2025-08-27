@@ -123,9 +123,6 @@ stow --ignore .DS_Store --ignore .git \
     --ignore README.org --ignore LINKSCAPE.md \
     --ignore install.sh --ignore ^/assets -t ~ .
 
-# Set up hammerspoon config file
-defaults write org.hammerspoon.Hammerspoon MJConfigFile "$HOME/.config/hammerspoon/init.lua"
-
 echo -e "${green}Setup complete!${no_color}"
 
 echo -e "${purple}Reboot for some settings to take effect? (Y/n) ${no_color}"
