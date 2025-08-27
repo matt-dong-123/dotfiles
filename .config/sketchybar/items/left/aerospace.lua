@@ -1,6 +1,5 @@
 local colors = require("colors")
 local icons = require("icons")
-local settings = require("settings")
 
 local function parse_cmd_to_table(s)
 	local file = io.popen(s)

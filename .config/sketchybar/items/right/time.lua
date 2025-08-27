@@ -19,6 +19,6 @@ local time = sbar.add("item", {
 	position = "right",
 })
 
-time:subscribe({ "forced", "routine", "system_woke" }, function(env)
+time:subscribe({ "forced", "routine", "system_woke" }, function()
 	time:set({ label = os.date("%H:%M") })
 end)
