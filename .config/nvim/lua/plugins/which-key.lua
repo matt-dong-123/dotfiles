@@ -13,6 +13,7 @@ return {
                 { '<leader>n', group = 'Notes', icon = '' },
                 { '<leader>o', group = 'Org', icon = '󰸗' },
                 { '<leader>x', group = 'Trouble', icon = '' },
+                { '<leader>l', group = 'LSP', icon = '' },
                 { '<leader>w', icon = '' },
                 { '<leader>e', icon = '' },
                 { '<leader>r', icon = '' },
