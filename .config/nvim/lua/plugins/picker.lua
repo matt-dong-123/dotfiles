@@ -72,49 +72,49 @@ return {
             desc = 'Buffers',
         },
         {
-            '<leader>fd',
+            '<leader>ld',
             function()
                 Snacks.picker.lsp_definitions()
             end,
             desc = 'Definition',
         },
         {
-            '<leader>fD',
+            '<leader>lD',
             function()
                 Snacks.picker.lsp_declarations()
             end,
             desc = 'Declaration',
         },
         {
-            '<leader>fr',
+            '<leader>lr',
             function()
                 Snacks.picker.lsp_references()
             end,
             desc = 'References',
         },
         {
-            '<leader>fi',
+            '<leader>li',
             function()
                 Snacks.picker.lsp_implementations()
             end,
             desc = 'Implementations',
         },
         {
-            '<leader>ft',
+            '<leader>lt',
             function()
                 Snacks.picker.lsp_type_definitions()
             end,
             desc = 'Type Definitions',
         },
         {
-            '<leader>fs',
+            '<leader>ls',
             function()
                 Snacks.picker.lsp_symbols()
             end,
             desc = 'Document Symbols',
         },
         {
-            '<leader>fs',
+            '<leader>lS',
             function()
                 Snacks.picker.lsp_workspace_symbols()
             end,
