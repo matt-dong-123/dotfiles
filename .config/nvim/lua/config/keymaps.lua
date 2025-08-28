@@ -13,9 +13,6 @@ g.have_nerd_font = true
 
 map('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
-map('n', '<leader>+', '<C-a>', { desc = 'Increment number' })
-map('n', '<leader>-', '<C-x>', { desc = 'Decrement number' })
-
 map('n', '<leader>sl', '<C-w>v', { desc = 'Split pane vertically' })
 map('n', '<leader>sj', '<C-w>s', { desc = 'Split pane horizontally' })
 map('n', '<leader>sx', '<cmd>close<cr>', { desc = 'Close current pane' })
