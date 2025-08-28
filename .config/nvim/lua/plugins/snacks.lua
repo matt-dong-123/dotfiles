@@ -22,12 +22,5 @@ return {
             end,
             desc = 'Notifications',
         },
-        {
-            '<leader>gb',
-            function()
-                Snacks.git.blame_line()
-            end,
-            desc = 'Show blame',
-        },
     },
 }

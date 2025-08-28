@@ -1,24 +1,24 @@
 return {
     {
-        'tpope/vim-fugitive',
-    },
-    {
-        'tpope/vim-rhubarb',
-        lazy = false,
+        'folke/snacks.nvim',
         keys = {
-            { '<leader>gb', ':GBrowse<CR>', desc = 'Open in browser' },
+            {
+                '<leader>gB',
+                function()
+                    Snacks.gitbrowse.open()
+                end,
+                desc = 'Open in browser',
+            },
+            {
+                '<leader>gb',
+                function()
+                    Snacks.git.blame_line()
+                end,
+                desc = 'Show blame',
+            },
         },
     },
     {
         'lewis6991/gitsigns.nvim',
-        keys = {
-            {
-                '<leader>gh',
-                function()
-                    require('gitsigns').preview_hunk()
-                end,
-                desc = 'Preview Hunk',
-            },
-        },
     },
 }
