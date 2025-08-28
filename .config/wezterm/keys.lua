@@ -85,6 +85,14 @@ M.apply_to_config = function(config)
                 key = 'l',
             },
         },
+        {
+            mods = 'LEADER|CTRL',
+            key = 'a',
+            action = act.SendKey {
+                mods = 'CTRL',
+                key = 'a',
+            },
+        },
     }
 
     for i = 0, 9 do
