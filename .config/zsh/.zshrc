@@ -68,6 +68,7 @@ setopt sharehistory incappendhistory extendedhistory
 # FZF Configuration
 source <(fzf --zsh)
 export FZF_DEFAULT_OPTS_FILE="${XDG_CONFIG_HOME}/fzf/fzfrc"
+export FZF_CTRL_R_OPTS="--preview ''"
 
 # Zoxide Initialization (replace cd)
 eval "$(zoxide init --cmd cd zsh)"
