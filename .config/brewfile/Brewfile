@@ -8,7 +8,9 @@ brew autoconf
 brew automake
 brew awk
 brew bash
+brew bash-language-server
 brew bat
+brew black
 brew bob
 brew brotli
 brew btop
@@ -61,6 +63,7 @@ brew icu4c@77
 brew imagemagick
 brew imath
 brew isl
+brew isort
 brew jasper
 brew jpeg
 brew jpeg-turbo
@@ -122,6 +125,7 @@ brew little-cms2
 brew llvm
 brew lpeg
 brew lua
+brew lua-language-server
 brew luajit
 brew luarocks
 brew luv
@@ -161,14 +165,17 @@ brew pkgconf
 brew pmix
 brew pnpm
 brew proxychains-ng
+brew pyright
 brew python@3.13
 brew rav1e
 brew readline
 brew ripgrep
 brew rubberband
+brew ruff
 brew rust
 brew sdl2
 brew shared-mime-info
+brew shfmt
 brew simdjson
 brew sl
 brew snappy
@@ -176,8 +183,10 @@ brew speex
 brew sqlite
 brew srt
 brew stow
+brew stylua
 brew svt-av1
 brew taglib
+brew taplo
 brew tesseract
 brew texinfo
 brew theora
@@ -188,6 +197,7 @@ brew unbound
 brew unibilium
 brew utf8cpp
 brew utf8proc
+brew uvwasi
 brew webp
 brew wget
 brew wifi-password
