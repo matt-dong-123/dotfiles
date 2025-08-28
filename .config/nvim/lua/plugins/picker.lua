@@ -2,10 +2,13 @@ return {
     'folke/snacks.nvim',
     dependencies = {
         'folke/todo-comments.nvim',
+        dependencies = 'nvim-lua/plenary.nvim',
+        opts = {},
         keys = {
             {
                 '<leader>fT',
                 function()
+                    ---@diagnostic disable-next-line: undefined-field
                     Snacks.picker.todo_comments()
                 end,
                 desc = 'Todo',
