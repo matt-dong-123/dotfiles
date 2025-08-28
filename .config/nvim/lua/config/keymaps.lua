@@ -32,8 +32,8 @@ map('n', '<leader>c', function()
     vim.lsp.buf.code_action()
 end, { desc = 'Code actions' })
 
-map('n', '<leader>w', '<cmd>w<CR>')
-map('n', '<leader>q', '<cmd>q!<CR>')
+map('n', '<leader>w', '<cmd>w<CR>', { desc = 'Write' })
+map('n', '<leader>q', '<cmd>q!<CR>', { desc = 'Quit' })
 
 map('n', '<CR>', '<cmd>wq!<CR>')
 
