@@ -12,6 +12,7 @@ vim.api.nvim_create_autocmd('FileType', {
     group = vim.api.nvim_create_augroup('close-with-q', { clear = true }),
     desc = 'Close with <q>',
     pattern = {
+        'fugitive',
         'git',
         'help',
         'man',
