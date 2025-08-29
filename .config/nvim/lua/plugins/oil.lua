@@ -13,7 +13,7 @@ return {
         },
     },
     dependencies = {
-        'echasnovski/mini.icons',
+        'echasnovski/mini.nvim',
     },
     keys = {
         {
