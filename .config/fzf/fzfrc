@@ -1,5 +1,5 @@
 --style full
---prompt ' '
+--prompt '❯ '
 --no-height
 --layout reverse
 --border --padding 1,2
