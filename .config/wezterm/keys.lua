@@ -5,7 +5,7 @@ local mux = wezterm.mux
 local M = {}
 
 M.apply_to_config = function(config)
-    config.leader = { key = 'a', mods = 'CTRL', timeout_milliseconds = 2000 }
+    config.leader = { key = 'a', mods = 'CTRL' }
     config.keys = {
         {
             mods = 'LEADER',
