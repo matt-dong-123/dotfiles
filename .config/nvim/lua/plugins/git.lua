@@ -1,5 +1,11 @@
 return {
     {
+        'tpope/vim-fugitive',
+    },
+    {
+        'lewis6991/gitsigns.nvim',
+    },
+    {
         'folke/snacks.nvim',
         keys = {
             {
@@ -66,8 +72,5 @@ return {
                 desc = 'Log File',
             },
         },
-    },
-    {
-        'lewis6991/gitsigns.nvim',
     },
 }
