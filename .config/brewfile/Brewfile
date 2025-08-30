@@ -145,6 +145,7 @@ brew nettle
 brew node
 brew nudoku
 brew nvm
+brew oh-my-posh
 brew oniguruma
 brew open-mpi
 brew opencore-amr

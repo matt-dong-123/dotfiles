@@ -1,0 +1,49 @@
+console_title_template = '{{ .Shell }}'
+version = 3
+final_space = true
+
+[[blocks]]
+type = 'prompt'
+alignment = 'left'
+newline = true
+
+[[blocks.segments]]
+type = 'path'
+style = 'plain'
+foreground = 'cyan'
+template = '{{ .Path }}'
+
+[blocks.segments.properties]
+style = 'full'
+
+[[blocks.segments]]
+type = 'git'
+style = 'plain'
+foreground = 'grey'
+template = '{{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }} <cyan>{{ if gt .Behind 0 }}{{ end }}{{ if gt .Ahead 0 }}{{ end }}</>'
+
+[blocks.segments.properties]
+branch_icon = ' '
+commit_icon = '@'
+fetch_status = true
+
+[[blocks]]
+type = 'prompt'
+alignment = 'left'
+newline = true
+
+[[blocks.segments]]
+type = 'text'
+style = 'plain'
+foreground_templates = [
+    "{{if gt .Code 0}}red{{end}}",
+    "{{if eq .Code 0}}magenta{{end}}",
+]
+template = '❯'
+
+[transient_prompt]
+foreground_templates = [
+    "{{if gt .Code 0}}red{{end}}",
+    "{{if eq .Code 0}}magenta{{end}}",
+]
+template = '❯ '

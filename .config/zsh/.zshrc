@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # Zinit setup
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
@@ -18,7 +11,6 @@ source "${ZINIT_HOME}/zinit.zsh"
 autoload -U compinit && compinit
 
 # Plugins
-zinit ice --depth 1; zinit light romkatv/powerlevel10k
 zinit light Aloxaf/fzf-tab
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
@@ -28,9 +20,9 @@ zinit light hlissner/zsh-autopair
 zinit snippet OMZP::sudo
 
 # customize zsh-syntax-highlighting colors
-ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=blue,underline
-ZSH_HIGHLIGHT_STYLES[precommand]=fg=blue,underline
-ZSH_HIGHLIGHT_STYLES[arg0]=fg=blue
+ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=cyan,underline
+ZSH_HIGHLIGHT_STYLES[precommand]=fg=cyan,underline
+ZSH_HIGHLIGHT_STYLES[arg0]=fg=cyan
 
 # Envvars
 export MANPAGER="nvim +Man!"
@@ -92,5 +84,4 @@ y() {
     rm -f -- "$tmp"
 }
 
-# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
-[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+eval "$(oh-my-posh init zsh --config $ZDOTDIR/prompt.toml)"
