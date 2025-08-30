@@ -1,7 +1,6 @@
 local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
-local appearance = require 'appearance'
-local behavior = require 'behavior'
+local options = require 'options'
 local keys = require 'keys'
 local workspace_switcher =
     wezterm.plugin.require 'https://github.com/MLFlexer/smart_workspace_switcher.wezterm'
@@ -9,8 +8,7 @@ local smart_splits =
     wezterm.plugin.require 'https://github.com/mrjones2014/smart-splits.nvim'
 
 workspace_switcher.apply_to_config(config)
-appearance.apply_to_config(config)
-behavior.apply_to_config(config)
+options.apply_to_config(config)
 keys.apply_to_config(config)
 
 -- workspace switcher config
