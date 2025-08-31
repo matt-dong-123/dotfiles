@@ -15,7 +15,6 @@ zinit light Aloxaf/fzf-tab
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-syntax-highlighting
-zinit light jeffreytse/zsh-vi-mode
 zinit light hlissner/zsh-autopair
 zinit snippet OMZP::sudo
 
@@ -56,6 +55,9 @@ setopt globdots extendedglob
 ## History
 setopt histignoredups histignorealldups histsavenodups histfindnodups histignorespace 
 setopt sharehistory incappendhistory extendedhistory
+
+## Basic vi mode keys
+bindkey -v
 
 # FZF Configuration
 source <(fzf --zsh)
