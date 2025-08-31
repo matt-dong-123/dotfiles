@@ -31,7 +31,6 @@ M.apply_to_config = function(config)
         },
     }
     config.force_reverse_video_cursor = true
-    config.default_cursor_style = 'SteadyBar'
     config.max_fps = 120
     config.window_close_confirmation = 'NeverPrompt'
     config.window_decorations = 'RESIZE | MACOS_FORCE_ENABLE_SHADOW'
