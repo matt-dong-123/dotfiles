@@ -67,7 +67,9 @@ setopt sharehistory incappendhistory extendedhistory
 # FZF Configuration
 zvm_after_init() {
     source <(fzf --zsh)
+    source "${ZDOTDIR}/extensions/fzf-git.sh"
 }
+export KEYTIMEOUT=50    # For me to press fzf-git keybinds in time
 export FZF_DEFAULT_COMMAND="fd -H --strip-cwd-prefix -E .git"
 export FZF_CTRL_T_COMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd -t=d -H --strip-cwd-prefix -E .git"
@@ -81,6 +83,7 @@ _fzf_compgen_path() {
 _fzf_compgen_dir() {
   fd -t=d -H -E .git . "$1"
 }
+
 
 # Zoxide Initialization (replace cd)
 eval "$(zoxide init --cmd cd zsh)"
