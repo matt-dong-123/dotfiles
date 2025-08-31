@@ -2,7 +2,6 @@ return {
     'saghen/blink.cmp',
     dependencies = {
         'rafamadriz/friendly-snippets',
-        'folke/lazydev.nvim',
     },
     version = '*',
     opts = {
@@ -13,20 +12,11 @@ return {
         },
         sources = {
             default = {
-                'lazydev',
                 'lsp',
                 'path',
                 'snippets',
                 'buffer',
                 'cmdline',
-            },
-            providers = {
-                lazydev = {
-                    name = 'LazyDev',
-                    module = 'lazydev.integrations.blink',
-                    -- make it top priority
-                    score_offset = 100,
-                },
             },
         },
         cmdline = {

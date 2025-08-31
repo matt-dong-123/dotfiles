@@ -25,6 +25,7 @@ brew cmatrix
 brew coreutils
 brew cowsay
 brew dav1d
+brew emmylua_ls
 brew eza
 brew faad2
 brew fastfetch
@@ -125,7 +126,6 @@ brew little-cms2
 brew llvm
 brew lpeg
 brew lua
-brew lua-language-server
 brew luajit
 brew luarocks
 brew luv

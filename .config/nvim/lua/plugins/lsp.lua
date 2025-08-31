@@ -5,7 +5,7 @@ return {
         config = function()
             vim.lsp.enable {
                 'clangd',
-                'lua_ls',
+                'emmylua_ls',
                 'taplo',
                 'pyright',
                 'ruff',
