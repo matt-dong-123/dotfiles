@@ -20,7 +20,6 @@ style = 'full'
 [[blocks.segments]]
 type = 'git'
 style = 'plain'
-foreground = 'green'
 template = '{{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }} {{ if gt .StashCount 0 }}{{ end }} <cyan>{{ if gt .Behind 0 }}{{ end }}{{ if gt .Ahead 0 }}{{ end }}</>'
 
 [blocks.segments.properties]
