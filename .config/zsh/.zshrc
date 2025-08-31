@@ -69,7 +69,7 @@ zvm_after_init() {
     source <(fzf --zsh)
     source "${ZDOTDIR}/extensions/fzf-git.sh"
 }
-export KEYTIMEOUT=10    # For me to press fzf-git keybinds in time
+export KEYTIMEOUT=20    # For me to press fzf-git keybinds in time
 export FZF_DEFAULT_COMMAND="fd -H --strip-cwd-prefix -E .git"
 export FZF_CTRL_T_COMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd -t=d -H --strip-cwd-prefix -E .git"
