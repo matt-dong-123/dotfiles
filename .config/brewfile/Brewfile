@@ -226,6 +226,7 @@ cask font-sketchybar-app-font
 cask font-symbols-only-nerd-font
 cask iina
 cask input-source-pro
+cask intellij-idea-ce
 cask karabiner-elements
 cask leader-key
 cask mitmproxy
