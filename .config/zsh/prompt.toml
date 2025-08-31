@@ -29,6 +29,21 @@ fetch_status = true
 
 [[blocks]]
 type = 'prompt'
+alignment = 'right'
+overflow = 'hidden'
+
+[[blocks.segments]]
+type = 'executiontime'
+style = 'plain'
+foreground = 'yellow'
+template = '{{ .FormattedMs }}'
+
+[blocks.segments.properties]
+style = 'round'
+threshold = 5000
+
+[[blocks]]
+type = 'prompt'
 alignment = 'left'
 newline = true
 
