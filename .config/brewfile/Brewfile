@@ -46,6 +46,7 @@ brew gettext
 brew gh
 brew giflib
 brew git
+brew git-delta
 brew glib
 brew gmp
 brew gnu-sed

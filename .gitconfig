@@ -1,0 +1,30 @@
+[user]
+	name = matt-dong-123
+	email = bruckheim@proton.me
+
+[core]
+	editor = vim
+	pager = delta -ns
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+    dark = true
+
+[merge]
+    conflictStyle = zdiff3
+	tool = nvimdiff
+
+[init]
+	defaultBranch = main
+
+[color]
+	ui = true
+
+[fetch]
+	auto = true
+
+[push]
+	default = simple
