@@ -8,7 +8,6 @@ brew autoconf
 brew automake
 brew awk
 brew bash
-brew bash-language-server
 brew bat
 brew black
 brew bob

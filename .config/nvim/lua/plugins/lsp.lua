@@ -4,7 +4,6 @@ return {
         version = false,
         config = function()
             vim.lsp.enable {
-                'bashls',
                 'clangd',
                 'lua_ls',
                 'taplo',
