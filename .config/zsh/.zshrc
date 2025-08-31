@@ -68,8 +68,19 @@ setopt sharehistory incappendhistory extendedhistory
 zvm_after_init() {
     source <(fzf --zsh)
 }
+export FZF_DEFAULT_COMMAND="fd -H --strip-cwd-prefix -E .git"
+export FZF_CTRL_T_COMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd -t=d -H --strip-cwd-prefix -E .git"
 export FZF_DEFAULT_OPTS_FILE="${XDG_CONFIG_HOME}/fzf/fzfrc"
 export FZF_CTRL_R_OPTS="--preview ''"
+
+_fzf_compgen_path() {
+  fd -H -E .git . "$1"
+}
+
+_fzf_compgen_dir() {
+  fd -t=d -H -E .git . "$1"
+}
 
 # Zoxide Initialization (replace cd)
 eval "$(zoxide init --cmd cd zsh)"
