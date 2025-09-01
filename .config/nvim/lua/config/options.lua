@@ -3,9 +3,9 @@ vim.o.colorcolumn = '100'
 vim.o.number = true
 vim.o.relativenumber = true
 
--- show hidden files
 vim.o.hidden = true
 
+vim.o.spell = true
 vim.o.showmode = false
 
 vim.o.swapfile = false
@@ -30,7 +30,7 @@ vim.o.undofile = true
 vim.o.ignorecase = true
 vim.o.smartcase = true
 
--- keep signcolumns open (for debugging and plugins)
+-- keep sign columns open (for debugging and plugins)
 vim.o.signcolumn = 'yes'
 
 -- decrease update time
@@ -42,7 +42,7 @@ vim.o.timeoutlen = 300
 vim.o.splitright = true
 vim.o.splitbelow = true
 
--- customize whitespace behavior
+-- customize white space behavior
 vim.o.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 

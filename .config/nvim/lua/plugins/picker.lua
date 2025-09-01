@@ -74,5 +74,12 @@ return {
             end,
             desc = 'Buffers',
         },
+        {
+            '<leader>fs',
+            function()
+                Snacks.picker.spelling()
+            end,
+            desc = 'Spelling',
+        },
     },
 }
