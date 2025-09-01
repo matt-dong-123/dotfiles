@@ -36,4 +36,16 @@ require('lazy').setup({
     },
     install = { colorscheme = { 'tokyonight' } },
     checker = { enabled = true },
+    performance = {
+        rtp = {
+            disabled_plugins = {
+                'gzip',
+                'netrwPlugin',
+                'tarPlugin',
+                'tohtml',
+                'tutor',
+                'zipPlugin',
+            },
+        },
+    },
 })
