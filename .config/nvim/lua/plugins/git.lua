@@ -1,6 +1,43 @@
 return {
     {
         'tpope/vim-fugitive',
+        keys = {
+            {
+                '<leader>gc',
+                '<cmd>Git commit<CR>',
+                desc = 'Commit',
+            },
+            {
+                '<leader>ga',
+                '<cmd>Git add .<CR>',
+                desc = 'Stage all',
+            },
+            {
+                '<leader>gP',
+                '<cmd>Git push<CR>',
+                desc = 'Push',
+            },
+            {
+                '<leader>gp',
+                '<cmd>Git pull<CR>',
+                desc = 'Pull',
+            },
+            {
+                '<leader>gg',
+                '<cmd>Git<CR>',
+                desc = 'Open fugitive',
+            },
+            {
+                '<leader>gn',
+                '<cmd>Git checkout -b<CR>',
+                desc = 'New Branch',
+            },
+            {
+                '<leader>gi',
+                '<cmd>Git init<CR>',
+                desc = 'Initialize',
+            },
+        },
     },
     {
         'lewis6991/gitsigns.nvim',
