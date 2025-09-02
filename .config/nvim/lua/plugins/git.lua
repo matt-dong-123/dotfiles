@@ -29,7 +29,7 @@ return {
             },
             {
                 '<leader>gn',
-                '<cmd>Git checkout -b<CR>',
+                ':Git checkout -b ',
                 desc = 'New Branch',
             },
             {
