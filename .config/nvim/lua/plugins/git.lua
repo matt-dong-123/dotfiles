@@ -14,12 +14,12 @@ return {
             },
             {
                 '<leader>gP',
-                '<cmd>Git push<CR>',
+                '<cmd>Git! push<CR>', -- Async
                 desc = 'Push',
             },
             {
                 '<leader>gp',
-                '<cmd>Git pull<CR>',
+                '<cmd>Git! pull<CR>', -- Async
                 desc = 'Pull',
             },
             {
