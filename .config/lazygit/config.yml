@@ -1,5 +1,10 @@
 notARepository: skip
 gui:
+  skipNoStagedFilesWarning: false
+  showRandomTip: false
+  commit:
+    signOff: false
+  editor: "nvim"
   theme:
     activeBorderColor:
       - "#FF9E64"
