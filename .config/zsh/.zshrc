@@ -28,9 +28,6 @@ zinit light jeffreytse/zsh-vi-mode
 zinit light hlissner/zsh-autopair
 zinit snippet OMZP::sudo
 
-# mini.surround-like surround behavior
-ZVM_VI_SURROUND_BINDKEY='s-prefix'
-
 # Envvars
 export MANPAGER="nvim +Man!"
 
