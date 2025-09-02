@@ -6,7 +6,6 @@ brew aom
 brew aribb24
 brew autoconf
 brew automake
-brew awk
 brew bash
 brew bat
 brew black
@@ -22,9 +21,10 @@ brew chafa
 brew cjson
 brew cmake
 brew cmatrix
-brew coreutils
 brew cowsay
 brew dav1d
+brew deno
+brew dotnet@8
 brew emmylua_ls
 brew eza
 brew faad2
@@ -49,12 +49,9 @@ brew git
 brew git-delta
 brew glib
 brew gmp
-brew gnu-sed
-brew gnu-tar
 brew gnutls
 brew go
 brew graphite2
-brew grep
 brew gsl
 brew gum
 brew harfbuzz
@@ -66,7 +63,6 @@ brew imath
 brew isl
 brew isort
 brew jasper
-brew jpeg
 brew jpeg-turbo
 brew jpeg-xl
 brew kew
@@ -81,7 +77,6 @@ brew libbluray
 brew libde265
 brew libdeflate
 brew libevent
-brew libgccjit
 brew libgit2
 brew libheif
 brew libid3tag
@@ -134,6 +129,7 @@ brew lzo
 brew m4
 brew mad
 brew make
+brew marksman
 brew mbedtls
 brew mp3splt
 brew mpdecimal
@@ -155,6 +151,7 @@ brew opus
 brew opusfile
 brew ouch
 brew p11-kit
+brew pandoc
 brew pango
 brew pcre
 brew pcre2
@@ -188,7 +185,6 @@ brew svt-av1
 brew taglib
 brew taplo
 brew tesseract
-brew texinfo
 brew theora
 brew tree
 brew tree-sitter
@@ -249,7 +245,6 @@ cask zen
 cask zoom
 
 tap d12frosted/emacs-plus
-brew emacs-plus@30 --with-modern-black-dragon-icon
 
 tap felixkratz/formulae
 brew borders

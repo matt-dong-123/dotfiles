@@ -23,6 +23,12 @@ return {
                         action = ":lua Snacks.dashboard.pick('smart', {cwd = vim.fn.stdpath('config')})",
                     },
                     {
+                        icon = '',
+                        key = 'n',
+                        desc = 'Notes',
+                        action = ":lua Snacks.dashboard.pick('smart', {cwd = vim.fn.expand('$HOME/notes')})",
+                    },
+                    {
                         icon = '󰒲 ',
                         key = 'l',
                         desc = 'Lazy',

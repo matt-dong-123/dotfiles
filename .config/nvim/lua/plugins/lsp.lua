@@ -9,6 +9,7 @@ return {
                 'taplo',
                 'pyright',
                 'ruff',
+                'marksman',
             }
         end,
     },
