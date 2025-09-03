@@ -119,6 +119,7 @@ brew libxext
 brew libxrender
 brew little-cms2
 brew llvm
+brew llvm@20
 brew lpeg
 brew lua
 brew luajit
@@ -260,4 +261,3 @@ tap rcmdnk/file
 brew brew-file
 
 tap theboredteam/boring-notch
-cask boring-notch@rc
