@@ -13,13 +13,13 @@ return {
                 desc = 'Stage all',
             },
             {
-                '<leader>gP',
-                '<cmd>Git! push<CR>', -- Async
+                '<leader>gp',
+                '<cmd>Git push<CR>',
                 desc = 'Push',
             },
             {
-                '<leader>gp',
-                '<cmd>Git! pull<CR>', -- Async
+                '<leader>gu',
+                '<cmd>Git pull<CR>',
                 desc = 'Pull',
             },
             {
