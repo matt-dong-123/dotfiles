@@ -105,6 +105,7 @@ y() {
 
 # Git aliases
 alias ga='git add'
+alias gaa='git add -A'
 alias gap='ga --patch'
 alias gb='git branch'
 alias gba='gb --all'
