@@ -1,0 +1,78 @@
+[
+  {
+    "id": "Nebula",
+    "js": true,
+    "homepage": "https://github.com/JustADumbPrsn/Zen-Nebula",
+    "author": "JustADumbPrsn",
+    "name": "Nebula",
+    "description": "A beautiful theme made for Zen Browser :))",
+    "version": "3.1.1",
+    "createdAt": "2025-05-31",
+    "updatedAt": "2025-07-08",
+    "readme": "https://raw.githubusercontent.com/JustADumbPrsn/Zen-Nebula/main/README.md",
+    "image": "https://github.com/user-attachments/assets/e09859a4-ad66-483e-be67-b25d11d54298",
+    "modules": "Anoms12/advanced-tab-groups",
+    "tags": [
+      "content",
+      "chrome",
+      "minimal"
+    ],
+    "fork": [
+      "zen"
+    ],
+    "style": {
+      "content": "https://raw.githubusercontent.com/JustADumbPrsn/Zen-Nebula/main/userContent.css",
+      "chrome": "https://raw.githubusercontent.com/JustADumbPrsn/Zen-Nebula/main/userChrome.css"
+    },
+    "preferences": "https://raw.githubusercontent.com/JustADumbPrsn/Zen-Nebula/main/preferences.json",
+    "editable-files": [
+      "preferences.json",
+      "readme.md",
+      "chrome.css",
+      "userContent.css",
+      "userChrome.css",
+      {
+        "directory": "Nebula",
+        "contents": [
+          "Nebula-content.css",
+          "Nebula.css",
+          "Nebula-config.css",
+          {
+            "directory": "content",
+            "contents": [
+              "Better-pdf.css",
+              "Transparent-settings.css"
+            ]
+          },
+          {
+            "directory": "modules",
+            "contents": [
+              "General-UI.css",
+              "Pinned-extensions.css",
+              "URLbar.css",
+              "Topbar-buttons.css",
+              "Animations(tabs).css",
+              "Sound-icon.css",
+              "Tabfolders.css",
+              "Essentials.css",
+              "BetterPiP.css",
+              "Tabstyles.css",
+              "Sidebar.css",
+              "Toolbar.css",
+              "Miniplayer.css",
+              "Workspace-buttons.css"
+            ]
+          }
+        ]
+      },
+      {
+        "directory": "js",
+        "contents": [
+          "Nebula.uc.js"
+        ]
+      }
+    ],
+    "no-updates": false,
+    "enabled": true
+  }
+]

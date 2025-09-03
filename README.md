@@ -20,11 +20,9 @@
 ## Install Instructions
 
 ``` bash
-
 curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/main/install.sh
 chmod +x install.sh
 ./install.sh
-
 ```
 
 Paste this into your terminal, and follow the steps of the install
@@ -43,14 +41,13 @@ script.
     - SponsorBlock
     - Zen Internet
     - Stylus
-2.  For each of the extensions given, find the "Import" or "Restore"
+2.  Install [Sine mods](https://github.com/CosmoCreeper/Sine)
+3.  For each of the extensions given, find the "Import" or "Restore"
     button, and choose the corresponding file in ~/.config/zen
-3.  Copy the user.js in ~/.config/zen to your profile directory
-4.  Delete the user.js after starting the browser (settings will be
+4.  Copy the user.js in ~/.config/zen to your profile directory
+5.  Delete the user.js after starting the browser (settings will be
     remembered automatically)
-5.  Install [Sine mods](https://github.com/CosmoCreeper/Sine)
-6.  Install Nebula through Sine
-7.  Disable loading animation in Nebula settings
+6.  Disable loading animation in Nebula settings
 
 ### LeaderKey
 
