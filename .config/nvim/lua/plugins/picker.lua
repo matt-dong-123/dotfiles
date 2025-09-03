@@ -45,6 +45,13 @@ return {
             desc = 'In nvim config',
         },
         {
+            '<leader>fn',
+            function()
+                Snacks.picker.smart { cwd = '~/notes' }
+            end,
+            desc = 'In notes',
+        },
+        {
             '<leader>fh',
             function()
                 Snacks.picker.help()
