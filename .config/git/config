@@ -12,7 +12,7 @@
     whitespace = error
     preloadindex = true
 	editor = nvim
-    pager = delta --syntax-theme="tokyonight_moon"
+    pager = delta
 
 [advice]
     addEmptyPathSpec = false
@@ -117,6 +117,7 @@
     diffFilter = delta --color-only
 
 [delta]
+    syntax-theme = tokyonight_moon
     navigate = true
     dark = true
     side-by-side = true
