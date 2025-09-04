@@ -88,5 +88,12 @@ return {
             end,
             desc = 'Spelling',
         },
+        {
+            '<leader>fd',
+            function()
+                Snacks.picker.diagnostics()
+            end,
+            desc = 'Diagnostics (Project)',
+        },
     },
 }
