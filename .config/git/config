@@ -127,3 +127,5 @@
 
 [url "git@github.com:"]
     insteadOf = "gh:"
+[alias]
+	update-lazy-lock = !git add .config/nvim/lazy-lock.json && git commit -m \"chore: 🧹 update\"
