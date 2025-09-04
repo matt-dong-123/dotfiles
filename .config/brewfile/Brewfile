@@ -245,8 +245,6 @@ cask wpsoffice-cn
 cask zen
 cask zoom
 
-tap d12frosted/emacs-plus
-
 tap felixkratz/formulae
 brew borders
 brew sketchybar
@@ -259,5 +257,3 @@ cask aerospace
 
 tap rcmdnk/file
 brew brew-file
-
-tap theboredteam/boring-notch
