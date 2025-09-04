@@ -95,5 +95,12 @@ return {
             end,
             desc = 'Diagnostics (Project)',
         },
+        {
+            '<leader>fp',
+            function()
+                Snacks.picker.picker_actions()
+            end,
+            desc = 'Picker actions',
+        },
     },
 }
