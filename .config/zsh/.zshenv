@@ -13,6 +13,7 @@ export XDG_PROJECTS_DIR=${XDG_PROJECTS_DIR:-$HOME/Projects}
 # Envvars
 export EDITOR=nvim
 export WEZTERM_CONFIG_DIR="${XDG_CONFIG_HOME}/wezterm"
+export MANPAGER="nvim +Man!"
 
 # Fish-like dirs
 : ${__zsh_config_dir:=${ZDOTDIR:-${XDG_CONFIG_HOME:-$HOME/.config}/zsh}}
