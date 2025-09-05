@@ -130,6 +130,7 @@ brew lzo
 brew m4
 brew mad
 brew make
+brew markdownlint-cli
 brew marksman
 brew mbedtls
 brew mp3splt
