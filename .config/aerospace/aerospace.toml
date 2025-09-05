@@ -23,7 +23,6 @@ on-window-detected = [
     { if.app-id = "app.zen-browser.zen", run = "move-node-to-workspace browser" },
     { if.app-id = "com.github.wez.wezterm", run = "move-node-to-workspace coding" },
     { if.app-id = "com.jetbrains.intellij.ce", run = "move-node-to-workspace coding" },
-    { if.app-id = "com.tencent.QQMusicMac", run = "move-node-to-workspace music" },
     { if.app-id = "org.musescore.MuseScore", run = "move-node-to-workspace music" },
     { if.app-id = "com.steinberg.dorico5", run = "move-node-to-workspace music" },
     { if.app-id = "com.tencent.xinWeChat", run = "move-node-to-workspace social" },
