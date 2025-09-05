@@ -11,11 +11,6 @@
           "key" : "c",
           "type" : "application",
           "value" : "/Applications/Chromium.app"
-        },
-        {
-          "key" : "t",
-          "type" : "application",
-          "value" : "/Applications/Tor Browser.app"
         }
       ],
       "iconPath" : "globe",
