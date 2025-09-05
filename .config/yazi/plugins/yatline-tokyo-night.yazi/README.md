@@ -10,7 +10,7 @@ Tokyo Night for Yatline
 ## Installation
 
 ```sh
-ya pack -a wekauwau/yatline-tokyo-night
+ya pkg add wekauwau/yatline-tokyo-night
 ```
 
 ## Usage
