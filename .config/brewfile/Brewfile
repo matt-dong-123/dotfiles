@@ -253,6 +253,9 @@ brew sketchybar
 tap jackielii/tap
 brew skhd-zig
 
+tap mhaeuser/mhaeuser
+cask battery-toolkit
+
 tap nikitabobko/tap
 cask aerospace
 
