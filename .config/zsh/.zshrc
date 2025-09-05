@@ -24,7 +24,7 @@ zinit light Aloxaf/fzf-tab
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-syntax-highlighting
-zinit light jeffreytse/zsh-vi-mode
+zinit light matt-dong-123/zsh-vi-mode
 zinit light hlissner/zsh-autopair
 zinit snippet OMZP::sudo
 
@@ -63,7 +63,6 @@ zvm_after_init() {
     source <(fzf --zsh)
     source "${ZDOTDIR}/extensions/fzf-git.sh"
 }
-export KEYTIMEOUT=40    # For me to press fzf-git keybinds in time
 export FZF_DEFAULT_COMMAND="fd -H --strip-cwd-prefix -E .git"
 export FZF_CTRL_T_COMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd -t=d -H --strip-cwd-prefix -E .git"
