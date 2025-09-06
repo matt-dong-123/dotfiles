@@ -176,7 +176,6 @@ brew sdl2
 brew shared-mime-info
 brew shfmt
 brew simdjson
-brew sl
 brew snappy
 brew speex
 brew sqlite
