@@ -3,7 +3,7 @@ set -e
 
 fzf_args=(
     --preview 'brew info {}'
-    --border-label 'Install HomeBrew Packages'
+    --border-label ' 📦 brew install '
 
     --style full
     --prompt '❯ '
@@ -11,6 +11,7 @@ fzf_args=(
     --multi
     --layout reverse
     --border --padding 1,2
+    --border-label-pos 2
     --input-label ' Input '
     --bind 'result:transform-list-label:
         if [[ -z $FZF_QUERY ]]; then

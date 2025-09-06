@@ -4,7 +4,8 @@
 --multi
 --layout reverse
 --border --padding 1,2
---border-label ' FZF ' --input-label ' Input '
+--border-label '  FZF ' --input-label ' Input '
+--border-label-pos 2
 --preview '
   if [ -d {} ]; then
     eza --tree --color=always {} --icons | head -200
