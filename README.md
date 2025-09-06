@@ -32,7 +32,7 @@ script.
 
 ### Zen
 
-1.  Install the following addons:
+1. Install the following addons:
     - Brave Search: Private Search Engine
     - Vimium C
     - Dark Reader
@@ -41,19 +41,19 @@ script.
     - SponsorBlock
     - Zen Internet
     - Stylus
-2.  Install [Sine mods](https://github.com/CosmoCreeper/Sine)
-3.  For each of the extensions given, find the "Import" or "Restore"
+2. Install [Sine mods](https://github.com/CosmoCreeper/Sine)
+3. For each of the extensions given, find the "Import" or "Restore"
     button, and choose the corresponding file in ~/.config/zen
-4.  Copy the user.js in ~/.config/zen to your profile directory
-5.  Delete the user.js after starting the browser (settings will be
+4. Copy the user.js in ~/.config/zen to your profile directory
+5. Delete the user.js after starting the browser (settings will be
     remembered automatically)
-6.  Disable loading animation in Nebula settings
+6. Disable loading animation in Nebula settings
 
 ### LeaderKey
 
-1.  Go to the LeaderKey settings and go to the "Advanced" tab
-2.  Set the config directory to your ~/.config/leaderkey directory
-3.  Go back to "General" and set the shortcut to be "f13" by tapping the
+1. Go to the LeaderKey settings and go to the "Advanced" tab
+2. Set the config directory to your ~/.config/leaderkey directory
+3. Go back to "General" and set the shortcut to be "f13" by tapping the
     right command key
 
 ## Screenshots
