@@ -25,7 +25,7 @@ local one_thing = sbar.add("item", "right.one-thing", {
 })
 
 one_thing:subscribe("mouse.clicked", function()
-	sbar.exec('wezterm start --always-new-process nvim "$HOME' .. filepath_in_home .. '"', function()
+	sbar.exec('alacritty -e nvim "$HOME' .. filepath_in_home .. '"', function()
 		one_thing:set({
 			label = { string = read_one_thing() },
 		})
