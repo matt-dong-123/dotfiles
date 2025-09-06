@@ -4,6 +4,32 @@ set -e
 fzf_args=(
     --preview 'brew info {}'
     --border-label 'Install HomeBrew Packages'
+
+    --style full
+    --prompt '❯ '
+    --no-height
+    --multi
+    --layout reverse
+    --border --padding 1,2
+    --input-label ' Input '
+    --bind 'result:transform-list-label:
+        if [[ -z $FZF_QUERY ]]; then
+          echo " $FZF_MATCH_COUNT items "
+        else
+          echo " $FZF_MATCH_COUNT matches for [$FZF_QUERY] "
+        fi
+        '
+    --bind 'focus:transform-preview-label:[[ -n {} ]] && printf " Previewing [%s] " {}'
+    --bind 'ctrl-r:change-list-label( Reloading the list )+reload(sleep 2; git ls-files)'
+    --color 'border:#aaaaaa,label:#cccccc'
+    --color 'preview-border:#aa77cc,preview-label:#cc99ff'
+    --color 'list-border:#77aa77,list-label:#99cc99'
+    --color 'input-border:#dd6666,input-label:#ff8888'
+    --color 'header-border:#77aadd,header-label:#99ccff'
+    --color 'fg:#cccccc,bg:#1b1e2d,hl:#cc99ff'
+    --color 'fg+:#cccccc,bg+:#1b1e2d,hl+:#cc99ff'
+    --color 'info:#ff77bb,prompt:#ff8888,pointer:#99cc99'
+    --color 'marker:#99cc99,spinner:#99cc99,header:#99cc99'
 )
 
 pkg_names=$((brew formulae; brew casks) | fzf "${fzf_args[@]}")

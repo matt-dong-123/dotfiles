@@ -9,3 +9,6 @@ ctrl + shift + cmd - s : open -a "System Settings"
 ctrl + shift + cmd - w : open -a "WeChat"
 ctrl + shift + cmd - z : open -a "zoom.us"
 ctrl + shift + cmd - return : open -a "Wezterm"
+
+ctrl + shift + cmd - i : alacritty -e ~/scripts/homebrew-install.sh
+ctrl + shift + cmd - u : alacritty -e ~/scripts/homebrew-uninstall.sh

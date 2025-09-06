@@ -215,6 +215,7 @@ brew zoxide
 brew zstd
 
 tap homebrew/cask
+cask alacritty
 cask alt-tab
 cask baidunetdisk
 cask espanso
