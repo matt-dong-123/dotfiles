@@ -12,7 +12,7 @@
   "mini.nvim": { "branch": "main", "commit": "7bbafa4691147bc8b74a51986b957daca14c1876" },
   "noice.nvim": { "branch": "main", "commit": "0427460c2d7f673ad60eb02b35f5e9926cf67c59" },
   "nui.nvim": { "branch": "main", "commit": "de740991c12411b663994b2860f1a4fd0937c130" },
-  "nvim-lspconfig": { "branch": "master", "commit": "3e89e4973d784e1c966517e528b3a30395403fa7" },
+  "nvim-lspconfig": { "branch": "master", "commit": "7de54fc6cae5080a656329a9c2f2dff03d914cdd" },
   "nvim-surround": { "branch": "main", "commit": "a868c256c861044beb9794b4dd126480dcdfbdad" },
   "nvim-treesitter": { "branch": "main", "commit": "9addcdd01568a7c80333d5169dea0164ede5dd3d" },
   "oil.nvim": { "branch": "master", "commit": "07f80ad645895af849a597d1cac897059d89b686" },
