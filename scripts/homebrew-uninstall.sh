@@ -32,7 +32,7 @@ fzf_args=(
     --color 'marker:#99cc99,spinner:#99cc99,header:#99cc99'
 )
 
-pkg_names=$((brew leaves; brew list --cask -1)| fzf "${fzf_args[@]}")
+pkg_names=$(brew list -1| fzf "${fzf_args[@]}")
 
 if [[ -n "pkg_names" ]]; then
     echo "$pkg_names" | tr '\n' ' ' | xargs brew-file brew uninstall
