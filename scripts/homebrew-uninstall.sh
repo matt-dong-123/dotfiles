@@ -6,10 +6,10 @@ fzf_args=(
     --border-label 'Install HomeBrew Packages'
 )
 
-pkg_names=$((brew formulae; brew casks) | fzf "${fzf_args[@]}")
+pkg_names=$((brew leaves; brew list --cask -1)| fzf "${fzf_args[@]}")
 
 if [[ -n "pkg_names" ]]; then
-    echo "$pkg_names" | tr '\n' ' ' | xargs brew file install
+    echo "$pkg_names" | tr '\n' ' ' | xargs brew-file brew uninstall
     echo
     gum spin --spinner "dot" --title "Done! Press any key to close..." -- bash -c 'read -n 1 -s'
 fi
