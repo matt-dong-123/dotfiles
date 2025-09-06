@@ -80,6 +80,11 @@
           "key" : "k",
           "type" : "application",
           "value" : "/Applications/Karabiner-Elements.app"
+        },
+        {
+          "key" : "r",
+          "type" : "application",
+          "value" : "/System/Applications/Reminders.app"
         }
       ],
       "key" : "o",
