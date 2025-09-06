@@ -1,6 +1,7 @@
 --style full
 --prompt '❯ '
 --no-height
+--multi
 --layout reverse
 --border --padding 1,2
 --border-label ' FZF ' --input-label ' Input '
