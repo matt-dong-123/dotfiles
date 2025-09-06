@@ -1,6 +1,8 @@
 # My dotfiles (for MacOS)
+
 <!--toc:start-->
 - [My dotfiles (for MacOS)](#my-dotfiles-for-macos)
+  - [Features](#features)
   - [Prerequisites](#prerequisites)
   - [Install Instructions](#install-instructions)
   - [Post-install](#post-install)
@@ -8,6 +10,12 @@
     - [LeaderKey](#leaderkey)
   - [Screenshots](#screenshots)
 <!--toc:end-->
+
+## Features
+
+- Well-developed developer workflow
+- (WIP) Omarchy-like flexible shell-script based configuration
+
 ## Prerequisites
 
 > [!warning]
