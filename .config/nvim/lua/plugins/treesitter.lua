@@ -19,6 +19,7 @@ return {
             'markdown_inline',
             'toml',
             'regex',
+            'rust',
         },
         sync_install = false,
         highlight = {

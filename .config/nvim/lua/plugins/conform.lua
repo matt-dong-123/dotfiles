@@ -8,6 +8,7 @@ return {
             cpp = { 'cpplint' },
             c = { 'cpplint' },
             python = { 'black', 'isort', 'ruff' },
+            rust = { 'rustfmt' },
         },
         format_on_save = {
             timeout_ms = 500,

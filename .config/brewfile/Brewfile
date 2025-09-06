@@ -172,6 +172,7 @@ brew ripgrep
 brew rubberband
 brew ruff
 brew rust
+brew rust-analyzer
 brew sdl2
 brew shared-mime-info
 brew shfmt
