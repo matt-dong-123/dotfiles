@@ -21,7 +21,6 @@ fzf_args=(
         fi
         '
     --bind 'focus:transform-preview-label:[[ -n {} ]] && printf " Previewing [%s] " {}'
-    --bind 'ctrl-r:change-list-label( Reloading the list )+reload(sleep 2; git ls-files)'
     --color 'border:#aaaaaa,label:#cccccc'
     --color 'preview-border:#aa77cc,preview-label:#cc99ff'
     --color 'list-border:#77aa77,list-label:#99cc99'
