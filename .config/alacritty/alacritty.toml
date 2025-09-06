@@ -6,7 +6,7 @@ opacity = 0.75
 blur = true
 
 [font]
-normal = { family = "JetBrainsMono NF" }
+normal = { family = "Maple Mono NF CN" }
 size = 16
 
 # -----------------------------------------------------------------------------
