@@ -32,6 +32,7 @@ M.apply_to_config = function(config)
     }
     config.force_reverse_video_cursor = true
     config.max_fps = 120
+    config.prefer_egl = true
     config.window_close_confirmation = 'NeverPrompt'
     config.window_decorations = 'RESIZE | MACOS_FORCE_ENABLE_SHADOW'
     config.tab_max_width = 100
