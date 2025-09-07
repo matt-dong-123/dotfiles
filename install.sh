@@ -123,6 +123,8 @@ stow --ignore .DS_Store --ignore .git \
     --ignore README.org --ignore LINKSCAPE.md \
     --ignore install.sh --ignore ^/assets -t ~ .
 
+~/.config/omacase/install/theme.sh
+
 echo -e "${green}Setup complete!${no_color}"
 
 echo -e "${purple}Reboot for some settings to take effect? (Y/n) ${no_color}"
