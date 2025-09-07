@@ -38,12 +38,5 @@ use = "imsi32/yatline"
 rev = "88bd1c5"
 hash = "981acbe9b758b1af3a8154c932bb936d"
 
-[[plugin.deps]]
-use = "wekauwau/yatline-tokyo-night"
-rev = "b4a6310"
-hash = "215729a555fe5286f1eb35520963d08"
-
-[[flavor.deps]]
-use = "BennyOe/tokyo-night"
-rev = "5f56364"
-hash = "c0bf69ad2c44005892d586e9693993c6"
+[flavor]
+deps = []

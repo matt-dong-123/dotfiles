@@ -1,9 +1,7 @@
 require("full-border"):setup()
 require("git"):setup()
-local tokyo_night_theme = require("yatline-tokyo-night"):setup("moon")
 require("yatline"):setup({
 	show_background = true,
-	theme = tokyo_night_theme,
 	header_line = {
 		left = {
 			section_a = {
