@@ -3,7 +3,6 @@ local wezterm = require 'wezterm'
 local M = {}
 
 M.apply_to_config = function(config)
-    config.color_scheme = 'tokyonight_moon'
     config.font = wezterm.font 'Maple Mono NF CN'
     config.use_fancy_tab_bar = false
     config.window_background_opacity = 0.75
