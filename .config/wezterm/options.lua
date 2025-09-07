@@ -15,20 +15,6 @@ M.apply_to_config = function(config)
         top = 15,
         bottom = 0,
     }
-    config.colors = {
-        tab_bar = {
-            active_tab = {
-                bg_color = '#222436',
-                fg_color = '#c099ff',
-                intensity = 'Bold',
-                underline = 'Single',
-            },
-            inactive_tab = {
-                bg_color = '#222436',
-                fg_color = '#c8d3f5',
-            },
-        },
-    }
     config.force_reverse_video_cursor = true
     config.max_fps = 120
     config.prefer_egl = true

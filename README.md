@@ -19,9 +19,8 @@
 ## Prerequisites
 
 > [!warning]
-> Only MacOS Sequoia is tested. Not sure about how this would
-> behave on a beta or an older system. However, some components of this
-> config (e.g. nvim) will work on any system.
+> Theme-switching may not entirely work at the moment as the background can glitch (damn you apple!)
+> A reboot could do.
 
 - You pretty much don't need anything except curl.
 

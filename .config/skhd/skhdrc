@@ -12,3 +12,4 @@ ctrl + shift + cmd - return : open -a "Wezterm"
 
 ctrl + shift + cmd - i : alacritty -e ~/.config/omacase/bin/homebrew-install.sh
 ctrl + shift + cmd - u : alacritty -e ~/.config/omacase/bin/homebrew-uninstall.sh
+ctrl + shift + cmd - t : alacritty -e ~/.config/omacase/bin/theme-select.sh

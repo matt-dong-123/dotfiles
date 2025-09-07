@@ -3,6 +3,7 @@
 # Set initial theme
 mkdir -p ~/.config/omacase/current
 ln -snf ~/.config/omacase/themes/tokyo-night ~/.config/omacase/current/theme
+osascript -e 'tell application "System Events" to set picture of every desktop to "~/.config/omacase/themes/tokyo-night/backgrounds/default.png"'
 
 # Set specific app links for current theme
 ln -snf ~/.config/omacase/current/theme/neovim.lua ~/.config/nvim/lua/plugins/theme.lua

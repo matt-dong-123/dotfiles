@@ -1,0 +1,5 @@
+#!/bin/bash
+
+find ~/.config/omacase/themes/ -mindepth 1 -maxdepth 1 \( -type d -o -type l \) | sort | while read -r path; do
+    basename "$path" | perl -ne 'chomp; s/-/ /g; s/(\S+)/\u\L$1/g; print "$_\n"'
+done
