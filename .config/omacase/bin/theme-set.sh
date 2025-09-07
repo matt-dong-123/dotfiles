@@ -23,17 +23,6 @@ ln -nsf "$THEME_PATH" "$CURRENT_THEME_DIR"
 # Make sure wezterm updates
 touch ~/.config/wezterm/wezterm.lua
 
-WALLPAPER="$HOME/.config/omacase/current/theme/backgrounds/default.png"
-
-if [[ ! -f "$WALLPAPER" ]]; then
-  echo "WALLPAPER not found: $WALLPAPER" >&2
-  exit 1
-fi
-
-osascript <<EOF
-tell application "System Events"
-    set picture of every desktop to "$WALLPAPER"
-end tell
-EOF
+osascript -e 'tell application "System Events" to set picture of every desktop to "~/.config/omacase/current/theme/backgrounds/default.png"'
 
 brew services restart sketchybar
