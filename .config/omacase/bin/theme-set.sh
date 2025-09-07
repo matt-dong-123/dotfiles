@@ -5,7 +5,7 @@ if [[ -z "$1" ]]; then
   exit 1
 fi
 
-THEMES_DIR="$HOME/.config/omacase/themes/"
+THEMES_DIR="$HOME/.config/omacase/themes"
 CURRENT_THEME_DIR="$HOME/.config/omacase/current/theme"
 
 THEME_NAME=$(echo "$1" | perl -pe 's/ /-/g; $_ = lc $_')
