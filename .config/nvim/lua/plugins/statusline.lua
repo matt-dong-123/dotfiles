@@ -6,6 +6,9 @@ end
 return {
     'nvim-lualine/lualine.nvim',
     opts = {
+        options = {
+            disabled_filetypes = { statusline = { 'snacks_dashboard' } },
+        },
         sections = {
             lualine_a = { 'mode', macro },
             lualine_b = { 'filename' },
