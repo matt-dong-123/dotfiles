@@ -1,8 +1,8 @@
 [window]
-dimensions = { columns = 150, lines = 30 }
-position = { x = 400, y = 300 }
+dimensions = { columns = 125, lines = 25 }
+position = { x = 300, y = 300 }
 decorations = "None"
 
 [font]
 normal = { family = "Maple Mono NF CN" }
-size = 16
+size = 20
