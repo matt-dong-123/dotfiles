@@ -1,12 +1,1 @@
-#!/bin/bash
-
-options=(
-    style=square
-    active_color="gradient(top_left=0xff82aaff,bottom_right=0xffc099ff)"
-    inactive_color="0xff888888"
-    width=6.0
-    hidpi=on
-    blacklist="iPhone Mirroring"
-)
-
-borders "${options[@]}"
+/Users/matt/.config/omacase/current/theme/bordersrc

@@ -3,18 +3,18 @@ local wezterm = require("wezterm")
 local M = {}
 
 M.apply_to_config = function(config)
-	config.color_scheme = "Gruvbox dark, medium (base16)"
+	config.color_scheme = "Catppuccin Mocha"
 	config.colors = {
 		tab_bar = {
 			active_tab = {
-				bg_color = "#343434",
-				fg_color = "#d3869b",
+				bg_color = "#11111b",
+				fg_color = "#f5c2e7",
 				intensity = "Bold",
 				underline = "Single",
 			},
 			inactive_tab = {
-				bg_color = "#343434",
-				fg_color = "#ebdbb2",
+				bg_color = "#11111b",
+				fg_color = "#f5e0dc",
 			},
 		},
 	}
@@ -23,12 +23,12 @@ M.apply_to_config = function(config)
 		if window:leader_is_active() then
 			prefix = " 󰠠 " .. wezterm.mux.get_active_workspace() .. " "
 			window:set_left_status(wezterm.format({
-				{ Foreground = { Color = "#cc241d" } },
+				{ Foreground = { Color = "#f38ba8" } },
 				{ Text = prefix },
 			}))
 		else
 			window:set_left_status(wezterm.format({
-				{ Foreground = { Color = "#8ec07c" } },
+				{ Foreground = { Color = "#74c7ec" } },
 				{ Text = prefix },
 			}))
 		end

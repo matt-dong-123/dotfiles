@@ -9,6 +9,6 @@ osascript -e 'tell application "System Events" to set picture of every desktop t
 ln -snf ~/.config/omacase/current/theme/neovim.lua ~/.config/nvim/lua/plugins/theme.lua
 ln -snf ~/.config/omacase/current/theme/wezterm.lua ~/.config/wezterm/theme.lua
 ln -snf ~/.config/omacase/current/theme/sketchybar.lua ~/.config/sketchybar/colors.lua
-
-mkdir -p ~/.config/btop/themes
+ln -snf ~/.config/omacase/current/theme/bordersrc ~/.config/borders/bordersrc
+ln -snf ~/.config/omacase/current/theme/lazygit.yml ~/.config/lazygit/config.yml
 ln -snf ~/.config/omacase/current/theme/btop.theme ~/.config/btop/themes/current.theme

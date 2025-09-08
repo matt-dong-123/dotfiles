@@ -26,4 +26,4 @@ touch ~/.config/wezterm/wezterm.lua
 wallpaper=$(realpath ~/.config/omacase/current/theme/backgrounds/default.png)
 osascript -e "tell application \"System Events\" to set picture of every desktop to \"$wallpaper\""
 
-brew services restart sketchybar
+brew services restart sketchybar borders
