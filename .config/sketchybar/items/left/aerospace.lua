@@ -16,7 +16,7 @@ local function parse_cmd_to_table(s)
 end
 
 local spaceConfigs = {
-	["browser"] = { icon = icons.browser, name = "Browser", color = colors.yellow },
+	["browser"] = { icon = icons.browser, name = "Browser", color = colors.blue },
 	["coding"] = { icon = icons.terminal, name = "Coding", color = colors.orange },
 	["music"] = { icon = icons.music, name = "Music", color = colors.magenta },
 	["social"] = { icon = icons.social, name = "Social", color = colors.green },
