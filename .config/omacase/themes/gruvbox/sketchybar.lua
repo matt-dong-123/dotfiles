@@ -5,12 +5,12 @@ return {
 	green = 0xff8ec07c,
 	blue = 0xff83a598,
 	yellow = 0xfffabd2f,
-	orange = 0xffd79921,
+	orange = 0xfffe8019,
 	magenta = 0xffd3869b,
 	grey = 0xffa89984,
 	transparent = 0x00000000,
 
-	default = 0xffd3869b,
+	default = 0xff83a598,
 
 	bar = {
 		bg = 0xff282828,
