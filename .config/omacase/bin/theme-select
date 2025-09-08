@@ -31,8 +31,8 @@ fzf_args=(
     --color 'marker:#99cc99,spinner:#99cc99,header:#99cc99'
 )
 
-theme=$(~/.config/omacase/bin/theme-list.sh | fzf "${fzf_args[@]}")
+theme=$(~/.config/omacase/bin/theme-list | fzf "${fzf_args[@]}")
 
 if [[ -n "$theme" ]]; then
-    ~/.config/omacase/bin/theme-set.sh "$theme"
+    ~/.config/omacase/bin/theme-set "$theme"
 fi
