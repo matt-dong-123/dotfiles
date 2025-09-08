@@ -34,9 +34,9 @@ rev = "0742fff"
 hash = "2bd799b42b8e42b8ef100310be71f8d1"
 
 [[plugin.deps]]
-use = "imsi32/yatline"
-rev = "88bd1c5"
-hash = "981acbe9b758b1af3a8154c932bb936d"
+use = "yazi-rs/plugins:no-status"
+rev = "d7588f6"
+hash = "3e023d31f29201efdac2a6ae35fedb78"
 
 [flavor]
 deps = []
