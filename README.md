@@ -47,6 +47,7 @@ script.
     - DeArrow
     - SponsorBlock
     - Zen Internet
+    - Stylus
 2. Install [Sine mods](https://github.com/CosmoCreeper/Sine)
 3. For each of the extensions given, find the "Import" or "Restore"
     button, and choose the corresponding file in ~/.config/zen
