@@ -12,3 +12,4 @@ ln -snf ~/.config/omacase/current/theme/sketchybar.lua ~/.config/sketchybar/colo
 ln -snf ~/.config/omacase/current/theme/bordersrc ~/.config/borders/bordersrc
 ln -snf ~/.config/omacase/current/theme/lazygit.yml ~/.config/lazygit/config.yml
 ln -snf ~/.config/omacase/current/theme/btop.theme ~/.config/btop/themes/current.theme
+ln -snf ~/.config/omacase/current/theme/bat ~/.config/bat/config
