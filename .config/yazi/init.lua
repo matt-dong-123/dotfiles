@@ -1,3 +1,1 @@
-require("full-border"):setup()
-require("git"):setup()
-require("no-status"):setup()
+/Users/matt/.config/omacase/current/theme/yazi.lua

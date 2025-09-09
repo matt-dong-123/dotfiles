@@ -38,5 +38,47 @@ use = "yazi-rs/plugins:no-status"
 rev = "d7588f6"
 hash = "3e023d31f29201efdac2a6ae35fedb78"
 
-[flavor]
-deps = []
+[[plugin.deps]]
+use = "imsi32/yatline"
+rev = "88bd1c5"
+hash = "981acbe9b758b1af3a8154c932bb936d"
+
+[[plugin.deps]]
+use = "imsi32/yatline-gruvbox"
+rev = "1ce46eb"
+hash = "1a087e707ba0512106408144eeb3e50a"
+
+[[plugin.deps]]
+use = "imsi32/yatline-catppuccin"
+rev = "8cc4773"
+hash = "fd03fb015a28040bca0c0f9a8fe6fd8d"
+
+[[plugin.deps]]
+use = "wekauwau/yatline-tokyo-night"
+rev = "b4a6310"
+hash = "215729a555fe5286f1eb35520963d08"
+
+[[plugin.deps]]
+use = "wakaka6/yatline-dracula"
+rev = "598ea29"
+hash = "303f8ca9084dbdd15c640b1f7388f54d"
+
+[[flavor.deps]]
+use = "BennyOe/tokyo-night"
+rev = "5f56364"
+hash = "c0bf69ad2c44005892d586e9693993c6"
+
+[[flavor.deps]]
+use = "bennyyip/gruvbox-dark"
+rev = "e5e1aef"
+hash = "eb88137cf13a796225254344bf6def2c"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-mocha"
+rev = "3e6da98"
+hash = "deff42490f77b222e9d3a84dc16a76c5"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:dracula"
+rev = "3e6da98"
+hash = "eefb18cb038121aed2b6eeaacea5a63e"
