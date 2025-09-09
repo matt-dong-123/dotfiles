@@ -23,7 +23,7 @@ require("yatline"):setup({
 				{ type = "string", custom = false, name = "tab_mode" },
 			},
 			section_b = {
-				{ type = "string", custom = false, name = "hovered_name" },
+				{ type = "string", custom = false, name = "hovered_path" },
 			},
 			section_c = {
 				{ type = "coloreds", custom = false, name = "count" },
