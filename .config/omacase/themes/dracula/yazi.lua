@@ -2,9 +2,9 @@ require("full-border"):setup()
 require("git"):setup()
 require("yatline"):setup({
 	theme = require("yatline-dracula"):setup(),
-	section_separator = { open = "", close = "" },
-	part_separator = { open = "", close = "" },
-	inverse_separator = { open = "", close = "" },
+	section_separator = { open = "", close = "" },
+	part_separator = { open = "", close = "" },
+	inverse_separator = { open = "", close = "" },
 
 	show_background = false,
 	header_line = {
@@ -27,7 +27,7 @@ require("yatline"):setup({
 				{ type = "string", custom = false, name = "tab_mode" },
 			},
 			section_b = {
-				{ type = "string", custom = false, name = "hovered_path" },
+				{ type = "string", custom = false, name = "hovered_name" },
 			},
 			section_c = {
 				{ type = "coloreds", custom = false, name = "count" },
