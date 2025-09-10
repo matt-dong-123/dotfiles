@@ -25,8 +25,6 @@ fzf_args=(
     --color 'list-border:#77aa77,list-label:#99cc99'
     --color 'input-border:#dd6666,input-label:#ff8888'
     --color 'header-border:#77aadd,header-label:#99ccff'
-    --color 'fg:#cccccc,bg:#1b1e2d,hl:#cc99ff'
-    --color 'fg+:#cccccc,bg+:#1b1e2d,hl+:#cc99ff'
     --color 'info:#ff77bb,prompt:#ff8888,pointer:#99cc99'
     --color 'marker:#99cc99,spinner:#99cc99,header:#99cc99'
 )

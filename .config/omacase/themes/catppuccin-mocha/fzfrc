@@ -1,0 +1,32 @@
+--style full
+--prompt '❯ '
+--no-height
+--multi
+--layout reverse
+--border --padding 1,2
+--border-label '  FZF ' --input-label ' Input '
+--border-label-pos 2
+--preview '
+  if [ -d {} ]; then
+    eza --tree --color=always {} --icons | head -200
+  else
+    bat -n --color=always --line-range :500 {}
+  fi
+'
+--bind 'result:transform-list-label:
+    if [[ -z $FZF_QUERY ]]; then
+      echo " $FZF_MATCH_COUNT items "
+    else
+      echo " $FZF_MATCH_COUNT matches for [$FZF_QUERY] "
+    fi
+    '
+--bind 'focus:transform-preview-label:[[ -n {} ]] && printf " Previewing [%s] " {}'
+--color 'border:#eaa377,label:#fab387'
+--color 'preview-border:#bb96e7,preview-label:#cba6f7'
+--color 'list-border:#96d391,list-label:#a6e3a1'
+--color 'input-border:#e37b98,input-label:#f38ba8'
+--color 'header-border:#79a4ea,header-label:#89b4fa'
+--color=fg:#f5e0dc,bg:#1e1e2e,hl:#89b4fa
+--color=fg+:#f5e0dc,bg+:#1e1e2e,hl+:#a6e3a1
+--color=info:#a6adc8,prompt:#f38ba8,pointer:#a6e3a1
+--color=marker:#a6e3a1,spinner:#f38ba8,header:#a6e3a1

@@ -15,3 +15,4 @@ ln -snf ~/.config/omacase/current/theme/btop.theme ~/.config/btop/themes/current
 ln -snf ~/.config/omacase/current/theme/bat ~/.config/bat/config
 ln -snf ~/.config/omacase/current/theme/yazi.toml ~/.config/yazi/theme.toml
 ln -snf ~/.config/omacase/current/theme/yazi.lua ~/.config/yazi/init.lua
+ln -snf ~/.config/omacase/current/theme/fzfrc ~/.config/fzf/fzfrc
