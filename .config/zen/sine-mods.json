@@ -6,12 +6,11 @@
     "author": "JustADumbPrsn",
     "name": "Nebula",
     "description": "A beautiful theme made for Zen Browser :))",
-    "version": "3.1.1",
+    "version": "3.2",
     "createdAt": "2025-05-31",
-    "updatedAt": "2025-07-08",
+    "updatedAt": "2025-09-06",
     "readme": "https://raw.githubusercontent.com/JustADumbPrsn/Zen-Nebula/main/README.md",
-    "image": "https://github.com/user-attachments/assets/e09859a4-ad66-483e-be67-b25d11d54298",
-    "modules": "Anoms12/advanced-tab-groups",
+    "image": "https://i.ibb.co/Lqk4krw/Screenshot-2025-09-03-232353.png",
     "tags": [
       "content",
       "chrome",
@@ -20,55 +19,105 @@
     "fork": [
       "zen"
     ],
-    "style": {
-      "content": "https://raw.githubusercontent.com/JustADumbPrsn/Zen-Nebula/main/userContent.css",
-      "chrome": "https://raw.githubusercontent.com/JustADumbPrsn/Zen-Nebula/main/userChrome.css"
-    },
     "preferences": "https://raw.githubusercontent.com/JustADumbPrsn/Zen-Nebula/main/preferences.json",
+    "style": {
+      "chrome": "https://raw.githubusercontent.com/JustADumbPrsn/Zen-Nebula/main/userChrome.css",
+      "content": "https://raw.githubusercontent.com/JustADumbPrsn/Zen-Nebula/main/userContent.css"
+    },
     "editable-files": [
       "preferences.json",
       "readme.md",
-      "chrome.css",
-      "userContent.css",
-      "userChrome.css",
-      {
-        "directory": "Nebula",
-        "contents": [
-          "Nebula-content.css",
-          "Nebula.css",
-          "Nebula-config.css",
-          {
-            "directory": "content",
-            "contents": [
-              "Better-pdf.css",
-              "Transparent-settings.css"
-            ]
-          },
-          {
-            "directory": "modules",
-            "contents": [
-              "General-UI.css",
-              "Pinned-extensions.css",
-              "URLbar.css",
-              "Topbar-buttons.css",
-              "Animations(tabs).css",
-              "Sound-icon.css",
-              "Tabfolders.css",
-              "Essentials.css",
-              "BetterPiP.css",
-              "Tabstyles.css",
-              "Sidebar.css",
-              "Toolbar.css",
-              "Miniplayer.css",
-              "Workspace-buttons.css"
-            ]
-          }
-        ]
-      },
       {
         "directory": "js",
         "contents": [
           "Nebula.uc.js"
+        ]
+      },
+      "chrome.css",
+      "userChrome.css",
+      "userContent.css",
+      {
+        "directory": "Nebula",
+        "contents": [
+          "Nebula.css",
+          "Nebula-config.css",
+          "Nebula-content.css",
+          {
+            "directory": "modules",
+            "contents": [
+              "Essentials.css",
+              "Sound-icon.css",
+              "Toolbar.css",
+              "URLbar.css",
+              "Topbar-buttons.css",
+              "Tabfolders.css",
+              "Sidebar.css",
+              "General-UI.css",
+              "Tabstyles.css",
+              "Pinned-extensions.css",
+              "BetterPiP.css",
+              "Workspace-buttons.css",
+              "Miniplayer.css",
+              "Animations(tabs).css"
+            ]
+          },
+          {
+            "directory": "content",
+            "contents": [
+              "Transparent-settings.css",
+              "Better-pdf.css"
+            ]
+          }
+        ]
+      }
+    ],
+    "no-updates": false,
+    "enabled": true
+  },
+  {
+    "id": "zzzAltover",
+    "name": "Altover Addon",
+    "description": "Altover Add-On for Nebula theme. Bundle install for Altover & Nebula themes.",
+    "homepage": "https://github.com/allecsc/Altover",
+    "preferences": "https://raw.githubusercontent.com/allecsc/Altover/refs/heads/main/preferences.json",
+    "style": "https://raw.githubusercontent.com/allecsc/Altover/refs/heads/main/userChrome.css",
+    "readme": "https://raw.githubusercontent.com/allecsc/Altover/refs/heads/main/README.md",
+    "image": "https://github.com/allecsc/Altover/blob/main/image.png",
+    "author": "celalalt",
+    "version": "1.3",
+    "tags": [
+      "sine",
+      "addon",
+      "theme",
+      "nebula",
+      "minimal",
+      "glass"
+    ],
+    "modules": "JustADumbPrsn/Zen-Nebula",
+    "createdAt": "2025-06-19",
+    "updatedAt": "2025-06-29",
+    "fork": [
+      "zen"
+    ],
+    "editable-files": [
+      "preferences.json",
+      "readme.md",
+      "chrome.css",
+      {
+        "directory": "Altover",
+        "contents": [
+          "Nebula_override.css",
+          "Altover.css",
+          {
+            "directory": "tweaks",
+            "contents": [
+              "Context-Menu.css",
+              "Essentials.css",
+              "Glow-Effect-Icon.css",
+              "Containers.css",
+              "IconTweaker.css"
+            ]
+          }
         ]
       }
     ],
