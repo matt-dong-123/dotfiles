@@ -102,8 +102,11 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int "2"
 # Disable confirmation when closing unsaved windows (will autosave)
 defaults write NSGlobalDomain "NSCloseAlwaysConfirmsChanges" -bool "true"
 
-echo -e "${blue}This will enable sudo via Touch ID."
-sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+echo -e "${blue}This will enable sudo via Touch ID. (Y/n)"
+read -p "" touchid
+if [ "$touchid" != "n" ] && [ "$touchid" != "N" ]; then
+    sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+fi
 
 echo -e "${red}Disable quarantine and gatekeeper? (y/N) ${no_color}"
 read -p "" quarantine
@@ -118,10 +121,7 @@ killall Dock
 
 # Stow dotfiles packages
 echo -e "${green}Stowing dotfiles...${no_color}"
-stow --ignore .DS_Store --ignore .git \
-    --ignore .gitignore --ignore .gitmodules \
-    --ignore README.org --ignore LINKSCAPE.md \
-    --ignore install.sh --ignore ^/assets -t ~ .
+stow -t ~ .
 
 ~/.config/omacase/install/theme.sh
 
