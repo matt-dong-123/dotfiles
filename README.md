@@ -13,16 +13,12 @@
 
 ## Features
 
-- Well-developed developer workflow
-- (WIP) Omarchy-like flexible shell-script based configuration
+- Omarchy-like flexible shell-script-based actions for common commands
+- Omarchy-like theme switching
 
 ## Prerequisites
 
-> [!warning]
-> Theme-switching may not entirely work at the moment as the background can glitch (damn you apple!)
-> A reboot could do.
-
-- You pretty much don't need anything except curl.
+- curl (Comes with macos by default)
 
 ## Install Instructions
 
@@ -44,7 +40,6 @@ script.
     - Vimium C
     - Dark Reader
     - Return YouTube Dislike
-    - DeArrow
     - SponsorBlock
     - Zen Internet
     - Stylus
