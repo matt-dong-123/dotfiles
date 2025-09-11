@@ -148,6 +148,7 @@ brew open-mpi
 brew opencore-amr
 brew openexr
 brew openjpeg
+brew openjph
 brew openssl@3
 brew opus
 brew opusfile
@@ -226,7 +227,6 @@ cask font-sketchybar-app-font
 cask font-symbols-only-nerd-font
 cask iina
 cask input-source-pro
-cask intellij-idea-ce
 cask karabiner-elements
 cask leader-key
 cask mitmproxy
