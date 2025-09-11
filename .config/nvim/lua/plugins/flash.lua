@@ -3,6 +3,7 @@ return {
     event = 'VeryLazy',
     opts = {
         label = { style = 'inline' },
+        modes = { char = { enabled = false } },
     },
     keys = {
         {
