@@ -1,0 +1,1 @@
+/Users/matt/.config/omacase/current/theme/yazi.lua

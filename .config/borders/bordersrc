@@ -1,1 +1,13 @@
-/Users/matt/.config/omacase/current/theme/bordersrc
+#!/bin/bash
+
+source ~/.config/omacase/current/theme/borders
+
+options=(
+    active_color="$ACTIVE_COLOR"
+    inactive_color="$INACTIVE_COLOR"
+    width=6.0
+    hidpi=on
+    blacklist="iPhone Mirroring"
+)
+
+borders "${options[@]}"
