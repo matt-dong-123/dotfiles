@@ -5,6 +5,7 @@ gui:
   commit:
     signOff: false
   editor: "nvim"
+  nerdFontsVersion: "3" 
   theme:
     activeBorderColor:
       - "#FF9E64"
@@ -42,5 +43,3 @@ gui:
   
     defaultFgColor:
       - "#C0CAF5"
-
-  nerdFontsVersion: "3" 
