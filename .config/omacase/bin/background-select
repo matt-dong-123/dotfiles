@@ -1,0 +1,39 @@
+#!/bin/bash
+set -e
+
+wallpaper=$(realpath ~/.config/omacase/current/theme/backgrounds)
+fzf_args=(
+    --preview "~/.config/zsh/extensions/fzf-preview.sh $wallpaper/{}"
+    --border-label '  Backgrounds '
+
+    --style full
+    --prompt '❯ '
+    --no-height
+    --layout reverse
+    --border --padding 1,2
+    --border-label-pos 2
+    --input-label ' Input '
+    --bind 'result:transform-list-label:
+        if [[ -z $FZF_QUERY ]]; then
+          echo " $FZF_MATCH_COUNT items "
+        else
+          echo " $FZF_MATCH_COUNT matches for [$FZF_QUERY] "
+        fi
+        '
+    --bind 'focus:transform-preview-label:[[ -n {} ]] && printf " Previewing [%s] " {}'
+    --color 'border:#aaaaaa,label:#cccccc'
+    --color 'preview-border:#aa77cc,preview-label:#cc99ff'
+    --color 'list-border:#77aa77,list-label:#99cc99'
+    --color 'input-border:#dd6666,input-label:#ff8888'
+    --color 'header-border:#77aadd,header-label:#99ccff'
+    --color 'info:#ff77bb,prompt:#ff8888,pointer:#99cc99'
+    --color 'marker:#99cc99,spinner:#99cc99,header:#99cc99'
+)
+
+selection=$(ls -1 $wallpaper | fzf "${fzf_args[@]}")
+
+if [[ -n "$selection" ]]; then
+    osascript -e "tell application \"System Events\" to set picture of every desktop to POSIX file \"$wallpaper/$selection\""
+    echo
+    gum spin --spinner "dot" --title "Done! Press any key to close..." -- bash -c 'read -n 1 -s'
+fi
