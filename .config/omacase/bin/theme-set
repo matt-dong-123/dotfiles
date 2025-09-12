@@ -11,7 +11,6 @@ CURRENT_THEME_DIR="$HOME/.config/omacase/current/theme"
 THEME_NAME=$(echo "$1" | perl -pe 's/ /-/g; $_ = lc $_')
 THEME_PATH="$THEMES_DIR/$THEME_NAME"
 
-# Check if the theme entered exists
 if [[ ! -d "$THEME_PATH" ]]; then
   echo "Theme '$THEME_NAME' does not exist in $THEMES_DIR" >&2
   exit 2
@@ -19,6 +18,8 @@ fi
 
 # Update theme symlinks
 ln -nsf "$THEME_PATH" "$CURRENT_THEME_DIR"
+
+cat ~/.config/fzf/fzf-options ~/.config/omacase/current/theme/fzf-colors > ~/.config/fzf/fzfrc
 
 # Make sure wezterm updates
 touch ~/.config/wezterm/wezterm.lua
