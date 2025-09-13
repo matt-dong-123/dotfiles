@@ -20,6 +20,14 @@ $character"""
 
 [directory]
 style = "blue"
+truncation_length = 0
+truncate_to_repo = false
+
+[directory.substitutions]
+'Documents' = '󰈙'
+'Downloads' = ' '
+'Music' = ' '
+'Pictures' = ' '
 
 [character]
 success_symbol = "[❯](purple)"
