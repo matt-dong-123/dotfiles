@@ -117,10 +117,12 @@
     diffFilter = delta --color-only
 
 [delta]
-    syntax-theme = tokyonight_moon
     navigate = true
     dark = true
     side-by-side = true
+
+[include]
+    path = ~/.config/git/delta-colors
 
 [merge]
     conflictStyle = zdiff3

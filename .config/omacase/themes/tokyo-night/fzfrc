@@ -1,0 +1,26 @@
+--style full
+--prompt '❯ '
+--no-height
+--multi
+--layout reverse
+--border --padding 1,2
+--border-label '  FZF ' --input-label ' Input '
+--border-label-pos 2
+--preview '~/.config/zsh/extensions/fzf-preview.sh {}'
+--bind 'result:transform-list-label:
+    if [[ -z $FZF_QUERY ]]; then
+      echo " $FZF_MATCH_COUNT items "
+    else
+      echo " $FZF_MATCH_COUNT matches for [$FZF_QUERY] "
+    fi
+    '
+--bind 'focus:transform-preview-label:[[ -n {} ]] && printf " Previewing [%s] " {}'
+--color 'border:#729aef,label:#82aaff'
+--color 'preview-border:#b089ef,preview-label:#c099ff'
+--color 'list-border:#b3d87d,list-label:#c3e88d'
+--color 'input-border:#ef656f,input-label:#ff757f'
+--color 'header-border:#ef865c,header-label:#ff966c'
+--color=fg:#c8d3f5,bg:#222436,hl:#82aaff 
+--color=fg+:#c8d3f5,bg+:#222436,hl+:#4fd6be 
+--color=info:#828bb8,prompt:#ec7279,pointer:#4fd6be
+--color=marker:#c3e88d,spinner:#ec7279,header:#4fd6be
