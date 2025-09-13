@@ -65,3 +65,5 @@ script.
 ![Wezterm](./assets/wezterm.png)
 ![Yazi](./assets/yazi.png)
 ![Zen Browser](./assets/zen.png)
+![Brew](./assets/brew.png)
+![Theme-switching](./assets/theme-switching.png)
