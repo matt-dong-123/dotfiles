@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # Zinit setup
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
@@ -19,7 +12,7 @@ autoload -U compinit && compinit
 
 # Plugins
 zinit ice depth=1
-zinit light romkatv/powerlevel10k
+zinit light olets/zsh-transient-prompt
 zinit light Aloxaf/fzf-tab
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
@@ -58,6 +51,12 @@ setopt globdots extendedglob
 setopt histignoredups histignorealldups histsavenodups histfindnodups histignorespace 
 setopt sharehistory incappendhistory extendedhistory
 
+# Starship
+export STARSHIP_CONFIG=${ZDOTDIR}/starship.toml
+TRANSIENT_PROMPT_PROMPT='$(starship prompt --terminal-width="$COLUMNS" --keymap="${KEYMAP:-}" --status="$STARSHIP_CMD_STATUS" --pipestatus="${STARSHIP_PIPE_STATUS[*]}" --cmd-duration="${STARSHIP_DURATION:-}" --jobs="$STARSHIP_JOBS_COUNT")'
+TRANSIENT_PROMPT_RPROMPT='$(starship prompt --right --terminal-width="$COLUMNS" --keymap="${KEYMAP:-}" --status="$STARSHIP_CMD_STATUS" --pipestatus="${STARSHIP_PIPE_STATUS[*]}" --cmd-duration="${STARSHIP_DURATION:-}" --jobs="$STARSHIP_JOBS_COUNT")'
+TRANSIENT_PROMPT_TRANSIENT_PROMPT='$(starship module character)'
+
 # FZF Configuration
 zvm_after_init() {
     source <(fzf --zsh)
@@ -78,7 +77,7 @@ _fzf_compgen_dir() {
 }
 
 
-# Zoxide Initialization (replace cd)
+# Zoxide
 eval "$(zoxide init --cmd cd zsh)"
 
 # Aliases and functions
@@ -121,5 +120,4 @@ alias gr='git reset'
 alias gs='git status --short'
 alias gu='git pull' # mnemonic for `git update`
 
-# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
-[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+eval "$(starship init zsh)"
