@@ -1,7 +1,7 @@
 [window]
 dimensions = { columns = 125, lines = 25 }
 position = { x = 300, y = 300 }
-decorations = "None"
+decorations = "buttonless"
 
 [font]
 normal = { family = "Maple Mono NF CN" }
