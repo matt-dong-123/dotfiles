@@ -60,27 +60,8 @@ script.
 
 ## Screenshots
 
-<figure>
-<img src="./assets/wezterm.png" />
-<figcaption>Wezterm</figcaption>
-</figure>
-
-<figure>
-<img src="./assets/lazygit.png" />
-<figcaption>Lazygit</figcaption>
-</figure>
-
-<figure>
-<img src="./assets/neovim.png" />
-<figcaption>Neovim</figcaption>
-</figure>
-
-<figure>
-<img src="./assets/yazi.png" />
-<figcaption>Yazi</figcaption>
-</figure>
-
-<figure>
-<img src="./assets/zen.png" />
-<figcaption>Zen Browser</figcaption>
-</figure>
+![Neovim](./assets/neovim.png)
+![Lazygit](./assets/lazygit.png)
+![Wezterm](./assets/wezterm.png)
+![Yazi](./assets/yazi.png)
+![Zen Browser](./assets/zen.png)
