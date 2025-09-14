@@ -1,35 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-fzf_args=(
-    --preview ''
-    --border-label '  Themes '
-
-    --style full
-    --prompt '❯ '
-    --no-height
-    --layout reverse
-    --border --padding 1,2
-    --border-label-pos 2
-    --input-label ' Input '
-    --bind 'result:transform-list-label:
-        if [[ -z $FZF_QUERY ]]; then
-          echo " $FZF_MATCH_COUNT items "
-        else
-          echo " $FZF_MATCH_COUNT matches for [$FZF_QUERY] "
-        fi
-        '
-    --bind 'focus:transform-preview-label:[[ -n {} ]] && printf " Previewing [%s] " {}'
-    --color 'border:bright-black,label:bright-white'
-    --color 'preview-border:magenta,preview-label:bright-magenta'
-    --color 'list-border:green,list-label:bright-green'
-    --color 'input-border:red,input-label:bright-red'
-    --color 'header-border:blue,header-label:bright-blue'
-    --color 'info:bright-black,prompt:bright-red,pointer:bright-green'
-    --color 'marker:bright-green,spinner:bright-green,header:bright-green'
-)
-
-theme=$(~/.config/omacase/bin/theme-list | fzf "${fzf_args[@]}")
+theme=$(~/.config/omacase/bin/theme-list | gum filter)
 
 if [[ -n "$theme" ]]; then
     ~/.config/omacase/bin/theme-set "$theme"
