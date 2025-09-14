@@ -3,7 +3,7 @@ set -e
 
 # Function for the Packages menu
 packages_menu() {
-    CHOICE=$(gum choose "Install" "Uninstall")
+    CHOICE=$(gum filter "Install" "Uninstall")
 
     case $CHOICE in
         "Install")
@@ -27,7 +27,7 @@ backgrounds_menu() {
 
 # Main menu
 while true; do
-    CHOICE=$(gum choose "Packages" "Themes" "Backgrounds")
+    CHOICE=$(gum filter "Packages" "Themes" "Backgrounds")
 
     case $CHOICE in
         "Packages")
