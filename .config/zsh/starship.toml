@@ -5,21 +5,21 @@ $directory\
 $git_branch\
 $git_state\
 $git_status\
+$git_metrics\
 $fill\
-$python\
-$lua\
-$nodejs\
-$golang\
-$haskell\
-$rust\
-$ruby\
-$package\
 $cmd_duration\
+$lua\
+$rust\
 $line_break\
+$python\
 $character"""
+
+[fill]
+symbol = " "
 
 [directory]
 style = "blue"
+read_only = " "
 truncation_length = 0
 truncate_to_repo = false
 
@@ -34,13 +34,34 @@ success_symbol = "[❯](purple)"
 error_symbol = "[❯](red)"
 vimcmd_symbol = "[❮](purple)"
 
+[git_branch]
+symbol = " "
+format = "[$symbol$branch]($style) "
+style = "bright-black"
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+style = "cyan"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "bright-black"
+
+[git_metrics]
+disabled = false
+
 [cmd_duration]
-format = "[$duration]($style) "
+format = "[$duration]($style)"
 style = "yellow"
 
 [python]
 format = "[$virtualenv]($style) "
 style = "bright-black"
 
-[fill]
-symbol = ' '
+[rust]
+format = "[$symbol]($style)"
+symbol = ' rust'
+
+[lua]
+format = "[$symbol]($style)"
+symbol = ' lua'
