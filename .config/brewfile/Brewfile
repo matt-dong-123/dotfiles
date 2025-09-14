@@ -119,7 +119,6 @@ brew libxext
 brew libxrender
 brew little-cms2
 brew llvm
-brew llvm@20
 brew lpeg
 brew lua
 brew luajit
