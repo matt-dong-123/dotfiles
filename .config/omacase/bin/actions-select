@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+set -e
+
+# Function for the Packages menu
+packages_menu() {
+    CHOICE=$(gum choose "Install" "Uninstall")
+
+    case $CHOICE in
+        "Install")
+            ~/.config/omacase/bin/homebrew-install
+            ;;
+        "Uninstall")
+            ~/.config/omacase/bin/homebrew-uninstall
+            ;;
+    esac
+}
+
+# Function for the Themes menu
+themes_menu() {
+    ~/.config/omacase/bin/theme-select
+}
+
+# Function for the Backgrounds menu
+backgrounds_menu() {
+    ~/.config/omacase/bin/background-select
+}
+
+# Main menu
+while true; do
+    CHOICE=$(gum choose "Packages" "Themes" "Backgrounds")
+
+    case $CHOICE in
+        "Packages")
+            packages_menu
+            ;;
+        "Themes")
+            themes_menu
+            ;;
+        "Backgrounds")
+            backgrounds_menu
+            ;;
+    esac
+done
