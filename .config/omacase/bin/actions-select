@@ -3,7 +3,7 @@ set -e
 
 # Function for the Packages menu
 packages_menu() {
-    CHOICE=$(gum filter "Install" "Uninstall" "Upgrade" "Tap")
+    CHOICE=$(gum filter "Install" "Uninstall" "Upgrade" "Tap" "Untap")
 
     case $CHOICE in
         "Install")
@@ -17,6 +17,9 @@ packages_menu() {
             ;;
         "Tap")
             ~/.config/omacase/bin/homebrew-tap
+            ;;
+        "Untap")
+            ~/.config/omacase/bin/homebrew-untap
             ;;
     esac
 }

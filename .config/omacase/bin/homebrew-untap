@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+tap=$(brew tap | gum filter)
+
+if [[ -n "$tap" ]]; then
+    brew untap $tap
+    ~/.config/omacase/bin/gum-done
+fi
