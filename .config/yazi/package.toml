@@ -63,6 +63,11 @@ use = "wakaka6/yatline-dracula"
 rev = "598ea29"
 hash = "303f8ca9084dbdd15c640b1f7388f54d"
 
+[[plugin.deps]]
+use = "Rolv-Apneseth/starship"
+rev = "a63550b"
+hash = "c2021386289a0cbb3e152a052f67c177"
+
 [[flavor.deps]]
 use = "BennyOe/tokyo-night"
 rev = "5f56364"
@@ -75,10 +80,10 @@ hash = "eb88137cf13a796225254344bf6def2c"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
-rev = "3e6da98"
+rev = "4296a38"
 hash = "deff42490f77b222e9d3a84dc16a76c5"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:dracula"
-rev = "3e6da98"
+rev = "4296a38"
 hash = "eefb18cb038121aed2b6eeaacea5a63e"
