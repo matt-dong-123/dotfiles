@@ -8,10 +8,10 @@ gui:
   nerdFontsVersion: "3" 
   theme:
     activeBorderColor:
-      - "#CC241D"
+      - "#FE8019"
       - bold
     inactiveBorderColor:
-      - "#FABD2F"
+      - "#83A598"
   
     searchingActiveBorderColor:
       - "#8EC07C"
