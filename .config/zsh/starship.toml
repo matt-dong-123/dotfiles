@@ -50,7 +50,7 @@ style = "bright-black"
 disabled = false
 
 [cmd_duration]
-format = "[$duration]($style)"
+format = "[$duration]($style) "
 style = "yellow"
 
 [python]
