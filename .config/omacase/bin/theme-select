@@ -3,7 +3,7 @@ set -e
 
 fzf_args=(
     --preview ''
-    --border-label ' 🎨 Themes '
+    --border-label '  Themes '
 
     --style full
     --prompt '❯ '

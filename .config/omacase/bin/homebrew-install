@@ -3,7 +3,7 @@ set -e
 
 fzf_args=(
     --preview 'brew info {}'
-    --border-label ' 📦 brew install '
+    --border-label ' 󰏗 brew install '
 
     --style full
     --prompt '❯ '

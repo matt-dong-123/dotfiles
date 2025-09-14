@@ -3,7 +3,7 @@ set -e
 
 fzf_args=(
     --preview 'brew info {}'
-    --border-label ' 📦 brew uninstall '
+    --border-label ' 󰏗 brew uninstall '
 
     --style full
     --prompt '❯ '
