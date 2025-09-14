@@ -1,2 +1,6 @@
 [flavor]
-use = 'gruvbox-dark'
+dark = 'gruvbox-dark'
+
+[status]
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
