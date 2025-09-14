@@ -34,36 +34,6 @@ rev = "0742fff"
 hash = "2bd799b42b8e42b8ef100310be71f8d1"
 
 [[plugin.deps]]
-use = "yazi-rs/plugins:no-status"
-rev = "d7588f6"
-hash = "3e023d31f29201efdac2a6ae35fedb78"
-
-[[plugin.deps]]
-use = "imsi32/yatline"
-rev = "88bd1c5"
-hash = "981acbe9b758b1af3a8154c932bb936d"
-
-[[plugin.deps]]
-use = "imsi32/yatline-gruvbox"
-rev = "1ce46eb"
-hash = "1a087e707ba0512106408144eeb3e50a"
-
-[[plugin.deps]]
-use = "imsi32/yatline-catppuccin"
-rev = "8cc4773"
-hash = "fd03fb015a28040bca0c0f9a8fe6fd8d"
-
-[[plugin.deps]]
-use = "wekauwau/yatline-tokyo-night"
-rev = "b4a6310"
-hash = "215729a555fe5286f1eb35520963d08"
-
-[[plugin.deps]]
-use = "wakaka6/yatline-dracula"
-rev = "598ea29"
-hash = "303f8ca9084dbdd15c640b1f7388f54d"
-
-[[plugin.deps]]
 use = "Rolv-Apneseth/starship"
 rev = "a63550b"
 hash = "c2021386289a0cbb3e152a052f67c177"
