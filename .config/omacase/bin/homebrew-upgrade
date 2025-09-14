@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+gum style --foreground 04 --border double --border-foreground 01 "Upgrading..."
+
+brew upgrade --greedy
+~/.config/omacase/bin/gum-done

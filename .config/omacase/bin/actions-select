@@ -3,7 +3,7 @@ set -e
 
 # Function for the Packages menu
 packages_menu() {
-    CHOICE=$(gum filter "Install" "Uninstall" "Upgrade")
+    CHOICE=$(gum filter "Install" "Uninstall" "Upgrade" "Tap")
 
     case $CHOICE in
         "Install")
@@ -13,7 +13,10 @@ packages_menu() {
             ~/.config/omacase/bin/homebrew-uninstall
             ;;
         "Upgrade")
-            brew upgrade --greedy
+            ~/.config/omacase/bin/homebrew-upgrade
+            ;;
+        "Tap")
+            ~/.config/omacase/bin/homebrew-tap
             ;;
     esac
 }
@@ -29,18 +32,16 @@ backgrounds_menu() {
 }
 
 # Main menu
-while true; do
-    CHOICE=$(gum filter "Packages" "Themes" "Backgrounds")
+CHOICE=$(gum filter "Packages" "Themes" "Backgrounds")
 
-    case $CHOICE in
-        "Packages")
-            packages_menu
-            ;;
-        "Themes")
-            themes_menu
-            ;;
-        "Backgrounds")
-            backgrounds_menu
-            ;;
-    esac
-done
+case $CHOICE in
+    "Packages")
+        packages_menu
+        ;;
+    "Themes")
+        themes_menu
+        ;;
+    "Backgrounds")
+        backgrounds_menu
+        ;;
+esac

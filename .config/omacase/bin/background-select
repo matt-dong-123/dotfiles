@@ -34,6 +34,5 @@ selection=$(ls -1 $wallpaper | fzf "${fzf_args[@]}")
 
 if [[ -n "$selection" ]]; then
     osascript -e "tell application \"System Events\" to set picture of every desktop to POSIX file \"$wallpaper/$selection\""
-    echo
-    gum spin --spinner "dot" --title "Done! Press any key to close..." -- bash -c 'read -n 1 -s'
+    ~/.config/omacase/bin/gum-done
 fi

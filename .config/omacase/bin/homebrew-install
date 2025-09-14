@@ -34,6 +34,5 @@ pkg_names=$((brew formulae; brew casks) | fzf "${fzf_args[@]}")
 
 if [[ -n "pkg_names" ]]; then
     echo "$pkg_names" | tr '\n' ' ' | xargs brew file install
-    echo
-    gum spin --spinner "dot" --title "Done! Press any key to close..." -- bash -c 'read -n 1 -s'
+    ~/.config/omacase/bin/gum-done
 fi
