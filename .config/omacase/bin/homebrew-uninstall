@@ -21,13 +21,13 @@ fzf_args=(
         fi
         '
     --bind 'focus:transform-preview-label:[[ -n {} ]] && printf " Previewing [%s] " {}'
-    --color 'border:#aaaaaa,label:#cccccc'
-    --color 'preview-border:#aa77cc,preview-label:#cc99ff'
-    --color 'list-border:#77aa77,list-label:#99cc99'
-    --color 'input-border:#dd6666,input-label:#ff8888'
-    --color 'header-border:#77aadd,header-label:#99ccff'
-    --color 'info:#ff77bb,prompt:#ff8888,pointer:#99cc99'
-    --color 'marker:#99cc99,spinner:#99cc99,header:#99cc99'
+    --color 'border:bright-black,label:bright-white'
+    --color 'preview-border:magenta,preview-label:bright-magenta'
+    --color 'list-border:green,list-label:bright-green'
+    --color 'input-border:red,input-label:bright-red'
+    --color 'header-border:blue,header-label:bright-blue'
+    --color 'info:bright-black,prompt:bright-red,pointer:bright-green'
+    --color 'marker:bright-green,spinner:bright-green,header:bright-green'
 )
 
 pkg_names=$(brew list -1| fzf "${fzf_args[@]}")
