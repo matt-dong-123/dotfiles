@@ -21,8 +21,8 @@ ln -nsf "$THEME_PATH" "$CURRENT_THEME_DIR"
 
 cat ~/.config/fzf/fzf-options ~/.config/omacase/current/theme/fzf-colors > ~/.config/fzf/fzfrc
 
-# Make sure wezterm updates
 touch ~/.config/wezterm/wezterm.lua
+touch ~/.config/alacritty/alacritty.toml
 
 wallpaper=$(realpath ~/.config/omacase/current/theme/backgrounds/default.png)
 osascript -e "tell application \"System Events\" to set picture of every desktop to \"$wallpaper\""
