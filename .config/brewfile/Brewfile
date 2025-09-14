@@ -221,7 +221,6 @@ tap homebrew/cask
 cask alacritty
 cask alt-tab
 cask baidunetdisk
-cask espanso
 cask font-maple-mono-nf-cn
 cask font-sf-pro
 cask font-sketchybar-app-font
