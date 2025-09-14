@@ -1,5 +1,6 @@
-[mgr]
+"$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
 
+[mgr]
 show_hidden = true
 show_symlink = true
 title_format = "Yazi"
@@ -26,3 +27,9 @@ prepend_previewers = [
     { mime = "application/zstd", run = "ouch" },
     { mime = "application/java-archive", run = "ouch" },
 ]
+
+[opener]
+play = [{ run = 'iina --no-stdin "$@"' }]
+
+[open]
+prepend_rules = [{ mime = "video/*", use = "play" }]
