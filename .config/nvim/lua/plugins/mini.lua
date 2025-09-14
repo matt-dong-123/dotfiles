@@ -7,6 +7,7 @@ return {
         require('mini.bracketed').setup()
         require('mini.icons').setup()
         require('mini.operators').setup()
+        require('mini.comment').setup()
         require('mini.pairs').setup {
             modes = {
                 command = true,
