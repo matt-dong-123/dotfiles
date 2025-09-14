@@ -6,7 +6,6 @@ $git_branch\
 $git_state\
 $git_status\
 $git_metrics\
-$fill\
 $cmd_duration\
 $lua\
 $rust\
