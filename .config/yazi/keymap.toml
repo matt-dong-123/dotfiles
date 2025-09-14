@@ -29,5 +29,4 @@ prepend_keymap = [
         "c",
         "m",
     ], run = "plugin chmod", desc = "Chmod on selected files" },
-    { on = "s", run = "plugin easyjump", desc = "run easyjump" },
 ]
