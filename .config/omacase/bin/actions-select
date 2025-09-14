@@ -3,7 +3,7 @@ set -e
 
 # Function for the Packages menu
 packages_menu() {
-    CHOICE=$(gum filter "Install" "Uninstall")
+    CHOICE=$(gum filter "Install" "Uninstall" "Upgrade")
 
     case $CHOICE in
         "Install")
@@ -11,6 +11,9 @@ packages_menu() {
             ;;
         "Uninstall")
             ~/.config/omacase/bin/homebrew-uninstall
+            ;;
+        "Upgrade")
+            brew upgrade --greedy
             ;;
     esac
 }
