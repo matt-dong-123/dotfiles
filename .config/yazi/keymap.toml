@@ -19,21 +19,11 @@ prepend_keymap = [
         "n",
     ], run = "cd ~/notes", desc = "Goto notes" },
 
-
-    # NOTE: CUSTOM PLUGINS
-
-    # Smart enter
+    # Plugins
     { on = "l", run = "plugin smart-enter", desc = "Enter the child directory, or open the file" },
-
-    # Chmod
     { on = [
         "c",
         "m",
     ], run = "plugin chmod", desc = "Chmod on selected files" },
-
-    # Mount
-    { on = "M", run = "plugin mount", desc = "Open mount plugin" },
-
-    # Easyjump && searchjump
     { on = "s", run = "plugin easyjump", desc = "run easyjump" },
 ]
