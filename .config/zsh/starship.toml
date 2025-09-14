@@ -59,8 +59,8 @@ style = "bright-black"
 
 [rust]
 format = "[$symbol]($style)"
-symbol = ' rust'
+symbol = 'rust'
 
 [lua]
 format = "[$symbol]($style)"
-symbol = ' lua'
+symbol = 'lua'
