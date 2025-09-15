@@ -248,6 +248,9 @@ cask wpsoffice-cn
 cask zen
 cask zoom
 
+tap charmbracelet/tap
+brew crush
+
 tap felixkratz/formulae
 brew borders
 brew sketchybar
