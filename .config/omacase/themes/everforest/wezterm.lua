@@ -6,15 +6,15 @@ M.apply_to_config = function(config)
 	config.color_scheme = "Everforest Dark Medium (Gogh)"
 	config.colors = {
 		tab_bar = {
-			background = "#293136",
+			background = "#2d353b",
 			active_tab = {
-				bg_color = "#293136",
+				bg_color = "#2d353b",
 				fg_color = "#d699b6",
 				intensity = "Bold",
 				underline = "Single",
 			},
 			inactive_tab = {
-				bg_color = "#293136",
+				bg_color = "#2d353b",
 				fg_color = "#d3c6aa",
 			},
 		},

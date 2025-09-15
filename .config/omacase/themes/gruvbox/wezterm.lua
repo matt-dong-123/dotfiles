@@ -6,15 +6,15 @@ M.apply_to_config = function(config)
 	config.color_scheme = "Gruvbox dark, medium (base16)"
 	config.colors = {
 		tab_bar = {
-			background = "#3c3836",
+			background = "#282828",
 			active_tab = {
-				bg_color = "#3c3836",
+				bg_color = "#282828",
 				fg_color = "#d3869b",
 				intensity = "Bold",
 				underline = "Single",
 			},
 			inactive_tab = {
-				bg_color = "#3c3836",
+				bg_color = "#282828",
 				fg_color = "#ebdbb2",
 			},
 		},
