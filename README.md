@@ -43,13 +43,14 @@ script.
     - SponsorBlock
     - Zen Internet
     - Stylus
-2. Install [Sine mods](https://github.com/CosmoCreeper/Sine)
-3. For each of the extensions given, find the "Import" or "Restore"
+2. Navigate to about:config, set browser.tabs.allow_transparent_browser to true
+3. Install [Sine mods](https://github.com/CosmoCreeper/Sine)
+4. For each of the extensions given, find the "Import" or "Restore"
     button, and choose the corresponding file in ~/.config/zen
-4. Copy the user.js in ~/.config/zen to your profile directory
-5. Delete the user.js after starting the browser (settings will be
+5. Copy the user.js in ~/.config/zen to your profile directory
+6. Delete the user.js after starting the browser (settings will be
     remembered automatically)
-6. Disable loading animation in Nebula settings
+7. Disable loading animation in Nebula settings
 
 ### LeaderKey
 
