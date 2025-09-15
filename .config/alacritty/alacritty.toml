@@ -4,6 +4,8 @@ general.import = ["~/.config/omacase/current/theme/alacritty.toml"]
 dimensions = { columns = 125, lines = 25 }
 position = { x = 300, y = 300 }
 decorations = "buttonless"
+opacity = 0.75
+blur = true
 
 [font]
 normal = { family = "Maple Mono NF CN" }
