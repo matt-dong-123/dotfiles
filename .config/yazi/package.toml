@@ -52,3 +52,8 @@ hash = "dbbbfe681e156c28303efb1f44b6cbc4"
 use = "Mintass/rose-pine-moon"
 rev = "aa2d937"
 hash = "97cd4819252cb1a9d0f55daa14e481e"
+
+[[flavor.deps]]
+use = "AdithyanA2005/nord"
+rev = "3a791e9"
+hash = "fa7142cda74a50b271ea212356b40b57"

@@ -6,6 +6,7 @@ M.apply_to_config = function(config)
 	config.color_scheme = "rose-pine-moon"
 	config.colors = {
 		tab_bar = {
+			background = "#232136",
 			active_tab = {
 				bg_color = "#232136",
 				fg_color = "#c4a7e7",

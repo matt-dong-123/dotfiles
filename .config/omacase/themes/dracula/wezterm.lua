@@ -6,6 +6,7 @@ M.apply_to_config = function(config)
 	config.color_scheme = "Dracula (Official)"
 	config.colors = {
 		tab_bar = {
+			background = "#282a36",
 			active_tab = {
 				bg_color = "#282a36",
 				fg_color = "#bd93f9",
