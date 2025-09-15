@@ -1,0 +1,31 @@
+notARepository: skip
+gui:
+  skipNoStagedFilesWarning: false
+  showRandomTip: false
+  commit:
+    signOff: false
+  editor: "nvim"
+  nerdFontsVersion: "3" 
+  theme:
+    activeBorderColor:
+      - '#ea9a97'
+      - bold
+    inactiveBorderColor:
+      - '#908caa'
+    optionsTextColor:
+      - '#9ccfd8'
+    selectedLineBgColor:
+      - '#908caa'
+    cherryPickedCommitBgColor:
+      - '#393552'
+    cherryPickedCommitFgColor:
+      - '#ea9a97'
+    unstagedChangesColor:
+      - '#eb6f92'
+    defaultFgColor:
+      - '#e0def4'
+    searchingActiveBorderColor:
+      - '#f6c177'
+
+  authorColors:
+    '*': '#908caa'

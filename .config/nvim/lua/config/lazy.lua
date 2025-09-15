@@ -34,7 +34,16 @@ require('lazy').setup({
         },
         border = 'rounded',
     },
-    install = { colorscheme = { 'tokyonight', 'catppuccin', 'dracula', 'gruvbox' } },
+    install = {
+        colorscheme = {
+            'tokyonight',
+            'catppuccin',
+            'dracula',
+            'gruvbox',
+            'everforest',
+            'rose-pine-moon',
+        },
+    },
     checker = { enabled = true },
     performance = {
         rtp = {
