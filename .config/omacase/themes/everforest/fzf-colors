@@ -1,0 +1,9 @@
+--color 'border:#6faba3,label:#7fbbb3'
+--color 'preview-border:#c689a6,preview-label:#d699b6'
+--color 'list-border:#73b082,list-label:#83c092'
+--color 'input-border:#d66e70,input-label:#e67e80'
+--color 'header-border:#d68865,header-label:#e69875'
+--color=fg:#d3c6aa,bg:#293136,hl:#7fbbb3
+--color=fg+:#d3c6aa,bg+:#293136,hl+:#83c092
+--color=info:#7fbbb3,prompt:#e67e80,pointer:#d699b6
+--color=marker:#83c092,spinner:#e67e80,header:#83c092
