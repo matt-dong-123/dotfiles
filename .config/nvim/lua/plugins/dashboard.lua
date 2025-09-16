@@ -5,19 +5,25 @@ return {
             preset = {
                 keys = {
                     {
-                        icon = ' ',
+                        icon = '',
                         key = 'f',
                         desc = 'files',
                         action = ":lua Snacks.dashboard.pick('smart')",
                     },
                     {
-                        icon = ' ',
+                        icon = '',
                         key = 'r',
                         desc = 'recent',
                         action = ":lua Snacks.dashboard.pick('oldfiles')",
                     },
                     {
-                        icon = ' ',
+                        icon = '',
+                        key = 'g',
+                        desc = 'grep',
+                        action = ":lua Snacks.dashboard.pick('live_grep')",
+                    },
+                    {
+                        icon = '',
                         key = 'c',
                         desc = 'config',
                         action = ":lua Snacks.dashboard.pick('smart', {cwd = vim.fn.stdpath('config')})",
@@ -29,7 +35,7 @@ return {
                         action = ":lua Snacks.dashboard.pick('smart', {cwd = vim.fn.expand('$HOME/notes')})",
                     },
                     {
-                        icon = '󰒲 ',
+                        icon = '󰒲',
                         key = 'l',
                         desc = 'lazy',
                         action = ':Lazy',
