@@ -219,7 +219,6 @@ brew zstd
 
 tap homebrew/cask
 cask alacritty
-cask alt-tab
 cask baidunetdisk
 cask font-maple-mono-nf-cn
 cask font-sf-pro
@@ -231,7 +230,6 @@ cask karabiner-elements
 cask leader-key
 cask mitmproxy
 cask musescore
-cask ollama-app
 cask only-switch
 cask raycast
 cask sf-symbols
@@ -249,7 +247,6 @@ cask zen
 cask zoom
 
 tap charmbracelet/tap
-brew crush
 
 tap felixkratz/formulae
 brew borders
