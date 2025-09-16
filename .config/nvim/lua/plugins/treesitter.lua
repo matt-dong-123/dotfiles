@@ -7,16 +7,9 @@ return {
     end,
     opts = {
         ensure_installed = {
-            'c',
             'cpp',
             'json',
-            'lua',
             'python',
-            'vim',
-            'vimdoc',
-            'query',
-            'markdown',
-            'markdown_inline',
             'toml',
             'regex',
             'rust',
