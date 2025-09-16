@@ -8,6 +8,7 @@ return {
             function()
                 require('undotree').toggle()
             end,
+            desc = 'Undotree',
         },
     },
 }
