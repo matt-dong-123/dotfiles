@@ -19,7 +19,7 @@ _darcs
 ^/README.*
 ^/LICENSE.*
 ^/COPYING
-^/assets
+^/.img
 ^/wallpapers
 
 \.DS_Store

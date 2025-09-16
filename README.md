@@ -61,10 +61,10 @@ script.
 
 ## Screenshots
 
-![Neovim](./assets/neovim.png)
-![Lazygit](./assets/lazygit.png)
-![Wezterm](./assets/wezterm.png)
-![Yazi](./assets/yazi.png)
-![Zen Browser](./assets/zen.png)
-![Brew](./assets/brew.png)
-![Theme-switching](./assets/theme-switching.png)
+![Neovim](./.img/neovim.png)
+![Lazygit](./.img/lazygit.png)
+![Wezterm](./.img/wezterm.png)
+![Yazi](./.img/yazi.png)
+![Zen Browser](./.img/zen.png)
+![Brew](./.img/brew.png)
+![Theme-switching](./.img/theme-switching.png)
