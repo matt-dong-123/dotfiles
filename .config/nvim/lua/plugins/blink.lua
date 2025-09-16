@@ -6,11 +6,6 @@ return {
     },
     version = '*',
     opts = {
-        completion = {
-            menu = {
-                border = 'rounded',
-            },
-        },
         sources = {
             default = {
                 'lsp',

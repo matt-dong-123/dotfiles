@@ -6,6 +6,9 @@ return {
     },
     opts = {
         open_for_directories = true,
+        yazi_floating_window_border = 'none',
+        floating_window_scaling_factor = 1,
+        yazi_floating_window_zindex = 200,
     },
     keys = {
         {

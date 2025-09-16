@@ -32,7 +32,6 @@ require('lazy').setup({
             loaded = '',
             not_loaded = '',
         },
-        border = 'rounded',
     },
     install = {
         colorscheme = {
