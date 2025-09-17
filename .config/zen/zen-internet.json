@@ -1,5 +1,5 @@
 {
-  "exportDate": "2025-09-15T14:50:54.650Z",
+  "exportDate": "2025-09-17T10:11:54.939Z",
   "addonVersion": "2.7.0",
   "settings": {
     "transparentZenSettings": {
@@ -8,10 +8,10 @@
       "forceStyling": false,
       "whitelistMode": false,
       "whitelistStyleMode": false,
-      "disableTransparency": false,
+      "disableTransparency": true,
       "disableHover": true,
       "disableFooter": false,
-      "lastFetchedTime": 1757942828562,
+      "lastFetchedTime": 1758103043150,
       "welcomeShown": true
     },
     "skipForceThemingList": [],
