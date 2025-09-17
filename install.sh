@@ -42,11 +42,8 @@ cd "$HOME/dotfiles" || exit
 
 echo -e "${green}Using .config/brewfile/Brewfile for quick install${no_color}"
 brew bundle install --file=~/.config/brew/Brewfile
-echo -e "${blue}Installing SBarLua"
-# installing sbarlua
-if [ ! -d "$HOME/SBarLua" ]; then
-    git clone https://github.com/FelixKratz/SbarLua.git /tmp/SbarLua && cd /tmp/SbarLua/ && make install && rm -rf /tmp/SbarLua/
-fi
+echo -e "${blue}Installing SBarLua${no_color}"
+git clone https://github.com/FelixKratz/SbarLua.git /tmp/SbarLua && cd /tmp/SbarLua/ && make install && rm -rf /tmp/SbarLua/
 
 ## MacOS system settings
 echo -e "${yellow}Writing MacOS system settings...${no_color}"
@@ -55,7 +52,7 @@ echo -e "${yellow}Writing MacOS system settings...${no_color}"
 defaults write NSGlobalDomain _HIHideMenuBar -bool true
 
 # Set dock size
-defaults write com.apple.dock "tilesize" -int "55"
+defaults write com.apple.dock "tilesize" -int "70"
 
 # Autohide dock
 defaults write com.apple.dock "autohide" -bool "true"
@@ -93,16 +90,13 @@ defaults write com.apple.finder "CreateDesktop" -bool "false"
 # Firm click weight
 defaults write com.apple.AppleMultitouchTrackpad "FirstClickThreshold" -int "2"
 
-# Use fn key to switch keyboard input methods
-defaults write com.apple.HIToolbox AppleFnUsageType -int "1"
-
 # Enable keyboard navigation
 defaults write NSGlobalDomain AppleKeyboardUIMode -int "2"
 
 # Disable confirmation when closing unsaved windows (will autosave)
 defaults write NSGlobalDomain "NSCloseAlwaysConfirmsChanges" -bool "true"
 
-echo -e "${blue}This will enable sudo via Touch ID. (Y/n)"
+echo -e "${blue}Enable sudo via Touch ID? (Y/n)${no_color}"
 read -p "" touchid
 if [ "$touchid" != "n" ] && [ "$touchid" != "N" ]; then
     sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
@@ -121,7 +115,8 @@ killall Dock
 
 # Stow dotfiles packages
 echo -e "${green}Stowing dotfiles...${no_color}"
-stow -t ~ .
+cd ~/dotfiles
+stow .
 
 ~/.config/omacase/install/theme.sh
 
