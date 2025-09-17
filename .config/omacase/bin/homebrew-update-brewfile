@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -e
+
+brew bundle dump --force --describe --file=$HOME/.config/brew/Brewfile

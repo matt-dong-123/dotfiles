@@ -1,9 +1,6 @@
 # Path
 export PATH="$PATH:${HOME}/.local/bin:${HOME}/.cargo/bin:${HOME}/.config/omacase/bin"
 eval "$(/opt/homebrew/bin/brew shellenv)"
-if [ -f $(brew --prefix)/etc/brew-wrap ];then
-  source $(brew --prefix)/etc/brew-wrap
-fi
 
 # pnpm
 export PNPM_HOME="/Users/bulus-computer/Library/pnpm"

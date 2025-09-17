@@ -41,7 +41,7 @@ fi
 cd "$HOME/dotfiles" || exit
 
 echo -e "${green}Using .config/brewfile/Brewfile for quick install${no_color}"
-brew bundle install --file=./.config/brewfile/Brewfile
+brew bundle install --file=~/.config/brew/Brewfile
 echo -e "${blue}Installing SBarLua"
 # installing sbarlua
 if [ ! -d "$HOME/SBarLua" ]; then

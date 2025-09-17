@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 
 gum style --foreground 04 --border double --border-foreground 01 "Upgrading..."
 

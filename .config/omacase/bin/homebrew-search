@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 
 gum input --placeholder "Search for..." | xargs brew search
 ~/.config/omacase/bin/gum-done

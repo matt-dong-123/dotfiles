@@ -1,0 +1,209 @@
+tap "charmbracelet/tap"
+tap "felixkratz/formulae"
+tap "jackielii/tap"
+tap "mhaeuser/mhaeuser"
+tap "nikitabobko/tap"
+# Automatic configure script builder
+brew "autoconf"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# Text-based UI library
+brew "ncurses"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Command-line interface for SQLite
+brew "sqlite"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
+# Python code formatter
+brew "black"
+# Version manager for neovim
+brew "bob"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
+# Freely available high-quality data compressor
+brew "bzip2"
+# Versatile and fast Unicode/ASCII/ANSI graphics renderer
+brew "chafa"
+# Cross-platform make
+brew "cmake"
+# Console Matrix
+brew "cmatrix"
+# Apjanke's fork of the classic cowsay project
+brew "cowsay"
+# Secure runtime for JavaScript and TypeScript
+brew "deno"
+# Lua Language Server
+brew "emmylua_ls"
+# Modern, maintained replacement for ls
+brew "eza"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# Infamous electronic fortune-cookie generator
+brew "fortune"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GNU awk utility
+brew "gawk"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Numerical library for C and C++
+brew "gsl"
+# Tool for glamorous shell scripts
+brew "gum"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
+# Sort Python imports automatically
+brew "isort"
+# Command-line music player
+brew "kew"
+# Simple terminal UI for git commands
+brew "lazygit"
+# Next-gen compiler infrastructure
+brew "llvm"
+# Powerful, lightweight programming language
+brew "lua"
+# Just-In-Time Compiler (JIT) for the Lua programming language
+brew "luajit"
+# Package manager for the Lua programming language
+brew "luarocks"
+# Utility for directing compilation
+brew "make"
+# Platform built on V8 to build network applications
+brew "node"
+# CLI for Node.js style checker and lint tool for Markdown files
+brew "markdownlint-cli"
+# Language Server Protocol for Markdown
+brew "marksman"
+# Command-line interface to split MP3 and Ogg Vorbis files
+brew "mp3splt"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Ncurses based sudoku game
+brew "nudoku"
+# Manage multiple Node.js versions
+brew "nvm"
+# Painless compression and decompression for your terminal
+brew "ouch"
+# 7-Zip (high compression file archiver) implementation
+brew "p7zip"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Animated pipes terminal screensaver
+brew "pipes-sh"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
+# Fast, disk space efficient package manager
+brew "pnpm"
+# Hook preloader
+brew "proxychains-ng"
+# Static type checker for Python
+brew "pyright"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Extremely fast Python linter, written in Rust
+brew "ruff"
+# Safe, concurrent, practical language
+brew "rust"
+# Experimental Rust compiler front-end for IDEs
+brew "rust-analyzer"
+# Autoformat shell script source code
+brew "shfmt"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
+brew "stow"
+# Opinionated Lua code formatter
+brew "stylua"
+# TOML toolkit written in Rust
+brew "taplo"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Parser generator tool
+brew "tree-sitter-cli"
+# Internet file retriever
+brew "wget"
+# Show the current WiFi network password
+brew "wifi-password"
+# Translate common Internet acronyms
+brew "wtf"
+# Blazing fast terminal file manager written in Rust, based on async I/O
+brew "yazi"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
+# General-purpose lossless data-compression library
+brew "zlib"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# A window border system for macOS
+brew "felixkratz/formulae/borders"
+# Custom macOS statusbar with shell plugin, interaction and graph support
+brew "felixkratz/formulae/sketchybar"
+# Simple hotkey daemon for macOS, written in Zig
+brew "jackielii/tap/skhd-zig"
+# AeroSpace is an i3-like tiling window manager for macOS
+cask "aerospace"
+# GPU-accelerated terminal emulator
+cask "alacritty"
+# Cloud storage service
+cask "baidunetdisk"
+# Control the platform power state of your Apple Silicon device
+cask "battery-toolkit"
+cask "font-maple-mono-nf-cn"
+cask "font-sf-pro"
+cask "font-sketchybar-app-font"
+cask "font-symbols-only-nerd-font"
+# Free and open-source media player
+cask "iina"
+# Tool for multi-language users
+cask "input-source-pro"
+# Keyboard customiser
+cask "karabiner-elements"
+# Application launcher
+cask "leader-key"
+# Intercept, modify, replay, save HTTP/S traffic
+cask "mitmproxy"
+# Open-source music notation software
+cask "musescore"
+# System and utility switches
+cask "only-switch"
+# Control your tools with a few keystrokes
+cask "raycast"
+# Tool that provides consistent, highly configurable symbols for apps
+cask "sf-symbols"
+# Licenses manager for Steinberg Licensing
+cask "steinberg-activation-manager"
+# Tool to download files for Steinberg products
+cask "steinberg-download-assistant"
+# Library manager for Steinberg software
+cask "steinberg-library-manager"
+# Content manager for Steinberg software
+cask "steinberg-mediabay"
+# Cloud video conferencing
+cask "tencent-meeting"
+# Google Chromium, sans integration with Google
+cask "ungoogled-chromium"
+# Virtual machines UI using QEMU
+cask "utm"
+# Free messaging and calling application
+cask "wechat"
+# Messaging and calling application
+cask "wechatwork"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
+cask "wezterm@nightly"
+# All-in-one office service platform in Chinese
+cask "wpsoffice-cn"
+# Gecko based web browser
+cask "zen"
+# Video communication and virtual meeting platform
+cask "zoom"
