@@ -192,8 +192,6 @@ cask "steinberg-mediabay"
 cask "tencent-meeting"
 # Google Chromium, sans integration with Google
 cask "ungoogled-chromium"
-# Virtual machines UI using QEMU
-cask "utm"
 # Free messaging and calling application
 cask "wechat"
 # Messaging and calling application
