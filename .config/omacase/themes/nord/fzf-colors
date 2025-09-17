@@ -3,7 +3,7 @@
 --color 'list-border:#93ae7c,list-label:#a3be8c'
 --color 'input-border:#af515a,input-label:#bf616a'
 --color 'header-border:#c07760,header-label:#d08770'
---color=fg:#eceff4,bg:#2e3440,hl:#81a1c1 
---color=fg+:#eceff4,bg+:#2e3440,hl+:#8fbcbb
+--color=fg:#eceff4,hl:#81a1c1 
+--color=fg+:#eceff4,hl+:#8fbcbb
 --color=info:#5e81ac,prompt:#bf616a,pointer:#8fbcbb
 --color=marker:#a3be8c,spinner:#bf616a,header:#8fbcbb
