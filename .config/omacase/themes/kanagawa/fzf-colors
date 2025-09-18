@@ -1,9 +1,0 @@
---color 'border:#6e8cc8,label:#7e9cd8'
---color 'preview-border:#856fa8,preview-label:#957fb8'
---color 'list-border:#88ab5c,list-label:#98bb6c'
---color 'input-border:#d81414,input-label:#e82424'
---color 'header-border:#ef9056,header-label:#ffa066'
---color=fg:#c8c093,hl:#7e9cd8 
---color=fg+:#c8c093,hl+:#7aa89f 
---color=info:#727169,prompt:#e82424,pointer:#7aa89f
---color=marker:#98bb6c,spinner:#e82424,header:#7aa89f

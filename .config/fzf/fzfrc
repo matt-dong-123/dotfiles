@@ -15,3 +15,9 @@
     fi
     '
 --bind 'focus:transform-preview-label:[[ -n {} ]] && printf " Previewing [%s] " {}'
+--color 'border:blue,label:bright-blue'
+--color 'preview-border:magenta,preview-label:bright-magenta'
+--color 'list-border:green,list-label:bright-green'
+--color 'input-border:red,input-label:bright-red'
+--color 'info:bright-black,prompt:bright-red,pointer:bright-green'
+--color 'marker:bright-green,spinner:bright-green,header:bright-green'

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-tap=$(brew tap | gum filter)
+tap=$(brew tap | gum filter --placeholder "Untap out of...")
 
 if [[ -n "$tap" ]]; then
     brew untap $tap

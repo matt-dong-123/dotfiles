@@ -17,6 +17,4 @@ ln -snf ~/.config/omacase/current/theme/bat ~/.config/bat/config
 ln -snf ~/.config/omacase/current/theme/yazi.toml ~/.config/yazi/theme.toml
 ln -snf ~/.config/omacase/current/theme/delta-colors ~/.config/git/delta-colors
 
-cat ~/.config/fzf/fzf-options ~/.config/omacase/current/theme/fzf-colors > ~/.config/fzf/fzfrc
-
 brew services restart borders sketchybar
