@@ -168,8 +168,6 @@ cask "iina"
 cask "input-source-pro"
 # Keyboard customiser
 cask "karabiner-elements"
-# Application launcher
-cask "leader-key"
 # Intercept, modify, replay, save HTTP/S traffic
 cask "mitmproxy"
 # Open-source music notation software
