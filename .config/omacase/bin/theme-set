@@ -20,8 +20,6 @@ fi
 # Update theme symlinks
 ln -nsf "$THEME_PATH" "$CURRENT_THEME_DIR"
 
-cat ~/.config/fzf/fzf-options ~/.config/omacase/current/theme/fzf-colors > ~/.config/fzf/fzfrc
-
 touch ~/.config/wezterm/wezterm.lua
 touch ~/.config/alacritty/alacritty.toml
 
