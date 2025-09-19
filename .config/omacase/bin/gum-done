@@ -2,4 +2,6 @@
 set -e
 
 echo
-gum spin --spinner "dot" --title "Done! Press any key to close..." -- bash -c 'read -n 1 -s'
+gum spin --spinner "dot" \
+    --title "Done! Press any key to close (auto-closes in 30s)..." \
+    -- bash -c 'read -n 1 -s -t 30'
