@@ -14,7 +14,8 @@
 ## Features
 
 - Omarchy-like flexible shell-script-based actions for common commands
-- Omarchy-like theme switching
+- Omarchy-like theme and background switching
+- Fully customizable, no abstractions
 
 ## Prerequisites
 
@@ -68,3 +69,14 @@ script.
 ![Zen Browser](./.img/zen.png)
 ![Brew](./.img/brew.png)
 ![Theme-switching](./.img/theme-switching.png)
+
+### Themes
+
+![Tokyonight (Default)](./.img/tokyo-night.png)
+![Catppuccin](./.img/catppuccin.png)
+![Dracula](./.img/dracula.png)
+![Everforest](./.img/everforest.png)
+![Gruvbox](./.img/gruvbox.png)
+![Kanagawa](./.img/kanagawa.png)
+![Nord](./.img/nord.png)
+![Rose Pine](./.img/rose-pine.png)
