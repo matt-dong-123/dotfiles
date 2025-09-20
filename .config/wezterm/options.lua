@@ -9,12 +9,6 @@ M.apply_to_config = function(config)
     config.line_height = 1.2
     config.window_background_opacity = 0.75
     config.macos_window_background_blur = 100
-    config.window_padding = {
-        left = 15,
-        right = 15,
-        top = 15,
-        bottom = 0,
-    }
     config.force_reverse_video_cursor = true
     config.max_fps = 120
     config.prefer_egl = true
