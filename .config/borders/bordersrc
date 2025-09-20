@@ -3,6 +3,7 @@
 source ~/.config/omacase/current/theme/borders
 
 options=(
+    style=square
     active_color="$ACTIVE_COLOR"
     inactive_color="$INACTIVE_COLOR"
     width=6.0
