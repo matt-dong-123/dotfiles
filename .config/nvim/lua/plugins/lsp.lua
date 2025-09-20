@@ -1,11 +1,6 @@
 return {
     {
         'neovim/nvim-lspconfig',
-        dependencies = {
-            'mrcjkb/rustaceanvim',
-            version = '^6', -- Recommended
-            lazy = false, -- This plugin is already lazy
-        },
         version = false,
         config = function()
             vim.lsp.enable {
@@ -17,6 +12,11 @@ return {
                 'marksman',
             }
         end,
+    },
+    {
+        'mrcjkb/rustaceanvim',
+        ft = 'rust',
+        version = '^6', -- Recommended
     },
     {
         'folke/snacks.nvim',
