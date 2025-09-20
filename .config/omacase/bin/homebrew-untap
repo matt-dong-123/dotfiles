@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-set -e
 
 tap=$(brew tap | gum filter --placeholder "Untap out of...")
 

@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-set -e
 
 wallpaper=$(realpath ~/.config/omacase/current/theme/backgrounds)
 fzf_args=(

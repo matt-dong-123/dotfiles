@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-set -e
 
 if [[ -z "$1" ]]; then
   echo "No theme specified." >&2

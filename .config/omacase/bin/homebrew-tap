@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-set -e
 
 gum input --placeholder "Tap into..." | xargs brew tap
 ~/.config/omacase/bin/homebrew-update-brewfile

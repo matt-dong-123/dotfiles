@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-set -e
 
 theme=$(~/.config/omacase/bin/theme-list | gum filter)
 

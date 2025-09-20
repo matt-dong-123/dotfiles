@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-set -e
 
 fzf_args=(
     --preview 'brew info {}'

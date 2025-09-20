@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-set -e
 
 # Function for the Packages menu
 packages_menu() {
