@@ -15,7 +15,7 @@ brew "sqlite"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.13"
 # Python code formatter
-brew "black"
+brew "black", restart_service: :changed
 # Version manager for neovim
 brew "bob"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
