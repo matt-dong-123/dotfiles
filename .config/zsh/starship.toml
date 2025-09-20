@@ -9,8 +9,8 @@ $git_metrics\
 $cmd_duration\
 $lua\
 $rust\
-$line_break\
 $python\
+$line_break\
 $character"""
 
 [fill]
@@ -54,8 +54,8 @@ format = "[$duration]($style) "
 style = "yellow"
 
 [python]
-format = "[$virtualenv]($style) "
-style = "bright-black"
+format = "[$symbol]($style)"
+symbol = "python"
 
 [rust]
 format = "[$symbol]($style)"
