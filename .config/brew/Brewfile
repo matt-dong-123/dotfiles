@@ -30,6 +30,8 @@ brew "cmake"
 brew "cmatrix"
 # Apjanke's fork of the classic cowsay project
 brew "cowsay"
+# Static code checker for C++
+brew "cpplint"
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
 # Lua Language Server

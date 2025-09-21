@@ -13,6 +13,7 @@ return {
             'toml',
             'regex',
             'rust',
+            'bash',
         },
         highlight = { enable = true },
         indent = { enable = true },
