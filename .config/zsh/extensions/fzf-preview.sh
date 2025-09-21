@@ -11,7 +11,7 @@ type=$(file --brief --dereference --mime -- "$file")
 if [ -d $file ]; then
     eza --tree --color=always $file --icons | head -200
 elif [[ $type =~ image/ ]]; then
-    chafa -s 40 $file
+    chafa --size 50x --symbols block $file
 elif [[ $type =~ =binary ]]; then
     file "$1"
 else
