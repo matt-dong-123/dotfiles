@@ -120,6 +120,8 @@ brew "ruff"
 brew "rust"
 # Experimental Rust compiler front-end for IDEs
 brew "rust-analyzer"
+# Smart session manager for the terminal
+brew "sesh"
 # Autoformat shell script source code
 brew "shfmt"
 # Cross-shell prompt for astronauts
@@ -130,6 +132,8 @@ brew "stow"
 brew "stylua"
 # TOML toolkit written in Rust
 brew "taplo"
+# Terminal multiplexer
+brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Parser generator tool
