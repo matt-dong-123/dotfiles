@@ -1,4 +1,5 @@
 --style full
+--ansi
 --prompt '❯ '
 --no-height
 --multi
