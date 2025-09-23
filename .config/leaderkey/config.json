@@ -1,0 +1,25 @@
+{
+  "actions" : [
+    {
+      "key" : "p",
+      "type" : "application",
+      "value" : "/System/Applications/Preview.app"
+    },
+    {
+      "key" : "v",
+      "type" : "application",
+      "value" : "/System/Applications/VoiceMemos.app"
+    },
+    {
+      "key" : "c",
+      "type" : "application",
+      "value" : "/Applications/Chromium.app"
+    },
+    {
+      "key" : "k",
+      "type" : "application",
+      "value" : "/Applications/Karabiner-Elements.app"
+    }
+  ],
+  "type" : "group"
+}

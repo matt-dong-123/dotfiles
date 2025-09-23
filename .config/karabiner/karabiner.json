@@ -53,6 +53,7 @@
                                         "modifiers": ["left_control", "left_shift"]
                                     }
                                 ],
+                                "to_if_alone": [{ "key_code": "f13" }],
                                 "type": "basic"
                             }
                         ]

@@ -59,6 +59,7 @@ script.
 2. Set the config directory to your ~/.config/leaderkey directory
 3. Go back to "General" and set the shortcut to be "f13" by tapping the
     right command key
+4. Set the style to "Mystery Box" and don't enable cheatsheet (visual bugs)
 
 ## Screenshots
 
