@@ -19,6 +19,32 @@
       "key" : "k",
       "type" : "application",
       "value" : "/Applications/Karabiner-Elements.app"
+    },
+    {
+      "actions" : [
+        {
+          "iconPath" : "gearshape",
+          "key" : ",",
+          "label" : "Dots",
+          "type" : "url",
+          "value" : "github.com/matt-dong-123/dotfiles"
+        },
+        {
+          "key" : "r",
+          "label" : "Reddit",
+          "type" : "url",
+          "value" : "reddit.com"
+        },
+        {
+          "key" : "y",
+          "label" : "YouTube",
+          "type" : "url",
+          "value" : "youtu.be"
+        }
+      ],
+      "key" : "i",
+      "label" : "Internet",
+      "type" : "group"
     }
   ],
   "type" : "group"
