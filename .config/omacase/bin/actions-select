@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+if [ -f ~/.bashrc ]; then
+    source ~/.bashrc
+fi
+
 # Function for the Packages menu
 packages_menu() {
     CHOICE=$(gum filter "Install" "Uninstall" "Upgrade" "Tap" "Untap" "Search")
