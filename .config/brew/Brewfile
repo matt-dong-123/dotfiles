@@ -140,8 +140,6 @@ brew "tree"
 brew "tree-sitter-cli"
 # Internet file retriever
 brew "wget"
-# Show the current WiFi network password
-brew "wifi-password"
 # Translate common Internet acronyms
 brew "wtf"
 # Blazing fast terminal file manager written in Rust, based on async I/O
