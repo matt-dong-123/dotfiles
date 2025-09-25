@@ -9,24 +9,24 @@ packages_menu() {
     CHOICE=$(gum filter "Install" "Uninstall" "Upgrade" "Tap" "Untap" "Search")
 
     case $CHOICE in
-        "Install")
-            ~/.config/omacase/bin/homebrew-install
-            ;;
-        "Uninstall")
-            ~/.config/omacase/bin/homebrew-uninstall
-            ;;
-        "Upgrade")
-            ~/.config/omacase/bin/homebrew-upgrade
-            ;;
-        "Tap")
-            ~/.config/omacase/bin/homebrew-tap
-            ;;
-        "Untap")
-            ~/.config/omacase/bin/homebrew-untap
-            ;;
-        "Search")
-            ~/.config/omacase/bin/homebrew-search
-            ;;
+    "Install")
+        ~/.config/omacase/bin/homebrew-install
+        ;;
+    "Uninstall")
+        ~/.config/omacase/bin/homebrew-uninstall
+        ;;
+    "Upgrade")
+        ~/.config/omacase/bin/homebrew-upgrade
+        ;;
+    "Tap")
+        ~/.config/omacase/bin/homebrew-tap
+        ;;
+    "Untap")
+        ~/.config/omacase/bin/homebrew-untap
+        ;;
+    "Search")
+        ~/.config/omacase/bin/homebrew-search
+        ;;
     esac
 }
 
@@ -44,13 +44,13 @@ backgrounds_menu() {
 CHOICE=$(gum filter "Packages" "Themes" "Backgrounds")
 
 case $CHOICE in
-    "Packages")
-        packages_menu
-        ;;
-    "Themes")
-        themes_menu
-        ;;
-    "Backgrounds")
-        backgrounds_menu
-        ;;
+"Packages")
+    packages_menu
+    ;;
+"Themes")
+    themes_menu
+    ;;
+"Backgrounds")
+    backgrounds_menu
+    ;;
 esac

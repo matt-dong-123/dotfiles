@@ -5,8 +5,8 @@ if [ -f ~/.bashrc ]; then
 fi
 
 if [[ -z "$1" ]]; then
-  echo "No theme specified." >&2
-  exit 1
+    echo "No theme specified." >&2
+    exit 1
 fi
 
 THEMES_DIR="$HOME/.config/omacase/themes"
@@ -16,8 +16,8 @@ THEME_NAME=$(echo "$1" | perl -pe 's/ /-/g; $_ = lc $_')
 THEME_PATH="$THEMES_DIR/$THEME_NAME"
 
 if [[ ! -d "$THEME_PATH" ]]; then
-  echo "Theme '$THEME_NAME' does not exist in $THEMES_DIR" >&2
-  exit 2
+    echo "Theme '$THEME_NAME' does not exist in $THEMES_DIR" >&2
+    exit 2
 fi
 
 # Update theme symlinks
