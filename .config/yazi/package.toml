@@ -23,6 +23,11 @@ use = "Rolv-Apneseth/starship"
 rev = "a63550b"
 hash = "c2021386289a0cbb3e152a052f67c177"
 
+[[plugin.deps]]
+use = "DreamMaoMao/easyjump"
+rev = "6606fb1"
+hash = "9209d17be3c792eda9ad60b447c4db1e"
+
 [[flavor.deps]]
 use = "BennyOe/tokyo-night"
 rev = "5f56364"

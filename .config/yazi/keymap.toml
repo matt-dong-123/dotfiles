@@ -24,9 +24,10 @@ prepend_keymap = [
     ], run = 'shell -- ya emit cd "$(git rev-parse --show-toplevel)"', desc = "Goto home of git repo" },
 
     # Plugins
-    { on = "l", run = "plugin smart-enter", desc = "Enter the child directory, or open the file" },
+    { on = "l", run = "plugin smart-enter" },
     { on = [
         "c",
         "m",
     ], run = "plugin chmod", desc = "Chmod on selected files" },
+    { on = "i", run = "plugin easyjump" }
 ]
