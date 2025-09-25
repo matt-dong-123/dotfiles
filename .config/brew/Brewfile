@@ -6,8 +6,6 @@ tap "nikitabobko/tap"
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
-# Text-based UI library
-brew "ncurses"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Command-line interface for SQLite
@@ -32,8 +30,6 @@ brew "cmatrix"
 brew "cowsay"
 # Static code checker for C++
 brew "cpplint"
-# Secure runtime for JavaScript and TypeScript
-brew "deno"
 # Lua Language Server
 brew "emmylua_ls"
 # Modern, maintained replacement for ls
@@ -44,8 +40,6 @@ brew "fastfetch"
 brew "fd"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
-# Infamous electronic fortune-cookie generator
-brew "fortune"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GNU awk utility
@@ -90,10 +84,10 @@ brew "markdownlint-cli"
 brew "marksman"
 # Command-line interface to split MP3 and Ogg Vorbis files
 brew "mp3splt"
+# Text-based UI library
+brew "ncurses"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Ncurses based sudoku game
-brew "nudoku"
 # Manage multiple Node.js versions
 brew "nvm"
 # Painless compression and decompression for your terminal
@@ -102,8 +96,6 @@ brew "ouch"
 brew "p7zip"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
-# Animated pipes terminal screensaver
-brew "pipes-sh"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Fast, disk space efficient package manager
