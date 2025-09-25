@@ -6,9 +6,9 @@
     "author": "JustADumbPrsn",
     "name": "Nebula",
     "description": "A beautiful theme made for Zen Browser :))",
-    "version": "3.2",
+    "version": "3.3",
     "createdAt": "2025-05-31",
-    "updatedAt": "2025-09-06",
+    "updatedAt": "2025-09-13",
     "readme": "https://raw.githubusercontent.com/JustADumbPrsn/Zen-Nebula/main/README.md",
     "image": "https://i.ibb.co/Lqk4krw/Screenshot-2025-09-03-232353.png",
     "tags": [
@@ -45,27 +45,27 @@
           {
             "directory": "modules",
             "contents": [
+              "General-UI.css",
+              "Sidebar.css",
+              "Topbar-buttons.css",
+              "URLbar.css",
+              "Pinned-extensions.css",
+              "Tabstyles.css",
               "Essentials.css",
               "Sound-icon.css",
               "Toolbar.css",
-              "URLbar.css",
-              "Topbar-buttons.css",
-              "Tabfolders.css",
-              "Sidebar.css",
-              "General-UI.css",
-              "Tabstyles.css",
-              "Pinned-extensions.css",
-              "BetterPiP.css",
-              "Workspace-buttons.css",
               "Miniplayer.css",
-              "Animations(tabs).css"
+              "BetterPiP.css",
+              "Animations(tabs).css",
+              "Tabfolders.css",
+              "Workspace-buttons.css"
             ]
           },
           {
             "directory": "content",
             "contents": [
-              "Transparent-settings.css",
-              "Better-pdf.css"
+              "Better-pdf.css",
+              "Transparent-settings.css"
             ]
           }
         ]

@@ -167,12 +167,12 @@
     "enableForProtectedPages": false,
     "enableContextMenus": false,
     "detectDarkTheme": true,
-    "displayedNews": [
-        "google-docs-bugs"
-    ],
     "installation": {
         "date": 1750086260874,
         "reason": "install",
         "version": "4.9.106"
-    }
+    },
+    "displayedNews": [
+        "google-docs-bugs"
+    ]
 }
