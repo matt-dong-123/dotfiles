@@ -21,7 +21,7 @@ M.apply_to_config = function(config)
     }
     config.tab_max_width = 100
     config.show_new_tab_button_in_tab_bar = false
-    config.default_prog = { 'sesh', 'connect', 'Home' }
+    config.default_prog = { '/opt/homebrew/bin/sesh', 'connect', 'Home' }
 end
 
 return M
