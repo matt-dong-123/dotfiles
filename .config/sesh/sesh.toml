@@ -16,6 +16,11 @@ path = "~/Notes"
 startup_command = "y"
 
 [[session]]
+name = "Music"
+path = "~/Music"
+startup_command = "kew"
+
+[[session]]
 name = "Documents"
 path = "~/Documents"
 
