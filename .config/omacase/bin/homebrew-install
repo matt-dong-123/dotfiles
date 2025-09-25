@@ -32,7 +32,10 @@ fzf_args=(
     --color 'marker:bright-green,spinner:bright-green,header:bright-green'
 )
 
-pkg_names=$(cat <(brew formulae) <(brew casks) | fzf "${fzf_args[@]}")
+pkg_names=$({
+    brew formulae
+    brew casks
+} | fzf "${fzf_args[@]}")
 
 if [[ -n "pkg_names" ]]; then
     echo "$pkg_names" | tr '\n' ' ' | xargs brew install
