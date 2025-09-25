@@ -9,6 +9,8 @@ return {
             c = { 'cpplint' },
             python = { 'black', 'isort', 'ruff' },
             rust = { 'rustfmt' },
+            zsh = { 'shfmt' },
+            sh = { 'shfmt' },
         },
         format_on_save = {},
     },
