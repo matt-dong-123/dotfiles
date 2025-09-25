@@ -18,3 +18,7 @@ play = [{ run = 'iina --no-stdin "$@"' }]
 
 [open]
 prepend_rules = [{ mime = "video/*", use = "play" }]
+
+[preview]
+max_width = 5000
+max_height = 7500
