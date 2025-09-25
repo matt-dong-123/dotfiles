@@ -16,7 +16,6 @@ start-at-login = true
 accordion-padding = 0
 default-root-container-layout = 'accordion'
 default-root-container-orientation = 'auto'
-on-focus-changed = ['move-mouse window-lazy-center']
 
 # App Rules:
 on-window-detected = [
