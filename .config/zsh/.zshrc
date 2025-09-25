@@ -16,7 +16,7 @@ zinit light olets/zsh-transient-prompt
 zinit light Aloxaf/fzf-tab
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
-zinit light zsh-users/zsh-syntax-highlighting
+zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light matt-dong-123/zsh-vi-mode
 zinit light hlissner/zsh-autopair
 zinit snippet OMZP::sudo
