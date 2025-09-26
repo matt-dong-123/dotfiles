@@ -33,13 +33,19 @@
           "key" : "r",
           "label" : "Reddit",
           "type" : "url",
-          "value" : "reddit.com"
+          "value" : "https://reddit.com"
         },
         {
           "key" : "y",
           "label" : "YouTube",
           "type" : "url",
-          "value" : "youtu.be"
+          "value" : "https://youtu.be"
+        },
+        {
+          "key" : "g",
+          "label" : "GitHub",
+          "type" : "url",
+          "value" : "https://github.com"
         }
       ],
       "key" : "i",
