@@ -8,7 +8,7 @@ osascript -e 'tell application "System Events" to set picture of every desktop t
 mkdir -p ~/.config/btop/themes ~/.config/lazygit
 
 # Set specific app links for current theme
-ln -snf ~/.config/omacase/current/theme/neovim.lua ~/.config/nvim/lua/plugins/theme.lua
+ln -snf ~/.config/omacase/current/theme/neovim.lua ~/.config/nvim/lua/config/colorscheme.lua
 ln -snf ~/.config/omacase/current/theme/wezterm.lua ~/.config/wezterm/theme.lua
 ln -snf ~/.config/omacase/current/theme/sketchybar.lua ~/.config/sketchybar/colors.lua
 ln -snf ~/.config/omacase/current/theme/lazygit.yml ~/.config/lazygit/config.yml
