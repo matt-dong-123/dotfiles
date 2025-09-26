@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-if [ -f ~/.bashrc ]; then
-    source ~/.bashrc
-fi
-
 wallpaper=$(realpath ~/.config/omacase/current/theme/backgrounds)
 fzf_args=(
     --preview "~/.config/zsh/extensions/fzf-preview.sh $wallpaper/{}"

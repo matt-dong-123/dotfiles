@@ -88,6 +88,8 @@ brew "mp3splt"
 brew "ncurses"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Ncurses based sudoku game
+brew "nudoku"
 # Manage multiple Node.js versions
 brew "nvm"
 # Painless compression and decompression for your terminal
