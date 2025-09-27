@@ -1,3 +1,5 @@
+eval "$(starship init zsh)"
+
 # Zinit setup
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
@@ -21,16 +23,15 @@ zinit light matt-dong-123/zsh-vi-mode
 zinit light hlissner/zsh-autopair
 zinit snippet OMZP::sudo
 
-ZVM_VI_SURROUND_BINDKEY="s-prefix" 
+ZVM_VI_SURROUND_BINDKEY="s-prefix"
 
 # Completion
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Za-z}'
-zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:*' use-fzf-default-opts yes
 zstyle ':fzf-tab:complete:*' fzf-flags \
     --no-height \
-    --preview='' \
+    --preview=''
 
 # History
 HISTSIZE=10000
@@ -47,7 +48,7 @@ setopt interactivecomments
 setopt globdots extendedglob
 
 ## History
-setopt histignoredups histignorealldups histsavenodups histfindnodups histignorespace 
+setopt histignoredups histignorealldups histsavenodups histfindnodups histignorespace
 setopt sharehistory incappendhistory extendedhistory
 
 # Starship
@@ -68,13 +69,12 @@ export FZF_DEFAULT_OPTS_FILE="${XDG_CONFIG_HOME}/fzf/fzfrc"
 export FZF_CTRL_R_OPTS="--preview ''"
 
 _fzf_compgen_path() {
-  fd -H -E .git . "$1"
+    fd -H -E .git . "$1"
 }
 
 _fzf_compgen_dir() {
-  fd -t=d -H -E .git . "$1"
+    fd -t=d -H -E .git . "$1"
 }
-
 
 # Zoxide
 eval "$(zoxide init --cmd cd zsh)"
@@ -113,10 +113,8 @@ alias gds='gd --staged'
 alias gi='git init'
 alias gl='git log --graph --all --pretty=format:"%C(magenta)%h %C(white) %an  %ar%C(auto)  %D%n%s%n"'
 alias gm='git merge'
-alias gn='git checkout -b'  # new branch
+alias gn='git checkout -b' # new branch
 alias gp='git push'
 alias gr='git reset'
 alias gs='git status --short'
 alias gu='git pull' # mnemonic for `git update`
-
-eval "$(starship init zsh)"
