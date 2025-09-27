@@ -2,7 +2,6 @@ return {
     'folke/snacks.nvim',
     dependencies = {
         'folke/todo-comments.nvim',
-        dependencies = 'nvim-lua/plenary.nvim',
         opts = {},
         keys = {
             {
