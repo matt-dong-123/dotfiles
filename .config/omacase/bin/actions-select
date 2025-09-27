@@ -2,7 +2,7 @@
 
 # Function for the Packages menu
 packages_menu() {
-    CHOICE=$(gum filter "Install" "Uninstall" "Upgrade" "Tap" "Untap" "Search")
+    CHOICE=$(gum filter "Install" "Uninstall" "Upgrade" "Tap" "Untap" "Search" "Sync")
 
     case $CHOICE in
     "Install")
@@ -22,6 +22,9 @@ packages_menu() {
         ;;
     "Search")
         ~/.config/omacase/bin/homebrew-search
+        ;;
+    "Sync")
+        ~/.config/omacase/bin/homebrew-sync-brewfile
         ;;
     esac
 }
