@@ -1,8 +1,8 @@
- #!/usr/bin/env bash
+#!/usr/bin/env bash
 
 if [[ $# -ne 1 ]]; then
-  >&2 echo "usage: $0 FILENAME[:LINENO][:IGNORED]"
-  exit 1
+    >&2 echo "usage: $0 FILENAME[:LINENO][:IGNORED]"
+    exit 1
 fi
 
 file=${1/#\~\//$HOME/}
