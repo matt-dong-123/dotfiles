@@ -1,14 +1,14 @@
-# My dotfiles (for MacOS)
+# Omacase (a blatant rip-off of [Omarchy](https://github.com/basecamp/omarchy))
 
 <!--toc:start-->
-- [My dotfiles (for MacOS)](#my-dotfiles-for-macos)
-  - [Features](#features)
-  - [Prerequisites](#prerequisites)
-  - [Install Instructions](#install-instructions)
-  - [Post-install](#post-install)
-    - [Zen](#zen)
-    - [LeaderKey](#leaderkey)
-  - [Screenshots](#screenshots)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Install Instructions](#install-instructions)
+- [Post-install](#post-install)
+  - [Zen](#zen)
+  - [LeaderKey](#leaderkey)
+- [Screenshots](#screenshots)
+  - [Themes](#themes)
 <!--toc:end-->
 
 ## Features
@@ -19,7 +19,8 @@
 
 ## Prerequisites
 
-- curl (Comes with macos by default)
+- MacOS 15 or later
+- curl (Comes with MacOS by default)
 
 ## Install Instructions
 
