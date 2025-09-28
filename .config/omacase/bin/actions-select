@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-# Function for the Packages menu
 packages_menu() {
     CHOICE=$(gum filter "Install" "Uninstall" "Upgrade" "Tap" "Untap" "Search" "Sync")
 
@@ -29,18 +28,19 @@ packages_menu() {
     esac
 }
 
-# Function for the Themes menu
 themes_menu() {
     ~/.config/omacase/bin/theme-select
 }
 
-# Function for the Backgrounds menu
 backgrounds_menu() {
     ~/.config/omacase/bin/background-select
 }
 
-# Main menu
-CHOICE=$(gum filter "Packages" "Themes" "Backgrounds")
+about_menu() {
+    ~/.config/omacase/bin/about-fastfetch
+}
+
+CHOICE=$(gum filter "Packages" "Themes" "Backgrounds" "About")
 
 case $CHOICE in
 "Packages")
@@ -51,5 +51,8 @@ case $CHOICE in
     ;;
 "Backgrounds")
     backgrounds_menu
+    ;;
+"About")
+    about_menu
     ;;
 esac

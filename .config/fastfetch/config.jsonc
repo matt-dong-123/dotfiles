@@ -62,11 +62,6 @@
       "key": "│ ├󰏖 PM",
       "keyColor": "yellow"
     },
-    {
-      "type": "shell",
-      "key": "└ └ SH",
-      "keyColor": "yellow"
-    },
     "break",
     {
       "type": "de",

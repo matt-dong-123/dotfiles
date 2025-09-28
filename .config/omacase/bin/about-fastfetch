@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+echo
+fastfetch
+bash -c 'read -n 1 -s -t 30'
