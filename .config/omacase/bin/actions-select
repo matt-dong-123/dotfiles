@@ -40,7 +40,11 @@ about_menu() {
     ~/.config/omacase/bin/about-fastfetch
 }
 
-CHOICE=$(gum filter "Packages" "Themes" "Backgrounds" "About")
+update_menu() {
+    ~/.config/omacase/bin/omacase-update
+}
+
+CHOICE=$(gum filter "Packages" "Themes" "Backgrounds" "About" "Update Omacase")
 
 case $CHOICE in
 "Packages")
@@ -54,5 +58,8 @@ case $CHOICE in
     ;;
 "About")
     about_menu
+    ;;
+"Update Omacase")
+    update_menu
     ;;
 esac
