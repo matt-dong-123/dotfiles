@@ -1,6 +1,6 @@
 return {
     {
-        'tpope/vim-fugitive',
+        'nvim-mini/mini.nvim',
         lazy = false,
         keys = {
             {
