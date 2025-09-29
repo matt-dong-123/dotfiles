@@ -52,26 +52,17 @@ echo -e "${yellow}Writing MacOS system settings...${no_color}"
 # Hide menu bar
 defaults write NSGlobalDomain _HIHideMenuBar -bool true
 
-# Set dock size
-defaults write com.apple.dock "tilesize" -int "70"
-
-# Autohide dock
+# Hide dock
 defaults write com.apple.dock "autohide" -bool "true"
 
-# Set autohide speed
+# Set dock hide speed
 defaults write com.apple.dock "autohide-time-modifier" -float "0.2"
 
 # Set autohide delay
 defaults write com.apple.dock "autohide-delay" -float "0"
 
-# Don't show recents
-defaults write com.apple.dock "show-recents" -bool "false"
-
 # Add small spacer tile
 defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}'
-
-# Set `scale` effect when minimizing windows
-defaults write com.apple.dock "mineffect" -string "scale"
 
 # Show the `Quit` menu item in Finder
 defaults write com.apple.finder "QuitMenuItem" -bool "true"
@@ -87,9 +78,6 @@ defaults write com.apple.finder "ShowPathbar" -bool "true"
 
 # Don't show files in desktop
 defaults write com.apple.finder "CreateDesktop" -bool "false"
-
-# Firm click weight
-defaults write com.apple.AppleMultitouchTrackpad "FirstClickThreshold" -int "2"
 
 # Enable keyboard navigation
 defaults write NSGlobalDomain AppleKeyboardUIMode -int "2"
