@@ -43,8 +43,10 @@ cd "$HOME/dotfiles" || exit
 echo -e "${green}Using .config/brewfile/Brewfile for quick install${no_color}"
 brew bundle install --file=~/.config/brew/Brewfile
 brew bundle cleanup --force --file=~/.config/brew/Brewfile
-echo -e "${blue}Installing SBarLua${no_color}"
-git clone https://github.com/FelixKratz/SbarLua.git /tmp/SbarLua && cd /tmp/SbarLua/ && make install && rm -rf /tmp/SbarLua/
+if [ ! -d "$HOME/.local/share/sketchybar_lua/" ]; then
+    echo -e "${blue}Installing SBarLua${no_color}"
+    git clone https://github.com/FelixKratz/SbarLua.git /tmp/SbarLua && cd /tmp/SbarLua/ && make install && rm -rf /tmp/SbarLua/
+fi
 
 ## MacOS system settings
 echo -e "${yellow}Writing MacOS system settings...${no_color}"
