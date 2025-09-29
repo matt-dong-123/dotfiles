@@ -122,7 +122,7 @@
     side-by-side = true
 
 [include]
-    path = ~/.config/git/delta-colors
+    path = ~/.config/omacase/current/theme/delta-colors
 
 [merge]
     conflictStyle = zdiff3
