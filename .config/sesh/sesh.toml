@@ -13,7 +13,6 @@ path = "~/dotfiles"
 [[session]]
 name = "Notes"
 path = "~/Notes"
-startup_command = "y"
 
 [[session]]
 name = "Music"
