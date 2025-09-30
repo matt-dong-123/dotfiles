@@ -20,7 +20,6 @@ fi
 ln -nsf "$THEME_PATH" "$CURRENT_THEME_DIR"
 
 touch ~/.config/wezterm/wezterm.lua
-touch ~/.config/kitty/kitty.conf
 
 wallpaper=$(realpath ~/.config/omacase/current/theme/backgrounds/default.png)
 osascript -e "tell application \"System Events\" to set picture of every desktop to \"$wallpaper\""
