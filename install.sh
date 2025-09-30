@@ -61,6 +61,7 @@ if gum confirm "Write Settings?"; then
     defaults write com.apple.finder "ShowPathbar" -bool "true"                                    # Show pathbar
     defaults write com.apple.finder "CreateDesktop" -bool "false"                                 # Don't show desktop files
     defaults write NSGlobalDomain AppleKeyboardUIMode -int "2"                                    # Keyboard Navigation
+    defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false                  # Disable Window Animations
 fi
 
 gum confirm "Enable sudo via Touch ID?" &&
