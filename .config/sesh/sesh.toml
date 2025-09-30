@@ -4,7 +4,6 @@ preview_command = "eza --tree --color=always {} | head -200; else bat -n --color
 [[session]]
 name = "Downloads"
 path = "~/Downloads"
-startup_command = "y"
 
 [[session]]
 name = "dotfiles"
