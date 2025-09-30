@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Colors!
 green="\033[1;32m"
@@ -49,54 +49,24 @@ if [ ! -d "$HOME/.local/share/sketchybar_lua/" ]; then
 fi
 
 ## MacOS system settings
-echo -e "${yellow}Writing MacOS system settings...${no_color}"
-
-# Hide menu bar
-defaults write NSGlobalDomain _HIHideMenuBar -bool true
-
-# Hide dock
-defaults write com.apple.dock "autohide" -bool "true"
-
-# Set dock hide speed
-defaults write com.apple.dock "autohide-time-modifier" -float "0.2"
-
-# Set autohide delay
-defaults write com.apple.dock "autohide-delay" -float "0"
-
-# Add small spacer tile
-defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}'
-
-# Show the `Quit` menu item in Finder
-defaults write com.apple.finder "QuitMenuItem" -bool "true"
-
-# Show all file extensions
-defaults write NSGlobalDomain "AppleShowAllExtensions" -bool "true"
-
-# Show hidden files
-defaults write com.apple.finder "AppleShowAllFiles" -bool "true"
-
-# Show pathbar in Finder
-defaults write com.apple.finder "ShowPathbar" -bool "true"
-
-# Don't show files in desktop
-defaults write com.apple.finder "CreateDesktop" -bool "false"
-
-# Enable keyboard navigation
-defaults write NSGlobalDomain AppleKeyboardUIMode -int "2"
-
-# Disable confirmation when closing unsaved windows (will autosave)
-defaults write NSGlobalDomain "NSCloseAlwaysConfirmsChanges" -bool "true"
-
-echo -e "${blue}Enable sudo via Touch ID? (Y/n)${no_color}"
-read -p "" touchid
-if [ "$touchid" != "n" ] && [ "$touchid" != "N" ]; then
-    sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+if gum confirm "Write Settings?"; then
+    defaults write NSGlobalDomain _HIHideMenuBar -bool true                                       # Hide menu bar
+    defaults write com.apple.dock "autohide" -bool "true"                                         # Hide dock
+    defaults write com.apple.dock "autohide-time-modifier" -float "0.2"                           # Set dock hide speed
+    defaults write com.apple.dock "autohide-delay" -float "0"                                     # Set autohide delay
+    defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}' # Add small spacer tile
+    defaults write com.apple.finder "QuitMenuItem" -bool "true"                                   # Show quit menu
+    defaults write NSGlobalDomain "AppleShowAllExtensions" -bool "true"                           # show all file extensions
+    defaults write com.apple.finder "AppleShowAllFiles" -bool "true"                              # show hidden
+    defaults write com.apple.finder "ShowPathbar" -bool "true"                                    # Show pathbar
+    defaults write com.apple.finder "CreateDesktop" -bool "false"                                 # Don't show desktop files
+    defaults write NSGlobalDomain AppleKeyboardUIMode -int "2"                                    # Keyboard Navigation
 fi
 
-echo -e "${red}Disable quarantine and gatekeeper? (y/N) ${no_color}"
-read -p "" quarantine
-if [ "$quarantine" = "Y" ] || [ "$quarantine" = "y" ]; then
-    # Disable quarantine
+gum confirm "Enable sudo via Touch ID?" &&
+    sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+
+if gum confirm "Disable quarantine and gatekeeper?"; then
     defaults write com.apple.LaunchServices "LSQuarantine" -bool "false"
     sudo spctl --master-disable
 fi
@@ -113,9 +83,7 @@ stow .
 
 echo -e "${green}Setup complete!${no_color}"
 
-echo -e "${purple}Reboot for some settings to take effect? (Y/n) ${no_color}"
-read -p "" reboot
-if [ "$reboot" != "N" ] && [ "$reboot" != "n" ]; then
+if gum confirm "Reboot for some settings to take effect?"; then
     echo -e "${red}Rebooting...${no_color}"
     sudo reboot
 fi
