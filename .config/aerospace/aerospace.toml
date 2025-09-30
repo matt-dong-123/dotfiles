@@ -27,6 +27,7 @@ on-window-detected = [
     { if.app-id = "us.zoom.xos", run = "move-node-to-workspace work" },
     { if.app-id = "com.kingsoft.wpsoffice.mac", run = "move-node-to-workspace work" },
     { if.app-id = "com.apple.finder", run = "layout floating" },
+    { if.app-id = "kitty-quick-access", run = "layout floating" },
     { if.app-name-regex-substring = "Clash", run = 'layout floating' },
     { if.app-name-regex-substring = "alacritty", run = 'layout floating' },
 ]

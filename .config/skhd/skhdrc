@@ -10,8 +10,8 @@ ctrl + shift + cmd - w : open -a "WeChat"
 ctrl + shift + cmd - z : open -a "zoom.us"
 ctrl + shift + cmd - return : open -a "Wezterm"
 
-ctrl + shift + cmd - i : alacritty -e ~/.config/omacase/bin/homebrew-install
-ctrl + shift + cmd - u : alacritty -e ~/.config/omacase/bin/homebrew-uninstall
-ctrl + shift + cmd - t : alacritty -e ~/.config/omacase/bin/theme-select
-ctrl + shift + cmd - b : alacritty -e ~/.config/omacase/bin/background-select
-alt + cmd - space : alacritty -e ~/.config/omacase/bin/actions-select
+ctrl + shift + cmd - i : kitten quick-access-terminal ~/.config/omacase/bin/homebrew-install
+ctrl + shift + cmd - u : kitten quick-access-terminal ~/.config/omacase/bin/homebrew-uninstall
+ctrl + shift + cmd - t : kitten quick-access-terminal ~/.config/omacase/bin/theme-select
+ctrl + shift + cmd - b : kitten quick-access-terminal ~/.config/omacase/bin/background-select
+alt + cmd - space : kitten quick-access-terminal ~/.config/omacase/bin/actions-select

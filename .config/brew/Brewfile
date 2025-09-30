@@ -150,8 +150,6 @@ brew "felixkratz/formulae/sketchybar"
 brew "jackielii/tap/skhd-zig"
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "aerospace"
-# GPU-accelerated terminal emulator
-cask "alacritty"
 # Cloud storage service
 cask "baidunetdisk"
 # Control the platform power state of your Apple Silicon device
@@ -168,6 +166,8 @@ cask "iina"
 cask "input-source-pro"
 # Keyboard customiser
 cask "karabiner-elements"
+# GPU-based terminal emulator
+cask "kitty"
 # Application launcher
 cask "leader-key"
 # Intercept, modify, replay, save HTTP/S traffic
