@@ -4,5 +4,4 @@ theme=$(~/.config/omacase/bin/theme-list | gum filter)
 
 if [[ -n "$theme" ]]; then
     ~/.config/omacase/bin/theme-set "$theme"
-    ~/.config/omacase/bin/gum-done
 fi

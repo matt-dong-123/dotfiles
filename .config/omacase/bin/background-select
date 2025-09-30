@@ -32,5 +32,4 @@ selection=$(ls -1 $wallpaper | fzf "${fzf_args[@]}")
 
 if [[ -n "$selection" ]]; then
     osascript -e "tell application \"System Events\" to set picture of every desktop to POSIX file \"$wallpaper/$selection\""
-    ~/.config/omacase/bin/gum-done
 fi
