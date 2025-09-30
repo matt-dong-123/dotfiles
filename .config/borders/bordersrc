@@ -8,7 +8,7 @@ options=(
     inactive_color="$INACTIVE_COLOR"
     width=6.0
     hidpi=on
-    blacklist="iPhone Mirroring"
+    blacklist="iPhone Mirroring,kitty"
 )
 
 borders "${options[@]}"
