@@ -24,11 +24,6 @@ return {
                 desc = 'Pull',
             },
             {
-                '<leader>gg',
-                '<cmd>Git<CR>',
-                desc = 'Open fugitive',
-            },
-            {
                 '<leader>gn',
                 ':Git checkout -b ',
                 desc = 'New Branch',
