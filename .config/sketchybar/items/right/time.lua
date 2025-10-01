@@ -17,6 +17,7 @@ local time = sbar.add("item", {
 	},
 	update_freq = 1,
 	position = "right",
+	click_script = "open -a 'Clock'",
 })
 
 time:subscribe({ "forced", "routine", "system_woke" }, function()

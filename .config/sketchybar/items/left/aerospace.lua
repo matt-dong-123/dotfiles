@@ -4,10 +4,8 @@ local icons = require("icons")
 local function parse_cmd_to_table(s)
 	local file = io.popen(s)
 	local contents = ""
-	if file then
-		contents = file:read("*a")
-		file:close()
-	end
+	contents = file:read("*a")
+	file:close()
 	local result = {}
 	for line in contents:gmatch("([^\n]+)") do
 		table.insert(result, line)
@@ -54,6 +52,7 @@ for i, workspace in ipairs(workspaces) do
 			string = spaceConfig.icon,
 			color = colors.grey,
 		},
+		click_script = "aerospace workspace " .. workspace,
 	})
 
 	space:subscribe("aerospace_workspace_change", function(env)

@@ -16,8 +16,9 @@ local date = sbar.add("item", {
 	},
 	position = "right",
 	update_freq = 1,
+	click_script = "open -a 'Calendar'",
 })
 
-date:subscribe({ "forced", "routine", "system_woke" }, function(env)
+date:subscribe({ "forced", "routine", "system_woke" }, function(_)
 	date:set({ label = os.date("%a %d") })
 end)
