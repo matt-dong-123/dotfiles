@@ -6,10 +6,14 @@ tap "nikitabobko/tap"
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
-# Clone of cat(1) with syntax highlighting and Git integration
-brew "bat"
 # Command-line interface for SQLite
 brew "sqlite"
+# Platform built on V8 to build network applications
+brew "node"
+# Language Server for Bash
+brew "bash-language-server"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.13"
 # Python code formatter
@@ -76,8 +80,6 @@ brew "luajit"
 brew "luarocks"
 # Utility for directing compilation
 brew "make"
-# Platform built on V8 to build network applications
-brew "node"
 # CLI for Node.js style checker and lint tool for Markdown files
 brew "markdownlint-cli"
 # Language Server Protocol for Markdown
