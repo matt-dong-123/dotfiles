@@ -11,7 +11,6 @@ mkdir -p ~/.config/btop/themes ~/.config/lazygit
 ln -snf ~/.config/omacase/current/theme/neovim.lua ~/.config/nvim/lua/config/colorscheme.lua
 ln -snf ~/.config/omacase/current/theme/wezterm.lua ~/.config/wezterm/theme.lua
 ln -snf ~/.config/omacase/current/theme/sketchybar.lua ~/.config/sketchybar/colors.lua
-ln -snf ~/.config/omacase/current/theme/lazygit.yml ~/.config/lazygit/config.yml
 ln -snf ~/.config/omacase/current/theme/btop.theme ~/.config/btop/themes/current.theme
 ln -snf ~/.config/omacase/current/theme/bat ~/.config/bat/config
 ln -snf ~/.config/omacase/current/theme/yazi.toml ~/.config/yazi/theme.toml
