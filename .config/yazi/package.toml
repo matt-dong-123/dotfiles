@@ -1,21 +1,21 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "d7588f6"
-hash = "1adc12c2b2b025411ab61eb8f0879574"
+rev = "d1c8baa"
+hash = "8ad3e90b079190b4905f24a44f4ca06b"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "d7588f6"
+rev = "d1c8baa"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "d7588f6"
+rev = "d1c8baa"
 hash = "63b6c222bf2103b3023389dde5e2ecfe"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "d7588f6"
+rev = "d1c8baa"
 hash = "56fdabc96fc1f4d53c96eb884b02a5be"
 
 [[plugin.deps]]
@@ -25,7 +25,7 @@ hash = "c2021386289a0cbb3e152a052f67c177"
 
 [[plugin.deps]]
 use = "mikavilpas/easyjump.yazi:easyjump"
-rev = "32dcf95"
+rev = "03c8819"
 hash = "5b6933fba319214d24d7699942778fc2"
 
 [[flavor.deps]]
@@ -40,13 +40,13 @@ hash = "eb88137cf13a796225254344bf6def2c"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
-rev = "4296a38"
-hash = "deff42490f77b222e9d3a84dc16a76c5"
+rev = "2d73b79"
+hash = "d4c41d713b325710a9dd5ae86c3f8a5f"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:dracula"
-rev = "4296a38"
-hash = "eefb18cb038121aed2b6eeaacea5a63e"
+rev = "2d73b79"
+hash = "fc6944561718351d70cffde75839211f"
 
 [[flavor.deps]]
 use = "Chromium-3-Oxide/everforest-medium"
