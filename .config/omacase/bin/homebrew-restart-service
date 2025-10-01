@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+brew services list | awk 'NR>1{print $1}' | gum filter | xargs brew services restart

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 packages_menu() {
-    CHOICE=$(gum filter "Install" "Uninstall" "Upgrade" "Tap" "Untap" "Search" "Sync")
+    CHOICE=$(gum filter "Install" "Uninstall" "Upgrade" "Tap" "Untap" "Search" "Sync" "Restart")
 
     case $CHOICE in
     "Install")
@@ -24,6 +24,9 @@ packages_menu() {
         ;;
     "Sync")
         ~/.config/omacase/bin/homebrew-sync-brewfile
+        ;;
+    "Restart")
+        ~/.config/omacase/bin/homebrew-restart-service
         ;;
     esac
 }
