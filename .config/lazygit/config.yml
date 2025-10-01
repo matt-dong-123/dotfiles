@@ -14,3 +14,6 @@ gui:
       - blue
     optionsTextColor:
       - white
+    selectedLineBgColor:
+      - black
+      - bold
