@@ -1,5 +1,5 @@
 [default_session]
-preview_command = "eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi"
+preview_command = "eza --tree --color=always --icons {}"
 
 [[session]]
 name = "Downloads"
