@@ -84,8 +84,3 @@ stow .
 ~/.config/omacase/install/theme.sh
 
 echo -e "${green}Setup complete!${no_color}"
-
-if ((settings == 0)) && gum confirm "Reboot for some settings to take effect?"; then
-    echo -e "${red}Rebooting...${no_color}"
-    sudo reboot
-fi
