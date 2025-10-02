@@ -21,6 +21,7 @@ zinit light zsh-users/zsh-completions
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light matt-dong-123/zsh-vi-mode
 zinit light hlissner/zsh-autopair
+zinit light junegunn/fzf-git.sh
 zinit snippet OMZP::sudo
 
 ZVM_VI_SURROUND_BINDKEY="s-prefix"
@@ -60,7 +61,6 @@ TRANSIENT_PROMPT_TRANSIENT_PROMPT='$(starship module character)'
 # FZF Configuration
 zvm_after_init() {
     source <(fzf --zsh)
-    source "${ZDOTDIR}/extensions/fzf-git.sh"
 }
 export FZF_DEFAULT_COMMAND="fd -H --strip-cwd-prefix -E .git"
 export FZF_CTRL_T_COMAND="$FZF_DEFAULT_COMMAND"
