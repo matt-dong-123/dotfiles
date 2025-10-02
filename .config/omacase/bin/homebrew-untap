@@ -3,7 +3,7 @@
 tap=$(brew tap | gum filter --placeholder "Untap out of...")
 
 if [[ -n "$tap" ]]; then
-    brew untap $tap
+    brew untap "$tap"
     ~/.config/omacase/bin/homebrew-update-brewfile
     ~/.config/omacase/bin/gum-done
 fi

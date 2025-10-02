@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 gum style --foreground 5 "Updating Omacase..."
-git -C $HOME/dotfiles pull --autostash
-git -C $HOME/dotfiles diff --check || git -C $HOME/dotfiles reset --merge
+git -C "$HOME/dotfiles" pull --autostash
+git -C "$HOME/dotfiles" diff --check || git -C "$HOME/dotfiles" reset --merge
 
 echo
 

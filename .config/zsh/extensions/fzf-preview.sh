@@ -8,12 +8,12 @@ fi
 file=${1/#\~\//$HOME/}
 type=$(file --brief --dereference --mime -- "$file")
 
-if [ -d $file ]; then
-    eza --tree --color=always --icons $file
+if [ -d "$file" ]; then
+    eza --tree --color=always --icons "$file"
 elif [[ $type =~ image/ ]]; then
-    chafa --size 50x $file
+    chafa --size 50x "$file"
 elif [[ $type =~ =binary ]]; then
     file "$1"
 else
-    bat -n --color=always --line-range :500 $file
+    bat -n --color=always --line-range :500 "$file"
 fi

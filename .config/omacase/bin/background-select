@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-wallpaper=$(realpath ~/.config/omacase/current/theme/backgrounds)
+wallpaper=$(realpath "$HOME/.config/omacase/current/theme/backgrounds")
 fzf_args=(
-    --preview "~/.config/zsh/extensions/fzf-preview.sh $wallpaper/{}"
+    --preview "$HOME/.config/zsh/extensions/fzf-preview.sh $wallpaper/{}"
     --border-label '  Backgrounds '
 
     --style full
@@ -28,7 +28,7 @@ fzf_args=(
     --color 'marker:bright-green,spinner:bright-green,header:bright-green'
 )
 
-selection=$(ls -1 $wallpaper | fzf "${fzf_args[@]}")
+selection=$(ls -1 "$wallpaper" | fzf "${fzf_args[@]}")
 
 if [[ -n "$selection" ]]; then
     osascript -e "tell application \"System Events\" to set picture of every desktop to POSIX file \"$wallpaper/$selection\""

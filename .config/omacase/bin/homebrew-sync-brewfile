@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-brew bundle install --file=$HOME/.config/brew/Brewfile
-brew bundle cleanup --force --file=$HOME/.config/brew/Brewfile
+brew bundle install --file="$HOME/.config/brew/Brewfile"
+brew bundle cleanup --force --file="$HOME/.config/brew/Brewfile"
 ~/.config/omacase/bin/gum-done
