@@ -87,6 +87,7 @@ alias v="nvim"
 alias c="cd ~/dotfiles"
 alias n="cd ~/notes"
 alias cat="bat"
+alias oc="opencode"
 y() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
     yazi "$@" --cwd-file="$tmp"
