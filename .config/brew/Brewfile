@@ -92,6 +92,8 @@ brew "ncurses"
 brew "neovim"
 # Manage multiple Node.js versions
 brew "nvm"
+# AI coding agent, built for the terminal
+brew "opencode"
 # Painless compression and decompression for your terminal
 brew "ouch"
 # 7-Zip (high compression file archiver) implementation
