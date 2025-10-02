@@ -33,7 +33,7 @@ pkg_names=$({
     brew casks
 } | fzf "${fzf_args[@]}")
 
-if [[ -n "pkg_names" ]]; then
+if [[ -n "$pkg_names" ]]; then
     echo "$pkg_names" | tr '\n' ' ' | xargs brew install
     ~/.config/omacase/bin/homebrew-update-brewfile
     ~/.config/omacase/bin/gum-done
