@@ -25,7 +25,7 @@ hash = "c2021386289a0cbb3e152a052f67c177"
 
 [[plugin.deps]]
 use = "mikavilpas/easyjump.yazi:easyjump"
-rev = "a0f9a31"
+rev = "6c27e11"
 hash = "5b6933fba319214d24d7699942778fc2"
 
 [[flavor.deps]]
