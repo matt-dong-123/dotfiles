@@ -1,51 +1,63 @@
 #!/usr/bin/env bash
 
+log() { echo -e "→ $*"; }
+die() {
+    echo -e "✖ $*" >&2
+    exit 1
+}
+
 # Colors!
-green="\033[1;32m"
-yellow="\033[1;33m"
-red="\033[1;31m"
-purple="\033[1;35m"
-blue="\033[1;34m"
-no_color="\033[0m"
+red="$(tput setaf 1)"
+green="$(tput setaf 2)"
+yellow="$(tput setaf 3)"
+blue="$(tput setaf 4)"
+no_color="$(tput sgr0)"
 
 # Install xCode cli tools
 if [[ "$(uname)" == "Darwin" ]]; then
-    echo -e "${yellow}macOS detected...${no_color}"
+    log "${yellow}macOS detected...${no_color}"
 
     if xcode-select -p &>/dev/null; then
-        echo -e "${blue}Xcode already installed${no_color}"
+        log "${blue}Xcode CLI tools already installed${no_color}"
     else
-        echo -e "${green}Installing command line tools...${no_color}"
+        log "${green}Installing command line tools...${no_color}"
         xcode-select --install
     fi
 else
-    echo -e "${red}You are not on MacOS, you cannot install these dotfiles automatically.${no_color}"
-    exit 1
+    die "${red}You are not on MacOS, you cannot install these dotfiles automatically.${no_color}"
 fi
 
 # Homebrew
 ## Install
-if [ "$(which brew)" != "/usr/local/bin/brew" ] && [ "$(which brew)" != "/opt/homebrew/bin/brew" ]; then
-    echo -e "${green}Installing Brew...${no_color}"
+if ! command -v brew >/dev/null; then
+    log "${green}Installing Brew...${no_color}"
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     brew analytics off
+else
+    log "${blue}Brew installed${no_color}"
 fi
 
 # Clone dotfiles repository
 if [ ! -d "$HOME/dotfiles" ]; then
-    echo -e "${green}Cloning dotfiles repository...${no_color}"
-    git clone https://github.com/matt-dong-123/dotfiles.git "$HOME/dotfiles"
+    log "${green}Cloning dotfiles repository...${no_color}"
+    git clone https://github.com/matt-dong-123/dotfiles.git "$HOME/dotfiles" ||
+        die "${red}Failed to clone dots, check your internet connection${no_color}"
+else
+    log "${blue}Dotfiles exist${no_color}"
 fi
 
 # Navigate to dotfiles directory
 cd "$HOME/dotfiles" || exit
 
-echo -e "${green}Using .config/brewfile/Brewfile for quick install${no_color}"
-brew bundle install --file=~/.config/brew/Brewfile
+log "${green}Using .config/brewfile/Brewfile for quick install${no_color}"
+brew bundle install --file=~/.config/brew/Brewfile ||
+    die "${red}\`brew bundle\` failed, check your internet connection${no_color}"
 brew bundle cleanup --force --file=~/.config/brew/Brewfile
 if [ ! -d "$HOME/.local/share/sketchybar_lua/" ]; then
-    echo -e "${blue}Installing SBarLua${no_color}"
-    git clone https://github.com/FelixKratz/SbarLua.git /tmp/SbarLua && cd /tmp/SbarLua/ && make install && rm -rf /tmp/SbarLua/
+    log "${blue}Installing SBarLua${no_color}"
+    git clone https://github.com/FelixKratz/SbarLua.git /tmp/SbarLua &&
+        cd /tmp/SbarLua/ && make install && rm -rf /tmp/SbarLua/ ||
+        die "{$red}Failed to install SBarLua, check your internet connection${no_color}"
 fi
 
 ## MacOS system settings
@@ -71,16 +83,15 @@ fi
 gum confirm "Enable sudo via Touch ID?" &&
     sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
 
-if gum confirm "Disable quarantine and gatekeeper?"; then
+if gum confirm "⚠️WARNING Disable quarantine and gatekeeper?"; then
     defaults write com.apple.LaunchServices "LSQuarantine" -bool "false"
     sudo spctl --master-disable
 fi
 
 # Stow dotfiles packages
-echo -e "${green}Stowing dotfiles...${no_color}"
-cd ~/dotfiles
-stow .
+log "${green}Stowing dotfiles...${no_color}"
+cd ~/dotfiles && stow .
 
 ~/.config/omacase/install/theme.sh
 
-echo -e "${green}Setup complete!${no_color}"
+log "${green}Setup complete!${no_color}"
