@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-set -e
 
 # Colors!
 green="\033[1;32m"
@@ -50,7 +49,9 @@ if [ ! -d "$HOME/.local/share/sketchybar_lua/" ]; then
 fi
 
 ## MacOS system settings
-if gum confirm "Write Settings?"; then
+gum confirm "Write Settings?"
+settings=$?
+if ((settings == 0)); then
     defaults write NSGlobalDomain _HIHideMenuBar -bool true                                       # Hide menu bar
     defaults write com.apple.dock "autohide" -bool "true"                                         # Hide dock
     defaults write com.apple.dock "autohide-time-modifier" -float "0.2"                           # Set dock hide speed
@@ -84,7 +85,7 @@ stow .
 
 echo -e "${green}Setup complete!${no_color}"
 
-if gum confirm "Reboot for some settings to take effect?"; then
+if ((settings == 0)) && gum confirm "Reboot for some settings to take effect?"; then
     echo -e "${red}Rebooting...${no_color}"
     sudo reboot
 fi
