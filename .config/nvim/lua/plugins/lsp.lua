@@ -10,6 +10,7 @@ return {
                 'pyright',
                 'ruff',
                 'marksman',
+                'bashls',
             }
         end,
     },
