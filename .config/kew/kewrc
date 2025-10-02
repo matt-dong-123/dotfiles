@@ -4,7 +4,7 @@
 
 [miscellaneous]
 
-path=/Users/matt/Music
+path=~/Music
 version=3.4.1
 allowNotifications=1
 hideLogo=0
