@@ -57,7 +57,7 @@ if [ ! -d "$HOME/.local/share/sketchybar_lua/" ]; then
     log "${blue}Installing SBarLua${no_color}"
     git clone https://github.com/FelixKratz/SbarLua.git /tmp/SbarLua &&
         cd /tmp/SbarLua/ && make install && rm -rf /tmp/SbarLua/ ||
-        die "{$red}Failed to install SBarLua, check your internet connection${no_color}"
+        die "${red}Failed to install SBarLua, check your internet connection${no_color}"
 fi
 
 ## MacOS system settings
