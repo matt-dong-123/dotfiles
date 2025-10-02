@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 
 # Colors!
 green="\033[1;32m"
@@ -62,6 +63,8 @@ if gum confirm "Write Settings?"; then
     defaults write com.apple.finder "CreateDesktop" -bool "false"                                 # Don't show desktop files
     defaults write NSGlobalDomain AppleKeyboardUIMode -int "2"                                    # Keyboard Navigation
     defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false                  # Disable Window Animations
+    killall Finder
+    killall Dock
 fi
 
 gum confirm "Enable sudo via Touch ID?" &&
@@ -71,9 +74,6 @@ if gum confirm "Disable quarantine and gatekeeper?"; then
     defaults write com.apple.LaunchServices "LSQuarantine" -bool "false"
     sudo spctl --master-disable
 fi
-
-killall Finder
-killall Dock
 
 # Stow dotfiles packages
 echo -e "${green}Stowing dotfiles...${no_color}"
