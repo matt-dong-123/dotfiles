@@ -19,7 +19,11 @@ zinit light Aloxaf/fzf-tab
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 zinit light zdharma-continuum/fast-syntax-highlighting
-zinit light matt-dong-123/zsh-vi-mode
+
+export ZVM_READKEY_ENGINE=zle
+export ZVM_KEYTIMEOUT=0.2
+zinit light jeffreytse/zsh-vi-mode
+
 zinit light hlissner/zsh-autopair
 zinit light junegunn/fzf-git.sh
 zinit snippet OMZP::sudo
