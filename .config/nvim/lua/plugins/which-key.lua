@@ -12,6 +12,7 @@ return {
                 { '<leader>g', group = 'Git', icon = '' },
                 { '<leader>n', group = 'Notes', icon = '' },
                 { '<leader>l', group = 'LSP', icon = '' },
+                { '<leader>x', group = 'Trouble', icon = '' },
                 { '<leader>w', icon = '' },
                 { '<leader>q', icon = '' },
                 { '<leader>e', icon = '' },
