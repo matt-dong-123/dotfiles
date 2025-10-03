@@ -63,9 +63,7 @@ TRANSIENT_PROMPT_RPROMPT='$(starship prompt --right --terminal-width="$COLUMNS" 
 TRANSIENT_PROMPT_TRANSIENT_PROMPT='$(starship module character)'
 
 # FZF Configuration
-zvm_after_init() {
-    source <(fzf --zsh)
-}
+source <(fzf --zsh)
 export FZF_DEFAULT_COMMAND="fd -H --strip-cwd-prefix -E .git"
 export FZF_CTRL_T_COMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd -t=d -H --strip-cwd-prefix -E .git"
