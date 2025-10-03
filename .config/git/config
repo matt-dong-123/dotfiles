@@ -12,7 +12,7 @@
     whitespace = error
     preloadindex = true
 	editor = nvim
-    pager = delta
+	pager = bat --style=plain
 
 [advice]
     addEmptyPathSpec = false
@@ -44,6 +44,7 @@
 [pager]
     branch = false  # no need to use pager for git branch
     tag = false
+	diff = bat --paging never --pager none --style=plain --language diff
 
 [push]
     autoSetupRemote = true  # easier to push new branches
@@ -112,17 +113,6 @@
     short = true
     showStash = true
     showUntrackedFiles = all
-
-[interactive]
-    diffFilter = delta --color-only
-
-[delta]
-    navigate = true
-    dark = true
-    side-by-side = true
-
-[include]
-    path = ~/.config/omacase/current/theme/delta-colors
 
 [merge]
     conflictStyle = zdiff3

@@ -54,8 +54,6 @@ brew "gawk"
 brew "gh"
 # Distributed revision control system
 brew "git"
-# Syntax-highlighting pager for git and diff output
-brew "git-delta"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Numerical library for C and C++
