@@ -2,7 +2,7 @@
 
 wallpaper=$(realpath "$HOME/.config/omacase/current/theme/backgrounds")
 fzf_args=(
-    --preview "$HOME/.config/zsh/extensions/fzf-preview.sh $wallpaper/{}"
+    --preview "$HOME/.config/zsh/fzf-preview.sh $wallpaper/{}"
     --border-label '  Backgrounds '
 
     --style full
