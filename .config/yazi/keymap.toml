@@ -20,6 +20,10 @@ prepend_keymap = [
     ], run = "cd ~/notes", desc = "Goto notes" },
     { on = [
         "g",
+        "m",
+    ], run = "cd ~/Music", desc = "Goto Music" },
+    { on = [
+        "g",
         "r",
     ], run = 'shell -- ya emit cd "$(git rev-parse --show-toplevel)"', desc = "Goto home of git repo" },
 
