@@ -92,12 +92,14 @@ fi
 log "${green}Stowing dotfiles...${no_color}"
 cd ~/dotfiles && stow .
 
+ya pkg install
+
 # Set initial theme
 mkdir -p ~/.config/omacase/current
 ln -snf ~/.config/omacase/themes/tokyo-night-moon ~/.config/omacase/current/theme
 osascript -e "tell application \"System Events\" to set picture of every desktop to POSIX file \"$HOME/.config/omacase/themes/tokyo-night/backgrounds/default.png\""
 
-mkdir -p ~/.config/btop/themes ~/.config/lazygit
+mkdir -p ~/.config/btop/themes
 
 # Set specific app links for current theme
 ln -snf ~/.config/omacase/current/theme/neovim.lua ~/.config/nvim/lua/config/colorscheme.lua
