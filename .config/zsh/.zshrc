@@ -20,7 +20,7 @@ zinit light zsh-users/zsh-completions
 zinit light zdharma-continuum/fast-syntax-highlighting
 
 export ZVM_READKEY_ENGINE=zle
-export ZVM_KEYTIMEOUT=0.2
+export ZVM_KEYTIMEOUT=0.5
 zinit light jeffreytse/zsh-vi-mode
 
 zinit light hlissner/zsh-autopair
