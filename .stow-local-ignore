@@ -1,27 +1,10 @@
-RCS
-.+,v
-
-CVS
-\.\#.+       # CVS conflict files / emacs lock files
-\.cvsignore
-
-\.svn
-_darcs
-\.hg
-
 \.git
 \.gitignore
-\.gitmodules
-
-.+~          # emacs backup files
-\#.*\#       # emacs autosave files
 
 ^/README.*
 ^/LICENSE.*
-^/COPYING
-^/.img
-^/wallpapers
 
+^/.img
 \.DS_Store
 install.sh
-LINKSCAPE.md
+^.*\.md$
