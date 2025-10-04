@@ -93,7 +93,6 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # Aliases and functions
 alias ls="eza --color=always --icons -a"
-alias lg="lazygit"
 alias f="fastfetch"
 alias v="nvim"
 alias c="cd ~/dotfiles"
@@ -107,6 +106,16 @@ y() {
         builtin cd -- "$cwd"
     fi
     rm -f -- "$tmp"
+}
+lg() {
+    export LAZYGIT_NEW_DIR_FILE=~/.lazygit/newdir
+
+    lazygit "$@"
+
+    if [ -f $LAZYGIT_NEW_DIR_FILE ]; then
+        cd "$(cat $LAZYGIT_NEW_DIR_FILE)"
+        rm -f $LAZYGIT_NEW_DIR_FILE >/dev/null
+    fi
 }
 
 # Git aliases
