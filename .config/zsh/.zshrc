@@ -73,7 +73,7 @@ export FZF_GIT_CAT="bat -n --color=always"
 _fzf_git_fzf() {
     fzf --height 50% --tmux 90%,70% \
         --layout reverse --multi --min-height 20+ --border \
-        --no-separator --header-border horizontal \
+        --no-separator \
         --border-label-pos 2 \
         --color 'label:blue' \
         --bind 'focus:transform-preview-label:""' \
