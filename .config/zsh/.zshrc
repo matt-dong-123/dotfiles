@@ -13,7 +13,6 @@ source "${ZINIT_HOME}/zinit.zsh"
 autoload -U compinit && compinit
 
 # Plugins
-zinit ice depth=1
 zinit light olets/zsh-transient-prompt
 zinit light Aloxaf/fzf-tab
 zinit light zsh-users/zsh-autosuggestions
