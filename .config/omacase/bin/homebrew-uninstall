@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 fzf_args=(
-    --preview 'brew info {}'
+    --preview 'HOMEBREW_COLOR=1 brew info {}'
     --border-label ' 󰏗 brew uninstall '
 
     --style full
