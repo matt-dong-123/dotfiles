@@ -9,7 +9,7 @@ file=${1/#\~\//$HOME/}
 type=$(file --brief --dereference --mime -- "$file")
 
 if [ -d "$file" ]; then
-    eza --tree --color=always --icons "$file"
+    eza --tree --color=always --icons --all "$file"
 elif [[ $type =~ image/ ]]; then
     chafa --size 50x "$file"
 elif [[ $type =~ =binary ]]; then

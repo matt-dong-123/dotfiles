@@ -1,5 +1,5 @@
 [default_session]
-preview_command = "eza --tree --color=always --icons {}"
+preview_command = "eza --tree --color=always --icons --all {}"
 
 [[session]]
 name = "Downloads"
