@@ -1,35 +1,57 @@
 eval "$(starship init zsh)"
 
 # Zinit setup
-ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+ZGENOM_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zgenom/zgenom.git"
 
-if [ ! -d "${ZINIT_HOME}" ]; then
-    mkdir -p "$(dirname "${ZINIT_HOME}")"
-    git clone https://github.com/zdharma-continuum/zinit "${ZINIT_HOME}"
+if [ ! -d "${ZGENOM_HOME}" ]; then
+    mkdir -p "$(dirname "${ZGENOM_HOME}")"
+    git clone https://github.com/jandamm/zgenom "${ZGENOM_HOME}"
 fi
 
-source "${ZINIT_HOME}/zinit.zsh"
+source "${ZGENOM_HOME}/zgenom.zsh"
 
-autoload -U compinit && compinit
-AUTOPAIR_INHIBIT_INIT=1
+zgenom autoupdate
+if ! zgenom saved; then
+    zgenom load jeffreytse/zsh-vi-mode
 
-# Plugins
-zinit light olets/zsh-transient-prompt
-zinit light Aloxaf/fzf-tab
-zinit light zsh-users/zsh-autosuggestions
-zinit light zsh-users/zsh-completions
-zinit light zdharma-continuum/fast-syntax-highlighting
+    function zvm_after_init() {
+        zgenom load junegunn/fzf shell
+        zgenom load junegunn/fzf-git.sh
+        zgenom load Aloxaf/fzf-tab
+
+        zgenom load zdharma-continuum/fast-syntax-highlighting
+        zgenom load zsh-users/zsh-autosuggestions
+        zgenom load zsh-users/zsh-completions src
+
+        zgenom load olets/zsh-transient-prompt
+        zgenom load hlissner/zsh-autopair autopair.zsh
+
+        zgenom ohmyzsh plugins/sudo
+    }
+
+    zgenom save
+
+    zgenom compile "$ZDOTDIR/.zshrc"
+fi
 
 export ZVM_READKEY_ENGINE=zle
 export ZVM_KEYTIMEOUT=0.5
-zinit light jeffreytse/zsh-vi-mode
+export ZVM_VI_SURROUND_BINDKEY="s-prefix"
 
-zinit light hlissner/zsh-autopair
-zinit light junegunn/fzf-git.sh
-zinit snippet OMZP::sudo
+function zvm_after_init() {
+    zgenom load junegunn/fzf shell
+    zgenom load junegunn/fzf-git.sh
+    zgenom load Aloxaf/fzf-tab
 
-ZVM_VI_SURROUND_BINDKEY="s-prefix"
-zvm_after_init_commands+=(autopair-init)
+    zgenom load zdharma-continuum/fast-syntax-highlighting
+    zgenom load zsh-users/zsh-autosuggestions
+    zgenom load zsh-users/zsh-completions src
+
+    zgenom load olets/zsh-transient-prompt
+    zgenom load hlissner/zsh-autopair autopair.zsh
+
+    zgenom ohmyzsh plugins/sudo
+}
 
 # Completion
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Za-z}'
@@ -38,6 +60,7 @@ zstyle ':fzf-tab:*' use-fzf-default-opts yes
 zstyle ':fzf-tab:complete:*' fzf-flags \
     --no-height \
     --preview=''
+autoload -U compinit && compinit
 
 # History
 HISTSIZE=10000
@@ -63,15 +86,14 @@ TRANSIENT_PROMPT_PROMPT='$(starship prompt --terminal-width="$COLUMNS" --keymap=
 TRANSIENT_PROMPT_RPROMPT='$(starship prompt --right --terminal-width="$COLUMNS" --keymap="${KEYMAP:-}" --status="$STARSHIP_CMD_STATUS" --pipestatus="${STARSHIP_PIPE_STATUS[*]}" --cmd-duration="${STARSHIP_DURATION:-}" --jobs="$STARSHIP_JOBS_COUNT")'
 TRANSIENT_PROMPT_TRANSIENT_PROMPT='$(starship module character)'
 
-# FZF Configuration
-source <(fzf --zsh)
+# FZF
 export FZF_DEFAULT_COMMAND="fd -H --strip-cwd-prefix -E .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd -t=d -H --strip-cwd-prefix -E .git"
 export FZF_DEFAULT_OPTS_FILE="${XDG_CONFIG_HOME}/fzf/fzfrc"
 export FZF_CTRL_R_OPTS="--preview ''"
-
 export FZF_GIT_CAT="bat -n --color=always"
+
 _fzf_git_fzf() {
     fzf --height 50% --tmux 90%,70% \
         --layout reverse --multi --min-height 20+ --border \
