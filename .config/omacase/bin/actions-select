@@ -1,50 +1,52 @@
 #!/usr/bin/env bash
 
+source ~/.bash_profile
+
 packages_menu() {
     CHOICE=$(gum filter "Install" "Uninstall" "Upgrade" "Tap" "Untap" "Search" "Sync" "Restart")
 
     case $CHOICE in
     "Install")
-        ~/.config/omacase/bin/homebrew-install
+        homebrew-install
         ;;
     "Uninstall")
-        ~/.config/omacase/bin/homebrew-uninstall
+        homebrew-uninstall
         ;;
     "Upgrade")
-        ~/.config/omacase/bin/homebrew-upgrade
+        homebrew-upgrade
         ;;
     "Tap")
-        ~/.config/omacase/bin/homebrew-tap
+        homebrew-tap
         ;;
     "Untap")
-        ~/.config/omacase/bin/homebrew-untap
+        homebrew-untap
         ;;
     "Search")
-        ~/.config/omacase/bin/homebrew-search
+        homebrew-search
         ;;
     "Sync")
-        ~/.config/omacase/bin/homebrew-sync-brewfile
+        homebrew-sync-brewfile
         ;;
     "Restart")
-        ~/.config/omacase/bin/homebrew-restart-service
+        homebrew-restart-service
         ;;
     esac
 }
 
 themes_menu() {
-    ~/.config/omacase/bin/theme-select
+    theme-select
 }
 
 backgrounds_menu() {
-    ~/.config/omacase/bin/background-select
+    background-select
 }
 
 about_menu() {
-    ~/.config/omacase/bin/about-fastfetch
+    about-fastfetch
 }
 
 update_menu() {
-    ~/.config/omacase/bin/omacase-update
+    omacase-update
 }
 
 CHOICE=$(gum filter "Packages" "Themes" "Backgrounds" "About" "Update Omacase")

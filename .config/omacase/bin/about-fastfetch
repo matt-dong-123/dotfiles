@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source ~/.bash_profile
+
 echo
 fastfetch
 bash -c 'read -n 1 -s -t 30'

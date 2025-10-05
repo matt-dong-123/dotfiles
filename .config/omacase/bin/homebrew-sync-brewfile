@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source ~/.bash_profile
+
 brew bundle install --file="$HOME/.config/brew/Brewfile"
 brew bundle cleanup --force --file="$HOME/.config/brew/Brewfile"
-~/.config/omacase/bin/gum-done
+gum-done

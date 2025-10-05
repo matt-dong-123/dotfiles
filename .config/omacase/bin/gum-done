@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source ~/.bash_profile
+
 echo
 gum spin --spinner "dot" \
     --title "Done! Press any key to close (auto-closes in 30s)..." \

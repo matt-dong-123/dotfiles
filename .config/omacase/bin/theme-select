@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-theme=$(~/.config/omacase/bin/theme-list | gum filter)
+source ~/.bash_profile
+
+theme=$(theme-list | gum filter)
 
 if [[ -n "$theme" ]]; then
-    ~/.config/omacase/bin/theme-set "$theme"
+    theme-set "$theme"
 fi

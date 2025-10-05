@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source ~/.bash_profile
+
 gum style --foreground 5 "Updating Omacase..."
 git -C "$HOME/dotfiles" pull --autostash
 git -C "$HOME/dotfiles" diff --check || git -C "$HOME/dotfiles" reset --merge
@@ -9,4 +11,4 @@ echo
 gum style --foreground 5 "Updating Packages..."
 brew update
 brew upgrade --greedy
-~/.config/omacase/bin/gum-done
+gum-done

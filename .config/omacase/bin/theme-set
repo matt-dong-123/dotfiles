@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source ~/.bash_profile
+
 if [[ -z "$1" ]]; then
     echo "No theme specified." >&2
     exit 1

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source ~/.bash_profile
+
 gum input --placeholder "Tap into..." | xargs brew tap
-~/.config/omacase/bin/homebrew-update-brewfile
-~/.config/omacase/bin/gum-done
+homebrew-update-brewfile
+gum-done

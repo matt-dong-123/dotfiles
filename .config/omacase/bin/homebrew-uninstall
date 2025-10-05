@@ -1,37 +1,16 @@
 #!/usr/bin/env bash
 
+source ~/.bash_profile
+
 fzf_args=(
     --preview 'HOMEBREW_COLOR=1 brew info {}'
     --border-label ' 󰏗 brew uninstall '
-
-    --style full
-    --prompt '❯ '
-    --no-height
-    --multi
-    --layout reverse
-    --border --padding 1,2
-    --border-label-pos 2
-    --input-label ' Input '
-    --bind 'result:transform-list-label:
-        if [[ -z $FZF_QUERY ]]; then
-          echo " $FZF_MATCH_COUNT items "
-        else
-          echo " $FZF_MATCH_COUNT matches for [$FZF_QUERY] "
-        fi
-        '
-    --bind 'focus:transform-preview-label:[[ -n {} ]] && printf " Previewing [%s] " {}'
-    --color 'border:blue,label:bright-blue'
-    --color 'preview-border:magenta,preview-label:bright-magenta'
-    --color 'list-border:green,list-label:bright-green'
-    --color 'input-border:red,input-label:bright-red'
-    --color 'info:bright-black,prompt:bright-red,pointer:bright-green'
-    --color 'marker:bright-green,spinner:bright-green,header:bright-green'
 )
 
 pkg_names=$(brew list -1 | fzf "${fzf_args[@]}")
 
 if [[ -n "$pkg_names" ]]; then
     echo "$pkg_names" | tr '\n' ' ' | xargs brew uninstall
-    ~/.config/omacase/bin/homebrew-update-brewfile
-    ~/.config/omacase/bin/gum-done
+    homebrew-update-brewfile
+    gum-done
 fi
