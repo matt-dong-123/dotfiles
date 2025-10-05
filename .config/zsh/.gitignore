@@ -1,3 +1,4 @@
 .zcompdump
 .zcompcache/
 .zsh_history
+.zshrc.zwc
