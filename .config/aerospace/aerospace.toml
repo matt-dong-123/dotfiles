@@ -55,7 +55,16 @@ ctrl-alt-enter = 'fullscreen'                      # Unlike the others because b
 alt-shift-minus = 'resize smart -50'
 alt-shift-equal = 'resize smart +50'
 
-cmd-shift-space = 'mode workspace'
+cmd-alt-ctrl-b = ['workspace browser', 'mode main']
+cmd-alt-ctrl-c = ['workspace coding', 'mode main']
+cmd-alt-ctrl-m = ['workspace music', 'mode main']
+cmd-alt-ctrl-s = ['workspace social', 'mode main']
+cmd-alt-ctrl-w = ['workspace work', 'mode main']
+cmd-alt-ctrl-shift-b = ['move-node-to-workspace browser', 'workspace browser', 'mode main']
+cmd-alt-ctrl-shift-c = ['move-node-to-workspace coding', 'workspace coding', 'mode main']
+cmd-alt-ctrl-shift-m = ['move-node-to-workspace music', 'workspace music', 'mode main']
+cmd-alt-ctrl-shift-s = ['move-node-to-workspace social', 'workspace social', 'mode main']
+cmd-alt-ctrl-shift-w = ['move-node-to-workspace work', 'workspace work', 'mode main']
 alt-shift-semicolon = 'mode service'
 
 [mode.workspace.binding]

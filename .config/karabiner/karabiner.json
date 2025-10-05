@@ -10,15 +10,15 @@
                     {
                         "manipulators": [
                             {
-                                "description": "Change ropt to cmd+sft+spc",
+                                "description": "Change ropt to cmd+ctrl+opt",
                                 "from": {
                                     "key_code": "right_option",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to_if_alone": [
+                                "to": [
                                     {
-                                        "key_code": "spacebar",
-                                        "modifiers": ["left_command", "left_shift"]
+                                        "key_code": "left_option",
+                                        "modifiers": ["left_command", "left_control"]
                                     }
                                 ],
                                 "type": "basic"
