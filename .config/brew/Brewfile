@@ -120,6 +120,8 @@ brew "rust"
 brew "rust-analyzer"
 # Smart session manager for the terminal
 brew "sesh"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
 # Autoformat shell script source code
 brew "shfmt"
 # Cross-shell prompt for astronauts
