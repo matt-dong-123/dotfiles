@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source ~/.bash_profile
+source "$HOME/.bash_profile"
 
 fzf_args=(
     --preview 'HOMEBREW_COLOR=1 brew info {}'
