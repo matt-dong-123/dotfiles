@@ -11,6 +11,7 @@ fi
 source "${ZINIT_HOME}/zinit.zsh"
 
 autoload -U compinit && compinit
+AUTOPAIR_INHIBIT_INIT=1
 
 # Plugins
 zinit light olets/zsh-transient-prompt
@@ -28,6 +29,7 @@ zinit light junegunn/fzf-git.sh
 zinit snippet OMZP::sudo
 
 ZVM_VI_SURROUND_BINDKEY="s-prefix"
+zvm_after_init_commands+=(autopair-init)
 
 # Completion
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Za-z}'
