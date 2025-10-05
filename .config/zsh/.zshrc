@@ -1,6 +1,6 @@
 eval "$(starship init zsh)"
 
-# Zinit setup
+# Zgenom setup
 ZGENOM_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zgenom/zgenom.git"
 
 if [ ! -d "${ZGENOM_HOME}" ]; then
@@ -13,21 +13,6 @@ source "${ZGENOM_HOME}/zgenom.zsh"
 zgenom autoupdate
 if ! zgenom saved; then
     zgenom load jeffreytse/zsh-vi-mode
-
-    function zvm_after_init() {
-        zgenom load junegunn/fzf shell
-        zgenom load junegunn/fzf-git.sh
-        zgenom load Aloxaf/fzf-tab
-
-        zgenom load zdharma-continuum/fast-syntax-highlighting
-        zgenom load zsh-users/zsh-autosuggestions
-        zgenom load zsh-users/zsh-completions src
-
-        zgenom load olets/zsh-transient-prompt
-        zgenom load hlissner/zsh-autopair autopair.zsh
-
-        zgenom ohmyzsh plugins/sudo
-    }
 
     zgenom save
 
