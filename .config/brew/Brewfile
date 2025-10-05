@@ -100,6 +100,8 @@ brew "ouch"
 brew "p7zip"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
+# Command-line tool to generate, analyze, convert and manipulate colors
+brew "pastel"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Fast, disk space efficient package manager
