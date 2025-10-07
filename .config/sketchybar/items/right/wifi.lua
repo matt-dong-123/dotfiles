@@ -26,7 +26,7 @@ function test_wifi()
 		if name ~= "" then
 			icon = icons.wifi.connected
 			label = name
-			color = colors.green
+			color = colors.default
 		end
 
 		wifi:set({
