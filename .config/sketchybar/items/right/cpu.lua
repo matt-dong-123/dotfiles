@@ -18,7 +18,6 @@ local cpu = sbar.add("item", "right.cpu", 42, {
 		},
 		color = colors.default,
 	},
-	padding_right = settings.paddings + 6,
 	click_script = "kitten quick-access-terminal btop",
 })
 
