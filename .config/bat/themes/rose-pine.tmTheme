@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
   <key>name</key>
-  <string>Rosé Pine Moon</string>
+  <string>Rosé Pine</string>
   <key>settings</key>
   <array>
     <dict>
       <key>settings</key>
       <dict>
         <key>background</key>
-        <string>#232136</string>
+        <string>#191724</string>
         <key>caret</key>
-        <string>#56526e</string>
+        <string>#524f67</string>
         <key>foreground</key>
         <string>#e0def4</string>
         <key>invisibles</key>
-        <string>#2a273f</string>
+        <string>#1f1d2e</string>
         <key>lineHighlight</key>
-        <string>#2a283e</string>
+        <string>#21202e</string>
         <key>selection</key>
-        <string>#6e6a86</string>
+        <string>#403d52</string>
       </dict>
     </dict>
     <dict>
@@ -103,7 +103,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#3e8fb0</string>
+        <string>#31748f</string>
       </dict>
     </dict>
     <dict>
@@ -142,7 +142,7 @@
         <key>fontStyle</key>
         <string>bold</string>
         <key>foreground</key>
-        <string>#3e8fb0</string>
+        <string>#31748f</string>
       </dict>
     </dict>
     <dict>
@@ -155,7 +155,7 @@
         <key>fontStyle</key>
         <string>italic </string>
         <key>foreground</key>
-        <string>#3e8fb0</string>
+        <string>#31748f</string>
       </dict>
     </dict>
     <dict>
@@ -168,7 +168,7 @@
         <key>fontStyle</key>
         <string>italic</string>
         <key>foreground</key>
-        <string>#ea9a97</string>
+        <string>#ebbcba</string>
       </dict>
     </dict>
     <dict>
@@ -194,7 +194,7 @@
         <key>fontStyle</key>
         <string>bold</string>
         <key>foreground</key>
-        <string>#3e8fb0</string>
+        <string>#31748f</string>
       </dict>
     </dict>
     <dict>
@@ -220,7 +220,7 @@
         <key>fontStyle</key>
         <string>bold</string>
         <key>foreground</key>
-        <string>#ea9a97</string>
+        <string>#ebbcba</string>
       </dict>
     </dict>
     <dict>
@@ -305,12 +305,12 @@
   <key>colorSpaceName</key>
   <string>sRGB</string>
   <key>semanticClass</key>
-  <string>theme.dark.rosé-pine-moon</string>
+  <string>theme.dark.rosé-pine</string>
   <key>author</key>
   <string>arrrgi</string>
   <key>comment</key>
   <string>All natural pine, faux fur and a bit of soho vibes for the classy minimalist</string>
   <key>uuid</key>
-  <string>CC28B8FB-96BA-43EB-B71F-5AA3D3EBB0BB</string>
+  <string>14991673-80EB-41A2-BEFF-03216A233730</string>
 </dict>
 </plist>
