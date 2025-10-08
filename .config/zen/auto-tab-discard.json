@@ -1,0 +1,123 @@
+{
+  "chrome.storage.local": {
+    "./plugins/blank/core.js": true,
+    "./plugins/dummy/core.js": false,
+    "./plugins/focus/core.js": false,
+    "./plugins/force/core.js": false,
+    "./plugins/new/core.js": false,
+    "./plugins/next/core.js": false,
+    "./plugins/previous/core.js": false,
+    "./plugins/trash/core.js": true,
+    "./plugins/unloaded/core.js": false,
+    "./plugins/youtube/core.js": false,
+    "audio": true,
+    "battery": false,
+    "click": "click.popup",
+    "faqs": true,
+    "favicon": false,
+    "favicon-delay": 500,
+    "force.hostnames": [],
+    "form": true,
+    "go-hidden": false,
+    "idle": false,
+    "idle-timeout": 300,
+    "last-update": 1759914425503,
+    "link.context": true,
+    "log": false,
+    "max.single.discard": 50,
+    "memory-enabled": false,
+    "memory-value": 60,
+    "mode": "time-based",
+    "notification.permission": false,
+    "number": 6,
+    "online": false,
+    "page.context": false,
+    "paused": false,
+    "period": 600,
+    "pinned": false,
+    "prepends": "💤",
+    "simultaneous-jobs": 10,
+    "startup-pinned": false,
+    "startup-release-pinned": false,
+    "startup-unpinned": false,
+    "tab.context": true,
+    "trash.keys": {
+      "https://github.com/": [
+        1759934459953,
+        7200
+      ],
+      "https://proton.me/": [
+        1759934459953,
+        7200
+      ],
+      "https://neovim.io/doc/": [
+        1759934459953,
+        7200
+      ],
+      "https://github.com/tmux/tmux/wiki": [
+        1759934459953,
+        7200
+      ],
+      "https://yazi-rs.github.io/": [
+        1759934459953,
+        7200
+      ],
+      "https://wezterm.org/imgcat.html": [
+        1759934459953,
+        7200
+      ],
+      "https://github.com/Msouza91/rose-pine.yazi": [
+        1759934459953,
+        7200
+      ],
+      "https://github.com/rose-pine/wallpapers/blob/main/rose_pine_circle.png": [
+        1759934459953,
+        7200
+      ],
+      "https://rosepinetheme.com/themes/": [
+        1759934459953,
+        7200
+      ],
+      "https://github.com/BennyOe/onedark.yazi": [
+        1759934459953,
+        7200
+      ],
+      "https://github.com/BennyOe/onedark.yazi/blob/main/preview.png": [
+        1759934459953,
+        7200
+      ],
+      "https://search.brave.com/search?q=one+dark+wallpapers": [
+        1759934459953,
+        7200
+      ],
+      "https://search.brave.com/search?q=one-dark.yazi": [
+        1759934459953,
+        7200
+      ],
+      "https://wezterm.org/colorschemes/n/index.html#nightlion-v1": [
+        1759934459953,
+        7200
+      ],
+      "https://github.com/kovidgoyal/kitty-themes/blob/master/themes/OneDark.conf": [
+        1759934459953,
+        7200
+      ],
+      "https://github.com/aristocratos/btop/blob/main/themes/onedark.theme": [
+        1759934459953,
+        7200
+      ],
+      "https://github.com/navarasu/onedark.nvim/blob/master/lua/onedark/palette.lua": [
+        1759934459953,
+        7200
+      ]
+    },
+    "trash.period": 2,
+    "trash.unloaded": false,
+    "trash.whitelist-url": [],
+    "whitelist": [],
+    "whitelist-url": []
+  },
+  "localStorage": {
+    "click": "popup"
+  }
+}
