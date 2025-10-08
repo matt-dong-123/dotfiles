@@ -1,19 +1,18 @@
 local icons = require("icons")
 local colors = require("colors")
-local settings = require("settings")
 
 local volume = sbar.add("item", "right.volume", {
 	position = "right",
 	icon = {
-		font = {
-			style = settings.font.style_map["Regular"],
-		},
+		string = icons.volume._0,
 	},
-	label = { font = { family = settings.font.numbers } },
+	label = {
+		string = "??%",
+	},
 	update_freq = 1,
 })
 
-function get_volume()
+volume:subscribe({ "routine", "system_woke" }, function()
 	sbar.exec("osascript -e 'output volume of (get volume settings)'", function(volume_level)
 		local level = tonumber(volume_level)
 		local icon = icons.volume._0
@@ -22,10 +21,12 @@ function get_volume()
 		if level == 0 then
 			icon = icons.volume._0
 			color = colors.grey
-		elseif level <= 33 then
+		elseif level <= 10 then
 			icon = icons.volume._10
-		elseif level <= 66 then
+		elseif level <= 33 then
 			icon = icons.volume._33
+		elseif level <= 66 then
+			icon = icons.volume._66
 		else
 			icon = icons.volume._100
 			if level >= 90 then
@@ -46,7 +47,4 @@ function get_volume()
 			},
 		})
 	end)
-end
-
-volume:subscribe({ "routine", "system_woke" }, get_volume())
-get_volume()
+end)

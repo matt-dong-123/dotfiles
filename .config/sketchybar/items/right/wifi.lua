@@ -4,11 +4,15 @@ local colors = require("colors")
 local wifi = sbar.add("item", "right.wifi", {
 	position = "right",
 	icon = {
+		color = colors.yellow,
+		string = icons.wifi.disconnected,
 		font = {
 			size = 12.0,
 		},
 	},
 	label = {
+		color = colors.yellow,
+		string = "Testing...",
 		font = {
 			size = 12.0,
 		},
@@ -16,7 +20,7 @@ local wifi = sbar.add("item", "right.wifi", {
 	update_freq = 5,
 })
 
-function test_wifi()
+wifi:subscribe({ "routine", "system_woke" }, function()
 	sbar.exec("networksetup -listpreferredwirelessnetworks en0 | sed -n '2 p' | tr -d '\t'", function(out)
 		local icon = icons.wifi.disconnected
 		local label = "Disconnected"
@@ -40,7 +44,4 @@ function test_wifi()
 			},
 		})
 	end)
-end
-
-wifi:subscribe({ "routine", "system_woke" }, test_wifi())
-test_wifi()
+end)
