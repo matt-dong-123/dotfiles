@@ -45,6 +45,7 @@ script.
     - SponsorBlock
     - Zen Internet
     - Stylus
+    - Auto Tab Discard
 2. For each of the extensions given, find the "Import" or "Restore"
     button, and choose the corresponding file in ~/.config/zen
 3. Copy the user.js in ~/.config/zen to your profile directory
