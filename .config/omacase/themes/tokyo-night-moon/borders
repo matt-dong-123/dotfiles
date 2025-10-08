@@ -1,4 +1,0 @@
-#!/bin/bash
-
-ACTIVE_COLOR="gradient(top_left=0xff82aaff,bottom_right=0xffc099ff)"
-INACTIVE_COLOR="0xff888888"
