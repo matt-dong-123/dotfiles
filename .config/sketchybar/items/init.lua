@@ -1,2 +1,2 @@
-require("items.left")
-require("items.right")
+require 'items.left'
+require 'items.right'

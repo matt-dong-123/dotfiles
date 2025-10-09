@@ -1,2 +1,2 @@
-require("items.left.front_app")
-require("items.left.aerospace")
+require 'items.left.front_app'
+require 'items.left.aerospace'
