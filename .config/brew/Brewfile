@@ -111,6 +111,8 @@ brew "pnpm"
 brew "proxychains-ng"
 # Static type checker for Python
 brew "pyright"
+# Reattach process (e.g., tmux) to background
+brew "reattach-to-user-namespace"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Extremely fast Python linter, written in Rust
