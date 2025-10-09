@@ -6,16 +6,10 @@ local wifi = sbar.add("item", "right.wifi", {
 	icon = {
 		color = colors.yellow,
 		string = icons.wifi.disconnected,
-		font = {
-			size = 12.0,
-		},
 	},
 	label = {
 		color = colors.yellow,
 		string = "Testing...",
-		font = {
-			size = 12.0,
-		},
 	},
 	update_freq = 5,
 })
