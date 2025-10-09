@@ -3,7 +3,8 @@
 source "$HOME/.bash_profile"
 
 packages_menu() {
-    CHOICE=$(gum filter "Install" "Uninstall" "Upgrade" "Tap" "Untap" "Search" "Sync" "Restart")
+    CHOICE=$(gum filter "Install" "Uninstall" "Upgrade" "Tap" "Untap" "Search" \
+        "Sync packages with Brewfile" "Sync Brewfile with packages" "Restart")
 
     case $CHOICE in
     "Install")

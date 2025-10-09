@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+source "$HOME/.bash_profile"
+
+brew bundle dump --force --describe --file="$HOME/.config/brew/Brewfile"
+gum-done
