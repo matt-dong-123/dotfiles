@@ -22,4 +22,9 @@ echo
 gum style --foreground 5 "Updating yazi plugins..."
 ya pkg upgrade
 
+echo
+
+gum style --foreground 5 "Updating tmux plugins..."
+~/.config/tmux/plugins/tpm/bin/update_plugins all
+
 gum-done
