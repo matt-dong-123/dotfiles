@@ -6,7 +6,7 @@ return {
         {
             '<leader>fr',
             function()
-                require('grug-far').open()
+                require('grug-far').open { prefills = { search = vim.fn.expand '<cword>' } }
             end,
             desc = 'Replace',
         },
