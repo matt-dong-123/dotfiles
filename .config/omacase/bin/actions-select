@@ -25,8 +25,11 @@ packages_menu() {
     "Search")
         homebrew-search
         ;;
-    "Sync")
-        homebrew-sync-brewfile
+    "Sync packages with Brewfile")
+        homebrew-sync-with-brewfile
+        ;;
+    "Sync Brewfile with packages")
+        homebrew-sync-with-packages
         ;;
     "Restart")
         homebrew-restart-service
