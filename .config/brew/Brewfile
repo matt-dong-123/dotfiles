@@ -207,8 +207,6 @@ cask "tencent-meeting"
 cask "ungoogled-chromium"
 # Free messaging and calling application
 cask "wechat"
-# Messaging and calling application
-cask "wechatwork"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm@nightly"
 # All-in-one office service platform in Chinese
