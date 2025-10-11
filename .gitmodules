@@ -1,9 +1,0 @@
-[submodule ".config/tmux/plugins/tpm"]
-	path = .config/tmux/plugins/tpm
-	url = https://github.com/tmux-plugins/tpm
-[submodule ".config/tmux/plugins/tmux-fingers"]
-	path = .config/tmux/plugins/tmux-fingers
-	url = https://github.com/Morantron/tmux-fingers
-[submodule ".config/tmux/plugins/tmux-resurrect"]
-	path = .config/tmux/plugins/tmux-resurrect
-	url = https://github.com/tmux-plugins/tmux-resurrect
