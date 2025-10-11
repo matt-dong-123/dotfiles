@@ -37,8 +37,6 @@ brew "cowsay"
 brew "cpplint"
 # Next-gen compiler infrastructure
 brew "llvm"
-# Lua Language Server
-brew "emmylua_ls"
 # Work with ID3 metadata in .mp3 files
 brew "eye-d3"
 # Modern, maintained replacement for ls
@@ -75,6 +73,8 @@ brew "kew"
 brew "lazygit"
 # Powerful, lightweight programming language
 brew "lua"
+# Language Server for the Lua language
+brew "lua-language-server"
 # Just-In-Time Compiler (JIT) for the Lua programming language
 brew "luajit"
 # Package manager for the Lua programming language
