@@ -1,6 +1,6 @@
 theme.toml
 
-flavors/*
-plugins/*
+flavors
+plugins
 
 !plugins/folder-rules.yazi
