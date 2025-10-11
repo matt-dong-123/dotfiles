@@ -1,6 +1,6 @@
 # TPM is unmaintained
 
-- Solution: Create my own plugin manager OR plux OR use git submodules to manually add
+- Solution: I don't really know
 - Downsides: Effort OR learning curve OR maintenance
 - Fallback: Keep using (maybe will encounter bugs)
 
