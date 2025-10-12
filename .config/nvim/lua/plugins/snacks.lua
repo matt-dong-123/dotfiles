@@ -12,15 +12,24 @@ return {
         quickfile = {},
         scroll = { easing_function = 'quadratic' },
         statuscolumn = {},
+        toggle = { which_key = true },
         words = {},
     },
     keys = {
         {
-            '<leader>hn',
+            '<leader>tn',
             function()
                 Snacks.notifier.hide()
             end,
-            desc = 'Notifications',
+            desc = 'Hide Notifications',
         },
     },
+    init = function()
+        vim.api.nvim_create_autocmd('User', {
+            pattern = 'VeryLazy',
+            callback = function()
+                Snacks.toggle.option('spell', { name = 'Spelling' }):map '<leader>ts'
+            end,
+        })
+    end,
 }

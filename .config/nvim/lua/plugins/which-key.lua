@@ -7,7 +7,7 @@ return {
             {
                 mode = { 'n', 'v' },
                 { '<leader>f', group = 'Find', icon = '' },
-                { '<leader>h', group = 'Hide', icon = '' },
+                { '<leader>t', group = 'Toggle', icon = '' },
                 { '<leader>s', group = 'Splits', icon = '' },
                 { '<leader>g', group = 'Git', icon = '' },
                 { '<leader>n', group = 'Notes', icon = '' },

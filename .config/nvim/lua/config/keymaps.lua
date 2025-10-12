@@ -35,8 +35,6 @@ end, { desc = 'Code actions' })
 map('n', '<leader>w', '<cmd>w<CR>', { desc = 'Write' })
 map('n', '<leader>q', '<cmd>q!<CR>', { desc = 'Quit' })
 
-map('n', '<leader>hs', '<cmd>lua vim.o.spell = false<CR>', { desc = 'Spelling suggestions' })
-
 map('n', '<CR>', '<cmd>wq!<CR>')
 
 -- Indent line
