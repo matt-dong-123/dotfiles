@@ -11,8 +11,8 @@
     compression = 9 # trade CPU for network
     whitespace = error
     preloadindex = true
-	editor = nvim
-	pager = bat --style=plain
+    editor = nvim
+    pager = bat --style=plain
 
 [advice]
     addEmptyPathSpec = false
@@ -44,7 +44,7 @@
 [pager]
     branch = false  # no need to use pager for git branch
     tag = false
-	diff = bat --paging never --pager none --style=plain --language diff
+    diff = bat --paging never --pager none --style=plain --language diff
 
 [push]
     autoSetupRemote = true  # easier to push new branches
@@ -75,7 +75,7 @@
     fsckObjects = true
 
 [fetch]
-	auto = true
+    auto = true
     fsckObjects = true
 
 [branch]
@@ -116,7 +116,7 @@
 
 [merge]
     conflictStyle = zdiff3
-	tool = nvimdiff
+    tool = nvimdiff
 
 [url "git@github.com:"]
     insteadOf = "gh:"
