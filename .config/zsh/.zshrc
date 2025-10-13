@@ -32,7 +32,7 @@ export ZVM_KEYTIMEOUT=0.5
 export ZVM_VI_SURROUND_BINDKEY="s-prefix"
 
 function zvm_after_init() {
-    zgenom load junegunn/fzf shell
+    source <(fzf --zsh)
     zgenom load junegunn/fzf-git.sh
     zgenom load Aloxaf/fzf-tab
 
