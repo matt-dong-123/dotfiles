@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 
 export ZDOTDIR=${ZDOTDIR:-$HOME/.config/zsh}
 
@@ -23,13 +23,13 @@ export MANPAGER="nvim +Man!"
 
 # Ensure Zsh directories exist.
 () {
-  local zdir
-  for zdir in $@; do
-    [[ -d "${(P)zdir}" ]] || mkdir -p -- "${(P)zdir}"
-  done
+    local zdir
+    for zdir in $@; do
+        [[ -d "${(P)zdir}" ]] || mkdir -p -- "${(P)zdir}"
+    done
 } __zsh_{config,user_data,cache}_dir XDG_{CONFIG,CACHE,DATA,STATE}_HOME XDG_{RUNTIME,PROJECTS}_DIR
 
 # Make Terminal.app behave.
 if [[ "$OSTYPE" == darwin* ]]; then
-  export SHELL_SESSIONS_DISABLE=1
+    export SHELL_SESSIONS_DISABLE=1
 fi
