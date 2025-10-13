@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+[[ $# -eq 0 ]] && {
+    echo "Usage: $0 <colorscheme>"
+    exit 1
+}
+
+RUNTIME=${XDG_RUNTIME_DIR:-$TMPDIR}
+for sock in "$RUNTIME"/nvim.*; do
+    [[ -S $sock ]] || continue
+    nvim --server "$sock" --remote-send "<cmd>colorscheme $1<CR>" 2>/dev/null || :
+done
