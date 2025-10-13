@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-[[ $# -eq 0 ]] && {
+if [[ $# -ne 1 ]]; then
     echo "Usage: $0 <colorscheme>"
     exit 1
-}
+fi
 
 RUNTIME=${XDG_RUNTIME_DIR:-$TMPDIR}
 for sock in "$RUNTIME"/nvim.*; do
