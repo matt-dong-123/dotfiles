@@ -3,7 +3,7 @@
 
 int main (int argc, char** argv) {
   float update_freq;
-  if (argc < 3 || (sscanf(argv[2], "%f", &update_freq) != 1)) {
+  if (argc < 3 || !argv[1] || !argv[2] || (sscanf(argv[2], "%f", &update_freq) != 1)) {
     printf("Usage: %s \"<event-name>\" \"<event_freq>\"\n", argv[0]);
     exit(1);
   }
@@ -14,6 +14,10 @@ int main (int argc, char** argv) {
 
   // Setup the event in sketchybar
   char event_message[512];
+  if (strlen(argv[1]) > 500) {
+    printf("Error: Event name too long\n");
+    exit(1);
+  }
   snprintf(event_message, 512, "--add event '%s'", argv[1]);
   sketchybar(event_message);
 
@@ -39,3 +43,4 @@ int main (int argc, char** argv) {
   }
   return 0;
 }
+

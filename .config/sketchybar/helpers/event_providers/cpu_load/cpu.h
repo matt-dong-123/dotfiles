@@ -23,12 +23,16 @@ static inline void cpu_init(struct cpu* cpu) {
 
 static inline void cpu_update(struct cpu* cpu) {
   kern_return_t error = host_statistics(cpu->host,
-                                        HOST_CPU_LOAD_INFO,
-                                        (host_info_t)&cpu->load,
-                                        &cpu->count                );
+                                         HOST_CPU_LOAD_INFO,
+                                         (host_info_t)&cpu->load,
+                                         &cpu->count                );
 
   if (error != KERN_SUCCESS) {
     printf("Error: Could not read cpu host statistics.\n");
+    // Set safe defaults
+    cpu->user_load = 0;
+    cpu->sys_load = 0;
+    cpu->total_load = 0;
     return;
   }
 
@@ -42,17 +46,19 @@ static inline void cpu_update(struct cpu* cpu) {
     uint32_t delta_idle = cpu->load.cpu_ticks[CPU_STATE_IDLE]
                           - cpu->prev_load.cpu_ticks[CPU_STATE_IDLE];
 
-    cpu->user_load = (double)delta_user / (double)(delta_system
-                                                     + delta_user
-                                                     + delta_idle) * 100.0;
-
-    cpu->sys_load = (double)delta_system / (double)(delta_system
-                                                      + delta_user
-                                                      + delta_idle) * 100.0;
-
-    cpu->total_load = cpu->user_load + cpu->sys_load;
+    uint32_t total_delta = delta_system + delta_user + delta_idle;
+    if (total_delta > 0) {
+      cpu->user_load = (double)delta_user / (double)total_delta * 100.0;
+      cpu->sys_load = (double)delta_system / (double)total_delta * 100.0;
+      cpu->total_load = cpu->user_load + cpu->sys_load;
+    } else {
+      cpu->user_load = 0;
+      cpu->sys_load = 0;
+      cpu->total_load = 0;
+    }
   }
 
   cpu->prev_load = cpu->load;
   cpu->has_prev_load = true;
 }
+

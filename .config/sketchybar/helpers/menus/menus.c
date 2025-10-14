@@ -79,10 +79,12 @@ void ax_print_menu_options(AXUIElementRef app) {
         CFTypeRef title = ax_get_title(item);
 
         if (title) {
-          uint32_t buffer_len = 2*CFStringGetLength(title);
-          char buffer[2*CFStringGetLength(title)];
-          CFStringGetCString(title, buffer, buffer_len, kCFStringEncodingUTF8);
-          printf("%s\n", buffer);
+          CFIndex length = CFStringGetLength(title);
+          if (length > 0 && length < 1024) {  // Reasonable limit
+            char buffer[2048];  // Fixed size buffer
+            CFStringGetCString(title, buffer, sizeof(buffer), kCFStringEncodingUTF8);
+            printf("%s\n", buffer);
+          }
           CFRelease(title);
         }
       }
@@ -196,7 +198,6 @@ AXUIElementRef ax_get_extra_menu_item(char* alias) {
 
 extern int SLSMainConnectionID();
 extern void SLSSetMenuBarVisibilityOverrideOnDisplay(int cid, int did, bool enabled);
-extern void SLSSetMenuBarVisibilityOverrideOnDisplay(int cid, int did, bool enabled);
 extern void SLSSetMenuBarInsetAndAlpha(int cid, double u1, double u2, float alpha);
 void ax_select_menu_extra(char* alias) {
   AXUIElementRef item = ax_get_extra_menu_item(alias);
@@ -225,7 +226,7 @@ AXUIElementRef ax_get_front_app() {
 }
 
 int main (int argc, char **argv) {
-  if (argc == 1) {
+  if (argc == 1 || !argv[1]) {
     printf("Usage: %s [-l | -s id/alias ]\n", argv[0]);
     exit(0);
   }
@@ -235,7 +236,7 @@ int main (int argc, char **argv) {
     if (!app) return 1;
     ax_print_menu_options(app);
     CFRelease(app);
-  } else if (argc == 3 && strcmp(argv[1], "-s") == 0) {
+  } else if (argc == 3 && strcmp(argv[1], "-s") == 0 && argv[2]) {
     int id = 0;
     if (sscanf(argv[2], "%d", &id) == 1) {
       AXUIElementRef app = ax_get_front_app();
