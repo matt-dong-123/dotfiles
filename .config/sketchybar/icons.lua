@@ -16,6 +16,7 @@ local icons = {
         apple = '􀣺',
         gear = '􀍟',
         cpu = '􀫥',
+        memory = '􀧖',
         clipboard = '􀉄',
         switch = {
             on = '􁏮',
@@ -62,6 +63,7 @@ local icons = {
         apple = '',
         gear = '',
         cpu = '',
+        memory = '',
         clipboard = '',
 
         switch = {
