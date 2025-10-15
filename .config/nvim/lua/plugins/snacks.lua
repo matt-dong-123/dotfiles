@@ -23,6 +23,69 @@ return {
             end,
             desc = 'Hide Notifications',
         },
+        {
+            '<leader>go',
+            function()
+                Snacks.gitbrowse.open()
+            end,
+            desc = 'Open in browser',
+        },
+        {
+            '<leader>gB',
+            function()
+                Snacks.git.blame_line()
+            end,
+            desc = 'Show blame',
+        },
+        {
+            '<leader>gb',
+            function()
+                Snacks.picker.git_branches()
+            end,
+            desc = 'Branches',
+        },
+        {
+            '<leader>gl',
+            function()
+                Snacks.picker.git_log()
+            end,
+            desc = 'Log',
+        },
+        {
+            '<leader>gL',
+            function()
+                Snacks.picker.git_log_line()
+            end,
+            desc = 'Log Line',
+        },
+        {
+            '<leader>gs',
+            function()
+                Snacks.picker.git_status()
+            end,
+            desc = 'Status',
+        },
+        {
+            '<leader>gS',
+            function()
+                Snacks.picker.git_stash()
+            end,
+            desc = 'Stash',
+        },
+        {
+            '<leader>gd',
+            function()
+                Snacks.picker.git_diff()
+            end,
+            desc = 'Diff (Hunks)',
+        },
+        {
+            '<leader>gf',
+            function()
+                Snacks.picker.git_log_file()
+            end,
+            desc = 'Log File',
+        },
     },
     init = function()
         vim.api.nvim_create_autocmd('User', {
