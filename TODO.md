@@ -1,7 +1,6 @@
 # TPM is unmaintained
 
 - Solution: I don't really know
-- Downsides: Effort OR learning curve OR maintenance
 - Fallback: Keep using (maybe will encounter bugs)
 
 # Switch terminal emulators (Wezterm has 1.3k issues on GitHub)
