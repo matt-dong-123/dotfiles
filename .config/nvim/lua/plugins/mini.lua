@@ -10,6 +10,7 @@ return {
         require('mini.comment').setup()
         require('mini.surround').setup()
         require('mini.git').setup()
+        require('mini.jump').setup()
         require('mini.diff').setup {
             view = {
                 style = 'sign',
