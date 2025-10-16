@@ -15,6 +15,7 @@ export EDITOR=nvim
 export WEZTERM_CONFIG_DIR="${XDG_CONFIG_HOME}/wezterm"
 export RIPGREP_CONFIG_PATH="${XDG_CONFIG_HOME}/ripgrep/rgrc"
 export MANPAGER="nvim +Man!"
+export HOMEBREW_NO_ENV_HINTS=1
 
 # Fish-like dirs
 : ${__zsh_config_dir:=${ZDOTDIR:-${XDG_CONFIG_HOME:-$HOME/.config}/zsh}}
