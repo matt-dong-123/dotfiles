@@ -91,8 +91,6 @@ brew "mp3splt"
 brew "ncurses"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Manage multiple Node.js versions
-brew "nvm"
 # AI coding agent, built for the terminal
 brew "opencode"
 # Painless compression and decompression for your terminal
