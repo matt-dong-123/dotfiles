@@ -17,3 +17,24 @@ ctrl + shift + cmd - t : kitten quick-access-terminal ~/.config/omacase/bin/them
 ctrl + shift + cmd - b : kitten quick-access-terminal ~/.config/omacase/bin/background-select
 ctrl + shift + cmd - q : kitten quick-access-terminal sesh connect Music
 alt + cmd - space : kitten quick-access-terminal ~/.config/omacase/bin/actions-select
+
+:: leader @
+:: internet @
+
+f13 ; leader
+
+leader < escape ; default
+leader < f13 ; default
+leader < p ; default : open -a Preview
+leader < v ; default : open -a VoiceMemos
+leader < c ; default : open -a Chromium
+leader < k ; default : open -a Karabiner-Elements
+
+leader < i ; internet
+
+internet < escape ; default
+internet < f13 ; default
+internet < g ; default : open "https://github.com"
+internet < y ; default : open "https://youtu.be"
+internet < r ; default : open "https://reddit.com"
+internet < 0x2b ; default : open "https://github.com/matt-dong-123/dotfiles" # Comma
