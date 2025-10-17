@@ -61,6 +61,8 @@ brew "go"
 brew "gsl"
 # Tool for glamorous shell scripts
 brew "gum"
+# Grammar Checker for Developers
+brew "harper"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Sort Python imports automatically

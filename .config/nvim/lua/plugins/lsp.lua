@@ -3,6 +3,15 @@ return {
         'neovim/nvim-lspconfig',
         version = false,
         config = function()
+            local harper_config = vim.lsp.config.harper_ls or {}
+            vim.lsp.config(
+                'harper_ls',
+                vim.tbl_deep_extend('force', harper_config, {
+                    filetypes = vim.list_extend(harper_config.filetypes or {}, {
+                        'text',
+                    }),
+                })
+            )
             vim.lsp.enable {
                 'clangd',
                 'lua_ls',
@@ -11,6 +20,7 @@ return {
                 'ruff',
                 'marksman',
                 'bashls',
+                'harper_ls',
             }
         end,
     },
