@@ -52,14 +52,6 @@ script.
 4. Delete the user.js after starting the browser (settings will be
     remembered automatically)
 
-### LeaderKey
-
-1. Go to the LeaderKey settings and go to the "Advanced" tab
-2. Set the config directory to your ~/.config/leaderkey directory
-3. Go back to "General" and set the shortcut to be "f13" by tapping the
-    right command key
-4. Set the style to "Mystery Box" and don't enable cheatsheet (visual bugs)
-
 ## Screenshots
 
 ![Neovim](./.img/neovim.png)

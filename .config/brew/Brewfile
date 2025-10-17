@@ -179,8 +179,6 @@ cask "input-source-pro"
 cask "karabiner-elements"
 # GPU-based terminal emulator
 cask "kitty"
-# Application launcher
-cask "leader-key"
 # Intercept, modify, replay, save HTTP/S traffic
 cask "mitmproxy"
 # Open-source music notation software
