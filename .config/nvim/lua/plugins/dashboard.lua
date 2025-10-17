@@ -3,6 +3,7 @@ return {
     opts = {
         dashboard = {
             preset = {
+                header = 'Welcome to neovim. Now do something:',
                 keys = {
                     {
                         icon = '',
