@@ -1,14 +1,14 @@
 # Omacase (a blatant rip-off of [Omarchy](https://github.com/basecamp/omarchy))
 
 <!--toc:start-->
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Install Instructions](#install-instructions)
-- [Post-install](#post-install)
-  - [Zen](#zen)
-  - [LeaderKey](#leaderkey)
-- [Screenshots](#screenshots)
-  - [Themes](#themes)
+- [Omacase (a blatant rip-off of [Omarchy](https://github.com/basecamp/omarchy))](#omacase-a-blatant-rip-off-of-omarchyhttpsgithubcombasecampomarchy)
+  - [Features](#features)
+  - [Prerequisites](#prerequisites)
+  - [Install Instructions](#install-instructions)
+  - [Post-install](#post-install)
+    - [Zen](#zen)
+  - [Screenshots](#screenshots)
+    - [Themes](#themes)
 <!--toc:end-->
 
 ## Features
