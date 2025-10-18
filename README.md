@@ -59,4 +59,4 @@ script.
 ![Yazi](./.img/yazi.png)
 ![Zen Browser](./.img/zen.png)
 ![Brew](./.img/brew.png)
-https://github.com/user-attachments/assets/ee54cd5a-f0c6-4bfa-8347-530d1a9ed99c
+![Theme switching](https://github.com/user-attachments/assets/ee54cd5a-f0c6-4bfa-8347-530d1a9ed99c)
