@@ -49,3 +49,5 @@ map('v', 'K', ":m '<-2<CR>gv=gv")
 -- Indenting selected lines
 map('v', '<Tab>', '>gv')
 map('v', '<S-Tab>', '<gv')
+
+map('n', '<leader>L', '<cmd>Lazy<CR>', { desc = 'Lazy' })
