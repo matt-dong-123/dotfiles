@@ -5,7 +5,6 @@ vim.o.relativenumber = true
 
 vim.o.hidden = true
 
-vim.o.spell = true
 vim.o.showmode = false
 
 vim.o.swapfile = false

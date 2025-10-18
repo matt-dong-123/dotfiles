@@ -87,12 +87,4 @@ return {
             desc = 'Log File',
         },
     },
-    init = function()
-        vim.api.nvim_create_autocmd('User', {
-            pattern = 'VeryLazy',
-            callback = function()
-                Snacks.toggle.option('spell', { name = 'Spelling' }):map '<leader>ts'
-            end,
-        })
-    end,
 }
