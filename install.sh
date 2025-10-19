@@ -50,8 +50,7 @@ fi
 cd "$HOME/dotfiles" || exit
 
 log "${green}Using .config/brewfile/Brewfile for quick install${no_color}"
-brew bundle install --file=~/.config/brew/Brewfile ||
-    die "${red}\`brew bundle\` failed, check your internet connection${no_color}"
+brew bundle install --file=~/.config/brew/Brewfile
 brew bundle cleanup --force --file=~/.config/brew/Brewfile
 if [ ! -d "$HOME/.local/share/sketchybar_lua/" ]; then
     log "${blue}Installing SBarLua${no_color}"
