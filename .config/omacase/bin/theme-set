@@ -22,6 +22,11 @@ fi
 # Update theme symlinks
 ln -nsf "$THEME_PATH" "$CURRENT_THEME_DIR"
 
+# Merge theme's opencode config into base opencode.json
+jq -s '.[0] * .[1]' ~/.config/opencode/options.json \
+    ~/.config/omacase/current/theme/opencode.json \
+    >~/.config/opencode/opencode.json
+
 touch ~/.config/wezterm/wezterm.lua
 pkill -USR1 kitty
 

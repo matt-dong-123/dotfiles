@@ -106,7 +106,11 @@ ln -snf ~/.config/omacase/current/theme/sketchybar.lua ~/.config/sketchybar/colo
 ln -snf ~/.config/omacase/current/theme/btop.theme ~/.config/btop/themes/current.theme
 ln -snf ~/.config/omacase/current/theme/bat ~/.config/bat/config
 ln -snf ~/.config/omacase/current/theme/yazi.toml ~/.config/yazi/theme.toml
-ln -snf ~/.config/omacase/current/theme/opencode.jsonc ~/.config/opencode/opencode.jsonc
+
+# Merge theme's opencode config into base opencode.json
+jq -s '.[0] * .[1]' ~/.config/opencode/options.json \
+    ~/.config/omacase/current/theme/opencode.json \
+    >~/.config/opencode/opencode.json
 
 brew services restart borders sketchybar
 
