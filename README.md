@@ -43,6 +43,10 @@ script.
 
 ## Post-install
 
+> [!important]
+> Click on System Settings > Displays > More Space
+> This setup wouldn't work otherwise
+
 ### Zen
 
 1. Install the following addons:
