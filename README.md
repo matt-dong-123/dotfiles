@@ -1,25 +1,31 @@
-# Omacase (a blatant rip-off of [Omarchy](https://github.com/basecamp/omarchy))
+ ```
+ ██████╗ ███╗   ███╗ █████╗  ██████╗ █████╗ ███████╗███████╗
+██╔═══██╗████╗ ████║██╔══██╗██╔════╝██╔══██╗██╔════╝██╔════╝
+██║   ██║██╔████╔██║███████║██║     ███████║███████╗█████╗
+██║   ██║██║╚██╔╝██║██╔══██║██║     ██╔══██║╚════██║██╔══╝
+╚██████╔╝██║ ╚═╝ ██║██║  ██║╚██████╗██║  ██║███████║███████╗
+ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝
+```
+
+In other words, my dotfiles.
 
 <!--toc:start-->
-- [Omacase (a blatant rip-off of [Omarchy](https://github.com/basecamp/omarchy))](#omacase-a-blatant-rip-off-of-omarchyhttpsgithubcombasecampomarchy)
-  - [Features](#features)
-  - [Prerequisites](#prerequisites)
-  - [Install Instructions](#install-instructions)
-  - [Post-install](#post-install)
-    - [Zen](#zen)
-  - [Screenshots](#screenshots)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Install Instructions](#install-instructions)
+- [Post-install](#post-install)
+  - [Zen](#zen)
+- [Screenshots](#screenshots)
 <!--toc:end-->
 
 ## Features
 
-- Omarchy-like flexible shell-script-based actions for common commands
-- Omarchy-like theme and background switching
-- Fully customizable, no abstractions
+- Pure enjoyment and efficiency
+- Theme-switching and menu system (Like omarchy!)
 
 ## Prerequisites
 
 - MacOS 15 or later
-- curl (Comes with MacOS by default)
 
 ## Install Instructions
 
