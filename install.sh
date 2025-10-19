@@ -41,7 +41,7 @@ fi
 if [ ! -d "$HOME/dotfiles" ]; then
     log "${green}Cloning dotfiles repository...${no_color}"
     git clone https://github.com/matt-dong-123/dotfiles.git "$HOME/dotfiles" ||
-        die "${red}Failed to clone dots, check your internet connection${no_color}"
+        die "${red}Failed to clone dots${no_color}"
 else
     log "${blue}Dotfiles exist${no_color}"
 fi
@@ -57,7 +57,7 @@ if [ ! -d "$HOME/.local/share/sketchybar_lua/" ]; then
     log "${blue}Installing SBarLua${no_color}"
     (git clone https://github.com/FelixKratz/SbarLua.git /tmp/SbarLua &&
         cd /tmp/SbarLua/ && make install && rm -rf /tmp/SbarLua/) ||
-        die "${red}Failed to install SBarLua, check your internet connection${no_color}"
+        die "${red}Failed to install SBarLua${no_color}"
 fi
 
 ## MacOS system settings
