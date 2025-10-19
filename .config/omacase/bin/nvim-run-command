@@ -2,12 +2,13 @@
 set -euo pipefail
 
 if [[ $# -ne 1 ]]; then
-    echo "Usage: $0 <colorscheme>"
+    echo "Usage: $0 <file-with-nvim-lua-command>"
     exit 1
 fi
 
 RUNTIME=${XDG_RUNTIME_DIR:-$TMPDIR}
+CODE=$(cat "$1")
 for sock in "$RUNTIME"/nvim.*; do
     [[ -S $sock ]] || continue
-    nvim --server "$sock" --remote-send "<cmd>colorscheme $1<CR>" 2>/dev/null || :
+    nvim --server "$sock" --remote-send "<cmd>lua $CODE<CR>" 2>/dev/null || :
 done

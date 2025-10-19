@@ -25,7 +25,7 @@ ln -nsf "$THEME_PATH" "$CURRENT_THEME_DIR"
 touch ~/.config/wezterm/wezterm.lua
 pkill -USR1 kitty
 
-sed "s/.*'\([^']*\)'.*/\1/" "$NEOVIM_THEME_FILE" | xargs nvim-change-colorscheme
+nvim-run-command "$NEOVIM_THEME_FILE"
 
 wallpaper=$(realpath ~/.config/omacase/current/theme/backgrounds/default.png)
 osascript -e "tell application \"System Events\" to set picture of every desktop to \"$wallpaper\""
