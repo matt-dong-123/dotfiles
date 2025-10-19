@@ -52,6 +52,14 @@ cd "$HOME/dotfiles" || exit
 log "${green}Using .config/brewfile/Brewfile for quick install${no_color}"
 brew bundle install --file=~/.config/brew/Brewfile
 brew bundle cleanup --force --file=~/.config/brew/Brewfile
+
+# Configure git
+log "${green}Configuring git...${no_color}"
+git_name=$(gum input --placeholder "Enter your git username")
+git_email=$(gum input --placeholder "Enter your git email")
+git config --global user.name "$git_name"
+git config --global user.email "$git_email"
+
 if [ ! -d "$HOME/.local/share/sketchybar_lua/" ]; then
     log "${blue}Installing SBarLua${no_color}"
     (git clone https://github.com/FelixKratz/SbarLua.git /tmp/SbarLua &&
