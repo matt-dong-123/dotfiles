@@ -3,7 +3,10 @@ local colors = require 'colors'
 local skhd_mode = sbar.add('item', 'skhd_mode', {
     position = 'left',
     label = {
-        string = '[<default>]',
+        font = {
+            size = 18,
+        },
+        string = ' ',
         color = colors.red,
     },
 })

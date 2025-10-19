@@ -18,9 +18,9 @@ ctrl + shift + cmd - b : kitten quick-access-terminal ~/.config/omacase/bin/back
 ctrl + shift + cmd - q : kitten quick-access-terminal sesh connect Music
 alt + cmd - space : kitten quick-access-terminal ~/.config/omacase/bin/actions-select
 
-:: leader @ : sketchybar --trigger skhd_mode_change SKHD_MODE_LABEL='[<leader>]'
-:: internet @ : sketchybar --trigger skhd_mode_change SKHD_MODE_LABEL='[<leader>i]'
-:: default : sketchybar --trigger skhd_mode_change SKHD_MODE_LABEL='[<default>]'
+:: leader @ : sketchybar --trigger skhd_mode_change SKHD_MODE_LABEL='󰠠 '
+:: internet @ : sketchybar --trigger skhd_mode_change SKHD_MODE_LABEL='󰠠 i'
+:: default : sketchybar --trigger skhd_mode_change SKHD_MODE_LABEL=' '
 
 f13 ; leader
 
