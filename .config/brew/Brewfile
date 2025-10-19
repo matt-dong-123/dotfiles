@@ -47,6 +47,8 @@ brew "fastfetch"
 brew "fd"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# Banner-like program prints strings as ASCII art
+brew "figlet"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GNU awk utility
