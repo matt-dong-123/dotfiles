@@ -6,29 +6,25 @@ die() {
     exit 1
 }
 
-# Colors!
 red="$(tput setaf 1)"
 green="$(tput setaf 2)"
 yellow="$(tput setaf 3)"
 blue="$(tput setaf 4)"
 no_color="$(tput sgr0)"
 
-# Install xCode cli tools
 if [[ "$(uname)" == "Darwin" ]]; then
     log "${yellow}macOS detected...${no_color}"
 
     if xcode-select -p &>/dev/null; then
-        log "${blue}Xcode CLI tools already installed${no_color}"
+        log "${blue}XCode CLI tools already installed${no_color}"
     else
-        log "${green}Installing command line tools...${no_color}"
+        log "${green}Installing XCode CLI tools...${no_color}"
         xcode-select --install
     fi
 else
     die "${red}You are not on MacOS, you cannot install these dotfiles automatically.${no_color}"
 fi
 
-# Homebrew
-## Install
 if ! command -v brew >/dev/null; then
     log "${green}Installing Brew...${no_color}"
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -37,7 +33,6 @@ else
     log "${blue}Brew installed${no_color}"
 fi
 
-# Clone dotfiles repository
 if [ ! -d "$HOME/dotfiles" ]; then
     log "${green}Cloning dotfiles repository...${no_color}"
     git clone https://github.com/matt-dong-123/dotfiles.git "$HOME/dotfiles" ||
@@ -46,16 +41,14 @@ else
     log "${blue}Dotfiles exist${no_color}"
 fi
 
-# Navigate to dotfiles directory
 cd "$HOME/dotfiles" || exit
 
 log "${green}Using .config/brewfile/Brewfile for quick install${no_color}"
 brew bundle install --file=~/.config/brew/Brewfile
 brew bundle cleanup --force --file=~/.config/brew/Brewfile
 
-# Configure git
 log "${green}Configuring git...${no_color}"
-git_name=$(gum input --placeholder "Enter your git username")
+git_name=$(gum input --placeholder "Enter your full name (used for git only)")
 git_email=$(gum input --placeholder "Enter your git email")
 git config --global user.name "$git_name"
 git config --global user.email "$git_email"
@@ -67,8 +60,7 @@ if [ ! -d "$HOME/.local/share/sketchybar_lua/" ]; then
         die "${red}Failed to install SBarLua${no_color}"
 fi
 
-## MacOS system settings
-gum confirm "Write Settings?"
+gum confirm "Write MacOS System Settings?"
 settings=$?
 if ((settings == 0)); then
     defaults write NSGlobalDomain _HIHideMenuBar -bool true                                       # Hide menu bar
@@ -95,7 +87,6 @@ if gum confirm "⚠️WARNING Disable quarantine and gatekeeper?"; then
     sudo spctl --master-disable
 fi
 
-# Stow dotfiles packages
 log "${green}Stowing dotfiles...${no_color}"
 cd ~/dotfiles && stow .
 
@@ -108,7 +99,7 @@ osascript -e "tell application \"System Events\" to set picture of every desktop
 
 mkdir -p ~/.config/btop/themes
 
-# Set specific app links for current theme
+# Set specific app symlinks for current theme
 ln -snf ~/.config/omacase/current/theme/neovim.lua ~/.config/nvim/lua/config/colorscheme.lua
 ln -snf ~/.config/omacase/current/theme/wezterm.lua ~/.config/wezterm/theme.lua
 ln -snf ~/.config/omacase/current/theme/sketchybar.lua ~/.config/sketchybar/colors.lua
