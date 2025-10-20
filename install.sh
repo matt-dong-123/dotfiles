@@ -107,10 +107,13 @@ ln -snf ~/.config/omacase/current/theme/btop.theme ~/.config/btop/themes/current
 ln -snf ~/.config/omacase/current/theme/bat ~/.config/bat/config
 ln -snf ~/.config/omacase/current/theme/yazi.toml ~/.config/yazi/theme.toml
 
-# Merge theme's opencode config into base opencode.json
+# Merge opencode and lazygit
 jq -s '.[0] * .[1]' ~/.config/opencode/options.json \
     ~/.config/omacase/current/theme/opencode.json \
     >~/.config/opencode/opencode.json
+
+yq ". *= load(\"$HOME/.config/lazygit/options.yml\")" ~/.config/omacase/current/theme/lazygit.yml \
+    >~/.config/lazygit/config.yml
 
 brew services restart borders sketchybar
 
