@@ -28,7 +28,7 @@ return {
         lazy = true,
     },
     {
-        'gbprod/nord.nvim',
+        'EdenEast/nightfox.nvim',
         lazy = true,
     },
     {
