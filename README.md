@@ -24,7 +24,7 @@ In other words, my dotfiles.
 ## Features
 
 - Pure enjoyment and efficiency
-- Theme-switching and menu system (Like omarchy!)
+- Theme-switching and menu system (Like Omarchy!)
 
 ## Prerequisites
 
