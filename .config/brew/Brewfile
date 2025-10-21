@@ -69,6 +69,8 @@ brew "harper"
 brew "imagemagick"
 # Sort Python imports automatically
 brew "isort"
+# Java language specific implementation of the Language Server Protocol
+brew "jdtls"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Command-line music player

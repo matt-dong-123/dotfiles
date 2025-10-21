@@ -21,8 +21,13 @@ return {
                 'marksman',
                 'bashls',
                 'harper_ls',
+                'jdtls',
             }
         end,
+    },
+    {
+        'mfussenegger/nvim-jdtls',
+        ft = 'java',
     },
     {
         'mrcjkb/rustaceanvim',
