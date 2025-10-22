@@ -40,13 +40,13 @@ hash = "eb88137cf13a796225254344bf6def2c"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
-rev = "2d73b79"
-hash = "d4c41d713b325710a9dd5ae86c3f8a5f"
+rev = "f9ae9f2"
+hash = "5dda92e60fca4f206874ee187b3dfb67"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:dracula"
-rev = "2d73b79"
-hash = "fc6944561718351d70cffde75839211f"
+rev = "f9ae9f2"
+hash = "332a585ed99a41ba2cda58cc87ad2138"
 
 [[flavor.deps]]
 use = "Chromium-3-Oxide/everforest-medium"
