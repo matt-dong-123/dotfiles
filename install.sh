@@ -94,8 +94,8 @@ ya pkg install
 
 # Set initial theme
 mkdir -p ~/.config/omacase/current
-ln -snf ~/.config/omacase/themes/tokyo-night ~/.config/omacase/current/theme
-osascript -e "tell application \"System Events\" to set picture of every desktop to POSIX file \"$HOME/.config/omacase/themes/tokyo-night/backgrounds/default.png\""
+ln -snf ~/.config/omacase/themes/everforest/ ~/.config/omacase/current/theme
+osascript -e "tell application \"System Events\" to set picture of every desktop to POSIX file \"$HOME/.config/omacase/themes/everforest/backgrounds/default.png\""
 
 mkdir -p ~/.config/btop/themes
 
