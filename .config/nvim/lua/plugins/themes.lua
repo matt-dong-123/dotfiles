@@ -39,4 +39,10 @@ return {
             variant = 'auto',
         },
     },
+    {
+        'navarasu/onedark.nvim',
+        opts = {
+            style = 'dark',
+        },
+    },
 }
