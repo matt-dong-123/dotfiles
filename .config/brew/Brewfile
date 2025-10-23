@@ -199,6 +199,8 @@ cask "only-switch"
 cask "raycast"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
+# Rime input method engine
+cask "squirrel-app"
 # Licenses manager for Steinberg Licensing
 cask "steinberg-activation-manager"
 # Tool to download files for Steinberg products

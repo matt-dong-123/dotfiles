@@ -35,7 +35,7 @@ fi
 
 if [ ! -d "$HOME/dotfiles" ]; then
     log "${green}Cloning dotfiles repository...${no_color}"
-    git clone https://github.com/matt-dong-123/dotfiles.git "$HOME/dotfiles" ||
+    git clone https://github.com/matt-dong-123/dotfiles.git "$HOME/dotfiles" --depth 1 ||
         die "${red}Failed to clone dots${no_color}"
 else
     log "${blue}Dotfiles exist${no_color}"
@@ -81,6 +81,10 @@ fi
 
 gum confirm "Enable sudo via Touch ID?" &&
     sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+
+if gum confirm "Install a Chinese input method? (Don't worry, nothing to do with spyware)"; then
+    git clone https://github.com/idvel/rime-ice ~/Library/Rime --depth 1
+fi
 
 if gum confirm "⚠️WARNING Disable quarantine and gatekeeper?"; then
     defaults write com.apple.LaunchServices "LSQuarantine" -bool "false"
