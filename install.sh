@@ -67,6 +67,11 @@ if ((remove_spyware == 0)); then
     brew uninstall "$SPYWARE"
 fi
 
+if gum confirm "Install a Chinese input method? (Don't worry, nothing to do with spyware)"; then
+    git clone https://github.com/idvel/rime-ice ~/Library/Rime --depth 1
+else
+    brew uninstall --cask squirrel-app input-source-pro
+fi
 log "${green}Configuring git...${no_color}"
 git_name=$(gum input --placeholder "Enter your full name (used for git only)")
 git_email=$(gum input --placeholder "Enter your git email")
