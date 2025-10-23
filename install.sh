@@ -72,6 +72,20 @@ if gum confirm "Install a Chinese input method? (Don't worry, nothing to do with
 else
     brew uninstall --cask squirrel-app input-source-pro
 fi
+
+PROWARE=$(
+    cat <<-EOM
+    font-sf-pro
+    sf-symbols
+    raycast
+EOM
+)
+
+gum confirm "$(printf "⚠️These casks are proprietary, but they might break something. Remove?\n%s" "$PROWARE")"
+remove_spyware=$?
+if ((remove_spyware == 0)); then
+    brew uninstall "$SPYWARE"
+fi
 log "${green}Configuring git...${no_color}"
 git_name=$(gum input --placeholder "Enter your full name (used for git only)")
 git_email=$(gum input --placeholder "Enter your git email")
@@ -109,6 +123,8 @@ gum confirm "Enable sudo via Touch ID?" &&
 
 if gum confirm "Install a Chinese input method? (Don't worry, nothing to do with spyware)"; then
     git clone https://github.com/idvel/rime-ice ~/Library/Rime --depth 1
+else
+    brew uninstall --cask squirrel-app input-source-pro
 fi
 
 if gum confirm "⚠️WARNING Disable quarantine and gatekeeper?"; then
