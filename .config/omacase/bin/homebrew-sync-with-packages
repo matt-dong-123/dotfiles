@@ -2,5 +2,5 @@
 
 source "$HOME/.bash_profile"
 
-brew bundle dump --force --describe --file="$HOME/.config/brew/Brewfile"
+HOMEBREW_NO_AUTO_UPDATE=1 brew bundle dump --force --describe --file="$HOME/.config/brew/Brewfile"
 gum-done

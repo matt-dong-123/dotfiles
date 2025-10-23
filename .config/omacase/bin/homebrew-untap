@@ -6,6 +6,5 @@ tap=$(brew tap | gum filter --placeholder "Untap out of...")
 
 if [[ -n "$tap" ]]; then
     brew untap "$tap"
-    homebrew-update-brewfile
-    gum-done
+    homebrew-sync-with-packages
 fi

@@ -3,5 +3,4 @@
 source "$HOME/.bash_profile"
 
 gum input --placeholder "Tap into..." | xargs brew tap
-homebrew-update-brewfile
-gum-done
+homebrew-sync-with-packages
