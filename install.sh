@@ -47,6 +47,26 @@ log "${green}Using .config/brewfile/Brewfile for quick install${no_color}"
 brew bundle install --file=~/.config/brew/Brewfile
 brew bundle cleanup --force --file=~/.config/brew/Brewfile
 
+SPYWARE=$(
+    cat <<-EOM
+    baidunetdisk
+    steinberg-activation-manager
+    steinberg-download-assistant
+    steinberg-library-manager
+    steinberg-mediabay
+    tencent-meeting
+    wechat
+    wpsoffice-cn
+    zoom
+EOM
+)
+
+gum confirm "$(printf "The following casks are spyware and are unconsequential. Remove them?\n%s" "$SPYWARE")"
+remove_spyware=$?
+if ((remove_spyware == 0)); then
+    brew uninstall "$SPYWARE"
+fi
+
 log "${green}Configuring git...${no_color}"
 git_name=$(gum input --placeholder "Enter your full name (used for git only)")
 git_email=$(gum input --placeholder "Enter your git email")
