@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-log() { echo -e "==> $*"; }
+log() { echo -e "✔︎ $*"; }
 die() {
     echo -e "✘ $*" >&2
     exit 1
