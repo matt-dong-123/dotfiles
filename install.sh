@@ -121,10 +121,8 @@ fi
 gum confirm "Enable sudo via Touch ID?" &&
     sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
 
-if gum confirm "Install a Chinese input method? (Don't worry, nothing to do with spyware)"; then
-    git clone https://github.com/idvel/rime-ice ~/Library/Rime --depth 1
-else
-    brew uninstall --cask squirrel-app input-source-pro
+if ! gum confirm "Do you use multiple input sources?"; then
+    brew uninstall --cask input-source-pro
 fi
 
 if gum confirm "⚠️WARNING Disable quarantine and gatekeeper?"; then
