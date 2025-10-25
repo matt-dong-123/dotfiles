@@ -29,9 +29,10 @@ if ! command -v brew >/dev/null; then
     log "${green}Installing Brew...${no_color}"
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     brew analytics off
-else
-    log "${blue}Brew installed${no_color}"
+    log "${yellow}Don't run the aforementioned commands, those exist already.${no_color}"
 fi
+
+log "${blue}Brew installed${no_color}"
 
 if [ ! -d "$HOME/dotfiles" ]; then
     log "${green}Cloning dotfiles repository...${no_color}"
