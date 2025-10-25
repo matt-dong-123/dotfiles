@@ -1,18 +1,18 @@
 # Path
-export PATH="$PATH:${HOME}/.local/bin:${HOME}/.cargo/bin:${HOME}/.config/omacase/bin"
+export PATH="$PATH:${HOME}/.local/bin:${HOME}/.cargo/bin:${HOME}/.config/omacase/bin:${HOME}/.config/bin"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # pnpm
 export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
+*":$PNPM_HOME:"*) ;;
+*) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$("$HOME/miniconda3/bin/conda" 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$("$HOME/miniconda3/bin/conda" 'shell.zsh' 'hook' 2>/dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else

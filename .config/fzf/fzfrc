@@ -8,7 +8,7 @@
 --border --padding 1,2
 --border-label '  FZF ' --input-label ' Input '
 --border-label-pos 2
---preview '~/.config/zsh/fzf-preview.sh {}'
+--preview '~/.config/bin/fzf-preview.sh {}'
 --bind 'result:transform-list-label:
     if [[ -z $FZF_QUERY ]]; then
       echo " $FZF_MATCH_COUNT items "
