@@ -65,6 +65,8 @@ brew "gsl"
 brew "gum"
 # Grammar Checker for Developers
 brew "harper"
+# Generic library support script
+brew "libtool"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Sort Python imports automatically
