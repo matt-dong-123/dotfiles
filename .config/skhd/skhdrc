@@ -14,6 +14,7 @@ ctrl + shift + cmd - i : kitten quick-access-terminal ~/.config/omacase/bin/home
 ctrl + shift + cmd - u : kitten quick-access-terminal ~/.config/omacase/bin/homebrew-uninstall
 ctrl + shift + cmd - t : kitten quick-access-terminal ~/.config/omacase/bin/theme-select
 ctrl + shift + cmd - b : kitten quick-access-terminal ~/.config/omacase/bin/background-select
+ctrl + shift + cmd - h : kitten quick-access-terminal ~/.config/bin/tl
 ctrl + shift + cmd - q : kitten quick-access-terminal sesh connect Music
 alt + cmd - space : kitten quick-access-terminal ~/.config/omacase/bin/actions-select
 
