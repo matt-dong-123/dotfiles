@@ -141,6 +141,8 @@ brew "stow"
 brew "stylua"
 # TOML toolkit written in Rust
 brew "taplo"
+# Very fast implementation of tldr in Rust
+brew "tealdeer"
 # Terminal multiplexer
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)

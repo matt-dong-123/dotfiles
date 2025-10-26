@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+tldr --list | fzf --preview="tldr {1} --color=always" --preview-window=right,70% --no-multi |
+    xargs -I {} tmux neww bash -c "tldr {}; read -r -n 1 -s -t 30"
