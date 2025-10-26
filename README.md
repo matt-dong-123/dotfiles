@@ -90,6 +90,5 @@ script.
 ![Lazygit](./.img/lazygit.png)
 ![Wezterm](./.img/wezterm.png)
 ![Yazi](./.img/yazi.png)
-![Zen Browser](./.img/zen.png)
 ![Brew](./.img/brew.png)
 ![Theme switching](https://github.com/user-attachments/assets/ee54cd5a-f0c6-4bfa-8347-530d1a9ed99c)
