@@ -1,6 +1,7 @@
 eval "$(starship init zsh)"
 
-# Zgenom setup ZGENOM_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zgenom/zgenom.git"
+# Zgenom setup
+ZGENOM_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zgenom/zgenom.git"
 
 if [ ! -d "${ZGENOM_HOME}" ]; then
     mkdir -p "$(dirname "${ZGENOM_HOME}")"
