@@ -30,6 +30,9 @@ jq -s '.[0] * .[1]' ~/.config/opencode/options.json \
 yq ". *= load(\"$HOME/.config/lazygit/options.yml\")" ~/.config/omacase/current/theme/lazygit.yml \
     >~/.config/lazygit/config.yml
 
+yq ". *= load(\"$HOME/.config/gh-dash/options.yml\")" ~/.config/omacase/current/theme/gh-dash.yml \
+    >~/.config/gh-dash/config.yml
+
 touch ~/.config/wezterm/wezterm.lua
 pkill -USR1 kitty
 

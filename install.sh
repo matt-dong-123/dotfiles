@@ -48,6 +48,9 @@ log "${green}Using .config/brewfile/Brewfile for quick install${no_color}"
 brew bundle install --file=~/.config/brew/Brewfile
 brew bundle cleanup --force --file=~/.config/brew/Brewfile
 
+log "${green}Installing gh-dash{$no_color}"
+gh extension install dlvhdr/gh-dash
+
 SPYWARE=$(
     cat <<-EOM
     baidunetdisk
@@ -151,13 +154,16 @@ ln -snf ~/.config/omacase/current/theme/btop.theme ~/.config/btop/themes/current
 ln -snf ~/.config/omacase/current/theme/bat ~/.config/bat/config
 ln -snf ~/.config/omacase/current/theme/yazi.toml ~/.config/yazi/theme.toml
 
-# Merge opencode and lazygit
+# Merge opencode, lazygit, and gh-dash
 jq -s '.[0] * .[1]' ~/.config/opencode/options.json \
     ~/.config/omacase/current/theme/opencode.json \
     >~/.config/opencode/opencode.json
 
 yq ". *= load(\"$HOME/.config/lazygit/options.yml\")" ~/.config/omacase/current/theme/lazygit.yml \
     >~/.config/lazygit/config.yml
+
+yq ". *= load(\"$HOME/.config/gh-dash/options.yml\")" ~/.config/omacase/current/theme/gh-dash.yml \
+    >~/.config/gh-dash/config.yml
 
 brew services restart borders sketchybar
 

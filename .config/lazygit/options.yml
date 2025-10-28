@@ -5,4 +5,4 @@ gui:
   commit:
     signOff: false
   editor: "nvim"
-  nerdFontsVersion: "3" 
+  nerdFontsVersion: "3"
