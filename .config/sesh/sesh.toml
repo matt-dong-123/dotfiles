@@ -11,7 +11,7 @@ path = "~/dotfiles"
 
 [[session]]
 name = "Notes"
-path = "~/Notes"
+path = "~/notes"
 
 [[session]]
 name = "Music"
