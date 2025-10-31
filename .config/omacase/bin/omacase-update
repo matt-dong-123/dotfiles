@@ -27,4 +27,9 @@ echo
 gum style --foreground 5 "Updating tmux plugins..."
 ~/.config/tmux/plugins/tpm/bin/update_plugins all
 
+echo
+
+gum style --foreground 5 "Updating gh extensions..."
+gh extension upgrade --all
+
 gum-done
