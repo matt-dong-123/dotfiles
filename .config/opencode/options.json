@@ -4,6 +4,36 @@
         "bash": {
             "command": ["bash-language-server"],
             "extensions": [".sh", ".bash"]
+        },
+        "markdown": {
+            "command": ["marksman"],
+            "extensions": [".md"]
+        },
+        "toml": {
+            "command": ["taplo"],
+            "extensions": [".toml"]
+        }
+    },
+    "formatter": {
+        "stylua": {
+            "command": ["stylua", "-a"],
+            "extensions": [".lua"]
+        },
+        "markdownlint": {
+            "command": ["markdownlint", "-d"],
+            "extensions": [".md"]
+        },
+        "cpplint": {
+            "command": ["cpplint"],
+            "extensions": [".c", ".cpp", ".h", ".hpp"]
+        },
+        "rustfmt": {
+            "command": ["rustfmt"],
+            "extensions": [".rs"]
+        },
+        "shfmt": {
+            "command": ["shfmt", "-w", "-i", "4", "--apply-ignore", "."],
+            "extensions": [".sh", ".zsh"]
         }
     }
 }
