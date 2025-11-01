@@ -20,7 +20,6 @@ return {
                 'ruff',
                 'marksman',
                 'bashls',
-                'harper_ls',
                 'jdtls',
             }
         end,

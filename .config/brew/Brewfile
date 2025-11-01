@@ -9,7 +9,7 @@ brew "autoconf"
 brew "automake"
 # Command-line interface for SQLite
 brew "sqlite"
-# Platform built on V8 to build network applications
+# Open-source, cross-platform JavaScript runtime environment
 brew "node"
 # Language Server for Bash
 brew "bash-language-server"
@@ -63,8 +63,6 @@ brew "go"
 brew "gsl"
 # Tool for glamorous shell scripts
 brew "gum"
-# Grammar Checker for Developers
-brew "harper"
 # Generic library support script
 brew "libtool"
 # Tools and libraries to manipulate images in many formats
