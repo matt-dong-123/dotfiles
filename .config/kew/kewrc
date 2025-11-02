@@ -33,26 +33,26 @@ trackTitleAsWindowTitle=1
 
 [colors]
 
-# Theme's go in ~/.config/kew/themes (on Linux/FreeBSD/Android), 
-# and ~/Library/Preferences/kew/themes (on macOS), 
+# Theme's go in ~/.config/kew/themes (on Linux/FreeBSD/Android),
+# and ~/Library/Preferences/kew/themes (on macOS),
 theme=
 
 # Color Mode is:
-# 0 = 16-bit color palette from default theme, 
-# 1 = Colors derived from track cover, 
-# 2 = Colors derived from TrueColor theme, 
+# 0 = 16-bit color palette from default theme,
+# 1 = Colors derived from track cover,
+# 2 = Colors derived from TrueColor theme,
 
 # Color Mode:
 colorMode=0
 
-# Terminal color theme is default.theme in 
-# ~/.config/kew/themes (on Linux/FreeBSD/Android), 
+# Terminal color theme is default.theme in
+# ~/.config/kew/themes (on Linux/FreeBSD/Android),
 # and ~/Library/Preferences/kew/themes (on macOS).
 
 
 [track cover]
 
-coverEnabled=1
+coverEnabled=0
 coverAnsi=0
 
 
@@ -82,14 +82,14 @@ visualizerBarWidth=2
 # Be sure to have the actual uncommented values last.
 # For instance use the below values for a pill muncher mode:
 
-#progressBarElapsedEvenChar= 
-#progressBarElapsedOddChar= 
+#progressBarElapsedEvenChar=
+#progressBarElapsedOddChar=
 #progressBarApproachingEvenChar=•
 #progressBarApproachingOddChar=·
 #progressBarCurrentEvenChar=ᗧ
 #progressBarCurrentOddChar=ᗧ
 
-# To have a thick line: 
+# To have a thick line:
 
 #progressBarElapsedEvenChar=━
 #progressBarElapsedOddChar=━
@@ -98,16 +98,16 @@ visualizerBarWidth=2
 #progressBarCurrentEvenChar=━
 #progressBarCurrentOddChar=━
 
-# To have dots (the original): 
+# To have dots (the original):
 
 #progressBarElapsedEvenChar=■
-#progressBarElapsedOddChar= 
+#progressBarElapsedOddChar=
 #progressBarApproachingEvenChar==
-#progressBarApproachingOddChar= 
+#progressBarApproachingOddChar=
 #progressBarCurrentEvenChar=■
-#progressBarCurrentOddChar= 
+#progressBarCurrentOddChar=
 
-# Current values: 
+# Current values:
 
 progressBarElapsedEvenChar=━
 progressBarElapsedOddChar=━
