@@ -66,9 +66,6 @@ vim.o.autoindent = true
 -- true colors
 vim.o.termguicolors = true
 
--- hide non-printable characters
-vim.o.conceallevel = 3
-
 vim.diagnostic.config {
     severity_sort = true,
     float = { border = 'rounded' },
