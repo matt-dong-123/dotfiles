@@ -29,6 +29,7 @@ on-window-detected = [
     { if.app-id = "com.kingsoft.wpsoffice.mac", run = "move-node-to-workspace work" },
     { if.app-id = "com.apple.finder", run = "layout floating" },
     { if.app-id = "io.github.clash-verge-rev.clash-verge-rev", run = 'layout floating' },
+    { if.app-id = "com.colliderli.iina", run = "layout floating"}
 ]
 
 [gaps]
