@@ -1,5 +1,5 @@
 {
-  "exportDate": "2025-09-25T11:57:48.976Z",
+  "exportDate": "2025-11-02T05:47:08.055Z",
   "addonVersion": "2.7.0",
   "settings": {
     "transparentZenSettings": {
@@ -8,10 +8,10 @@
       "forceStyling": false,
       "whitelistMode": false,
       "whitelistStyleMode": false,
-      "disableTransparency": true,
+      "disableTransparency": false,
       "disableHover": true,
       "disableFooter": false,
-      "lastFetchedTime": 1758103043150,
+      "lastFetchedTime": 1762061879642,
       "welcomeShown": true
     },
     "skipForceThemingList": [],
@@ -44,29 +44,31 @@
     },
     "transparentZenSettings.youtube.com": {
       "yt-Transparency": true,
-      "yt-Toggle side guide": true,
-      "yt-clean side guide": true,
-      "yt-mini guide": true,
+      "yt-Toggle side guide $ Completely remove the side guide": true,
+      "yt-clean side guide $ Remove YouTube Studio, Sports, Settings and the gfooter from the guide": true,
+      "yt-mini guide $ A minimal guide with an icon only sidebar similar to the tablet view but more entries": true,
       "yt-Transparent header": true,
       "yt-no voice search": true,
-      "yt-Hide filter chips": false,
-      "yt-Compact feed": true,
-      "yt-thumbnail hover": true,
-      "yt-no distractions": true,
+      "yt-Hide filter chips $ Hide the chips at the top of the feed homepage if unused": true,
+      "yt-early New To You chip": true,
+      "yt-Compact feed $ Reduce spacing, Show menu button on hover, inline details": true,
+      "yt-thumbnail hover $ Zoom in the inline thumbnail previews while hovering": true,
+      "yt-no distractions $ No shorts and other obsolete sections in the feed": true,
       "yt-Transparent video background": true,
       "yt-no ambient mode": true,
-      "yt-Theatre: zen view": true,
-      "yt-zen view comments": true,
+      "yt-theater: zen view $ Make the theater view video fit the full window size": true,
+      "yt-zen view comments $ In theater mode, move comments to the edge of the video on left or right and show on hover": true,
       "yt-zen view comments on left": true,
-      "yt-zen comments solid": true,
-      "yt-transparent overlay chat": true,
+      "yt-zen comments solid $ Make above Zen View comments background solid instead of blur": true,
+      "yt-transparent overlay chat $ Make the live chat appear as an overlay in theater mode right side edge.": true,
       "yt-Misc": true,
-      "yt-better captions": true,
-      "yt-Keep player shadow": true,
-      "yt-fix new feed layout": true,
-      "Immersive search": true,
+      "yt-better captions $ Caption background has blur": true,
+      "yt-Keep player shadow $ Remove the shadow around the player when disabled": true,
+      "yt-fix new feed layout $ Revert the new ugly feed layout that barely fits 3 columns of videos": true,
+      "yt-Immersive search $ Smooth blur and zoom effect for searhbar": true,
       "yt-Addon : Viewstats": true,
-      "yt-Addon : timed comments": true
+      "yt-Addon : timed comments": true,
+      "yt-YT TV $ YouTube TV player modifications": true
     }
   }
 }
