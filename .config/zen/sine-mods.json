@@ -1,0 +1,329 @@
+[
+  {
+    "id": "Neo-Zen",
+    "homepage": "https://github.com/JustVibingWhileCoding/Neo-Zen",
+    "author": "JustVibingWhileCoding",
+    "name": "Neo Zen",
+    "description": "A sleek, futuristic theme for Zen Browser that blends modern design with mindful simplicity",
+    "version": "2.0.0",
+    "createdAt": "2025-05-31",
+    "updatedAt": "2025-07-12",
+    "style": {
+      "chrome": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/main/userChrome.css",
+      "content": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/main/userContent.css"
+    },
+    "preferences": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/main/preferences.json",
+    "readme": "https://raw.githubusercontent.com/JustVibingWhileCoding/Neo-Zen/main/README.md",
+    "image": "https://github.com/user-attachments/assets/c37e9f4e-1ab1-43ec-945e-2be1592351a4",
+    "tags": [
+      "content",
+      "chrome",
+      "minimal",
+      "futuristic"
+    ],
+    "fork": [
+      "zen"
+    ],
+    "editable-files": [
+      "preferences.json",
+      "readme.md",
+      "chrome.css",
+      "userContent.css",
+      "userChrome.css",
+      {
+        "directory": "NeoZen",
+        "contents": [
+          "NeoZen.css",
+          {
+            "directory": "UserContent",
+            "contents": [
+              "Better-pdf.css",
+              "Transparent-settings.css"
+            ]
+          },
+          {
+            "directory": "Variables",
+            "contents": [
+              "Variables.css",
+              "Neo-Variables-Bottom.css",
+              "Neo-Variables-Search.css",
+              "Test-Variables.css",
+              "Neo-Variables.css",
+              "Neo-Variables-Essentials.css"
+            ]
+          },
+          {
+            "directory": "NeoZen/Animations",
+            "contents": [
+              "Animations.css",
+              "Animations.css",
+              {
+                "directory": "NeoZen/Animations/Simple",
+                "contents": [
+                  {
+                    "directory": "Transform",
+                    "contents": [
+                      "Rotate.css",
+                      "Height.css",
+                      "Width.css"
+                    ]
+                  },
+                  {
+                    "directory": "Visual",
+                    "contents": [
+                      "Color.css",
+                      "Opacity.css"
+                    ]
+                  }
+                ]
+              },
+              {
+                "directory": "Complex",
+                "contents": [
+                  "Splines.css"
+                ]
+              }
+            ]
+          },
+          {
+            "directory": "NeoZen/Theme",
+            "contents": [
+              "Theme.css",
+              "Theme.css",
+              {
+                "directory": "Media",
+                "contents": [
+                  "Media.css"
+                ]
+              },
+              {
+                "directory": "NeoZen/Theme/Sidebar",
+                "contents": [
+                  "Sidebar.css",
+                  "Sidebar.css",
+                  {
+                    "directory": "Workspace",
+                    "contents": [
+                      "Workspace-Create-Panel.css",
+                      "Workspace-Indicator.css",
+                      "Workspace-Button-Transition.css",
+                      "Workspace-Button.css"
+                    ]
+                  }
+                ]
+              },
+              {
+                "directory": "URL-Bar",
+                "contents": [
+                  "URL-Bar.css",
+                  "URL-Bar-Floating.css",
+                  "URL-Bar-Rows.css",
+                  "URL-Bar-Input.css"
+                ]
+              },
+              {
+                "directory": "NeoZen/Theme/External",
+                "contents": [
+                  "External.css",
+                  "External.css",
+                  {
+                    "directory": "Nebula",
+                    "contents": [
+                      "Animations(tabs).css"
+                    ]
+                  }
+                ]
+              },
+              {
+                "directory": "UI",
+                "contents": [
+                  "UI.css",
+                  "Findbar.css",
+                  "WindowButtons.css",
+                  "CustomizationScreen.css",
+                  "BrowserBackground.css",
+                  "Sidebar-Panel.css"
+                ]
+              },
+              {
+                "directory": "NeoZen/Theme/Tabs",
+                "contents": [
+                  "Tabs.css",
+                  "Tabs-Normals.css",
+                  "Tabs-Pinned.css",
+                  "Tabs-Essentials.css",
+                  "Tabs-OverflowIndicators.css",
+                  "Tabs-NewTabButton.css",
+                  "Tabs-CloseButton.css",
+                  "Tabs.css",
+                  "Tabs-Normals.css",
+                  "Tabs-Pinned.css",
+                  "Tabs-Essentials.css",
+                  "Tabs-OverflowIndicators.css",
+                  "Tabs-NewTabButton.css",
+                  "Tabs-CloseButton.css",
+                  {
+                    "directory": "Tabs-Containers",
+                    "contents": [
+                      "Tabs-Containers.css",
+                      "Tabs-Containers-Essentials.css",
+                      "Tabs-Containers-Transitions.css",
+                      "Tabs-Containers-Normals.css"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "directory": "NeoZen/Neo-Features",
+            "contents": [
+              "Neo-Features.css",
+              "Neo-Features.css",
+              {
+                "directory": "Neo-Search",
+                "contents": [
+                  "Neo-Search.css",
+                  "Neo-Search-Background.css",
+                  "Neo-Search-Align.css"
+                ]
+              },
+              {
+                "directory": "Neo-Toolbar",
+                "contents": [
+                  "Neo-Toolbar.css",
+                  "Neo-Toolbar-Fix.css",
+                  "Neo-Toolbar-Background.css"
+                ]
+              },
+              {
+                "directory": "NeoZen/Neo-Features/Neo-Workspace",
+                "contents": [
+                  "Neo-Workspace.css",
+                  "Neo-Workspace-Collapsed.css",
+                  "Neo-Workspace.css",
+                  "Neo-Workspace-Collapsed.css",
+                  {
+                    "directory": "Halo-Mode",
+                    "contents": [
+                      "Neo-Workspace-Halo-Mode-Expanded.css",
+                      "Neo-Workspace-Halo-Mode-Collapsed.css"
+                    ]
+                  }
+                ]
+              },
+              {
+                "directory": "Neo-Media",
+                "contents": [
+                  "Neo-Media.css",
+                  "Neo-Media-Expanded.css",
+                  "Neo-Media-Collapsed.css",
+                  "Neo-Media-Background.css",
+                  "Neo-Media-Background-Align.css"
+                ]
+              },
+              {
+                "directory": "Neo-Essentials",
+                "contents": [
+                  "Neo-Essentials.css",
+                  "Neo-Essentials-Collapsed.css",
+                  "Neo-Essentials-Expanded.css"
+                ]
+              },
+              {
+                "directory": "NeoZen/Neo-Features/Neo-Sidebar",
+                "contents": [
+                  "Neo-Sidebar.css",
+                  "Neo-Sidebar-Blur.css",
+                  "Neo-Sidebar-Compact-Fix.css",
+                  "Neo-Sidebar.css",
+                  "Neo-Sidebar-Blur.css",
+                  "Neo-Sidebar-Compact-Fix.css",
+                  {
+                    "directory": "Background",
+                    "contents": [
+                      "Neo-Sidebar-Background.css",
+                      "Neo-Sidebar-Background-Align.css"
+                    ]
+                  }
+                ]
+              },
+              {
+                "directory": "Neo-Findbar",
+                "contents": [
+                  "Neo-Findbar.css",
+                  "Neo-Findbar-Hover.css",
+                  "Neo-Findbar-Background.css"
+                ]
+              },
+              {
+                "directory": "NeoZen/Neo-Features/Neo-TabGroups",
+                "contents": [
+                  "Neo-TabGroups.css",
+                  "Neo-TabGroups-Transitions.css",
+                  "Neo-TabGroups-Theme.css",
+                  "Neo-TabGroups.css",
+                  "Neo-TabGroups-Transitions.css",
+                  "Neo-TabGroups-Theme.css",
+                  {
+                    "directory": "Collapsed",
+                    "contents": [
+                      "Neo-TabGroups-Collapsed.css",
+                      "Neo-TabGroups-Collapsed-Theme.css"
+                    ]
+                  },
+                  {
+                    "directory": "Expanded",
+                    "contents": [
+                      "Neo-TabGroups-Expanded-Theme.css",
+                      "Neo-TabGroups-Expanded.css"
+                    ]
+                  }
+                ]
+              },
+              {
+                "directory": "Neo-SplitGroups",
+                "contents": [
+                  "Neo-SplitGroups.css",
+                  "Neo-SplitGroups-Expanded.css",
+                  "Neo-SplitGroups-Collapsed.css"
+                ]
+              },
+              {
+                "directory": "NeoZen/Neo-Features/Neo-Bottom",
+                "contents": [
+                  "Neo-Bottom.css",
+                  "Neo-Bottom-Transition.css",
+                  "Neo-Bottom-Workspace.css",
+                  "Neo-Bottom.css",
+                  "Neo-Bottom-Transition.css",
+                  "Neo-Bottom-Workspace.css",
+                  {
+                    "directory": "Collapsed",
+                    "contents": [
+                      "Neo-Bottom-Collapsed.css",
+                      "Neo-Bottom-Position-Collapsed.css",
+                      "Neo-Bottom-Indicator-Collapsed.css",
+                      "Neo-Bottom-Transition-Collapsed.css"
+                    ]
+                  },
+                  {
+                    "directory": "Expanded",
+                    "contents": [
+                      "Neo-Bottom-Expanded.css",
+                      "Neo-Bottom-Transition-Expanded.css",
+                      "Neo-Bottom-Indicator-Expanded.css",
+                      "Neo-Bottom-Position-Expanded.css"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "no-updates": false,
+    "enabled": true
+  }
+]

@@ -78,10 +78,11 @@ script.
     - Zen Internet
     - Stylus
     - Auto Tab Discard
-2. For each of the extensions given, find the "Import" or "Restore"
+2. Install sine
+3. For each of the extensions given, find the "Import" or "Restore"
     button, and choose the corresponding file in ~/.config/zen
-3. Copy the user.js in ~/.config/zen to your profile directory
-4. Delete the user.js after starting the browser (settings will be
+4. Copy the user.js in ~/.config/zen to your profile directory
+5. Delete the user.js after starting the browser (settings will be
     remembered automatically)
 
 ## Screenshots
