@@ -45,11 +45,11 @@ fi
 cd "$HOME/dotfiles" || exit
 
 log "${green}Using .config/brewfile/Brewfile for quick install${no_color}"
-brew bundle install --file=~/.config/brew/Brewfile
-brew bundle cleanup --force --file=~/.config/brew/Brewfile
+brew bundle install --file=~/.config/brew/Brewfile || exit
+brew bundle cleanup --force --file=~/.config/brew/Brewfile || exit
 
-log "${green}Installing gh-dash{$no_color}"
-gh extension install dlvhdr/gh-dash
+log "${green}Installing gh extensions{$no_color}"
+gh extension install dlvhdr/gh-dash || die "${red}Failed to install${no_color}"
 
 SPYWARE=$(
     cat <<-EOM
@@ -71,12 +71,6 @@ if ((remove_spyware == 0)); then
     brew uninstall "$SPYWARE"
 fi
 
-if gum confirm "Install a Chinese input method? (Don't worry, nothing to do with spyware)"; then
-    git clone https://github.com/idvel/rime-ice ~/Library/Rime --depth 1
-else
-    brew uninstall --cask squirrel-app input-source-pro
-fi
-
 PROWARE=$(
     cat <<-EOM
     font-sf-pro
@@ -90,6 +84,7 @@ remove_spyware=$?
 if ((remove_spyware == 0)); then
     brew uninstall "$SPYWARE"
 fi
+
 log "${green}Configuring git...${no_color}"
 git_name=$(gum input --placeholder "Enter your full name (used for git only)")
 git_email=$(gum input --placeholder "Enter your git email")
@@ -102,6 +97,9 @@ if [ ! -d "$HOME/.local/share/sketchybar_lua/" ]; then
         cd /tmp/SbarLua/ && make install && rm -rf /tmp/SbarLua/) ||
         die "${red}Failed to install SBarLua${no_color}"
 fi
+
+# Configuring kew
+kew path ~/Music
 
 gum confirm "Write MacOS System Settings?"
 settings=$?
@@ -157,13 +155,16 @@ ln -snf ~/.config/omacase/current/theme/yazi.toml ~/.config/yazi/theme.toml
 # Merge opencode, lazygit, and gh-dash
 jq -s '.[0] * .[1]' ~/.config/opencode/options.json \
     ~/.config/omacase/current/theme/opencode.json \
-    >~/.config/opencode/opencode.json
+    >~/.config/opencode/opencode.json ||
+    die "${red}Failed opencode merge${no_color}"
 
 yq ". *= load(\"$HOME/.config/lazygit/options.yml\")" ~/.config/omacase/current/theme/lazygit.yml \
-    >~/.config/lazygit/config.yml
+    >~/.config/lazygit/config.yml ||
+    die "${red}Failed lazygit merge${no_color}"
 
 yq ". *= load(\"$HOME/.config/gh-dash/options.yml\")" ~/.config/omacase/current/theme/gh-dash.yml \
-    >~/.config/gh-dash/config.yml
+    >~/.config/gh-dash/config.yml ||
+    die "${red}Failed gh-dash merge${no_color}"
 
 brew services restart borders sketchybar
 
