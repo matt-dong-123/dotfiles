@@ -30,13 +30,7 @@ return {
     {
         'EdenEast/nightfox.nvim',
         lazy = true,
-    },
-    {
-        'rose-pine/neovim',
-        name = 'rose-pine.nvim',
-        lazy = true,
         opts = {
-            variant = 'auto',
         },
     },
     {
