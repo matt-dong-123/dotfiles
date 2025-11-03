@@ -32,9 +32,11 @@ return {
     {
         'neanias/everforest-nvim',
         lazy = true,
-        opts = {
-            transparent_background_level = 2,
-        },
+        config = function()
+            require('everforest').setup {
+                transparent_background_level = 2,
+            }
+        end,
     },
     {
         'ellisonleao/gruvbox.nvim',
