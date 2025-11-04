@@ -50,7 +50,7 @@ fi
 
 if [[ $# -eq 0 ]]; then
 	if $FZF; then
-		NETWORK=$(networksetup -listpreferredwirelessnetworks en0 2>/dev/null | sed '1d' | tr -d '\t' | fzf)
+		NETWORK=$(networksetup -listpreferredwirelessnetworks en0 2>/dev/null | sed '1d' | tr -d '\t' | fzf --preview='')
 		if [[ -z "$NETWORK" ]]; then
 			die "No network selected or found."
 		fi
