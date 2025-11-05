@@ -64,11 +64,6 @@ rev = "a0b1d9d"
 hash = "abfb0b2371259b2c8adfc7b617c3d7e5"
 
 [[flavor.deps]]
-use = "Mintass/rose-pine"
-rev = "8343340"
-hash = "e2336631865c0f90276dcbc553d532fc"
-
-[[flavor.deps]]
 use = "matt-dong-123/twodark"
 rev = "42d2df0"
 hash = "7ec2fb032411e1ef7ea0135225256429"
