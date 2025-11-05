@@ -12,13 +12,14 @@ die() {
 usage() {
 	cat <<-EOF
 
-		    Usage:
-		    $0 [options] [networks]
+		Usage:
+		$0 [options] [networks]
 
-		    Options:
-		    -c | --copy    Copy the password to pbcopy
-		    -f | --fzf     Choose network with fzf (note: cannot pass networks)
+		Options:
+		-c | --copy     Copy the password to pbcopy
+		-f | --fzf      Choose network with fzf (note: cannot pass networks)
 		-V | --version  Print version
+		-h | --help     Print this message
 
 	EOF
 	exit 1
