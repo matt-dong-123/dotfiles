@@ -64,10 +64,8 @@ if [[ $# -eq 0 ]]; then
 			die "No default network found. Please specify a network or use -f."
 		fi
 	fi
-elif [[ $# -ne 1 ]]; then
-	usage
 else
-	NETWORK=$1
+	NETWORK=$*
 fi
 
 if $COPY; then
