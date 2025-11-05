@@ -22,7 +22,7 @@ usage() {
 		-h | --help     Print this message
 
 	EOF
-	exit 1
+	exit 0
 }
 
 while [[ "$1" =~ ^- && ! "$1" == "--" ]]; do
@@ -42,11 +42,11 @@ while [[ "$1" =~ ^- && ! "$1" == "--" ]]; do
 		;;
 	esac
 	shift
-done
 
-if $FZF && [[ $# -ne 0 ]]; then
-	die "Cannot pass network arguments when using the -f (fzf) option."
-fi
+	if $FZF && [[ $# -ne 0 ]]; then
+		die "Cannot pass network arguments when using the -f (fzf) option."
+	fi
+done
 
 if $FZF && ! command -v fzf &>/dev/null; then
 	die "fzf is not installed. Please install it to use the -f option."
