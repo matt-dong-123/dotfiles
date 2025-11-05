@@ -15,10 +15,6 @@ brew "node"
 brew "bash-language-server"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.13"
-# Python code formatter
-brew "black", restart_service: :changed
 # Version manager for neovim
 brew "bob"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
@@ -33,6 +29,8 @@ brew "cmake"
 brew "cmatrix"
 # Apjanke's fork of the classic cowsay project
 brew "cowsay"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
 # Static code checker for C++
 brew "cpplint"
 # Next-gen compiler infrastructure
