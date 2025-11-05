@@ -8,7 +8,6 @@ return {
                 'lua_ls',
                 'taplo',
                 'pyright',
-                'ruff',
                 'marksman',
                 'bashls',
                 'jdtls',

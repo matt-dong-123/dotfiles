@@ -7,7 +7,7 @@ return {
             markdown = { 'markdownlint' },
             cpp = { 'cpplint' },
             c = { 'cpplint' },
-            python = { 'black', 'isort', 'ruff' },
+            python = { 'isort', 'ruff' },
             rust = { 'rustfmt' },
             zsh = { 'shfmt' },
             sh = { 'shfmt' },
