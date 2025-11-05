@@ -51,9 +51,6 @@ done
 if $FZF && ! command -v fzf &>/dev/null; then
 	die "fzf is not installed. Please install it to use the -f option."
 fi
-if $COPY && ! command -v pbcopy &>/dev/null; then
-	die "pbcopy is not available. This script requires macOS."
-fi
 
 if [[ $# -eq 0 ]]; then
 	if $FZF; then
