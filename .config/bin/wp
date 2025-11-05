@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+VERSION="0.1.0"
 COPY=false
 FZF=false
 
@@ -17,6 +18,7 @@ usage() {
 		    Options:
 		    -c | --copy    Copy the password to pbcopy
 		    -f | --fzf     Choose network with fzf (note: cannot pass networks)
+		-V | --version  Print version
 
 	EOF
 	exit 1
@@ -29,6 +31,10 @@ while [[ "$1" =~ ^- && ! "$1" == "--" ]]; do
 		;;
 	-f | --fzf)
 		FZF=true
+		;;
+	-V | --version)
+		echo "version $VERSION"
+		exit 0
 		;;
 	-h | --help)
 		usage
