@@ -1,5 +1,0 @@
-return {
-    {
-        'folke/snacks.nvim',
-    },
-}
