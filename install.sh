@@ -55,7 +55,6 @@ SPYWARE=$(
     cat <<-EOM
     baidunetdisk
     steinberg-activation-manager
-    steinberg-download-assistant
     steinberg-library-manager
     steinberg-mediabay
     tencent-meeting

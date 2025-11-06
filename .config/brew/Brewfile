@@ -204,8 +204,6 @@ cask "raycast"
 cask "sf-symbols"
 # Licenses manager for Steinberg Licensing
 cask "steinberg-activation-manager"
-# Tool to download files for Steinberg products
-cask "steinberg-download-assistant"
 # Library manager for Steinberg software
 cask "steinberg-library-manager"
 # Content manager for Steinberg software
