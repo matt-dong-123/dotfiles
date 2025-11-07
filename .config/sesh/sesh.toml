@@ -23,5 +23,9 @@ name = "Documents"
 path = "~/Documents"
 
 [[session]]
+name = "Projects"
+path = "~/github"
+
+[[session]]
 name = "Home"
 path = "~"
