@@ -2,6 +2,7 @@ return {
     'monkoose/neocodeium',
     event = 'VeryLazy',
     opts = {},
+    build = ':NeoCodeium auth',
     keys = {
         {
             '<C-f>',
