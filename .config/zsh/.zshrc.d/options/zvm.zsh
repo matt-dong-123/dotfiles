@@ -1,0 +1,3 @@
+export ZVM_READKEY_ENGINE=zle
+export ZVM_KEYTIMEOUT=0.5
+export ZVM_VI_SURROUND_BINDKEY="s-prefix"
