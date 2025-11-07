@@ -8,5 +8,5 @@ gui:
     optionsTextColor:
       - '#eceff4'
     selectedLineBgColor:
-      - '#2e3440'
+      - '#3e4a5b'
       - bold
