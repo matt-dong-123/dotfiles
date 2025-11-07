@@ -37,3 +37,9 @@ vim.api.nvim_create_autocmd('FileType', {
         vim.opt_local.formatoptions:remove { 'c', 'r', 'o' }
     end,
 })
+
+vim.filetype.add {
+    pattern = {
+        ['.*/%.config/tmux/.*'] = 'tmux',
+    },
+}
