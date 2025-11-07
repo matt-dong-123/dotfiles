@@ -26,6 +26,10 @@ prepend_keymap = [
         "g",
         "r",
     ], run = 'shell -- ya emit cd "$(git rev-parse --show-toplevel)"', desc = "Goto home of git repo" },
+    { on = [
+        "g",
+        "p",
+    ], run = "cd ~/github", desc = "Goto Projects" },
 
     # Plugins
     { on = "l", run = "plugin smart-enter" },
