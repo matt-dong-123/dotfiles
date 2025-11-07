@@ -27,6 +27,9 @@ In other words, my dotfiles.
 - Pure enjoyment and efficiency
 - Theme-switching and menu system (Like Omarchy!)
 
+> [!warning]
+> This setup is even more opinionated than Omarchy! Don't use this setup blindly!
+
 ## Software Included
 
 - Editor: [Neovim](https://neovim.io)
