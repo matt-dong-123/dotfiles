@@ -13,5 +13,12 @@ return {
             sh = { 'shfmt' },
         },
         format_on_save = {},
+        formatters = {
+            shfmt = {
+                inherit = false,
+                command = 'shfmt',
+                args = { '-filename', '$FILENAME', '-i', '4' },
+            },
+        },
     },
 }
