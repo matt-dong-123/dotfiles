@@ -4,7 +4,7 @@ local expr = { silent = true, expr = true, remap = false }
 
 -- set leader key
 g.mapleader = ' '
-g.maplocalleader = ' '
+g.maplocalleader = '\\'
 
 -- set to true because I have nerd fonts
 g.have_nerd_font = true
