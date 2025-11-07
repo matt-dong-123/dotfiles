@@ -14,9 +14,9 @@ M.apply_to_config = function(config)
     config.window_decorations = 'RESIZE | MACOS_FORCE_SQUARE_CORNERS'
     config.window_padding = {
         left = 15,
-        right = 15,
-        top = 5,
-        bottom = 5,
+        right = 0,
+        top = 0,
+        bottom = 0,
     }
     config.tab_max_width = 100
     config.show_new_tab_button_in_tab_bar = false
