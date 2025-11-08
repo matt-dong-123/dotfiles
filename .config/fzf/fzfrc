@@ -5,6 +5,7 @@
 --tmux 90%,70%
 --multi
 --layout reverse
+--border
 --border-label '  FZF '
 --preview '~/.config/bin/fzf-preview.sh {}'
 --color 'border:blue,label:blue'
