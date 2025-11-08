@@ -5,7 +5,7 @@ return {
     build = ':NeoCodeium auth',
     keys = {
         {
-            '<C-f>',
+            '<Tab>',
             mode = 'i',
             function()
                 require('neocodeium').accept()
