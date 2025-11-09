@@ -18,7 +18,10 @@
                                 "to": [
                                     {
                                         "key_code": "left_option",
-                                        "modifiers": ["left_command", "left_control"]
+                                        "modifiers": [
+                                            "left_command",
+                                            "left_control"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -50,7 +53,10 @@
                                 "to": [
                                     {
                                         "key_code": "left_command",
-                                        "modifiers": ["left_control", "left_shift"]
+                                        "modifiers": [
+                                            "left_control",
+                                            "left_shift"
+                                        ]
                                     }
                                 ],
                                 "to_if_alone": [{ "key_code": "f13" }],
@@ -92,3 +98,4 @@
         }
     ]
 }
+

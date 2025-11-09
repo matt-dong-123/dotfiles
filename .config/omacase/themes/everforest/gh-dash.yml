@@ -1,16 +1,16 @@
 theme:
-  colors:
-    text:
-      primary: "#d3c6aa"
-      secondary: "#7fbbb3"
-      inverted: "#2d353b"
-      faint: "#859289"
-      warning: "#dbbc7f"
-      success: "#a7c080"
-      error: "#e67e80"
-    background:
-      selected: "#505a60"
-    border:
-      primary: "#7fbbb3"
-      secondary: "#343f44"
-      faint: "#505a60"
+    colors:
+        text:
+            primary: "#d3c6aa"
+            secondary: "#7fbbb3"
+            inverted: "#2d353b"
+            faint: "#859289"
+            warning: "#dbbc7f"
+            success: "#a7c080"
+            error: "#e67e80"
+        background:
+            selected: "#505a60"
+        border:
+            primary: "#7fbbb3"
+            secondary: "#343f44"
+            faint: "#505a60"

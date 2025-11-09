@@ -1,8 +1,8 @@
 notARepository: skip
 gui:
-  skipNoStagedFilesWarning: false
-  showRandomTip: false
-  commit:
-    signOff: false
-  editor: "nvim"
-  nerdFontsVersion: "3"
+    skipNoStagedFilesWarning: false
+    showRandomTip: false
+    commit:
+        signOff: false
+    editor: "nvim"
+    nerdFontsVersion: "3"
