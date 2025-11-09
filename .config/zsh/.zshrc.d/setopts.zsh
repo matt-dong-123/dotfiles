@@ -1,11 +1,10 @@
-# Options
-## QOL
+# QOL
 setopt autocd
 setopt interactivecomments
 
-## Globbing
+# Globbing
 setopt globdots extendedglob
 
-## History
+# History
 setopt histignoredups histignorealldups histsavenodups histfindnodups histignorespace
 setopt sharehistory incappendhistory extendedhistory
