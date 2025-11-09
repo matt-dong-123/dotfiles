@@ -21,7 +21,7 @@ In other words, my dotfiles.
 - [Post-install](#post-install)
     - [Zen](#zen)
 - [Screenshots](#screenshots)
-      <!--toc:end-->
+    <!--toc:end-->
 
 ## Features
 
@@ -88,6 +88,8 @@ script.
 4. Copy the user.js in ~/.config/zen to your profile directory
 5. Delete the user.js after starting the browser (settings will be
    remembered automatically)
+6. In about:preferences > General > Language and Appearance > Fonts > Advanced...,
+   set all fonts to "Maple Mono NF CN" and untick the tickbox
 
 ## Screenshots
 
