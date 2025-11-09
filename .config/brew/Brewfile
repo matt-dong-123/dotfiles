@@ -112,6 +112,8 @@ brew "pastel"
 brew "pipx"
 # Fast, disk space efficient package manager
 brew "pnpm"
+# Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
+brew "prettier"
 # Hook preloader
 brew "proxychains-ng"
 # Static type checker for Python

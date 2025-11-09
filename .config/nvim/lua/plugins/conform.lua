@@ -4,13 +4,16 @@ return {
     opts = {
         formatters_by_ft = {
             lua = { 'stylua' },
-            markdown = { 'markdownlint' },
+            markdown = { 'prettier' },
             cpp = { 'cpplint' },
             c = { 'cpplint' },
             python = { 'isort', 'ruff' },
             rust = { 'rustfmt' },
             zsh = { 'shfmt' },
             sh = { 'shfmt' },
+            json = { 'prettier' },
+            jsonc = { 'prettier' },
+            yaml = { 'prettier' },
         },
         format_on_save = {},
         formatters = {
