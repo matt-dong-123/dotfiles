@@ -13,14 +13,15 @@
 In other words, my dotfiles.
 
 <!--toc:start-->
+
 - [Features](#features)
 - [Software Included](#software-included)
 - [Prerequisites](#prerequisites)
 - [Install Instructions](#install-instructions)
 - [Post-install](#post-install)
-  - [Zen](#zen)
+    - [Zen](#zen)
 - [Screenshots](#screenshots)
-<!--toc:end-->
+      <!--toc:end-->
 
 ## Features
 
@@ -55,7 +56,7 @@ In other words, my dotfiles.
 
 ## Install Instructions
 
-``` bash
+```bash
 curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/main/install.sh
 chmod +x install.sh
 ./install.sh
@@ -83,10 +84,10 @@ script.
     - Auto Tab Discard
 2. Install sine
 3. For each of the extensions given, find the "Import" or "Restore"
-    button, and choose the corresponding file in ~/.config/zen
+   button, and choose the corresponding file in ~/.config/zen
 4. Copy the user.js in ~/.config/zen to your profile directory
 5. Delete the user.js after starting the browser (settings will be
-    remembered automatically)
+   remembered automatically)
 
 ## Screenshots
 
