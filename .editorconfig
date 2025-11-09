@@ -12,3 +12,6 @@ ignore = true
 
 [.config/tmux/plugins/**]
 ignore = true
+
+[.config/bat/themes/**]
+ignore = true
