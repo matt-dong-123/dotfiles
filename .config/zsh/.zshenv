@@ -1,5 +1,3 @@
-#!/usr/bin/env zsh
-
 export ZDOTDIR=${ZDOTDIR:-$HOME/.config/zsh}
 
 # XDG
