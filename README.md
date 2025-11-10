@@ -21,9 +21,9 @@ In other words, my dotfiles.
 - [Post-install](#post-install)
     - [Zen](#zen)
 - [Screenshots](#screenshots)
-      <!--toc:end-->
+    <!--toc:end-->
 
-## Features
+# Features
 
 - Pure enjoyment and efficiency
 - Theme-switching and menu system (Like Omarchy!)
@@ -31,7 +31,7 @@ In other words, my dotfiles.
 > [!warning]
 > This setup is even more opinionated than Omarchy! Don't use this setup blindly!
 
-## Software Included
+# Software Included
 
 - Editor: [Neovim](https://neovim.io)
 - Bar: [SketchyBar](https://felixkratz.github.io/SketchyBar)
@@ -50,11 +50,11 @@ In other words, my dotfiles.
 - Terminal multiplexer and manager: [tmux](https://github.com/tmux/tmux) and [sesh](github.com/joshmedeski/sesh)
 - Eye candy around windows: [JankyBorders](https://github.com/FelixKratz/JankyBorders)
 
-## Prerequisites
+# Prerequisites
 
 - MacOS 15 or later
 
-## Install Instructions
+# Install Instructions
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/main/install.sh
@@ -65,13 +65,13 @@ chmod +x install.sh
 Paste this into your terminal, and follow the steps of the install
 script.
 
-## Post-install
+# Post-install
 
 > [!important]
 > Click on System Settings > Displays > More Space
 > This setup wouldn't work otherwise
 
-### Zen
+## Zen
 
 1. Install the following addons:
     - Brave Search: Private Search Engine
@@ -91,7 +91,7 @@ script.
 6. In about:preferences > General > Language and Appearance > Fonts > Advanced...,
    set all fonts to "Maple Mono NF CN" and untick the tickbox
 
-## Screenshots
+# Screenshots
 
 ![Neovim](./.img/neovim.png)
 ![Lazygit](./.img/lazygit.png)
