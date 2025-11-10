@@ -21,7 +21,7 @@ In other words, my dotfiles.
 - [Post-install](#post-install)
     - [Zen](#zen)
 - [Screenshots](#screenshots)
-    <!--toc:end-->
+      <!--toc:end-->
 
 ## Features
 
