@@ -184,6 +184,8 @@ cask "baidunetdisk"
 cask "battery-toolkit"
 # Continuation of Clash Verge - A Clash Meta GUI based on Tauri
 cask "clash-verge-rev"
+# Web browser
+cask "firefox"
 cask "font-maple-mono-nf-cn"
 cask "font-sf-pro"
 cask "font-sketchybar-app-font"
