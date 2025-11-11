@@ -1,0 +1,8 @@
+exclude = ["package.toml"]
+
+[schema]
+path = "taplo://taplo.toml"
+
+[formatting]
+indent_string = "    "
+trailing_newline = false

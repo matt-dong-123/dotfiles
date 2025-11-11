@@ -14,6 +14,7 @@ return {
             json = { 'prettier' },
             jsonc = { 'prettier' },
             yaml = { 'prettier' },
+            toml = { 'taplo' },
         },
         format_on_save = {},
         formatters = {
