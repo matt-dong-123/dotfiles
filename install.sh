@@ -97,9 +97,6 @@ if [ ! -d "$HOME/.local/share/sketchybar_lua/" ]; then
         die "${red}Failed to install SBarLua${no_color}"
 fi
 
-# Configuring kew
-kew path ~/Music
-
 gum confirm "Write MacOS System Settings?"
 settings=$?
 if ((settings == 0)); then
