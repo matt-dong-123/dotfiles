@@ -79,9 +79,9 @@ EOM
 )
 
 gum confirm "$(printf "⚠️These casks are proprietary, but they might break something. Remove?\n%s" "$PROWARE")"
-remove_spyware=$?
-if ((remove_spyware == 0)); then
-    brew uninstall "$SPYWARE"
+remove_proware=$?
+if ((remove_proware == 0)); then
+    brew uninstall "$PROWARE"
 fi
 
 log "${green}Configuring git...${no_color}"
