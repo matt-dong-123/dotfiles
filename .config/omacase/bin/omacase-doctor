@@ -1,0 +1,98 @@
+#!/usr/bin/env bash
+
+log() { echo -e "✔︎ $*"; }
+die() {
+    echo -e "✘ $*" >&2
+    exit 1
+}
+
+red="$(tput setaf 1)"
+green="$(tput setaf 2)"
+yellow="$(tput setaf 3)"
+blue="$(tput setaf 4)"
+no_color="$(tput sgr0)"
+
+log "${green}The doctor is ready. Come in!${no_color}"
+log "${blue}Checking package availability...${no_color}"
+if ! command -v brew >/dev/null; then
+    die "${red}Homebrew not installed${no_color}"
+fi
+log "${green}Homebrew installed${no_color}"
+
+required_tools=("jq" "yq" "gum" "gh" "git" "stow")
+for tool in "${required_tools[@]}"; do
+    if ! command -v "$tool" >/dev/null; then
+        die "${red}$tool not installed${no_color}"
+    fi
+done
+log "${green}Required tools installed${no_color}"
+
+log "${blue}Checking for outdated packages...${no_color}"
+outdated=$(brew outdated --quiet)
+if [[ -n "$outdated" ]]; then
+    echo "${yellow}Outdated packages:${no_color}"
+    echo "$outdated"
+else
+    log "${green}All packages up-to-date${no_color}"
+fi
+
+log "${blue}Running \`brew doctor\`...${no_color}"
+brew doctor
+
+log "${blue}Checking for upstream updates...${no_color}"
+cd ~/dotfiles || die "${red}Cannot cd to dotfiles${no_color}"
+git fetch origin >/dev/null 2>&1
+behind=$(git rev-list HEAD..origin/main --count 2>/dev/null || git rev-list HEAD..origin/master --count 2>/dev/null)
+if [[ "$behind" -gt 0 ]]; then
+    echo "${yellow}Dotfiles repo is $behind commits behind upstream${no_color}"
+else
+    log "${green}Dotfiles repo up-to-date${no_color}"
+fi
+
+log "${blue}Checking configurations...${no_color}"
+
+symlinks=(
+    "$HOME/.config/omacase/current/theme"
+    "$HOME/.config/nvim/lua/config/colorscheme.lua"
+    "$HOME/.config/wezterm/theme.lua"
+    "$HOME/.config/sketchybar/colors.lua"
+    "$HOME/.config/btop/themes/current.theme"
+    "$HOME/.config/bat/config"
+    "$HOME/.config/yazi/theme.toml"
+)
+
+for link in "${symlinks[@]}"; do
+    expanded=$(eval echo "$link")
+    if [[ ! -L "$expanded" ]]; then
+        echo "${yellow}Symlink missing: $link${no_color}"
+    elif [[ ! -e "$expanded" ]]; then
+        echo "${yellow}Broken symlink: $link${no_color}"
+    fi
+done
+
+if [[ ! -d ~/.config/omacase/current/theme ]]; then
+    die "${red}Current theme not set${no_color}"
+fi
+
+json_files=("$HOME/.config/opencode/opencode.json")
+yaml_files=("$HOME/.config/lazygit/config.yml" "$HOME/.config/gh-dash/config.yml")
+
+for file in "${json_files[@]}"; do
+    expanded=$(eval echo "$file")
+    if [[ -f "$expanded" ]] && ! jq . "$expanded" >/dev/null 2>&1; then
+        echo "${yellow}Invalid JSON: $file${no_color}"
+    fi
+done
+
+for file in "${yaml_files[@]}"; do
+    expanded=$(eval echo "$file")
+    if [[ -f "$expanded" ]] && ! yq . "$expanded" >/dev/null 2>&1; then
+        echo "${yellow}Invalid YAML: $file${no_color}"
+    fi
+done
+
+log "${green}Configuration check complete${no_color}"
+
+log "${green}Omacase doctor check finished!${no_color}"
+
+gum-done
