@@ -48,7 +48,7 @@ log "${green}Using .config/brewfile/Brewfile for quick install${no_color}"
 brew bundle install --file=~/.config/brew/Brewfile || exit
 brew bundle cleanup --force --file=~/.config/brew/Brewfile || exit
 
-log "${green}Installing gh extensions{$no_color}"
+log "${green}Installing gh extensions${no_color}"
 gh extension install dlvhdr/gh-dash || die "${red}Failed to install${no_color}"
 
 SPYWARE=$(
