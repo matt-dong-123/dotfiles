@@ -34,11 +34,6 @@ rev = "8f1d971"
 hash = "4fccaaf10c36dc2466e2438a386ff017"
 
 [[flavor.deps]]
-use = "BennyOe/tokyo-night"
-rev = "5f56364"
-hash = "c0bf69ad2c44005892d586e9693993c6"
-
-[[flavor.deps]]
 use = "bennyyip/gruvbox-dark"
 rev = "e5e1aef"
 hash = "eb88137cf13a796225254344bf6def2c"
@@ -72,3 +67,8 @@ hash = "abfb0b2371259b2c8adfc7b617c3d7e5"
 use = "matt-dong-123/twodark"
 rev = "42d2df0"
 hash = "7ec2fb032411e1ef7ea0135225256429"
+
+[[flavor.deps]]
+use = "matt-dong-123/tokyo-night-moon"
+rev = "224d3f6"
+hash = "a8e830335d0bc2e3c535bb9a7ab004cf"
