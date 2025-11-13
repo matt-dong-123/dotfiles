@@ -27,15 +27,6 @@ for tool in "${required_tools[@]}"; do
 done
 log "${green}Required tools installed${no_color}"
 
-log "${blue}Checking for outdated packages...${no_color}"
-outdated=$(brew outdated --quiet)
-if [[ -n "$outdated" ]]; then
-    echo "${yellow}Outdated packages:${no_color}"
-    echo "$outdated"
-else
-    log "${green}All packages up-to-date${no_color}"
-fi
-
 log "${blue}Running \`brew doctor\`...${no_color}"
 brew doctor
 
