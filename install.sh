@@ -150,7 +150,7 @@ ln -snf ~/.config/omacase/current/theme/yazi.toml ~/.config/yazi/theme.toml
 
 # Merge opencode, lazygit, and gh-dash
 jq -s '.[0] * .[1]' ~/.config/opencode/options.json \
-    ~/.config/omacase/current/theme/opencode.json \
+    ~/.config/omacase/current/theme/opencode_theme.json \
     >~/.config/opencode/opencode.json ||
     die "${red}Failed opencode merge${no_color}"
 
