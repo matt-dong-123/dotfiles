@@ -10,12 +10,12 @@ ctrl + shift + cmd - s : open -a "System Settings"
 ctrl + shift + cmd - w : open -a "WeChat"
 ctrl + shift + cmd - return : open -a "Wezterm"
 
-ctrl + shift + cmd - i : kitten quick-access-terminal ~/.config/omacase/bin/homebrew-install
-ctrl + shift + cmd - u : kitten quick-access-terminal ~/.config/omacase/bin/homebrew-uninstall
-ctrl + shift + cmd - t : kitten quick-access-terminal ~/.config/omacase/bin/theme-select
-ctrl + shift + cmd - b : kitten quick-access-terminal ~/.config/omacase/bin/background-select
-ctrl + shift + cmd - h : kitten quick-access-terminal ~/.config/bin/tl
-ctrl + shift + cmd - q : kitten quick-access-terminal sesh connect Music
+ctrl + shift + cmd - i : kitten quick-access-terminal --instance-group=install ~/.config/omacase/bin/homebrew-install
+ctrl + shift + cmd - u : kitten quick-access-terminal --instance-group=uninstall ~/.config/omacase/bin/homebrew-uninstall
+ctrl + shift + cmd - t : kitten quick-access-terminal --instance-group=theme ~/.config/omacase/bin/theme-select
+ctrl + shift + cmd - b : kitten quick-access-terminal --instance-group=bg ~/.config/omacase/bin/background-select
+ctrl + shift + cmd - h : kitten quick-access-terminal --instance-group=tl ~/.config/bin/tl
+ctrl + shift + cmd - q : kitten quick-access-terminal --instance-group=music sesh connect Music
 alt + cmd - space : kitten quick-access-terminal ~/.config/omacase/bin/actions-select
 
 :: leader @ : sketchybar --trigger skhd_mode_change SKHD_MODE_LABEL='󰠠 '
