@@ -3,6 +3,7 @@ alias f="fastfetch"
 alias v="nvim"
 alias c="cd ~/dotfiles"
 alias n="cd ~/notes"
+alias g="cd ~/github"
 alias cat="bat"
 alias oc="opencode"
 y() {
