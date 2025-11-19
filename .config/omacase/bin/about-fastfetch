@@ -4,4 +4,4 @@ source "$HOME/.bash_profile"
 
 echo
 fastfetch
-read -r -n 1 -s -t 30
+read -r -n 1 -s
