@@ -2,7 +2,7 @@ ZGENOM_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zgenom/zgenom.git"
 
 if [ ! -d "${ZGENOM_HOME}" ]; then
     mkdir -p "$(dirname "${ZGENOM_HOME}")"
-    git clone https://github.com/jandamm/zgenom "${ZGENOM_HOME}"
+    git clone --depth 1 https://github.com/jandamm/zgenom "${ZGENOM_HOME}"
 fi
 
 source "${ZGENOM_HOME}/zgenom.zsh"
