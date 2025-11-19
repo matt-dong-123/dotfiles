@@ -1,5 +1,6 @@
 {
     "$schema": "https://opencode.ai/config.json",
+    "model": "opencode/grok-code",
     "lsp": {
         "bash": {
             "command": ["bash-language-server"],
