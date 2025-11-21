@@ -1,5 +1,5 @@
 return {
-    'folke/snacks.nvim',
+    'snacks.nvim',
     opts = {
         dashboard = {
             preset = {

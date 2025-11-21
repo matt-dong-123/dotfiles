@@ -1,5 +1,5 @@
 return {
-    'folke/snacks.nvim',
+    'snacks.nvim',
     dependencies = {
         'folke/todo-comments.nvim',
         opts = {},

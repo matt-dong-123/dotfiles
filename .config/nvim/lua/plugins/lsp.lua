@@ -36,7 +36,7 @@ return {
         },
     },
     {
-        'folke/snacks.nvim',
+        'snacks.nvim',
         keys = {
             {
                 '<leader>ld',
