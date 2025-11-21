@@ -1,6 +1,7 @@
 return {
     {
         'neovim/nvim-lspconfig',
+        event = { 'BufReadPost', 'BufWritePost', 'BufNewFile' },
         version = false,
         config = function()
             vim.lsp.enable {
