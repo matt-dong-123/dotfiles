@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+theme_name="$1"
+
+if [[ -z "$theme_name" ]]; then
+    echo "Usage: $0 <theme_name>"
+    exit 1
+fi
+
+image_path="$HOME/.config/omacase/previews/$theme_name.png"
+
+if [[ ! -f "$image_path" ]]; then
+    echo "No preview image for $theme_name"
+    exit 1
+fi
+
+chafa --size 50x "$image_path"

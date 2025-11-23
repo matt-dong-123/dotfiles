@@ -2,7 +2,12 @@
 
 source "$HOME/.bash_profile"
 
-theme=$(theme-list | gum filter)
+fzf_args=(
+    --preview 'theme-preview {}'
+    --border-label '  Themes '
+)
+
+theme=$(theme-list | fzf "${fzf_args[@]}")
 
 if [[ -n "$theme" ]]; then
     theme-set "$theme"
