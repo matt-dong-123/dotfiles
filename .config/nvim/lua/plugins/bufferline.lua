@@ -1,0 +1,10 @@
+return {
+    'akinsho/bufferline.nvim',
+    dependencies = 'nvim-mini/mini.nvim',
+    opts = {
+        options = {
+            diagnostics = 'nvim_lsp',
+            always_show_bufferline = false,
+        },
+    },
+}
