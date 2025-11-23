@@ -11,6 +11,7 @@ return {
             'regex',
             'rust',
             'bash',
+            'java',
         },
         highlight = { enable = true },
         indent = { enable = true },
