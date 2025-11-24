@@ -35,6 +35,7 @@ yq ". *= load(\"$HOME/.config/gh-dash/options.yml\")" ~/.config/omacase/current/
 
 touch ~/.config/wezterm/wezterm.lua
 pkill -USR1 kitty
+pkill -USR2 btop
 
 nvim-run-command "$NEOVIM_THEME_FILE"
 
