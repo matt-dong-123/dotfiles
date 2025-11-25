@@ -14,6 +14,11 @@ return {
         statuscolumn = {},
         toggle = { which_key = true },
         words = {},
+        zen = {
+            win = {
+                backdrop = { transparent = false },
+            },
+        },
     },
     keys = {
         {
@@ -85,6 +90,13 @@ return {
                 Snacks.picker.git_log_file()
             end,
             desc = 'Log File',
+        },
+        {
+            '<leader>z',
+            function()
+                Snacks.zen()
+            end,
+            desc = 'Zen.',
         },
     },
 }
