@@ -1,6 +1,6 @@
 tap "felixkratz/formulae"
 tap "jackielii/tap"
-tap "matt-dong-123/tap"
+tap "matt-dong-123/tap", "https://github.com/matt-dong-123/homebrew-tap.git"
 tap "mhaeuser/mhaeuser"
 tap "morantron/tmux-fingers"
 tap "nikitabobko/tap"
@@ -173,7 +173,7 @@ brew "felixkratz/formulae/borders"
 brew "felixkratz/formulae/sketchybar"
 # Simple hotkey daemon for macOS, written in Zig
 brew "jackielii/tap/skhd-zig"
-# Get your wifi password. macOS only.
+# Get your wifi password, macOS only
 brew "matt-dong-123/tap/wp"
 # mouseless terminal interaction
 brew "morantron/tmux-fingers/tmux-fingers"
