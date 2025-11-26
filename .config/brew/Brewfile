@@ -4,6 +4,7 @@ tap "matt-dong-123/tap"
 tap "mhaeuser/mhaeuser"
 tap "morantron/tmux-fingers"
 tap "nikitabobko/tap"
+tap "sst/tap"
 # Automatic configure script builder
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
@@ -100,8 +101,6 @@ brew "mp3splt"
 brew "ncurses"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# AI coding agent, built for the terminal
-brew "opencode"
 # Painless compression and decompression for your terminal
 brew "ouch"
 # 7-Zip (high compression file archiver) implementation
@@ -178,6 +177,8 @@ brew "jackielii/tap/skhd-zig"
 brew "matt-dong-123/tap/wp"
 # mouseless terminal interaction
 brew "morantron/tmux-fingers/tmux-fingers"
+# The AI coding agent built for the terminal.
+brew "sst/tap/opencode"
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "aerospace"
 # Cloud storage service
