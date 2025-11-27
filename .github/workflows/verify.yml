@@ -18,7 +18,9 @@ jobs:
                     cd /tmp/SbarLua/ && make install && rm -rf /tmp/SbarLua/
                   fi
             - name: Stow Dotfiles
-              run: cd $GITHUB_WORKSPACE && stow --target=$HOME .
+              run: |
+                  rm $HOME/.bash_profile
+                  cd $GITHUB_WORKSPACE && stow --target=$HOME .
             - name: Initialize Theme
               run: |
                   mkdir -p ~/.config/omacase/current
