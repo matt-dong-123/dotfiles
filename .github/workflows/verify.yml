@@ -24,6 +24,7 @@ jobs:
             - name: Initialize Theme
               run: |
                   mkdir -p ~/.config/omacase/current
+                  mkdir -p ~/.config/btop/themes
                   ln -snf ~/.config/omacase/themes/everforest/ ~/.config/omacase/current/theme
                   ln -snf ~/.config/omacase/current/theme/neovim.lua ~/.config/nvim/lua/config/colorscheme.lua
                   ln -snf ~/.config/omacase/current/theme/wezterm.lua ~/.config/wezterm/theme.lua
