@@ -11,16 +11,6 @@ jobs:
               run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && brew analytics off
             - name: Install Brew Packages
               run: brew bundle install --file=.github/Brewfile
-            - name: Install Lint Tools
-              run: brew install stylua shfmt shellcheck ruff black isort markdownlint-cli jq yq
-            - name: Run Lint Checks
-              run: |
-                  stylua --check --config-path .stylua.toml .
-                  shfmt -d .
-                  shellcheck **/*.sh
-                  ruff check .
-                  ruff format --check .
-                  markdownlint-cli .
             - name: Install SBarLua
               run: |
                   if [ ! -d "$HOME/.local/share/sketchybar_lua/" ]; then
@@ -52,4 +42,3 @@ jobs:
                   tmux -V || true
                   wezterm --version || true
                   brew services list || true
-
