@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-
-source "$HOME/.bash_profile"
+#!/usr/bin/env -S bash -l
 
 if [[ -z "$1" ]]; then
     echo "No theme specified." >&2

@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-
-source "$HOME/.bash_profile"
+#!/usr/bin/env -S bash -l
 
 tap=$(brew tap | gum filter --placeholder "Untap out of...")
 

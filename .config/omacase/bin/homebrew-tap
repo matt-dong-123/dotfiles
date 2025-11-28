@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-
-source "$HOME/.bash_profile"
+#!/usr/bin/env -S bash -l
 
 gum input --placeholder "Tap into..." | xargs brew tap
 homebrew-sync-with-packages

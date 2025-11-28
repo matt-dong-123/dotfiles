@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-
-source "$HOME/.bash_profile"
+#!/usr/bin/env -S bash -l
 
 HOMEBREW_NO_AUTO_UPDATE=1 brew bundle dump --force --describe --file="$HOME/.config/brew/Brewfile"
 gum-done
