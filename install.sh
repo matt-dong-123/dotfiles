@@ -166,7 +166,6 @@ initialize() {
 
     # Set specific app symlinks for current theme
     ln -snf ~/.config/omacase/current/theme/neovim.lua ~/.config/nvim/lua/config/colorscheme.lua
-    ln -snf ~/.config/omacase/current/theme/wezterm.lua ~/.config/wezterm/theme.lua
     ln -snf ~/.config/omacase/current/theme/sketchybar.lua ~/.config/sketchybar/colors.lua
     ln -snf ~/.config/omacase/current/theme/btop.theme ~/.config/btop/themes/current.theme
     ln -snf ~/.config/omacase/current/theme/bat ~/.config/bat/config

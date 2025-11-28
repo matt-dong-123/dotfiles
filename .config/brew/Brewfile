@@ -193,6 +193,8 @@ cask "font-maple-mono-nf-cn"
 cask "font-sf-pro"
 cask "font-sketchybar-app-font"
 cask "font-symbols-only-nerd-font"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
 # Chromium-based web browser
 cask "helium-browser"
 # Free and open-source media player
@@ -223,8 +225,6 @@ cask "steinberg-mediabay"
 cask "tencent-meeting"
 # Free messaging and calling application
 cask "wechat"
-# GPU-accelerated cross-platform terminal emulator and multiplexer
-cask "wezterm@nightly"
 # All-in-one office service platform in Chinese
 cask "wpsoffice-cn"
 # Gecko based web browser

@@ -10,7 +10,6 @@ export XDG_PROJECTS_DIR=${XDG_PROJECTS_DIR:-$HOME/Projects}
 
 # Envvars
 export EDITOR=nvim
-export WEZTERM_CONFIG_DIR="${XDG_CONFIG_HOME}/wezterm"
 export RIPGREP_CONFIG_PATH="${XDG_CONFIG_HOME}/ripgrep/rgrc"
 export STARSHIP_CONFIG=${XDG_CONFIG_HOME}/starship/starship.toml
 export MANPAGER="nvim +Man!"

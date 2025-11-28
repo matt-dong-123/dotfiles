@@ -45,7 +45,6 @@ log "${blue}Checking configurations...${no_color}"
 symlinks=(
     "$HOME/.config/omacase/current/theme"
     "$HOME/.config/nvim/lua/config/colorscheme.lua"
-    "$HOME/.config/wezterm/theme.lua"
     "$HOME/.config/sketchybar/colors.lua"
     "$HOME/.config/btop/themes/current.theme"
     "$HOME/.config/bat/config"
