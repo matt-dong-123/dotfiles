@@ -20,8 +20,9 @@ In other words, my dotfiles.
 - [Install Instructions](#install-instructions)
 - [Post-install](#post-install)
     - [Zen](#zen)
+- [Philosophy](#philosophy)
 - [Screenshots](#screenshots)
-      <!--toc:end-->
+  <!--toc:end-->
 
 # Features
 
@@ -90,6 +91,10 @@ script.
    remembered automatically)
 6. In about:preferences > General > Language and Appearance > Fonts > Advanced...,
    set all fonts to "Maple Mono NF CN" and untick the tickbox
+
+# Philosophy
+
+This dotfiles repo has the same philosophy as Omarchy. It's extremely opiniated, even more so than Omarchy, and it has a lot of "proprietary bloat", so it's probably not for you. However, reading this repo through, copying the code, making PRs and improving the codebase are all encouraged!
 
 # Screenshots
 
