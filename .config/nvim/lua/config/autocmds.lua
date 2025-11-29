@@ -43,13 +43,3 @@ vim.filetype.add {
         ['.*/%.config/tmux/.*'] = 'tmux',
     },
 }
-
--- Set filetype to 'conf' for files without extension
-vim.api.nvim_create_autocmd('BufReadPost', {
-    pattern = '*',
-    callback = function()
-        if vim.fn.expand('%:e') == '' then
-            vim.bo.filetype = 'conf'
-        end
-    end,
-})
