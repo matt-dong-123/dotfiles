@@ -32,7 +32,7 @@ gh extension upgrade --all
 
 echo
 
-gum style --forground 5 "Updating tldr cache..."
+gum style --foreground 5 "Updating tldr cache..."
 tldr --update
 
 gum-done
