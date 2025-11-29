@@ -12,8 +12,6 @@
 
 In other words, my dotfiles.
 
-[![Verify Setup](https://github.com/matt-dong-123/dotfiles/actions/workflows/verify.yml/badge.svg)](https://github.com/matt-dong-123/dotfiles/actions/workflows/verify.yml)
-
 <!--toc:start-->
 
 - [Features](#features)
@@ -23,7 +21,7 @@ In other words, my dotfiles.
 - [Post-install](#post-install)
     - [Zen](#zen)
 - [Screenshots](#screenshots)
-    <!--toc:end-->
+      <!--toc:end-->
 
 # Features
 
