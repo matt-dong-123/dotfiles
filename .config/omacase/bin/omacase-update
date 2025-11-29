@@ -1,4 +1,4 @@
-#!/usr/bin/env -S bash -l
+#!/usr/bin/env -S zsh -i
 
 gum style --foreground 5 "Updating Omacase..."
 git -C "$HOME/dotfiles" pull --autostash
@@ -24,6 +24,12 @@ echo
 
 gum style --foreground 5 "Updating tmux plugins..."
 ~/.config/tmux/plugins/tpm/bin/update_plugins all
+
+echo
+
+gum style --foreground 5 "Updating zsh plugins..."
+zgenom selfupdate
+zgenom update
 
 echo
 
