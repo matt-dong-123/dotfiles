@@ -1,4 +1,4 @@
 #!/usr/bin/env -S bash -l
 
-brew upgrade --greedy
+brew upgrade
 gum-done

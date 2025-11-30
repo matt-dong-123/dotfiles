@@ -8,7 +8,7 @@ echo
 
 gum style --foreground 5 "Updating Homebrew Packages..."
 brew update
-brew upgrade --greedy
+brew upgrade
 
 echo
 
