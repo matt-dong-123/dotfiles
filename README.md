@@ -22,7 +22,7 @@ In other words, my dotfiles.
     - [Zen](#zen)
 - [Philosophy](#philosophy)
 - [Screenshots](#screenshots)
-  <!--toc:end-->
+    <!--toc:end-->
 
 # Features
 
@@ -83,7 +83,7 @@ script.
     - Zen Internet
     - Stylus
     - Auto Tab Discard
-2. Install sine
+2. Install [sine](https://github.com/CosmoCreeper/Sine)
 3. For each of the extensions given, find the "Import" or "Restore"
    button, and choose the corresponding file in ~/.config/zen
 4. Copy the user.js in ~/.config/zen to your profile directory
