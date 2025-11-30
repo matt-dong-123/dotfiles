@@ -181,53 +181,9 @@ brew "morantron/tmux-fingers/tmux-fingers"
 brew "sst/tap/opencode"
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "aerospace"
-# Cloud storage service
-cask "baidunetdisk"
-# Control the platform power state of your Apple Silicon device
-cask "battery-toolkit"
-# Continuation of Clash Verge - A Clash Meta GUI based on Tauri
-cask "clash-verge-rev"
-# Web browser
-cask "firefox"
-cask "font-maple-mono-nf-cn"
-cask "font-sf-pro"
-cask "font-sketchybar-app-font"
-cask "font-symbols-only-nerd-font"
-# Chromium-based web browser
-cask "helium-browser"
-# Free and open-source media player
-cask "iina"
-# Tool for multi-language users
-cask "input-source-pro"
 # Keyboard customiser
 cask "karabiner-elements"
 # GPU-based terminal emulator
 cask "kitty"
-# Intercept, modify, replay, save HTTP/S traffic
-cask "mitmproxy"
-# Open-source music notation software
-cask "musescore"
-# System and utility switches
-cask "only-switch"
-# Control your tools with a few keystrokes
-cask "raycast"
-# Tool that provides consistent, highly configurable symbols for apps
-cask "sf-symbols"
-# Licenses manager for Steinberg Licensing
-cask "steinberg-activation-manager"
-# Library manager for Steinberg software
-cask "steinberg-library-manager"
-# Content manager for Steinberg software
-cask "steinberg-mediabay"
-# Cloud video conferencing
-cask "tencent-meeting"
-# Free messaging and calling application
-cask "wechat"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm@nightly"
-# All-in-one office service platform in Chinese
-cask "wpsoffice-cn"
-# Gecko based web browser
-cask "zen"
-# Video communication and virtual meeting platform
-cask "zoom"

@@ -37,7 +37,7 @@ In other words, my dotfiles.
 - Editor: [Neovim](https://neovim.io)
 - Bar: [SketchyBar](https://felixkratz.github.io/SketchyBar)
 - Browser: [Zen Browser](https://zen-browser.app) and [Helium Browser](https://helium.computer)
-- Terminal Emulator: [Ghostty](https://ghostty.org), and [Kitty](https://sw.kovidgoyal.net/kitty) for menus
+- Terminal Emulator: [WezTerm](https://wezterm.org), and [Kitty](https://sw.kovidgoyal.net/kitty) for menus
 - Music Player: [kew](https://codeberg.org/ravachol/kew)
 - Git UI: [lazygit](https://github.com/jesseduffield/lazygit)
 - Fuzzy Picker: [fzf](https://junegunn.github.io/fzf)
@@ -100,7 +100,7 @@ This dotfiles repo has the same philosophy as Omarchy. It's extremely opiniated,
 
 ![Neovim](./.img/neovim.png)
 ![Lazygit](./.img/lazygit.png)
-![Ghostty](./.img/ghostty.png)
+![Wezterm](./.img/wezterm.png)
 ![Yazi](./.img/yazi.png)
 ![Brew](./.img/brew.png)
 ![Theme switching](https://github.com/user-attachments/assets/ee54cd5a-f0c6-4bfa-8347-530d1a9ed99c)
