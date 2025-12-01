@@ -7,4 +7,3 @@ return {
         panel = { enabled = false },
     },
 }
-
