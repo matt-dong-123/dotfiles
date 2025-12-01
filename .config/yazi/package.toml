@@ -20,8 +20,8 @@ hash = "56fdabc96fc1f4d53c96eb884b02a5be"
 
 [[plugin.deps]]
 use = "Rolv-Apneseth/starship"
-rev = "a63550b"
-hash = "c2021386289a0cbb3e152a052f67c177"
+rev = "d7056e3"
+hash = "be8e1b31833e356cad14dcda9d8ad2d3"
 
 [[plugin.deps]]
 use = "DreamMaoMao/easyjump"
