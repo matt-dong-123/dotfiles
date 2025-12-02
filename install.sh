@@ -157,6 +157,8 @@ install_gh_extensions() {
 }
 
 initialize() {
+    mkdir -p ~/notes ~/github
+
     # Set initial theme
     mkdir -p ~/.config/omacase/current
     ln -snf ~/.config/omacase/themes/everforest/ ~/.config/omacase/current/theme
