@@ -11,7 +11,7 @@ local wifi = sbar.add('item', 'right.wifi', {
         color = colors.yellow,
         string = 'Testing...',
     },
-    update_freq = 5,
+    update_freq = 1,
 })
 
 wifi:subscribe({ 'routine', 'system_woke' }, function()
