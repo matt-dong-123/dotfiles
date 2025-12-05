@@ -1,21 +1,21 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "eaf6920"
+rev = "19dc890"
 hash = "5b2eb0cc2050cec1e4de83cfa51a5b90"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "eaf6920"
+rev = "19dc890"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "eaf6920"
+rev = "19dc890"
 hash = "27ca02f49fd236b5cc7bf03c243859fe"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "eaf6920"
+rev = "19dc890"
 hash = "56fdabc96fc1f4d53c96eb884b02a5be"
 
 [[plugin.deps]]
@@ -30,7 +30,7 @@ hash = "9209d17be3c792eda9ad60b447c4db1e"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "eaf6920"
+rev = "19dc890"
 hash = "4fccaaf10c36dc2466e2438a386ff017"
 
 [[flavor.deps]]
