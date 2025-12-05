@@ -4,3 +4,5 @@ echo
 gum spin --spinner "dot" \
     --title "Done! Press any key to close (auto-closes in 30s)..." \
     -- bash -c 'read -n 1 -s -t 30'
+
+osascript -e 'display notification "Task Complete!" with title "Menu Operation"'
