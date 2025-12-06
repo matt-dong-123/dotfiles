@@ -22,7 +22,7 @@ In other words, my dotfiles.
     - [Zen](#zen)
 - [Philosophy](#philosophy)
 - [Screenshots](#screenshots)
-    <!--toc:end-->
+      <!--toc:end-->
 
 # Features
 
@@ -37,7 +37,7 @@ In other words, my dotfiles.
 - Editor: [Neovim](https://neovim.io)
 - Bar: [SketchyBar](https://felixkratz.github.io/SketchyBar)
 - Browser: [Zen Browser](https://zen-browser.app) and [Helium Browser](https://helium.computer)
-- Terminal Emulator: [WezTerm](https://wezterm.org), and [Kitty](https://sw.kovidgoyal.net/kitty) for menus
+- Terminal Emulator: [Ghostty](https://ghostty.org), and [Kitty](https://sw.kovidgoyal.net/kitty) for menus
 - Music Player: [kew](https://codeberg.org/ravachol/kew)
 - Git UI: [lazygit](https://github.com/jesseduffield/lazygit)
 - Fuzzy Picker: [fzf](https://junegunn.github.io/fzf)

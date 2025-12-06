@@ -8,7 +8,7 @@ ctrl + shift + cmd - m : open -a "MuseScore 4"
 ctrl + shift + cmd - p : open -a "Passwords"
 ctrl + shift + cmd - s : open -a "System Settings"
 ctrl + shift + cmd - w : open -a "WeChat"
-ctrl + shift + cmd - return : open -a "Wezterm"
+ctrl + shift + cmd - return : open -a "Ghostty"
 
 ctrl + shift + cmd - i : kitten quick-access-terminal --instance-group=install ~/.config/omacase/bin/homebrew-install
 ctrl + shift + cmd - u : kitten quick-access-terminal --instance-group=uninstall ~/.config/omacase/bin/homebrew-uninstall
