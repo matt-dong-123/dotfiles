@@ -25,11 +25,16 @@ local one_thing = sbar.add('item', 'right.one-thing', {
 })
 
 one_thing:subscribe('mouse.clicked', function()
-    sbar.exec('kitten quick-access-terminal nvim "$HOME' .. filepath_in_home .. '"', function()
-        one_thing:set {
-            label = { string = read_one_thing() },
-        }
-    end)
+    sbar.exec(
+        'kitten quick-access-terminal --instance-group=onething nvim "$HOME'
+            .. filepath_in_home
+            .. '"',
+        function()
+            one_thing:set {
+                label = { string = read_one_thing() },
+            }
+        end
+    )
 end)
 
 sbar.add('item', 'right.one_thing.padding', {

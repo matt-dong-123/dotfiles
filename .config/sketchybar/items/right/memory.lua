@@ -18,7 +18,7 @@ local memory = sbar.add('item', 'right.memory', 41, {
         },
         color = colors.default,
     },
-    click_script = 'kitten quick-access-terminal btop',
+    click_script = 'kitten quick-access-terminal --instance-group=monitor btop',
 })
 
 local function format_bytes(bytes)

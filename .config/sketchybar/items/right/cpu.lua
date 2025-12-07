@@ -18,7 +18,7 @@ local cpu = sbar.add('item', 'right.cpu', 42, {
         },
         color = colors.default,
     },
-    click_script = 'kitten quick-access-terminal btop',
+    click_script = 'kitten quick-access-terminal --instance-group=monitor btop',
 })
 
 cpu:subscribe('cpu_update', function(env)
