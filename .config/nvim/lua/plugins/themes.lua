@@ -9,10 +9,6 @@ return {
         lazy = true,
     },
     {
-        'Mofiqul/dracula.nvim',
-        lazy = true,
-    },
-    {
         'neanias/everforest-nvim',
         lazy = true,
     },

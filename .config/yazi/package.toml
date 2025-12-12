@@ -44,11 +44,6 @@ rev = "ffe6e3a"
 hash = "8d7799e4598ff079fa5ee5c770d9bc08"
 
 [[flavor.deps]]
-use = "yazi-rs/flavors:dracula"
-rev = "ffe6e3a"
-hash = "5d16bf24ca0980168814fc1abd307c07"
-
-[[flavor.deps]]
 use = "Chromium-3-Oxide/everforest-medium"
 rev = "0158f0f"
 hash = "dbbbfe681e156c28303efb1f44b6cbc4"
