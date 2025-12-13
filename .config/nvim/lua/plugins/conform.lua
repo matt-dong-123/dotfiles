@@ -5,24 +5,18 @@ return {
         formatters_by_ft = {
             lua = { 'stylua' },
             markdown = { 'prettier' },
-            cpp = { 'cpplint' },
-            c = { 'cpplint' },
+            cpp = { 'clang-format' },
+            c = { 'clang-format' },
             python = { 'isort', 'ruff' },
             rust = { 'rustfmt' },
             zsh = { 'shfmt' },
             sh = { 'shfmt' },
+            java = { 'google-java-format' },
             json = { 'prettier' },
             jsonc = { 'prettier' },
             yaml = { 'prettier' },
             toml = { 'taplo' },
         },
         format_on_save = {},
-        formatters = {
-            shfmt = {
-                inherit = false,
-                command = 'shfmt',
-                args = { '-filename', '$FILENAME', '-i', '4' },
-            },
-        },
     },
 }

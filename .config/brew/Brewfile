@@ -25,16 +25,14 @@ brew "btop"
 brew "bzip2"
 # Versatile and fast Unicode/ASCII/ANSI graphics renderer
 brew "chafa"
+# Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
+brew "clang-format"
 # Cross-platform make
 brew "cmake"
 # Console Matrix
 brew "cmatrix"
 # Apjanke's fork of the classic cowsay project
 brew "cowsay"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.13"
-# Static code checker for C++
-brew "cpplint"
 # Next-gen compiler infrastructure
 brew "llvm"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -63,6 +61,8 @@ brew "git"
 brew "glow"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Reformats Java source code to comply with Google Java Style
+brew "google-java-format"
 # Numerical library for C and C++
 brew "gsl"
 # Tool for glamorous shell scripts
@@ -109,6 +109,8 @@ brew "p7zip"
 brew "pandoc"
 # Command-line tool to generate, analyze, convert and manipulate colors
 brew "pastel"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Fast, disk space efficient package manager
