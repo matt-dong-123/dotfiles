@@ -21,8 +21,9 @@ In other words, my dotfiles.
 - [Post-install](#post-install)
     - [Zen](#zen)
 - [Philosophy](#philosophy)
+- [Troubleshooting](#troubleshooting)
 - [Screenshots](#screenshots)
-      <!--toc:end-->
+  <!--toc:end-->
 
 # Features
 
@@ -95,6 +96,11 @@ script.
 # Philosophy
 
 This dotfiles repo has the same philosophy as Omarchy. It's extremely opiniated, even more so than Omarchy, and it has a lot of "proprietary bloat", so it's probably not for you. However, reading this repo through, copying the code, making PRs and improving the codebase are all encouraged!
+
+# Troubleshooting
+
+- **Q: When I use fzf-git, why don't some keybinds work (e.g. C-g C-l)?**
+- A: Press C-g _C-a_ C-l. tmux is a bit annoying.
 
 # Screenshots
 
