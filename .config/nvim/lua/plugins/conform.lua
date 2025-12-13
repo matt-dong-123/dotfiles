@@ -17,6 +17,11 @@ return {
             yaml = { 'prettier' },
             toml = { 'taplo' },
         },
+        formatters = {
+            ['google-java-format'] = {
+                prepend_args = { '--aosp' },
+            },
+        },
         format_on_save = {},
     },
 }
