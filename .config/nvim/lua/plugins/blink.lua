@@ -3,8 +3,6 @@ return {
     event = { 'InsertEnter', 'CmdlineEnter' },
     dependencies = {
         'rafamadriz/friendly-snippets',
-        'copilot.lua',
-        'fang2hou/blink-copilot',
     },
     version = '*',
     opts = {
@@ -14,19 +12,7 @@ return {
                 'path',
                 'snippets',
                 'buffer',
-                'copilot',
                 'cmdline',
-            },
-            providers = {
-                copilot = {
-                    name = 'copilot',
-                    module = 'blink-copilot',
-                    async = true,
-                    score_offset = -100,
-                    opts = {
-                        max_completions = 3,
-                    },
-                },
             },
         },
         cmdline = {
