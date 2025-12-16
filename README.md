@@ -23,7 +23,7 @@ In other words, my dotfiles.
 - [Philosophy](#philosophy)
 - [Troubleshooting](#troubleshooting)
 - [Screenshots](#screenshots)
-    <!--toc:end-->
+      <!--toc:end-->
 
 # Features
 
@@ -73,6 +73,9 @@ script.
 > Click on System Settings > Displays > More Space
 > This setup wouldn't work otherwise
 
+> [!important]
+> Remember to grant the correct permissions (e.g. accessibility)
+
 ## Zen
 
 1. Install the following addons:
@@ -106,7 +109,7 @@ This dotfiles repo has the same philosophy as Omarchy. It's extremely opiniated,
 
 ![Neovim](./.img/neovim.png)
 ![Lazygit](./.img/lazygit.png)
-![Wezterm](./.img/wezterm.png)
+![Ghostty](./.img/ghostty.png)
 ![Yazi](./.img/yazi.png)
 ![Brew](./.img/brew.png)
 ![Theme switching](https://github.com/user-attachments/assets/ee54cd5a-f0c6-4bfa-8347-530d1a9ed99c)
