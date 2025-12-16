@@ -23,8 +23,12 @@ brew "bob"
 brew "btop"
 # Freely available high-quality data compressor
 brew "bzip2"
+# Console-based Audio Visualizer for ALSA
+brew "cava"
 # Versatile and fast Unicode/ASCII/ANSI graphics renderer
 brew "chafa"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
 brew "clang-format"
 # Cross-platform make
@@ -45,8 +49,6 @@ brew "eza"
 brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
-# Play, record, convert, and stream audio and video
-brew "ffmpeg"
 # Banner-like program prints strings as ASCII art
 brew "figlet"
 # Command-line fuzzy finder written in Go
@@ -77,8 +79,6 @@ brew "isort"
 brew "jdtls"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Command-line music player
-brew "kew"
 # Simple terminal UI for git commands
 brew "lazygit"
 # Powerful, lightweight programming language
@@ -97,6 +97,8 @@ brew "markdownlint-cli"
 brew "marksman"
 # Command-line interface to split MP3 and Ogg Vorbis files
 brew "mp3splt"
+# Music Player Daemon
+brew "mpd", restart_service: :changed
 # Text-based UI library
 brew "ncurses"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -125,6 +127,8 @@ brew "pyright"
 brew "reattach-to-user-namespace"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Terminal based Media Player Client with album art support
+brew "rmpc"
 # Extremely fast Python linter, written in Rust
 brew "ruff"
 # Safe, concurrent, practical language

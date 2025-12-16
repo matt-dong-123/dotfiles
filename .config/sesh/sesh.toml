@@ -16,7 +16,7 @@ path = "~/notes"
 [[session]]
 name = "Music"
 path = "~/Music"
-startup_command = "kew"
+startup_command = "rmpc"
 
 [[session]]
 name = "Documents"

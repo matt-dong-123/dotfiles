@@ -23,7 +23,7 @@ In other words, my dotfiles.
 - [Philosophy](#philosophy)
 - [Troubleshooting](#troubleshooting)
 - [Screenshots](#screenshots)
-  <!--toc:end-->
+    <!--toc:end-->
 
 # Features
 
@@ -39,7 +39,7 @@ In other words, my dotfiles.
 - Bar: [SketchyBar](https://felixkratz.github.io/SketchyBar)
 - Browser: [Zen Browser](https://zen-browser.app) and [Helium Browser](https://helium.computer)
 - Terminal Emulator: [Ghostty](https://ghostty.org), and [Kitty](https://sw.kovidgoyal.net/kitty) for menus
-- Music Player: [kew](https://codeberg.org/ravachol/kew)
+- Music Player: [rmpc](https://github.com/mierak/rmpc)
 - Git UI: [lazygit](https://github.com/jesseduffield/lazygit)
 - Fuzzy Picker: [fzf](https://junegunn.github.io/fzf)
 - File Manager: [yazi](https://yazi-rs.github.io)
