@@ -16,6 +16,7 @@ ctrl + shift + cmd - t : kitten quick-access-terminal --instance-group=theme ~/.
 ctrl + shift + cmd - b : kitten quick-access-terminal --instance-group=bg ~/.config/omacase/bin/background-select
 ctrl + shift + cmd - h : kitten quick-access-terminal --instance-group=tl ~/.config/bin/tl
 ctrl + shift + cmd - q : kitten quick-access-terminal --instance-group=music sesh connect Music
+shift - space : rmpc togglepause
 alt + cmd - space : kitten quick-access-terminal ~/.config/omacase/bin/actions-select
 
 :: leader @ : sketchybar --trigger skhd_mode_change SKHD_MODE_LABEL='󰠠 '
