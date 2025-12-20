@@ -214,8 +214,6 @@ cask "karabiner-elements"
 cask "kitty"
 # Intercept, modify, replay, save HTTP/S traffic
 cask "mitmproxy"
-# Open-source music notation software
-cask "musescore"
 # System and utility switches
 cask "only-switch"
 # Control your tools with a few keystrokes
