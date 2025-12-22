@@ -23,7 +23,7 @@ In other words, my dotfiles.
 - [Philosophy](#philosophy)
 - [Troubleshooting](#troubleshooting)
 - [Screenshots](#screenshots)
-      <!--toc:end-->
+  <!--toc:end-->
 
 # Features
 
@@ -62,6 +62,12 @@ In other words, my dotfiles.
 curl -fsSL https://raw.githubusercontent.com/matt-dong-123/dotfiles/refs/heads/main/install.sh
 chmod +x install.sh
 ./install.sh
+```
+
+or YOLO:
+
+```bash
+curl -fsSL https://matt-dong-123.github.io/install | bash
 ```
 
 Paste this into your terminal, and follow the steps of the install
