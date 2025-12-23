@@ -23,7 +23,7 @@ In other words, my dotfiles.
 - [Philosophy](#philosophy)
 - [Troubleshooting](#troubleshooting)
 - [Screenshots](#screenshots)
-      <!--toc:end-->
+  <!--toc:end-->
 
 # Features
 
@@ -67,7 +67,7 @@ chmod +x install.sh
 or YOLO:
 
 ```bash
-curl https://matt-dong-123.github.io/install | bash
+curl https://matt-dong-123.github.io/install/ | bash
 ```
 
 Paste this into your terminal, and follow the steps of the install
