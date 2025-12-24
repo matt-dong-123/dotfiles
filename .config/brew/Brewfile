@@ -98,7 +98,7 @@ brew "marksman"
 # Command-line interface to split MP3 and Ogg Vorbis files
 brew "mp3splt"
 # Music Player Daemon
-brew "mpd", restart_service: :changed
+brew "mpd"
 # Text-based UI library
 brew "ncurses"
 # Ambitious Vim-fork focused on extensibility and agility
