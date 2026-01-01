@@ -98,7 +98,7 @@ brew "marksman"
 # Command-line interface to split MP3 and Ogg Vorbis files
 brew "mp3splt"
 # Music Player Daemon
-brew "mpd"
+brew "mpd", restart_service: :changed
 # Text-based UI library
 brew "ncurses"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -212,6 +212,8 @@ cask "input-source-pro"
 cask "karabiner-elements"
 # GPU-based terminal emulator
 cask "kitty"
+# Open-source cross-platform alternative to AirDrop
+cask "localsend"
 # Intercept, modify, replay, save HTTP/S traffic
 cask "mitmproxy"
 # System and utility switches
@@ -232,6 +234,8 @@ cask "tencent-meeting"
 cask "wechat"
 # All-in-one office service platform in Chinese
 cask "wpsoffice-cn"
+# Multiplayer code editor
+cask "zed"
 # Gecko based web browser
 cask "zen"
 # Video communication and virtual meeting platform
