@@ -41,4 +41,8 @@ prepend_keymap = [
     ], run = "plugin chmod", desc = "Chmod on selected files" },
     { on = "i", run = "plugin easyjump", desc = "Jump with easyjump" },
     { on = "M", run = "plugin mount", desc = "Open mount view" },
+    { on = [
+        "g",
+        "v",
+    ], run = "plugin vcs-files", desc = "Show git file changes" },
 ]

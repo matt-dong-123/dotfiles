@@ -1,21 +1,21 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "7ca66b4"
-hash = "5b2eb0cc2050cec1e4de83cfa51a5b90"
+rev = "398796d"
+hash = "8da0b15a97b5dfd13941d1ecc617ac7c"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "7ca66b4"
+rev = "398796d"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "7ca66b4"
-hash = "d2aa1b2f32c8b4fd1775e8f5c45f8fab"
+rev = "398796d"
+hash = "73788c7dc5827ef4677c502c3ea8fa19"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "7ca66b4"
+rev = "398796d"
 hash = "56fdabc96fc1f4d53c96eb884b02a5be"
 
 [[plugin.deps]]
@@ -30,40 +30,45 @@ hash = "9209d17be3c792eda9ad60b447c4db1e"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "7ca66b4"
-hash = "4fccaaf10c36dc2466e2438a386ff017"
+rev = "398796d"
+hash = "e2d4bfccf31e5ab05f46fee4797c5215"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:vcs-files"
+rev = "398796d"
+hash = "4ee57085277d616acfa0ef1fef37dc00"
 
 [[flavor.deps]]
 use = "bennyyip/gruvbox-dark"
 rev = "2c61c90"
-hash = "d19603f80eba19ae01c42cb6a565283a"
+hash = "3685f7557e7425381b65c883c688f593"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
 rev = "9276ffa"
-hash = "8d7799e4598ff079fa5ee5c770d9bc08"
+hash = "b951d27afe197d154f6da9683b46c5f8"
 
 [[flavor.deps]]
 use = "Chromium-3-Oxide/everforest-medium"
 rev = "0158f0f"
-hash = "dbbbfe681e156c28303efb1f44b6cbc4"
+hash = "a7c36abf0b13289aceb1c20a17c6a63e"
 
 [[flavor.deps]]
 use = "AdithyanA2005/nord"
 rev = "3a791e9"
-hash = "fa7142cda74a50b271ea212356b40b57"
+hash = "8c0450f0966288d1ad3173ed2502e3dd"
 
 [[flavor.deps]]
 use = "dangooddd/kanagawa"
 rev = "a0b1d9d"
-hash = "abfb0b2371259b2c8adfc7b617c3d7e5"
-
-[[flavor.deps]]
-use = "matt-dong-123/twodark"
-rev = "42d2df0"
-hash = "7ec2fb032411e1ef7ea0135225256429"
+hash = "b33673cdc5d3d68b478085e3e06182d9"
 
 [[flavor.deps]]
 use = "matt-dong-123/tokyo-night-moon"
 rev = "224d3f6"
-hash = "a8e830335d0bc2e3c535bb9a7ab004cf"
+hash = "8b35873b4d0427821aeabe7141c6614b"
+
+[[flavor.deps]]
+use = "matt-dong-123/twodark"
+rev = "42d2df0"
+hash = "25e54c1dad88d15151dda1ca58dd4d3f"
