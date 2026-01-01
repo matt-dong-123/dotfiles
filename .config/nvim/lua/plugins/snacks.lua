@@ -6,7 +6,6 @@ return {
         bigfile = {},
         git = {},
         gitbrowse = {},
-        image = {},
         indent = {},
         input = {},
         notifier = { timeout = 3000, style = 'fancy' },
