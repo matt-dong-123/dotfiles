@@ -1,27 +1,12 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "398796d"
+rev = "80cd5b5"
 hash = "8da0b15a97b5dfd13941d1ecc617ac7c"
 
 [[plugin.deps]]
-use = "yazi-rs/plugins:full-border"
-rev = "398796d"
-hash = "3996fc74044bc44144b323686f887e1"
-
-[[plugin.deps]]
-use = "yazi-rs/plugins:git"
-rev = "398796d"
-hash = "73788c7dc5827ef4677c502c3ea8fa19"
-
-[[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "398796d"
+rev = "80cd5b5"
 hash = "56fdabc96fc1f4d53c96eb884b02a5be"
-
-[[plugin.deps]]
-use = "Rolv-Apneseth/starship"
-rev = "eca1861"
-hash = "e519d894e94ded741e06aae4d4775981"
 
 [[plugin.deps]]
 use = "DreamMaoMao/easyjump"
@@ -30,13 +15,28 @@ hash = "9209d17be3c792eda9ad60b447c4db1e"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "398796d"
+rev = "80cd5b5"
 hash = "e2d4bfccf31e5ab05f46fee4797c5215"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:vcs-files"
-rev = "398796d"
+rev = "80cd5b5"
 hash = "4ee57085277d616acfa0ef1fef37dc00"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "80cd5b5"
+hash = "170317244d60fbe70ad3cc3353358480"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "80cd5b5"
+hash = "3996fc74044bc44144b323686f887e1"
+
+[[plugin.deps]]
+use = "Rolv-Apneseth/starship"
+rev = "eca1861"
+hash = "e519d894e94ded741e06aae4d4775981"
 
 [[flavor.deps]]
 use = "bennyyip/gruvbox-dark"
