@@ -11,6 +11,7 @@ return {
                 'marksman',
                 'bashls',
                 'jdtls',
+                'tinymist',
             }
         end,
     },

@@ -12,6 +12,7 @@ return {
             'rust',
             'bash',
             'java',
+            'typst',
         },
         highlight = { enable = true },
         indent = { enable = true },

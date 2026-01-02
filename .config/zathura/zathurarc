@@ -1,0 +1,9 @@
+map r reload
+map p print
+map i recolor
+map J zoom out
+map K zoom in
+map R rotate
+
+set font "Maple Mono NF CN 18"
+set selection-clipboard clipboard

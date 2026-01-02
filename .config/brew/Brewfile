@@ -1,4 +1,5 @@
 tap "felixkratz/formulae"
+tap "homebrew-zathura/zathura"
 tap "jackielii/tap"
 tap "matt-dong-123/tap", "https://github.com/matt-dong-123/homebrew-tap.git"
 tap "mhaeuser/mhaeuser"
@@ -115,6 +116,8 @@ brew "pastel"
 brew "python@3.13"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
+# Paste PNG into files
+brew "pngpaste"
 # Fast, disk space efficient package manager
 brew "pnpm"
 # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
@@ -151,14 +154,22 @@ brew "stylua"
 brew "taplo"
 # Very fast implementation of tldr in Rust
 brew "tealdeer"
+# Services for Typst
+brew "tinymist"
 # Terminal multiplexer
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Parser generator tool
 brew "tree-sitter-cli"
+# Markup-based typesetting system
+brew "typst"
+# Beautiful and reliable typst code formatter
+brew "typstyle"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Command-line client for WebSockets
+brew "websocat"
 # Internet file retriever
 brew "wget"
 # Translate common Internet acronyms
@@ -177,6 +188,10 @@ brew "zoxide"
 brew "felixkratz/formulae/borders"
 # Custom macOS statusbar with shell plugin, interaction and graph support
 brew "felixkratz/formulae/sketchybar"
+# PDF viewer
+brew "homebrew-zathura/zathura/zathura"
+# MuPDF backend plugin for zathura
+brew "homebrew-zathura/zathura/zathura-pdf-mupdf"
 # Simple hotkey daemon for macOS, written in Zig
 brew "jackielii/tap/skhd-zig"
 # Get your wifi password, macOS only

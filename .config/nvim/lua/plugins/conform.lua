@@ -16,6 +16,7 @@ return {
             jsonc = { 'prettier' },
             yaml = { 'prettier' },
             toml = { 'taplo' },
+            typst = { 'typstyle' },
         },
         formatters = {
             ['google-java-format'] = {
