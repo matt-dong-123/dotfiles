@@ -1,11 +1,11 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "80cd5b5"
+rev = "03cdd4b"
 hash = "8da0b15a97b5dfd13941d1ecc617ac7c"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "80cd5b5"
+rev = "03cdd4b"
 hash = "56fdabc96fc1f4d53c96eb884b02a5be"
 
 [[plugin.deps]]
@@ -15,22 +15,22 @@ hash = "9209d17be3c792eda9ad60b447c4db1e"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "80cd5b5"
+rev = "03cdd4b"
 hash = "e2d4bfccf31e5ab05f46fee4797c5215"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:vcs-files"
-rev = "80cd5b5"
+rev = "03cdd4b"
 hash = "4ee57085277d616acfa0ef1fef37dc00"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "80cd5b5"
-hash = "170317244d60fbe70ad3cc3353358480"
+rev = "03cdd4b"
+hash = "36a484acf6a0a0219c543ccb4cee218f"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "80cd5b5"
+rev = "03cdd4b"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
@@ -60,8 +60,8 @@ hash = "8c0450f0966288d1ad3173ed2502e3dd"
 
 [[flavor.deps]]
 use = "dangooddd/kanagawa"
-rev = "a0b1d9d"
-hash = "b33673cdc5d3d68b478085e3e06182d9"
+rev = "04985d1"
+hash = "c69a63981e254a3a06a11c2bf0e6af1d"
 
 [[flavor.deps]]
 use = "matt-dong-123/tokyo-night-moon"
