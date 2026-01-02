@@ -9,8 +9,8 @@ title_format = "Yazi"
 
 prepend_fetchers = [
     # Git
-    { id = "git", name = "*", run = "git" },
-    { id = "git", name = "*/", run = "git" },
+    { id = "git", url = "*", run = "git" },
+    { id = "git", url = "*/", run = "git" },
 ]
 
 [opener]
