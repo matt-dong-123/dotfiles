@@ -1,3 +1,4 @@
+## Normal aliases
 alias ls="eza --color=always --icons -a"
 alias f="fastfetch"
 alias v="nvim"
@@ -48,3 +49,24 @@ alias gs='git status --short'
 alias gu='git pull' # mnemonic for `git update`
 
 alias ghd='gh dash'
+
+## Suffix Aliases
+alias -s md='glow'
+alias -s lua='$EDITOR'
+alias -s java='java'
+alias -s mov='open'
+alias -s png='open'
+alias -s mp4='open'
+alias -s pdf='zathura'
+alias -s json='jless'
+
+## Global Aliases
+alias -g NE='2>/dev/null'      # stderr
+alias -g DN='>/dev/null'       # stdout
+alias -g NUL='>/dev/null 2>&1' # everything
+alias -g C='| pbcopy'          # copy
+
+# Hash bookmarking
+hash -d dot=~/dotfiles
+hash -d gh=~/github
+hash -d n=~/notes

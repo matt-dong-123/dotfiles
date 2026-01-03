@@ -78,6 +78,8 @@ brew "imagemagick"
 brew "isort"
 # Java language specific implementation of the Language Server Protocol
 brew "jdtls"
+# Command-line pager for JSON data
+brew "jless"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Simple terminal UI for git commands
