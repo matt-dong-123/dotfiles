@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -euo pipefail
 
 if [[ $# -ne 1 ]]; then
     >&2 echo "usage: $0 FILENAME[:LINENO][:IGNORED]"
