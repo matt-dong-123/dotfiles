@@ -3,6 +3,7 @@
 fzf_args=(
     --preview 'theme-preview {}'
     --border-label '  Themes '
+    --no-multi
 )
 
 theme=$(theme-list | fzf "${fzf_args[@]}")
