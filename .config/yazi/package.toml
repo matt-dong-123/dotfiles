@@ -1,36 +1,36 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "03cdd4b"
+rev = "4e55902"
 hash = "8da0b15a97b5dfd13941d1ecc617ac7c"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "03cdd4b"
+rev = "4e55902"
 hash = "56fdabc96fc1f4d53c96eb884b02a5be"
 
 [[plugin.deps]]
 use = "DreamMaoMao/easyjump"
-rev = "6606fb1"
-hash = "9209d17be3c792eda9ad60b447c4db1e"
+rev = "42998d0"
+hash = "bf5817a4a60a44fbf7bf76338bb455be"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "03cdd4b"
+rev = "4e55902"
 hash = "e2d4bfccf31e5ab05f46fee4797c5215"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:vcs-files"
-rev = "03cdd4b"
-hash = "4ee57085277d616acfa0ef1fef37dc00"
+rev = "4e55902"
+hash = "5cfd9b2bd3f8ec4e3245e3426a967f82"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "03cdd4b"
+rev = "4e55902"
 hash = "36a484acf6a0a0219c543ccb4cee218f"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "03cdd4b"
+rev = "4e55902"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
@@ -40,12 +40,12 @@ hash = "e519d894e94ded741e06aae4d4775981"
 
 [[flavor.deps]]
 use = "bennyyip/gruvbox-dark"
-rev = "2c61c90"
-hash = "3685f7557e7425381b65c883c688f593"
+rev = "619fdc5"
+hash = "d4c7003ec6dc4efd5d3a050d5c2f2575"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
-rev = "9276ffa"
+rev = "4a1802a"
 hash = "b951d27afe197d154f6da9683b46c5f8"
 
 [[flavor.deps]]
