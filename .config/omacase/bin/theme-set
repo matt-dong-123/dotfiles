@@ -31,9 +31,10 @@ yq ". *= load(\"$HOME/.config/lazygit/options.yml\")" ~/.config/omacase/current/
 yq ". *= load(\"$HOME/.config/gh-dash/options.yml\")" ~/.config/omacase/current/theme/gh-dash.yml \
     >~/.config/gh-dash/config.yml
 
-pkill -USR1 kitty
+pkill -USR1 kitty >/dev/null
 pkill -USR2 btop
 pkill -USR2 ghostty
+pkill -USR2 opencode
 
 nvim-run-command "$NEOVIM_THEME_FILE"
 
