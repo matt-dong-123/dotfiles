@@ -55,8 +55,8 @@ hash = "a7c36abf0b13289aceb1c20a17c6a63e"
 
 [[flavor.deps]]
 use = "AdithyanA2005/nord"
-rev = "3a791e9"
-hash = "8c0450f0966288d1ad3173ed2502e3dd"
+rev = "bdf0bd4"
+hash = "816970e00d643d3e8213b430d2148aec"
 
 [[flavor.deps]]
 use = "dangooddd/kanagawa"
