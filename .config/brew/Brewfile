@@ -122,6 +122,8 @@ brew "pipx"
 brew "pngpaste"
 # Fast, disk space efficient package manager
 brew "pnpm"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
 # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew "prettier"
 # Hook preloader
