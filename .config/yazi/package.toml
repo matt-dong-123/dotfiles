@@ -38,6 +38,11 @@ use = "Rolv-Apneseth/starship"
 rev = "eca1861"
 hash = "e519d894e94ded741e06aae4d4775981"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:piper"
+rev = "68f7d48"
+hash = "2dd68af59418b631b9703a03f606b31f"
+
 [[flavor.deps]]
 use = "bennyyip/gruvbox-dark"
 rev = "619fdc5"

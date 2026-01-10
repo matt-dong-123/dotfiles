@@ -13,6 +13,10 @@ prepend_fetchers = [
     { id = "git", url = "*/", run = "git" },
 ]
 
+prepend_previewers = [
+    { url = "*.typ", run = 'piper -- bat -p --color=always "$1"' },
+]
+
 [opener]
 play = [{ run = 'iina --no-stdin "$@"' }]
 
