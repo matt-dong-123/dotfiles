@@ -1,3 +1,4 @@
+tap "dimentium/autoraise"
 tap "felixkratz/formulae"
 tap "homebrew-zathura/zathura"
 tap "jackielii/tap"
@@ -206,6 +207,8 @@ brew "morantron/tmux-fingers/tmux-fingers"
 brew "sst/tap/opencode"
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "aerospace"
+# Focus-follows-mouse
+cask "autoraiseapp"
 # Cloud storage service
 cask "baidunetdisk"
 # Control the platform power state of your Apple Silicon device
