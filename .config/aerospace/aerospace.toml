@@ -32,6 +32,8 @@ on-window-detected = [
     { if.app-id = "com.colliderli.iina", run = "layout floating" },
 ]
 
+on-focus-changed = ['move-mouse window-lazy-center']
+
 [gaps]
 inner.horizontal = 6
 inner.vertical = 6
