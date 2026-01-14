@@ -25,7 +25,7 @@ jq -s '.[0] * .[1]' ~/.config/opencode/options.json \
     ~/.config/omacase/current/theme/opencode_theme.json \
     >~/.config/opencode/opencode.json
 
-yq ". *= load(\"$HOME/.config/lazygit/options.yml\")" ~/.config/omacase/current/theme/lazygit.yml \
+yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' ~/.config/omacase/current/theme/lazygit.yml ~/.config/lazygit/options.yml \
     >~/.config/lazygit/config.yml
 
 yq ". *= load(\"$HOME/.config/gh-dash/options.yml\")" ~/.config/omacase/current/theme/gh-dash.yml \
