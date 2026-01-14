@@ -13,6 +13,7 @@ return {
             'bash',
             'java',
             'typst',
+            'gitcommit',
         },
         highlight = { enable = true },
         indent = { enable = true },
