@@ -20,6 +20,15 @@ return {
                 command = true,
             },
         }
+        -- pair $ in typst files
+        vim.api.nvim_create_autocmd('FileType', {
+            group = vim.api.nvim_create_augroup('pair_dollar', {}),
+            pattern = 'typst',
+            callback = function()
+                require('mini.pairs').map_buf(0, 'i', '$', { action = 'closeopen', pair = '$$' })
+            end,
+        })
+
         require('mini.hipatterns').setup {
             highlighters = {
                 hex_color = require('mini.hipatterns').gen_highlighter.hex_color(),
