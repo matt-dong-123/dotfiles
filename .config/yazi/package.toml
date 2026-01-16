@@ -1,11 +1,11 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "57f1863"
+rev = "56971d0"
 hash = "8da0b15a97b5dfd13941d1ecc617ac7c"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "57f1863"
+rev = "56971d0"
 hash = "56fdabc96fc1f4d53c96eb884b02a5be"
 
 [[plugin.deps]]
@@ -15,22 +15,22 @@ hash = "bf5817a4a60a44fbf7bf76338bb455be"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "57f1863"
+rev = "56971d0"
 hash = "e2d4bfccf31e5ab05f46fee4797c5215"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:vcs-files"
-rev = "57f1863"
+rev = "56971d0"
 hash = "5cfd9b2bd3f8ec4e3245e3426a967f82"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "57f1863"
+rev = "56971d0"
 hash = "36a484acf6a0a0219c543ccb4cee218f"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "57f1863"
+rev = "56971d0"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
@@ -40,8 +40,8 @@ hash = "e519d894e94ded741e06aae4d4775981"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:piper"
-rev = "57f1863"
-hash = "954922c883778c19c4a2dad5be08787f"
+rev = "56971d0"
+hash = "76ea4ff62db6ebe62e4653c2de95cbd"
 
 [[flavor.deps]]
 use = "bennyyip/gruvbox-dark"
