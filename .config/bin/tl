@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 
-source "$HOME/.bash_profile"
-
 tldr --list | fzf --preview="tldr {} --color=always" --preview-window=right,70% --no-multi |
     xargs -I {} tmux neww bash -c "tldr {} && read -p 'Press ENTER to exit...'"
