@@ -44,7 +44,6 @@ require('lazy').setup({
             'kanagawa',
         },
     },
-    checker = { enabled = true },
     performance = {
         rtp = {
             disabled_plugins = {
