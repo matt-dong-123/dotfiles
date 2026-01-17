@@ -7,7 +7,7 @@ fzf_args=(
     --no-multi
 )
 
-selection=$(find "$wallpaper" -maxdepth 1 -type f -exec basename {} \; | fzf "${fzf_args[@]}")
+selection=$(fd --type f --max-depth 1 --exec basename {} \; . "$wallpaper" | fzf "${fzf_args[@]}")
 
 if [[ -n "$selection" ]]; then
     osascript -e "tell application \"System Events\" to set picture of every desktop to POSIX file \"$wallpaper/$selection\""

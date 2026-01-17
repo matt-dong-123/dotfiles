@@ -7,7 +7,7 @@ if [[ $# -ne 1 ]]; then
 fi
 
 RUNTIME=${XDG_RUNTIME_DIR:-$TMPDIR}
-CODE=$(cat "$1")
+CODE=$(<"$1")
 for sock in "$RUNTIME"/nvim.*; do
     [[ -S $sock ]] || continue
     nvim --server "$sock" --remote-send "<cmd>lua $CODE<CR>" 2>/dev/null || :
