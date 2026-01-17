@@ -51,11 +51,7 @@ update_menu() {
     omacase-update
 }
 
-doctor_menu() {
-    omacase-doctor
-}
-
-CHOICE=$(gum filter "Packages" "Themes" "Backgrounds" "About" "Update Omacase" "Doctor")
+CHOICE=$(gum filter "Packages" "Themes" "Backgrounds" "About" "Update Omacase")
 
 case $CHOICE in
 "Packages")
@@ -72,8 +68,5 @@ case $CHOICE in
     ;;
 "Update Omacase")
     update_menu
-    ;;
-"Doctor")
-    doctor_menu
     ;;
 esac
