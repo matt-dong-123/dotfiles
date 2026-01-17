@@ -5,4 +5,4 @@ path = "taplo://taplo.toml"
 
 [formatting]
 indent_string = "    "
-trailing_newline = false
+trailing_newline = true
