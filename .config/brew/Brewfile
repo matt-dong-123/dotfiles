@@ -11,6 +11,10 @@ tap "sst/tap"
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
+# Text-based UI library
+brew "ncurses"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
 # Command-line interface for SQLite
 brew "sqlite"
 # Open-source, cross-platform JavaScript runtime environment
@@ -103,8 +107,6 @@ brew "marksman"
 brew "mp3splt"
 # Music Player Daemon
 brew "mpd", restart_service: :changed
-# Text-based UI library
-brew "ncurses"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Painless compression and decompression for your terminal

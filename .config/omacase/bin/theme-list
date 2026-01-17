@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
 fd --type d --type l --max-depth 1 . ~/.config/omacase/themes/ | sort | while read -r path; do
-    basename "$path" | perl -ne 'chomp; s/-/ /g; s/(\S+)/\u\L$1/g; print "$_\n"'
+    theme=$(basename "$path")
+    IFS='-'
+    read -ra parts <<<"$theme"
+    IFS=' '
+    title="${parts[*]^}"
+    echo "$title"
 done
