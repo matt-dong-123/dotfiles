@@ -19,6 +19,15 @@ fi
 
 ln -nsf "$THEME_PATH" "$CURRENT_THEME_DIR"
 
+source "$CURRENT_THEME_DIR/borders"
+
+options=(
+    active_color="$ACTIVE_COLOR"
+    inactive_color="$INACTIVE_COLOR"
+)
+
+borders "${options[@]}" >/dev/null 2>&1
+
 parallel --no-notice --halt-on-error 2 ::: \
     "jq -s '.[0] * .[1]' ~/.config/opencode/options.json ~/.config/omacase/current/theme/opencode_theme.json >~/.config/opencode/opencode.json" \
     "yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' ~/.config/omacase/current/theme/lazygit.yml ~/.config/lazygit/options.yml >~/.config/lazygit/config.yml" \
@@ -33,8 +42,7 @@ parallel --no-notice ::: \
     "pkill -USR1 kitty >/dev/null 2>&1" \
     "pkill -USR2 btop >/dev/null 2>&1" \
     "pkill -USR2 ghostty >/dev/null 2>&1" \
-    "pkill -USR2 opencode >/dev/null 2>&1" \
-    "pkill -USR2 borders >/dev/null 2>&1"
+    "pkill -USR2 opencode >/dev/null 2>&1"
 
 nvim-run-command "$NEOVIM_THEME_FILE"
 
