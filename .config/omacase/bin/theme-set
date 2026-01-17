@@ -39,6 +39,6 @@ parallel --no-notice ::: \
 nvim-run-command "$NEOVIM_THEME_FILE"
 
 WALLPAPER=$(realpath ~/.config/omacase/current/theme/backgrounds/default.png)
-osascript -e "tell application \"System Events\" to set picture of every desktop to \"$WALLPAPER\"" &
+osascript -e "tell application \"System Events\" to set picture of every desktop to \"$WALLPAPER\""
 
 sketchybar --reload
