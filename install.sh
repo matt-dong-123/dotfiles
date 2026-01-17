@@ -58,8 +58,8 @@ bundle_packages() {
     brew bundle install --file=~/.config/brew/Brewfile || exit
     brew bundle cleanup --force --file=~/.config/brew/Brewfile || exit
     # zathura-mupdf
-    mkdir -p $(brew --prefix zathura)/lib/zathura
-    ln -s $(brew --prefix zathura-pdf-mupdf)/libpdf-mupdf.dylib $(brew --prefix zathura)/lib/zathura/libpdf-mupdf.dylib
+    mkdir -p "$(brew --prefix zathura)"/lib/zathura
+    ln -s "$(brew --prefix zathura-pdf-mupdf)"/libpdf-mupdf.dylib "$(brew --prefix zathura)"/lib/zathura/libpdf-mupdf.dylib
 }
 
 install_sbarlua() {
