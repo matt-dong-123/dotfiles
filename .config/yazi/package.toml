@@ -9,11 +9,6 @@ rev = "56971d0"
 hash = "56fdabc96fc1f4d53c96eb884b02a5be"
 
 [[plugin.deps]]
-use = "DreamMaoMao/easyjump"
-rev = "42998d0"
-hash = "bf5817a4a60a44fbf7bf76338bb455be"
-
-[[plugin.deps]]
 use = "yazi-rs/plugins:mount"
 rev = "56971d0"
 hash = "e2d4bfccf31e5ab05f46fee4797c5215"
