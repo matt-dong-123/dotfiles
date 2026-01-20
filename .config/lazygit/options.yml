@@ -6,6 +6,9 @@ gui:
         signOff: false
     editor: "nvim"
     nerdFontsVersion: "3"
+keybinding:
+    files:
+        commitChanges: "C"
 customCommands:
     # retrieved from: https://github.com/jesseduffield/lazygit/wiki/Custom-Commands-Compendium#conventional-commit
     - key: "c"
