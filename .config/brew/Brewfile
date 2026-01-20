@@ -33,7 +33,7 @@ brew "bzip2"
 brew "cava"
 # Versatile and fast Unicode/ASCII/ANSI graphics renderer
 brew "chafa"
-# Play, record, convert, and stream audio and video
+# Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
 brew "clang-format"
@@ -77,7 +77,7 @@ brew "gsl"
 brew "gum"
 # Generic library support script
 brew "libtool"
-# Tools and libraries to manipulate images in many formats
+# Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Sort Python imports automatically
 brew "isort"
@@ -210,11 +210,11 @@ brew "morantron/tmux-fingers/tmux-fingers"
 # The AI coding agent built for the terminal.
 brew "sst/tap/opencode"
 # AeroSpace is an i3-like tiling window manager for macOS
-cask "aerospace"
+cask "nikitabobko/tap/aerospace"
 # Cloud storage service
 cask "baidunetdisk"
 # Control the platform power state of your Apple Silicon device
-cask "battery-toolkit"
+cask "mhaeuser/mhaeuser/battery-toolkit"
 # Continuation of Clash Verge - A Clash Meta GUI based on Tauri
 cask "clash-verge-rev"
 # Web browser
