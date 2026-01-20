@@ -37,7 +37,6 @@ require('lazy').setup({
         colorscheme = {
             'tokyonight',
             'catppuccin',
-            'gruvbox',
             'everforest',
             'nord',
             'onedark',
