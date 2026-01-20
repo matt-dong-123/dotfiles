@@ -70,5 +70,5 @@ hash = "9e947a9fe0609d0dcc15690b4078e24e"
 
 [[flavor.deps]]
 use = "matt-dong-123/twodark"
-rev = "42d2df0"
-hash = "25e54c1dad88d15151dda1ca58dd4d3f"
+rev = "a5cfd77"
+hash = "afba3a59d8b2998d2defde975aec9d7f"
