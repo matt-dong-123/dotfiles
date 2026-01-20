@@ -49,11 +49,6 @@ rev = "ca61658"
 hash = "8eabb4e88096f10905a6df62cfaadbf4"
 
 [[flavor.deps]]
-use = "Chromium-3-Oxide/everforest-medium"
-rev = "0158f0f"
-hash = "a7c36abf0b13289aceb1c20a17c6a63e"
-
-[[flavor.deps]]
 use = "AdithyanA2005/nord"
 rev = "bdf0bd4"
 hash = "816970e00d643d3e8213b430d2148aec"
@@ -72,3 +67,8 @@ hash = "9e947a9fe0609d0dcc15690b4078e24e"
 use = "matt-dong-123/twodark"
 rev = "a5cfd77"
 hash = "afba3a59d8b2998d2defde975aec9d7f"
+
+[[flavor.deps]]
+use = "matt-dong-123/everforest-medium"
+rev = "f9da288"
+hash = "161e1bfb3ba6f897441ef60e16c08b60"
