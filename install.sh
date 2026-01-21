@@ -30,7 +30,7 @@ detect_requirements() {
 install_brew() {
     if ! command -v brew >/dev/null; then
         log "${green}Installing Brew...${no_color}"
-        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        /usr/bin/env -S bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
         brew analytics off
         log "${yellow}Don't run the aforementioned commands, those exist already.${no_color}"
     fi
