@@ -197,6 +197,7 @@ initialize() {
 
 finish() {
     log "${green}Setup complete!${no_color}"
+    log "${red}Click on System Settings > Displays > More Space, this setup wouldn't work otherwise. Enjoy!${no_color}"
 }
 
 detect_requirements

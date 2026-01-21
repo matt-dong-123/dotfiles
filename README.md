@@ -23,7 +23,7 @@ In other words, my dotfiles.
 - [Philosophy](#philosophy)
 - [Troubleshooting](#troubleshooting)
 - [Screenshots](#screenshots)
-      <!--toc:end-->
+  <!--toc:end-->
 
 # Features
 
@@ -74,10 +74,6 @@ Paste this into your terminal, and follow the steps of the install
 script.
 
 # Post-install
-
-> [!important]
-> Click on System Settings > Displays > More Space
-> This setup wouldn't work otherwise
 
 > [!important]
 > Remember to grant the correct permissions (e.g. accessibility)
