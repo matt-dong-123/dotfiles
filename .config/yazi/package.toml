@@ -55,8 +55,8 @@ hash = "c69a63981e254a3a06a11c2bf0e6af1d"
 
 [[flavor.deps]]
 use = "matt-dong-123/tokyo-night-moon"
-rev = "a12a9be"
-hash = "9e947a9fe0609d0dcc15690b4078e24e"
+rev = "5f38075"
+hash = "85874bb02eeedc5fb0ed0dc6f52d6b77"
 
 [[flavor.deps]]
 use = "matt-dong-123/twodark"
