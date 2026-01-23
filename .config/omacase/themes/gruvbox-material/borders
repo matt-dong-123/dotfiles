@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+ACTIVE_COLOR="gradient(top_left=0xff7daea3,bottom_right=0xffe78a4e)"
+INACTIVE_COLOR="0xff7c6f64"

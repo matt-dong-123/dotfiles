@@ -24,4 +24,8 @@ return {
         'navarasu/onedark.nvim',
         lazy = true,
     },
+    {
+        'f4z3r/gruvbox-material.nvim',
+        lazy = true,
+    },
 }
