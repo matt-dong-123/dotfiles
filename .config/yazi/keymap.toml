@@ -39,7 +39,6 @@ prepend_keymap = [
         "c",
         "m",
     ], run = "plugin chmod", desc = "Chmod on selected files" },
-    { on = "i", run = "plugin easyjump", desc = "Jump with easyjump" },
     { on = "M", run = "plugin mount", desc = "Open mount view" },
     { on = [
         "g",
