@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env -S bash -l
 
 tldr --list | fzf --preview="tldr {} --color=always" --preview-window=right,70% --no-multi |
     xargs -I {} tmux neww bash -c "tldr {} && read -p 'Press ENTER to exit...'"
