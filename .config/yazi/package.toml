@@ -1,31 +1,31 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "de33976"
+rev = "6c71385"
 hash = "8da0b15a97b5dfd13941d1ecc617ac7c"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "de33976"
+rev = "6c71385"
 hash = "56fdabc96fc1f4d53c96eb884b02a5be"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "de33976"
+rev = "6c71385"
 hash = "e2d4bfccf31e5ab05f46fee4797c5215"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:vcs-files"
-rev = "de33976"
-hash = "5cfd9b2bd3f8ec4e3245e3426a967f82"
+rev = "6c71385"
+hash = "f69e4737c2fb8ceec58a2950faf13c46"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "de33976"
+rev = "6c71385"
 hash = "36a484acf6a0a0219c543ccb4cee218f"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "de33976"
+rev = "6c71385"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
@@ -35,8 +35,8 @@ hash = "e519d894e94ded741e06aae4d4775981"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:piper"
-rev = "de33976"
-hash = "76ea4ff62db6ebe62e4653c2de95cbd"
+rev = "6c71385"
+hash = "25aee698dd1081001008ce0cb1cc4da3"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
