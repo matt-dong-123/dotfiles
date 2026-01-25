@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+message="${1}"
+escaped_message="${message//\'/\\\'}"
+escaped_message="${escaped_message//\"/\\\"}"
+git commit --message "$escaped_message"
+
