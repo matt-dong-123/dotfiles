@@ -1,0 +1,37 @@
+# zathurarc-kanagawa
+set notification-error-bg       "#727169" # base01
+set notification-error-fg       "#c34043" # red
+set notification-warning-bg     "#727169" # base01
+set notification-warning-fg     "#c34043" # red
+set notification-bg             "#727169" # base01
+set notification-fg             "#c0a36e" # yellow
+
+set completion-group-bg         "#1f1f28" # base03
+set completion-group-fg         "#dcd7ba" # base0
+set completion-bg               "#16161d" # base02
+set completion-fg               "#c8c093" # base1
+set completion-highlight-bg     "#727169" # base01
+set completion-highlight-fg     "#dcd7ba" # base2
+
+# Define the color in index mode
+set index-bg                   "#16161d" # base02
+set index-fg                   "#c8c093" # base1
+set index-active-bg             "#727169" # base01
+set index-active-fg             "#dcd7ba" # base2
+
+set inputbar-bg                 "#727169" # base01
+set inputbar-fg                 "#dcd7ba" # base2
+
+set statusbar-bg                "#16161d" # base02
+set statusbar-fg                "#c8c093" # base1
+
+set highlight-color             "#43485a" # base00
+set highlight-active-color      "#7e9cd8" # blue
+
+set default-bg                  "#16161d" # base02
+set default-fg                  "#c8c093" # base1
+
+# Recolor book content's color
+set recolor                     true
+set recolor-lightcolor          "#16161d" # base02
+set recolor-darkcolor           "#c8c093" # base1

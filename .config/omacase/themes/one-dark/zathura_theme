@@ -1,0 +1,37 @@
+# zathurarc-one-dark
+set notification-error-bg       "#282C34" # base01
+set notification-error-fg       "#E06C75" # red
+set notification-warning-bg     "#282C34" # base01
+set notification-warning-fg     "#E06C75" # red
+set notification-bg             "#282C34" # base01
+set notification-fg             "#D19A66" # yellow
+
+set completion-group-bg         "#282C34" # base03
+set completion-group-fg         "#ABB2BF" # base0
+set completion-bg               "#282C34" # base02
+set completion-fg               "#D7DAE0" # base1
+set completion-highlight-bg     "#4F5666" # base01
+set completion-highlight-fg     "#E6E6E6" # base2
+
+# Define the color in index mode
+set index-bg                   "#282C34" # base02
+set index-fg                   "#D7DAE0" # base1
+set index-active-bg             "#4F5666" # base01
+set index-active-fg             "#E6E6E6" # base2
+
+set inputbar-bg                 "#4F5666" # base01
+set inputbar-fg                 "#E6E6E6" # base2
+
+set statusbar-bg                "#282C34" # base02
+set statusbar-fg                "#D7DAE0" # base1
+
+set highlight-color             "#3F4451" # base00
+set highlight-active-color      "#61AFEF" # blue
+
+set default-bg                  "#282C34" # base02
+set default-fg                  "#D7DAE0" # base1
+
+# Recolor book content's color
+set recolor                     true
+set recolor-lightcolor          "#282C34" # base02
+set recolor-darkcolor           "#D7DAE0" # base1

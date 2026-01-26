@@ -1,0 +1,37 @@
+# zathurarc-catppuccin-mocha
+set notification-error-bg       "#1E1E2E" # base01
+set notification-error-fg       "#F38BA8" # red
+set notification-warning-bg     "#1E1E2E" # base01
+set notification-warning-fg     "#F38BA8" # red
+set notification-bg             "#1E1E2E" # base01
+set notification-fg             "#F9E2AF" # yellow
+
+set completion-group-bg         "#1E1E2E" # base03
+set completion-group-fg         "#CDD6F4" # base0
+set completion-bg               "#1E1E2E" # base02
+set completion-fg               "#BAC2DE" # base1
+set completion-highlight-bg     "#45475A" # base01
+set completion-highlight-fg     "#F5E0DC" # base2
+
+# Define the color in index mode
+set index-bg                   "#1E1E2E" # base02
+set index-fg                   "#BAC2DE" # base1
+set index-active-bg             "#45475A" # base01
+set index-active-fg             "#F5E0DC" # base2
+
+set inputbar-bg                 "#45475A" # base01
+set inputbar-fg                 "#F5E0DC" # base2
+
+set statusbar-bg                "#1E1E2E" # base02
+set statusbar-fg                "#BAC2DE" # base1
+
+set highlight-color             "#585B70" # base00
+set highlight-active-color      "#89B4FA" # blue
+
+set default-bg                  "#1E1E2E" # base02
+set default-fg                  "#BAC2DE" # base1
+
+# Recolor book content's color
+set recolor                     true
+set recolor-lightcolor          "#1E1E2E" # base02
+set recolor-darkcolor           "#BAC2DE" # base1
