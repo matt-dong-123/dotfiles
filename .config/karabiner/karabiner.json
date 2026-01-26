@@ -10,6 +10,21 @@
                     {
                         "manipulators": [
                             {
+                                "description": "Change double shift to f13.",
+                                "from": {
+                                    "simultaneous": [
+                                        { "key_code": "left_shift" },
+                                        { "key_code": "right_shift" }
+                                    ]
+                                },
+                                "to": [{ "key_code": "f13" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "manipulators": [
+                            {
                                 "description": "Change ropt to cmd+ctrl+opt",
                                 "from": {
                                     "key_code": "right_option",
@@ -42,7 +57,7 @@
                     {
                         "manipulators": [
                             {
-                                "description": "Change rcmd to hyperkey without alt. (f13 when tapped)",
+                                "description": "Change rcmd to hyperkey without alt.",
                                 "from": {
                                     "key_code": "right_command",
                                     "modifiers": { "optional": ["any"] }
@@ -53,7 +68,6 @@
                                         "modifiers": ["left_control", "left_shift"]
                                     }
                                 ],
-                                "to_if_alone": [{ "key_code": "f13" }],
                                 "type": "basic"
                             }
                         ]
