@@ -211,6 +211,8 @@ brew "matt-dong-123/tap/wp"
 brew "morantron/tmux-fingers/tmux-fingers"
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "nikitabobko/tap/aerospace"
+# Enable Windows-like alt-tab
+cask "alt-tab"
 # Cloud storage service
 cask "baidunetdisk"
 # Control the platform power state of your Apple Silicon device
