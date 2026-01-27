@@ -25,7 +25,7 @@ hash = "270915fa8282a19908449530ff66f7e2"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "6c71385"
+rev = "e07bf41"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
@@ -35,7 +35,7 @@ hash = "e519d894e94ded741e06aae4d4775981"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:piper"
-rev = "6c71385"
+rev = "e07bf41"
 hash = "25aee698dd1081001008ce0cb1cc4da3"
 
 [[flavor.deps]]
