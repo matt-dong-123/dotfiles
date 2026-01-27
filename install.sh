@@ -161,6 +161,11 @@ install_gh_extensions() {
     gh extension install dlvhdr/gh-dash || die "${red}Failed to install${no_color}"
 }
 
+install_ollama_models() {
+    log "${green}Installing Ollama models${no_color}"
+    ollama pull qwen3-coder:480b-cloud
+}
+
 initialize() {
     mkdir -p ~/notes ~/github
 
@@ -210,5 +215,6 @@ configure_git
 write_macos_settings
 install_yazi_extensions
 install_gh_extensions
+install_ollama_models
 initialize
 finish
