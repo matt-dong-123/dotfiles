@@ -114,7 +114,7 @@ brew "mpd", restart_service: :changed
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Create, run, and share large language models (LLMs)
-brew "ollama"
+brew "ollama", restart_service: :changed
 # Painless compression and decompression for your terminal
 brew "ouch"
 # 7-Zip (high compression file archiver) implementation
@@ -225,8 +225,6 @@ cask "baidunetdisk"
 cask "mhaeuser/mhaeuser/battery-toolkit"
 # Continuation of Clash Verge - A Clash Meta GUI based on Tauri
 cask "clash-verge-rev"
-# Open-source image processing package
-cask "fiji"
 # Web browser
 cask "firefox"
 cask "font-maple-mono-cn"
