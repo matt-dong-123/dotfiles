@@ -1,0 +1,10 @@
+{
+    "$schema": "https://raw.githubusercontent.com/EmmyLuaLs/emmylua-analyzer-rust/refs/heads/main/crates/emmylua_code_analysis/resources/schema.json",
+    "workspace": {
+        "library": [
+            "$VIMRUNTIME",
+            "~/.local/share/nvim/lazy/snacks.nvim/lua/snacks",
+            "/opt/homebrew/Cellar/lua-language-server/3.17.1/libexec/meta/3rd/luv/library"
+        ]
+    }
+}

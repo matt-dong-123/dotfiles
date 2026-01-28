@@ -5,7 +5,7 @@ return {
         config = function()
             vim.lsp.enable {
                 'clangd',
-                'lua_ls',
+                'emmylua_ls',
                 'taplo',
                 'pyright',
                 'marksman',
@@ -23,17 +23,6 @@ return {
         'mrcjkb/rustaceanvim',
         ft = 'rust',
         version = '^6', -- Recommended
-    },
-    {
-        'folke/lazydev.nvim',
-        ft = 'lua',
-        opts = {
-            library = {
-                { path = vim.env.VIMRUNTIME, words = { 'vim' } },
-                { path = '${3rd}/luv/library', words = { 'vim%.uv' } },
-                { path = 'snacks.nvim/lua/snacks', words = { 'Snacks' } },
-            },
-        },
     },
     {
         'snacks.nvim',

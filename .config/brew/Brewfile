@@ -47,6 +47,8 @@ brew "cowsay"
 brew "llvm"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# Lua Language Server
+brew "emmylua_ls"
 # Work with ID3 metadata in .mp3 files
 brew "eye-d3"
 # Modern, maintained replacement for ls
