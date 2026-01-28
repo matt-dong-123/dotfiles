@@ -28,15 +28,10 @@ options=(
 
 borders "${options[@]}" >/dev/null 2>&1
 
-parallel --no-notice --halt-on-error 2 ::: \
+parallel --no-notice ::: \
     "jq -s '.[0] * .[1]' ~/.config/opencode/options.json ~/.config/omacase/current/theme/opencode_theme.json >~/.config/opencode/opencode.json" \
     "yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' ~/.config/omacase/current/theme/lazygit.yml ~/.config/lazygit/options.yml >~/.config/lazygit/config.yml" \
     "yq \". *= load(\\\"$HOME/.config/gh-dash/options.yml\\\")\" ~/.config/omacase/current/theme/gh-dash.yml >~/.config/gh-dash/config.yml"
-
-if [[ $? -ne 0 ]]; then
-    echo "Configuration merge failed" >&2
-    exit 3
-fi
 
 parallel --no-notice ::: \
     "pkill -USR1 kitty >/dev/null 2>&1" \
