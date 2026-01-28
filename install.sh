@@ -163,7 +163,7 @@ install_gh_extensions() {
 
 install_ollama_models() {
     log "${green}Installing Ollama models${no_color}"
-    ollama pull qwen3-coder:480b-cloud
+    ollama pull glm-4.7:cloud
 }
 
 initialize() {
