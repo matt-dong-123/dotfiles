@@ -225,6 +225,8 @@ cask "baidunetdisk"
 cask "mhaeuser/mhaeuser/battery-toolkit"
 # Continuation of Clash Verge - A Clash Meta GUI based on Tauri
 cask "clash-verge-rev"
+# Open-source image processing package
+cask "fiji"
 # Web browser
 cask "firefox"
 cask "font-maple-mono-cn"
