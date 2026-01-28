@@ -7,6 +7,8 @@ tap "matt-dong-123/tap", "https://github.com/matt-dong-123/homebrew-tap.git"
 tap "mhaeuser/mhaeuser"
 tap "morantron/tmux-fingers"
 tap "nikitabobko/tap"
+# Record and share terminal sessions
+brew "asciinema"
 # Automatic configure script builder
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
