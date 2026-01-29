@@ -40,8 +40,8 @@ vim.api.nvim_create_autocmd('FileType', {
 
 return {
     'nvim-treesitter/nvim-treesitter',
-    build = ':TSUpdate',
-    init = function()
+    build = function()
+        vim.cmd 'TSUpdate'
         require('nvim-treesitter').install(parsers)
     end,
 }
