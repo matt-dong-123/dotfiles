@@ -1,6 +1,6 @@
 {
     "$schema": "https://opencode.ai/config.json",
-    "model": "ollama/glm-4.7:cloud",
+    "model": "opencode-zen/glm-4.7-free",
     "provider": {
         "ollama": {
             "npm": "@ai-sdk/openai-compatible",
