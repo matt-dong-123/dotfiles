@@ -70,5 +70,5 @@ hash = "161e1bfb3ba6f897441ef60e16c08b60"
 
 [[flavor.deps]]
 use = "matt-dong-123/gruvbox-material"
-rev = "ba82238"
-hash = "2fa69adfcf9f11bd871c7fdcb90026db"
+rev = "224e70f"
+hash = "899c897392345d0e28c8259428214871"
