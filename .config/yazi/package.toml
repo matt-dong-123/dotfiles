@@ -1,31 +1,31 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "d078b01"
+rev = "230b9c6"
 hash = "8da0b15a97b5dfd13941d1ecc617ac7c"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "d078b01"
+rev = "230b9c6"
 hash = "56fdabc96fc1f4d53c96eb884b02a5be"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "d078b01"
-hash = "f1967e991e727ce45b1be5e8f0d1ff8e"
+rev = "230b9c6"
+hash = "9ad20d763df07ce40fd09de549d914b0"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:vcs-files"
-rev = "d078b01"
+rev = "230b9c6"
 hash = "f69e4737c2fb8ceec58a2950faf13c46"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "d078b01"
+rev = "230b9c6"
 hash = "270915fa8282a19908449530ff66f7e2"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "d078b01"
+rev = "230b9c6"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
@@ -35,12 +35,12 @@ hash = "e519d894e94ded741e06aae4d4775981"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:piper"
-rev = "d078b01"
+rev = "230b9c6"
 hash = "25aee698dd1081001008ce0cb1cc4da3"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
-rev = "ac51f0f"
+rev = "9e053d0"
 hash = "8eabb4e88096f10905a6df62cfaadbf4"
 
 [[flavor.deps]]
@@ -55,8 +55,8 @@ hash = "c69a63981e254a3a06a11c2bf0e6af1d"
 
 [[flavor.deps]]
 use = "matt-dong-123/tokyo-night-moon"
-rev = "eb8fe44"
-hash = "3e7d0bd013db9391c5cc609e24be227"
+rev = "177b297"
+hash = "d0ea9a72a98f63accc60e25b82bafeac"
 
 [[flavor.deps]]
 use = "matt-dong-123/twodark"
@@ -70,5 +70,5 @@ hash = "161e1bfb3ba6f897441ef60e16c08b60"
 
 [[flavor.deps]]
 use = "matt-dong-123/gruvbox-material"
-rev = "224e70f"
-hash = "899c897392345d0e28c8259428214871"
+rev = "6c36491"
+hash = "564f2335540ee2c440c3b671bc28ac60"
