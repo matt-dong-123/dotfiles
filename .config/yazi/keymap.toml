@@ -44,4 +44,8 @@ prepend_keymap = [
         "g",
         "v",
     ], run = "plugin vcs-files", desc = "Show git file changes" },
+    { on = [
+        "c",
+        "p",
+    ], run = "plugin compress", desc = "Compress selected files" },
 ]

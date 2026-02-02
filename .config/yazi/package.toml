@@ -38,6 +38,11 @@ use = "yazi-rs/plugins:piper"
 rev = "230b9c6"
 hash = "25aee698dd1081001008ce0cb1cc4da3"
 
+[[plugin.deps]]
+use = "KKV9/compress"
+rev = "cb6e8ec"
+hash = "424ada4807b20ccd4fc85d1d7c26d1e4"
+
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
 rev = "9e053d0"
