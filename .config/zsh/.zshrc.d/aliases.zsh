@@ -57,7 +57,6 @@ alias -s java='java'
 alias -s mov='open'
 alias -s png='open'
 alias -s mp4='open'
-alias -s pdf='zathura'
 alias -s json='jless'
 
 ## Global Aliases

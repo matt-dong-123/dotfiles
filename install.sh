@@ -57,11 +57,6 @@ bundle_packages() {
     log "${green}Using .config/brewfile/Brewfile for quick install${no_color}"
     brew bundle install --file=~/.config/brew/Brewfile || exit
     brew bundle cleanup --force --file=~/.config/brew/Brewfile || exit
-
-    # zathura setup
-    mkdir -p "$(brew --prefix zathura)"/lib/zathura
-    ln -s "$(brew --prefix zathura-pdf-mupdf)"/libpdf-mupdf.dylib "$(brew --prefix zathura)"/lib/zathura/libpdf-mupdf.dylib
-    curl https://raw.githubusercontent.com/homebrew-zathura/homebrew-zathura/refs/heads/master/convert-into-app.sh | sh
 }
 
 install_sbarlua() {

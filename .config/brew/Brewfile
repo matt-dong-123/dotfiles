@@ -1,7 +1,6 @@
 tap "anomalyco/tap"
 tap "dimentium/autoraise"
 tap "felixkratz/formulae"
-tap "homebrew-zathura/zathura"
 tap "jackielii/tap"
 tap "matt-dong-123/tap", "https://github.com/matt-dong-123/homebrew-tap.git"
 tap "mhaeuser/mhaeuser"
@@ -205,10 +204,6 @@ brew "anomalyco/tap/opencode"
 brew "felixkratz/formulae/borders"
 # Custom macOS statusbar with shell plugin, interaction and graph support
 brew "felixkratz/formulae/sketchybar"
-# PDF viewer
-brew "homebrew-zathura/zathura/zathura"
-# MuPDF backend plugin for zathura
-brew "homebrew-zathura/zathura/zathura-pdf-mupdf"
 # Simple hotkey daemon for macOS, written in Zig
 brew "jackielii/tap/skhd-zig"
 # Get your wifi password, macOS only
