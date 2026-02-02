@@ -112,8 +112,6 @@ brew "mp3splt"
 brew "mpd", restart_service: :changed
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Create, run, and share large language models (LLMs)
-brew "ollama", restart_service: :changed
 # Painless compression and decompression for your terminal
 brew "ouch"
 # 7-Zip (high compression file archiver) implementation

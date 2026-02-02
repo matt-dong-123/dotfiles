@@ -1,23 +1,6 @@
 {
     "$schema": "https://opencode.ai/config.json",
     "model": "opencode-zen/kimi-k2.5-free",
-    "provider": {
-        "ollama": {
-            "npm": "@ai-sdk/openai-compatible",
-            "name": "Ollama",
-            "options": {
-                "baseURL": "http://localhost:11434/v1"
-            },
-            "models": {
-                "qwen3-coder:480b-cloud": {
-                    "name": "Qwen3 Coder 480B Cloud"
-                },
-                "glm-4.7:cloud": {
-                    "name": "GLM-4.7"
-                }
-            }
-        }
-    },
     "lsp": {
         "markdown": {
             "command": ["marksman"],
