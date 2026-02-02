@@ -9,7 +9,6 @@ return {
             c = { 'clang-format' },
             python = { 'isort', 'ruff' },
             rust = { 'rustfmt' },
-            zsh = { 'shfmt' },
             sh = { 'shfmt' },
             java = { 'google-java-format' },
             json = { 'prettier' },

@@ -47,7 +47,7 @@
         },
         "shfmt": {
             "command": ["shfmt", "-w", "-i", "4", "--apply-ignore", "."],
-            "extensions": [".sh", ".zsh"]
+            "extensions": [".sh"]
         }
     }
 }
