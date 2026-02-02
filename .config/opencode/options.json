@@ -1,6 +1,6 @@
 {
     "$schema": "https://opencode.ai/config.json",
-    "model": "opencode-zen/glm-4.7-free",
+    "model": "opencode-zen/kimi-k2.5-free",
     "provider": {
         "ollama": {
             "npm": "@ai-sdk/openai-compatible",
