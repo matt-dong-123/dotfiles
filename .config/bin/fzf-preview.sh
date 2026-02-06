@@ -14,7 +14,7 @@ if [ -d "$file" ]; then
 elif [[ $type =~ image/ ]]; then
     chafa --size 50x "$file"
 elif [[ $type =~ =binary ]]; then
-    file "$1"
+    file "$file"
 else
     bat -n --color=always --line-range :500 "$file"
 fi
