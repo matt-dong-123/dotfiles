@@ -18,7 +18,7 @@ local one_thing = sbar.add('item', 'right.one-thing', {
     icon = { drawing = false },
     label = {
         string = read_one_thing(),
-        padding_left = settings.padding,
+        padding_left = settings.paddings,
         font = { family = settings.font.text },
         color = colors.default,
     },
