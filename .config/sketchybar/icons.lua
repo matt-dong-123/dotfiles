@@ -100,7 +100,8 @@ local icons = {
     },
 }
 
-if not (settings.icons == 'NerdFont') then
+---@diagnostic disable-next-line: unnecessary-if
+if settings.icons ~= 'NerdFont' then
     return icons.sf_symbols
 else
     return icons.nerdfont
