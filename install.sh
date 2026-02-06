@@ -47,8 +47,6 @@ clone_and_stow_dots() {
         log "${blue}Dotfiles exist${no_color}"
     fi
 
-    cd "$HOME/dotfiles" || exit
-
     log "${green}Stowing dotfiles...${no_color}"
     cd ~/dotfiles && stow .
 }
