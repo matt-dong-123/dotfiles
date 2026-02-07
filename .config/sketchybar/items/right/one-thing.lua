@@ -10,7 +10,7 @@ local function read_one_thing()
         file:close()
         return content
     end
-    return 'default message, click to edit' -- don't edit here, click the widget and change its text instead
+    return 'click me' -- don't edit here, click the widget and change its text instead
 end
 
 local one_thing = sbar.add('item', 'right.one-thing', {
