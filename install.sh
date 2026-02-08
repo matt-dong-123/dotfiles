@@ -48,7 +48,7 @@ clone_and_stow_dots() {
     fi
 
     log "${green}Stowing dotfiles...${no_color}"
-    cd ~/dotfiles && stow .
+    stow -d ~/dotfiles .
 }
 
 bundle_packages() {
