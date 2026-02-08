@@ -6,9 +6,11 @@ after-startup-command = [
 
 # Send signal to change workspace to sketchybar
 exec-on-workspace-change = [
-    '/usr/bin/env -S bash',
+    '/usr/bin/env',
+    '-S',
+    'bash',
     '-c',
-    'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE',
+    "sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE",
 ]
 
 # Options
