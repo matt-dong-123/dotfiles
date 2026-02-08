@@ -69,37 +69,33 @@ install_sbarlua() {
 }
 
 remove_unwanted() {
-    SPYWARE=$(
-        cat <<-EOM
-    baidunetdisk
-    steinberg-activation-manager
-    steinberg-library-manager
-    steinberg-mediabay
-    tencent-meeting
-    wechat
-    wpsoffice-cn
-    zoom
-EOM
+    local spyware=(
+        baidunetdisk
+        steinberg-activation-manager
+        steinberg-library-manager
+        steinberg-mediabay
+        tencent-meeting
+        wechat
+        wpsoffice-cn
+        zoom
     )
 
-    gum confirm "$(printf "The following casks are spyware and are unconsequential. Remove them?\n%s" "$SPYWARE")"
+    gum confirm "$(printf "The following casks are spyware and are inconsequential. Remove them?\n%s" "${spyware[*]}")"
     remove_spyware=$?
     if ((remove_spyware == 0)); then
-        brew uninstall "$SPYWARE"
+        brew uninstall "${spyware[@]}"
     fi
 
-    PROWARE=$(
-        cat <<-EOM
-    font-sf-pro
-    sf-symbols
-    raycast
-EOM
+    local proware=(
+        font-sf-pro
+        sf-symbols
+        raycast
     )
 
-    gum confirm "$(printf "⚠️These casks are proprietary, but they might break something. Remove?\n%s" "$PROWARE")"
+    gum confirm "$(printf "⚠️These casks are proprietary, but they might break something. Remove?\n%s" "${proware[*]}")"
     remove_proware=$?
     if ((remove_proware == 0)); then
-        brew uninstall "$PROWARE"
+        brew uninstall "${proware[@]}"
     fi
 
     if ! gum confirm "Do you use multiple input sources?"; then
