@@ -21,15 +21,20 @@ local memory = sbar.add('item', 'right.memory', 41, {
     click_script = 'kitten quick-access-terminal --instance-group=monitor btop',
 })
 
-local function format_bytes(bytes)
-    local units = { 'B', 'KB', 'MB', 'GB', 'TB' }
-    local unit_index = 1
-    local value = bytes
+local units = { 'B', 'KB', 'MB', 'GB', 'TB' }
+local thresholds = { 1, 1024, 1048576, 1073741824, 1099511627776 }
 
-    while value >= 1024 and unit_index < #units do
-        value = value / 1024
-        unit_index = unit_index + 1
+local function format_bytes(bytes)
+    local unit_index = 1
+
+    for i = #thresholds, 1, -1 do
+        if bytes >= thresholds[i] then
+            unit_index = i
+            break
+        end
     end
+
+    local value = bytes / (1024 ^ (unit_index - 1))
 
     if unit_index == 1 then
         return string.format('%.0f%s', value, units[unit_index])
