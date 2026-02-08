@@ -28,20 +28,18 @@ options=(
 
 borders "${options[@]}" >/dev/null 2>&1
 
-parallel --no-notice ::: \
-    "jq -s '.[0] * .[1]' ~/.config/opencode/options.json ~/.config/omacase/current/theme/opencode_theme.json >~/.config/opencode/opencode.json" \
-    "yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' ~/.config/omacase/current/theme/lazygit.yml ~/.config/lazygit/options.yml >~/.config/lazygit/config.yml" \
-    "yq \". *= load(\\\"$HOME/.config/gh-dash/options.yml\\\")\" ~/.config/omacase/current/theme/gh-dash.yml >~/.config/gh-dash/config.yml"
+jq -s '.[0] * .[1]' ~/.config/opencode/options.json ~/.config/omacase/current/theme/opencode_theme.json >~/.config/opencode/opencode.json &
+yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' ~/.config/omacase/current/theme/lazygit.yml ~/.config/lazygit/options.yml >~/.config/lazygit/config.yml &
+yq ". *= load(\"$HOME/.config/gh-dash/options.yml\")" ~/.config/omacase/current/theme/gh-dash.yml >~/.config/gh-dash/config.yml &
+wait
 
-parallel --no-notice ::: \
-    "pkill -USR1 kitty >/dev/null 2>&1" \
-    "pkill -USR2 btop >/dev/null 2>&1" \
-    "pkill -USR2 ghostty >/dev/null 2>&1" \
-    "pkill -USR2 opencode >/dev/null 2>&1"
-
-nvim-run-command "$NEOVIM_THEME_FILE"
+pkill -USR1 kitty >/dev/null 2>&1 &
+pkill -USR2 btop >/dev/null 2>&1 &
+pkill -USR2 ghostty >/dev/null 2>&1 &
+pkill -USR2 opencode >/dev/null 2>&1 &
+nvim-run-command "$NEOVIM_THEME_FILE" &
+sketchybar --reload &
+wait
 
 WALLPAPER=$(realpath ~/.config/omacase/current/theme/backgrounds/default.png)
 osascript -e "tell application \"System Events\" to set picture of every desktop to \"$WALLPAPER\""
-
-sketchybar --reload

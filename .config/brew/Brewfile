@@ -118,8 +118,6 @@ brew "ouch"
 brew "p7zip"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
-# Shell command parallelization utility
-brew "parallel"
 # Command-line tool to generate, analyze, convert and manipulate colors
 brew "pastel"
 # Interpreted, interactive, object-oriented programming language
