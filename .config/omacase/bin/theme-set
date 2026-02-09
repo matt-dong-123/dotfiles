@@ -5,6 +5,8 @@ if [[ -z "$1" ]]; then
     exit 1
 fi
 
+WALLPAPER=$(realpath ~/.config/omacase/current/theme/backgrounds/default.png)
+
 THEMES_DIR="$HOME/.config/omacase/themes"
 CURRENT_THEME_DIR="$HOME/.config/omacase/current/theme"
 NEOVIM_THEME_FILE="$CURRENT_THEME_DIR/neovim.lua"
@@ -39,7 +41,5 @@ pkill -USR2 ghostty >/dev/null 2>&1 &
 pkill -USR2 opencode >/dev/null 2>&1 &
 nvim-run-command "$NEOVIM_THEME_FILE" &
 sketchybar --reload &
+osascript -e "tell application \"System Events\" to set picture of every desktop to \"$WALLPAPER\"" &
 wait
-
-WALLPAPER=$(realpath ~/.config/omacase/current/theme/backgrounds/default.png)
-osascript -e "tell application \"System Events\" to set picture of every desktop to \"$WALLPAPER\""
