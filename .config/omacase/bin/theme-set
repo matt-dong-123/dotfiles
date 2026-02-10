@@ -5,8 +5,6 @@ if [[ -z "$1" ]]; then
     exit 1
 fi
 
-WALLPAPER=$(realpath ~/.config/omacase/current/theme/backgrounds/default.png)
-
 THEMES_DIR="$HOME/.config/omacase/themes"
 CURRENT_THEME_DIR="$HOME/.config/omacase/current/theme"
 NEOVIM_THEME_FILE="$CURRENT_THEME_DIR/neovim.lua"
@@ -20,6 +18,8 @@ if [[ ! -d "$THEME_PATH" ]]; then
 fi
 
 ln -nsf "$THEME_PATH" "$CURRENT_THEME_DIR"
+
+WALLPAPER=$(realpath ~/.config/omacase/current/theme/backgrounds/default.png)
 
 source "$CURRENT_THEME_DIR/borders"
 
