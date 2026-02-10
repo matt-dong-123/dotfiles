@@ -1,7 +1,7 @@
 "$schema" = "https://yazi-rs.github.io/schemas/theme.json"
 
 [flavor]
-dark = 'tokyo-night-moon'
+dark = 'base16'
 
 [tabs]
 sep_inner = { open = "", close = "" }
