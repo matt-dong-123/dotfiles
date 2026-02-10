@@ -8,6 +8,7 @@ local volume = sbar.add('item', 'right.volume', {
     },
     label = {
         string = '??%',
+        drawing = false,
     },
     update_freq = 1,
 })
@@ -45,6 +46,22 @@ volume:subscribe({ 'routine', 'system_woke' }, function()
                 string = label,
                 color = color,
             },
+        }
+    end)
+end)
+
+volume:subscribe('mouse.entered', function()
+    sbar.animate('tanh', 30, function()
+        volume:set {
+            label = { drawing = true, width = 'dynamic' },
+        }
+    end)
+end)
+
+volume:subscribe('mouse.exited', function()
+    sbar.animate('tanh', 30, function()
+        volume:set {
+            label = { drawing = false, width = 0 },
         }
     end)
 end)

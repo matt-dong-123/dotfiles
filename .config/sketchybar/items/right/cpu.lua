@@ -17,6 +17,7 @@ local cpu = sbar.add('item', 'right.cpu', 42, {
             family = settings.font.numbers,
         },
         color = colors.default,
+        drawing = false,
     },
     click_script = 'kitten quick-access-terminal --instance-group=monitor btop',
 })
@@ -41,4 +42,20 @@ cpu:subscribe('cpu_update', function(env)
         icon = { color = color },
         label = { string = env.total_load .. '%', color = color },
     }
+end)
+
+cpu:subscribe('mouse.entered', function()
+    sbar.animate('tanh', 30, function()
+        cpu:set {
+            label = { drawing = true, width = 'dynamic' },
+        }
+    end)
+end)
+
+cpu:subscribe('mouse.exited', function()
+    sbar.animate('tanh', 30, function()
+        cpu:set {
+            label = { drawing = false, width = 0 },
+        }
+    end)
 end)

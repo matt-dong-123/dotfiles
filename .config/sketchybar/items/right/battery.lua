@@ -9,7 +9,9 @@ local battery = sbar.add('item', 'right.battery', {
             style = settings.font.style_map['Regular'],
         },
     },
-    label = { font = { family = settings.font.numbers } },
+    label = {
+        font = { family = settings.font.numbers },
+    },
     update_freq = 10,
 })
 

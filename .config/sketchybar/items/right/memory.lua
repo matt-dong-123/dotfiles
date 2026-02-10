@@ -17,6 +17,7 @@ local memory = sbar.add('item', 'right.memory', 41, {
             family = settings.font.numbers,
         },
         color = colors.default,
+        drawing = false,
     },
     click_script = 'kitten quick-access-terminal --instance-group=monitor btop',
 })
@@ -70,4 +71,20 @@ memory:subscribe('memory_update', function(env)
         icon = { color = color },
         label = { string = display_text, color = color },
     }
+end)
+
+memory:subscribe('mouse.entered', function()
+    sbar.animate('tanh', 30, function()
+        memory:set {
+            label = { drawing = true, width = 'dynamic' },
+        }
+    end)
+end)
+
+memory:subscribe('mouse.exited', function()
+    sbar.animate('tanh', 30, function()
+        memory:set {
+            label = { drawing = false, width = 0 },
+        }
+    end)
 end)
