@@ -74,17 +74,13 @@ memory:subscribe('memory_update', function(env)
 end)
 
 memory:subscribe('mouse.entered', function()
-    sbar.animate('tanh', 30, function()
-        memory:set {
-            label = { drawing = true, width = 'dynamic' },
-        }
-    end)
+    memory:set {
+        label = { drawing = true, width = 'dynamic' },
+    }
 end)
 
 memory:subscribe('mouse.exited', function()
-    sbar.animate('tanh', 30, function()
-        memory:set {
-            label = { drawing = false, width = 0 },
-        }
-    end)
+    memory:set {
+        label = { drawing = false, width = 0 },
+    }
 end)

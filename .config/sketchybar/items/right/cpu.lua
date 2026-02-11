@@ -45,17 +45,13 @@ cpu:subscribe('cpu_update', function(env)
 end)
 
 cpu:subscribe('mouse.entered', function()
-    sbar.animate('tanh', 30, function()
-        cpu:set {
-            label = { drawing = true, width = 'dynamic' },
-        }
-    end)
+    cpu:set {
+        label = { drawing = true, width = 'dynamic' },
+    }
 end)
 
 cpu:subscribe('mouse.exited', function()
-    sbar.animate('tanh', 30, function()
-        cpu:set {
-            label = { drawing = false, width = 0 },
-        }
-    end)
+    cpu:set {
+        label = { drawing = false, width = 0 },
+    }
 end)

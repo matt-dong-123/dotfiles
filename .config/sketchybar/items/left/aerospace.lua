@@ -27,20 +27,18 @@ local spaceConfigs = {
 local function highlight_workspace(focused_workspace, workspace, space)
     local selected = focused_workspace == workspace
     local spaceConfig = spaceConfigs[workspace]
-    sbar.animate('tanh', 10, function()
-        space:set {
-            icon = {
-                string = spaceConfig.icon,
-                highlight = selected,
-                highlight_color = spaceConfig.color,
-            },
-            label = {
-                string = selected and spaceConfig.name or '',
-                highlight = selected,
-                highlight_color = spaceConfig.color,
-            },
-        }
-    end)
+    space:set {
+        icon = {
+            string = spaceConfig.icon,
+            highlight = selected,
+            highlight_color = spaceConfig.color,
+        },
+        label = {
+            string = selected and spaceConfig.name or '',
+            highlight = selected,
+            highlight_color = spaceConfig.color,
+        },
+    }
 end
 
 local workspaces = parse_cmd_to_table 'aerospace list-workspaces --all'
