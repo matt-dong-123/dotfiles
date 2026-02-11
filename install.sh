@@ -53,8 +53,8 @@ clone_and_stow_dots() {
 
 bundle_packages() {
     log "${green}Using .config/brewfile/Brewfile for quick install${no_color}"
-    brew bundle install --file=~/.config/brew/Brewfile || exit
-    brew bundle cleanup --force --file=~/.config/brew/Brewfile || exit
+    brew bundle install --file=~/.config/brew/Brewfile || die "${red}brew bundle install failed${no_color}"
+    brew bundle cleanup --force --file=~/.config/brew/Brewfile || die "${red}brew bundle cleanup failed${no_color}"
 }
 
 install_sbarlua() {
