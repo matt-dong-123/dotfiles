@@ -48,6 +48,10 @@ brew "cowsay"
 brew "llvm"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# Disk Usage/Free Utility - a better 'df' alternative
+brew "duf"
+# More intuitive version of du in rust
+brew "dust"
 # Lua Language Server
 brew "emmylua_ls"
 # Work with ID3 metadata in .mp3 files
@@ -132,6 +136,8 @@ brew "pnpm"
 brew "poppler"
 # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew "prettier"
+# Modern replacement for ps written in Rust
+brew "procs"
 # Hook preloader
 brew "proxychains-ng"
 # Static type checker for Python
