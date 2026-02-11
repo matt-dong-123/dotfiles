@@ -48,13 +48,13 @@ clone_and_stow_dots() {
     fi
 
     log "${green}Stowing dotfiles...${no_color}"
-    stow -d ~/dotfiles .
+    stow -d "$HOME/dotfiles" .
 }
 
 bundle_packages() {
     log "${green}Using .config/brewfile/Brewfile for quick install${no_color}"
-    brew bundle install --file=~/.config/brew/Brewfile || die "${red}brew bundle install failed${no_color}"
-    brew bundle cleanup --force --file=~/.config/brew/Brewfile || die "${red}brew bundle cleanup failed${no_color}"
+    brew bundle install --file="$HOME/.config/brew/Brewfile" || die "${red}brew bundle install failed${no_color}"
+    brew bundle cleanup --force --file="$HOME/.config/brew/Brewfile" || die "${red}brew bundle cleanup failed${no_color}"
 }
 
 install_sbarlua() {
@@ -151,33 +151,33 @@ install_gh_extensions() {
 }
 
 initialize() {
-    mkdir -p ~/notes ~/github
+    mkdir -p "$HOME/notes" "$HOME/github"
 
     # Set initial theme
-    mkdir -p ~/.config/omacase/current
-    ln -snf ~/.config/omacase/themes/everforest/ ~/.config/omacase/current/theme
+    mkdir -p "$HOME/.config/omacase/current"
+    ln -snf "$HOME/.config/omacase/themes/everforest/" "$HOME/.config/omacase/current/theme"
     osascript -e "tell application \"System Events\" to set picture of every desktop to POSIX file \"$HOME/.config/omacase/themes/everforest/backgrounds/default.png\""
 
-    mkdir -p ~/.config/btop/themes
+    mkdir -p "$HOME/.config/btop/themes"
 
     # Set specific app symlinks for current theme
-    ln -snf ~/.config/omacase/current/theme/neovim.lua ~/.config/nvim/lua/config/colorscheme.lua
-    ln -snf ~/.config/omacase/current/theme/sketchybar.lua ~/.config/sketchybar/colors.lua
-    ln -snf ~/.config/omacase/current/theme/btop.theme ~/.config/btop/themes/current.theme
-    ln -snf ~/.config/omacase/current/theme/bat ~/.config/bat/config
+    ln -snf "$HOME/.config/omacase/current/theme/neovim.lua" "$HOME/.config/nvim/lua/config/colorscheme.lua"
+    ln -snf "$HOME/.config/omacase/current/theme/sketchybar.lua" "$HOME/.config/sketchybar/colors.lua"
+    ln -snf "$HOME/.config/omacase/current/theme/btop.theme" "$HOME/.config/btop/themes/current.theme"
+    ln -snf "$HOME/.config/omacase/current/theme/bat" "$HOME/.config/bat/config"
 
     # Merge opencode, lazygit, and gh-dash
-    jq -s '.[0] * .[1]' ~/.config/opencode/options.json \
-        ~/.config/omacase/current/theme/opencode_theme.json \
-        >~/.config/opencode/opencode.json ||
+    jq -s '.[0] * .[1]' "$HOME/.config/opencode/options.json" \
+        "$HOME/.config/omacase/current/theme/opencode_theme.json" \
+        >"$HOME/.config/opencode/opencode.json" ||
         die "${red}Failed opencode merge${no_color}"
 
-    yq ". *= load(\"$HOME/.config/lazygit/options.yml\")" ~/.config/omacase/current/theme/lazygit.yml \
-        >~/.config/lazygit/config.yml ||
+    yq ". *= load(\"$HOME/.config/lazygit/options.yml\")" "$HOME/.config/omacase/current/theme/lazygit.yml" \
+        >"$HOME/.config/lazygit/config.yml" ||
         die "${red}Failed lazygit merge${no_color}"
 
-    yq ". *= load(\"$HOME/.config/gh-dash/options.yml\")" ~/.config/omacase/current/theme/gh-dash.yml \
-        >~/.config/gh-dash/config.yml ||
+    yq ". *= load(\"$HOME/.config/gh-dash/options.yml\")" "$HOME/.config/omacase/current/theme/gh-dash.yml" \
+        >"$HOME/.config/gh-dash/config.yml" ||
         die "${red}Failed gh-dash merge${no_color}"
 
     brew services restart borders sketchybar

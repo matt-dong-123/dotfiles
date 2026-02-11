@@ -19,7 +19,7 @@ fi
 
 ln -nsf "$THEME_PATH" "$CURRENT_THEME_DIR"
 
-WALLPAPER=$(realpath ~/.config/omacase/current/theme/backgrounds/default.png)
+WALLPAPER=$(realpath "$HOME/.config/omacase/current/theme/backgrounds/default.png")
 
 source "$CURRENT_THEME_DIR/borders"
 
@@ -30,9 +30,9 @@ options=(
 
 borders "${options[@]}" >/dev/null 2>&1
 
-jq -s '.[0] * .[1]' ~/.config/opencode/options.json ~/.config/omacase/current/theme/opencode_theme.json >~/.config/opencode/opencode.json &
-yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' ~/.config/omacase/current/theme/lazygit.yml ~/.config/lazygit/options.yml >~/.config/lazygit/config.yml &
-yq ". *= load(\"$HOME/.config/gh-dash/options.yml\")" ~/.config/omacase/current/theme/gh-dash.yml >~/.config/gh-dash/config.yml &
+jq -s '.[0] * .[1]' "$HOME/.config/opencode/options.json" "$HOME/.config/omacase/current/theme/opencode_theme.json" >"$HOME/.config/opencode/opencode.json" &
+yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' "$HOME/.config/omacase/current/theme/lazygit.yml" "$HOME/.config/lazygit/options.yml" >"$HOME/.config/lazygit/config.yml" &
+yq ". *= load(\"$HOME/.config/gh-dash/options.yml\")" "$HOME/.config/omacase/current/theme/gh-dash.yml" >"$HOME/.config/gh-dash/config.yml" &
 wait
 
 pkill -USR1 kitty >/dev/null 2>&1 &

@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 # shellcheck disable=SC2012
-ls ~/.config/omacase/themes/ | awk '{gsub(/-/, " "); for(i=1;i<=NF;i++) $i=toupper(substr($i,1,1)) substr($i,2)} 1' | sort
+ls "$HOME/.config/omacase/themes/" | awk '{gsub(/-/, " "); for(i=1;i<=NF;i++) $i=toupper(substr($i,1,1)) substr($i,2)} 1' | sort

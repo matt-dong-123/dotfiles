@@ -2,9 +2,9 @@
 alias ls="eza --color=always --icons -a"
 alias f="fastfetch"
 alias v="nvim"
-alias c="cd ~/dotfiles"
-alias n="cd ~/notes"
-alias g="cd ~/github"
+alias c="cd $HOME/dotfiles"
+alias n="cd $HOME/notes"
+alias g="cd $HOME/github"
 alias cat="bat"
 alias oc="opencode"
 y() {
@@ -16,13 +16,13 @@ y() {
     rm -f -- "$tmp"
 }
 lg() {
-    export LAZYGIT_NEW_DIR_FILE=~/.lazygit/newdir
+    export LAZYGIT_NEW_DIR_FILE="$HOME/.lazygit/newdir"
 
     lazygit "$@"
 
-    if [ -f $LAZYGIT_NEW_DIR_FILE ]; then
-        cd "$(cat $LAZYGIT_NEW_DIR_FILE)"
-        rm -f $LAZYGIT_NEW_DIR_FILE >/dev/null
+    if [ -f "$LAZYGIT_NEW_DIR_FILE" ]; then
+        cd "$(cat "$LAZYGIT_NEW_DIR_FILE")"
+        rm -f "$LAZYGIT_NEW_DIR_FILE" >/dev/null
     fi
 }
 
@@ -66,6 +66,6 @@ alias -g NUL='>/dev/null 2>&1' # everything
 alias -g C='| pbcopy'          # copy
 
 # Hash bookmarking
-hash -d dot=~/dotfiles
-hash -d gh=~/github
-hash -d n=~/notes
+hash -d dot="$HOME/dotfiles"
+hash -d gh="$HOME/github"
+hash -d n="$HOME/notes"
