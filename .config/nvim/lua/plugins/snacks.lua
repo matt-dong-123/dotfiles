@@ -4,15 +4,11 @@ return {
     lazy = false,
     opts = {
         bigfile = {},
-        git = {},
-        gitbrowse = {},
-        indent = {},
         input = {},
         notifier = { timeout = 3000, style = 'fancy' },
         quickfile = {},
         scroll = { easing_function = 'quadratic' },
         statuscolumn = {},
-        toggle = { which_key = true },
         words = {},
         zen = {
             win = {
