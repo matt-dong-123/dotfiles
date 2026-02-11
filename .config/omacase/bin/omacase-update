@@ -1,44 +1,44 @@
 #!/usr/bin/env -S zsh -i
 
-gum style --foreground 5 "Updating Omacase..."
+echo "$(tput setaf 5)Updating Omacase...$(tput sgr0)"
 git -C "$HOME/dotfiles" pull --autostash
 git -C "$HOME/dotfiles" diff --check || git -C "$HOME/dotfiles" reset --merge
 
 echo
 
-gum style --foreground 5 "Updating Homebrew Packages..."
+echo "$(tput setaf 5)Updating Homebrew Packages...$(tput sgr0)"
 brew update
 brew upgrade
 
 echo
 
-gum style --foreground 5 "Updating nvim plugins..."
+echo "$(tput setaf 5)Updating nvim plugins...$(tput sgr0)"
 nvim --headless "+Lazy! update" +qa
 
 echo
 
-gum style --foreground 5 "Updating yazi plugins..."
+echo "$(tput setaf 5)Updating yazi plugins...$(tput sgr0)"
 ya pkg upgrade
 
 echo
 
-gum style --foreground 5 "Updating tmux plugins..."
+echo "$(tput setaf 5)Updating tmux plugins...$(tput sgr0)"
 ~/.config/tmux/plugins/tpm/bin/update_plugins all
 
 echo
 
-gum style --foreground 5 "Updating zsh plugins..."
+echo "$(tput setaf 5)Updating zsh plugins...$(tput sgr0)"
 zgenom selfupdate
 zgenom update
 
 echo
 
-gum style --foreground 5 "Updating gh extensions..."
+echo "$(tput setaf 5)Updating gh extensions...$(tput sgr0)"
 gh extension upgrade --all
 
 echo
 
-gum style --foreground 5 "Updating tldr cache..."
+echo "$(tput setaf 5)Updating tldr cache...$(tput sgr0)"
 tldr --update
 
 gum-done
