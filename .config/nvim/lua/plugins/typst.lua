@@ -4,8 +4,8 @@ return {
         ft = 'typst',
         opts = {
             dependencies_bin = {
-                ['tinymist'] = '/opt/homebrew/bin/tinymist',
-                ['websocat'] = '/opt/homebrew/bin/websocat',
+                ['tinymist'] = vim.fn.exepath 'tinymist',
+                ['websocat'] = vim.fn.exepath 'websocat',
             },
         },
     },
