@@ -17,10 +17,6 @@ map('n', '<leader>sl', '<C-w>v', { desc = 'Split pane vertically' })
 map('n', '<leader>sj', '<C-w>s', { desc = 'Split pane horizontally' })
 map('n', '<leader>sx', '<cmd>close<cr>', { desc = 'Close current pane' })
 
--- visually move between lines
-map('', 'j', "(v:count ? 'j' : 'gj')", expr)
-map('', 'k', "(v:count ? 'k' : 'gk')", expr)
-
 -- Unwrap
 map('n', 'Q', 'gq')
 
