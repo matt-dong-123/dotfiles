@@ -2,7 +2,6 @@ config-file = ~/.config/omacase/current/theme/ghostty_theme
 font-family = Maple Mono CN
 font-size = 18
 adjust-cell-height = 10%
-theme = Catppuccin Mocha
 window-decoration = none
 confirm-close-surface = false
 quit-after-last-window-closed = true
