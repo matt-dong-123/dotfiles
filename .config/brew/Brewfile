@@ -239,6 +239,8 @@ cask "input-source-pro"
 cask "karabiner-elements"
 # GPU-based terminal emulator
 cask "kitty"
+# Customise mouse behavior
+cask "linearmouse"
 # Open-source cross-platform alternative to AirDrop
 cask "localsend"
 # Intercept, modify, replay, save HTTP/S traffic
