@@ -54,6 +54,8 @@ brew "duf"
 brew "dust"
 # Lua Language Server
 brew "emmylua_ls"
+# Program that can automate interactive applications
+brew "expect"
 # Work with ID3 metadata in .mp3 files
 brew "eye-d3"
 # Modern, maintained replacement for ls
