@@ -1,8 +1,6 @@
 --style full
 --ansi
 --prompt '❯ '
---no-height
---tmux 90%,70%
 --multi
 --layout reverse
 --border
