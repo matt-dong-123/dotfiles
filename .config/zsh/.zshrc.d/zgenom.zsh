@@ -20,6 +20,7 @@ if ! zgenom saved; then
     zgenom load jeffreytse/zsh-vi-mode
 
     zgenom save
+    zgenom compile "$ZDOTDIR"
 fi
 
 function zvm_after_init() {
