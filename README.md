@@ -23,10 +23,11 @@ In other words, my dotfiles.
 - [Philosophy](#philosophy)
 - [Troubleshooting](#troubleshooting)
 - [Screenshots](#screenshots)
-  <!--toc:end-->
+    <!--toc:end-->
 
 # Features
 
+- ⚡***BLAZINGLY FAST*** ⚡
 - Pure enjoyment and efficiency
 - Theme-switching and menu system (Like Omarchy!)
 
