@@ -23,7 +23,7 @@ In other words, my dotfiles.
 - [Philosophy](#philosophy)
 - [Troubleshooting](#troubleshooting)
 - [Screenshots](#screenshots)
-    <!--toc:end-->
+      <!--toc:end-->
 
 # Features
 
@@ -82,7 +82,6 @@ script.
 ## Zen
 
 1. Install the following addons:
-    - SearXNG
     - Vimium C
     - Dark Reader
     - Return YouTube Dislike
