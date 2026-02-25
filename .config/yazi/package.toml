@@ -45,5 +45,5 @@ hash = "424ada4807b20ccd4fc85d1d7c26d1e4"
 
 [[flavor.deps]]
 use = "matt-dong-123/base16"
-rev = "0b65636"
-hash = "58f02e21ee02a35a3f46d4c2c8198821"
+rev = "b02b7a8"
+hash = "fdb3a7d76f51c0a46bde55322ede9171"
