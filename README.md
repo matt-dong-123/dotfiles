@@ -23,7 +23,7 @@ In other words, my dotfiles.
 - [Philosophy](#philosophy)
 - [Troubleshooting](#troubleshooting)
 - [Screenshots](#screenshots)
-      <!--toc:end-->
+  <!--toc:end-->
 
 # Features
 
@@ -96,7 +96,9 @@ script.
 4. Delete the user.js after starting the browser (settings will be
    remembered automatically)
 5. In about:preferences > General > Language and Appearance > Fonts > Advanced...,
-   set all fonts to "Maple Mono NF CN" and untick the tickbox
+   set all fonts to "Maple Mono NF CN"
+6. Install [sine](https://github.com/CosmoCreeper/Sine)
+7. In about:preferences > Sine Mods, install Nebula
 
 # Philosophy
 
