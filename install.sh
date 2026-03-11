@@ -165,12 +165,7 @@ initialize() {
     ln -snf "$HOME/.config/omacase/current/theme/sketchybar.lua" "$HOME/.config/sketchybar/colors.lua"
     ln -snf "$HOME/.config/omacase/current/theme/btop.theme" "$HOME/.config/btop/themes/current.theme"
     ln -snf "$HOME/.config/omacase/current/theme/bat" "$HOME/.config/bat/config"
-
-    # Merge opencode, lazygit, and gh-dash
-    jq -s '.[0] * .[1]' "$HOME/.config/opencode/options.json" \
-        "$HOME/.config/omacase/current/theme/opencode_theme.json" \
-        >"$HOME/.config/opencode/opencode.json" ||
-        die "${red}Failed opencode merge${no_color}"
+    ln -snf "$HOME/.config/omacase/current/theme/opencode_theme.json" "$HOME/.config/opencode/tui.json"
 
     yq ". *= load(\"$HOME/.config/lazygit/options.yml\")" "$HOME/.config/omacase/current/theme/lazygit.yml" \
         >"$HOME/.config/lazygit/config.yml" ||
