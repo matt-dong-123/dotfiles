@@ -245,6 +245,8 @@ cask "linearmouse"
 cask "localsend"
 # Intercept, modify, replay, save HTTP/S traffic
 cask "mitmproxy"
+# Open-source software for live streaming and screen recording
+cask "obs"
 # System and utility switches
 cask "only-switch"
 # Control your tools with a few keystrokes
