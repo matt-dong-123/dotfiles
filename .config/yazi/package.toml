@@ -40,8 +40,8 @@ hash = "384464b6df8cb807425c521f8cd790f3"
 
 [[plugin.deps]]
 use = "KKV9/compress"
-rev = "cb6e8ec"
-hash = "424ada4807b20ccd4fc85d1d7c26d1e4"
+rev = "46a6b9f"
+hash = "771af2becc575a3f43d0542de823969d"
 
 [[flavor.deps]]
 use = "matt-dong-123/base16"
