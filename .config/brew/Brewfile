@@ -130,8 +130,6 @@ brew "p7zip"
 brew "pandoc"
 # Command-line tool to generate, analyze, convert and manipulate colors
 brew "pastel"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.13"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Paste PNG into files
@@ -148,6 +146,8 @@ brew "procs"
 brew "proxychains-ng"
 # Static type checker for Python
 brew "pyright"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
 # Terminal based Media Player Client with album art support
 brew "rmpc"
 # Extremely fast Python linter, written in Rust
