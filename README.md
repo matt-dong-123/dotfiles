@@ -23,7 +23,7 @@ In other words, my dotfiles.
 - [Philosophy](#philosophy)
 - [Troubleshooting](#troubleshooting)
 - [Screenshots](#screenshots)
-  <!--toc:end-->
+    <!--toc:end-->
 
 # Features
 
@@ -73,6 +73,9 @@ curl https://matt-dong-123.github.io/install/ | bash
 
 Paste this into your terminal, and follow the steps of the install
 script.
+
+Go to System Settings > Display > Select "More Space"
+then to Battery > Charging (info) > Slide to 80%
 
 # Post-install
 

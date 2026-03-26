@@ -3,9 +3,9 @@ tap "dimentium/autoraise"
 tap "felixkratz/formulae"
 tap "jackielii/tap"
 tap "matt-dong-123/tap", "https://github.com/matt-dong-123/homebrew-tap.git"
-tap "mhaeuser/mhaeuser"
 tap "morantron/tmux-fingers"
 tap "nikitabobko/tap"
+tap "oven-sh/bun"
 # Record and share terminal sessions
 brew "asciinema"
 # Automatic configure script builder
@@ -212,14 +212,14 @@ brew "jackielii/tap/skhd-zig"
 brew "matt-dong-123/tap/wp"
 # mouseless terminal interaction
 brew "morantron/tmux-fingers/tmux-fingers"
+# Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
+brew "oven-sh/bun/bun"
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "nikitabobko/tap/aerospace"
 # Enable Windows-like alt-tab
 cask "alt-tab"
 # Cloud storage service
 cask "baidunetdisk"
-# Control the platform power state of your Apple Silicon device
-cask "mhaeuser/mhaeuser/battery-toolkit"
 # Continuation of Clash Verge - A Clash Meta GUI based on Tauri
 cask "clash-verge-rev"
 cask "font-maple-mono-cn"
