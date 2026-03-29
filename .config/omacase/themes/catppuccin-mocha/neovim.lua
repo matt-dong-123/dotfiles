@@ -1,1 +1,1 @@
-vim.cmd.colorscheme 'catppuccin'
+require('catppuccin').load 'mocha'
