@@ -118,10 +118,6 @@ brew "mp3splt"
 brew "mpd", restart_service: :changed
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Search tool like grep and The Silver Searcher
-brew "ripgrep"
-# AI coding agent, built for the terminal
-brew "opencode"
 # Painless compression and decompression for your terminal
 brew "ouch"
 # 7-Zip (high compression file archiver) implementation
@@ -148,6 +144,8 @@ brew "proxychains-ng"
 brew "pyright"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.13"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Terminal based Media Player Client with album art support
 brew "rmpc"
 # Extremely fast Python linter, written in Rust
@@ -202,6 +200,8 @@ brew "yt-dlp"
 brew "zlib"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
+# The AI coding agent built for the terminal.
+brew "anomalyco/tap/opencode"
 # A window border system for macOS
 brew "felixkratz/formulae/borders"
 # Custom macOS statusbar with shell plugin, interaction and graph support
