@@ -9,13 +9,4 @@ return {
             },
         },
     },
-    {
-        'hakonharnes/img-clip.nvim',
-        event = 'VeryLazy',
-        ft = 'typst',
-        opts = {},
-        keys = {
-            { '<leader>p', '<cmd>PasteImage<cr>', desc = 'Paste Image' },
-        },
-    },
 }
