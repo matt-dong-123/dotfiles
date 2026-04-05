@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+usage() {
+    echo "Usage: $0 <youtube_playlist_url> [output_dir]"
+    exit 1
+}
+
+[[ $# -ne 2 ]] && usage
+
+playlist_url="$1"
+output_dir="$2"
+
+[[ -d "$output_dir" ]] || mkdir -p "$output_dir"
+
+cd "$output_dir"
+
+yt-dlp \
+    --cookies-from-browser firefox \
+    -x \
+    --audio-format mp3 \
+    --output "%(title)s.%(ext)s" \
+    --embed-metadata \
+    --parse-metadata "playlist_index:%(track_number)s" \
+    --metadata "title=%(title)s" \
+    --metadata "artist=%(artist)s" \
+    --metadata "album=%(album)s" \
+    "$playlist_url"
