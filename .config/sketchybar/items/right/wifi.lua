@@ -14,7 +14,7 @@ local wifi = sbar.add('item', 'right.wifi', {
     update_freq = 1,
 })
 
-wifi:subscribe({ 'routine', 'system_woke' }, function()
+wifi:subscribe({ 'forced', 'routine', 'system_woke' }, function()
     sbar.exec(
         "networksetup -listpreferredwirelessnetworks en0 | sed -n '2 p' | tr -d '\t'",
         function(out)
