@@ -18,6 +18,7 @@ cd "$output_dir"
 
 yt-dlp \
     --cookies-from-browser firefox \
+    -f 251/bestaudio \
     -x \
     --audio-format mp3 \
     --output "%(title)s.%(ext)s" \
@@ -26,4 +27,7 @@ yt-dlp \
     --metadata "title=%(title)s" \
     --metadata "artist=%(artist)s" \
     --metadata "album=%(album)s" \
+    --embed-thumbnail \
+    --convert-thumbnails jpg \
+    --ppa "ffmpeg: -c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" \
     "$playlist_url"
