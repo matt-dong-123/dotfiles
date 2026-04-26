@@ -2,7 +2,7 @@ local icons = require 'icons'
 local colors = require 'colors'
 
 local media = sbar.add('item', 'right.media', {
-    position = 'right',
+    position = 'left',
     icon = {
         color = colors.green,
         string = icons.music,

@@ -16,7 +16,7 @@ local function read_one_thing()
 end
 
 local one_thing = sbar.add('item', 'right.one-thing', {
-    position = 'left',
+    position = 'right',
     icon = { drawing = false },
     label = {
         string = read_one_thing(),

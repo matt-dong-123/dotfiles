@@ -21,6 +21,6 @@ local front_app = sbar.add('item', 'front_app', {
 front_app:subscribe('front_app_switched', function(env)
     front_app:set {
         icon = { string = app_icons[env.INFO] or '' },
-        label = { string = env.INFO },
+        label = { string = env.INFO == 'kitty-quick-access' and 'Menus' or env.INFO },
     }
 end)
