@@ -216,8 +216,6 @@ brew "morantron/tmux-fingers/tmux-fingers"
 brew "oven-sh/bun/bun"
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "nikitabobko/tap/aerospace"
-# Enable Windows-like alt-tab
-cask "alt-tab"
 # Cloud storage service
 cask "baidunetdisk"
 # Continuation of Clash Verge - A Clash Meta GUI based on Tauri
@@ -233,8 +231,6 @@ cask "ghostty"
 cask "helium-browser"
 # Free and open-source media player
 cask "iina"
-# Tool for multi-language users
-cask "input-source-pro"
 # Keyboard customiser
 cask "karabiner-elements"
 # GPU-based terminal emulator
