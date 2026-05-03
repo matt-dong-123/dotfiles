@@ -174,9 +174,47 @@ initialize() {
     brew services restart borders sketchybar
 }
 
+setup_zen() {
+    if gum confirm "Set up Zen Browser? (Requires launching)"; then
+        local zen_source="$HOME/.config/zen/user.js"
+        if [ ! -f "$zen_source" ]; then
+            log "${yellow}Warning: $zen_source not found, skipping Zen setup${no_color}"
+            return
+        fi
+
+        open -a "Zen"
+        local zen_dir="$HOME/Library/Application Support/zen/"
+        local timeout=30
+        local count=0
+
+        while [ ! -f "$zen_dir/profiles.ini" ] && [ $count -lt $timeout ]; do
+            sleep 1
+            count=$((count + 1))
+        done
+
+        if [ $count -ge $timeout ]; then
+            log "${yellow}Warning: Timed out waiting for Zen profiles, skipping${no_color}"
+            return
+        fi
+
+        local profile_path
+        profile_path=$(grep -A 10 "\[Profile0\]" "$zen_dir/profiles.ini" | grep "^Path=" | cut -d= -f2)
+
+        if [ -z "$profile_path" ]; then
+            log "${yellow}Warning: Could not find profile path, skipping Zen setup${no_color}"
+            return
+        fi
+
+        cp "$zen_source" "$zen_dir/$profile_path/user.js" ||
+            log "${red}Error: Failed to copy user.js to Zen profile${no_color}"
+
+        osascript -e "quit application \"Zen\""
+    fi
+}
+
 finish() {
     log "${green}Setup complete!${no_color}"
-    log "${red}Click on System Settings > Displays > More Space, this setup wouldn't work otherwise. Enjoy!${no_color}"
+    log "${red}Remember to follow the post-install instructions in the README to finish the setup. Enjoy!${no_color}"
 }
 
 detect_requirements
@@ -190,4 +228,5 @@ write_macos_settings
 install_yazi_extensions
 install_gh_extensions
 initialize
+setup_zen
 finish
