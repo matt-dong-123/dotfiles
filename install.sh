@@ -81,7 +81,7 @@ remove_unwanted() {
     )
 
     gum confirm "$(printf "The following casks are spyware and are inconsequential. Remove them?\n%s" "${spyware[*]}")"
-    remove_spyware=$?
+    local remove_spyware=$?
     if ((remove_spyware == 0)); then
         brew uninstall "${spyware[@]}"
     fi
@@ -93,13 +93,9 @@ remove_unwanted() {
     )
 
     gum confirm "$(printf "⚠️These casks are proprietary, but they might break something. Remove?\n%s" "${proware[*]}")"
-    remove_proware=$?
+    local remove_proware=$?
     if ((remove_proware == 0)); then
         brew uninstall "${proware[@]}"
-    fi
-
-    if ! gum confirm "Do you use multiple input sources?"; then
-        brew uninstall --cask input-source-pro
     fi
 }
 
