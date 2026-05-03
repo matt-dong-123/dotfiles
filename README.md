@@ -23,7 +23,7 @@ In other words, my dotfiles.
 - [Philosophy](#philosophy)
 - [Troubleshooting](#troubleshooting)
 - [Screenshots](#screenshots)
-    <!--toc:end-->
+  <!--toc:end-->
 
 # Features
 
@@ -74,13 +74,15 @@ curl https://matt-dong-123.github.io/install/ | bash
 Paste this into your terminal, and follow the steps of the install
 script.
 
-Go to System Settings > Display > Select "More Space"
-then to Battery > Charging (info) > Slide to 80%
-
 # Post-install
 
 > [!important]
 > Remember to grant the correct permissions (e.g. accessibility)
+
+## System Settings
+
+- Go to Display > Select "More Space"
+- Go to Battery > Charging (info) > Slide to 80%
 
 ## Zen
 
@@ -95,13 +97,6 @@ then to Battery > Charging (info) > Slide to 80%
     - iCloud Passwords
 2. For each of the extensions given, find the "Import" or "Restore"
    button, and choose the corresponding file in ~/.config/zen
-3. Copy the user.js in ~/.config/zen to your profile directory
-4. Delete the user.js after starting the browser (settings will be
-   remembered automatically)
-5. In about:preferences > General > Language and Appearance > Fonts > Advanced...,
-   set all fonts to "Maple Mono NF CN"
-6. Install [sine](https://github.com/CosmoCreeper/Sine)
-7. In about:preferences > Sine Mods, install Nebula
 
 # Philosophy
 
