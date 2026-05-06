@@ -14,7 +14,7 @@ return {
             json = { 'prettier' },
             jsonc = { 'prettier' },
             yaml = { 'prettier' },
-            toml = { 'taplo' },
+            toml = { 'tombi' },
             typst = { 'typstyle' },
         },
         formatters = {

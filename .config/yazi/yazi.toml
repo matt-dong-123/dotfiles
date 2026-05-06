@@ -1,4 +1,5 @@
 #:schema https://yazi-rs.github.io/schemas/yazi.json
+#:tombi schema.strict = false
 
 [mgr]
 show_hidden = true
@@ -7,16 +8,15 @@ title_format = "Yazi"
 ratio = [1, 3, 3]
 
 [plugin]
-
 prepend_fetchers = [
-    # Git
-    { group = "git", url = "*", run = "git" },
-    { group = "git", url = "*/", run = "git" },
+  # Git
+  { group = "git", url = "*", run = "git" },
+  { group = "git", url = "*/", run = "git" },
 ]
 
 prepend_previewers = [
-    { url = "*.typ", run = 'piper -- bat -p --color=always "$1"' },
-    { url = "*.mp3", run = 'piper -- unbuffer eyed3 "$1"' },
+  { url = "*.typ", run = 'piper -- bat -p --color=always "$1"' },
+  { url = "*.mp3", run = 'piper -- unbuffer eyed3 "$1"' },
 ]
 
 [opener]

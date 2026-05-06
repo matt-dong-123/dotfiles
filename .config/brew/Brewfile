@@ -172,6 +172,8 @@ brew "tealdeer"
 brew "tinymist"
 # Terminal multiplexer
 brew "tmux"
+# TOML formatter, linter and language server
+brew "tombi"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Parser generator tool

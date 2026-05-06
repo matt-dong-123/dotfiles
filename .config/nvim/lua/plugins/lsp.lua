@@ -6,7 +6,7 @@ return {
             vim.lsp.enable {
                 'clangd',
                 'emmylua_ls',
-                'taplo',
+                'tombi',
                 'pyright',
                 'marksman',
                 'bashls',
