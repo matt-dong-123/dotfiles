@@ -1,31 +1,31 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "ac82af3"
+rev = "4ffa48f"
 hash = "f0c8c378184d5f8abd1b095a443d336d"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "ac82af3"
+rev = "4ffa48f"
 hash = "187cc58ba7ac3befd49c342129e6f1b6"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "ac82af3"
+rev = "4ffa48f"
 hash = "77e20b071404f97c09d3f9afdb9482e0"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:vcs-files"
-rev = "ac82af3"
+rev = "4ffa48f"
 hash = "6b141fbed3c74b45558fbc7088c805ee"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "ac82af3"
+rev = "4ffa48f"
 hash = "6849444b7c2df08eace83f3f86fb55a3"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "ac82af3"
+rev = "4ffa48f"
 hash = "eff8ff12fa4e5f035a10d8aeeb4c258d"
 
 [[plugin.deps]]
@@ -35,7 +35,7 @@ hash = "635b0feb9215772d22020eb0abf0bb34"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:piper"
-rev = "ac82af3"
+rev = "4ffa48f"
 hash = "384464b6df8cb807425c521f8cd790f3"
 
 [[plugin.deps]]
@@ -45,5 +45,5 @@ hash = "771af2becc575a3f43d0542de823969d"
 
 [[flavor.deps]]
 use = "matt-dong-123/base16"
-rev = "b02b7a8"
-hash = "fdb3a7d76f51c0a46bde55322ede9171"
+rev = "ed79352"
+hash = "94659ef90cd557d05dbda7076fbbb3f4"
