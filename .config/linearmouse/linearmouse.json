@@ -1,5 +1,5 @@
 {
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.2",
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.4",
   "schemes" : [
     {
       "if" : {
@@ -10,6 +10,9 @@
           "serialNumber" : "197CE2E1",
           "vendorID" : "0x46d"
         }
+      },
+      "pointer" : {
+        "speed" : 0.151
       },
       "scrolling" : {
         "reverse" : {
