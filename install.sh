@@ -31,14 +31,13 @@ install_brew() {
     if ! command -v brew >/dev/null; then
         log "${green}Installing Brew...${no_color}"
         /usr/bin/env -S bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-        brew analytics off
-        log "${yellow}Don't run the aforementioned commands, those exist already.${no_color}"
+        /opt/homebrew/bin/brew analytics off
     fi
 
     log "${blue}Brew installed${no_color}"
 }
 
-clone_and_stow_dots() {
+clone_dots() {
     if [ ! -d "$HOME/dotfiles" ]; then
         log "${green}Cloning dotfiles repository...${no_color}"
         git clone https://github.com/matt-dong-123/dotfiles.git "$HOME/dotfiles" --depth 1 ||
@@ -46,15 +45,16 @@ clone_and_stow_dots() {
     else
         log "${blue}Dotfiles exist${no_color}"
     fi
-
-    log "${green}Stowing dotfiles...${no_color}"
-    stow -d "$HOME/dotfiles" .
 }
 
 bundle_packages() {
     log "${green}Using .config/brewfile/Brewfile for quick install${no_color}"
-    brew bundle install --file="$HOME/.config/brew/Brewfile" || die "${red}brew bundle install failed${no_color}"
-    brew bundle cleanup --force --file="$HOME/.config/brew/Brewfile" || die "${red}brew bundle cleanup failed${no_color}"
+    /opt/homebrew/bin/brew bundle install --file="$HOME/dotfiles/.config/brew/Brewfile" || die "${red}brew bundle install failed${no_color}"
+    /opt/homebrew/bin/brew bundle cleanup --force --file="$HOME/dotfiles/.config/brew/Brewfile" || die "${red}brew bundle cleanup failed${no_color}"
+}
+
+stow_dots() {
+    stow -d "$HOME/dotfiles" .
 }
 
 install_sbarlua() {
@@ -83,7 +83,7 @@ remove_unwanted() {
     gum confirm "$(printf "The following casks are spyware and are inconsequential. Remove them?\n%s" "${spyware[*]}")"
     local remove_spyware=$?
     if ((remove_spyware == 0)); then
-        brew uninstall "${spyware[@]}"
+        /opt/homebrew/bin/brew uninstall "${spyware[@]}"
     fi
 
     local proware=(
@@ -95,7 +95,7 @@ remove_unwanted() {
     gum confirm "$(printf "⚠️These casks are proprietary, but they might break something. Remove?\n%s" "${proware[*]}")"
     local remove_proware=$?
     if ((remove_proware == 0)); then
-        brew uninstall "${proware[@]}"
+        /opt/homebrew/bin/brew uninstall "${proware[@]}"
     fi
 }
 
@@ -171,7 +171,7 @@ initialize() {
         >"$HOME/.config/gh-dash/config.yml" ||
         die "${red}Failed gh-dash merge${no_color}"
 
-    brew services restart borders sketchybar
+    /opt/homebrew/bin/brew services restart borders sketchybar
 }
 
 setup_zen() {
@@ -219,8 +219,9 @@ finish() {
 
 detect_requirements
 install_brew
-clone_and_stow_dots
+clone_dots
 bundle_packages
+stow_dots
 install_sbarlua
 remove_unwanted
 configure_git
