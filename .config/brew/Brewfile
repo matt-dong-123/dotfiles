@@ -2,6 +2,7 @@ tap "anomalyco/tap"
 tap "dimentium/autoraise"
 tap "felixkratz/formulae"
 tap "jackielii/tap"
+tap "krtirtho/apps"
 tap "matt-dong-123/tap", "https://github.com/matt-dong-123/homebrew-tap.git"
 tap "morantron/tmux-fingers"
 tap "nikitabobko/tap"
@@ -30,8 +31,6 @@ brew "bob"
 brew "btop"
 # Freely available high-quality data compressor
 brew "bzip2"
-# Console-based Audio Visualizer for ALSA
-brew "cava"
 # Versatile and fast Unicode/ASCII/ANSI graphics renderer
 brew "chafa"
 # Play, record, convert, and stream select audio and video codecs
@@ -40,10 +39,6 @@ brew "ffmpeg"
 brew "clang-format"
 # Cross-platform make
 brew "cmake"
-# Console Matrix
-brew "cmatrix"
-# Apjanke's fork of the classic cowsay project
-brew "cowsay"
 # Next-gen compiler infrastructure
 brew "llvm"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -113,7 +108,7 @@ brew "marksman"
 # Command-line interface to split MP3 and Ogg Vorbis files
 brew "mp3splt"
 # Music Player Daemon
-brew "mpd", restart_service: :changed
+brew "mpd"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Painless compression and decompression for your terminal
