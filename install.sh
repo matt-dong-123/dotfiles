@@ -49,6 +49,7 @@ clone_dots() {
 
 bundle_packages() {
     log "${green}Using .config/brewfile/Brewfile for quick install${no_color}"
+    log "${red}DON'T WORRY IF YOU SEE PROPRIETARY STUFF WE WILL BE ABLE TO REMOVE THOSE LATER${no_color}"
     /opt/homebrew/bin/brew bundle install --file="$HOME/dotfiles/.config/brew/Brewfile" || die "${red}brew bundle install failed${no_color}"
     /opt/homebrew/bin/brew bundle cleanup --force --file="$HOME/dotfiles/.config/brew/Brewfile" || die "${red}brew bundle cleanup failed${no_color}"
 }
