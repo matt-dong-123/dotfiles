@@ -23,7 +23,7 @@ In other words, my dotfiles.
 - [Philosophy](#philosophy)
 - [Troubleshooting](#troubleshooting)
 - [Screenshots](#screenshots)
-  <!--toc:end-->
+    <!--toc:end-->
 
 # Features
 
@@ -83,6 +83,7 @@ script.
 
 - Go to Display > Select "More Space"
 - Go to Battery > Charging (info) > Slide to 80%
+- Go to Menu Bar > Automatically hide and show the menu bar > Always
 
 ## Zen
 
@@ -97,6 +98,10 @@ script.
     - iCloud Passwords
 2. For each of the extensions given, find the "Import" or "Restore"
    button, and choose the corresponding file in ~/.config/zen
+
+## After that?
+
+Pick your favorite theme with rcmd-t (or access through the menu with opt-cmd-spc). Enjoy!
 
 # Philosophy
 
