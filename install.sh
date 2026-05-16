@@ -213,6 +213,11 @@ setup_zen() {
     fi
 }
 
+start_apps() {
+    open -a "Karabiner-Elements"
+    open -a "Aerospace"
+}
+
 finish() {
     log "${green}Setup complete!${no_color}"
     log "${red}Remember to follow the post-install instructions in the README to finish the setup. Enjoy!${no_color}"
@@ -231,4 +236,5 @@ install_yazi_extensions
 install_gh_extensions
 initialize
 setup_zen
+start_apps
 finish
