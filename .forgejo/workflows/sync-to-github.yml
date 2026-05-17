@@ -12,4 +12,4 @@ jobs:
               env:
                   GH_TOKEN: ${{ secrets.GH_TOKEN }}
               run: |
-                  git push https://matt-dong-123:$GH_TOKEN@github.com/matt-dong-123/dotfiles.git --all --tags
+                  git push https://matt-dong-123:$GH_TOKEN@github.com/matt-dong-123/dotfiles.git --all
