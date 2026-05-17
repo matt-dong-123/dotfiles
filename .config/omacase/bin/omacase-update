@@ -8,7 +8,7 @@ echo
 
 echo "$(tput setaf 5)Updating Homebrew Packages...$(tput sgr0)"
 brew update
-brew upgrade
+brew upgrade --greedy
 
 echo
 
