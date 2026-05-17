@@ -1,0 +1,15 @@
+name: Sync to GitHub
+on: [push]
+jobs:
+    sync:
+        runs-on: codeberg-tiny
+        steps:
+            - name: Checkout
+              uses: https://code.forgejo.org/actions/checkout@v4
+              with:
+                  fetch-depth: 0
+            - name: Push to GitHub
+              env:
+                  GH_TOKEN: ${{ secrets.GH_TOKEN }}
+              run: |
+                  git push https://matt-dong-123:$GH_TOKEN@github.com/matt-dong-123/dotfiles.git --all --tags
