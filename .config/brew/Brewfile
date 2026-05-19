@@ -61,6 +61,8 @@ brew "fastfetch"
 brew "fd"
 # Banner-like program prints strings as ASCII art
 brew "figlet"
+# CLI tool for interacting with Forgejo
+brew "forgejo-cli"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GNU awk utility
@@ -108,7 +110,7 @@ brew "marksman"
 # Command-line interface to split MP3 and Ogg Vorbis files
 brew "mp3splt"
 # Music Player Daemon
-brew "mpd"
+brew "mpd", restart_service: :changed
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Painless compression and decompression for your terminal
