@@ -5,6 +5,7 @@ return {
     opts = {
         bigfile = {},
         input = {},
+        indent = {},
         notifier = { timeout = 3000, style = 'fancy' },
         quickfile = {},
         scroll = { easing_function = 'quadratic' },
