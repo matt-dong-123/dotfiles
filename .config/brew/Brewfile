@@ -254,8 +254,6 @@ cask "steinberg-library-manager"
 cask "steinberg-mediabay"
 # Cloud video conferencing
 cask "tencent-meeting"
-# Multiplayer code editor
-cask "zed"
 # Gecko based web browser
 cask "zen"
 # Video communication and virtual meeting platform
