@@ -35,6 +35,7 @@ leader < i ; internet
 internet < escape ; default
 internet < f13 ; default
 internet < g ; default : open "https://github.com"
+internet < c ; default : open "https://codeberg.org"
 internet < y ; default : open "https://youtu.be"
 internet < r ; default : open "https://reddit.com"
-internet < 0x2b ; default : open "https://github.com/matt-dong-123/dotfiles" # Comma
+internet < 0x2b ; default : open "https://codeberg.org/matt-dong-123/dotfiles" # Comma
