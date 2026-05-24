@@ -203,8 +203,6 @@ brew "anomalyco/tap/opencode"
 brew "felixkratz/formulae/borders"
 # Custom macOS statusbar with shell plugin, interaction and graph support
 brew "felixkratz/formulae/sketchybar"
-# Simple hotkey daemon for macOS, written in Zig
-brew "jackielii/tap/skhd-zig"
 # Get your wifi password, macOS only
 brew "matt-dong-123/tap/wp"
 # mouseless terminal interaction
@@ -246,6 +244,8 @@ cask "only-switch"
 cask "raycast"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
+# Simple hotkey daemon written in Zig
+cask "jackielii/tap/skhd-zig"
 # Licenses manager for Steinberg Licensing
 cask "steinberg-activation-manager"
 # Library manager for Steinberg software
