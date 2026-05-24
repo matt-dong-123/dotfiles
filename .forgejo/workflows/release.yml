@@ -1,0 +1,27 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  release:
+    runs-on: codeberg-tiny
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: https://code.forgejo.org/actions/checkout@v4
+      - name: Create Release
+        run: |
+          curl -sS -X POST \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/json" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"tag_name\": \"${{ github.ref_name }}\",
+              \"name\": \"${{ github.ref_name }}\",
+              \"generate_release_notes\": true
+            }" \
+            "${{ github.api_url }}/repos/${{ github.repository }}/releases"
