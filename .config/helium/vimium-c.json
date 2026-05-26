@@ -1,0 +1,60 @@
+{
+    "name": "Vimium C",
+    "@time": "5/27/2026, 12:35:20 AM",
+    "time": 1779813320511,
+    "environment": {
+        "extension": "2.12.2",
+        "platform": "mac",
+        "chromium": 148
+    },
+    "autoDarkMode": 1,
+    "exclusionRules": [
+        {
+            "passKeys": "",
+            "pattern": ":https://mail.google.com/"
+        },
+        {
+            "passKeys": "f o ",
+            "pattern": ":https://monkeytype.com/"
+        },
+        {
+            "passKeys": "b c m n v ",
+            "pattern": ":https://www.cubedesk.io/"
+        },
+        {
+            "passKeys": "",
+            "pattern": "^https?://www\\.cubers\\.io/"
+        },
+        {
+            "passKeys": "b c m n v x z ",
+            "pattern": ":https://cstimer.net/"
+        },
+        {
+            "passKeys": "",
+            "pattern": ":https://jcw87.github.io/"
+        }
+    ],
+    "keyLayout": 2,
+    "keyMappings": [
+        "#!no-check",
+        "map gj closeTabsOnRight",
+        "map gk closeTabsOnLeft",
+        "map gx closeOtherTabs",
+        "map F LinkHints.activateOpenInNewForegroundTab",
+        "map J nextTab",
+        "map K previousTab",
+        "unmap t",
+        "map t Vomnibar.activateInNewTab",
+        ""
+    ],
+    "searchUrl": "https://search.brave.com/search?q=$s Brave",
+    "userDefinedCss": [
+        ".LH, .D>.LH { background: #4fd6be; }",
+        ".LH { border: /*!DPI*/ 3px solid ",
+        "#41a6b5; }",
+        "/* #omni */",
+        ".s { background-color: #d8e3f3; }",
+        ""
+    ],
+    "vimSync": true
+}

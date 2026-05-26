@@ -1,5 +1,5 @@
 # Apps
-ctrl + shift + cmd - a : open -a "Zen"
+ctrl + shift + cmd - a : open -a "Helium"
 ctrl + shift + cmd - d : open -a "Dorico 5"
 ctrl + shift + cmd - f : open -a "Finder"
 ctrl + shift + cmd - g : open -a "Clash Verge"
@@ -27,7 +27,6 @@ leader < escape ; default
 leader < f13 ; default
 leader < p ; default : open -a Preview
 leader < v ; default : open -a VoiceMemos
-leader < h ; default : open -a Helium
 leader < k ; default : open -a Karabiner-Elements
 
 leader < i ; internet

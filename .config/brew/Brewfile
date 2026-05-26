@@ -139,6 +139,8 @@ brew "proxychains-ng"
 brew "pyright"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.13"
+# Software environment for statistical computing
+brew "r"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Terminal based Media Player Client with album art support
@@ -242,6 +244,8 @@ cask "obs"
 cask "only-switch"
 # Control your tools with a few keystrokes
 cask "raycast"
+# Data science software focusing on R and Python
+cask "rstudio"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
 # Simple hotkey daemon written in Zig
@@ -254,7 +258,5 @@ cask "steinberg-library-manager"
 cask "steinberg-mediabay"
 # Cloud video conferencing
 cask "tencent-meeting"
-# Gecko based web browser
-cask "zen"
 # Video communication and virtual meeting platform
 cask "zoom"

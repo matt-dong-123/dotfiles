@@ -23,7 +23,7 @@ In other words, my dotfiles.
 - [Philosophy](#philosophy)
 - [Troubleshooting](#troubleshooting)
 - [Screenshots](#screenshots)
-    <!--toc:end-->
+      <!--toc:end-->
 
 # Features
 
@@ -38,7 +38,7 @@ In other words, my dotfiles.
 
 - Editor: [Neovim](https://neovim.io)
 - Bar: [SketchyBar](https://felixkratz.github.io/SketchyBar)
-- Browser: [Zen Browser](https://zen-browser.app) and [Helium Browser](https://helium.computer)
+- Browser: [Helium Browser](https://helium.computer)
 - Terminal Emulator: [Ghostty](https://ghostty.org), and [Kitty](https://sw.kovidgoyal.net/kitty) for menus
 - Music Player: [rmpc](https://github.com/mierak/rmpc)
 - Git UI: [lazygit](https://github.com/jesseduffield/lazygit)
@@ -85,19 +85,19 @@ script.
 - Go to Battery > Charging (info) > Slide to 80%
 - Go to Menu Bar > Automatically hide and show the menu bar > Always
 
-## Zen
+# Helium
 
-1. Install the following addons:
+0. Install the following addons:
     - Vimium C
     - Dark Reader
     - Return YouTube Dislike
     - SponsorBlock
-    - Zen Internet
     - Stylus
-    - Auto Tab Discard
     - iCloud Passwords
-2. For each of the extensions given, find the "Import" or "Restore"
-   button, and choose the corresponding file in ~/.config/zen
+1. For each of the extensions given, find the "Import" or "Restore"
+   button, and choose the corresponding file in ~/.config/helium
+2. Browser Layout: Compact, Minimal address bar, Zen mode
+3. Go to helium://flags and enable Parallel Downloading
 
 ## After that?
 

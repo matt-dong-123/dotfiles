@@ -27,9 +27,7 @@
     "presets": [],
     "customThemes": [
         {
-            "url": [
-                "*.officeapps.live.com"
-            ],
+            "builtIn": true,
             "theme": {
                 "mode": 1,
                 "brightness": 100,
@@ -52,12 +50,10 @@
                 "darkColorScheme": "Default",
                 "immediateModify": false
             },
-            "builtIn": true
+            "url": ["*.officeapps.live.com"]
         },
         {
-            "url": [
-                "*.sharepoint.com"
-            ],
+            "builtIn": true,
             "theme": {
                 "mode": 1,
                 "brightness": 100,
@@ -80,12 +76,10 @@
                 "darkColorScheme": "Default",
                 "immediateModify": false
             },
-            "builtIn": true
+            "url": ["*.sharepoint.com"]
         },
         {
-            "url": [
-                "docs.google.com"
-            ],
+            "builtIn": true,
             "theme": {
                 "mode": 1,
                 "brightness": 100,
@@ -108,12 +102,10 @@
                 "darkColorScheme": "Default",
                 "immediateModify": false
             },
-            "builtIn": true
+            "url": ["docs.google.com"]
         },
         {
-            "url": [
-                "onedrive.live.com"
-            ],
+            "builtIn": true,
             "theme": {
                 "mode": 1,
                 "brightness": 100,
@@ -136,22 +128,28 @@
                 "darkColorScheme": "Default",
                 "immediateModify": false
             },
-            "builtIn": true
+            "url": ["onedrive.live.com"]
         }
     ],
     "enabledByDefault": true,
     "enabledFor": [],
     "disabledFor": [
         "www.desmos.com",
-        "latexeditor.lagrida.com"
+        "latexeditor.lagrida.com",
+        "search.brave.com",
+        "study.landwave.cn",
+        "liouh.com",
+        "github.com",
+        "learn.omacom.io",
+        "cl.desmos.com"
     ],
     "changeBrowserTheme": false,
     "syncSettings": true,
     "syncSitesFixes": false,
     "automation": {
+        "behavior": "OnOff",
         "enabled": false,
-        "mode": "",
-        "behavior": "OnOff"
+        "mode": ""
     },
     "time": {
         "activation": "18:00",
@@ -167,12 +165,10 @@
     "enableForProtectedPages": false,
     "enableContextMenus": false,
     "detectDarkTheme": true,
+    "displayedNews": ["google-docs-bugs"],
     "installation": {
         "date": 1750086260874,
         "reason": "install",
         "version": "4.9.106"
-    },
-    "displayedNews": [
-        "google-docs-bugs"
-    ]
+    }
 }
