@@ -83,8 +83,6 @@ brew "gum"
 brew "libtool"
 # Tools and libraries to manipulate images in select formats
 brew "imagemagick"
-# Sort Python imports automatically
-brew "isort"
 # Java language specific implementation of the Language Server Protocol
 brew "jdtls"
 # Command-line pager for JSON data
