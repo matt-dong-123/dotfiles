@@ -91,19 +91,6 @@ cmd-alt-ctrl-shift-w = [
 ]
 alt-shift-semicolon = "mode service"
 
-[mode.workspace.binding]
-esc = ["mode main"]
-b = ["workspace browser", "mode main"]
-c = ["workspace coding", "mode main"]
-m = ["workspace music", "mode main"]
-s = ["workspace social", "mode main"]
-w = ["workspace work", "mode main"]
-shift-b = ["move-node-to-workspace browser", "workspace browser", "mode main"]
-shift-c = ["move-node-to-workspace coding", "workspace coding", "mode main"]
-shift-m = ["move-node-to-workspace music", "workspace music", "mode main"]
-shift-s = ["move-node-to-workspace social", "workspace social", "mode main"]
-shift-w = ["move-node-to-workspace work", "workspace work", "mode main"]
-
 [mode.service.binding]
 esc = ["reload-config", "mode main"]
 r = ["flatten-workspace-tree", "mode main"]
