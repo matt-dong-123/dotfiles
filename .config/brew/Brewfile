@@ -3,7 +3,7 @@ tap "dimentium/autoraise"
 tap "felixkratz/formulae"
 tap "jackielii/tap"
 tap "krtirtho/apps"
-tap "matt-dong-123/tap", "https://github.com/matt-dong-123/homebrew-tap.git"
+tap "matt-dong-123/tap"
 tap "morantron/tmux-fingers"
 tap "nikitabobko/tap"
 tap "oven-sh/bun"
@@ -55,6 +55,8 @@ brew "expect"
 brew "eye-d3"
 # Modern, maintained replacement for ls
 brew "eza"
+# Powerful, lightweight programming language
+brew "lua"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
@@ -91,8 +93,6 @@ brew "jless"
 brew "jq"
 # Simple terminal UI for git commands
 brew "lazygit"
-# Powerful, lightweight programming language
-brew "lua"
 # Language Server for the Lua language
 brew "lua-language-server"
 # Just-In-Time Compiler (JIT) for the Lua programming language
