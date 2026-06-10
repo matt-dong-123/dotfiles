@@ -55,7 +55,7 @@ In other words, my dotfiles.
 
 # Prerequisites
 
-- MacOS 15 or later
+- MacOS 26.4 or later
 
 # Install Instructions
 
