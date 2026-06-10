@@ -14,6 +14,7 @@ export RIPGREP_CONFIG_PATH="${XDG_CONFIG_HOME}/ripgrep/rgrc"
 export STARSHIP_CONFIG=${XDG_CONFIG_HOME}/starship/starship.toml
 export MANPAGER="nvim +Man!"
 export HOMEBREW_NO_ENV_HINTS=1
+export HOMEBREW_NO_REQUIRE_TAP_TRUST=1
 
 # Fish-like dirs
 : ${__zsh_config_dir:=${ZDOTDIR:-${XDG_CONFIG_HOME:-$HOME/.config}/zsh}}
