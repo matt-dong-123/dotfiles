@@ -1,10 +1,10 @@
-# Start sketchybar with aerospace
+config-version = 2
+
 after-startup-command = [
   "exec-and-forget brew services restart sketchybar",
   "exec-and-forget brew services restart borders",
 ]
 
-# Send signal to change workspace to sketchybar
 exec-on-workspace-change = [
   "/usr/bin/env",
   "-S",
@@ -13,13 +13,15 @@ exec-on-workspace-change = [
   "sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE",
 ]
 
-# Options
+auto-reload-config = true
+
+persistent-workspaces = ["browser", "coding", "music", "social", "work"]
+
 start-at-login = true
 accordion-padding = 0
 default-root-container-layout = "tiles"
 default-root-container-orientation = "auto"
 
-# App Rules:
 on-window-detected = [
   { if.app-id = "com.imput.helium", run = "move-node-to-workspace browser" },
   { if.app-id = "com.mitchellh.ghostty", run = "move-node-to-workspace coding" },
@@ -43,7 +45,6 @@ outer.bottom = 3
 outer.top = 3
 outer.right = 3
 
-# Keys
 [mode.main.binding]
 alt-slash = "layout tiles horizontal vertical"
 alt-comma = "layout accordion horizontal vertical"
