@@ -49,8 +49,6 @@ alias gr='git reset'
 alias gs='git status --short'
 alias gu='git pull' # mnemonic for `git update`
 
-alias ghd='gh dash'
-
 ## Suffix Aliases
 alias -s md='glow'
 alias -s lua='$EDITOR'
