@@ -7,7 +7,7 @@ return {
             markdown = { 'prettier' },
             cpp = { 'clang-format' },
             c = { 'clang-format' },
-            python = { 'ruff' },
+            python = { 'ruff_format' },
             rust = { 'rustfmt' },
             sh = { 'shfmt' },
             java = { 'google-java-format' },
