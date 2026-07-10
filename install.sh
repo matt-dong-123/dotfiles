@@ -176,6 +176,7 @@ finish() {
     log "${red}Remember to follow the post-install instructions in the README to finish the setup. Enjoy!${no_color}"
 }
 
+log "${red}This will WIPE all configurations and brew installations previously on your system. Press ^C to break.${no_color}"
 detect_requirements
 install_brew
 clone_dots
