@@ -4,7 +4,7 @@ return {
 
     icons = 'sf_symbols',
 
-    -- font = require("helpers.default_font"),
+    -- font = require 'helpers.default_font',
     font = {
         text = 'Maple Mono NF CN', -- Used for text
         numbers = 'Maple Mono NF CN', -- Used for numbers
