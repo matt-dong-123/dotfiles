@@ -23,7 +23,7 @@ In other words, my dotfiles.
 - [Philosophy](#philosophy)
 - [Troubleshooting](#troubleshooting)
 - [Screenshots](#screenshots)
-  <!--toc:end-->
+    <!--toc:end-->
 
 # Features
 
@@ -94,6 +94,7 @@ script.
     - SponsorBlock
     - Stylus
     - iCloud Passwords
+    - Better AOTY (I know)
 1. For each of the extensions given, find the "Import" or "Restore"
    button, and choose the corresponding file in ~/.config/helium
 2. Browser Layout: Compact, Minimal address bar, Zen mode
