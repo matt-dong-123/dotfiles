@@ -23,7 +23,7 @@ In other words, my dotfiles.
 - [Philosophy](#philosophy)
 - [Troubleshooting](#troubleshooting)
 - [Screenshots](#screenshots)
-      <!--toc:end-->
+  <!--toc:end-->
 
 # Features
 
@@ -114,6 +114,9 @@ This dotfiles repo has the same philosophy as Omarchy. It's extremely opiniated,
 
 - **Q: When I conventional-commit using lazygit, why does it error/cut off?**
 - A: You probably used special characters. I tried to do my best in avoiding them, but at the moment escaping them with backslashes seems like the only way.
+
+- **Q: Will this repository be actively maintained?**
+- A: Not really because it's super stable now. If you have any feature ideas you want me to add, please open an issue or PR.
 
 # Screenshots
 
