@@ -90,7 +90,6 @@ remove_unwanted() {
     local proware=(
         font-sf-pro
         sf-symbols
-        raycast
     )
 
     gum confirm "$(printf "⚠️These casks are proprietary, but they might break something. Remove?\n%s" "${proware[*]}")"
