@@ -56,8 +56,6 @@ brew "expect"
 brew "eye-d3"
 # Modern, maintained replacement for ls
 brew "eza"
-# Powerful, lightweight programming language
-brew "lua"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
@@ -94,6 +92,8 @@ brew "jless"
 brew "jq"
 # Simple terminal UI for git commands
 brew "lazygit"
+# Powerful, lightweight programming language
+brew "lua"
 # Language Server for the Lua language
 brew "lua-language-server"
 # Just-In-Time Compiler (JIT) for the Lua programming language
@@ -243,8 +243,6 @@ cask "mitmproxy"
 cask "obs"
 # System and utility switches
 cask "only-switch"
-# Data science software focusing on R and Python
-cask "rstudio"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
 # Simple hotkey daemon written in Zig
