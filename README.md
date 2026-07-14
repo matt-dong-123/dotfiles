@@ -19,11 +19,14 @@ In other words, my dotfiles.
 - [Prerequisites](#prerequisites)
 - [Install Instructions](#install-instructions)
 - [Post-install](#post-install)
-    - [Zen](#zen)
+    - [System Settings](#system-settings)
+- [Helium](#helium)
+    - [After that?](#after-that)
 - [Philosophy](#philosophy)
 - [Troubleshooting](#troubleshooting)
 - [Screenshots](#screenshots)
-    <!--toc:end-->
+
+<!--toc:end-->
 
 # Features
 
