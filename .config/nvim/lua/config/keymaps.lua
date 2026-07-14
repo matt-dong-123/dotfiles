@@ -1,6 +1,5 @@
 local g = vim.g
 local map = vim.keymap.set
-local expr = { silent = true, expr = true, remap = false }
 
 -- set leader key
 g.mapleader = ' '
