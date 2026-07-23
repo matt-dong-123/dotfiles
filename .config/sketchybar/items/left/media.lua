@@ -1,6 +1,15 @@
 local icons = require 'icons'
 local colors = require 'colors'
 
+local maxLabelLen = 40
+
+local function truncate(s, maxLen)
+    if #s > maxLen then
+        return s:sub(1, maxLen) .. '…'
+    end
+    return s
+end
+
 local media = sbar.add('item', 'right.media', {
     position = 'left',
     icon = {
@@ -24,7 +33,7 @@ media:subscribe({ 'forced', 'routine', 'system_woke' }, function()
             media:set {
                 icon = { color = color },
                 label = {
-                    string = title ~= '' and title or ' ',
+                    string = title ~= '' and truncate(title, maxLabelLen) or ' ',
                     color = color,
                 },
             }
