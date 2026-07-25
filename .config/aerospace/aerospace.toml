@@ -23,7 +23,7 @@ default-root-container-layout = "tiles"
 default-root-container-orientation = "auto"
 
 on-window-detected = [
-  { if.app-id = "com.imput.helium", run = "move-node-to-workspace browser" },
+  { if.app-id = "net.imput.helium", run = "move-node-to-workspace browser" },
   { if.app-id = "com.mitchellh.ghostty", run = "move-node-to-workspace coding" },
   { if.app-id = "net.kovidgoyal.kitty", run = "move-node-to-workspace coding" },
   { if.app-id = "org.musescore.MuseScore", run = "move-node-to-workspace music" },
