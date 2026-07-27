@@ -33,11 +33,6 @@ zgenom update
 
 echo
 
-echo "$(tput setaf 5)Updating gh extensions...$(tput sgr0)"
-gh extension upgrade --all
-
-echo
-
 echo "$(tput setaf 5)Updating tldr cache...$(tput sgr0)"
 tldr --update
 
