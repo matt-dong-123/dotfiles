@@ -7,7 +7,6 @@ tap "matt-dong-123/tap", "https://github.com/matt-dong-123/homebrew-tap.git"
 tap "morantron/tmux-fingers"
 tap "nikitabobko/tap"
 tap "oven-sh/bun"
-tap "supercmdlabs/supercmd"
 # Record and share terminal sessions
 brew "asciinema"
 # Automatic configure script builder
@@ -243,6 +242,8 @@ cask "mitmproxy"
 cask "obs"
 # System and utility switches
 cask "only-switch"
+# Control your tools with a few keystrokes
+cask "raycast"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
 # Simple hotkey daemon written in Zig
@@ -253,8 +254,6 @@ cask "steinberg-activation-manager"
 cask "steinberg-library-manager"
 # Content manager for Steinberg software
 cask "steinberg-mediabay"
-# Open Source, AI Native MacOS Launcher
-cask "supercmdlabs/supercmd/supercmd"
 # Cloud video conferencing
 cask "tencent-meeting"
 # Video communication and virtual meeting platform

@@ -88,6 +88,7 @@ remove_unwanted() {
     fi
 
     local proware=(
+        raycast
         font-sf-pro
         sf-symbols
     )
