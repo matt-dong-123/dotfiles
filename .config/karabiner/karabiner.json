@@ -10,6 +10,19 @@
                     {
                         "manipulators": [
                             {
+                                "description": "Change rcmd+e to globe key.",
+                                "from": {
+                                    "key_code": "e",
+                                    "modifiers": { "mandatory": ["control", "command", "shift"] }
+                                },
+                                "to": [{ "apple_vendor_keyboard_key_code": "language" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "manipulators": [
+                            {
                                 "description": "Change double shift to f13.",
                                 "from": {
                                     "simultaneous": [
@@ -120,6 +133,7 @@
                 }
             ],
             "name": "Default profile",
+            "parameters": { "delay_milliseconds_before_open_device": 100 },
             "selected": true,
             "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
         }
