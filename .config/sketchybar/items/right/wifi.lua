@@ -29,6 +29,13 @@ wifi:subscribe({ 'forced', 'routine', 'system_woke' }, function()
                 color = colors.default
             end
 
+            if name:find('Error:', 3, true) then
+                icon = icons.wifi.disconnected
+                label = 'Error'
+                color = colors.red
+                sbar.exec 'sudo pkill -f airportd'
+            end
+
             wifi:set {
                 icon = {
                     string = icon,
