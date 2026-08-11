@@ -10,3 +10,5 @@ __pycache__/
 # Misc
 .vscode/
 .DS_Store
+
+**/.claude/settings.local.json
