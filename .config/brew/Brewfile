@@ -1,8 +1,6 @@
 tap "anomalyco/tap"
-tap "dimentium/autoraise"
 tap "felixkratz/formulae", "https://github.com/FelixKratz/homebrew-formulae"
 tap "jackielii/tap"
-tap "krtirtho/apps"
 tap "matt-dong-123/tap", "https://github.com/matt-dong-123/homebrew-tap.git"
 tap "morantron/tmux-fingers"
 tap "nikitabobko/tap"
@@ -240,8 +238,6 @@ cask "localsend"
 cask "mitmproxy"
 # Open-source software for live streaming and screen recording
 cask "obs"
-# System and utility switches
-cask "only-switch"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Tool that provides consistent, highly configurable symbols for apps
@@ -256,5 +252,7 @@ cask "steinberg-library-manager"
 cask "steinberg-mediabay"
 # Cloud video conferencing
 cask "tencent-meeting"
+# Menu bar toolkit with keep-awake, system monitor and volume mixer
+cask "vorssaint"
 # Video communication and virtual meeting platform
 cask "zoom"
