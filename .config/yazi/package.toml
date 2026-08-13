@@ -1,31 +1,31 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "0be29a9"
+rev = "3f2b882"
 hash = "5b1c276b75cae91cbbdbe7863f39a540"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "0be29a9"
+rev = "3f2b882"
 hash = "187cc58ba7ac3befd49c342129e6f1b6"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "0be29a9"
+rev = "3f2b882"
 hash = "46cbdc05596a3ecd730b288e28c7079d"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:vcs-files"
-rev = "0be29a9"
+rev = "3f2b882"
 hash = "b97710d0734c380d0a1f58c13dab0da2"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "0be29a9"
-hash = "fbb53c3c04f816d737f9f4b1d29f3310"
+rev = "3f2b882"
+hash = "336548d9f67926e12d5584f60b790f1"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "0be29a9"
+rev = "3f2b882"
 hash = "7b625412411be411153886894d9acaf"
 
 [[plugin.deps]]
@@ -35,7 +35,7 @@ hash = "7de446280b1ba8c49ffd86dbc24bbbe6"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:piper"
-rev = "0be29a9"
+rev = "3f2b882"
 hash = "f23ecc89ce0f9eeefdd4cea14e2a9ba7"
 
 [[plugin.deps]]
