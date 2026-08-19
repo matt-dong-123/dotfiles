@@ -31,7 +31,6 @@ options=(
 borders "${options[@]}" >/dev/null 2>&1
 
 yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' "$HOME/.config/omacase/current/theme/lazygit.yml" "$HOME/.config/lazygit/options.yml" >"$HOME/.config/lazygit/config.yml" &
-yq ". *= load(\"$HOME/.config/gh-dash/options.yml\")" "$HOME/.config/omacase/current/theme/gh-dash.yml" >"$HOME/.config/gh-dash/config.yml" &
 wait
 
 pkill -USR1 kitty >/dev/null 2>&1 &
