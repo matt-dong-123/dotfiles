@@ -37,8 +37,6 @@ brew "ffmpeg"
 brew "clang-format"
 # Cross-platform make
 brew "cmake"
-# Next-gen compiler infrastructure
-brew "llvm"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Disk Usage/Free Utility - a better 'df' alternative
@@ -65,6 +63,8 @@ brew "forgejo-cli"
 brew "fzf"
 # GNU awk utility
 brew "gawk"
+# GNU compiler collection
+brew "gcc"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -89,6 +89,8 @@ brew "jless"
 brew "jq"
 # Simple terminal UI for git commands
 brew "lazygit"
+# Next-gen compiler infrastructure
+brew "llvm"
 # Powerful, lightweight programming language
 brew "lua"
 # Language Server for the Lua language
@@ -137,6 +139,8 @@ brew "pyright"
 brew "python@3.13"
 # Software environment for statistical computing
 brew "r"
+# Reads and randomize lines from a file (or STDIN)
+brew "randomize-lines"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Terminal based Media Player Client with album art support
