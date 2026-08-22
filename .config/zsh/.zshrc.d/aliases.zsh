@@ -5,7 +5,7 @@ alias v="nvim"
 alias c="cd $HOME/dotfiles"
 alias n="cd $HOME/notes"
 alias g="cd $HOME/github"
-alias m="cd $HOME/music"
+alias m="cd $HOME/Music"
 alias cat="bat"
 alias oc="opencode"
 y() {
