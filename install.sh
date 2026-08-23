@@ -138,7 +138,6 @@ initialize() {
     ln -snf "$HOME/.config/omacase/current/theme/neovim.lua" "$HOME/.config/nvim/lua/config/colorscheme.lua"
     ln -snf "$HOME/.config/omacase/current/theme/sketchybar.lua" "$HOME/.config/sketchybar/colors.lua"
     ln -snf "$HOME/.config/omacase/current/theme/btop.theme" "$HOME/.config/btop/themes/current.theme"
-    ln -snf "$HOME/.config/omacase/current/theme/bat" "$HOME/.config/bat/config"
     ln -snf "$HOME/.config/omacase/current/theme/opencode_theme.json" "$HOME/.config/opencode/tui.json"
 
     yq ". *= load(\"$HOME/.config/lazygit/options.yml\")" "$HOME/.config/omacase/current/theme/lazygit.yml" \
